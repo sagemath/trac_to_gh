@@ -1,0 +1,1 @@
+A tree is a connected, acyclic simple graph. By Cayley's formula, there are `n**(n-2)` distinct (labeled) trees with `n` nodes. This function creates a random tree on `n` nodes such that all labeled trees are equally likely to be realized.

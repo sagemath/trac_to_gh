@@ -1,0 +1,1 @@
+The nickname of SageMath.
