@@ -43,22 +43,22 @@ Therefore, for people who want to start a new software project and are looking f
 
 
 ## Sage's documentation
-As pointed out by Frank Sage lacks overview documentation. The Sage community is well aware of this, and works in this direction, in particular with the ongoing effort around thematic tutorials (#8470), but there is still much work to do!
+As pointed out by Frank Sage lacks overview documentation. The Sage community is well aware of this, and works in this direction, in particular with the ongoing effort around thematic tutorials ([#8470](https://trac.sagemath.org/ticket/8470)), but there is still much work to do!
 
 The feedback from Andrew, Frank, and Jean was most useful for improving the tutorial on implementing algebraic structures.
 
 Documentation tickets created / worked on:
 
- * #9262 (Conversion from ReST markup to online text) created by nthiery
- * #9259 (Wrong markup on the documentation of CombinatorialClass.map) created by hivert
+ * [#9262](https://trac.sagemath.org/ticket/9262) (Conversion from ReST markup to online text) created by nthiery
+ * [#9259](https://trac.sagemath.org/ticket/9259) (Wrong markup on the documentation of CombinatorialClass.map) created by hivert
 
 Florent worked hard on improving the rendering of the Sage documentation by mean of Sphinx; this includes better support for cross links (including to Python's online documentation), warnings upon broken links, ...
 
-Florent also spent much time helping others, worked on the prereview of #9065: facade parents, and had long design discussions about them and related matters with Nicolas. Finally, he worked on the following tickets:
+Florent also spent much time helping others, worked on the prereview of [#9065](https://trac.sagemath.org/ticket/9065): facade parents, and had long design discussions about them and related matters with Nicolas. Finally, he worked on the following tickets:
 
- * #9251: Lazy attribute does not properly handles the doc of Cython methods
- * #9256: Put Set in the category Sets()
- * #8924: __call__ for categories sets / enumeratedsets
+ * [#9251](https://trac.sagemath.org/ticket/9251): Lazy attribute does not properly handles the doc of Cython methods
+ * [#9256](https://trac.sagemath.org/ticket/9256): Put Set in the category Sets()
+ * [#8924](https://trac.sagemath.org/ticket/8924): __call__ for categories sets / enumeratedsets
 
 
 ## Future of Chevie
@@ -80,7 +80,7 @@ Much time was spent during the workshop (and previously during Sage Days 20) dis
 
  * Invariants, fake degrees, conjugacy classes, representations
 
- * #9290: Coxeter groups implemented using their geometric representation
+ * [#9290](https://trac.sagemath.org/ticket/9290): Coxeter groups implemented using their geometric representation
 
  * Type recognition for a dynkin diagram (algorithm? mostly graph isomorphism test against standard Cartan types)
 
@@ -88,19 +88,19 @@ Much time was spent during the workshop (and previously during Sage Days 20) dis
 
  * RootSystem and CartanType seem mostly redundant and should be merged.
 
- * #9291: Constructing a root system / coxeter group from a pair of matrices
+ * [#9291](https://trac.sagemath.org/ticket/9291): Constructing a root system / coxeter group from a pair of matrices
 
  * Indexation of the positive/negative roots which depends only on the Cartan matrix (of the ambient group for parabolic subgroups), up to diagonal renormalization
 
- * #9292: Parabolic / Reflection subgroups
+ * [#9292](https://trac.sagemath.org/ticket/9292): Parabolic / Reflection subgroups
 
  * Fusion map: conjugacy class of W' => conjugacy class of W Special cases for S_n, hyperoctahedral group; otherwise, delegate to GAP, using permutation rep.
 
- * #9288: General (complex) reflection groups: the current implementation of Coxeter groups in Sage is in principle designed to open the door for such generalizations. In fact, even if this is not directly apparent, much of Sage's design was directly inspired from Chevie's. This should be better acknowledged.
+ * [#9288](https://trac.sagemath.org/ticket/9288): General (complex) reflection groups: the current implementation of Coxeter groups in Sage is in principle designed to open the door for such generalizations. In fact, even if this is not directly apparent, much of Sage's design was directly inspired from Chevie's. This should be better acknowledged.
 
   Jean is interested in this feature, and generally speaking about exploring the possibility of porting parts of Chevie to Sage and/or of making the design of these features in Sage compatible enough with Chevie to allow a port.
 
- * Representation theory of Coxeter/reflection groups: porting Chevie's data collections (and/or smoothly interfacing to them as a temporary measure) would definitely make sense. On the other hand algorithms for representations of general groups really belong to GAP 4. Much needs to be done to better expose such features in Sage, in particular around character tables (see #9293)!
+ * Representation theory of Coxeter/reflection groups: porting Chevie's data collections (and/or smoothly interfacing to them as a temporary measure) would definitely make sense. On the other hand algorithms for representations of general groups really belong to GAP 4. Much needs to be done to better expose such features in Sage, in particular around character tables (see [#9293](https://trac.sagemath.org/ticket/9293))!
 
  * Braid groups:
 ```
@@ -116,7 +116,7 @@ Much time was spent during the workshop (and previously during Sage Days 20) dis
 
  * Hecke algebras: once the fundamentals of Coxeter groups are available, the implementation thereof in Chevie takes just a couple pages of code (plus a database for the representation theory). As there are many people interested in this in Sage, it seems both natural and easy to port this to Sage (see also the current IwahoriHeckeAlgebraT HeckeAlgebraSymmetricGroupT, and http://wiki.sagemath.org/HeckeAlgebras). Andrew has general interest in that, but no current need; so he won't get immediately involved. We need a volunteer!
 
- * #9289: Puiseux polynomials.
+ * [#9289](https://trac.sagemath.org/ticket/9289): Puiseux polynomials.
 
  * Specht: Andrew wants to port his package to Sage. The main aim of this package is to provide a mechanism for computing the      decomposition matrices of symmetric groups and the degenerate and non-degenerate cyclotomic Hecke algebras of type G(r,1,n) and, more recently, of the cyclotomic quiver Hecke algebras of type A. This involves developing:
    * tableaux combinatorics of the symmetric groups, particularly that used in modular representation theory, and generalizations to multipartitions, multitableaux, ...
@@ -137,22 +137,22 @@ The way that I have these working in gap is that I have, in python speak, a clas
 
   In any case, following the workshop I am quite enthusiastic about Sage and I am now close to having some working code which is more succinct than the corresponding code in gap. More importantly this code is very easy to extend. It would be nice is permutations in Sage worked better, that   the general framework was more complete and really good if tab stops were two spaces rather than four. Apart from these quibbles Sage is rapidly growing on me and I expect to start pushing code to the patch server soon!
 
- * Frank pointed out several spots where Sage's code is much slower than it should be. For example, listing or iterating through the elements of a Coxeter group is ridiculously slow. The following challenge will be a good measure of Sage's progress in this area: running through all elements of the Coxeter group of type E8 in  less than 3 hours as GAP can do (see #9285).
+ * Frank pointed out several spots where Sage's code is much slower than it should be. For example, listing or iterating through the elements of a Coxeter group is ridiculously slow. The following challenge will be a good measure of Sage's progress in this area: running through all elements of the Coxeter group of type E8 in  less than 3 hours as GAP can do (see [#9285](https://trac.sagemath.org/ticket/9285)).
 
   Other weak points he found is computations of Weyl characters (compare with `DominantCharacter` in GAP), or the enumerations of all roots (say of a root system of type E8, compare with Chevie).
 
 
 ## GAP3 interface
-Jean and Nicolas worked on the gap3 distribution and spkg, merging in Marco's work to make it compilable from source on Macos and linux (windows/cygwin still to be tested). Using feedback from Jean and Andrew, Nicolas improved a bit the gap3 (and gap4) interface (introspection, help). The gap3/gap4 interfaces need further work to better convert back gap objects to Sage. Related tickets: #7890, #8327, #9293.
+Jean and Nicolas worked on the gap3 distribution and spkg, merging in Marco's work to make it compilable from source on Macos and linux (windows/cygwin still to be tested). Using feedback from Jean and Andrew, Nicolas improved a bit the gap3 (and gap4) interface (introspection, help). The gap3/gap4 interfaces need further work to better convert back gap objects to Sage. Related tickets: [#7890](https://trac.sagemath.org/ticket/7890), [#8327](https://trac.sagemath.org/ticket/8327), [#9293](https://trac.sagemath.org/ticket/9293).
 
 Jean and Nicolas also implemented a prototype of (parabolic) subgroups of Coxeter groups. Along the way, Nicolas made some little improvements to the Coxeter group code, and rebased Mike's Coxeter 3 patch.
 
 Further work from Nicolas includes:
 
- * #7980: Implement generic support for parents with (multiple) realizations
+ * [#7980](https://trac.sagemath.org/ticket/7980): Implement generic support for parents with (multiple) realizations
  * Polishing Jason's tutorial on implementing algebraic structure
  * Reorganizing the various demos/tutorial for Sage-Combinat
- * Proof of concept for #9291
+ * Proof of concept for [#9291](https://trac.sagemath.org/ticket/9291)
 
 
 ## Food!

@@ -65,7 +65,7 @@ Dependencies: shell commands *git*; *tar*; *wget*
 
 *pyflakes* and *pycodestyle* will be installed by pip if not already installed.
 
-[[span(style=background:#98FF98,Please set the --owner option if you run a patchbot. It is useful to know whom to contact.)]]
+[[span(style=background:[#98](https://trac.sagemath.org/ticket/98)FF98,Please set the --owner option if you run a patchbot. It is useful to know whom to contact.)]]
 
 You can instead register [[patchbot/owners|here]].
 
@@ -273,4 +273,4 @@ Instead of the default platform, `ubuntu-focal-standard`, you can select any pla
 
 It will run for 6 hours, then exit. You can run multiple workflows simultaneously.
 
-See also [#33253](https://trac.sagemath.org/ticket/33253).
+See also [[#33253](https://trac.sagemath.org/ticket/33253)](https://trac.sagemath.org/ticket/33253).

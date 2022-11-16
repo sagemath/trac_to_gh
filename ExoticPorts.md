@@ -1,5 +1,5 @@
 
- Related: #29143 - Add to tox.ini 32-bit linux environments and other architectures supported by docker
+ Related: [#29143](https://trac.sagemath.org/ticket/29143) - Add to tox.ini 32-bit linux environments and other architectures supported by docker
 
 
 ## SageMath 9.0
@@ -58,7 +58,7 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 ### ARMv7 board running Ubuntu 12.04 (armv7 with hard floats)
 
 * ATLAS has to be tweaked to build with hard floats. Follow instructions at http://math-atlas.sourceforge.net/errata.html#armhardfp. I also had to bypass throttling detection: modify 
-* pil did not build because of libjpeg misdetection (the lib is installed, the headers aren't, so pil thinks it can include jpeg support but then compiling fails, kind of like #7273). I modified setup.py so that it does not even try to detect libjpeg.
+* pil did not build because of libjpeg misdetection (the lib is installed, the headers aren't, so pil thinks it can include jpeg support but then compiling fails, kind of like [#7273](https://trac.sagemath.org/ticket/7273)). I modified setup.py so that it does not even try to detect libjpeg.
 
 
 ### Sun Ultrasparc T1/2 running debian/sparc (64 bit kernel, 32 bit userland, 32 bit Sage build)
@@ -90,5 +90,5 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 * Don't forget to set SAGE64=yes.
 * This is not used by gcc, to build gcc pass something like CC="gcc -m64" or CFLAGS="-m64", or GCC_CONFIGURE="--target=sparc64-sun-solaris2.10 --host=sparc64-sun-solaris2.10" to build a 64 bit compiler targetting 64 bit builds, but GCC fails to build, probably in stage 1, looking for sparc64-sun-solaris2.10-gcc.
   In fact passing --build=sparc64-sun-solaris2.10 and only this does the trick.
-* gf2x fails because of https://gforge.inria.fr/tracker/index.php?func=detail&aid=16531&group_id=1874&atid=6979, see #15273.
+* gf2x fails because of https://gforge.inria.fr/tracker/index.php?func=detail&aid=16531&group_id=1874&atid=6979, see [#15273](https://trac.sagemath.org/ticket/15273).
 * ATLAS fails, getting "Arithmetic Error" in dR2K.sum when UST2 arch is used, then it falls back to USIV but fails with a mixture of -m64 (because of SAGE64 I guess) and -m32 (why?!? wrong ATLAS setting?) mixture, then falls back to USIII where it succeeded. See http://sourceforge.net/p/math-atlas/support-requests/934/ .

@@ -17,7 +17,7 @@ in this version.
 
 ### JupyterLab 3.3
 
-[JupyterLab](https://jupyter.org/), the latest web-based interactive development environment for notebooks, code, and data, is slated to replace the now-classic Jupyter notebook interface.  The version of JupyterLab in the Sage distribution has been upgraded to the major new version 3.3. #32069, #33607
+[JupyterLab](https://jupyter.org/), the latest web-based interactive development environment for notebooks, code, and data, is slated to replace the now-classic Jupyter notebook interface.  The version of JupyterLab in the Sage distribution has been upgraded to the major new version 3.3. [#32069](https://trac.sagemath.org/ticket/32069), [#33607](https://trac.sagemath.org/ticket/33607)
 
 After `./sage -i jupyterlab_widgets`, you can run it using 
 ```
@@ -47,19 +47,19 @@ in the `~/.sage/init.sage` script.
 
 ### Interactive graph editing with phitigra
 
-With the new optional package [phitigra](https://pypi.org/project/phitigra) (use `./sage -i phitigra` to install), graphs can be edited by interactively placing vertices, edges, etc.  This works both in the classic Jupyter notebook and in JupyterLab. It can also be used to make animations (see the demo notebook at https://github.com/jfraymond/phitigra for examples). Done in #30540 and #33639.
+With the new optional package [phitigra](https://pypi.org/project/phitigra) (use `./sage -i phitigra` to install), graphs can be edited by interactively placing vertices, edges, etc.  This works both in the classic Jupyter notebook and in JupyterLab. It can also be used to make animations (see the demo notebook at https://github.com/jfraymond/phitigra for examples). Done in [#30540](https://trac.sagemath.org/ticket/30540) and [#33639](https://trac.sagemath.org/ticket/33639).
 
 ![](https://trac.sagemath.org/raw-attachment/wiki/ReleaseTours/sage-9.6/editor.png)
 
 
 ### Hyperbolic plots
 
- * Added the ability to choose the hyperbolic model for hyperbolic plots. #22081
+ * Added the ability to choose the hyperbolic model for hyperbolic plots. [#22081](https://trac.sagemath.org/ticket/22081)
 
 
 ### Graphics with TikZ
 
-The `TikzPicture` module which was developed in the [slabbe](https://pypi.org/project/slabbe/) package for more than 5 years is now in Sage. This was done in ticket #20343. The module is within the new file `sage/misc/latex_standalone.py` and its documentation in the reference manual is available here: https://doc.sagemath.org/html/en/reference/misc/sage/misc/latex_standalone.html. Below are some usage examples.
+The `TikzPicture` module which was developed in the [slabbe](https://pypi.org/project/slabbe/) package for more than 5 years is now in Sage. This was done in ticket [#20343](https://trac.sagemath.org/ticket/20343). The module is within the new file `sage/misc/latex_standalone.py` and its documentation in the reference manual is available here: https://doc.sagemath.org/html/en/reference/misc/sage/misc/latex_standalone.html. Below are some usage examples.
 
 First example shows that it takes any tikz picture string as input:
 ```
@@ -155,7 +155,7 @@ sage: s
 \documentclass{standalone}
 \standaloneconfig{border=1mm}
 \begin{document}
-{\def\lr#1{\multicolumn{1}{|`@`{\hspace{.6ex}}c`@`{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}} }
+{\def\lr[#1](https://trac.sagemath.org/ticket/1){\multicolumn{1}{|`@`{\hspace{.6ex}}c`@`{\hspace{.6ex}}|}{\raisebox{-.3ex}{$[#1](https://trac.sagemath.org/ticket/1)$}} }
 \raisebox{-.6ex}{$\begin{array}[b]{*{3}c}\cline{1-3}
 \lr{2}&\lr{8}&\lr{4}\\\cline{1-3}
 \lr{5}&\lr{6}&\lr{7}\\\cline{1-3}
@@ -168,12 +168,12 @@ sage: _ = s.pdf()               # or s.png() or s.svg()
 ```
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_tableau.png)
 
-In a next step, a method `tikz()` will be added to graphs, polytopes, posets, etc. to return an object of type `TikzPicture` see #33002.
+In a next step, a method `tikz()` will be added to graphs, polytopes, posets, etc. to return an object of type `TikzPicture` see [#33002](https://trac.sagemath.org/ticket/33002).
 
 
 ### Complex plots
 
-The complex plotting package [phase_mag_plot](https://github.com/davidlowryduda/phase_mag_plot) has been incorporated into Sage. Now `complex_plot` allows contouring, tiling, and `matplotlib`-compatible colormaps. This was added in ticket #33416.
+The complex plotting package [phase_mag_plot](https://github.com/davidlowryduda/phase_mag_plot) has been incorporated into Sage. Now `complex_plot` allows contouring, tiling, and `matplotlib`-compatible colormaps. This was added in ticket [#33416](https://trac.sagemath.org/ticket/33416).
 
 To use a colormap, one can pass in a string as in
 
@@ -200,9 +200,9 @@ sage: complex_plot((x - 5)*sqrt(x), (-10, 10), (-10, 10), cmap='twilight', plot_
 
 ### NumPy integration
 
-The new classes `Matrix_numpy_integer_dense` and `Vector_numpy_integer_dense` implement matrices and vectors with 64-bit integer entries backed by `numpy` arrays. #32465.
+The new classes `Matrix_numpy_integer_dense` and `Vector_numpy_integer_dense` implement matrices and vectors with 64-bit integer entries backed by `numpy` arrays. [#32465](https://trac.sagemath.org/ticket/32465).
 
-As a first application, several methods of `GenericGraph` that return matrices, such as `adjacency_matrix`, now accept keyword arguments that can select the matrix implementation. #33377, #33387, #33388, #33389
+As a first application, several methods of `GenericGraph` that return matrices, such as `adjacency_matrix`, now accept keyword arguments that can select the matrix implementation. [#33377](https://trac.sagemath.org/ticket/33377), [#33387](https://trac.sagemath.org/ticket/33387), [#33388](https://trac.sagemath.org/ticket/33388), [#33389](https://trac.sagemath.org/ticket/33389)
 ```
 sage: graphs.PathGraph(5).adjacency_matrix(sparse=False, implementation='numpy')
 [0 1 0 0 0]
@@ -217,7 +217,7 @@ sage: type(_)
 
 ### CombinatorialFreeModule improvements
 
-Performing sums and similar constructions for `CombinatorialFreeModule` have been made faster. #33267
+Performing sums and similar constructions for `CombinatorialFreeModule` have been made faster. [#33267](https://trac.sagemath.org/ticket/33267)
 
 
 ## Symbolics
@@ -225,12 +225,12 @@ Performing sums and similar constructions for `CombinatorialFreeModule` have bee
 
 ### SymPy 1.10.1
 
-SymPy has been upgraded to version 1.10.1 ([release notes](https://github.com/sympy/sympy/wiki/release-notes-for-1.10)). #33398, #33547, #33584
+SymPy has been upgraded to version 1.10.1 ([release notes](https://github.com/sympy/sympy/wiki/release-notes-for-1.10)). [#33398](https://trac.sagemath.org/ticket/33398), [#33547](https://trac.sagemath.org/ticket/33547), [#33584](https://trac.sagemath.org/ticket/33584)
 
 
 ### ImageSet
 
-Sage 9.6 defines a new class `ImageSet`. #32121
+Sage 9.6 defines a new class `ImageSet`. [#32121](https://trac.sagemath.org/ticket/32121)
 
 ```
 sage: ImageSet(sin, RealSet.open(0, pi/4))
@@ -268,7 +268,7 @@ For all morphisms in the `Sets` category, there is now a default method `image`,
 
 ### Orthogonal polynomials
 
-Three classes of classical (discrete) orthogonal polynomials in the Askey scheme have been added: #33393
+Three classes of classical (discrete) orthogonal polynomials in the Askey scheme have been added: [#33393](https://trac.sagemath.org/ticket/33393)
 
  * Krawtchouk polynomials
  * Hahn polynomials
@@ -277,7 +277,7 @@ Three classes of classical (discrete) orthogonal polynomials in the Askey scheme
 
 ### Spherical harmonics
 
-Various issues regarding spherical harmonics have been fixed (#33117, #33501). In particular, the
+Various issues regarding spherical harmonics have been fixed ([#33117](https://trac.sagemath.org/ticket/33117), [#33501](https://trac.sagemath.org/ticket/33501)). In particular, the
 Condon-Shortley phase has been added, so that Sage's spherical harmonics now agree with those of
 Wikipedia, SymPy, SciPy and Mathematica. For instance
 ```
@@ -298,19 +298,19 @@ sage: Ynm(1, 1, theta, phi).expand(func=True)
 
 ### polymake 4.6
 
-polymake, a comprehensive system for computations in polyhedral geometry, tropical geometry, etc., has been upgraded to version 4.6 ([release notes](https://polymake.org/doku.php/news/release_4_6)). #33251
+polymake, a comprehensive system for computations in polyhedral geometry, tropical geometry, etc., has been upgraded to version 4.6 ([release notes](https://polymake.org/doku.php/news/release_4_6)). [#33251](https://trac.sagemath.org/ticket/33251)
 
 
 ### CyLP
 
-The new optional package [CyLP](https://github.com/coin-or/CyLP) (`./sage -i cylp`) provides a detailed interface to [Clp](https://github.com/coin-or/Clp), the COIN-OR linear programming solver, and [Cbc](https://github.com/coin-or/Cbc), the COIN-OR branch-and-cut solver for mixed-integer linear programs.  [#33847](https://trac.sagemath.org/ticket/33487)
+The new optional package [CyLP](https://github.com/coin-or/CyLP) (`./sage -i cylp`) provides a detailed interface to [Clp](https://github.com/coin-or/Clp), the COIN-OR linear programming solver, and [Cbc](https://github.com/coin-or/Cbc), the COIN-OR branch-and-cut solver for mixed-integer linear programs.  [[#33847](https://trac.sagemath.org/ticket/33847)](https://trac.sagemath.org/ticket/33487)
 
-In a future version of Sage, CyLP is intended to provide a replacement for the Sage-specific backend interface to Clp and Cbc, [sage-numerical-backends-coin](https://pypi.org/project/sage-numerical-backends-coin/); see [Meta-ticket #26511](https://trac.sagemath.org/ticket/26511).
+In a future version of Sage, CyLP is intended to provide a replacement for the Sage-specific backend interface to Clp and Cbc, [sage-numerical-backends-coin](https://pypi.org/project/sage-numerical-backends-coin/); see [Meta-ticket [#26511](https://trac.sagemath.org/ticket/26511)](https://trac.sagemath.org/ticket/26511).
 
 
 ### Equivariant Ehrhart theory
 
-Sage 9.6 allows for the calculation of the H*-series (also known as the φ-series) of a rational polytope which is invariant under the linear action of a finite group, as introduced by Alan Stapledon as part of equivariant Ehrhart theory #27637.
+Sage 9.6 allows for the calculation of the H*-series (also known as the φ-series) of a rational polytope which is invariant under the linear action of a finite group, as introduced by Alan Stapledon as part of equivariant Ehrhart theory [#27637](https://trac.sagemath.org/ticket/27637).
 The computation is made with the method `Hstar_function` of a rational polytope.
 The fixed subset of a polytope under the action of a group element may also be computed via the methods `fixed_subpolytope` or `fixed_subpolytopes`.
 
@@ -344,7 +344,7 @@ sage: p3.fixed_subpolytope(reflection12).vertices()
 
 ### Improved Manifold constructor
 
-The `structure` parameter of the `Manifold` constructor has new, more convenient defaulting behavior. #33001
+The `structure` parameter of the `Manifold` constructor has new, more convenient defaulting behavior. [#33001](https://trac.sagemath.org/ticket/33001)
 
 When parameters such as `diff_degree` or `metric_name` are given, the implied structure is selected:
 ```
@@ -359,7 +359,7 @@ sage: M = Manifold(3, 'M', metric_name='g'); M
 
 ### Symplectic manifolds
 
-Symplectic structures have been added to Sage (#30362).
+Symplectic structures have been added to Sage ([#30362](https://trac.sagemath.org/ticket/30362)).
 
 The standard symplectic vector space can be obtained as follows:
 ```
@@ -390,7 +390,7 @@ Currently, the following operations from symplectic geometry are supported:
 
 ### Projective spaces
 
-Real projective spaces have been added to the manifold catalog (#33221).
+Real projective spaces have been added to the manifold catalog ([#33221](https://trac.sagemath.org/ticket/33221)).
 For example, one can construct the real projective plane.
 
 ```
@@ -455,25 +455,25 @@ sage: C2(r) # corresponding to (1/3, 2/3, 1)
 
 ### Internal code improvements and bug fixes
 
-Some performance improvements have been implemented (#33110):
+Some performance improvements have been implemented ([#33110](https://trac.sagemath.org/ticket/33110)):
 
 - use the first Bianchi identity in the computation of the Riemann tensor
 - compute volume forms with contravariant indices only as needed
 - no try to simplify trivial expressions consisting only of a single number or symbolic variable 
 
-Some bugs have been corrected: #32953, #33399, #33780.
+Some bugs have been corrected: [#32953](https://trac.sagemath.org/ticket/32953), [#33399](https://trac.sagemath.org/ticket/33399), [#33780](https://trac.sagemath.org/ticket/33780).
 
 ## Algebra
 
 
 ### lrcalc 2.1
 
-lrcalc, Anders Buch's Littlewood-Richardson Calculator, has been upgraded to the major new version 2.1 [changelog](https://bitbucket.org/asbuch/lrcalc/src/master/ChangeLog). #31355
+lrcalc, Anders Buch's Littlewood-Richardson Calculator, has been upgraded to the major new version 2.1 [changelog](https://bitbucket.org/asbuch/lrcalc/src/master/ChangeLog). [#31355](https://trac.sagemath.org/ticket/31355)
 
 
 ### Finitely presented modules over graded algebras
 
-Sage 9.6 allows the construction of finitely presented modules over graded algebras, even algebras which are infinite and/or noncommutative like the mod _p_ Steenrod algebra. Some homological algebra is implemented in general, and more tools are implemented specifically for modules over the Steenrod algebra (#32505, #30680).
+Sage 9.6 allows the construction of finitely presented modules over graded algebras, even algebras which are infinite and/or noncommutative like the mod _p_ Steenrod algebra. Some homological algebra is implemented in general, and more tools are implemented specifically for modules over the Steenrod algebra ([#32505](https://trac.sagemath.org/ticket/32505), [#30680](https://trac.sagemath.org/ticket/30680)).
 
 ```
 sage: from sage.modules.fp_graded.module import FPModule
@@ -520,19 +520,19 @@ There is a new thematic tutorial providing many details and examples.
 
 ### Miscellaneous improvements
 
- * Ideal membership over quotient rings can now be decided (by reducing to ideal membership in the parent ring). #33237
- * Iterating over (some) infinite modules (including ℤ_^n^_) now enumerates the entire module, in a "natural" order. #33287
- * `BinaryQF.solve_integer()` now also works for quadratic forms of square discriminant. #33026
- * `Quaternion fractional ideals` (including orders) now support the usual operations (e.g., `a*I`, `I*a`, `I+J`). #32264
- * `AdditiveAbelianGroupWrapper` now exposes `.discrete_log()` for (multi-dimensional) logarithms in finite abelian groups. #32384
- * Graded submodules of graded modules now know they are graded (with respect to the ambient grading); similarly for filtered submodules. #33321
- * Polynomials now evaluate faster on monomial inputs. #33165
- * Implement specialized code for summing terms and monomials in `CombinatorialFreeModule`. #33267
- * Improvements and fixes to `skew_by()` in symmetric functions. #33313
- * Attempt to invert elements generically in a finite dimensional algebra. #33250
- * Tensor products of finite dimensional modules know they are finite dimensional (Sage does not currently have any structure for infinite tensor products, which can have some subtleties). #30252
- * Improved coercions and conversions with Laurent polynomials and their fraction field. #31320 #33477
- * Faster evaluation of univariate polynomials with monomials. #33165
+ * Ideal membership over quotient rings can now be decided (by reducing to ideal membership in the parent ring). [#33237](https://trac.sagemath.org/ticket/33237)
+ * Iterating over (some) infinite modules (including ℤ_^n^_) now enumerates the entire module, in a "natural" order. [#33287](https://trac.sagemath.org/ticket/33287)
+ * `BinaryQF.solve_integer()` now also works for quadratic forms of square discriminant. [#33026](https://trac.sagemath.org/ticket/33026)
+ * `Quaternion fractional ideals` (including orders) now support the usual operations (e.g., `a*I`, `I*a`, `I+J`). [#32264](https://trac.sagemath.org/ticket/32264)
+ * `AdditiveAbelianGroupWrapper` now exposes `.discrete_log()` for (multi-dimensional) logarithms in finite abelian groups. [#32384](https://trac.sagemath.org/ticket/32384)
+ * Graded submodules of graded modules now know they are graded (with respect to the ambient grading); similarly for filtered submodules. [#33321](https://trac.sagemath.org/ticket/33321)
+ * Polynomials now evaluate faster on monomial inputs. [#33165](https://trac.sagemath.org/ticket/33165)
+ * Implement specialized code for summing terms and monomials in `CombinatorialFreeModule`. [#33267](https://trac.sagemath.org/ticket/33267)
+ * Improvements and fixes to `skew_by()` in symmetric functions. [#33313](https://trac.sagemath.org/ticket/33313)
+ * Attempt to invert elements generically in a finite dimensional algebra. [#33250](https://trac.sagemath.org/ticket/33250)
+ * Tensor products of finite dimensional modules know they are finite dimensional (Sage does not currently have any structure for infinite tensor products, which can have some subtleties). [#30252](https://trac.sagemath.org/ticket/30252)
+ * Improved coercions and conversions with Laurent polynomials and their fraction field. [#31320](https://trac.sagemath.org/ticket/31320) [#33477](https://trac.sagemath.org/ticket/33477)
+ * Faster evaluation of univariate polynomials with monomials. [#33165](https://trac.sagemath.org/ticket/33165)
 
 
 ## Number theory
@@ -540,15 +540,15 @@ There is a new thematic tutorial providing many details and examples.
 
 ### Elliptic curves
 
- * Elliptic-curve DLP and Weil pairings over finite fields are now _much_ faster (thanks to PARI). #33121
- * Scalar multiplication on elliptic curves over finite fields is now significantly faster (thanks to PARI). #33147
- * Computing the Weierstraß ℘ function of an elliptic curve is now significantly faster (thanks to PARI). #33223
- * Classes used by the Monsky-Washnitzer curves now use the new coercion system. #33525 #33576
+ * Elliptic-curve DLP and Weil pairings over finite fields are now _much_ faster (thanks to PARI). [#33121](https://trac.sagemath.org/ticket/33121)
+ * Scalar multiplication on elliptic curves over finite fields is now significantly faster (thanks to PARI). [#33147](https://trac.sagemath.org/ticket/33147)
+ * Computing the Weierstraß ℘ function of an elliptic curve is now significantly faster (thanks to PARI). [#33223](https://trac.sagemath.org/ticket/33223)
+ * Classes used by the Monsky-Washnitzer curves now use the new coercion system. [#33525](https://trac.sagemath.org/ticket/33525) [#33576](https://trac.sagemath.org/ticket/33576)
 
 
 ## Cryptography
 
-Optimizations to `SBox`. #25633
+Optimizations to `SBox`. [#25633](https://trac.sagemath.org/ticket/25633)
 
 
 ## Package upgrades
@@ -559,32 +559,32 @@ For a list of all packages and their versions, see
 
 ### Python 3.10
 
-Sage 9.6 continues to support system Python 3.7.x to 3.10.x. If no suitable version of Python is installed in the system, Sage will install its own copy of Python. Sage now ships Python 3.10.3 for this purpose. #30767, #33512
+Sage 9.6 continues to support system Python 3.7.x to 3.10.x. If no suitable version of Python is installed in the system, Sage will install its own copy of Python. Sage now ships Python 3.10.3 for this purpose. [#30767](https://trac.sagemath.org/ticket/30767), [#33512](https://trac.sagemath.org/ticket/33512)
 
 
 ### FLINT 2.8.x and arb 2.22.x
 
-[FLINT](https://flintlib.org/) has been upgraded from 2.7.1 to 2.8.4.#32211
+[FLINT](https://flintlib.org/) has been upgraded from 2.7.1 to 2.8.4.[#32211](https://trac.sagemath.org/ticket/32211)
 
 The FLINT 2.8 series brings major new algorithms and general speedups ([release notes](https://github.com/wbhart/flint2/blob/flint-2.8/NEWS#L1262)).
 
 Note that Sage accepts system installations of FLINT >= 2.6.x. Users on older distributions who want to benefit from the speed ups in FLINT 2.8.x may want to use `./configure --without-system-flint`.
 
-Meta-ticket #31408 tracks the effort to make use of new features added in recent FLINT releases in the Sage library.
+Meta-ticket [#31408](https://trac.sagemath.org/ticket/31408) tracks the effort to make use of new features added in recent FLINT releases in the Sage library.
 
-[arb](https://arblib.org/) has been upgraded from 2.19.0 to 2.22.1. #32211, #33189
+[arb](https://arblib.org/) has been upgraded from 2.19.0 to 2.22.1. [#32211](https://trac.sagemath.org/ticket/32211), [#33189](https://trac.sagemath.org/ticket/33189)
 
 The 2.20, 2.21, and 2.22 series have brought major new algorithms and other improvements ([changelog](https://arblib.org/history.html#version-2-22-1)).
 
 
 ### igraph 0.9.x
 
-The `igraph` library and its Python interface (now also just called `igraph`) have been upgraded to versions 0.9.7/0.9.9. #32510, #33526
+The `igraph` library and its Python interface (now also just called `igraph`) have been upgraded to versions 0.9.7/0.9.9. [#32510](https://trac.sagemath.org/ticket/32510), [#33526](https://trac.sagemath.org/ticket/33526)
 
 
 ## For developers: Refactoring and modularization
 
-See also [Meta-ticket #29705](https://trac.sagemath.org/ticket/29705)
+See also [Meta-ticket [#29705](https://trac.sagemath.org/ticket/29705)](https://trac.sagemath.org/ticket/29705)
 
 
 ### sage.features.Executable.absolute_filename()
@@ -592,36 +592,36 @@ See also [Meta-ticket #29705](https://trac.sagemath.org/ticket/29705)
 The Sage library interfaces to some external non-Python packages by running an executable program in a separate process. The package may either be available from a system installation, or the Sage distribution may have installed the package in the `SAGE_LOCAL` prefix hierarchy. The main `sage` script sets up various environment variables before starting the Python interpreter; in particular, it sets `PATH` to include `SAGE_LOCAL/bin`, which ensures that the installed executables are found.
 
 In Sage 9.6, we have changed most calls to executables so that they no longer depend on the environment variable `PATH` being set in this way. Every executable program is represented by an instance of `sage.features.Executable`. Its method `absolute_filename` explicitly searches inside `SAGE_LOCAL/bin` (in installations with `SAGE_LOCAL`) before it depends on `PATH`.
-#31292,
-#31296,
-#32645,
-#32893,
-#33440,
-#33465,
-#33467
+[#31292](https://trac.sagemath.org/ticket/31292),
+[#31296](https://trac.sagemath.org/ticket/31296),
+[#32645](https://trac.sagemath.org/ticket/32645),
+[#32893](https://trac.sagemath.org/ticket/32893),
+[#33440](https://trac.sagemath.org/ticket/33440),
+[#33465](https://trac.sagemath.org/ticket/33465),
+[#33467](https://trac.sagemath.org/ticket/33467)
 
 
 ### Preparations for PEP 420 implicit namespace packages
 
-The Sage doctester is now prepared for [namespace packages](https://doc.sagemath.org/html/en/developer/packaging_sage_library.html#ordinary-packages-vs-implicit-namespace-packages). #33033
+The Sage doctester is now prepared for [namespace packages](https://doc.sagemath.org/html/en/developer/packaging_sage_library.html#ordinary-packages-vs-implicit-namespace-packages). [#33033](https://trac.sagemath.org/ticket/33033)
 
 To [reduce runtime dependencies](https://doc.sagemath.org/html/en/developer/packaging_sage_library.html#module-level-runtime-dependencies), many imports from `sage.graphs.all`, `sage.interfaces.all`, `sage.misc.all`, `sage.libs.all`, `sage.rings.all` have been replaced by more specific imports; and module-level imports from `sage.plot` have been changed to either use `lazy_import` or have been moved inside methods.
-#30582,
-#32847,
-#32989,
-#32999,
-#33000,
-#33007,
-#33146,
-#33199,
-#33466,
-#33468
+[#30582](https://trac.sagemath.org/ticket/30582),
+[#32847](https://trac.sagemath.org/ticket/32847),
+[#32989](https://trac.sagemath.org/ticket/32989),
+[#32999](https://trac.sagemath.org/ticket/32999),
+[#33000](https://trac.sagemath.org/ticket/33000),
+[#33007](https://trac.sagemath.org/ticket/33007),
+[#33146](https://trac.sagemath.org/ticket/33146),
+[#33199](https://trac.sagemath.org/ticket/33199),
+[#33466](https://trac.sagemath.org/ticket/33466),
+[#33468](https://trac.sagemath.org/ticket/33468)
 
 
 ### Lazy imports of classes now support "isinstance"
 
 No Python object is an instance of a class that cannot be imported from the module that defines it.
-The new special method `LazyImport.__instancecheck__` now just returns `False` in this case. #33017
+The new special method `LazyImport.__instancecheck__` now just returns `False` in this case. [#33017](https://trac.sagemath.org/ticket/33017)
 
 This provides a convenient pattern for writing modularized code when [creating an abstract base class for "isinstance" testing](https://wiki.sagemath.org/ReleaseTours/sage-9.5#Abstract_base_classes_for_.22isinstance.22_testing) is not justified.
 ```
@@ -639,7 +639,7 @@ so the new special method `LazyImport.__subclasscheck__` implements the same log
 
 ### sage.geometry.polyhedron.base reorganized
 
-The module `sage.geometry.polyhedron.base` has been split into several modules, grouping the methods of class `Polyhedron_base` according to their topic and runtime dependencies on other parts of Sage. #32651
+The module `sage.geometry.polyhedron.base` has been split into several modules, grouping the methods of class `Polyhedron_base` according to their topic and runtime dependencies on other parts of Sage. [#32651](https://trac.sagemath.org/ticket/32651)
 
 
 ## New developer tools
@@ -647,7 +647,7 @@ The module `sage.geometry.polyhedron.base` has been split into several modules, 
 
 ### Pre-built Docker containers on ghcr.io
 
-Our portability CI on GitHub Actions builds [Docker images](https://github.com/orgs/sagemath/packages?tab=packages&q=with-targets-optional) for all tested Linux platforms (and system package configurations) and makes them available on GitHub Packages (ghcr.io). #30933
+Our portability CI on GitHub Actions builds [Docker images](https://github.com/orgs/sagemath/packages?tab=packages&q=with-targets-optional) for all tested Linux platforms (and system package configurations) and makes them available on GitHub Packages (ghcr.io). [#30933](https://trac.sagemath.org/ticket/30933)
 
 Since 9.6.beta1, the image version corresponding to the latest development release receives the additional Docker tag `dev`, see for example the Docker image for [ubuntu-impish-standard](https://github.com/sagemath/sage/pkgs/container/sage%2Fsage-docker-ubuntu-impish-standard-with-targets-optional). Thus, for example, the following command will work:
 ```
@@ -670,7 +670,7 @@ Images whose names end with the suffix `-with-targets-optional` are the results 
 ### Sage development in the cloud with Gitpod
 
 [Gitpod](https://www.gitpod.io/) is a service that provides a development environment in the cloud based on VS Code. It is free to use for up to 50 hours per month. Sage now includes a configuration for Gitpod; see the new section [Setting up your workspace](https://doc.sagemath.org/html/en/developer/workspace.html#section-gitpod) in the Sage Developer's Guide. 
-#33103, #33589
+[#33103](https://trac.sagemath.org/ticket/33103), [#33589](https://trac.sagemath.org/ticket/33589)
 
 ![](gitpod_badge.png, 116px)
 
@@ -692,7 +692,7 @@ A [linting workflow](https://github.com/sagemath/sage/blob/develop/.github/workf
 
 In order to see details when it fails, you can click on the badge and then select the most recent workflow run.
 
-Sage 9.6 includes again many improvements to the [coding style checked by pycodestyle](https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes). #32978, #32979, #33095, #33102, ...
+Sage 9.6 includes again many improvements to the [coding style checked by pycodestyle](https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes). [#32978](https://trac.sagemath.org/ticket/32978), [#32979](https://trac.sagemath.org/ticket/32979), [#33095](https://trac.sagemath.org/ticket/33095), [#33102](https://trac.sagemath.org/ticket/33102), ...
 
 Consequently, the `pycodestyle-minimal` configuration has been extended to enforce `E111`, `E401`, `E701`, `E702`, `E703`, `W605`, `E711`, `E712`, `E713`, `E721`, `E722`.
 
@@ -717,30 +717,30 @@ The idea is that these three status badges complement the existing patchbots (an
 
 #### Test coverage analysis with codecov
 
-A detailed coverage analysis of the Sage library is now available at [codecov.io](https://app.codecov.io/gh/sagemath/sagetrac-mirror). #33355
+A detailed coverage analysis of the Sage library is now available at [codecov.io](https://app.codecov.io/gh/sagemath/sagetrac-mirror). [#33355](https://trac.sagemath.org/ticket/33355)
 
 
 ### sage --pytest
 
-After the optional package [pytest](https://docs.pytest.org/en/7.1.x/) is installed (`./sage -i pytest`), a new command `./sage --pytest` is available, which runs pytest on the Sage library sources. #33572
+After the optional package [pytest](https://docs.pytest.org/en/7.1.x/) is installed (`./sage -i pytest`), a new command `./sage --pytest` is available, which runs pytest on the Sage library sources. [#33572](https://trac.sagemath.org/ticket/33572)
 
-Also the Sage doctester (`./sage -t` or `./sage -tox -e doctest`) invokes `pytest`. This functionality has been improved in Sage 9.6. #31924, #32975, #33560
+Also the Sage doctester (`./sage -t` or `./sage -tox -e doctest`) invokes `pytest`. This functionality has been improved in Sage 9.6. [#31924](https://trac.sagemath.org/ticket/31924), [#32975](https://trac.sagemath.org/ticket/32975), [#33560](https://trac.sagemath.org/ticket/33560)
 
 
 ### sage -t --baseline-stats-path
 
-#33233
+[#33233](https://trac.sagemath.org/ticket/33233)
 
 
 ### Sage patchbot on GitHub Actions
 
 The [[patchbot#Running_the_patchbot_on_GitHub_Actions|Sage patchbot can now be run on GitHub Actions]],
-on top of any of the Linux platforms for which we have prebuilt Docker images.#33253
+on top of any of the Linux platforms for which we have prebuilt Docker images.[#33253](https://trac.sagemath.org/ticket/33253)
 
 
 ### New trac.sagemath.org front page
 
-[The front page of trac.sagemath.org](https://trac.sagemath.org/) has been reorganized. #33725
+[The front page of trac.sagemath.org](https://trac.sagemath.org/) has been reorganized. [#33725](https://trac.sagemath.org/ticket/33725)
 
 
 ## Availability of Sage 9.6 and installation help
@@ -757,7 +757,7 @@ Sage 9.6 was released on 2022-05-15.
 
 The Sage source code is available in the [sage git repository](https://github.com/sagemath/sage/tree/develop).
 
-SageMath 9.6 supports all [platforms that were supported by Sage 9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5#Sources) and *adds support for building on distributions that use the [GCC 12](https://gcc.gnu.org/gcc-12/changes.html) series* (`fedora-36`). #33187
+SageMath 9.6 supports all [platforms that were supported by Sage 9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5#Sources) and *adds support for building on distributions that use the [GCC 12](https://gcc.gnu.org/gcc-12/changes.html) series* (`fedora-36`). [#33187](https://trac.sagemath.org/ticket/33187)
 
  * *Linux 64-bit* (x86_64) - see [CI runs](https://groups.google.com/g/sage-release/c/GOGWk66zaCQ/m/dBQww8WNAAAJ)
    * ubuntu-{[trusty](https://launchpad.net/ubuntu/trusty)⁺,[xenial](https://launchpad.net/ubuntu/xenial),[bionic](https://launchpad.net/ubuntu/bionic),[focal](https://launchpad.net/ubuntu/focal),[hirsute](https://launchpad.net/ubuntu/hirsute),[impish](https://launchpad.net/ubuntu/impish),[jammy](https://launchpad.net/ubuntu/jammy)} 
@@ -773,19 +773,19 @@ SageMath 9.6 supports all [platforms that were supported by Sage 9.5](https://wi
    * ubuntu-bionic
    * [manylinux-2_24](https://github.com/pypa/manylinux#manylinux_2_24-debian-9-based)
    * debian-buster
-   * centos-7⁺ (but docbuild is broken, #32768)
+   * centos-7⁺ (but docbuild is broken, [#32768](https://trac.sagemath.org/ticket/32768))
  * *macOS (Intel)* (x86_64) - with [Homebrew](https://brew.sh/) or without
    * macOS 10.15 (Catalina)
    * macOS 11.x (Big Sur)
-   * macOS 12.x (Monterey) #32855
- * *macOS (Apple Silicon, M1)* #30592
+   * macOS 12.x (Monterey) [#32855](https://trac.sagemath.org/ticket/32855)
+ * *macOS (Apple Silicon, M1)* [#30592](https://trac.sagemath.org/ticket/30592)
    * Building Sage 9.6 from source on Apple Silicon (M1) requires the use of [Homebrew](https://brew.sh/) (recommended) or conda-forge, which package versions of `gfortran` 11 with necessary changes for this platform that are not in a released upstream version of GCC. (The `gfortran` package that comes with Sage is not suitable for the M1.)
    * Make sure that `/usr/local` does not contain an old copy of homebrew (or other software) for x86_64 that you may have copied from an old machine. Homebrew for the M1 is installed in `/opt/homebrew`, not `/usr/local`.
    * Be sure to follow the [README](https://github.com/sagemath/sage/blob/develop/README.md) and the instructions that the `./configure` command issues regarding the installation of system packages from Homebrew or conda.
  * *Cygwin* (x86_64) - see [notes from CI run](https://groups.google.com/g/sage-release/c/GOGWk66zaCQ/m/M_jQiOjaAAAJ)
 
 (On platforms marked with the superscript ⁺, installing optional packages
-is not supported in Sage 9.6; and support for these platforms will be removed in Sage 9.7; see #32074. Upgrade to a newer version of the distribution or at least upgrade  the toolchain (gcc, binutils).)
+is not supported in Sage 9.6; and support for these platforms will be removed in Sage 9.7; see [#32074](https://trac.sagemath.org/ticket/32074). Upgrade to a newer version of the distribution or at least upgrade  the toolchain (gcc, binutils).)
 
 
 ### Availability as binaries

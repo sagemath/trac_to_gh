@@ -38,4 +38,4 @@ The following graph operations are still missing:
 
 Following is a list of tasks that can be done more efficiently than in the current implementation.
 
-* Computing the list of neighbouring vertices efficiently. See ticket #13730.
+* Computing the list of neighbouring vertices efficiently. See ticket [#13730](https://trac.sagemath.org/ticket/13730).

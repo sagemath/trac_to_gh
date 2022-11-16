@@ -3,7 +3,7 @@
 
 The divided power algebra is a Hopf algebra and is the dual Hopf algebra to R[x]. The coproduct on the divided power Hopf algebra is x^k^ |--> x^k^ x 1 + x^k-1^ x x + ... 1 x x^k^ (where I have used x as an indeterminate and as a tensor product symbol).
 
-See ticket #11979
+See ticket [#11979](https://trac.sagemath.org/ticket/11979)
 ---
 
 Attachments:

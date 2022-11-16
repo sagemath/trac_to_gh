@@ -408,7 +408,7 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [InduceSubgraph](http://reference.wolfram.com/mathematica/Combinatorica/ref/InduceSubgraph.html)[g, s] constructs the subgraph of graph g induced by the list of vertices s.
 
  * Interval graph
-   * Sage --- #8284
+   * Sage --- [#8284](https://trac.sagemath.org/ticket/8284)
    * Mathematica --- [IntervalGraph](http://reference.wolfram.com/mathematica/Combinatorica/ref/IntervalGraph.html)[l] constructs the interval graph defined by the list of intervals l.
 
  * Labeled tree to code

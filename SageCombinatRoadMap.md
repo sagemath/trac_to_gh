@@ -18,7 +18,7 @@ for further collaborations).
 | Topic                            |Progress| Comments                      |
 |----------------------------------|--------|-------------------------------|
 | Basic enumerative combinatorics  | 75%    | 2007-08 by Mike               |
-| Decomposable objects / Species   | 75%    | #10662                        |
+| Decomposable objects / Species   | 75%    | [#10662](https://trac.sagemath.org/ticket/10662)                        |
 | Trees                            | 30%    |                               |
 | Posets                           |100%    |                               |
 | Words                            |100%    |                               |
@@ -30,15 +30,15 @@ for further collaborations).
 | Hopf algebra framework           | 80%    |                               |
 | Free modules & such              | 80%    |                               |
 | Algebra (desosseur, ...)         | 50%    |                               |
-| Operads                          | 15%    | #15633, #15634                |
+| Operads                          | 15%    | [#15633](https://trac.sagemath.org/ticket/15633), [#15634](https://trac.sagemath.org/ticket/15634)                |
 | Linbox interface                 |100%    | (compares to 10% in MuPAD)    |
 | GAP interface                    | 80%    | (compares to  1% in MuPAD)    |
 | Interface for fast Gröbner basis |100%    | (compares to  0% in MuPAD)    |
 | Nauty                            |100%    | (compares to 50% in MuPAD     |
 | Symmetrica                       | 60%    |                               |
-| lrcalc                           | 95%    | #10333, #11563, #14107        |
-| GLIP                             | 50%    | #6812                         |
-| graphviz / dot2tex               | 80%    | #7004, #10518                 |
+| lrcalc                           | 95%    | [#10333](https://trac.sagemath.org/ticket/10333), [#11563](https://trac.sagemath.org/ticket/11563), [#14107](https://trac.sagemath.org/ticket/14107)        |
+| GLIP                             | 50%    | [#6812](https://trac.sagemath.org/ticket/6812)                         |
+| graphviz / dot2tex               | 80%    | [#7004](https://trac.sagemath.org/ticket/7004), [#10518](https://trac.sagemath.org/ticket/10518)                 |
 | Database access                  |100%    |                               |
 | MachineIntegerListsLex           |  0%    | Will be easy via cython       |
 | Basic abstract data structures   |100%    | (fast stacks, AVL, dancing links) compares to just the basic ones in MuPAD + no real way to implement some with serious speed ourselves     |
@@ -53,16 +53,16 @@ for further collaborations).
     * #10930 (prototype): specializations for symmetric functions (Martin Rubey, ???)
     * #9558: Make `is_symmetric` method for polynomials or where else useful
   * Multisymmetric Functions (Paul Bryan, Emmanuel Briand)
-  * #11979 (prototype): Divided power algebras (Bruce)
-  * #6629 (prototype) Implement Schubert polynomials (Viviane Pons, AdrienBoussicault, Nicolas Borie)
-  * #6889 (prototype): Invariant rings of permutation group (Nicolas Borie)
+  * [#11979](https://trac.sagemath.org/ticket/11979) (prototype): Divided power algebras (Bruce)
+  * [#6629](https://trac.sagemath.org/ticket/6629) (prototype) Implement Schubert polynomials (Viviane Pons, AdrienBoussicault, Nicolas Borie)
+  * [#6889](https://trac.sagemath.org/ticket/6889) (prototype): Invariant rings of permutation group (Nicolas Borie)
   * Implement more generic algorithms:
     * Antipode defined recursively
     * Product and coproduct defined by duality
     * Group like elements from primitive idempotents
-  * #14901 (prototype): Lie algebras, Kac-Moody algebras, quantum groups (Travis Scrimshaw)
+  * [#14901](https://trac.sagemath.org/ticket/14901) (prototype): Lie algebras, Kac-Moody algebras, quantum groups (Travis Scrimshaw)
   * Planar algebras
-  * Operads (#15633, #15634, basic support, partially depends on #10662) (FlorentHivert, FredericChapoton)
+  * Operads ([#15633](https://trac.sagemath.org/ticket/15633), [#15634](https://trac.sagemath.org/ticket/15634), basic support, partially depends on [#10662](https://trac.sagemath.org/ticket/10662)) (FlorentHivert, FredericChapoton)
 
 * Monoids, algebras, and their representation theory:
   * Finite dimensional algebras:
@@ -85,12 +85,12 @@ for further collaborations).
       http://sourceforge.net/projects/quiverspathalg/
       Authors: Green, Solberg, ...
       Based on Gröbner package GBNP by Cohen and Knopper
-  * Experiment with KBMAG / PLURAL / Letterplace (see #4539) to easily implement
+  * Experiment with KBMAG / PLURAL / Letterplace (see [#4539](https://trac.sagemath.org/ticket/4539)) to easily implement
     algebras like affine nilCoxeter algebra, affine nilTemperley Lieb
     algebra, affine local plactic algebra).
 
 * Root systems, Coxeter groups, Hecke algebras:
-  * #8906 (needs finalization): Optional package for gap3
+  * [#8906](https://trac.sagemath.org/ticket/8906) (needs finalization): Optional package for gap3
   * Integrate/interface PyCox
   * Root systems:
     * Constructing a root/coroot lattice realization from a pair of matrices
@@ -117,38 +117,38 @@ for further collaborations).
   * Implement more models of Crystals?
 
 * Cluster algebras (Christian Stump, Gregg Musiker, Hugh Thomas):
-  * #10819: Implementation of the cluster complex
-  * #11010: Implementation of the SubwordComplex as defined by Knutson and Miller
+  * [#10819](https://trac.sagemath.org/ticket/10819): Implementation of the cluster complex
+  * [#11010](https://trac.sagemath.org/ticket/11010): Implementation of the SubwordComplex as defined by Knutson and Miller
 
   The complete implementation of the core features are merged in Sage-5.9 . A further road map can be found at http://wiki.sagemath.org/combinat/clusteralgebras.
 
 * Modules and vector spaces:
-  * #10673: Roadmap for (Combinatorial)FreeModule
+  * [#10673](https://trac.sagemath.org/ticket/10673): Roadmap for (Combinatorial)FreeModule
   * Tensor products over an algebra, and application to representation theory
-  * #9280 graded algebras
+  * [#9280](https://trac.sagemath.org/ticket/9280) graded algebras
   * Graded morphisms of modules (inverse, adjoint, ...)
 
 * Categories & coercion:
  See also the [Categories Road Map](http://trac.sagemath.org/sage_trac/wiki/CategoriesRoadMap)
- * #10668, #10667: Cleanup support for morphisms
+ * [#10668](https://trac.sagemath.org/ticket/10668), [#10667](https://trac.sagemath.org/ticket/10667): Cleanup support for morphisms
    Nicolas Thiéry, Simon King
  * (prototype) Implement multiparameter morphisms
    This could be extracted and finalized without much work
    Nicolas 
- * #8900 (prototype): Implement multiparameter overloaded functions, with explicit registration
+ * [#8900](https://trac.sagemath.org/ticket/8900) (prototype): Implement multiparameter overloaded functions, with explicit registration
    Nicolas Thiery
 
 * Analytic combinatorics:
- * #10669: MacMahon partition analysis, aka Omega operator (Jason Bandlow, Greg Musiker)
- * #10519 (needs review): Computation of asymptotics for multivariate rational fractions
- * #11515: guessing formulas for sequences (Martin Rubey?)
+ * [#10669](https://trac.sagemath.org/ticket/10669): MacMahon partition analysis, aka Omega operator (Jason Bandlow, Greg Musiker)
+ * [#10519](https://trac.sagemath.org/ticket/10519) (needs review): Computation of asymptotics for multivariate rational fractions
+ * [#11515](https://trac.sagemath.org/ticket/11515): guessing formulas for sequences (Martin Rubey?)
  * automatic summation (Burcin Erocal)
 
 * Posets:
  * Support for lazy/infinite posets
 
 * Enumerative combinatorics
-  * #10662: Improve combinatorial species / decomposable classes
+  * [#10662](https://trac.sagemath.org/ticket/10662): Improve combinatorial species / decomposable classes
   * Refactoring
     * #12955, #12956: let categories override `__getitem__` and `__len__`
     * #12957: Categories for finite (enumerated) sets
@@ -211,9 +211,9 @@ for further collaborations).
     * #11563: Make lrcalc a standard package
     * #12924: SchubertPolynomialRing causes symmetrica and Sage to crash on bad input
     * #12525: SFAHomogeneous does not work with RealField
-  * #11929: Implement quasi-symmetric functions (JasonBandlow, Franco Saliola, Chris Berg, Mike Zabrocki)
-  * #8899: Implement Non Commutative Symmetric Functions (JasonBandlow, Franco Saliola, Chris Berg, LenniTevlin, MikeZabrocki)
-  * #15150: Implement NCSym (Travis Scrimshaw, Mike Zabrocki, Franco Saliola)
+  * [#11929](https://trac.sagemath.org/ticket/11929): Implement quasi-symmetric functions (JasonBandlow, Franco Saliola, Chris Berg, Mike Zabrocki)
+  * [#8899](https://trac.sagemath.org/ticket/8899): Implement Non Commutative Symmetric Functions (JasonBandlow, Franco Saliola, Chris Berg, LenniTevlin, MikeZabrocki)
+  * [#15150](https://trac.sagemath.org/ticket/15150): Implement NCSym (Travis Scrimshaw, Mike Zabrocki, Franco Saliola)
   * Monoids, algebras, and their representation theory:
     * #6654: new features in group algebra category Valentin Feray
     * Free monoids, free groups (#12339), free algebras (see #7797)
@@ -266,7 +266,7 @@ for further collaborations).
     * #6812: Enumerate integer vectors modulo to the action of a Permutation Group (Nicolas Borie)
     * #12250: Combinatorics of k-tableaux and the like (Anne Schilling, Mike Zabrocki)
     * #14141: Implementation of Knutson-Tao puzzles (Franco Saliola, Anne Schilling, Allen Knutson, Avi Dalal)
-  * #11688 graded modules
+  * [#11688](https://trac.sagemath.org/ticket/11688) graded modules
   * Trees:
     * #15121 (a quick way to create trees)
 
@@ -275,29 +275,29 @@ for further collaborations).
     * #11115: Rewrite cached_method in Cython
   * Symmetric functions and generalizations:
     * #10333: An interface to Anders Buch's Littlewood-Richardson Calculator ``lrcalc``
-  * Categories: #9469, #8119, #12527, #12877, #11943
-  * #4539: Plural wrapper for skew commutative Gröbner bases
-  * Coercion: #11250, #11257
-  * Enumerated sets: #11118
-  * Posets: #10998 (Categorification), #12476, #12677, #10670, #11382,
+  * Categories: [#9469](https://trac.sagemath.org/ticket/9469), [#8119](https://trac.sagemath.org/ticket/8119), [#12527](https://trac.sagemath.org/ticket/12527), [#12877](https://trac.sagemath.org/ticket/12877), [#11943](https://trac.sagemath.org/ticket/11943)
+  * [#4539](https://trac.sagemath.org/ticket/4539): Plural wrapper for skew commutative Gröbner bases
+  * Coercion: [#11250](https://trac.sagemath.org/ticket/11250), [#11257](https://trac.sagemath.org/ticket/11257)
+  * Enumerated sets: [#11118](https://trac.sagemath.org/ticket/11118)
+  * Posets: [#10998](https://trac.sagemath.org/ticket/10998) (Categorification), [#12476](https://trac.sagemath.org/ticket/12476), [#12677](https://trac.sagemath.org/ticket/12677), [#10670](https://trac.sagemath.org/ticket/10670), [#11382](https://trac.sagemath.org/ticket/11382),
     #12536 (Linear extensions), #12831 (products)
-  * Modules and vector spaces: #12464, #12484, #12489, #12528
+  * Modules and vector spaces: [#12464](https://trac.sagemath.org/ticket/12464), [#12484](https://trac.sagemath.org/ticket/12484), [#12489](https://trac.sagemath.org/ticket/12489), [#12528](https://trac.sagemath.org/ticket/12528)
   * Root systems:
     * #12667: RootLatticeRealizations: infinite loops while trying to reflect to the positive chamber
     * #10817: Generalized associahedron as a polyhedral complex
     * #6588: Categorification of root systems
-  * Quivers: #10349, #10347
-  * Sphinx, Documentation: #9128, #12717, #12849, #12490
-  * #7980: Implement generic support for parents with (multiple) realizations
+  * Quivers: [#10349](https://trac.sagemath.org/ticket/10349), [#10347](https://trac.sagemath.org/ticket/10347)
+  * Sphinx, Documentation: [#9128](https://trac.sagemath.org/ticket/9128), [#12717](https://trac.sagemath.org/ticket/12717), [#12849](https://trac.sagemath.org/ticket/12849), [#12490](https://trac.sagemath.org/ticket/12490)
+  * [#7980](https://trac.sagemath.org/ticket/7980): Implement generic support for parents with (multiple) realizations
 
 * 2011:
-  * #8702: Fast datastructure for (combinatorial) objects with prototype (clone) design pattern (Florent Hivert)
-  * #11290: Implementation of non-commutative k-Schur functions in the nilCoxeter algebra (Anne Schilling, Chris Berg)
-  * Documentation: #11251, #11282
-  * Debugging, profiling: #11287
-  * Installation: #11296
-  * Posets: #10065, #11293
-  * Combinatorics: #11300, #11301, #11314
+  * [#8702](https://trac.sagemath.org/ticket/8702): Fast datastructure for (combinatorial) objects with prototype (clone) design pattern (Florent Hivert)
+  * [#11290](https://trac.sagemath.org/ticket/11290): Implementation of non-commutative k-Schur functions in the nilCoxeter algebra (Anne Schilling, Chris Berg)
+  * Documentation: [#11251](https://trac.sagemath.org/ticket/11251), [#11282](https://trac.sagemath.org/ticket/11282)
+  * Debugging, profiling: [#11287](https://trac.sagemath.org/ticket/11287)
+  * Installation: [#11296](https://trac.sagemath.org/ticket/11296)
+  * Posets: [#10065](https://trac.sagemath.org/ticket/10065), [#11293](https://trac.sagemath.org/ticket/11293)
+  * Combinatorics: [#11300](https://trac.sagemath.org/ticket/11300), [#11301](https://trac.sagemath.org/ticket/11301), [#11314](https://trac.sagemath.org/ticket/11314)
     * #11742, #11700: Cores (Anne Schilling)
     * #10155: Cyclic sieving phenomenon (Christian Stump)
   * Certainly many more!
@@ -353,18 +353,18 @@ for further collaborations).
     * #8431 (Rauzy fractal (discrete planes and broken lines)
 
 * 2009:
-  * Category framework (#5891, #7251, #7443) (NicolasThiéry, ...)
-  * Cleanup and refactoring of root systems and Coxeter groups (#4326, #4327, #4608, #7753, #7754), Weyl characters (#5794) and crystals (#4311,#5729,#3663, #5002, #5729, #5879) (AnneSchilling, DanBump, NicolasBorie, StevenPon, NicolasThiéry, ...)
-  * Cleanup and refactoring of combinatorics (#4549, #5200, #5308, #5487, #5534, #5551, #5781, #5600, #6000, #7403, #7395, #7396, #7397) (FlorentHivert, NicolasThiéry, ...)
-  * #6136: Implementation of FreeModule / Hopf algebra framework
-  * Refactoring of symmetric functions (#5457, #6137, #7777) (NicolasThiéry, JasonBandlow)
-  * #6138: Refactoring of the SymmetricGroupAlgebra to use categories and free modules
+  * Category framework ([#5891](https://trac.sagemath.org/ticket/5891), [#7251](https://trac.sagemath.org/ticket/7251), [#7443](https://trac.sagemath.org/ticket/7443)) (NicolasThiéry, ...)
+  * Cleanup and refactoring of root systems and Coxeter groups ([#4326](https://trac.sagemath.org/ticket/4326), [#4327](https://trac.sagemath.org/ticket/4327), [#4608](https://trac.sagemath.org/ticket/4608), [#7753](https://trac.sagemath.org/ticket/7753), [#7754](https://trac.sagemath.org/ticket/7754)), Weyl characters ([#5794](https://trac.sagemath.org/ticket/5794)) and crystals ([#4311](https://trac.sagemath.org/ticket/4311),[#5729](https://trac.sagemath.org/ticket/5729),[#3663](https://trac.sagemath.org/ticket/3663), [#5002](https://trac.sagemath.org/ticket/5002), [#5729](https://trac.sagemath.org/ticket/5729), [#5879](https://trac.sagemath.org/ticket/5879)) (AnneSchilling, DanBump, NicolasBorie, StevenPon, NicolasThiéry, ...)
+  * Cleanup and refactoring of combinatorics ([#4549](https://trac.sagemath.org/ticket/4549), [#5200](https://trac.sagemath.org/ticket/5200), [#5308](https://trac.sagemath.org/ticket/5308), [#5487](https://trac.sagemath.org/ticket/5487), [#5534](https://trac.sagemath.org/ticket/5534), [#5551](https://trac.sagemath.org/ticket/5551), [#5781](https://trac.sagemath.org/ticket/5781), [#5600](https://trac.sagemath.org/ticket/5600), [#6000](https://trac.sagemath.org/ticket/6000), [#7403](https://trac.sagemath.org/ticket/7403), [#7395](https://trac.sagemath.org/ticket/7395), [#7396](https://trac.sagemath.org/ticket/7396), [#7397](https://trac.sagemath.org/ticket/7397)) (FlorentHivert, NicolasThiéry, ...)
+  * [#6136](https://trac.sagemath.org/ticket/6136): Implementation of FreeModule / Hopf algebra framework
+  * Refactoring of symmetric functions ([#5457](https://trac.sagemath.org/ticket/5457), [#6137](https://trac.sagemath.org/ticket/6137), [#7777](https://trac.sagemath.org/ticket/7777)) (NicolasThiéry, JasonBandlow)
+  * [#6138](https://trac.sagemath.org/ticket/6138): Refactoring of the SymmetricGroupAlgebra to use categories and free modules
   * Words, ...
-  * Families: #5538, #7208, ... (FlorentHivert)
-  * TestSuites: #6097, #6809, #6343, #7478 (NicolasThiéry)
-  * Technical patches:  #5120, #5405, #5449, #5598, #5783,  #5843, #5920,
+  * Families: [#5538](https://trac.sagemath.org/ticket/5538), [#7208](https://trac.sagemath.org/ticket/7208), ... (FlorentHivert)
+  * TestSuites: [#6097](https://trac.sagemath.org/ticket/6097), [#6809](https://trac.sagemath.org/ticket/6809), [#6343](https://trac.sagemath.org/ticket/6343), [#7478](https://trac.sagemath.org/ticket/7478) (NicolasThiéry)
+  * Technical patches:  [#5120](https://trac.sagemath.org/ticket/5120), [#5405](https://trac.sagemath.org/ticket/5405), [#5449](https://trac.sagemath.org/ticket/5449), [#5598](https://trac.sagemath.org/ticket/5598), [#5783](https://trac.sagemath.org/ticket/5783),  [#5843](https://trac.sagemath.org/ticket/5843), [#5920](https://trac.sagemath.org/ticket/5920),
     #5967, #5979, #5985, #5986, #5991, #6000, #6097, #7420, #7421, #7776, #7928, #7842 (NicolasThiéry, ...)
-  * Partial support for Iwahori Hecke algebras for all types: #7729 (DanielBump, AnneSchilling, NicolasThiéry)
+  * Partial support for Iwahori Hecke algebras for all types: [#7729](https://trac.sagemath.org/ticket/7729) (DanielBump, AnneSchilling, NicolasThiéry)
   * July: [FPSAC'09](http://wiki.sagemath.org/combinat/FPSAC09) (RISC, Linz, Austria)
     * Goal: Most features ported
     * Goal: Most of the research done with Sage-Combinat
@@ -388,20 +388,20 @@ for further collaborations).
 
   * June 19th: Visit of Florent to Davis. Final decision to migrate!
 
-  * May: Fixed several of the Weirdness issues (#3286, JasonBandlow)
+  * May: Fixed several of the Weirdness issues ([#3286](https://trac.sagemath.org/ticket/3286), JasonBandlow)
 
   * Spring, in particular at MSRI (Berkeley, USA):
   * Long discussions within the community about the opportunity to switch
-  * Port of root systems (#2808, #2809, #2864, #2868, #2874, #2964, #3660, #3664, NicolasThiéry, DanBump, JustinWalker, MikeHansen, TomDenton)
-  * Further port and extensions to the crystals library (#2868,#3032,#3417,#3418,#3660, AnneSchilling, DanBump, JustinWalker, BrantJones)
+  * Port of root systems ([#2808](https://trac.sagemath.org/ticket/2808), [#2809](https://trac.sagemath.org/ticket/2809), [#2864](https://trac.sagemath.org/ticket/2864), [#2868](https://trac.sagemath.org/ticket/2868), [#2874](https://trac.sagemath.org/ticket/2874), [#2964](https://trac.sagemath.org/ticket/2964), [#3660](https://trac.sagemath.org/ticket/3660), [#3664](https://trac.sagemath.org/ticket/3664), NicolasThiéry, DanBump, JustinWalker, MikeHansen, TomDenton)
+  * Further port and extensions to the crystals library ([#2868](https://trac.sagemath.org/ticket/2868),[#3032](https://trac.sagemath.org/ticket/3032),[#3417](https://trac.sagemath.org/ticket/3417),[#3418](https://trac.sagemath.org/ticket/3418),[#3660](https://trac.sagemath.org/ticket/3660), AnneSchilling, DanBump, JustinWalker, BrantJones)
   * Basic setup for FreeModule's
   * Posets (FrancoSaliola)
   * Created the '[Weirdness](http://wiki.sagemath.org/combinat/Weirdness)' web page
 
   * February: Sage Days 7 (Los Angeles)
   * Technical experimentation with Sage to see how fit it is for our purposes.
-  * Partial port of the crystals library (#2742, AnneSchilling and NicolasThiéry)
-  * Implementation of Xin's Omega algorithm by Jason and Greg #10669
+  * Partial port of the crystals library ([#2742](https://trac.sagemath.org/ticket/2742), AnneSchilling and NicolasThiéry)
+  * Implementation of Xin's Omega algorithm by Jason and Greg [#10669](https://trac.sagemath.org/ticket/10669)
 
   * January: presentation of MuPAD-Combinat at the AMS meeting in San-Diego; meeting and discussions with the Sage team
 * 2007: Early contacts with Sage

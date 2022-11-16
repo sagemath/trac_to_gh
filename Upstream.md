@@ -17,7 +17,7 @@ See [Surveying the mathematical software landscape](https://trac.sagemath.org/wi
 
 ## Upgrading and updating upstream packages
 
-  * See task ticket #33774
+  * See task ticket [#33774](https://trac.sagemath.org/ticket/33774)
   * The Fedora people have a useful tool to track upstream version changes: https://release-monitoring.org/
   * [repology: sagemath_develop](https://repology.org/projects/?search=&maintainer=&category=&inrepo=sagemath_develop&notinrepo=&repos=&families=&repos_newest=&families_newest=&outdated=on) has much broader coverage.
 

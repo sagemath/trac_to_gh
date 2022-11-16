@@ -143,7 +143,7 @@ Please mark which services still need to find a new home, with the system requir
 
 ## wiki.sagemath.org
   * purpose: the wiki you are reading!
-  * #33725: Migrate wiki.sagemath.org to trac.sagemath.org/wiki
+  * [#33725](https://trac.sagemath.org/ticket/33725): Migrate wiki.sagemath.org to trac.sagemath.org/wiki
   * hosted at: [LIPN (CS lab)](https://lipn.univ-paris13.fr/), University Paris North (Villetaneuse)
   * contact: sagemath-admins`@`googlegroups.com
   * url: https://wiki.sagemath.org

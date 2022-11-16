@@ -11,16 +11,16 @@ Current development cycle (2022)
 
 ### Submodules of tensor modules with prescribed symmetries
 
-The method `FiniteRankFreeModule.tensor_module` now accepts optional arguments `sym`, `antisym`; if given, a submodule of the tensor module spanned by the tensors with these prescribed symmetries is created. #30229
+The method `FiniteRankFreeModule.tensor_module` now accepts optional arguments `sym`, `antisym`; if given, a submodule of the tensor module spanned by the tensors with these prescribed symmetries is created. [#30229](https://trac.sagemath.org/ticket/30229)
 
 The new methods `symmetric_power` and `dual_symmetric_power` provide two important special cases. 
 
 
 ### Free module isomorphisms corresponding to fixed standard bases of tensor modules
 
-Standard bases of tensor modules (and of their new submodules) are now explicit objects.  The `basis` method now works for tensor modules, not just the base module, and returns an instance of a new class `TensorFreeSubmoduleBasis_sym`, which represents the standard basis of a tensor module associated with a basis of the base module. #30229
+Standard bases of tensor modules (and of their new submodules) are now explicit objects.  The `basis` method now works for tensor modules, not just the base module, and returns an instance of a new class `TensorFreeSubmoduleBasis_sym`, which represents the standard basis of a tensor module associated with a basis of the base module. [#30229](https://trac.sagemath.org/ticket/30229)
 
-The method [FiniteRankFreeModule.isomorphism_with_fixed_basis](https://doc.sagemath.org/html/en/reference/tensor_free_modules/sage/tensor/modules/finite_rank_free_module.html?highlight=isomorphism_with#sage.tensor.modules.finite_rank_free_module.FiniteRankFreeModule.isomorphism_with_fixed_basis) now also works for tensor modules (and their submodules). #34427
+The method [FiniteRankFreeModule.isomorphism_with_fixed_basis](https://doc.sagemath.org/html/en/reference/tensor_free_modules/sage/tensor/modules/finite_rank_free_module.html?highlight=isomorphism_with#sage.tensor.modules.finite_rank_free_module.FiniteRankFreeModule.isomorphism_with_fixed_basis) now also works for tensor modules (and their submodules). [#34427](https://trac.sagemath.org/ticket/34427)
 
 For example, we can now send (1,1)-tensors to matrices:
 ```
@@ -83,7 +83,7 @@ Or we can send symmetric bilinear forms to matrices:
 ### Solving polynomial systems using msolve
 
 A new interface to the [msolve](https://msolve.lip6.fr/) library (now available as an optional package) provides efficient tools for solving large polynomial systems.
-#31664, #33734, #34519
+[#31664](https://trac.sagemath.org/ticket/31664), [#33734](https://trac.sagemath.org/ticket/33734), [#34519](https://trac.sagemath.org/ticket/34519)
 
 In particular:
 
@@ -95,7 +95,7 @@ In particular:
 
 ## Polyhedral geometry
 
-The `Polyhedron` constructor offers a new option `backend='number_field'`. #34479
+The `Polyhedron` constructor offers a new option `backend='number_field'`. [#34479](https://trac.sagemath.org/ticket/34479)
 
 It accepts any input data that Sage can convert to a common real embedded algebraic number field.
 The new backend uses this embedded number field internally for the polyhedral representation conversion,
@@ -118,7 +118,7 @@ but the results are converted back to the (common) base ring of the input.
 ```
 The same was previously only possible with `backend='normaliz'`. The new backend does not require the installation of an optional package; but note that `backend='normaliz'` is much faster than `backend='number_field'`.
 
-The `Polyhedron` constructor now can also convert from convex polyhedra represented by some other classes. #14222
+The `Polyhedron` constructor now can also convert from convex polyhedra represented by some other classes. [#14222](https://trac.sagemath.org/ticket/14222)
 
 For example:
 ```
@@ -141,28 +141,30 @@ For example:
 
 ## Number theory
 
-* `CRT_list()` now uses a binary tree instead of folding the input from one side, which can be much faster. #34512
+* `CRT_list()` now uses a binary tree instead of folding the input from one side, which can be much faster. [#34512](https://trac.sagemath.org/ticket/34512)
 
 
 ## New packages and package upgrades
 
-The new optional package [msolve](https://github.com/algebraic-solving/msolve) is an open source C library implementing computer algebra algorithms for solving polynomial systems (with rational coefficients or coefficients in a prime field) using Gröbner bases. `msolve` has been initiated in 2019 and is mainly authored by Jérémy Berthomieu, Christian Eder, and Mohab Safey El Din. The optional package provides version 0.4.4 of `msolve`. #31664, #34519	
+The new optional package [msolve](https://github.com/algebraic-solving/msolve) is an open source C library implementing computer algebra algorithms for solving polynomial systems (with rational coefficients or coefficients in a prime field) using Gröbner bases. `msolve` has been initiated in 2019 and is mainly authored by Jérémy Berthomieu, Christian Eder, and Mohab Safey El Din. The optional package provides version 0.4.4 of `msolve`. [#31664](https://trac.sagemath.org/ticket/31664), [#34519](https://trac.sagemath.org/ticket/34519)	
 
-[Normaliz](https://www.normaliz.uni-osnabrueck.de/), the package for computations in affine monoids, vector configurations, lattice polytopes, and rational cones, has been upgraded to version 3.9.4, which brings new algorithms and many improvements ([release notes](https://github.com/Normaliz/Normaliz/releases)). For computations with algebraic polyhedra, Normaliz uses [e-antic](https://github.com/flatsurf/e-antic/), a library for real embedded number fields, which has been upgraded to the 1.x series. The new version of e-antic has been refactored and now depends on [ANTIC](https://github.com/wbhart/antic), an algebraic number theory library. #31588
+[Normaliz](https://www.normaliz.uni-osnabrueck.de/), the package for computations in affine monoids, vector configurations, lattice polytopes, and rational cones, has been upgraded to version 3.9.4, which brings new algorithms and many improvements ([release notes](https://github.com/Normaliz/Normaliz/releases)). For computations with algebraic polyhedra, Normaliz uses [e-antic](https://github.com/flatsurf/e-antic/), a library for real embedded number fields, which has been upgraded to the 1.x series. The new version of e-antic has been refactored and now depends on [ANTIC](https://github.com/wbhart/antic), an algebraic number theory library. [#31588](https://trac.sagemath.org/ticket/31588)
 
-[TOPCOM](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), the package for computing triangulations of point configurations and oriented matroids, has been upgraded to 1.1.2. #31531
+[TOPCOM](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), the package for computing triangulations of point configurations and oriented matroids, has been upgraded to 1.1.2. [#31531](https://trac.sagemath.org/ticket/31531)
 
-[NumPy](https://numpy.org/) has been updated from 1.22.x to 1.23.3 ([release notes for 1.23](https://numpy.org/devdocs/release/1.23.0-notes.html)). #34110	
+[NumPy](https://numpy.org/) has been updated from 1.22.x to 1.23.3 ([release notes for 1.23](https://numpy.org/devdocs/release/1.23.0-notes.html)). [#34110](https://trac.sagemath.org/ticket/34110)	
 
-Update sympy to 1.11.1, #34118
+[SciPy](https://scipy.org/) has been updated from 1.8.1 to 1.9.2 ([release notes for 1.9](https://scipy.github.io/devdocs/release.1.9.0.html)). [#34081](https://trac.sagemath.org/ticket/34081)
 
-Update igraph, python_igraph to 0.10.x. #34491, #34498, #34680
+Update sympy to 1.11.1, [#34118](https://trac.sagemath.org/ticket/34118)
 
-The `rpy2` package has been upgraded to version 3.4.5. It provides an interface to a suitable system installation of [R](https://www.r-project.org/), versions 3.5 or newer. Sage 9.8 no longer offers a package for installing R itself from source. #34268
+Update igraph, python_igraph to 0.10.x. [#34491](https://trac.sagemath.org/ticket/34491), [#34498](https://trac.sagemath.org/ticket/34498), [#34680](https://trac.sagemath.org/ticket/34680)
 
-Python has been upgraded to 3.10.8; Sage continues to support system Python 3.8.x, 3.9.x, 3.10.x. #34271
+The `rpy2` package has been upgraded to version 3.4.5. It provides an interface to a suitable system installation of [R](https://www.r-project.org/), versions 3.5 or newer. Sage 9.8 no longer offers a package for installing R itself from source. [#34268](https://trac.sagemath.org/ticket/34268)
 
-`Sphinx` has been upgraded from 4.4.x to 5.2.3. #34615
+Python has been upgraded to 3.10.8; Sage continues to support system Python 3.8.x, 3.9.x, 3.10.x. [#34271](https://trac.sagemath.org/ticket/34271)
+
+`Sphinx` has been upgraded from 4.4.x to 5.2.3. [#34615](https://trac.sagemath.org/ticket/34615)
 
 For a list of all packages and their versions, see
  * https://repology.org/projects/?inrepo=sagemath_develop
@@ -174,7 +176,7 @@ For a list of all packages and their versions, see
 
 ### `tox -e docker-...-incremental`
 
-This does an incremental build of Sage on top of a prebuilt image published at ghcr.io (​https://github.com/orgs/sagemath/packages?tab=packages). #34228
+This does an incremental build of Sage on top of a prebuilt image published at ghcr.io (​https://github.com/orgs/sagemath/packages?tab=packages). [#34228](https://trac.sagemath.org/ticket/34228)
 
 For example:
 ```
@@ -184,7 +186,7 @@ $ tox -e docker-fedora-31-standard-incremental
 
 ### `./configure --enable-wheels`
 
-This new option ensures that `venv/var/lib/sage/wheels/` contains up-to-date wheels for all Python packages, including *sagemath-standard* (the Sage library). #32874
+This new option ensures that `venv/var/lib/sage/wheels/` contains up-to-date wheels for all Python packages, including *sagemath-standard* (the Sage library). [#32874](https://trac.sagemath.org/ticket/32874)
 
 The option can be used with or without `--disable-editable`, so there are now 4 modes of installation:
 
@@ -202,7 +204,7 @@ The option can be used with or without `--disable-editable`, so there are now 4 
 
 When Sage is installed from source, it will make use of various system packages; in particular, it will link to shared libraries provided by the system. Indiscriminate upgrades of system packages can break a Sage installation.
 
-This can always be fixed by a full rebuild (`make distclean && make build`), but this time-consuming step can often be avoided by just reinstalling a few packages. The new command `make -j list-broken-packages` assists with this. #34203
+This can always be fixed by a full rebuild (`make distclean && make build`), but this time-consuming step can often be avoided by just reinstalling a few packages. The new command `make -j list-broken-packages` assists with this. [#34203](https://trac.sagemath.org/ticket/34203)
 ```
 $ make -j list-broken-packages
 make --no-print-directory auditwheel_or_delocate-no-deps
@@ -231,7 +233,7 @@ sys	4m0.796s
 
 ### Support for GCC < 8 dropped; C++17 features now available
 
-Sage 9.8 now requires GCC >= 8 (or a recent version of clang). This enables upgrades of various packages to versions that require C++17 language or library features. Developers can now also use C++17 features in the Sage library (this requires use of the directive `# distutils: extra_compile_args = -std=c++17`). #34266
+Sage 9.8 now requires GCC >= 8 (or a recent version of clang). This enables upgrades of various packages to versions that require C++17 language or library features. Developers can now also use C++17 features in the Sage library (this requires use of the directive `# distutils: extra_compile_args = -std=c++17`). [#34266](https://trac.sagemath.org/ticket/34266)
 
 Users of older Linux distributions (in particular, `ubuntu-xenial`
 or older, `debian-stretch` or older, `linuxmint-18` or older, `fedora-28` or older)
@@ -244,7 +246,7 @@ and then use `./configure CC=gcc-8 CXX=g++-8 FC=gfortran-8`
 or similar. See [SAGE_ROOT/build/pkgs/](https://github.com/sagemath/sage/tree/develop/build/pkgs)_gcc8, _gcc9, ... for  distribution-specific information.
 
 Users on `ubuntu` can also install a modern compiler
-toolchain [using the ubuntu-toolchain-r ppa](https://askubuntu.com/questions/1140183/install-gcc-9-on-ubuntu-18-04/1149383#1149383).
+toolchain [using the ubuntu-toolchain-r ppa](https://askubuntu.com/questions/1140183/install-gcc-9-on-ubuntu-18-04/1149383[#11493](https://trac.sagemath.org/ticket/11493)83).
 On `ubuntu-trusty`, also the package `binutils-2.26` is required;
 after installing it, make it available using `export PATH="/usr/lib/binutils-2.26/bin:$PATH"`.  
 
@@ -256,7 +258,7 @@ On other old distributions, if an upgrade to a newer distribution is not possibl
 
 ### Native support for Apple Silicon (M1/M2)
 
-Sage 9.8 ships a copy of GCC 12.x with Apple Silicon support, so it can now be built from source on macOS systems without Homebrew. #33816
+Sage 9.8 ships a copy of GCC 12.x with Apple Silicon support, so it can now be built from source on macOS systems without Homebrew. [#33816](https://trac.sagemath.org/ticket/33816)
 
 
 
