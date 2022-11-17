@@ -53,7 +53,7 @@
 == Bugs == 
 
 |Active bugs ([[TicketQuery(status=new|needs_work|needs_review|needs_info|positive_review,type=defect,format=count)]] tickets) | \
-|-------------------------------------|----------|------------|----------|-----------------------------------------------------|--
+|-------------------------------------|----------|------------|----------|---------------,-----------,-------------------------|--
 | [report:64 by component] | [report:69 by priority]  |
 |Need work ([[TicketQuery(status=needs_work,type=defect,format=count)]] tickets) | \
 | [report:65 by component] | [report:70 by priority] |
@@ -68,7 +68,7 @@
 ## All Tickets
 
 |Active tickets ([[TicketQuery(status=new|needs_work|needs_review|needs_info|positive_review,format=count)]] tickets) | \
-|----------------------------------------|----------|------------|----------|-----------------------------------------|--
+|----------------------------------------|----------|------------|----------|---------------,-------------------------|--
 | [report:17 by component] | [report:92 by time] | [report:3 by milestone]  |                         |
 |Need work ([[TicketQuery(status=needs_work,format=count)]] tickets) | \
 | [report:48 by component] |                     | [report:49 by milestone] |                         |
@@ -83,7 +83,7 @@
 ## Trac Activity (aka leaderboard)
 
 | [report:36 1 month] |
-|---------------------|
+|--------:------------|
 | [report:35 6 months] |
 | [report:45 1 year] |
 | [report:89 All time] |
