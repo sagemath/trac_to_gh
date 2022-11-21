@@ -1,5 +1,5 @@
 
- See also the page on [https://wiki.sagemath.org/Coding_Theory].
+ See also the page on [https://wiki.sagemath.org/Coding_Theory](https://wiki.sagemath.org/Coding_Theory).
 
 This page is meant to provide an overview of developments for Coding Theory in
 Sage. This includes existing trac tickets, with or without code, as well as
@@ -50,7 +50,7 @@ The following is some wishes:
 
 * Information set decoder [#20138](https://trac.sagemath.org/ticket/20138)
 * Non-guava implementation for `covering_radius` [#19913](https://trac.sagemath.org/ticket/19913)
-* Bounds and optimal codes: Not very easy, no support yet. What to do with [[http://codetables.de]]?
+* Bounds and optimal codes: Not very easy, no support yet. What to do with [http://codetables.de](http://codetables.de)(http://codetables.de)?
 * Representing automorphisms of codes. 
   Sage is reasonably good at computing automorphisms of codes with the methods
   `automorphisms_group_gens`, ` permutation_automorphism_group`, and the related

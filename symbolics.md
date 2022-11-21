@@ -3,19 +3,19 @@
 
 
 ## Other Symbolic pages
- * [Symbolic functions](./symbolics/functions)
+ * [Symbolic functions](./symbolics/functions.md)
  * [wiki page](http://wiki.sagemath.org/symbolics) to coordinate work on new symbolics functionality.
- * [wiki:symbolics/maxima] dependencies on maxima
- * [wiki:symbolics/nonzero] solving the zero comparison problem
+ * [symbolics/maxima](./symbolics/maxima.md) dependencies on maxima
+ * [symbolics/nonzero](./symbolics/nonzero.md) solving the zero comparison problem
  * [Pynac](http://pynac.org) bugs are tracked in [the github issue tracker](https://github.com/pynac/pynac/issues).
  * [symbolics/switch_todo](http://wiki.sagemath.org/symbolics/switch_todo) old TODO list for symbolics backend switch to pynac
 
 
 ## Wikipedia links and some papers
- * [https://en.wikipedia.org/wiki/Symbolic_computation]
- * [https://en.wikipedia.org/wiki/Expression_(mathematics)]
- * [https://en.wikipedia.org/wiki/Richardson%27s_theorem]
- * [https://en.wikipedia.org/wiki/Unification_(computer_science)]
+ * [https://en.wikipedia.org/wiki/Symbolic_computation](https://en.wikipedia.org/wiki/Symbolic_computation)
+ * [https://en.wikipedia.org/wiki/Expression_(mathematics)](https://en.wikipedia.org/wiki/Expression_(mathematics))
+ * [https://en.wikipedia.org/wiki/Richardson%27s_theorem](https://en.wikipedia.org/wiki/Richardson%27s_theorem)
+ * [https://en.wikipedia.org/wiki/Unification_(computer_science)](https://en.wikipedia.org/wiki/Unification_(computer_science))
  * [Watt, Making computer algebra more symbolic](https://scholar.google.de/scholar?cluster=16052742886444301118&hl=en&as_sdt=2005&sciodt=0,5)
  * [Watt, What happened to languages for symbolic mathematical computation](https://scholar.google.de/scholar?cluster=13863445001122388860&hl=en&as_sdt=2005&sciodt=0,5)
 
@@ -464,7 +464,7 @@
  * [#20456](https://trac.sagemath.org/ticket/20456) - assume(x>0) sets integer flag
  * [#16491](https://trac.sagemath.org/ticket/16491) - unify output of trigonometric functions for complex input
  * [#14801](https://trac.sagemath.org/ticket/14801) - Improved piecewise functions
- * [#9424](https://trac.sagemath.org/ticket/9424) - numerically evaluate sums (also in [functions page](./symbolics/functions))
+ * [#9424](https://trac.sagemath.org/ticket/9424) - numerically evaluate sums (also in [functions page](./symbolics/functions.md))
  * [#16397](https://trac.sagemath.org/ticket/16397) - symbolic cmp, stopgap [#19465](https://trac.sagemath.org/ticket/19465)
  * [#16203](https://trac.sagemath.org/ticket/16203) - conversion from SR.series() to PowerSeries(SR) gives unexpected result
  * [#15451](https://trac.sagemath.org/ticket/15451) - limit wrongly gives ZeroDivisionError
@@ -524,7 +524,7 @@
  * [#11238](https://trac.sagemath.org/ticket/11238) - Integral bug
  * [#11656](https://trac.sagemath.org/ticket/11656) - additional assumptions needed for simplification
  * [#16941](https://trac.sagemath.org/ticket/16941) - Add a hold parameter for symbolic integrals
- * [#9908](https://trac.sagemath.org/ticket/9908) - a sum returns hypergeometric functions  (also in [functions page](./symbolics/functions))
+ * [#9908](https://trac.sagemath.org/ticket/9908) - a sum returns hypergeometric functions  (also in [functions page](./symbolics/functions.md))
  * [#11894](https://trac.sagemath.org/ticket/11894) - about an infinite sum appearing on NMBRTHRY list.
  * [#12708](https://trac.sagemath.org/ticket/12708) - waiting for new upstream (Maxima) release.
  * [#13712](https://trac.sagemath.org/ticket/13712) - wrong result from infinite sum (Maxima bug).

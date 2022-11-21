@@ -9,7 +9,7 @@
 
 For the full list of open issues specific to 32-bit Cygwin see the [cygwin32 keyword](https://trac.sagemath.org/query?status=needs_info&status=needs_review&status=needs_work&status=new&status=positive_review&keywords=~cygwin32&component=porting%3A+Cygwin&col=id&col=summary&col=component&col=status&col=type&col=priority&col=milestone&order=priority).
 
-*All active work on Cygwin support* is on the 64-bit version which is tracked at [wiki:Cygwin64Port].
+*All active work on Cygwin support* is on the 64-bit version which is tracked at [Cygwin64Port](./Cygwin64Port.md).
 
 ----
 
@@ -21,7 +21,7 @@ As of Sage 5.9.beta4, Sage should build "out of the box" with a Cygwin that has 
  * That we need liblapack-devel and lapack
 We no longer need `SAGE_PORT=yes`, as of this release!
 
-See  [wiki:Cygwin64Port] for the Cygwin64 port and for **current info** on the Cygwin port status.
+See  [Cygwin64Port](./Cygwin64Port.md) for the Cygwin64 port and for **current info** on the Cygwin port status.
 **All further testing/progress will be posted on that page!!
 
  * Below are the list of prerequisites, bug fixes/upgrades needed for Cygwin to build, and doctest tickets for Cygwin

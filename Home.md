@@ -64,7 +64,7 @@ SageMath makes use of many upstream projects, which have their own bug tracking 
 
 ## Following the pulse of development
 
-Follow the [Trac development timeline](https://trac.sagemath.org/timeline) or [active tickets by time](https://trac.sagemath.org/report/92), or view [[ticket reports](./TicketReports|other)].
+Follow the [Trac development timeline](https://trac.sagemath.org/timeline) or [active tickets by time](https://trac.sagemath.org/report/92), or view [[ticket reports](./TicketReports|other.md)].
 
 Help by reviewing [Tickets needing review](https://trac.sagemath.org/report/75) (see  [checklist](https://doc.sagemath.org/html/en/developer/reviewer_checklist.html)).
 
@@ -72,7 +72,7 @@ Catch up on [Open tickets you've participated in](https://trac.sagemath.org/repo
 
 Contribute to the [Release notes for the current development series](https://wiki.sagemath.org/ReleaseTours) by collaborative editing.
 
-Explore the [Open meta-tickets on larger tasks](https://trac.sagemath.org/report/95) or topical pages on [Algebra](./algebra), [Coding Theory](./SageCodingRoadMap), [Combinatorics](./SageCombinatRoadMap), [Manifolds](https://trac.sagemath.org/ticket/30525), [Optimization](https://trac.sagemath.org/ticket/20302), [Polyhedral Geometry](./SagePolyhedralGeometry), [Symbolics](./symbolics).
+Explore the [Open meta-tickets on larger tasks](https://trac.sagemath.org/report/95) or topical pages on [Algebra](./algebra.md), [Coding Theory](./SageCodingRoadMap.md), [Combinatorics](./SageCombinatRoadMap.md), [Manifolds](https://trac.sagemath.org/ticket/30525), [Optimization](https://trac.sagemath.org/ticket/20302), [Polyhedral Geometry](./SagePolyhedralGeometry.md), [Symbolics](./symbolics.md).
 
 Discuss in [sage-devel](https://groups.google.com/g/sage-devel) or one of [our other development groups](https://www.sagemath.org/development-groups.html).
 
@@ -115,7 +115,7 @@ This table is being moved to the Sage developer's guide in [#34526](https://trac
 
 Participate in or help organize [Workshops and other activities](https://wiki.sagemath.org/), or [contribute to the Sage community by answering questions](https://wiki.sagemath.org/contribute/AnswerQuestions).
 
-You can also help maintain the [Technical project infrastructure](./Infrastructure).
+You can also help maintain the [Technical project infrastructure](./Infrastructure.md).
 
 
 ## Additional formatting hints
