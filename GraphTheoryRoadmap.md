@@ -1,19 +1,15 @@
 
 
 
-
 # Graph Theory Roadmap
 
 This page aims at documenting the progress of the Graph Theory component of Sage.
 
-
 # Comparison with other graph theory software
 
-* [[Mathematica Graph Theory |This]] page aims at comparing the features implemented in Mathematica that are missing in Sage.
-
+* [This](Mathematica Graph Theory ) page aims at comparing the features implemented in Mathematica that are missing in Sage.
 
 # Missing features
-
 
 ## Graph constructions
 
@@ -21,18 +17,15 @@ The following (families of) graphs are still to be introduced into Sage:
 
 * ?
 
-
 ## Graph predicates
 
 * Testing if a graph is distance-transitive. See http://mathworld.wolfram.com/Distance-TransitiveGraph.html
-
 
 ## Graph operations
 
 The following graph operations are still missing:
 
 * ?
-
 
 ## Performance improvements
 

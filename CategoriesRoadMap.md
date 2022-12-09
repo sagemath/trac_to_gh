@@ -1,5 +1,6 @@
+# Categories for the working mathematics programmer (status and roadmap)
 
- This page describes the status and roadmap for the category framework
+This page describes the status and roadmap for the category framework
 in Sage
 
 With special thanks to Robert Bradshaw, Volker Braun, Nils Bruin,
@@ -8,7 +9,6 @@ Hivert, Simon King, David Roe, Travis Scrimshaw, William Stein, and so
 many others ... for design discussions. Special kudos go to Simon King
 for all his work on the category infrastructure, in particular toward
 optimizations.
-
 
 ## References
 
@@ -21,7 +21,6 @@ Design discussions:
 - [Discussion on sage-devel, November 2009](http://groups.google.com/group/sage-devel/msg/d4065154e2e8cbd9)
 - Long series of comments on [#10963](https://trac.sagemath.org/ticket/10963)
 - ... TODO ...
-
 
 ## Technical dependencies
 
@@ -37,9 +36,7 @@ Design discussions:
 - misc: [#5449](https://trac.sagemath.org/ticket/5449), [#5598](https://trac.sagemath.org/ticket/5598), [#5967](https://trac.sagemath.org/ticket/5967), [#5979](https://trac.sagemath.org/ticket/5979), [#6000](https://trac.sagemath.org/ticket/6000), [#7251](https://trac.sagemath.org/ticket/7251), [#7259](https://trac.sagemath.org/ticket/7259), [#7420](https://trac.sagemath.org/ticket/7420), [#7421](https://trac.sagemath.org/ticket/7421)
 - cache and memory management: [#15069](https://trac.sagemath.org/ticket/15069), [#13394](https://trac.sagemath.org/ticket/13394), [#13901](https://trac.sagemath.org/ticket/13901), [#15506](https://trac.sagemath.org/ticket/15506), ...
 
-
 ## Original ticket: [#5891](https://trac.sagemath.org/ticket/5891) (2009)
-
 
 ## Typical use cases
 
@@ -47,7 +44,6 @@ Design discussions:
   [#8899](https://trac.sagemath.org/ticket/8899), [#11929](https://trac.sagemath.org/ticket/11929), [#15150](https://trac.sagemath.org/ticket/15150), [#6889](https://trac.sagemath.org/ticket/6889)
 - [#6812](https://trac.sagemath.org/ticket/6812) Enumerate integer list up to the action of a Permutation Group
 - Semigroups (upcoming), [#11111](https://trac.sagemath.org/ticket/11111)
-
 
 ## Categorification tickets
 
@@ -73,7 +69,6 @@ TODO:
 - Move a lot of methods like base_ring, list, ... from Parent,
   Element, SageObject to the categories #????
 
-
 ## Category hierarchy
 
 The current hierarchy includes all the mathematical categories of
@@ -89,7 +84,6 @@ TODO: add link to there + to the category graph
   - Modules (for doctests for __mul__ / __rmul__ / ...)
   - Algebras (for doctests for __mul__ / __rmul__ / ...)
 
-
 ## Functorial constructions
 
 - TensorProducts, Algebras, Quotients, Subquotients, Subobjects,
@@ -99,7 +93,6 @@ TODO: add link to there + to the category graph
 - Graded: [#8881](https://trac.sagemath.org/ticket/8881), [#10963](https://trac.sagemath.org/ticket/10963), [#11688](https://trac.sagemath.org/ticket/11688)
 - Cartesian products: [#8881](https://trac.sagemath.org/ticket/8881), [#16269](https://trac.sagemath.org/ticket/16269), [#10963](https://trac.sagemath.org/ticket/10963), [#15425](https://trac.sagemath.org/ticket/15425)
 - Upcoming: CharacterRings
-
 
 ## Axioms
 
@@ -121,7 +114,6 @@ TODO: add link to there + to the category graph
 - FiniteDimensional: [#10963](https://trac.sagemath.org/ticket/10963), [#11111](https://trac.sagemath.org/ticket/11111)
 - [#15475](https://trac.sagemath.org/ticket/15475) Reenable broken doctests in [#15473](https://trac.sagemath.org/ticket/15473) and [#15476](https://trac.sagemath.org/ticket/15476) when [#10963](https://trac.sagemath.org/ticket/10963) is merged
 
-
 ## Morphisms, homsets
 
 - favor *_generators over gens(): [#15381](https://trac.sagemath.org/ticket/15381)
@@ -139,7 +131,6 @@ TODO: add link to there + to the category graph
   morphisms for possibly different categories (see also [#8900](https://trac.sagemath.org/ticket/8900))
 
 - Defining new inline operators, at least within the sage interpreter
-
 
 ## Handling of the category hierarchy
 
@@ -160,12 +151,10 @@ TODO: add link to there + to the category graph
   As a first step, [#10963](https://trac.sagemath.org/ticket/10963) implements the shortcuts & and | for join
   and meet.
 
-
 ## Containment
 
 - Clarify in the doc and implement systematically the distinction
   between `P in MyCategory()` and `P.is_...()`
-
 
 ## Support for modules and algebras
 
@@ -199,13 +188,11 @@ TODO: add link to there + to the category graph
 
 TODO: reference the related discussions on sage-devel
 
-
 ## Optimization of the infrastructre
 
 - [#11900](https://trac.sagemath.org/ticket/11900), [#11935](https://trac.sagemath.org/ticket/11935):
 - [#15801](https://trac.sagemath.org/ticket/15801): categories over base ring categories
 - [#16296](https://trac.sagemath.org/ticket/16296): Speed improvements for categories with axioms 
-
 
 ## Support for extension types
 
@@ -220,7 +207,6 @@ sage.categories.examples.semigroups_cython for further experiments.
   abstract classes in Cython (Robert Bradshaw: there is no theoretical
   obstructions; just someone needs to take care of it).
 - [#15718](https://trac.sagemath.org/ticket/15718): __init_extra__ for Cython classes
-
 ## Documentation
 
 - Main index page: [#7443](https://trac.sagemath.org/ticket/7443) TODO: refactor it (maybe as in [#16256](https://trac.sagemath.org/ticket/16256)); in
@@ -233,7 +219,6 @@ sage.categories.examples.semigroups_cython for further experiments.
 - Explain category: Autogenerated overview documentation of a
   category: [#16363](https://trac.sagemath.org/ticket/16363)
 - Writing and linking to generic documentation???
-
 
 ## Misc
 

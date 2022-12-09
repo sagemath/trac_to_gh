@@ -1,5 +1,6 @@
+# Roadmap and status report for Coding Theory in Sage
 
- See also the page on [https://wiki.sagemath.org/Coding_Theory](https://wiki.sagemath.org/Coding_Theory).
+See also the page on [https://wiki.sagemath.org/Coding_Theory](https://wiki.sagemath.org/Coding_Theory).
 
 This page is meant to provide an overview of developments for Coding Theory in
 Sage. This includes existing trac tickets, with or without code, as well as
@@ -10,9 +11,7 @@ your names for topics you contributed to or would be interested in contributing
 to (this helps knowing who does what and who to contact for further
 collaborations).
 
-
 # Topics
-
 
 ## Representing Codes
 
@@ -27,7 +26,6 @@ The following is some wishes:
 * Explicit class for binary codes, possibly building on the current Cython implementation.
   Remove all binary code-specific methods from `AbstractLinearCode`. 
 
-
 ## Algebraic Code Families
 
 * Reed--Muller codes
@@ -40,11 +38,9 @@ The following is some wishes:
   * Computation of Riemann-Roch space bases [#22982](https://trac.sagemath.org/ticket/22982)
 
 
-
 ## Other Code Families
 
 * Open a ticket for your favourite code family and add it here.
-
 
 ## Algorithms for generic codes
 
@@ -66,7 +62,6 @@ The following is some wishes:
   in automorphism groups of curves. Perhaps this can serve as a base?
 * TestSet decoding algorithm [#21339](https://trac.sagemath.org/ticket/21339)
 
-
 ## Code Testing, Plotting and Benchmarking
 
 * Benchmarking tool for codes [#20526](https://trac.sagemath.org/ticket/20526), [#20684](https://trac.sagemath.org/ticket/20684), [#20786](https://trac.sagemath.org/ticket/20786). After discussions at
@@ -75,12 +70,10 @@ The following is some wishes:
   inspired by the work in these tickets. That project is meant to supersede
   these tickets.
 
-
 ## Documentation
 
 * Improve coding theory thematic tutorial on writing new structures  [#21361](https://trac.sagemath.org/ticket/21361)
 * Improve the documentation for `HammingCode`  [#21305](https://trac.sagemath.org/ticket/21305)
-
 
 ## General algebra in Sage that is important for coding theory
 
@@ -89,11 +82,9 @@ The following is some wishes:
 * Ring extension support (related to e.g. subfield subcodes) [#21413](https://trac.sagemath.org/ticket/21413)
 * Submodules of `(ZZ/nZZ)^r` (prerequisite for codes over `ZZ/nZZ`) [#6452](https://trac.sagemath.org/ticket/6452)
 
-
 ## Cleanup, Restructuring, Misc bugs
 
 * Clean `LinearCodeFromCheckMatrix` [#19975](https://trac.sagemath.org/ticket/19975) 
-
 
 ## GSoC 2016: Rank metric codes
 Arpit Merchant was the student for this project, with David Lucas and Johan Rosenkilde as mentors.

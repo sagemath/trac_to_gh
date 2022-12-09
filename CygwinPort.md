@@ -1,5 +1,6 @@
+# Information for the port to Cygwin
 
- This page is for tracking working specifically on the 32-bit version of Cygwin.  This work is currently in stasis for a few reasons:
+This page is for tracking working specifically on the 32-bit version of Cygwin.  This work is currently in stasis for a few reasons:
 
 * The number of users with 32-bit versions of Windows is declining.  While we have encountered students with older laptops running 32-bit versions of Windows 7, and would like to be able to support them, chances are in a few years that number will be almost zero, as 32-bit Windows 8 and up is almost unheard of (though also probably not non-existent).
 
@@ -9,10 +10,9 @@
 
 For the full list of open issues specific to 32-bit Cygwin see the [cygwin32 keyword](https://trac.sagemath.org/query?status=needs_info&status=needs_review&status=needs_work&status=new&status=positive_review&keywords=~cygwin32&component=porting%3A+Cygwin&col=id&col=summary&col=component&col=status&col=type&col=priority&col=milestone&order=priority).
 
-*All active work on Cygwin support* is on the 64-bit version which is tracked at [Cygwin64Port](./Cygwin64Port.md).
+*All active work on Cygwin support* is on the 64-bit version which is tracked at [Cygwin64Port](Cygwin64Port).
 
 ----
-
 
 # Archived information for the Cygwin port
 
@@ -21,7 +21,7 @@ As of Sage 5.9.beta4, Sage should build "out of the box" with a Cygwin that has 
  * That we need liblapack-devel and lapack
 We no longer need `SAGE_PORT=yes`, as of this release!
 
-See  [Cygwin64Port](./Cygwin64Port.md) for the Cygwin64 port and for **current info** on the Cygwin port status.
+See  [Cygwin64Port](Cygwin64Port) for the Cygwin64 port and for **current info** on the Cygwin port status.
 **All further testing/progress will be posted on that page!!
 
  * Below are the list of prerequisites, bug fixes/upgrades needed for Cygwin to build, and doctest tickets for Cygwin
@@ -29,9 +29,7 @@ See  [Cygwin64Port](./Cygwin64Port.md) for the Cygwin64 port and for **current i
  * Closed tickets and some other information, like how to mark Cygwin-specific parts in C, is here as well
  * Although below it compares Windows 7 and Windows XP, it is conceivable that the Cygwin version also sometimes has something to do with the problems listed
 
-
 ## Cygwin Build Notes
-
 ### Prerequisites
 These Cygwin packages need to be installed in order for the Sage build to complete.  Eventually, these should be added to prereq, but that would be for when Cygwin is actually supported.
 
@@ -54,7 +52,6 @@ Also, many of these require things like zlib and other included Sage packages, s
    * antispyware programs
    * etc etc etc
 
-
 ### Rebasing
 At any point in the build process (or after), one can get forking problems, related to the fact that Windows can relocate a dynamic library that just called fork() to another place in memory, causing fork() failure (this is a "feature" of the current Cygwin fork() implementation on Win32). To decrease the probability of this happening, you may need to rebase all the Cygwin and Sage DLLs you have so far, i.e. allocate each its own space address to load in (otherwise they compete for the space).
 
@@ -65,10 +62,8 @@ At any point in the build process (or after), one can get forking problems, rela
    * You may also have problems with permissions (getting a message about "is not writable").  [This cyg-apt thread](http://code.google.com/p/cyg-apt/issues/detail?id=8) seems to have several solutions for this.
    * [#14031](https://trac.sagemath.org/ticket/14031) aims to make this process less painful: one would need just run a MSDOS batch file (after closing all the cygwin apps)
 
-
 ### Porting!
 Also, don't forget to `export SAGE_PORT=yes` before starting.
-
 
 ## Build Tickets
  * [#6743](https://trac.sagemath.org/ticket/6743): A metaticket for exactly this, which also points here.  Can be closed when Sage builds out of the box with the prerequisites above. Be aware that exactly what tickets/spkgs are needed depends on which alpha or release you use; read carefully to make sure the spkgs coincide.
@@ -79,15 +74,12 @@ Also, don't forget to `export SAGE_PORT=yes` before starting.
  * [#13806](https://trac.sagemath.org/ticket/13806): complex double build (Win 7 only)
  * [#11635](https://trac.sagemath.org/ticket/11635): NTL (not strictly needed for building, but for starting)
  * [#13954](https://trac.sagemath.org/ticket/13954): GAP
-
 ### Things without tickets
  * in some cases, untarring the Sage source needs to be done with options xopf, not just xf (observed on Win7)
  * Issue with Python 2.6.4 building on Win7 reported.  This seems to no longer be a problem with 2.7.x - see this page's history for previous comments
 
-
 ## Getting Sage to start
  * [#11635](https://trac.sagemath.org/ticket/11635): Also copy "libntl.dll.a -> libntl.dll" (see ticket for why this was split off from the previous one) - [#12104](https://trac.sagemath.org/ticket/12104) is a dup, as it turns out
-
 
 ## Doctest Tickets
  * [#9165](https://trac.sagemath.org/ticket/9165) -- lcalc does not work for elliptic curves on cygwin
@@ -101,7 +93,6 @@ Also, don't forget to `export SAGE_PORT=yes` before starting.
  * [#9174](https://trac.sagemath.org/ticket/9174) -- robert miller's 2-descent is completely broken on cygwin
  * [#9176](https://trac.sagemath.org/ticket/9176) -- various heegner_index errors involving interval arithmetic on cygwin
 
-
 ## Other Tickets
  * [#8854](https://trac.sagemath.org/ticket/8854) -- Sage segfaults on upgrade
  * [#9164](https://trac.sagemath.org/ticket/9164) -- gap.cputime error
@@ -110,21 +101,16 @@ Also, don't forget to `export SAGE_PORT=yes` before starting.
  * [#13351](https://trac.sagemath.org/ticket/13351) -- import lcalc
  * [#13354](https://trac.sagemath.org/ticket/13354) -- autotools and shared libraries
 
-
 ## Closed
   * See [this Trac search](http://trac.sagemath.org/sage_trac/query?status=closed&component=porting%3A+Cygwin&col=id&col=summary&col=component&col=status&col=type&col=priority&col=milestone&order=priority) for closed tickets in the Cygwin component.
-
 
 ## how to mark CYGWIN-specific parts in code
 gcc on CYGWIN defines a variable `__CYGWIN__`. So you can use it to #if(n)def stuff.
 
-
 ## old Cygwin binaries
 (Old) Cygwin prebuilt sage binaries for cygwin are here:  http://sage.math.washington.edu/home/wstein/binaries/cygwin/
 
-
 ## Recent tests
-
 
 ### Testing Sage 5.1.rc1 on Windows 7 64 bits with Cygwin 1.7.15
 Let's put here reports of my WIP. When this is finished, I'll reformat everything in a more proper way.
@@ -155,7 +141,6 @@ Let's put here reports of my WIP. When this is finished, I'll reformat everythin
  * maxima was a pain to build, not sure if that's a local problem, but after the "make" stage, the "make install" stage always failed with fork errors (cannot commit memory...). So I just let the "make" stage finish, rebase my system, and go on with the process, which seems ok (I can ./sage -maxima and compute 1+1)
  * finally sage finished to build but would not start. Just copying libntl.dll.a to libntl.dll was enough (this is [#11635](https://trac.sagemath.org/ticket/11635))
  * some elliptic curve stuff worked ok, but the notebook did not start in the first session (something about an alarm set at 1 second, maybe it was just too slow) and then was ok!
-
 
 ### Testing sage 5.2 on cygwin 1.7.16 on Windows 7 64 bits
 Let's do the same thing as before with updated and freshly installed cygwin/sage, but opening tickets this time in addition to posting the progress here.
@@ -281,10 +266,8 @@ Follow-up tickets:
 * sage.libs.mwrank.mwrank seems dysfunctional. Linking it to a shared version of eclib provided in [#13325](https://trac.sagemath.org/ticket/13325) solves the problem.
 
 
-
 ### Testing Sage 5.4.rc on Windows XP
 So far, following the above instructions, all goes more or less well.  Python still reports missing some bits (_bsddb, _tkinter, bsddb185, gdbm, linuxaudiodev, his, osaudiodev, spwd, and sunaudiodev) and at the very beginning it was missing one of the sqrtl() functions, but `SAGE_PORT=yes` caused it to ignore this.  A missing library to link against (gmp) in cvxopt means that one doesn't build (this is now [#13799](https://trac.sagemath.org/ticket/13799)), but everything else does with all the above.  And Sage starts, and import ecl works with the appropriate ticket above.  A number of doctest errors, at least some of which seem to be due to forking problems, still exist.
-
 
 
 ### Testing Sage 5.5.rc0 on Windows XP
@@ -298,7 +281,6 @@ I'm going to try this with the spkgs from:
 If all goes well, I'll update [#6743](https://trac.sagemath.org/ticket/6743) appropriately.
 
 
-
 ### Testing Sage 5.5.rc0 on Windows 7 (64 bits)
 I'm going the same with the spkgs from:
  * [#11635](https://trac.sagemath.org/ticket/11635) (NTL)
@@ -308,7 +290,6 @@ I'm going the same with the spkgs from:
  * [#13325](https://trac.sagemath.org/ticket/13325) (eclib)
  * [#13319](https://trac.sagemath.org/ticket/13319) (Python, based on [#13631](https://trac.sagemath.org/ticket/13631))
  * [#12173](https://trac.sagemath.org/ticket/12173) (FLINT)
-
 
 ### Testing Sage 5.5.rc1 on Windows 7 (64 bits)
 I'm testing to build Sage-5.5.rc1 on a minimal Cygwin install on 64 bits Windows 7 with:
@@ -351,7 +332,6 @@ About Cygwin packages:
 * R actually wants iconv.h so I've installed Cygwin's libiconv package (ie the "devel" package not installed by default) and see if its now good enough. And it seems good enough, so either we build our own iconv or prereq iconv-devel, I mean libiconv package... And by the way it does not seem gd module still needs iconv as stated in [#7319](https://trac.sagemath.org/ticket/7319)
 * The new Gap spkg request a static GMP, too bad. See [#13954](https://trac.sagemath.org/ticket/13954).
 
-
 ### Testing Sage 5.6.beta2 on Windows XP
  * [#11635](https://trac.sagemath.org/ticket/11635) (NTL)
  * [#13324](https://trac.sagemath.org/ticket/13324) and [#9167](https://trac.sagemath.org/ticket/9167) (ECL)
@@ -368,7 +348,6 @@ Experience:
  * Failure to even start building Sage library due to Python forking errors.  After rebasing, the polybori being gone caused a different error (since `$SAGE_LOCAL/share/polybori/flags.conf` were missing) but then forking errors anyway.  Other experiments indicate the polybori error was a red herring and things would have gone wrong anyway.  So at this point I can't go any further.
  * But then starting from scratch _without_ `SAGE_CHECK=yes` but the same packages worked fine, except the GAP problem which led to a built Sage!  Which still won't start, see JP's attempt below as well as [#13954](https://trac.sagemath.org/ticket/13954).
  * And using the package from [#13954](https://trac.sagemath.org/ticket/13954) resulted in a functional Sage!
-
 
 
 ### Testing Sage 5.6.rc0 on 64 bits Windows 7
@@ -493,7 +472,6 @@ and I was able to build Sage! only rebasing when building the sage library itsel
 And with [#9167](https://trac.sagemath.org/ticket/9167) the doc completely builds (and I'll be able to import ecl and maxima).
 
 
-
 ### Testing Sage 5.7.beta1 on 64 bits Windows 7
 * I've explicitely uninstalled file.
 * there really is a problem with singular, see [#14033](https://trac.sagemath.org/ticket/14033)
@@ -509,7 +487,6 @@ build/temp.cygwin-1.7.17-i686-2.7/sage/libs/gap/util.o: In function `__pyx_f_4sa
 * needs a rebase when building the doc, then finished successfully.
 * now running "make ptest" (expecting some failures as I did not take care of [#13960](https://trac.sagemath.org/ticket/13960) or [#9176](https://trac.sagemath.org/ticket/9176) and surely others).
 
-
 ### Testing Sage 5.7.beta2 on 32 bits Windows 7
 * This time file got pulled in because I installed procps to have top.
 * Also installed the lapack packages, the gcc, g++ and gfortran ones, m4, make, binutils, perl.
@@ -523,17 +500,14 @@ build/temp.cygwin-1.7.17-i686-2.7/sage/libs/gap/util.o: In function `__pyx_f_4sa
   * gfortran troubles, have to investigate.
   * cython trouble, have to investigate.
 
-
 ### Testing Sage 5.7.beta4 on 64 bits Windows 7
 * Applied [#14038](https://trac.sagemath.org/ticket/14038), [#14033](https://trac.sagemath.org/ticket/14033), [#13351](https://trac.sagemath.org/ticket/13351), [#13960](https://trac.sagemath.org/ticket/13960), [#14118](https://trac.sagemath.org/ticket/14118) and used GCC 4.7.2 optional spkg.
 * Built successfully and starts.
 * Ive cleaned up my rebase database and rebased everything and it seems most of the remaining fork errors I had last time are gone.
 
-
 ### Testing Sage 5.9.beta2 on 32 bits Windows 7
 * I launched the build yesterday night and found it back this morning having installed most of the spkg, it just failed during compilation of the Sage library because of a fork error, that was expected. So to summarize, great news!
 * Cygwin has recently (early 2013) integrated Python 2.7 which happens to be the same version that Sage ships. That's a problem because on Cygwin libpython2.7.dll is installed in the "bin" directory and we don't include it in LD_LIBRARY_PATH. That would not be a problem because most of Cygwin dll system uses the PATH var where "bin" is present, but dlopen  does not use PATH, so the _ctypes module of python which uses it to load libpython sees an empty LD_LIBRARY_PATH, then looks for default dirs, which point to /usr/lib,bin, and if you have a system wide python 2.7 installed, loads the libpython2.7 from there at a different address than the initial libpython loaded by Sage's python initially. And then when you try to fork(), Cygwin whines because it's using the dlopened libpython, but the libraries loaded during fork use PATH which points to the Sage's libpython (already loaded once, but whatever), so the base address are different and BOOM (not that this base address conflict is not a problem for dlopen at first...). This is now [#14380](https://trac.sagemath.org/ticket/14380)/
-
 
 ### Testing Sage 5.9.beta5 on 32 bits Windows XP running under Virtualbox 4.1.18 on 64 bits Debian sid/experimental
 * Still had to set SAGE_PORT because of broken [#14406](https://trac.sagemath.org/ticket/14406), should be fixed in [#14447](https://trac.sagemath.org/ticket/14447).

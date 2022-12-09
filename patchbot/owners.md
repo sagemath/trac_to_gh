@@ -1,5 +1,6 @@
+# SageMath patchbots and their owners
 
- Please register patchbots below, giving contact details
+Please register patchbots below, giving contact details
 (e.g. a Sage Trac username) for the owner of each patchbot.
 
 This helps contact the owner when a patchbot is stuck.
@@ -49,7 +50,7 @@ zorn                    agd
 44e979ad077a            embray (docker installation)
 ```
 
-Instructions for running a patchbot are on the [[patchbot]] page of this wiki.
+Instructions for running a patchbot are on the [patchbot](patchbot) page of this wiki.
 
 When running a patchbot, its name is defined by the `HOSTNAME`
 environment variable. To check what name your patchbot will have,

@@ -1,20 +1,16 @@
-[[PageOutline]]
-
+[This is the Trac macro *PageOutline* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PageOutline-macro)
 
 # Sage 9.8 Release Tour
 
 Current development cycle (2022)
 
-
 ## Linear algebra
-
 
 ### Submodules of tensor modules with prescribed symmetries
 
 The method `FiniteRankFreeModule.tensor_module` now accepts optional arguments `sym`, `antisym`; if given, a submodule of the tensor module spanned by the tensors with these prescribed symmetries is created. [#30229](https://trac.sagemath.org/ticket/30229)
 
 The new methods `symmetric_power` and `dual_symmetric_power` provide two important special cases. 
-
 
 ### Free module isomorphisms corresponding to fixed standard bases of tensor modules
 
@@ -76,9 +72,7 @@ Or we can send symmetric bilinear forms to matrices:
             [3 5 6]
 ```
 
-
 ## Commutative algebra
-
 
 ### Solving polynomial systems using msolve
 
@@ -91,7 +85,6 @@ In particular:
 * The `variety` method supports computing real or complex solutions of zero-dimensional polynomial systems over the rational numbers using msolve.
 
 (Some of these features use probabilistic algorithms.)
-
 
 ## Polyhedral geometry
 
@@ -138,11 +131,9 @@ For example:
 ```
 
 
-
 ## Number theory
 
 * `CRT_list()` now uses a binary tree instead of folding the input from one side, which can be much faster. [#34512](https://trac.sagemath.org/ticket/34512)
-
 
 ## New packages and package upgrades
 
@@ -170,9 +161,7 @@ For a list of all packages and their versions, see
  * https://repology.org/projects/?inrepo=sagemath_develop
 
 
-
 ## New tools for developers
-
 
 ### `tox -e docker-...-incremental`
 
@@ -182,7 +171,6 @@ For example:
 ```
 $ tox -e docker-fedora-31-standard-incremental
 ```
-
 
 ### `./configure --enable-wheels`
 
@@ -197,7 +185,6 @@ The option can be used with or without `--disable-editable`, so there are now 4 
 - `./configure --disable-editable`: Sage installs sagemath-standard using the legacy `setup.py install` command. For any source changes to take effect, use `sage -b` or `make build`. No wheel is available; to build a wheel once, use `make wheels`.
 
 - `./configure --disable-editable --enable-wheels`: Sage builds a wheel for sagemath-standard and installs the wheel. 
-
 
 
 ### `make -j list-broken-packages`
@@ -227,9 +214,7 @@ user	4m54.270s
 sys	4m0.796s
 ```
 
-
 ## Configuration changes
-
 
 ### Support for GCC < 8 dropped; C++17 features now available
 
@@ -255,22 +240,18 @@ toolchain [using Redhat's devtoolset](https://stackoverflow.com/a/67212990/55793
 
 On other old distributions, if an upgrade to a newer distribution is not possible, users can try to use `./configure --without-system-gcc`. Then Sage will attempt to build its own copy of GCC using the available system GCC. We no longer test such system configurations, so this may or may not work.
 
-
 ### Native support for Apple Silicon (M1/M2)
 
 Sage 9.8 ships a copy of GCC 12.x with Apple Silicon support, so it can now be built from source on macOS systems without Homebrew. [#33816](https://trac.sagemath.org/ticket/33816)
 
 
-
 ## Availability of Sage 9.8 and installation help
 
-The first development release, 9.8.beta0, was tagged on 2022-09-25. The current development release is 9.8.beta3, tagged on 2022-10-30.
-
+The first development release, 9.8.beta0, was tagged on 2022-09-25. The current development release is 9.8.beta4, tagged on 2022-11-21.
 
 ### Sources
 
 The Sage source code is available in the [sage git repository](https://github.com/sagemath/sage/tree/develop).
-
 
 ## More details
 

@@ -1,13 +1,12 @@
+# Sage Days 32 High Priority Wishlist
 
- Check out
+Check out
 
    http://trac.sagemath.org/sage_trac/report/42?asc=1&sort=status&USER=was
 
 It's all the tickets with sd32 in their keyword field (thus everything below). You can interactively sort by status, component, etc.!    The stuff below is constantly out of date.
 
-
 ## Super-duper High Priority
-
 
 ### Super-duper High Priority: Startup time
   * [#8254](https://trac.sagemath.org/ticket/8254) - needs_work
@@ -24,11 +23,9 @@ It's all the tickets with sd32 in their keyword field (thus everything below). Y
   * [the Sage forker](https://github.com/jasongrout/sage-forker)
   * [this article](http://artificialcode.blogspot.com/2009/04/short-circuiting-python-module-lookup.html)
 
-
 ### Super-duper High Priority: Porting Sage to ppc64
 
   * [#11705](https://trac.sagemath.org/ticket/11705) - new Port Sage to Power 7 (ppc64) -- there is a machine "silius" on skynet that should be used for this.  Only problem is building Maxima...
-
 
 ## High Priority
 
@@ -38,7 +35,6 @@ It's all the tickets with sd32 in their keyword field (thus everything below). Y
  * latest jmol source (also [#9238](https://trac.sagemath.org/ticket/9238) - needs_review)
  * [#6329](https://trac.sagemath.org/ticket/6329) - needs_review optional doctest failure -- breakage in the sage<-->magma
  * [#10975](https://trac.sagemath.org/ticket/10975) - positive_review creation of certain prime finite fields is double dog slow
-
 
 ## Medium Priority
 
@@ -87,7 +83,6 @@ It's all the tickets with sd32 in their keyword field (thus everything below). Y
  * [#6743](https://trac.sagemath.org/ticket/6743) - new; make more progress on making Sage build automatically on Cygwin
  * [#4260](https://trac.sagemath.org/ticket/4260) - needs_work; use LinBox as native matrix representation for dense matrices over GF(p)
  * [#9562](https://trac.sagemath.org/ticket/9562) - needs_review; add M4RIE to Sage (== fast linear algebra over `GF(2^n)` for n in 2..10
-
 
 ## Lower Priority (not from sponsor)
 

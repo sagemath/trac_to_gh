@@ -1,5 +1,6 @@
+Problem: if you have any sort of activity on a ticket, you become subscribed to the notifications for that ticket and cannot unsubscribe.
 
- Even if your only action was to un-cc yourself after some other user cc-ed you!
+Even if your only action was to un-cc yourself after some other user cc-ed you!
 
 So if you were cc-ed on a ticket you never modified, and want to be un-cc-ed, you'd better ask someone to un-cc you than do it yourself.
 

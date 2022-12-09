@@ -1,7 +1,6 @@
 
 
 
-
 # Graph theory features in Mathematica and Sage
 
 Attached is a spreadsheet listing the Sage graph library functions and the equivalent functions in Combinatorica.  I've also put a few notes in about the implementation differences and other notes suggesting changes to Sage functions.
@@ -9,9 +8,7 @@ Attached is a spreadsheet listing the Sage graph library functions and the equiv
 In the following list, I tried to make the functions link to the official documentation at the Wolfram website.  I hope it all worked right.
 
 
-
 ## Construction and representations
-
 
 
 ### Graphs and components
@@ -19,60 +16,59 @@ In the following list, I tried to make the functions link to the official docume
 
  * Edges
    * Sage
-     * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edge_iterator graphs.generic_graph.GenericGraph]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edge_iterator edge_iterator]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edges edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.multiple_edges multiple_edges]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend graphs.base.sparse_graph.SparseGraphBackend]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_edges iterator_edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_in_edges iterator_in_edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_out_edges iterator_out_edges]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend graphs.base.dense_graph.DenseGraphBackend]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_edges iterator_edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_in_edges iterator_in_edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_out_edges iterator_out_edges]
+     * [graphs.generic_graph.GenericGraph](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edge_iterator)
+       * [edge_iterator](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edge_iterator)
+       * [edges](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.edges)
+       * [multiple_edges](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.multiple_edges)
+     * [graphs.base.sparse_graph.SparseGraphBackend](http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend)
+       * [iterator_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_edges)
+       * [iterator_in_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_in_edges)
+       * [iterator_out_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html#sage.graphs.base.sparse_graph.SparseGraphBackend.iterator_out_edges)
+     * [graphs.base.dense_graph.DenseGraphBackend](http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend)
+       * [iterator_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_edges)
+       * [iterator_in_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_in_edges)
+       * [iterator_out_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html#sage.graphs.base.dense_graph.DenseGraphBackend.iterator_out_edges)
    * Mathematica --- [Edges](http://reference.wolfram.com/mathematica/Combinatorica/ref/Edges.html)[g] gives the list of edges in g. 
 
  * Graph
    * Sage
-     * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html generic graphs]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/graph.html undirected graphs]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/digraph.html directed graphs]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html fast compiled graphs]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html fast sparse graphs]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html fast dense graphs]
+     * [generic graphs](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html)
+     * [undirected graphs](http://www.sagemath.org/doc/reference/sage/graphs/graph.html)
+     * [directed graphs](http://www.sagemath.org/doc/reference/sage/graphs/digraph.html)
+     * [fast compiled graphs](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html)
+     * [fast sparse graphs](http://www.sagemath.org/doc/reference/sage/graphs/base/sparse_graph.html)
+     * [fast dense graphs](http://www.sagemath.org/doc/reference/sage/graphs/base/dense_graph.html)
    * Mathematica --- [Graph](http://reference.wolfram.com/mathematica/Combinatorica/ref/Graph.html)[e, v, opts] represents a graph object where e is the list of edges annotated with graphics options, v is a list of vertices annotated with graphics options, and opts is a set of global graph options.
 
  * Number of edges
    * Sage
-     * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph graphs.generic_graph.GenericGraph]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.num_edges num_edges]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.size size]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend graphs.base.c_graph.CGraphBackend]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.num_edges num_edges]
+     * [graphs.generic_graph.GenericGraph](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph)
+       * [num_edges](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.num_edges)
+       * [size](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.size)
+     * [graphs.base.c_graph.CGraphBackend](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend)
+       * [num_edges](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.num_edges)
    * Mathematica --- [M](http://reference.wolfram.com/mathematica/Combinatorica/ref/M.html)[g] gives the number of edges in the graph g. 
 
  * Number of vertices
    * Sage
-     * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph graphs.generic_graph.GenericGraph]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.num_verts num_verts]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.order order]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend graphs.base.c_graph.CGraphBackend]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.num_verts num_verts]
+     * [graphs.generic_graph.GenericGraph](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph)
+       * [num_verts](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.num_verts)
+       * [order](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.order)
+     * [graphs.base.c_graph.CGraphBackend](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend)
+       * [num_verts](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.num_verts)
    * Mathematica --- [V](http://reference.wolfram.com/mathematica/Combinatorica/ref/V.html)[g] gives the order or number of vertices of the graph g.
 
  * Vertices
    * Sage
-     * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph graphs.generic_graph.GenericGraph]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.vertex_iterator vertex_iterator]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.vertices vertices]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraph graphs.base.c_graph.CGraph]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraph.verts verts]
-     * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend graphs.base.c_graph.CGraphBackend]
-       * [http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.iterator_verts iterator_verts]
+     * [graphs.generic_graph.GenericGraph](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph)
+       * [vertex_iterator](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.vertex_iterator)
+       * [vertices](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html#sage.graphs.generic_graph.GenericGraph.vertices)
+     * [graphs.base.c_graph.CGraph](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraph)
+       * [verts](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraph.verts)
+     * [graphs.base.c_graph.CGraphBackend](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend)
+       * [iterator_verts](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.iterator_verts)
    * Mathematica --- [Vertices](http://reference.wolfram.com/mathematica/Combinatorica/ref/Vertices.html)[g] gives the coordinates of each vertex of graph g embedded in a plane.
    
-
 
 ### Graph representations
 
@@ -112,7 +108,6 @@ In the following list, I tried to make the functions link to the official docume
  * To unordered pairs
    * Sage ---
    * Mathematica --- [ToUnorderedPairs](http://reference.wolfram.com/mathematica/Combinatorica/ref/ToUnorderedPairs.html)[g] constructs a list of unordered pairs representing the edges of graph g. Each edge, directed or undirected, results in a pair in which the smaller vertex appears first. An option called Type that takes on values All or Simple can be used, and All is the default value. Type -> Simple ignores multiple edges and self-loops in g.
-
 
 
 ### Displaying graphs
@@ -293,7 +288,6 @@ In the following list, I tried to make the functions link to the official docume
  * Zoom
    * Sage ---   
    * Mathematica --- [Zoom](http://reference.wolfram.com/mathematica/Combinatorica/ref/Zoom.html)[{i, j, k, ...}] is a value that the [PlotRange](http://reference.wolfram.com/mathematica/Combinatorica/ref/PlotRange.html) option can take on in [ShowGraph](http://reference.wolfram.com/mathematica/Combinatorica/ref/ShowGraph.html). Setting [PlotRange](http://reference.wolfram.com/mathematica/Combinatorica/ref/PlotRange.html) to this value zooms the display to contain the specified subset of vertices, i, j, k, ....
-
 
 
 ### Constructing graphs
@@ -524,7 +518,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [VertexCoverQ](http://reference.wolfram.com/mathematica/Combinatorica/ref/VertexCoverQ.html)[g, c] yields True if the vertices in list c define a vertex cover of graph g.
 
 
-
 ### Input and output
 
 
@@ -535,7 +528,6 @@ In the following list, I tried to make the functions link to the official docume
  * Write graph
    * Sage ---
    * Mathematica --- [WriteGraph](http://reference.wolfram.com/mathematica/Combinatorica/ref/WriteGraph.html)[g, f] writes graph g to file f using an edge list representation.
-
 
 
 ### Built-in graphs
@@ -718,9 +710,7 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [Wheel](http://reference.wolfram.com/mathematica/Combinatorica/ref/Wheel.html)[n] constructs a wheel on n vertices, which is the join of CompleteGraph[1] and Cycle[n-1].
 
 
-
 ## Graph algorithms
-
 
 
 ### Shortest paths
@@ -730,8 +720,8 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [AllPairsShortestPath](http://reference.wolfram.com/mathematica/Combinatorica/ref/AllPairsShortestPath.html)[g] gives a matrix, where the `(i,j)^(th)` entry is the length of a shortest path in g  between vertices i  and j.
 
  * Bellman-Ford algorithm
-    * Sage --- #8714
-    * Mathematica --- [http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html BellmanFord][g, v] gives a shortest-path spanning tree and associated distances from vertex v of graph g. The shortest-path spanning tree is given by a list in which element i is the predecessor of vertex i in the shortest-path spanning tree. [http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html BellmanFord] works correctly even when the edge weights are negative, provided there are no negative cycles.
+    * Sage --- [#8714](https://trac.sagemath.org/ticket/8714)
+    * Mathematica --- [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html)[g, v] gives a shortest-path spanning tree and associated distances from vertex v of graph g. The shortest-path spanning tree is given by a list in which element i is the predecessor of vertex i in the shortest-path spanning tree. [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) works correctly even when the edge weights are negative, provided there are no negative cycles.
 
  * Diameter
    * Sage ---
@@ -770,7 +760,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [ShortestPath](http://reference.wolfram.com/mathematica/Combinatorica/ref/ShortestPath.html)[g, start, end] finds a shortest path between vertices start and end in graph g.
 
 
-
 ### Minimum spanning trees
 
 
@@ -807,7 +796,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [UnionSet](http://reference.wolfram.com/mathematica/Combinatorica/ref/UnionSet.html)[a, b, s] merges the sets containing a and b in union-find data structure s.
 
 
-
 ### Network flow
 
 
@@ -818,7 +806,6 @@ In the following list, I tried to make the functions link to the official docume
  * Residual flow graph
    * Sage ---
    * Mathematica --- [ResidualFlowGraph](http://reference.wolfram.com/mathematica/Combinatorica/ref/ResidualFlowGraph.html)[g, flow] returns the directed residual flow graph for graph g with respect to flow.
-
 
 
 ### Matching
@@ -849,7 +836,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [StableMarriage](http://reference.wolfram.com/mathematica/Combinatorica/ref/StableMarriage.html)[mpref, fpref] finds the male optimal stable marriage defined by lists of permutations describing male and female preferences.
 
 
-
 ### Graph traversals
 
 
@@ -860,7 +846,6 @@ In the following list, I tried to make the functions link to the official docume
  * Depth-first search
    * Sage --- [depth_first_search](http://www.sagemath.org/doc/reference/sage/graphs/base/c_graph.html#sage.graphs.base.c_graph.CGraphBackend.depth_first_search)
    * Mathematica --- [DepthFirstTraversal](http://reference.wolfram.com/mathematica/Combinatorica/ref/DepthFirstTraversal.html)[g, v] performs a depth-first traversal of graph g starting from vertex v, and gives a list of vertices in the order in which they were encountered. 
-
 
 
 ### Partial orders
@@ -935,7 +920,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica [TransitiveReduction](http://reference.wolfram.com/mathematica/Combinatorica/ref/TransitiveReduction.html)[g] finds a smallest graph that has the same transitive closure as g.
 
 
-
 ### Graph isomorphism
 
 
@@ -980,9 +964,7 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [SelfComplementaryQ](http://reference.wolfram.com/mathematica/Combinatorica/ref/SelfComplementaryQ.html)[g] yields True if graph g is self-complementary, meaning it is isomorphic to its complement.
 
 
-
 ## Graph properties
-
 
 
 ### Degrees
@@ -1017,7 +999,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [Spectrum](http://reference.wolfram.com/mathematica/Combinatorica/ref/Spectrum.html)[g] gives the eigenvalues of graph g.
 
 
-
 ### Miscellaneous
 
 
@@ -1048,7 +1029,6 @@ In the following list, I tried to make the functions link to the official docume
  * Number of necklaces
    * Sage ---
    * Mathematica --- [NumberOfNecklaces](http://reference.wolfram.com/mathematica/Combinatorica/ref/NumberOfNecklaces.html) [n, nc, Cyclic] returns the number of distinct ways in which an n-bead necklace can be colored with nc colors, assuming that two colorings are equivalent if one can be obtained from the other by a rotation. 
-
 
 
 ### Cycles and connectivity
@@ -1143,7 +1123,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [WeaklyConnectedComponents](http://reference.wolfram.com/mathematica/Combinatorica/ref/WeaklyConnectedComponents.html)[g] gives the weakly connected components of directed graph g as lists of vertices.
 
 
-
 ### Graph coloring
 
 
@@ -1192,7 +1171,6 @@ In the following list, I tried to make the functions link to the official docume
    * Mathematica --- [VertexColoring](http://reference.wolfram.com/mathematica/Combinatorica/ref/VertexColoring.html)[g] uses Brelaz's heuristic to find a good, but not necessarily minimal, vertex coloring of graph g. An option Algorithm that can take on the values Brelaz or Optimum is allowed. The setting Algorithm -> Brelaz is the default, while the setting Algorithm -> Optimum forces the algorithm to do an exhaustive search to find an optimum vertex coloring.
 
 
-
 ### Graph predicates
 
 
@@ -1239,7 +1217,6 @@ In the following list, I tried to make the functions link to the official docume
  * Unweighted q
    * Sage ---
    * Mathematica --- [UnweightedQ](http://reference.wolfram.com/mathematica/Combinatorica/ref/UnweightedQ.html)[g] yields True if all edge weights are 1 and False otherwise.
-
 
 
 

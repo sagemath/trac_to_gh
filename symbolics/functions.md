@@ -1,6 +1,5 @@
 Sage is missing symbolic definitions for many special functions that we are capable of evaluating numerically. Some of these are even provided in symbolic form by Maxima.
 
-
 ## Tips for implementing new functions
  * Implementing a symbolic function involves subclassing `sage.symbolic.function.BuiltinFunction` and defining most or all of the following:
    * Custom evaluation (`_eval_`)
@@ -12,7 +11,6 @@ Sage is missing symbolic definitions for many special functions that we are capa
  * See [sage.functions.other.Function_gamma_inc](http://git.sagemath.org/sage.git/tree/src/sage/functions/other.py#n856) or [sage.functions.trig.Function_cot](http://git.sagemath.org/sage.git/tree/src/sage/functions/trig.py#n330) for examples.
  * regarding the maxima(_lib) interfaces see also http://trac.sagemath.org/ticket/16671#comment:6
  * ticket [#17130](https://trac.sagemath.org/ticket/17130) added code that makes `_eval_` and `_evalf_` much simpler, see [#12455](https://trac.sagemath.org/ticket/12455) or [#17151](https://trac.sagemath.org/ticket/17151) for example
-
 
 ## Tickets related to improving an existing function or implementing a new one
 
@@ -62,7 +60,6 @@ Sage is missing symbolic definitions for many special functions that we are capa
  * [#24604](https://trac.sagemath.org/ticket/24604) No evaluation with some functions
  * [#24861](https://trac.sagemath.org/ticket/24861) Formal diff (Option to hold for derivative)
 
-
 ## other symbolic function tickets
  * [#12449](https://trac.sagemath.org/ticket/12449) - symbolic functions on basic types improvements
  * [#14270](https://trac.sagemath.org/ticket/14270) - remove deprecated function-call syntax
@@ -76,7 +73,6 @@ Sage is missing symbolic definitions for many special functions that we are capa
  * [#20812](https://trac.sagemath.org/ticket/20812) - derivative of integer wrt to variable in polynomial ring should belong to that ring, not symbolic ring
  * [#24398](https://trac.sagemath.org/ticket/24398) - Document function initialization parameters
  * [#24832](https://trac.sagemath.org/ticket/24832) - Extend function domain with some symbolic function calls
-
 
 ## Tickets of this type closed
 
@@ -152,12 +148,11 @@ Sage is missing symbolic definitions for many special functions that we are capa
  * [#9424](https://trac.sagemath.org/ticket/9424) make symbolic summation numerically evaluable
  * [#20312](https://trac.sagemath.org/ticket/20312) - parent of argument lost with GinacFunctions
 
-== Tickets to make == 
+## Tickets to make
 
  * implement `parabolic_cylinder_d` 
  * add maxima conversion for `elliptic_kc` ([#15046](https://trac.sagemath.org/ticket/15046))
  * Associated Legendre functions
-
 
 ## Special functions defined in Maxima
 Notes from Benjamin Jones ([#11143](https://trac.sagemath.org/ticket/11143))

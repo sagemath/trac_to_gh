@@ -1,8 +1,8 @@
+## Orphans
 
- If you've tried a ticket and don't want to work on it anymore, drop it in here so other people know it's open.
+If you've tried a ticket and don't want to work on it anymore, drop it in here so other people know it's open.
 
  [#2779](https://trac.sagemath.org/ticket/2779), [#3083](https://trac.sagemath.org/ticket/3083), [#3517](https://trac.sagemath.org/ticket/3517), [#4643](https://trac.sagemath.org/ticket/4643), [#4663](https://trac.sagemath.org/ticket/4663), [#1773](https://trac.sagemath.org/ticket/1773) (easy if you know symbolics), [#3426](https://trac.sagemath.org/ticket/3426), [#3543](https://trac.sagemath.org/ticket/3543), [#2025](https://trac.sagemath.org/ticket/2025), [#2531](https://trac.sagemath.org/ticket/2531), [#3404](https://trac.sagemath.org/ticket/3404), [#1534](https://trac.sagemath.org/ticket/1534)
-
 
 
 ## Hit List
@@ -50,7 +50,6 @@ Put your name and the bugs you plan to kill here.
 
  Invalid: [#3478](https://trac.sagemath.org/ticket/3478), [#1680](https://trac.sagemath.org/ticket/1680), [#4128](https://trac.sagemath.org/ticket/4128)
 
-
 ## Review Hit List
 
  Malb: [#3758](https://trac.sagemath.org/ticket/3758), [#1867](https://trac.sagemath.org/ticket/1867)
@@ -80,7 +79,6 @@ Put your name and the bugs you plan to kill here.
  Nick: [#1210](https://trac.sagemath.org/ticket/1210), [#4779](https://trac.sagemath.org/ticket/4779)
 
 
-
 ## Bugs slain (without review)
 When you succeed in destroying a bug, move it here.
 
@@ -108,7 +106,6 @@ When you succeed in destroying a bug, move it here.
 
  Simon: [#797](https://trac.sagemath.org/ticket/797), [#5053](https://trac.sagemath.org/ticket/5053)
 
-
 ## Confirmed Kills
 
 When you review a slain bug, move it down here, and tack it onto your name under Kills Confirmed (what's the difference between this and "Assists" below?)
@@ -135,7 +132,6 @@ When you review a slain bug, move it down here, and tack it onto your name under
 
  Simon: [#5047](https://trac.sagemath.org/ticket/5047), [#1587](https://trac.sagemath.org/ticket/1587)
 
-
 ## Assists
 
 Put stuff you positively reviewed here.
@@ -157,7 +153,6 @@ Put stuff you positively reviewed here.
  Mabshoff: [#4560](https://trac.sagemath.org/ticket/4560), [#2402](https://trac.sagemath.org/ticket/2402)
 
  Simon: [#5009](https://trac.sagemath.org/ticket/5009), [#5056](https://trac.sagemath.org/ticket/5056), [#4770](https://trac.sagemath.org/ticket/4770)
-
 
 ## DOA
 

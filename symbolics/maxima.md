@@ -1,4 +1,3 @@
-
 ### Absolute dependencies on pexpect-maxima ([#17753](https://trac.sagemath.org/ticket/17753))
 
  * _`calculus/desolvers.py`_: `desolve_*()`
@@ -14,11 +13,9 @@
  * _`symbolic/maxima_wrapper.py`_: *
  * _`calculus/calculus.py`_: `symbolic_expression_from_maxima_string()` called by `factor()` and indirectly by  `solve()`
 
-
 ### Optional dependencies on pexpect-maxima
  * _`combinat/combinat.py`_: stirling_number2()
  * _`symbolic/integration/*`_: Maxima in principle exchangeable but missing functionality in the alternatives
-
 
 ### Other dependencies on maxima_lib
  * _`calculus/calculus.py`_: nintegral(), laplace(), inverse_laplace()

@@ -1,12 +1,12 @@
+## The Sage Patchbot
 
- The patchbot pulls and applies git branches from Trac and can be found at https://patchbot.sagemath.org or from links on the individual Trac tickets (round badges in the ticket box). It also runs some [[patchbot/plugins]].
+The patchbot pulls and applies git branches from Trac and can be found at https://patchbot.sagemath.org or from links on the individual Trac tickets (round badges in the ticket box). It also runs some [patchbot/plugins](plugins).
 
 You can help by running your own patchbot. See below for instructions about installation and usage.
 
-See a list of some patchbot names and their owners at [[patchbot/owners]].
+See a list of some patchbot names and their owners at [patchbot/owners](owners).
 
 This is still very much a work in progress. The latest version of the code lives at http://github.com/sagemath/sage-patchbot.
-
 
 ## Lists of reports
 
@@ -15,7 +15,6 @@ You can see the status of several tickets at the same time (replace xxxx by your
 For the tickets you participated in, see https://patchbot.sagemath.org/ticket/?base=develop&participant=xxxx
 
 For the tickets you authored, see https://patchbot.sagemath.org/ticket/?base=develop&author=xxxx
-
 
 ### Ticket Status
 
@@ -45,30 +44,27 @@ The color of the report page icon indicates the status of the ticket. See the re
 
 ![](https://patchbot.sagemath.org/svg/Spkg, width=48) *Spkg* This is related to an spkg. The patchbot will only check the spkg installation.
 
-
 ### Hints and tricks
 
  * To rerun tests (even though the branch was not modified) add the kick parameter, e.g., http://patchbot.sagemath.org/ticket/12345/?kick
-
 ## Installing the patchbot
 
 It is safer to run the patchbot in an unused sage install.
 
-[[span(style=background: #FFFF66,① Install the patchbot using *pip3 install --user git+https://github.com/sagemath/sage-patchbot.git*)]]
+[This is the Trac macro *span* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#span-macro) called with arguments (style=background:
 
 or using PyPI:
 
-[[span(style=background:#FFFF66,① Install the patchbot using *pip3 install --user sage-patchbot*)]]
+[This is the Trac macro *span* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#span-macro) called with arguments (style=background:
 
 
 Dependencies: shell commands *git*; *tar*; *wget*
 
 *pyflakes* and *pycodestyle* will be installed by pip if not already installed.
 
-[[span(style=background:[#98](https://trac.sagemath.org/ticket/98)FF98,Please set the --owner option if you run a patchbot. It is useful to know whom to contact.)]]
+[This is the Trac macro *span* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#span-macro) called with arguments (style=background:
 
-You can instead register [[patchbot/owners|here]].
-
+You can instead register [here](owners).
 
 ## Installing optional packages
 
@@ -80,7 +76,6 @@ sage -pip install service_identity
 apt-get install graphviz pandoc build-essential libxml2 libxml2-dev
 ```
 
-
 ## Running the patchbot
 
 Before running the patchbot make sure that the following two commands produce no errors when executed in the root of the sage installation you want to run the patchbot with.
@@ -90,7 +85,7 @@ Before running the patchbot make sure that the following two commands produce no
     ./sage -t --all --long
 ```
 
-[[span(style=background:#FFFF66,② Run the patchbot using *python3 -m sage_patchbot.patchbot --sage-root HERE_PATH --owner HERE_NAME*)]]
+[This is the Trac macro *span* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#span-macro) called with arguments (style=background:
 
 The patchbot should be run with *pip3* and *python3*. The version of Python must be at least 3.7.
 
@@ -113,7 +108,6 @@ Several other options are available, see *--help*
 *--skip-doc-clean* the "make doc-clean" is not run during the patchbot initialization. Useful if your machine does not have enough ram to build the documentation in a single round.
 
 If the patchbot process receives the signal SIGUSR1 (using `kill -s SIGUSR1 pid`), it will gracefully stop after finishing its job on the ticket it is currently working on.
-
 
 ## Configuration
 
@@ -150,7 +144,6 @@ The list of configurable entities are:
 | _sage_root_           | string          |        | the path to the directory containing the sage installation |
 | _plugins_               | list of strings | _see below_ | the plugins to use                                                                |
 | _test_options_               | string         | "" | anything that can be passed to sage -t --optional, for example "sage,external" or "sage,internet"                                            |
-
 
 ### bonus
 
@@ -196,13 +189,11 @@ But you could add
      }
 ```
 
-
 ## Looking at patchbot activities
 
 Remotely, you can have a look at the last tickets tested by patchbots at https://patchbot.sagemath.org/ and the tests without tickets applied can be found at http://patchbot.sagemath.org/ticket/0/.
 
 On your machine, the patchbot writes a summary of its activities in $SAGE_ROOT/logs/patchbot/history.txt
-
 
 ## using an ipython session
 
@@ -234,7 +225,6 @@ The argument dictionary must contain at least:
 {'sage_root': path to the sage local repository}
 ```
 
-
 ## Example Configuration and Run-Scripts
 
 Installation via
@@ -261,7 +251,6 @@ Script `bin/run-patchbot`:
 LANG=C python3 -m sage_patchbot.patchbot --config=/local/sage-patchbot/config.json
 ```
 
-
 ## Running the patchbot on GitHub Actions
 
 
@@ -273,4 +262,4 @@ Instead of the default platform, `ubuntu-focal-standard`, you can select any pla
 
 It will run for 6 hours, then exit. You can run multiple workflows simultaneously.
 
-See also [[#33253](https://trac.sagemath.org/ticket/33253)](https://trac.sagemath.org/ticket/33253).
+See also [#33253](https://trac.sagemath.org/ticket/33253).

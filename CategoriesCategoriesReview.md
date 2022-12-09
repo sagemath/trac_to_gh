@@ -1,5 +1,6 @@
+Splitting of the review of the categories
 
- Here are the categories/files which still need a review. They are all
+Here are the categories/files which still need a review. They are all
 essentially empty and already 100% doctested, so the review should be
 super quick. David Kohel, Javier, or whoever please go ahead!
 

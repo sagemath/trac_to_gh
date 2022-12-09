@@ -1,4 +1,3 @@
-
 # Joint Sage-Combinat / Chevie workshop report
 This is a report on the [joint Sage-Combinat / Chevie](http://wiki.sagemath.org/combinat/SageCombinatChevieWorkshopOrsay2010) workshop in Orsay, June 14-18th of 2010.
 
@@ -15,22 +14,18 @@ Participants:
  * Viviane Pons, graduate student, LIGM, Université Paris-Est
  * Nicolas M. Thiéry, MdC, Orsay
 
-
 ## Sage introduction
 On Monday, Nicolas made a general presentation of Sage in the Math department in Orsay, followed by tutorials all day ran by Florent; not a great success, with only about 15 persons in the audience, but the tutorials were useful to the Sage newcomers in the workshop, and were also attended by four people from INRIA's [Algo project](http://www.inria.fr/recherche/equipes/algo.fr.html). The tutorials went from basic Sage usage to using and implementing algebraic structures. Two more tutorials (more on implementing algebraic structures; mercurial) were run later in the week.
 
 At the end of the afternoon, all the workshop participants moved to Cernay. Here is what kept them busy all week.
-
 
 ## Combinatorial operators on polynomials
 Adrien Boussicault, Vivianne Pons, and Nicolas Borie have been working hard on the design of "combinatorial operators on polynomials" (divided differences, schubert / demazure / grothendieck / key polynomials, ...), with all the variants (type A or other types, finite or infinite polynomials). In the process, they took advantage of the expertise of Florent, Cédric and Jean.
 
 They also helped much the newcomers.
 
-
 ## Crystals
 Tom Denton polished his FPSAC paper (and managed to get Nicolas to proofread it :-)), and started his work on his summer project on affine crystals. As a first step in this direction, he implemented (and pushed on the Sage-Combinat server!) a generic test for Stembridge rules. This feature was long desired, as it provides a very strong sanity check (or even, in many cases, a certificate of correctness).
-
 
 ## GAP and Sage
 Many discussions, in particular with Frank Lübeck, went around  the differences in the design and development strategy between GAP and Sage. In very very short: Sage goes further in the modeling of mathematics at the potential price of complexity. GAP's development is of cathedral type, with an emphasis on packages, whereas Sage's goes for bazaar and shared ownership of the code. Everybody agrees on the relative merits of both strategies; everybody has his own belief about which one is more likely to succeed in the long run.
@@ -40,7 +35,6 @@ Also the release strategies are different. New GAP code can sometimes  take  tim
 A fine point is GAP's position with respect to Sage.  Sage seems to consider GAP mainly as a library providing some algorithms  to compute with groups. But GAP has nowadays a much wider  functionality, it is a full system with a fairly sophisticated programming and user interface, it has a package concept that allows development of substantial extensions of GAP functionality without need for any changes of the core system. Also GAP has an interesting dynamic  type sytem  and method selection strategy (which does not map easily onto the more traditional object oriented concept of Python/Sage).
 
 Therefore, for people who want to start a new software project and are looking for an appropriate platform, Sage and GAP may be competitors. By all means this should remain a sane reciprocal emulation, not a rivalry. Some thoughts in this direction: good interfaces and good reciprocal knowledge to minimize code duplication and foster cross pollination, proper acknowledgment, ...
-
 
 ## Sage's documentation
 As pointed out by Frank Sage lacks overview documentation. The Sage community is well aware of this, and works in this direction, in particular with the ongoing effort around thematic tutorials ([#8470](https://trac.sagemath.org/ticket/8470)), but there is still much work to do!
@@ -59,7 +53,6 @@ Florent also spent much time helping others, worked on the prereview of [#9065](
  * [#9251](https://trac.sagemath.org/ticket/9251): Lazy attribute does not properly handles the doc of Cython methods
  * [#9256](https://trac.sagemath.org/ticket/9256): Put Set in the category Sets()
  * [#8924](https://trac.sagemath.org/ticket/8924): __call__ for categories sets / enumeratedsets
-
 
 ## Future of Chevie
 Much time was spent during the workshop (and previously during Sage Days 20) discussing, directly or indirectly, the future of Chevie.
@@ -141,7 +134,6 @@ The way that I have these working in gap is that I have, in python speak, a clas
 
   Other weak points he found is computations of Weyl characters (compare with `DominantCharacter` in GAP), or the enumerations of all roots (say of a root system of type E8, compare with Chevie).
 
-
 ## GAP3 interface
 Jean and Nicolas worked on the gap3 distribution and spkg, merging in Marco's work to make it compilable from source on Macos and linux (windows/cygwin still to be tested). Using feedback from Jean and Andrew, Nicolas improved a bit the gap3 (and gap4) interface (introspection, help). The gap3/gap4 interfaces need further work to better convert back gap objects to Sage. Related tickets: [#7890](https://trac.sagemath.org/ticket/7890), [#8327](https://trac.sagemath.org/ticket/8327), [#9293](https://trac.sagemath.org/ticket/9293).
 
@@ -153,7 +145,6 @@ Further work from Nicolas includes:
  * Polishing Jason's tutorial on implementing algebraic structure
  * Reorganizing the various demos/tutorial for Sage-Combinat
  * Proof of concept for [#9291](https://trac.sagemath.org/ticket/9291)
-
 
 ## Food!
 And last, but not least, we enjoyed the cooking talents of all the participants, with gratin de quenelles_, crèpes_, ratatouille confite_, tartiflette_, gratin de pâtes au vin_, lentils curry, yummy pizzas, lots of good cheese (and wine accordingly :-) ), and cakes, tarte tatin, sorbet au coulis fruit rouge. And a nice mirabelle. Andrew commented that he had never eaten so well in a conference :-)_

@@ -1,15 +1,14 @@
+This page gives an overview of open symbolics issues.  If you notice a symbolics or calculus issue that is not listed on this page, feel free to add it to the relevant section below.
 
- [[PageOutline]]
-
+[This is the Trac macro *PageOutline* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PageOutline-macro)
 
 ## Other Symbolic pages
- * [Symbolic functions](./symbolics/functions.md)
+ * [Symbolic functions](functions)
  * [wiki page](http://wiki.sagemath.org/symbolics) to coordinate work on new symbolics functionality.
- * [symbolics/maxima](./symbolics/maxima.md) dependencies on maxima
- * [symbolics/nonzero](./symbolics/nonzero.md) solving the zero comparison problem
+ * [symbolics/maxima](maxima) dependencies on maxima
+ * [symbolics/nonzero](nonzero) solving the zero comparison problem
  * [Pynac](http://pynac.org) bugs are tracked in [the github issue tracker](https://github.com/pynac/pynac/issues).
  * [symbolics/switch_todo](http://wiki.sagemath.org/symbolics/switch_todo) old TODO list for symbolics backend switch to pynac
-
 
 ## Wikipedia links and some papers
  * [https://en.wikipedia.org/wiki/Symbolic_computation](https://en.wikipedia.org/wiki/Symbolic_computation)
@@ -19,12 +18,10 @@
  * [Watt, Making computer algebra more symbolic](https://scholar.google.de/scholar?cluster=16052742886444301118&hl=en&as_sdt=2005&sciodt=0,5)
  * [Watt, What happened to languages for symbolic mathematical computation](https://scholar.google.de/scholar?cluster=13863445001122388860&hl=en&as_sdt=2005&sciodt=0,5)
 
-
 ## Links for these tickets
- * [query:?status=needs_review&group=type&component=calculus&component=symbolics&order=priority&col=id&col=summary&col=priority&col=reviewer&col=author&col=dependencies&row=description calculus or symbolics tickets tagged `needs_review`]
- * [query:?status=needs_info&status=needs_work&group=type&component=calculus&component=symbolics&order=priority&col=id&col=summary&col=priority&col=author&col=dependencies&row=description calculus or symbolics tickets tagged `needs_{work,info}`]
- * [query:?status=new&component=calculus&component=symbolics&group=type&col=id&col=summary&col=priority&col=author&col=reviewer&col=dependencies&order=priority calculus or symbolics tickets still tagged `new`]
-
+ * [calculus or symbolics tickets tagged `needs_review`](https://trac.sagemath.org/query?status=needs_review&group=type&component=calculus&component=symbolics&order=priority&col=id&col=summary&col=priority&col=reviewer&col=author&col=dependencies&row=description)
+ * [calculus or symbolics tickets tagged `needs_{work,info}`](https://trac.sagemath.org/query?status=needs_info&status=needs_work&group=type&component=calculus&component=symbolics&order=priority&col=id&col=summary&col=priority&col=author&col=dependencies&row=description)
+ * [calculus or symbolics tickets still tagged `new`](https://trac.sagemath.org/query?status=new&component=calculus&component=symbolics&group=type&col=id&col=summary&col=priority&col=author&col=reviewer&col=dependencies&order=priority)
 
 ## Solve tickets
  * Unsolved or wrongly solved expressions by type:
@@ -64,7 +61,6 @@
    * [#24142](https://trac.sagemath.org/ticket/24142) - Improve interface to SymPy solvers
    * [#24477](https://trac.sagemath.org/ticket/24477) - solve(x, [x], solution_dict=True) error
 
-
 ## Integration tickets
  * Bug, solved upstream
    * [#17469](https://trac.sagemath.org/ticket/17469)
@@ -80,14 +76,14 @@
    * [#24316](https://trac.sagemath.org/ticket/24316) - sqrt(sin,cos...)
    * [#25636](https://trac.sagemath.org/ticket/25636) - ECL crash: x^m/sqrt(a + b*x^(2 - m))
    * `abs_integrate`-related errors (see [#12731](https://trac.sagemath.org/ticket/12731) for possibly disabling or raising warning always with it)
-     * #13097 - integral of ln(1+4/5*sin(x))
-     * #11590 - `sgn()` function (not reported upstream?)
-     * #14591 - cosh integral incorrect because of abs_integrate
-     * #17183 - another abs_integrate error
-     * #17468 - log(abs(sin())) problem
-     * #17511 - abs(sin(x)) and abs(cos(x)) are flat-out wrong
-     * #17910 - unsolved piecewise integrals metaticket
-     * #23271 - abs(sin(x)*cos(x))
+     * [#13097](https://trac.sagemath.org/ticket/13097) - integral of ln(1+4/5*sin(x))
+     * [#11590](https://trac.sagemath.org/ticket/11590) - `sgn()` function (not reported upstream?)
+     * [#14591](https://trac.sagemath.org/ticket/14591) - cosh integral incorrect because of abs_integrate
+     * [#17183](https://trac.sagemath.org/ticket/17183) - another abs_integrate error
+     * [#17468](https://trac.sagemath.org/ticket/17468) - log(abs(sin())) problem
+     * [#17511](https://trac.sagemath.org/ticket/17511) - abs(sin(x)) and abs(cos(x)) are flat-out wrong
+     * [#17910](https://trac.sagemath.org/ticket/17910) - unsolved piecewise integrals metaticket
+     * [#23271](https://trac.sagemath.org/ticket/23271) - abs(sin(x)*cos(x))
  * definite integrals
    * [#11164](https://trac.sagemath.org/ticket/11164) - sin(x)/x
    * [#11493](https://trac.sagemath.org/ticket/11493) - two different results with same numeric integral
@@ -128,7 +124,6 @@
    * [#22410](https://trac.sagemath.org/ticket/22410) - Implement Rubi integrator
    * [#22650](https://trac.sagemath.org/ticket/22650) - implement integrals resulting in 2F1 and AppellF1 expressions
 
-
 ## simplify/expand tickets
  * [#10038](https://trac.sagemath.org/ticket/10038) - wrap Maxima's demoivre and exponentialize into some simplify*
  * [#10073](https://trac.sagemath.org/ticket/10073) - held variables aren't restored
@@ -154,7 +149,6 @@
  * [#23738](https://trac.sagemath.org/ticket/23738) - simplify_full() fails to simplify a log expression
  * [#24231](https://trac.sagemath.org/ticket/24231) - Maxima's demoivre() doesn't work with hyperbolic functions
 
-
 ## desolve tickets
  * [#8616](https://trac.sagemath.org/ticket/8616) - get desolve to automatically deduce variables
  * [#9825](https://trac.sagemath.org/ticket/9825) - Maxima temporary variables from diffeq confuse Sage
@@ -168,7 +162,6 @@
  * [#20068](https://trac.sagemath.org/ticket/20068) - Another diffeq question
  * [#21789](https://trac.sagemath.org/ticket/21789) - possible bug in boundary condition handling in Sage (not Maxima)
  * [#22849](https://trac.sagemath.org/ticket/22849) - Heaviside in numerical resolutions
-
 
 ## limit and summation tickets
  * [#13269](https://trac.sagemath.org/ticket/13269) - indeterminate limit result
@@ -184,7 +177,6 @@
  * [#20452](https://trac.sagemath.org/ticket/20452) - spurious limit computation
  * [#22700](https://trac.sagemath.org/ticket/22700) - add sympy limit examples
  * [#26060](https://trac.sagemath.org/ticket/26060) - another wrong Maxima limit that is correct in Sympy
-
 
 ## series() and taylor()
  * [#6119](https://trac.sagemath.org/ticket/6119)  - deprecate taylor() in favor of series()
@@ -202,12 +194,10 @@
  * [#21899](https://trac.sagemath.org/ticket/21899) - Incorrect Series Expansions of zeta(s) around 1
  * [#22201](https://trac.sagemath.org/ticket/22201) - Further series speed improvements
 
-
 ## limitations of Piecewise functions
  * [#11225](https://trac.sagemath.org/ticket/11225) - improve plotting
  * [#8994](https://trac.sagemath.org/ticket/8994) - convolution support
  * See also [the Maxima pw.mac package](http://sourceforge.net/projects/piecewisefunc/)
-
 
 ## conversion to/from other rings
  * numpy objects: [#8824](https://trac.sagemath.org/ticket/8824)
@@ -223,17 +213,14 @@
  * [#20454](https://trac.sagemath.org/ticket/20454) - conversion from SR[] to SR
  * [#20812](https://trac.sagemath.org/ticket/20812) - derivative of integer wrt to variable in polynomial ring should belong to that ring, not symbolic ring
 
-
 ## fast_float deprecation
  * [#5572](https://trac.sagemath.org/ticket/5572) - fast_callable improvements (including deprecating fast_float)
  * [#13559](https://trac.sagemath.org/ticket/13559) - fast_float yields infinity when Python does, but should handle bigger numbers
  * [#16899](https://trac.sagemath.org/ticket/16899) - Allow complex functions in implicit_plot
  * [#24536](https://trac.sagemath.org/ticket/24536) - find_local_maximum/minimum() fails with expressions containing complex numbers
 
-
 ## performance
  * [#12786](https://trac.sagemath.org/ticket/12786) - solve_mod is horribly slow for linear systems
-
 
 ## expression tree and substitutions
  * [#6480](https://trac.sagemath.org/ticket/6480) - .subs_expr() method doesn't work for argument of D derivative operator
@@ -258,7 +245,6 @@
  * [#24428](https://trac.sagemath.org/ticket/24428) - Substitution should be the same as numerical evaluation
  * [#30378](https://trac.sagemath.org/ticket/30378) - `(x^2).subs({x: sqrt(x)})` returns `sqrt(x)` instead of `x`
 
-
 ## relation/equality, unknown results, tristate logic
  * [#7660](https://trac.sagemath.org/ticket/7660)  - arithmetic with equations and inequalities confusing
  * [#12554](https://trac.sagemath.org/ticket/12554) - Adding a "swap" method to equation objects
@@ -272,7 +258,6 @@
  * [#21070](https://trac.sagemath.org/ticket/21070) - comparison with wildcard raises error
  * [#21862](https://trac.sagemath.org/ticket/21862) - Symbolic methods work inconsistently on relational expressions
  * [#24658](https://trac.sagemath.org/ticket/24658) - Don't call Maxima with no-variable symbolic relation tests
-
 
 ## variable domains and assumptions
  * [#3277](https://trac.sagemath.org/ticket/3277)  - context for calculus assumptions
@@ -293,7 +278,6 @@
  * [#28538](https://trac.sagemath.org/ticket/28538) - Segfault for boolean evaluation of expression with assumptions
  * [#29938](https://trac.sagemath.org/ticket/29938) - comparison with infinity does not take assumptions into account
 
-
 ## specific Pynac/GiNaC issues
  * [#6756](https://trac.sagemath.org/ticket/6756)  - Implement `diff` format symbolic derivative in new symbolics
  * [#10069](https://trac.sagemath.org/ticket/10069) - Typesetting with hold=True can be weird
@@ -312,7 +296,6 @@
  * [#23368](https://trac.sagemath.org/ticket/23368) - More immediate symbolic powers simplification
  * [#23964](https://trac.sagemath.org/ticket/23964) - f.subs(I==...) does not work
  * [#24211](https://trac.sagemath.org/ticket/24211) - Some trivial identities and simplifications missed by Sage (pynac ?)
-
 
 ## Maxima interface
  * [#6862](https://trac.sagemath.org/ticket/6862) - Maxima default domain is real, not complex
@@ -339,7 +322,6 @@
  * [#23138](https://trac.sagemath.org/ticket/23138) - Cache assumptions and only send to Maxima when needed
  * [#23328](https://trac.sagemath.org/ticket/23328) - Undefined limit product $INF * $ZEROB in lim-times
 
-
 ## SymPy interface
  * [#16816](https://trac.sagemath.org/ticket/16816) - support SymPy's sum of roots
  * [#21412](https://trac.sagemath.org/ticket/21412) - Convert piecewise functions to SymPy
@@ -348,17 +330,14 @@
  * [#24142](https://trac.sagemath.org/ticket/24142) - Improve interface to SymPy solvers
  * [#24334](https://trac.sagemath.org/ticket/24334) - sympy symbol -> SR drops assumptions
 
-
 ## Giac interface
  * [#23015](https://trac.sagemath.org/ticket/23015) - Convert rootof function from giac
  * [#23016](https://trac.sagemath.org/ticket/23016) - Dirac delta derivative conversion from giac
  * [#23136](https://trac.sagemath.org/ticket/23136) - Allow giac algorithm in solve 
 
-
 ## FriCAS interface
 
   * [#28630](https://trac.sagemath.org/ticket/28630) - Wrong conversion from fricas
-
 
 ## Other
  * [#11210](https://trac.sagemath.org/ticket/11210) - add residues
@@ -377,7 +356,6 @@
  * [#23332](https://trac.sagemath.org/ticket/23332) - Calculating eigenvectors of symbolic matrices leads to a crash.
  * [#24537](https://trac.sagemath.org/ticket/24537) - Make find_local_maximum/minimum() handle symbolic functions
  * [#24850](https://trac.sagemath.org/ticket/24850) - Provide convenient Expression.convert_numeric()
-
 
 ## Tickets fixed
    * [#24800](https://trac.sagemath.org/ticket/24800) - bug with a system involving square roots, apparently do to an interface issue, Sage not being able to parse conditional answer provided by Maxima
@@ -464,7 +442,7 @@
  * [#20456](https://trac.sagemath.org/ticket/20456) - assume(x>0) sets integer flag
  * [#16491](https://trac.sagemath.org/ticket/16491) - unify output of trigonometric functions for complex input
  * [#14801](https://trac.sagemath.org/ticket/14801) - Improved piecewise functions
- * [#9424](https://trac.sagemath.org/ticket/9424) - numerically evaluate sums (also in [functions page](./symbolics/functions.md))
+ * [#9424](https://trac.sagemath.org/ticket/9424) - numerically evaluate sums (also in [functions page](functions))
  * [#16397](https://trac.sagemath.org/ticket/16397) - symbolic cmp, stopgap [#19465](https://trac.sagemath.org/ticket/19465)
  * [#16203](https://trac.sagemath.org/ticket/16203) - conversion from SR.series() to PowerSeries(SR) gives unexpected result
  * [#15451](https://trac.sagemath.org/ticket/15451) - limit wrongly gives ZeroDivisionError
@@ -524,7 +502,7 @@
  * [#11238](https://trac.sagemath.org/ticket/11238) - Integral bug
  * [#11656](https://trac.sagemath.org/ticket/11656) - additional assumptions needed for simplification
  * [#16941](https://trac.sagemath.org/ticket/16941) - Add a hold parameter for symbolic integrals
- * [#9908](https://trac.sagemath.org/ticket/9908) - a sum returns hypergeometric functions  (also in [functions page](./symbolics/functions.md))
+ * [#9908](https://trac.sagemath.org/ticket/9908) - a sum returns hypergeometric functions  (also in [functions page](functions))
  * [#11894](https://trac.sagemath.org/ticket/11894) - about an infinite sum appearing on NMBRTHRY list.
  * [#12708](https://trac.sagemath.org/ticket/12708) - waiting for new upstream (Maxima) release.
  * [#13712](https://trac.sagemath.org/ticket/13712) - wrong result from infinite sum (Maxima bug).

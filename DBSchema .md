@@ -1,5 +1,6 @@
+## Schema for the trac database
 
- I think these are all of the relevant tables for ticket queries (and possibly some extra ones).
+I think these are all of the relevant tables for ticket queries (and possibly some extra ones).
 
  * system
   * name text (pk)

@@ -1,6 +1,6 @@
+## Hit List
 
- Put your name and the bugs you plan to kill here.  : 
-
+Put your name and the bugs you plan to kill here.  : 
 
 
 ## Triage Session
@@ -61,7 +61,6 @@ nw = needs work
 
   [#4950](https://trac.sagemath.org/ticket/4950), [#5322](https://trac.sagemath.org/ticket/5322), [#7764](https://trac.sagemath.org/ticket/7764), [#2899](https://trac.sagemath.org/ticket/2899)
 
-
 ## Now Available
 
 If you've tried a ticket and don't want to work on it anymore, drop it in here so other people know it's open. (The first bunch of these are leftover from SD12!)
@@ -70,11 +69,9 @@ If you've tried a ticket and don't want to work on it anymore, drop it in here s
 
 [#7377](https://trac.sagemath.org/ticket/7377) (Maxima/ECL interface -- lots of help needed and received. Great progress has been made. More is needed.)
 
-
 ## Review Hit List
 
 [#7981](https://trac.sagemath.org/ticket/7981), [#7434](https://trac.sagemath.org/ticket/7434), [#7848](https://trac.sagemath.org/ticket/7848), [#6368](https://trac.sagemath.org/ticket/6368)
-
 
 ## Bugs slain (without review)
 When you succeed in destroying a bug, move it here.
@@ -118,13 +115,11 @@ Notebook bugs to be reviewed (in order):
 
 [#7506](https://trac.sagemath.org/ticket/7506)-notebook_object-documentation.patch
 
-
 ## Bugs thought slain, but now need work
 
  * [#7954](https://trac.sagemath.org/ticket/7954): wjp and wstein
 
  * [#6094](https://trac.sagemath.org/ticket/6094)
-
 
 
 ## Confirmed Kills
@@ -157,7 +152,6 @@ Sebastian Pancratz: [#7949](https://trac.sagemath.org/ticket/7949), [#3436](http
 
 John Cremona: [#7532](https://trac.sagemath.org/ticket/7532)
 
-
 ## Assists
 
 Put stuff you positively reviewed here.
@@ -182,7 +176,6 @@ Robert Bradshaw: [#7921](https://trac.sagemath.org/ticket/7921)
 
 John Palmieri: [#7532](https://trac.sagemath.org/ticket/7532), [#7535](https://trac.sagemath.org/ticket/7535)
 
-
 ## DOA
 
 When a bug is invalid, copy it here.
@@ -192,7 +185,6 @@ When a bug is invalid, copy it here.
 Maybe invalid
 
 [#5626](https://trac.sagemath.org/ticket/5626)
-
 
 ## wontfix
 

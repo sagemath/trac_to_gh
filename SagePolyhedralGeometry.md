@@ -1,17 +1,14 @@
-= Roadmap for Optimization and Polyhedral Geometry softwares interactions in Sage=
-
+# Roadmap for Optimization and Polyhedral Geometry softwares interactions in Sage
 
 ## (around Sage, (PyQ)Normaliz, SCIP, e-antic, Polymake, and others)
 
 This page is intended to describe the current tickets related to optimization and polyhedral geometry.
-
 
 ## Future & Current Projects
 
  * Extend the usage of Normaliz in Sage
  * Extend the polyhedral geometry component of Sage
  * Polyhedral arrangements and complexes
-
 
 ## Tickets
 
@@ -24,7 +21,6 @@ Here are some practical search lists of tickets:
 [Tickets with keyword polytope](https://trac.sagemath.org/query?status=needs_info&status=needs_review&status=needs_work&status=new&status=positive_review&keywords=~polytopes&keywords=~polytope&order=status)
 
 [Current tickets of the Geometry component](https://trac.sagemath.org/query?status=needs_info&status=needs_review&status=needs_work&status=new&component=geometry&col=id&col=summary&col=status&col=owner&col=type&col=priority&col=keywords&order=status)
-
 
 ## Meta-tickets
 
@@ -39,7 +35,6 @@ There are already a few meta-tickets related to this topic:
  * [#27063](https://trac.sagemath.org/ticket/27063): Transition of combinatorial computations of Polyhedron to Combinatorial Type
  * [#29799](https://trac.sagemath.org/ticket/29799): Vector spaces and algebras of polyhedra
 
-
 ## To do
 
  * Thematic Tutorial for Py(Q)Normaliz installation/Usage in Sage
@@ -52,7 +47,6 @@ There are already a few meta-tickets related to this topic:
  * The integration of automorphisms into SageMath
  * The remaining main computation goal, Hilbert and Ehrhart series turned out to be a very difficult task since it would require the precise construction of a fundamental domain of the group action.
  * Once interactive H-representation in normaliz is possible ("redund-like") make it work with the "A & B" operation in Sage!
-
 
 ## Current Tickets
 
@@ -103,10 +97,9 @@ The following tickets have been created and should be worked on:
   * [#33679](https://trac.sagemath.org/ticket/33679): Use abstract_method for Polyhedra
   * [#33709](https://trac.sagemath.org/ticket/33709): Implement adding generators or constraints to ppl polyhedron 
 
-
 ## Short Sage Release Notes
 
-=== Sage 9.5 === #release_9.5
+### Sage 9.5
 
 Improvements:
 
@@ -119,7 +112,7 @@ New features:
 
  * [#32498](https://trac.sagemath.org/ticket/32498): Implement edge polytope and symmetric edge polytope of a graph
 
-=== Sage 9.4 === #release_9.4
+### Sage 9.4
 
 Bug fixes:
  * [#31820](https://trac.sagemath.org/ticket/31820): Fix pickling of normaliz representation objects
@@ -144,7 +137,7 @@ New features:
  * [#31659](https://trac.sagemath.org/ticket/31659): Polyhedron.affine_hull_manifold
  * [#31748](https://trac.sagemath.org/ticket/31748): `PolyhedralComplex`: preliminary implementation
 
-=== Sage 9.3 === #release_9.3
+### Sage 9.3
 
 Bug fixes:
  * [#30015](https://trac.sagemath.org/ticket/30015): Schlegel projection breaks convexity
@@ -171,7 +164,7 @@ New features:
  * [#30954](https://trac.sagemath.org/ticket/30954): Implement a proper equality check for polyhedron representation objects
  * [#31038](https://trac.sagemath.org/ticket/31038): Improve the zonotope construction
 
-=== Sage 9.2 === #release_9.2
+### Sage 9.2
 
 Improvements:
  * [#28894](https://trac.sagemath.org/ticket/28894): Parallel f-vector for polyhedra: Move most important attributes of `FaceIterator` to a structure
@@ -231,7 +224,7 @@ Finished Task:
 
  * [#28280](https://trac.sagemath.org/ticket/28280): Task: CombinatorialPolyhedron: replace attributes by methods, make names more consistent with Polyhedron
 
-=== Sage 9.1 === #release_9.1
+### Sage 9.1
 
 Improvements:
   * [#19803](https://trac.sagemath.org/ticket/19803): difference of behavior in polyhedra with different backends
@@ -281,7 +274,7 @@ New features:
   * [#29190](https://trac.sagemath.org/ticket/29190): polar/dual for combinatorial polyhedra
   * [#29224](https://trac.sagemath.org/ticket/29224): `flag_f_vector` for polyhedra
 
-=== Sage 9.0 === #release_9.0
+### Sage 9.0
 
 Improvements:
    * [#17339](https://trac.sagemath.org/ticket/17339): Polyhedron class mistreats empty inputs
@@ -319,7 +312,7 @@ New features:
    * [#28743](https://trac.sagemath.org/ticket/28743): Lattice Polytopes: Implement incidence matrix
    * [#28766](https://trac.sagemath.org/ticket/28766): Implement incidence matrix for cones
 
-=== Sage 8.9 === #release_8.9
+### Sage 8.9
 
 The polyhedron folder is now py3 compatible with all optional packages!
 
@@ -343,7 +336,7 @@ New features:
    * [#27974](https://trac.sagemath.org/ticket/27974): Implement facets method for Polyhedron
    * [#28256](https://trac.sagemath.org/ticket/28256): Add .is_self_dual method for polytopes
 
-=== Sage 8.8 === #release_8.8
+### Sage 8.8
 
 Improvements:
    * [#20181](https://trac.sagemath.org/ticket/20181): `number_field_elements_from_algebraics` should create embedded number field elements [Sage-devel discussion](https://groups.google.com/forum/#!topic/sage-devel/iy72Q_EKKFs)
@@ -364,7 +357,7 @@ Improvements:
 New methods for polyhedron:
    * [#27534](https://trac.sagemath.org/ticket/27534): Implement Lawrence extension for polytopes
 
-=== Sage 8.7 === #release_8.7
+### Sage 8.7
 
 Improvements:
    * [#18214](https://trac.sagemath.org/ticket/18214): Bug in volume computation of polyhedron
@@ -372,7 +365,7 @@ Improvements:
 New methods for polyhedron:
    * [#22574](https://trac.sagemath.org/ticket/22574): Add .change_ring() method for polyhedra 
 
-=== Sage 8.4 === #release_8.4
+### Sage 8.4
 
 Improvements:
    * [#22701](https://trac.sagemath.org/ticket/22701): Setting up a Polyhedron from both Vrep and Hrep
@@ -385,7 +378,7 @@ New methods for polyhedron
    * [#22575](https://trac.sagemath.org/ticket/22575): Add .change_backend() method for polyhedra 
    * [#24847](https://trac.sagemath.org/ticket/24847): Implement stacking onto a face of a polyhedron
 
-=== Sage 8.3 === #release_8.3
+### Sage 8.3
 
 Improvements:
    * [#22572](https://trac.sagemath.org/ticket/22572): Add a thematic tutorial on the polyhedron class
@@ -402,7 +395,7 @@ New methods for polyhedron:
    * [#24849](https://trac.sagemath.org/ticket/24849): (sub)direct sums of polytopes
    * [#24886](https://trac.sagemath.org/ticket/24886): one-point suspension and face split of polyhedron
 
-=== Sage 8.2 === #release_8.2
+### Sage 8.2
 
 Improvements:
    * [#21937](https://trac.sagemath.org/ticket/21937): Library of polytopes accepts a backend parameter
@@ -415,7 +408,7 @@ Improvements:
 New methods for polyhedron:
    * [#24451](https://trac.sagemath.org/ticket/24451): get_integral_point
  
-=== Sage 8.1 === #release_8.1
+### Sage 8.1
 
 Improvements:
    * [#16045](https://trac.sagemath.org/ticket/16045): Polytope volume function engines produce different results
@@ -428,7 +421,7 @@ Improvements:
    * [#23355](https://trac.sagemath.org/ticket/23355): Fixed: affine hull of one point polyhedron
    * [#24154](https://trac.sagemath.org/ticket/24154): Fixed equation handling in .to_linear_program and integral_points_count
 
-=== Sage 8.0 === #release_8.0
+### Sage 8.0
 
 Here is a sample of changes related to Polyhedral Geometry in this release.
 
@@ -454,7 +447,7 @@ Improvements:
    * [#22824](https://trac.sagemath.org/ticket/22824): Add see also section to integrate over a polytope
    * [#22938](https://trac.sagemath.org/ticket/22938): Fixed normaliz backend with empty polyhedron
 
-=== Sage 7.6 === #release_7.6
+### Sage 7.6
 
 Improvements:
    * [#17264](https://trac.sagemath.org/ticket/17264): Polyhedron function broken with floats in sage-6.3 (worked in sage-6.2)

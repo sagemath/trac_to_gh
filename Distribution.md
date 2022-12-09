@@ -1,10 +1,10 @@
+# Distribution and packaging of SageMath
 
- Here are some links and information about distributing Sage.
+Here are some links and information about distributing Sage.
 
-Related pages: [Sage wiki: days77/packaging](https://wiki.sagemath.org/days77/packaging), [[Infrastructure]]
+Related pages: [Sage wiki: days77/packaging](https://wiki.sagemath.org/days77/packaging), [Infrastructure](Infrastructure)
 
-[[PageOutline]]
-
+[This is the Trac macro *PageOutline* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PageOutline-macro)
 
 # Source distributions
 
@@ -14,17 +14,13 @@ and each stable release.
   * source (stable): http://www.sagemath.org/download-source.html
   * source (devel): http://www.sagemath.org/download-latest.html
 
-
 # Containers
-
 
 ## Binder
 
   * url: https://github.com/sagemath/sage-binder-env
 
-
 ## Docker images
-
 
 ### CoCalc Docker images (recommended)
 
@@ -41,7 +37,6 @@ Other CoCalc Docker images might ship SageMath too:
 
   * https://hub.docker.com/search/?q=cocalc
 
-
 ### Computational topology Sage Docker image
 
   * ships: SageMath, SnapPy, Regina, PHCPack, pandas, pe, gridlink, flipper, curver, heegaard, pygraphviz
@@ -49,7 +44,6 @@ Other CoCalc Docker images might ship SageMath too:
   * bitbucket repo: https://bitbucket.org/t3m/sagedocker
   * dockerfile: https://bitbucket.org/t3m/sagedocker/src/tip/sage/Dockerfile
   * people: Nathan Dunfield
-
 
 ### Official SageMath Docker images (in search of maintainers)
 
@@ -59,9 +53,7 @@ As of 2022-08, outdated/broken and in search of new maintainers to fix [various 
   * admin: vbraun, sebasguts, nthiery, embray
 
 
-
 # Live USB
-
 
 ## Clef agreg
 
@@ -69,19 +61,16 @@ As of 2022-08, outdated/broken and in search of new maintainers to fix [various 
   * what: bootable "Linux + math software" environment for French "agrégation" exams
   * admin: François Boisson
 
-
 ## Sage Debian Live (defunct)
 
   * admin: tmonteil
   * hosted at: http://sagedebianlive.metelu.net/ (defunct as of 2022-08)
   * mailing list: https://sagedebianlive.metelu.net/mailman/listinfo/devel (defunct as of 2022-08)
 
-
 ## AIMS Desktop (abandoned 2017)
 
   * url: https://launchpad.net/~aims/+archive/ubuntu/aims-desktop
   * admin: pipedream
-
 
 # Package managers
 
@@ -92,8 +81,7 @@ or distribution-agnostic, or even OS-agnostic.
 See https://repology.org/project/sagemath/versions for an overview of package versions.
 
   * general SageMath packaging mailing list:
-    [[https://groups.google.com/forum/#!forum/sage-packaging|sage-packaging]]
-
+    [sage-packaging](https://groups.google.com/forum/#!forum/sage-packaging)
 
 ## Arch-linux
 
@@ -103,14 +91,12 @@ See https://repology.org/project/sagemath/versions for an overview of package ve
   * to install: ```sudo pacman -S sagemath```
   * maintainer: Antonio Rojas
 
-
 ## Conda / Anaconda / Miniconda / Conda Forge
 
   * [Sage wiki: Conda](https://wiki.sagemath.org/Conda)
   * people: isuruf, saraedum
   * Feedstocks: https://github.com/conda-forge/sage-feedstock/tree/master/recipe
   * Related Sage tickets: https://trac.sagemath.org/query?order=id&desc=1&summary=~conda
-
 
 ## Debian
 
@@ -121,13 +107,12 @@ See https://repology.org/project/sagemath/versions for an overview of package ve
   * repo: https://salsa.debian.org/math-team/sagemath
     * patches: https://salsa.debian.org/math-team/sagemath/-/tree/master/debian/patches
   * mailing list: https://lists.alioth.debian.org/mailman/listinfo/debian-science-sagemath
-    * see also [[https://lists.debian.org/debian-math/|debian-math mailing list]]
-    * earlier discussions happened on the [[https://lists.debian.org/debian-science/|debian-science mailing list]]
-    * Sage-side mailing list (dormant): [[https://groups.google.com/forum/#!forum/debian-sage|debian-sage]]
+    * see also [debian-math mailing list](https://lists.debian.org/debian-math/)
+    * earlier discussions happened on the [debian-science mailing list](https://lists.debian.org/debian-science/)
+    * Sage-side mailing list (dormant): [debian-sage](https://groups.google.com/forum/#!forum/debian-sage)
   * status pages: [master branch](http://people.debian.org/~thansen/debian-sage-status.html) [develop branch](http://people.debian.org/~thansen/debian-sage-dev-status.html)
   * bug tracker: [Debian bugs: package sagemath](https://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=sagemath)
   * people: Tobias Hansen, Julien Puydt, Jerome Benoit, Ximin Luo
-
 
 ## Fedora package
 
@@ -137,13 +122,11 @@ See https://repology.org/project/sagemath/versions for an overview of package ve
   * mailing list: https://lists.fedoraproject.org/archives/list/scitech`@`lists.fedoraproject.org/
   * maintainer: Paulo Cesar Pereira de Andrade (pcpa)
 
-
 ## Gentoo: Sage-on-Gentoo
 
   * repository: https://github.com/cschwan/sage-on-gentoo
   * Issues: https://github.com/cschwan/sage-on-gentoo/issues
   * Maintainer: François Bissey (fbissey/kiwifb)
-
 
 ## Homebrew
 
@@ -153,7 +136,6 @@ brew cask install sage
 ```
 This fetches the dmg for the app, and installs the app from that dmg.
 See [this post on sage-devel](https://groups.google.com/d/msg/sage-devel/jdLfIKQ1M18/PVQqJUUqAgAJ).
-
 
 ## Nix
 
@@ -168,19 +150,16 @@ See [this post on sage-devel](https://groups.google.com/d/msg/sage-devel/jdLfIKQ
   * Allows user-installs, given that the nix package manager is already installed.
   * To install: `nix-env -iA nixpkgs.sage` or on NixOS just add sage to your `environment.systemPackages`
   * Betas are usually packaged in [a PR](https://github.com/NixOS/nixpkgs/pull/44527) until the release is final.
-  * Currently (2018-07-26) maintained by timokau. Any help is appreciated. If you are interested (even if you don't know anything about nix yet), [[open an issue||https://github.com/NixOS/nixpkgs/issues/new]] pinging `@`timokau and I'll help you get started.
-
+  * Currently (2018-07-26) maintained by timokau. Any help is appreciated. If you are interested (even if you don't know anything about nix yet), [open an issue](https://github.com/NixOS/nixpkgs/issues/new) pinging `@`timokau and I'll help you get started.
 
 ## RPM package (Fedora, Mandriva)
 
   * hosted at: http://rpmfind.net/linux/rpm2html/search.php?query=sagemath
 
-
 ## Ubuntu
 
-  * packages: http://packages.ubuntu.com/sagemath derived from the [[#Debian|Debian]] packages
+  * packages: http://packages.ubuntu.com/sagemath derived from the [This is the Trac macro ** that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-macro) packages
   * earlier PPA: https://launchpad.net/~aims/+archive/ubuntu/sagemath
-
 
 ## Other
 
@@ -188,15 +167,12 @@ Please edit this wiki or email slelievre if you know about other package manager
 providing SageMath... See
 [wikipedia's list of package managers](https://en.wikipedia.org/wiki/List_of_software_package_management_systems).
 
-
 # Windows
-
 
 ## Windows Subsystem for Linux (recommended)
 
   * Under Windows 10, one can run the "Windows Subsystem for Linux" to "run Linux under Windows".
   * Documented in [Sage installation guide](https://doc.sagemath.org/html/en/installation/index.html#windows) since Sage 9.6.
-
 
 ## Cygwin (in search of maintainers)
 
@@ -205,7 +181,6 @@ As of 2022-08 (Sage 9.6/9.7) in search of maintainers.
   * pending tickets: [component: "porting: cygwin"](https://trac.sagemath.org/query?status=!closed&component=porting%3A+Cygwin)
   * wiki pages on Sage's trac: [Cygwin32](https://trac.sagemath.org/wiki/CygwinPort), [Cygwin64](https://trac.sagemath.org/wiki/Cygwin64Port)
 
-
 ## SageMath installer for Windows (abandoned 2021)
 
   * see https://wiki.sagemath.org/SageWindows
@@ -213,32 +188,26 @@ As of 2022-08 (Sage 9.6/9.7) in search of maintainers.
   * based on the Cygwin port of Sage
 
 
-
 ## Discussion
 
   * mailing list (dormant): [sage-windows](https://groups.google.com/forum/#!forum/sage-windows)
 
-
 # Porting to exotic architectures
 
   * trac-wiki: [Porting SageMath to Exotic architectures](https://trac.sagemath.org/wiki/ExoticPorts)
-
 
 ## BSD (2020 most recent activity as of 2022)
 
   * pending tickets: [component: "porting: BSD"](https://trac.sagemath.org/query?status=!closed&component=porting%3A+BSD)
   * previous effort: [Sage on FreeBSD](https://svnweb.freebsd.org/ports/head/math/sage/)
 
-
 ## Solaris (abandoned 2010)
 
   * pending tickets: [component: "porting: Solaris"](https://trac.sagemath.org/query?status=!closed&component=porting%3A+Solaris)
 
-
 ## AIX, HP-UX (abandoned 2011)
 
   * pending tickets: [component: "porting: AIX or HP-UX"](https://trac.sagemath.org/query?status=!closed&component=porting%3A+AIX+or+HP-UX)
-
 
 
 # Discussion

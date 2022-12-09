@@ -1,18 +1,16 @@
-. Question mark means that the information is not confirmed, please edit if you know more... and *note the date of your update* so that current and stale information can be distinguished.
+This page aims to keep information public about Sage's infrastructure.
+Question mark means that the information is not confirmed, please edit if you know more... and *note the date of your update* so that current and stale information can be distinguished.
 
 Please mark which services still need to find a new home, with the system requirements and the deadline.
 
-[[PageOutline]]
-
+[This is the Trac macro *PageOutline* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PageOutline-macro)
 
 # Current services
-
 
 ## DNS
   * registrant: was
   * admin: was, schilly
   * tech contact: was, schilly
-
 
 ## ask.sagemath.org
   * purpose: webserver where users can get support
@@ -31,7 +29,6 @@ Please mark which services still need to find a new home, with the system requir
     * there are two machines : ask-sagemath and ask-sagemath-db
 
 
-
 ## backup
   * purpose: keep the data of various services in a separate place
   * hosted at: [Mathematics lab](https://www.math.u-psud.fr/?lang=fr), Université Paris Sud (Orsay)
@@ -45,7 +42,6 @@ Please mark which services still need to find a new home, with the system requir
     * https://wiki.sagemath.org
 
 
-
 ## doc.sagemath.org, planet.sagemath.org, www.sagemath.org
   * purpose: on-line browsable documentation + web homepage
   * hosted at: github.io
@@ -54,7 +50,6 @@ Please mark which services still need to find a new home, with the system requir
   * admin: everyone who is on the github group for sagemath
   * contact: schilly for the website
   * url: https://doc.sagemath.org https://planet.sagemath.org https://www.sagemath.org
-
 
 ## files.sagemath.org, fileserver.sagemath.org, old.files.sagemath.org
   * purpose: main files, spkgs, and backup of "other" files
@@ -66,7 +61,6 @@ Please mark which services still need to find a new home, with the system requir
   * admin: ohanar?
   * url: http://files.sagemath.org http://fileserver.sagemath.org http://old.files.sagemath.org
 
-
 ## git.sagemath.org, trac.sagemath.org
   * purpose: development tools, they share the same host
   * hosted at: google ?
@@ -76,17 +70,14 @@ Please mark which services still need to find a new home, with the system requir
   * contact: no real organisation yet, go to sage-devel
   * url: https://git.sagemath.org https://trac.sagemath.org
 
-
 ## GitHub organization for SageMath
   * url: https://github.com/sagemath
   * admin: schilly, vbraun
-
 
 ## GitLab organization for SageMath
 
   * url: https://gitlab.com/sagemath
   * admin: embray, jrueth
-
 
 ## build.sagemath.org
   * purpose: distribute and gathers automatic binary building on volunteer's machines
@@ -97,11 +88,10 @@ Please mark which services still need to find a new home, with the system requir
   * contact: ??
   * url: http://build.sagemath.org
 
-
 ## patchbot.sagemath.org
   * purpose: distribute and gathers automatic ticket testing on volunteer's machines
   * hosted at: [IRMA](https://irma.math.unistra.fr/), [Université de Strasbourg](http://www.unistra.fr)
-  * technology used: ubuntu, nginx, uwsgi, flask, mongodb, see [[patchbot]] for more details
+  * technology used: ubuntu, nginx, uwsgi, flask, mongodb, see [patchbot](patchbot) for more details
   * application source code: https://github.com/sagemath/sage-patchbot
   * resources needed: Minimal CPU, RAM. ~50GB disk.
   * admin: chapoton, tmonteil
@@ -110,7 +100,6 @@ Please mark which services still need to find a new home, with the system requir
   * local sage dev: chapoton
   * local tech contact: Alain Sartout
   * url: https://patchbot.sagemath.org
-
 
 ## rsync.sagemath.org
   * purpose: the seed for mirrors, see MirrorNetwork for more details
@@ -124,12 +113,11 @@ Please mark which services still need to find a new home, with the system requir
   * contact: schilly
   * url: http://rsync.sagemath.org
 
-
 ## sagecell.sagemath.org
   * purpose: allow embedding sage computations within a webpage
   * hosted at:
-    * [[Goethe-Universität|www.uni-frankfurt.de]] (Frankfurt, Germany)
-    * [[https://www.uam.es|Universidad Autónoma de Madrid]] (Madrid, Spain)
+    * [Goethe-Universität](https://www.uni-frankfurt.de) (Frankfurt, Germany)
+    * [Universidad Autónoma de Madrid](https://www.uam.es) (Madrid, Spain)
     * Google Compute Engine (Council Bluffs, Iowa, USA)
   * technology used: production installation requires a dedicated server (either physical or virtual)
   * resources needed:
@@ -139,7 +127,6 @@ Please mark which services still need to find a new home, with the system requir
   * admin: novoselt
   * contact: novoselt
   * available urls: http://aleph.sagemath.org, https://sagecell.sagemath.org
-
 
 ## wiki.sagemath.org
   * purpose: the wiki you are reading!
@@ -153,27 +140,22 @@ Please mark which services still need to find a new home, with the system requir
   * formerly hosted at: cloud.google.com
   * possible issue in migration: the database of user accounts is synced from trac when this latter is modified (incron)
 
-
 ## DockerHub organization
   * purpose: distribute SageMath Docker images
   * hosted at: https://hub.docker.com/u/sagemath/
   * admin: embray, jrueth
   * other: slelievre also has push access
 
-
 # Defunct services
-
 
 ## sagenb.org
   * purpose: public notebook,
   * state: end of life; redirects to [CoCalc](https://cocalc.com/)
   * volunteers to provide worksheets back to the users: dimpase, tmonteil, vdelecroix
 
-
 ## sageb0t
   * purpose: turn pull requests on GitHub into trac tickets
   * contact: robertwb
-
 
 ## zulip.sagemath.org
   * purpose: chat system

@@ -1,9 +1,8 @@
+I'll put some info here on what I needed to build Sage on some exotic archs.
 
- Related: [#29143](https://trac.sagemath.org/ticket/29143) - Add to tox.ini 32-bit linux environments and other architectures supported by docker
-
+Related: [#29143](https://trac.sagemath.org/ticket/29143) - Add to tox.ini 32-bit linux environments and other architectures supported by docker
 
 ## SageMath 9.0
-
 
 ### Raspberry Pi 4B 2GB running Raspbian Buster
 
@@ -21,9 +20,7 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 *  [[ https://groups.google.com/forum/#!topic/sage-devel/yngGVDsQ85k ]]
 
 
-
 ## SageMath 8.9
-
 
 ### Raspberry Pi 4B running Raspbian Buster
 
@@ -31,9 +28,7 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 
 
 
-
 ## SageMath 8.2
-
 
 ### Raspberry Pi running Ubuntu 16.04
 
@@ -43,9 +38,7 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 > and adding some swap made 'make build' work. There's still some error
 > with building the documentation, but that's a separate issue.
 
-
 ## Sage 5.13
-
 
 ### Raspberry Pi running Raspbian (armv6 with hard floats)
 
@@ -54,12 +47,10 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 * libmarie triggers an ICE in GCC. Lowering optimization to "-O0" solves the problem.
 * tachyon fails to build but that's just because our install script does not even try.
 
-
 ### ARMv7 board running Ubuntu 12.04 (armv7 with hard floats)
 
 * ATLAS has to be tweaked to build with hard floats. Follow instructions at http://math-atlas.sourceforge.net/errata.html#armhardfp. I also had to bypass throttling detection: modify 
 * pil did not build because of libjpeg misdetection (the lib is installed, the headers aren't, so pil thinks it can include jpeg support but then compiling fails, kind of like [#7273](https://trac.sagemath.org/ticket/7273)). I modified setup.py so that it does not even try to detect libjpeg.
-
 
 ### Sun Ultrasparc T1/2 running debian/sparc (64 bit kernel, 32 bit userland, 32 bit Sage build)
 
@@ -69,12 +60,10 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 * tachyon fails for the same stupid reason as on the raspberry pi.
 * flint fails because we have to feed gcc with -mno-relax when packing shared obj. Fixed upstream at 38d45090d5e46e7237 and in 2.4.
 
-
 ### Sun Ultrasparc T2 running Solaris 10 (64 bit kernel, 32 bit userland, 32 bit Sage build)
 
 * Singular fails to buid because my system is oddly configured and a fix for very old versions of gcc includes some headers it should not. This is fixed upstream.
 * FFLAS-FFLAPACK fails to build. (The new?) ATLAS needs to be linked with "-lrt" (realtime lib), see http://trac.sagemath.org/ticket/10508?cversion=1&cnum_hist=415#comment:407.
-
 
 ### Sun Ultrasparc T1/2 running debian/sparc (64 bit kernel, 32 bit userland, 64 bit Sage build)
 
@@ -83,7 +72,6 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 * tachyon fails for the same stupid reason as before.
 * flint fails because we have to feed gcc with -mno-relax when packing shared obj. Fixed upstream at 38d45090d5e46e7237 and in 2.4.
 * Singular fails, ld complaining about icompatibility between sparcv9 and sparc. -melf64_sparc should be passed to ld, through SLDFLAGS, defined in Singular/configure.in
-
 
 ### Sun Ultrasparc T2 running Solaris 10 (64 bit kernel, 32 bit userland, 64 bit Sage build)
 

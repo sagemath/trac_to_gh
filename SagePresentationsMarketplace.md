@@ -1,18 +1,13 @@
-
 ## Sage Presentations Marketplace
-
 
 
 ### Offered
 
 
-
 ### Wanted
 
 
-
 ### Existing materials online
-
 
 #### Videos
 
@@ -57,11 +52,9 @@
 
  - Videos about manifolds in Sage: https://sagemanifolds.obspm.fr/documentation.html
 
-
 #### Videos in other languages
 
  - [Introduction à SageMath](https://www.canal-u.tv/chaines/groupecalcul/sagemath) by Eric Gourgoulhon (March 2022) _(in French)_ [ [slides](https://luth.obspm.fr/~luthier/gourgoulhon/fr/present_rec/sage_calcul22.pdf) ]
-
 
 #### Notebooks etc.
 
@@ -70,7 +63,6 @@
  - https://github.com/egourgoulhon/SageMathTour/: introductory notebooks about Sage interface, basic calculus (solving equations, ODEs), 2D and 3D plots, etc.
 
  - https://sagemanifolds.obspm.fr/examples.html: notebooks regarding various computations on manifolds
-
 
 #### Interactive pages
 
