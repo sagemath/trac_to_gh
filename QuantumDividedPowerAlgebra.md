@@ -1,4 +1,4 @@
-The  QuantumDividedPowerAlgebra is a graded algebra over a ring R[q]. The component in degree n is the free R[q]-module with basis x^n^. The multiplication is defined on basis elements by x^r^.x^s^ = [r+s,r]_q x^r+s^ where [r+s,r]_q is the quantum binomial coefficient.
+The  [QuantumDividedPowerAlgebra](QuantumDividedPowerAlgebra) is a graded algebra over a ring R[q]. The component in degree n is the free R[q]-module with basis x^n^. The multiplication is defined on basis elements by x^r^.x^s^ = [r+s,r]_q x^r+s^ where [r+s,r]_q is the quantum binomial coefficient.
 
 The [DividedPowerAlgebra](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AQuantumDividedPowerAlgebra) is a graded algebra over a ring R. The component in degree n is the free R-module with basis x^n^. The multiplication is defined on basis elements by x^r^.x^s^ = [r+s,r]_q x^r+s^ where [r+s,r] is the binomial coefficient.
 

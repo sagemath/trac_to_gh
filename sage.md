@@ -1,1 +1,1 @@
-The nickname of SageMath.
+The nickname of [SageMath](SageMath).

@@ -96,10 +96,12 @@ Much time was spent during the workshop (and previously during Sage Days 20) dis
  * Representation theory of Coxeter/reflection groups: porting Chevie's data collections (and/or smoothly interfacing to them as a temporary measure) would definitely make sense. On the other hand algorithms for representations of general groups really belong to GAP 4. Much needs to be done to better expose such features in Sage, in particular around character tables (see [#9293](https://trac.sagemath.org/ticket/9293))!
 
  * Braid groups:
+
 ```
        sage: B = BraidGroup(W)
        sage: B.from_reduced_word(1,2,3)
 ```
+
    * Community?
    * Potential collaboration with Dehornoy
    * A notion of braid group exists for every finite complex reflection group

@@ -74,13 +74,13 @@ As of 2022-08, outdated/broken and in search of new maintainers to fix [various 
 
 # Package managers
 
-This section is about SageMath packages in package managers, which can be
+This section is about [SageMath](SageMath) packages in package managers, which can be
 related to particular Linux distributions, or macOS-specific (like Homebrew),
 or distribution-agnostic, or even OS-agnostic.
 
 See https://repology.org/project/sagemath/versions for an overview of package versions.
 
-  * general SageMath packaging mailing list:
+  * general [SageMath](SageMath) packaging mailing list:
     [sage-packaging](https://groups.google.com/forum/#!forum/sage-packaging)
 
 ## Arch-linux
@@ -131,9 +131,11 @@ See https://repology.org/project/sagemath/versions for an overview of package ve
 ## Homebrew
 
 SageMath can now be installed on macOS via Homebrew by running
+
 ```
 brew cask install sage
 ```
+
 This fetches the dmg for the app, and installs the app from that dmg.
 See [this post on sage-devel](https://groups.google.com/d/msg/sage-devel/jdLfIKQ1M18/PVQqJUUqAgAJ).
 

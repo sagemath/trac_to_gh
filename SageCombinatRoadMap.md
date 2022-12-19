@@ -14,8 +14,9 @@ for further collaborations).
 
 ## Progress of the migration from MuPAD to Sage
 
-| Topic                            |Progress| Comments                      |
+|                                  |        |                               |
 |----------------------------------|--------|-------------------------------|
+| Topic                            |Progress| Comments                      |
 | Basic enumerative combinatorics  | 75%    | 2007-08 by Mike               |
 | Decomposable objects / Species   | 75%    | [#10662](https://trac.sagemath.org/ticket/10662)                        |
 | Trees                            | 30%    |                               |
@@ -41,7 +42,6 @@ for further collaborations).
 | Database access                  |100%    |                               |
 | MachineIntegerListsLex           |  0%    | Will be easy via cython       |
 | Basic abstract data structures   |100%    | (fast stacks, AVL, dancing links) compares to just the basic ones in MuPAD + no real way to implement some with serious speed ourselves     |
-
 ## Road map
 
 * Hopf algebras, Symmetric functions, and generalizations

@@ -2,7 +2,7 @@ I'll put some info here on what I needed to build Sage on some exotic archs.
 
 Related: [#29143](https://trac.sagemath.org/ticket/29143) - Add to tox.ini 32-bit linux environments and other architectures supported by docker
 
-## SageMath 9.0
+## [SageMath](SageMath) 9.0
 
 ### Raspberry Pi 4B 2GB running Raspbian Buster
 
@@ -17,10 +17,10 @@ Related: [#29143](https://trac.sagemath.org/ticket/29143) - Add to tox.ini 32-bi
 
 In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-ssd
 
-*  [[ https://groups.google.com/forum/#!topic/sage-devel/yngGVDsQ85k ]]
+*  [https://groups.google.com/forum/#!topic/sage-devel/yngGVDsQ85k ](https://groups.google.com/forum/#!topic/sage-devel/yngGVDsQ85k)
 
 
-## SageMath 8.9
+## [SageMath](SageMath) 8.9
 
 ### Raspberry Pi 4B running Raspbian Buster
 
@@ -28,7 +28,7 @@ In a few days I will build sage on a Raspberry Pi 4B with 4 GB running on a USB-
 
 
 
-## SageMath 8.2
+## [SageMath](SageMath) 8.2
 
 ### Raspberry Pi running Ubuntu 16.04
 

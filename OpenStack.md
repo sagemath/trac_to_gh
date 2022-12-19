@@ -1,6 +1,7 @@
-# OpenStack
+# [OpenStack](OpenStack)
 
 TODO: Fill in more useful information here.  For now I'm just dumping some notes here:
+
 
 ```
 docker-machine create -d openstack

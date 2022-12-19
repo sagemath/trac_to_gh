@@ -1,3 +1,3 @@
-Some SageMath development is also happening on GitLab.
+Some [SageMath](SageMath) development is also happening on [GitLab](GitLab).
 
 We run a read-only [mirror of the official branches](https://gitlab.com/sagemath/sage/) , a read-only [mirror of the branches that people work on on trac](https://gitlab.com/sagemath/dev/trac/) , and a [collaborative workspace](https://gitlab.com/sagemath/dev/sage/) (contact any of the developers there if you want to get access.)

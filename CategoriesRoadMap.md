@@ -98,6 +98,7 @@ TODO: add link to there + to the category graph
 
 [Axioms primer](http://www.sagemath.org/doc/reference/categories/sage/categories/primer.html#axioms)
 
+
 ```
     sage: Groups() & Sets().Finite()
 	Category of finite groups
@@ -106,6 +107,7 @@ TODO: add link to there + to the category graph
 	sage: _ & Sets().Finite()
 	Category of finite fields
 ```
+
 
 - Original infrastructure: [#10963](https://trac.sagemath.org/ticket/10963)
 - Alternative infrastructure proposal: [#15701](https://trac.sagemath.org/ticket/15701)

@@ -1,4 +1,4 @@
-# SageMath: upstream projects
+# [SageMath](SageMath): upstream projects
 
 Per [Wikipedia](https://en.wikipedia.org/wiki/Upstream_(software_development)), in software development, "upstream" refers to a direction toward the original authors or maintainers of software.
 

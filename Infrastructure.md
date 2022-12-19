@@ -70,11 +70,11 @@ Please mark which services still need to find a new home, with the system requir
   * contact: no real organisation yet, go to sage-devel
   * url: https://git.sagemath.org https://trac.sagemath.org
 
-## GitHub organization for SageMath
+## [GitHub](GitHub) organization for [SageMath](SageMath)
   * url: https://github.com/sagemath
   * admin: schilly, vbraun
 
-## GitLab organization for SageMath
+## [GitLab](GitLab) organization for [SageMath](SageMath)
 
   * url: https://gitlab.com/sagemath
   * admin: embray, jrueth

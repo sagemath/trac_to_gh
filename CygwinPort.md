@@ -198,6 +198,7 @@ Here follow the problem encountered while building Sage:
 It should be noted that some libraries were only build in static version although building a shared version should not be a problem, but just a matter of passing -no-undefined to libtool when it is invoked in link mode (adding --no-undefined to LDFLAGS might not work, nor adding -Wl,--no-undefined to C[XX]FLAGS flags, it is really libtool which must be convinced it is not an issue and it doesn't care about the previous env variables) so that libtool does not complain, this is now [#13354](https://trac.sagemath.org/ticket/13354) (see there for current status).
 
 Some worrying cygcheck output:
+
 ```
 (sage-sh) jp`@`THINKPAD:~/sage-5.2$ for d in `find . -name *.dll`; do t=`cygcheck $d 2>&1|grep "not find"`; if [ -n "$t" ]; then echo $d; echo $t; fi; done
 ./devel/sage-main/build/lib.cygwin-1.7.16-i686-2.7/sage/libs/lcalc/lcalc_Lfunction.dll
@@ -253,15 +254,18 @@ cygcheck: track_down: could not find libR.dll
 ./local/lib/R/modules/vfonts.dll
 cygcheck: track_down: could not find libR.dll
 ```
+
 Follow-up tickets:
 * the lcalc_Lfunction is now [#13351](https://trac.sagemath.org/ticket/13351),
 * the rpy2.rinterface.rinterface is now [#13350](https://trac.sagemath.org/ticket/13350),
 * the R/modules/* errors are harmless.
 
 Doctest failures:
+
 ```
 
 ```
+
 Follow-up tickets:
 * sage.libs.mwrank.mwrank seems dysfunctional. Linking it to a shared version of eclib provided in [#13325](https://trac.sagemath.org/ticket/13325) solves the problem.
 
@@ -353,6 +357,7 @@ Experience:
 ### Testing Sage 5.6.rc0 on 64 bits Windows 7
 
 With the following Cygwin packages installed:
+
 ```
 $ cygcheck -c
 Cygwin Package Information
@@ -458,6 +463,7 @@ which                2.20-2               OK
 xz                   5.0.2_20110517-1     OK
 zlib0                1.2.7-1              OK
 ```
+
 + hacks:
 * the gcc-4.7.2.p0 optional spkg (from [#13913](https://trac.sagemath.org/ticket/13913), merged) as gcc 4.6.3 is known to fail to build ECL,
 * the zlib spkg from [#13914](https://trac.sagemath.org/ticket/13914) to install shared libraries,
@@ -477,12 +483,14 @@ And with [#9167](https://trac.sagemath.org/ticket/9167) the doc completely build
 * there really is a problem with singular, see [#14033](https://trac.sagemath.org/ticket/14033)
 * had to rebase once before the sage library
 * errors building libgap related files in the sage library, surely because no shared libgap is built because of libtool -no-undefined flag mess (by the way libgap spkg-install is a real mess):
+
 ```
 gcc -shared -Wl,--enable-auto-image-base -L/home/jp/sage-5.7.beta1/local/lib build/temp.cygwin-1.7.17-i686-2.7/sage/libs/gap/util.o -L/home/jp/sage-5.7.beta1/local/lib -L/home/jp/sage-5.7.beta1/local/lib/python2.7/config -lcsage -lcsage -lgmp -lgap -lm -lstdc++ -lntl -lpython2.7 -o build/lib.cygwin-1.7.17-i686-2.7/sage/libs/gap/util.dll
 build/temp.cygwin-1.7.17-i686-2.7/sage/libs/gap/util.o: In function `__pyx_f_4sage_4libs_3gap_4util_memory_usage':
 /home/jp/sage-5.7.beta1/devel/sage/sage/libs/gap/util.c:4232: undefined reference to `__imp__libGAP_StopBags'
 /home/jp/sage-5.7.beta1/devel/sage/sage/libs/gap/util.c:4241: undefined reference to `__imp__libGAP_EndBags'
 ```
+
 * after fixing the libgap issue (see [#14038](https://trac.sagemath.org/ticket/14038)), Sage builds and starts, reissued make to build the few missing spkg (sagetex, conway_polynomials), and now its building the doc.
 * needs a rebase when building the doc, then finished successfully.
 * now running "make ptest" (expecting some failures as I did not take care of [#13960](https://trac.sagemath.org/ticket/13960) or [#9176](https://trac.sagemath.org/ticket/9176) and surely others).

@@ -52,6 +52,7 @@ sage: 1 + 2
 3
 ```
 }}}
+
 You can also use backticks (```) to demarcate inline code snippets, etc. This is useful around names like `DiGraph` to avoid an automatic wikilink (DiGraph), like so: ``DiGraph``.
 
 SageMath makes use of many upstream projects, which have their own bug tracking pages. A selection: [Cython](https://github.com/cython/cython), [fflas-ffpack](https://github.com/linbox-team/fflas-ffpack/issues), [GAP](https://github.com/gap-system/gap/issues), [GCC](https://gcc.gnu.org/bugzilla/) ([instructions](https://gcc.gnu.org/bugs/)), [Givaro](https://github.com/linbox-team/givaro/issues), [JMol](https://sourceforge.net/p/jmol/bugs/), [LinBox](https://github.com/linbox-team/linbox/issues), [Maxima](https://sourceforge.net/p/maxima/bugs/), [Numpy](https://github.com/numpy/numpy/issues), [PARI/GP](https://pari.math.u-bordeaux.fr/Bugs/) ([instructions](https://pari.math.u-bordeaux.fr/Bugs/Reporting.html)), [Python](https://bugs.python.org/), [Singular](https://www.singular.uni-kl.de:8002/trac/).
@@ -77,7 +78,7 @@ Make sure you understand the review process, and the procedures for opening and 
 
 When opening a ticket to make a feature request or to plan a project, you may find our [Feature request guidelines](https://wiki.sagemath.org/feature_request_guidelines) helpful.
 
-![](ticket_badges.png, 547px)
+[[Home/ticket_badges.png]]
 
 After pushing a branch to a ticket, the ticket will show badges linking to results of automated tests that run on the [patchbot](patchbot) and other [tests that run on GitHub Actions](https://trac.sagemath.org/wiki/ReleaseTours/sage-9.6#Newdevelopertools).
 
@@ -167,6 +168,7 @@ diff --git a/bar b/bar
 +xyzzy
 ```
 }}}
+
 To avoid an automatic wikilink for non-code names like GitHub, prepend it with an exclamation mark: `GitHub`. See WikiFormatting for more information.
 
 ## Account Names Mapped to Real Names

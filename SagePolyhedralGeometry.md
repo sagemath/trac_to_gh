@@ -44,7 +44,7 @@ There are already a few meta-tickets related to this topic:
  * [#27736](https://trac.sagemath.org/ticket/27736): Polymake: Turn polymake applications into objects with directories
  * [#27728](https://trac.sagemath.org/ticket/27728): Add Perles and irrational polytopes to library
  * Euclidean automorphisms group of polytopes in Normaliz 
- * The integration of automorphisms into SageMath
+ * The integration of automorphisms into [SageMath](SageMath)
  * The remaining main computation goal, Hilbert and Ehrhart series turned out to be a very difficult task since it would require the precise construction of a fundamental domain of the group action.
  * Once interactive H-representation in normaliz is possible ("redund-like") make it work with the "A & B" operation in Sage!
 

@@ -7,7 +7,7 @@ This page aims at documenting the progress of the Graph Theory component of Sage
 
 # Comparison with other graph theory software
 
-* [This](Mathematica Graph Theory ) page aims at comparing the features implemented in Mathematica that are missing in Sage.
+* [This](Mathematica-Graph-Theory-) page aims at comparing the features implemented in Mathematica that are missing in Sage.
 
 # Missing features
 
