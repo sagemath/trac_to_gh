@@ -100,12 +100,12 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
    * [#16905](https://trac.sagemath.org/ticket/16905) - really long intervals for integration
    * [#17606](https://trac.sagemath.org/ticket/17606) - Calculation involving nintegral works with Sage 6.3 but not with Sage 6.4
    * [#18059](https://trac.sagemath.org/ticket/18059) - runaway 'unable to simplify to float approximation'
-   * [#18599](https://trac.sagemath.org/ticket/18599) - sqrt(cot^2^)
+   * [#18599](https://trac.sagemath.org/ticket/18599) - sqrt(cot<sup>2</sup>)
    * [#18821](https://trac.sagemath.org/ticket/18821) - sqrt(cos)*sin
-   * [#20467](https://trac.sagemath.org/ticket/20467) - stackoverflow in sin(k*x)/x*erf(x^2^)
+   * [#20467](https://trac.sagemath.org/ticket/20467) - stackoverflow in sin(k*x)/x*erf(x<sup>2</sup>)
    * [#21440](https://trac.sagemath.org/ticket/21440) - cos(2*pi*x)
    * [#22567](https://trac.sagemath.org/ticket/22567) - GSL: Unevaluated integrals to infinity have nonsense numeric value
-   * [#22671](https://trac.sagemath.org/ticket/22671) - ((1+x)^(1/5)^/(1-x)).integrate(x,2.,3.)
+   * [#22671](https://trac.sagemath.org/ticket/22671) - ((1+x)<sup>(1/5)</sup>/(1-x)).integrate(x,2.,3.)
    * [#22676](https://trac.sagemath.org/ticket/22676) - Different results from definite integral methods
    * [#24008](https://trac.sagemath.org/ticket/24008) - exponential integral of arccos
    * [#24587](https://trac.sagemath.org/ticket/24587) - integral(sqrt(1-cos(x)), x, 0, 2*pi)
@@ -141,7 +141,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#21307](https://trac.sagemath.org/ticket/21307) - Maxima crash: `TypeError` when simplifying factorial ratio
  * [#21335](https://trac.sagemath.org/ticket/21335) - Extend normalize() and use it instead of Maxima in simplify_rational()
  * [#21574](https://trac.sagemath.org/ticket/21574) - simplify_log() does not
- * [#22027](https://trac.sagemath.org/ticket/22027) - Simplifying 0^x^ gives 0, with no assumptions on x
+ * [#22027](https://trac.sagemath.org/ticket/22027) - Simplifying 0<sup>x</sup> gives 0, with no assumptions on x
  * [#22467](https://trac.sagemath.org/ticket/22467), [#22495](https://trac.sagemath.org/ticket/22495) - simplify_hypergeometric bug
  * [#22607](https://trac.sagemath.org/ticket/22607) - Add reduce_trig() to applied "full simplify" methods
  * [#22621](https://trac.sagemath.org/ticket/22621) - Improve sqrt products simplification
@@ -183,7 +183,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#9555](https://trac.sagemath.org/ticket/9555)  - Series expansions at singularities don't work
  * [#12589](https://trac.sagemath.org/ticket/12589) - series yields wrong result
  * [#15830](https://trac.sagemath.org/ticket/15830) - extracting coefficient x-1 out of symbolic series wrong
- * [#15854](https://trac.sagemath.org/ticket/15854) - series of x^s^, when s is symbolic
+ * [#15854](https://trac.sagemath.org/ticket/15854) - series of x<sup>s</sup>, when s is symbolic
  * [#17400](https://trac.sagemath.org/ticket/17400) - simplify_full returns odd result from symbolic series input
  * [#18500](https://trac.sagemath.org/ticket/18500) - coercion of Laurent series to SR
  * [#19149](https://trac.sagemath.org/ticket/19149) - Sister Celine's method for hypergeometric series
@@ -300,7 +300,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
 ## Maxima interface
  * [#6862](https://trac.sagemath.org/ticket/6862) - Maxima default domain is real, not complex
  * [#9825](https://trac.sagemath.org/ticket/9825)  - interpret Maxima's temporary variables
- * [#11651](https://trac.sagemath.org/ticket/11651) - Decide what to do with e^(y=x)^
+ * [#11651](https://trac.sagemath.org/ticket/11651) - Decide what to do with e<sup>(y=x)</sup>
  * [#12032](https://trac.sagemath.org/ticket/12032) - Symbolics code passes ungrammatical expressions to maxima
  * [#12809](https://trac.sagemath.org/ticket/12809) - Solve does not give consistent results when a dummy variable is involved
  * [#13071](https://trac.sagemath.org/ticket/13071) - maxima interface integration problem
@@ -314,8 +314,8 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#20846](https://trac.sagemath.org/ticket/20846) - Maxima does not handle symbolic series
  * [#21444](https://trac.sagemath.org/ticket/21444) - SR.wild and maxima don't mix
  * [#21907](https://trac.sagemath.org/ticket/21907) - Bug in Maxima interface wrt polylog
- * [#21974](https://trac.sagemath.org/ticket/21974) - Assuming x==0, x^x^ raises a non-informative error from Maxima
- * [#22027](https://trac.sagemath.org/ticket/22027) - Simplifying 0^x^ gives 0, with no assumptions on x
+ * [#21974](https://trac.sagemath.org/ticket/21974) - Assuming x==0, x<sup>x</sup> raises a non-informative error from Maxima
+ * [#22027](https://trac.sagemath.org/ticket/22027) - Simplifying 0<sup>x</sup> gives 0, with no assumptions on x
  * [#22763](https://trac.sagemath.org/ticket/22763) - Assumptions on symbols not preserved with some unevaluated integrals
  * [#22850](https://trac.sagemath.org/ticket/22850) - Change specific heaviside() interface to Maxima
  * [#22857](https://trac.sagemath.org/ticket/22857) - Using symbolic variables in domain 'positive' makes Sage crash
@@ -383,7 +383,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#22566](https://trac.sagemath.org/ticket/22566) - SymPy's ceiling() is not translated to Sage
  * [#23923](https://trac.sagemath.org/ticket/23923) - Interface cases function with SymPy's piecewise
  * [#10035](https://trac.sagemath.org/ticket/10035) - Create hold context
- * [#18970](https://trac.sagemath.org/ticket/18970) - always simplify log(a^m^,a) to m for any a,m coercible to Integer
+ * [#18970](https://trac.sagemath.org/ticket/18970) - always simplify log(a<sup>m</sup>,a) to m for any a,m coercible to Integer
  * [#21391](https://trac.sagemath.org/ticket/21391) - Disallow mixing of pos.char.ring elements and symbolic variables
  * [#20204](https://trac.sagemath.org/ticket/20204) - problems with constructing or converting to SymPy expressions
  * [#14305](https://trac.sagemath.org/ticket/14305) - Clarify assumptions and domains in Maxima
@@ -397,14 +397,14 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#23135](https://trac.sagemath.org/ticket/23135) - Conjugate does not distribute over a sum
  * [#23496](https://trac.sagemath.org/ticket/23496) - sympy patch for abstract function
  * [#22709](https://trac.sagemath.org/ticket/22709) - to_poly_solve=True actually raises exception
- * [#17968](https://trac.sagemath.org/ticket/17968) - exp(x^3^) from 1 to 2
- * [#22672](https://trac.sagemath.org/ticket/22672) - Definite integral of (1-x)^(1/5)^/sqrt(x) crashes with both GSL and Maxima
+ * [#17968](https://trac.sagemath.org/ticket/17968) - exp(x<sup>3</sup>) from 1 to 2
+ * [#22672](https://trac.sagemath.org/ticket/22672) - Definite integral of (1-x)<sup>(1/5)</sup>/sqrt(x) crashes with both GSL and Maxima
  * [#22915](https://trac.sagemath.org/ticket/22915) - Distribute symbolic sums over the terms of their first (sum) argument
  * [#22733](https://trac.sagemath.org/ticket/22733) - Bug with first call to ex.series()
  * [#20179](https://trac.sagemath.org/ticket/20179) - add a free_variables() method
  * [#22026](https://trac.sagemath.org/ticket/22026) - Even reals are integers
  * [#22894](https://trac.sagemath.org/ticket/22894) - Symbolic expression.is_exact()
- * [#22005](https://trac.sagemath.org/ticket/22005) - sum(1/((2*n+1)^2^-4)^2^, n, 0, oo, algorithm='maxima') is wrong
+ * [#22005](https://trac.sagemath.org/ticket/22005) - sum(1/((2*n+1)<sup>2</sup>-4)<sup>2</sup>, n, 0, oo, algorithm='maxima') is wrong
  * [#20084](https://trac.sagemath.org/ticket/20084) - residue: mathematically wrong output
  * [#22833](https://trac.sagemath.org/ticket/22833) - fix a calculus doctest (giac, laplace, integration)
  * [#22909](https://trac.sagemath.org/ticket/22909) - Indexed SR variables
@@ -426,7 +426,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#10284](https://trac.sagemath.org/ticket/10284) - Infinite loop in gcd() via pynac-0.2.1
  * [#20089](https://trac.sagemath.org/ticket/20089) - let pynac.pyx use mpmath for arccos
  * [#20455](https://trac.sagemath.org/ticket/20455) - rewrite buggy Expression.coefficients() without Maxima
- * [#15605](https://trac.sagemath.org/ticket/15605) - (-1)^(2/3)^ evaluates to 1
+ * [#15605](https://trac.sagemath.org/ticket/15605) - (-1)<sup>(2/3)</sup> evaluates to 1
  * [#21428](https://trac.sagemath.org/ticket/21428) - AssertionError plotting real part of complex function with float coefficients
  * [#14878](https://trac.sagemath.org/ticket/14878) - very slow taylor expansion for composite functions
  * [#21730](https://trac.sagemath.org/ticket/21730) - Add dedicated symbolic series tests
@@ -486,7 +486,7 @@ This page gives an overview of open symbolics issues.  If you notice a symbolics
  * [#16643](https://trac.sagemath.org/ticket/16643) integrate() infinite loop
  * [#15346](https://trac.sagemath.org/ticket/15346) - implement simplify_sum and call it from full_simplify
  * [#15571](https://trac.sagemath.org/ticket/15571) - Incorrect zero test of complex symbolic expressions
- * [#10629](https://trac.sagemath.org/ticket/10629) - performance of checking if (c/d)^(a/b)^ is rational
+ * [#10629](https://trac.sagemath.org/ticket/10629) - performance of checking if (c/d)<sup>(a/b)</sup> is rational
  * [#12922](https://trac.sagemath.org/ticket/12922) - add implicit derivative
  * [#9824](https://trac.sagemath.org/ticket/9824) - improve desolve system documentation for initial conditions
  * [#14630](https://trac.sagemath.org/ticket/14630) - add `simplify_real`

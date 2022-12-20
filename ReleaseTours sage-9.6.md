@@ -546,7 +546,7 @@ There is a new thematic tutorial providing many details and examples.
 ### Miscellaneous improvements
 
  * Ideal membership over quotient rings can now be decided (by reducing to ideal membership in the parent ring). [#33237](https://trac.sagemath.org/ticket/33237)
- * Iterating over (some) infinite modules (including ℤ_^n^_) now enumerates the entire module, in a "natural" order. [#33287](https://trac.sagemath.org/ticket/33287)
+ * Iterating over (some) infinite modules (including ℤ_<sup>n</sup>_) now enumerates the entire module, in a "natural" order. [#33287](https://trac.sagemath.org/ticket/33287)
  * `BinaryQF.solve_integer()` now also works for quadratic forms of square discriminant. [#33026](https://trac.sagemath.org/ticket/33026)
  * `Quaternion fractional ideals` (including orders) now support the usual operations (e.g., `a*I`, `I*a`, `I+J`). [#32264](https://trac.sagemath.org/ticket/32264)
  * `AdditiveAbelianGroupWrapper` now exposes `.discrete_log()` for (multi-dimensional) logarithms in finite abelian groups. [#32384](https://trac.sagemath.org/ticket/32384)
