@@ -1,4 +1,5 @@
-# Patchbot plugins and migration to GitHub Actions
+# Patchbot plugins and migration to [GitHub](GitHub) Actions
+
 
 
 ```
@@ -8,6 +9,7 @@
 │░│ ──── │
 ╘═╧══════╛
 ```
+
 
 [Developer's guide: Working on Tickets](https://8bf9d9738304b9bf1dee14ee639c934db15972a5--sagemath-tobias.netlify.app/developer/trac.html#working-on-tickets) explains the new GH Actions workflows that replace the Patchbot.
 

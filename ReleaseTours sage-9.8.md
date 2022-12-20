@@ -19,6 +19,7 @@ Standard bases of tensor modules (and of their new submodules) are now explicit 
 The method [FiniteRankFreeModule.isomorphism_with_fixed_basis](https://doc.sagemath.org/html/en/reference/tensor_free_modules/sage/tensor/modules/finite_rank_free_module.html?highlight=isomorphism_with#sage.tensor.modules.finite_rank_free_module.FiniteRankFreeModule.isomorphism_with_fixed_basis) now also works for tensor modules (and their submodules). [#34427](https://trac.sagemath.org/ticket/34427)
 
 For example, we can now send (1,1)-tensors to matrices:
+
 ```
             sage: V = FiniteRankFreeModule(QQ, 3, start_index=1); V
             3-dimensional vector space over the Rational Field
@@ -42,7 +43,9 @@ For example, we can now send (1,1)-tensors to matrices:
             [  0   0   0]
             [  0   0   0]
 ```
+
 Or we can send symmetric bilinear forms to matrices:
+
 ```
             sage: V = FiniteRankFreeModule(QQ, 3, start_index=1); V
             3-dimensional vector space over the Rational Field
@@ -72,6 +75,7 @@ Or we can send symmetric bilinear forms to matrices:
             [3 5 6]
 ```
 
+
 ## Commutative algebra
 
 ### Solving polynomial systems using msolve
@@ -93,6 +97,7 @@ The `Polyhedron` constructor offers a new option `backend='number_field'`. [#344
 It accepts any input data that Sage can convert to a common real embedded algebraic number field.
 The new backend uses this embedded number field internally for the polyhedral representation conversion,
 but the results are converted back to the (common) base ring of the input.
+
 ```
         sage: polytopes.icosahedron(exact=True, backend='number_field')
         A 3-dimensional polyhedron
@@ -109,11 +114,13 @@ but the results are converted back to the (common) base ring of the input.
         sage: P.vertices()
         (A vertex at (sqrt(2)), A vertex at (2^(1/3)))
 ```
+
 The same was previously only possible with `backend='normaliz'`. The new backend does not require the installation of an optional package; but note that `backend='normaliz'` is much faster than `backend='number_field'`.
 
 The `Polyhedron` constructor now can also convert from convex polyhedra represented by some other classes. [#14222](https://trac.sagemath.org/ticket/14222)
 
 For example:
+
 ```
         sage: quadrant = Cone([(1,0), (0,1)])
         sage: Polyhedron(quadrant)
@@ -131,6 +138,7 @@ For example:
 ```
 
 
+
 ## Number theory
 
 * `CRT_list()` now uses a binary tree instead of folding the input from one side, which can be much faster. [#34512](https://trac.sagemath.org/ticket/34512)
@@ -143,13 +151,15 @@ The new optional package [msolve](https://github.com/algebraic-solving/msolve) i
 
 [TOPCOM](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), the package for computing triangulations of point configurations and oriented matroids, has been upgraded to 1.1.2. [#31531](https://trac.sagemath.org/ticket/31531)
 
-[NumPy](https://numpy.org/) has been updated from 1.22.x to 1.23.3 ([release notes for 1.23](https://numpy.org/devdocs/release/1.23.0-notes.html)). [#34110](https://trac.sagemath.org/ticket/34110)	
+[NumPy](https://numpy.org/) has been updated from 1.22.x to 1.23.5 ([release notes for 1.23](https://numpy.org/devdocs/release/1.23.0-notes.html)). [#34110](https://trac.sagemath.org/ticket/34110), [#34658](https://trac.sagemath.org/ticket/34658)	
 
-[SciPy](https://scipy.org/) has been updated from 1.8.1 to 1.9.2 ([release notes for 1.9](https://scipy.github.io/devdocs/release.1.9.0.html)). [#34081](https://trac.sagemath.org/ticket/34081)
+[SciPy](https://scipy.org/) has been updated from 1.8.1 to 1.9.3 ([release notes for 1.9](https://scipy.github.io/devdocs/release.1.9.0.html)). [#34081](https://trac.sagemath.org/ticket/34081), [#34658](https://trac.sagemath.org/ticket/34658)
 
-Update sympy to 1.11.1, [#34118](https://trac.sagemath.org/ticket/34118)
+Updated sympy to 1.11.1. [#34118](https://trac.sagemath.org/ticket/34118)
 
-Update igraph, python_igraph to 0.10.x. [#34491](https://trac.sagemath.org/ticket/34491), [#34498](https://trac.sagemath.org/ticket/34498), [#34680](https://trac.sagemath.org/ticket/34680)
+Updated igraph, python_igraph to 0.10.x. [#34491](https://trac.sagemath.org/ticket/34491), [#34498](https://trac.sagemath.org/ticket/34498), [#34680](https://trac.sagemath.org/ticket/34680)
+
+Matplotlib has been updated to 3.6. [#34796](https://trac.sagemath.org/ticket/34796)
 
 The `rpy2` package has been upgraded to version 3.4.5. It provides an interface to a suitable system installation of [R](https://www.r-project.org/), versions 3.5 or newer. Sage 9.8 no longer offers a package for installing R itself from source. [#34268](https://trac.sagemath.org/ticket/34268)
 
@@ -168,9 +178,11 @@ For a list of all packages and their versions, see
 This does an incremental build of Sage on top of a prebuilt image published at ghcr.io (​https://github.com/orgs/sagemath/packages?tab=packages). [#34228](https://trac.sagemath.org/ticket/34228)
 
 For example:
+
 ```
 $ tox -e docker-fedora-31-standard-incremental
 ```
+
 
 ### `./configure --enable-wheels`
 
@@ -192,6 +204,7 @@ The option can be used with or without `--disable-editable`, so there are now 4 
 When Sage is installed from source, it will make use of various system packages; in particular, it will link to shared libraries provided by the system. Indiscriminate upgrades of system packages can break a Sage installation.
 
 This can always be fixed by a full rebuild (`make distclean && make build`), but this time-consuming step can often be avoided by just reinstalling a few packages. The new command `make -j list-broken-packages` assists with this. [#34203](https://trac.sagemath.org/ticket/34203)
+
 ```
 $ make -j list-broken-packages
 make --no-print-directory auditwheel_or_delocate-no-deps
@@ -213,6 +226,7 @@ real	2m25.787s
 user	4m54.270s
 sys	4m0.796s
 ```
+
 
 ## Configuration changes
 
@@ -247,7 +261,7 @@ Sage 9.8 ships a copy of GCC 12.x with Apple Silicon support, so it can now be b
 
 ## Availability of Sage 9.8 and installation help
 
-The first development release, 9.8.beta0, was tagged on 2022-09-25. The current development release is 9.8.beta4, tagged on 2022-11-21.
+The first development release, 9.8.beta0, was tagged on 2022-09-25. The current development release is 9.8.beta5, tagged on 2022-12-11.
 
 ### Sources
 

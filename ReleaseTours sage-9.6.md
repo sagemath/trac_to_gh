@@ -17,27 +17,35 @@ in this version.
 [JupyterLab](https://jupyter.org/), the latest web-based interactive development environment for notebooks, code, and data, is slated to replace the now-classic Jupyter notebook interface.  The version of JupyterLab in the Sage distribution has been upgraded to the major new version 3.3. [#32069](https://trac.sagemath.org/ticket/32069), [#33607](https://trac.sagemath.org/ticket/33607)
 
 After `./sage -i jupyterlab_widgets`, you can run it using 
+
 ```
 ./sage -n jupyterlab
 ```
+
 Also two new interface variants are provided: 
+
 ```
 ./sage -n nbclassic
 ```
+
 and
+
 ```
 ./sage -n retrolab
 ```
+
 
 ### LaTeX displays in JupyterLab
 
 Users of Sage in [JupyterLab](https://jupyter.org/) got used to expressions displayed at center in the LaTeX display mode. For compatibility with displays in classic Jupyter, we decided to change the behavior so that now expressions are displayed aligned left by default.
 
 If you belong to the minority preferring centered displays, you can set your preference by
+
 ```
 dm = get_display_manager()   
 dm.preferences.align_latex = 'center'  # or 'left'
 ```
+
 in the `~/.sage/init.sage` script.
 
 ### Interactive graph editing with phitigra
@@ -55,6 +63,7 @@ With the new optional package [phitigra](https://pypi.org/project/phitigra) (use
 The `TikzPicture` module which was developed in the [slabbe](https://pypi.org/project/slabbe/) package for more than 5 years is now in Sage. This was done in ticket [#20343](https://trac.sagemath.org/ticket/20343). The module is within the new file `sage/misc/latex_standalone.py` and its documentation in the reference manual is available here: https://doc.sagemath.org/html/en/reference/misc/sage/misc/latex_standalone.html. Below are some usage examples.
 
 First example shows that it takes any tikz picture string as input:
+
 ```
 sage: from sage.misc.latex_standalone import TikzPicture
 sage: s = '\\begin{tikzpicture}\n\\draw[->,green,very thick](0,0) -- (1,1);\\end{tikzpicture}'
@@ -67,11 +76,13 @@ sage: t        # in Jupyter, rich representation will show the image instead
 \end{document}
 sage: path_to_file = t.pdf() # and opens the image in a viewer
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_arrow.png)
 
 Of course, conversion to pdf format necessitates `pdflatex` or `lualatex`. If `lualatex` is available it uses it in preference to `pdflatex` because it handles better the very big pictures in terms of memory limits.
 
 One can provide a local filename to save to, or convert the image to other formats (using pdftocairo or imagemagick external packages):
+
 ```
 sage: path_to_file = t.pdf('file.pdf')  # when providing a filename, it just saves 
                                         # the file locally, does not open in a viewer
@@ -80,7 +91,9 @@ sage: path_to_file = t.svg() # to svg
 sage: path_to_file = t.tex() # print the tex source to a file
 ```
 
+
 Another example with graphs where additional usepackage are necessary to compile the image correctly:
+
 ```
 sage: from sage.misc.latex_standalone import TikzPicture
 sage: g = graphs.PetersenGraph()
@@ -107,7 +120,9 @@ Use print to see the full content.
 \end{document}
 sage: _ = t.pdf()               # or t.png() or t.svg()
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_graph.png)
+
 ```
 sage: from sage.misc.latex_standalone import TikzPicture
 sage: V = [[1,0,1],[1,0,0],[1,1,0],[0,0,-1],[0,1,0],[-1,0,0],[0,1,1],[0,0,1],[0,-1,0]]
@@ -116,9 +131,11 @@ sage: s = P.projection().tikz([674,108,-731],112)
 sage: t = TikzPicture(s)
 sage: _ = t.pdf()               # or t.png() or t.svg()
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_polyhedron.png)
 
 The module also contains a class `Standalone`, from which the class `TikzPicture` inherits:
+
 ```
 sage: from sage.misc.latex_standalone import Standalone
 sage: s = Standalone('Hello World', usepackage=['amsmath'], standalone_config=['beamer=true','border=1mm'])
@@ -132,9 +149,11 @@ Hello World
 \end{document}
 sage: _ = s.pdf()               # or s.png() or s.svg()
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_hello.png)
 
 Another example using `Standalone` with a tableau:
+
 ```
 sage: P = Permutations(10)
 sage: p = P.random_element()
@@ -159,6 +178,7 @@ sage: s
 \end{document}
 sage: _ = s.pdf()               # or s.png() or s.svg()
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=tikz_tableau.png)
 
 In a next step, a method `tikz()` will be added to graphs, polytopes, posets, etc. to return an object of type `TikzPicture` see [#33002](https://trac.sagemath.org/ticket/33002).
@@ -169,21 +189,27 @@ The complex plotting package [phase_mag_plot](https://github.com/davidlowryduda/
 
 To use a colormap, one can pass in a string as in
 
+
 ```
 sage: complex_plot((x - 5)*sqrt(x), (-10, 10), (-10, 10), cmap='twilight')
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=cmap_twilight.png)
 
 Contouring or tiling are enabled through keyword options. To look smooth, it's typically necessary to plot the function on additional points through the use of `plot_points`. This looks like
 
+
 ```
 sage: complex_plot((x - 5)*sqrt(x), (-10, 10), (-10, 10), cmap='twilight', plot_points=500, contoured=True)
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=cmap_twilight_contour.png)
+
 
 ```
 sage: complex_plot((x - 5)*sqrt(x), (-10, 10), (-10, 10), cmap='twilight', plot_points=500, tiled=True)
 ```
+
 ![](https://wiki.sagemath.org/ReleaseTours/sage-9.6?action=AttachFile&do=get&target=cmap_twilight_tiled.png)
 
 ## Linear algebra
@@ -193,6 +219,7 @@ sage: complex_plot((x - 5)*sqrt(x), (-10, 10), (-10, 10), cmap='twilight', plot_
 The new classes `Matrix_numpy_integer_dense` and `Vector_numpy_integer_dense` implement matrices and vectors with 64-bit integer entries backed by `numpy` arrays. [#32465](https://trac.sagemath.org/ticket/32465).
 
 As a first application, several methods of `GenericGraph` that return matrices, such as `adjacency_matrix`, now accept keyword arguments that can select the matrix implementation. [#33377](https://trac.sagemath.org/ticket/33377), [#33387](https://trac.sagemath.org/ticket/33387), [#33388](https://trac.sagemath.org/ticket/33388), [#33389](https://trac.sagemath.org/ticket/33389)
+
 ```
 sage: graphs.PathGraph(5).adjacency_matrix(sparse=False, implementation='numpy')
 [0 1 0 0 0]
@@ -203,6 +230,7 @@ sage: graphs.PathGraph(5).adjacency_matrix(sparse=False, implementation='numpy')
 sage: type(_)
 <class 'sage.matrix.matrix_numpy_integer_dense.Matrix_numpy_integer_dense'>
 ```
+
 
 ### CombinatorialFreeModule improvements
 
@@ -217,6 +245,7 @@ SymPy has been upgraded to version 1.10.1 ([release notes](https://github.com/sy
 ### ImageSet
 
 Sage 9.6 defines a new class `ImageSet`. [#32121](https://trac.sagemath.org/ticket/32121)
+
 
 ```
 sage: ImageSet(sin, RealSet.open(0, pi/4))
@@ -239,7 +268,9 @@ sage: _.an_element()
 25
 ```
 
+
 The new class mirrors and translates to [SymPy's ImageSet](https://docs.sympy.org/latest/modules/sets.html#imageset):
+
 ```
 sage: from sage.sets.image_set import ImageSet
 sage: S = ImageSet(sin, RealSet.open(0, pi/4)); S
@@ -247,6 +278,7 @@ Image of (0, 1/4*pi) by The map sin from (0, 1/4*pi)
 sage: S._sympy_()
 ImageSet(Lambda(x, sin(x)), Interval.open(0, pi/4))
 ```
+
 
 Most methods of `ImageSet` are actually provided by its base class, the new class `ImageSubobject`. 
 For all morphisms in the `Sets` category, there is now a default method `image`, which constructs an instance of either `ImageSubobject` or `ImageSet`.
@@ -264,17 +296,21 @@ Three classes of classical (discrete) orthogonal polynomials in the Askey scheme
 Various issues regarding spherical harmonics have been fixed ([#33117](https://trac.sagemath.org/ticket/33117), [#33501](https://trac.sagemath.org/ticket/33501)). In particular, the
 Condon-Shortley phase has been added, so that Sage's spherical harmonics now agree with those of
 Wikipedia, SymPy, SciPy and Mathematica. For instance
+
 ```
 sage: theta, phi = var('theta phi')
 sage: spherical_harmonic(1, 1, theta, phi)
 -1/4*sqrt(3)*sqrt(2)*e^(I*phi)*sin(theta)/sqrt(pi)
 ```
+
 This clearly agrees with SymPy's spherical harmonics: 
+
 ```
 sage: from sympy import Ynm
 sage: Ynm(1, 1, theta, phi).expand(func=True) 
 -sqrt(6)*exp(I*phi)*sin(theta)/(4*sqrt(pi))
 ```
+
 
 ## Polyhedral geometry and linear programming
 
@@ -284,9 +320,9 @@ polymake, a comprehensive system for computations in polyhedral geometry, tropic
 
 ### CyLP
 
-The new optional package [CyLP](https://github.com/coin-or/CyLP) (`./sage -i cylp`) provides a detailed interface to [Clp](https://github.com/coin-or/Clp), the COIN-OR linear programming solver, and [Cbc](https://github.com/coin-or/Cbc), the COIN-OR branch-and-cut solver for mixed-integer linear programs.  [[#33847](https://trac.sagemath.org/ticket/33847)](https://trac.sagemath.org/ticket/33487)
+The new optional package [CyLP](https://github.com/coin-or/CyLP) (`./sage -i cylp`) provides a detailed interface to [Clp](https://github.com/coin-or/Clp), the COIN-OR linear programming solver, and [Cbc](https://github.com/coin-or/Cbc), the COIN-OR branch-and-cut solver for mixed-integer linear programs. [#33847](https://trac.sagemath.org/ticket/33847) 
 
-In a future version of Sage, CyLP is intended to provide a replacement for the Sage-specific backend interface to Clp and Cbc, [sage-numerical-backends-coin](https://pypi.org/project/sage-numerical-backends-coin/); see [Meta-ticket [#26511](https://trac.sagemath.org/ticket/26511)](https://trac.sagemath.org/ticket/26511).
+In a future version of Sage, CyLP is intended to provide a replacement for the Sage-specific backend interface to Clp and Cbc, [sage-numerical-backends-coin](https://pypi.org/project/sage-numerical-backends-coin/); see Meta-ticket [#26511](https://trac.sagemath.org/ticket/26511).
 
 ### Equivariant Ehrhart theory
 
@@ -296,6 +332,7 @@ The fixed subset of a polytope under the action of a group element may also be c
 
 As an example, consider the action of the symmetric group S3 on the 2-dimensional permutahedron in 3-dimensional space, given by permuting the three basis vectors.
 As shown by Ardila, Supina, and Vindas Meléndez, the corresponding H*-series is polynomial and effective:
+
 ```
 sage: p3 = polytopes.permutahedron(3, backend = 'normaliz')      
 sage: G = p3.restricted_automorphism_group(output='permutation') 
@@ -318,6 +355,7 @@ sage: p3.fixed_subpolytope(reflection12).vertices()
 (A vertex at (3/2, 3/2, 3), A vertex at (5/2, 5/2, 1))
 ```
 
+
 ## Manifolds
 
 ### Improved Manifold constructor
@@ -325,6 +363,7 @@ sage: p3.fixed_subpolytope(reflection12).vertices()
 The `structure` parameter of the `Manifold` constructor has new, more convenient defaulting behavior. [#33001](https://trac.sagemath.org/ticket/33001)
 
 When parameters such as `diff_degree` or `metric_name` are given, the implied structure is selected:
+
 ```
 sage: M = Manifold(3, 'M', diff_degree=0); M
 3-dimensional topological manifold M
@@ -334,11 +373,13 @@ sage: M = Manifold(3, 'M', metric_name='g'); M
 3-dimensional Riemannian manifold M
 ```
 
+
 ### Symplectic manifolds
 
 Symplectic structures have been added to Sage ([#30362](https://trac.sagemath.org/ticket/30362)).
 
 The standard symplectic vector space can be obtained as follows:
+
 ```
 sage: M.<q, p> = manifolds.StandardSymplecticSpace(2, symplectic_name='omega')
 sage: omega = M.symplectic_form()
@@ -346,7 +387,9 @@ saga: omega.display()
 omega = -dq∧dp
 ```
 
+
 To use an existing `2`-form as a symplectic form use the new `wrap` method.
+
 ```
 sage: from sage.manifolds.differentiable.symplectic_form import SymplecticForm
 sage: M = manifolds.Sphere(2, coordinates='stereographic')
@@ -355,6 +398,7 @@ sage: omega = SymplecticForm.wrap(vol_form, 'omega', r'\omega')
 sage: omega.display()
 omega = -4/(y1^4 + y2^4 + 2*(y1^2 + 1)*y2^2 + 2*y1^2 + 1) dy1∧dy2
 ```
+
 
 Currently, the following operations from symplectic geometry are supported: 
 - Musical isomorphism (flat/sharp) between vector fields and `1`-forms.
@@ -369,6 +413,7 @@ Currently, the following operations from symplectic geometry are supported:
 Real projective spaces have been added to the manifold catalog ([#33221](https://trac.sagemath.org/ticket/33221)).
 For example, one can construct the real projective plane.
 
+
 ```
 sage: RP2 = manifolds.RealProjectiveSpace(); RP2
 2-dimensional topological manifold RP2
@@ -376,9 +421,11 @@ sage: latex(RP2)
 \mathbb{RP}^{2}
 ```
 
+
 There are three charts. Considering an immersion in three-dimensional Euclidean space,
 the chart corresponds to a choice of one (out of three possible) coordinates to be always nonzero.
 The coordinates listed are the two other coordinates assuming that the nonzero coordinate is always one.
+
 
 ```
 sage: C0, C1, C2 = RP2.top_charts()
@@ -396,9 +443,11 @@ sage: q in C0.domain()
 True
 ```
 
+
 The point `q` looks like `(1,0,3)` in ambient Euclidean space, so
 it is not in the domain of the chart `C1`. It also has the form
 `(1/3,0,1)` when considered in the chart `C2`. 
+
 
 ```
 sage: q in C1.domain()
@@ -409,12 +458,14 @@ sage: C2(q)
 (1/3, 0)
 ```
 
+
 If both coordinates in a local chart are nonzero then that point
 is in the domain of all charts. The change of coordinates is found
 by normalizing the appropriate chart. So for example, the point
 `(1, 2, 3)` is the same as the point `(1/2, 1, 3/2)` is the same as the point
 `(1/3, 2/3, 1)`, which is reflected by defining `r` to be a point in the
 default chart `C0`.
+
 
 ```
 sage: r = RP2.point((2,3))
@@ -427,6 +478,7 @@ sage: C1(r) # corresponding to (1/2, 1, 3/2)
 sage: C2(r) # corresponding to (1/3, 2/3, 1)
 (1/3, 2/3)
 ```
+
 
 ### Internal code improvements and bug fixes
 
@@ -446,6 +498,7 @@ lrcalc, Anders Buch's Littlewood-Richardson Calculator, has been upgraded to the
 ### Finitely presented modules over graded algebras
 
 Sage 9.6 allows the construction of finitely presented modules over graded algebras, even algebras which are infinite and/or noncommutative like the mod _p_ Steenrod algebra. Some homological algebra is implemented in general, and more tools are implemented specifically for modules over the Steenrod algebra ([#32505](https://trac.sagemath.org/ticket/32505), [#30680](https://trac.sagemath.org/ticket/30680)).
+
 
 ```
 sage: from sage.modules.fp_graded.module import FPModule
@@ -486,6 +539,7 @@ sage: M.resolution(3)
          g[3, 2] |--> y*g[2, 1] + x*g[2, 2]
          g[3, 3] |--> y*g[2, 2]]
 ```
+
 
 There is a new thematic tutorial providing many details and examples.
 
@@ -584,6 +638,7 @@ No Python object is an instance of a class that cannot be imported from the modu
 The new special method `LazyImport.__instancecheck__` now just returns `False` in this case. [#33017](https://trac.sagemath.org/ticket/33017)
 
 This provides a convenient pattern for writing modularized code when [creating an abstract base class for "isinstance" testing](https://wiki.sagemath.org/ReleaseTours/sage-9.5#Abstract_base_classes_for_.22isinstance.22_testing) is not justified.
+
 ```
 sage: from sage.schemes.generic.scheme import Scheme
 sage: sZZ = Scheme(ZZ)
@@ -593,6 +648,7 @@ True
 sage: isinstance(ZZ, (Scheme, Pluffe))
 False
 ```
+
 Likewise, no class is a subclass of a class that cannot be imported from the module that defines it;
 so the new special method `LazyImport.__subclasscheck__` implements the same logic.
 
@@ -607,9 +663,11 @@ The module `sage.geometry.polyhedron.base` has been split into several modules, 
 Our portability CI on GitHub Actions builds [Docker images](https://github.com/orgs/sagemath/packages?tab=packages&q=with-targets-optional) for all tested Linux platforms (and system package configurations) and makes them available on GitHub Packages (ghcr.io). [#30933](https://trac.sagemath.org/ticket/30933)
 
 Since 9.6.beta1, the image version corresponding to the latest development release receives the additional Docker tag `dev`, see for example the Docker image for [ubuntu-impish-standard](https://github.com/sagemath/sage/pkgs/container/sage%2Fsage-docker-ubuntu-impish-standard-with-targets-optional). Thus, for example, the following command will work:
+
 ```
 $ docker run -it ghcr.io/sagemath/sage/sage-docker-ubuntu-impish-standard-with-targets-optional:dev bash
 ```
+
 
 Images whose names end with the suffix `-with-targets-optional` are the results of full builds and a run of `make ptest`. They also contain a copy of the source tree and the full logs of the build and test. 
 
@@ -628,17 +686,17 @@ Images whose names end with the suffix `-with-targets-optional` are the results 
 [Gitpod](https://www.gitpod.io/) is a service that provides a development environment in the cloud based on VS Code. It is free to use for up to 50 hours per month. Sage now includes a configuration for Gitpod; see the new section [Setting up your workspace](https://doc.sagemath.org/html/en/developer/workspace.html#section-gitpod) in the Sage Developer's Guide. 
 [#33103](https://trac.sagemath.org/ticket/33103), [#33589](https://trac.sagemath.org/ticket/33589)
 
-![](gitpod_badge.png, 116px)
+<img src="ReleaseTours sage-9.6/gitpod_badge.png" width=116px>
 
 To launch Gitpod on a branch of a Trac ticket, you can use the new badge  in the ticket box.
 
 Alternatively, prepend any repository URL with `https://gitpod.io/#`; for example, https://gitpod.io/#https://github.com/sagemath/sagetrac-mirror/tree/develop opens a development environment containing a prebuilt copy of Sage corresponding to the `develop` branch.
 
-### Builds and checks of ticket branches on GitHub Actions
+### Builds and checks of ticket branches on [GitHub](GitHub) Actions
 
 Next to the familiar patchbot badges, each ticket now has badges linking to tests that run on GitHub Actions.
 
-![](ticket_badges.png, 547px)
+<img src="ReleaseTours sage-9.6/ticket_badges.png" width=547px>
 
 #### Linting workflow (pycodestyle, relint)
 
@@ -680,7 +738,7 @@ Also the Sage doctester (`./sage -t` or `./sage -tox -e doctest`) invokes `pytes
 
 [#33233](https://trac.sagemath.org/ticket/33233)
 
-### Sage patchbot on GitHub Actions
+### Sage patchbot on [GitHub](GitHub) Actions
 
 The [Sage patchbot can now be run on GitHub Actions](patchbot#Running_the_patchbot_on_GitHub_Actions),
 on top of any of the Linux platforms for which we have prebuilt Docker images.[#33253](https://trac.sagemath.org/ticket/33253)
@@ -763,6 +821,6 @@ See [README.md](https://github.com/sagemath/sage/blob/9.6/README.md) in the sour
 ---
 
 Attachments:
- * [editor.png](ReleaseTours/sage-9.6/editor.png)
- * [ticket_badges.png](ReleaseTours/sage-9.6/ticket_badges.png)
- * [gitpod_badge.png](ReleaseTours/sage-9.6/gitpod_badge.png)
+ * [editor.png](ReleaseTours sage-9.6/editor.png)
+ * [ticket_badges.png](ReleaseTours sage-9.6/ticket_badges.png)
+ * [gitpod_badge.png](ReleaseTours sage-9.6/gitpod_badge.png)

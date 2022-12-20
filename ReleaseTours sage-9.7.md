@@ -58,6 +58,7 @@ The method [affine_hull_projection](https://doc.sagemath.org/html/en/reference/d
 * Cubic Hecke algebras are implemented [#29717](https://trac.sagemath.org/ticket/29717).
 * General implementation of modules over an integral domain [#33868](https://trac.sagemath.org/ticket/33868).
 * (Graded) Finite free resolutions of modules over multivariate polynomials can be computed via Singular [#33950](https://trac.sagemath.org/ticket/33950).
+
 ```
 sage: from sage.homology.free_resolution import FreeResolution 
 sage: R.<x,y,z,w> = QQ[]
@@ -82,6 +83,7 @@ sage: r = GradedFreeResolution(I)
 sage: r
 S(0) <-- S(-2)⊕S(-2)⊕S(-2) <-- S(-3)⊕S(-3) <-- 0
 ```
+
 * The quantum Clifford algebra works for an arbitrary parameter `q` [#34147](https://trac.sagemath.org/ticket/34147).
 * Multivariate formal power series that are computed lazily (and exactly) have been implemented [#32324](https://trac.sagemath.org/ticket/32324).
 
@@ -94,6 +96,7 @@ S(0) <-- S(-2)⊕S(-2)⊕S(-2) <-- S(-3)⊕S(-3) <-- 0
 ### Tensor products of free modules of finite rank
 
 Free modules of finite rank, which are used to represent the sets of tensor fields on parallelizable manifolds, have been endowed with a `tensor_product` method ([#31276](https://trac.sagemath.org/ticket/31276)):
+
 ```
 sage: M = Manifold(2, 'M')
 sage: X.<x,y> = M.chart()  # makes M parallelizable
@@ -105,9 +108,11 @@ sage: XM.tensor_product(XM) is M.tensor_field_module((2, 0))
 True
 ```
 
+
 ### Vector bases endowed with dictionary methods
 
 Bases of free modules of finite rank now inherit from [AbstractFamily](https://doc.sagemath.org/html/en/reference/sets/sage/sets/family.html#sage.sets.family.AbstractFamily), so that they are endowed with methods `keys`, `values` and `items` ([#30300](https://trac.sagemath.org/ticket/30300)). In particular, this regards vector frames on manifolds:
+
 ```
 sage: M = Manifold(2, 'M')
 sage: X.<x,y> = M.chart()
@@ -126,6 +131,7 @@ sage: list(f.items())
 [(0, Vector field ∂/∂x on the 2-dimensional differentiable manifold M),
  (1, Vector field ∂/∂y on the 2-dimensional differentiable manifold M)]
 ```
+
 
 ### Internal code improvements and bug fixes
 

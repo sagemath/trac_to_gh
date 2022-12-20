@@ -1,5 +1,6 @@
 
-```
+
+```comment
 # 🚨 BROADCAST 🚨
 
 For maintenance, the **trac server will be switched off on Saturday** 10 / 09 / 2022 from 7:00 to 23:00 (Paris Time).
@@ -8,11 +9,12 @@ Sorry for the inconvenience, and thanks for your patience. Please go relax again
 
 The trac server is currently running in **slightly degraded mode**. Some advanced features are not yet working.
 ```
+
 # Moving to Github!
 
 Sage development will soon move from Trac to Github! This was decided in a [vote on sage-devel](https://groups.google.com/g/sage-devel/c/7h5JoRgHpxY) that closed on Oct 5, 2022. The migration work is coordinated in [#30363](https://trac.sagemath.org/ticket/30363).
 
-# Welcome to the SageMath Development Organization Page
+# Welcome to the [SageMath](SageMath) Development Organization Page
 
 [SageMath](https://www.sagemath.org) is free and open software that supports  research and teaching in algebra, geometry, number theory, cryptography, etc.  Both the SageMath development model and the technology in SageMath itself are  distinguished by an extremely strong emphasis on openness, community,  cooperation, and collaboration: we are building the car, not reinventing the wheel.
 View our [Code of Conduct](https://github.com/sagemath/sage/blob/develop/CODE_OF_CONDUCT.md).
@@ -35,31 +37,45 @@ The [Help/Guide](TracGuide) link in the top right corner provides help with the 
 Please help SageMath development by [reporting bugs that you encounter](https://doc.sagemath.org/html/en/developer/trac.html#reporting-bugs), no matter how trivial.
 If you need to open a ticket, please use the ``` and ``` tags to add code snippets and SageMath session transcripts. For example:
 
-| Markup | Displays as |
-|:--------:|:-------------:|
-|\
-```
-{{{
-{{{
-sage: 1 + 2
-3
-```
-}}}
-}}}
-```
-{{{
-sage: 1 + 2
-3
-```
-}}}
+<table>
+<thead>
+<tr>
+<th align="center">Markup</th>
+<th align="center">Displays as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><div align="left">
 
+```
+{{{
+sage: 1 + 2
+3
+}}}
+```
+
+</div>
+</td>
+<td align="center">
+<div align="left">
+
+```
+sage: 1 + 2
+3
+```
+
+</div></td>
+</tr>
+</tbody>
+</table>
 You can also use backticks (```) to demarcate inline code snippets, etc. This is useful around names like `DiGraph` to avoid an automatic wikilink (DiGraph), like so: ``DiGraph``.
 
 SageMath makes use of many upstream projects, which have their own bug tracking pages. A selection: [Cython](https://github.com/cython/cython), [fflas-ffpack](https://github.com/linbox-team/fflas-ffpack/issues), [GAP](https://github.com/gap-system/gap/issues), [GCC](https://gcc.gnu.org/bugzilla/) ([instructions](https://gcc.gnu.org/bugs/)), [Givaro](https://github.com/linbox-team/givaro/issues), [JMol](https://sourceforge.net/p/jmol/bugs/), [LinBox](https://github.com/linbox-team/linbox/issues), [Maxima](https://sourceforge.net/p/maxima/bugs/), [Numpy](https://github.com/numpy/numpy/issues), [PARI/GP](https://pari.math.u-bordeaux.fr/Bugs/) ([instructions](https://pari.math.u-bordeaux.fr/Bugs/Reporting.html)), [Python](https://bugs.python.org/), [Singular](https://www.singular.uni-kl.de:8002/trac/).
 
 ## Following the pulse of development
 
-Follow the [Trac development timeline](https://trac.sagemath.org/timeline) or [active tickets by time](https://trac.sagemath.org/report/92), or view [[other ticket reports](TicketReports)].
+Follow the [Trac development timeline](https://trac.sagemath.org/timeline) or [active tickets by time](https://trac.sagemath.org/report/92), or view [This is the Trac macro *wiki:TicketReports* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#wiki:TicketReports-macro).
 
 Help by reviewing [Tickets needing review](https://trac.sagemath.org/report/75) (see  [checklist](https://doc.sagemath.org/html/en/developer/reviewer_checklist.html)).
 
@@ -78,7 +94,7 @@ Make sure you understand the review process, and the procedures for opening and 
 
 When opening a ticket to make a feature request or to plan a project, you may find our [Feature request guidelines](https://wiki.sagemath.org/feature_request_guidelines) helpful.
 
-[[Home/ticket_badges.png]]
+<img src="WikiStart/ticket_badges.png" width=547px>
 
 After pushing a branch to a ticket, the ticket will show badges linking to results of automated tests that run on the [patchbot](patchbot) and other [tests that run on GitHub Actions](https://trac.sagemath.org/wiki/ReleaseTours/sage-9.6#Newdevelopertools).
 
@@ -100,7 +116,6 @@ The SageMath project is a major integrating force in the math software landscape
 |Downstream distributions          | SageMath distribution [#33774](https://trac.sagemath.org/ticket/33774), [Sage Docker images](https://trac.sagemath.org/wiki/Distribution#Dockerimages), modularized distributions on PyPI [#29705](https://trac.sagemath.org/ticket/29705), wheels [#31251](https://trac.sagemath.org/ticket/31251)  | [Distributions carrying SageMath](Distribution#Packagemanagers): conda-forge, archlinux, debian/ubuntu, fedora, [sage-on-gentoo](https://github.com/cschwan/sage-on-gentoo), nix, voidlinux, ... [#33775](https://trac.sagemath.org/ticket/33775); [Third-party Docker images](https://trac.sagemath.org/wiki/Distribution#Dockerimages)
 |Downstream deployments            | [Gitpod](https://trac.sagemath.org/wiki/ReleaseTours/sage-9.6#SagedevelopmentinthecloudwithGitpod) [#33113](https://trac.sagemath.org/ticket/33113) | [Running SageMath in the cloud](https://doc.sagemath.org/html/en/installation/): [CoCalc](https://cocalc.com/?utm_source=trac.sagemath.org), [SageCell](https://sagecell.sagemath.org/), [Binder](https://github.com/sagemath/sage-binder-env)
 |Downstream of downstream          | Devcontainers [#33671](https://trac.sagemath.org/ticket/33671), [#34363](https://trac.sagemath.org/ticket/34363)
-
 This table is being moved to the Sage developer's guide in [#34526](https://trac.sagemath.org/ticket/34526); do not edit.
 
 ## Maintaining the social and technical infrastructure
@@ -112,64 +127,79 @@ You can also help maintain the [Technical project infrastructure](Infrastructure
 ## Additional formatting hints
 
 You can enable syntax highlighting in these code snippets by using a hashbang (`#!`) followed by the name of the syntax. This also makes inline diff viewers if you choose the syntax name `diff`.
-| Markup | Displays as |
-|:--------:|:-------------:|
-|\
+<table>
+<thead>
+<tr>
+<th align="center">Markup</th>
+<th align="center">Displays as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><div align="left">
+
 ```
-{{{
-{{{
-#!python
+{{{#!python
+def spam ():
+    eggs = 3
+    return 1
+pine_for_fjords()
+}}}
+```
+
+</div>
+</td>
+<td align="center">
+<div align="left">
+
+```python
 def spam ():
     eggs = 3
     return 1
 pine_for_fjords()
 ```
-}}}
-}}}
+
+</div></td>
+</tr>
+<tr>
+<td align="center"><div align="left">
+
 ```
-{{{
-#!python
-def spam ():
-    eggs = 3
-    return 1
-pine_for_fjords()
-```
-}}}
-|
-|
-|\
-```
-{{{
-{{{
-#!diff
+{{{#!diff
 foo
 
 diff --git a/bar b/bar
 --- a/bar
 +++ b/bar
-`@``@` -1,2 +1,3 `@``@`
+@@ -1,2 +1,3 @@
  baz
  quux
 +xyzzy
-```
-}}}
 }}}
 ```
-{{{
-#!diff
+
+</div>
+</td>
+<td align="center">
+<div align="left">
+
+```diff
 foo
 
 diff --git a/bar b/bar
 --- a/bar
 +++ b/bar
-`@``@` -1,2 +1,3 `@``@`
+@@ -1,2 +1,3 @@
  baz
  quux
 +xyzzy
 ```
-}}}
 
-To avoid an automatic wikilink for non-code names like GitHub, prepend it with an exclamation mark: `GitHub`. See WikiFormatting for more information.
+</div></td>
+</tr>
+</tbody>
+</table>
+To avoid an automatic wikilink for non-code names like GitHub, prepend it with an exclamation mark: `GitHub`. See [WikiFormatting](WikiFormatting) for more information.
 
 ## Account Names Mapped to Real Names
 
@@ -187,4 +217,4 @@ If you cannot create a GitHub account, need to edit the SageMath Wiki, or have o
 ---
 
 Attachments:
- * [ticket_badges.png](Home/ticket_badges.png)
+ * [ticket_badges.png](WikiStart/ticket_badges.png)

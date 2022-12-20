@@ -158,6 +158,7 @@ Sage is missing symbolic definitions for many special functions that we are capa
 Notes from Benjamin Jones ([#11143](https://trac.sagemath.org/ticket/11143))
 (http://maxima.sourceforge.net/docs/manual/en/maxima_16.html#SEC56)
 
+
 ```
 hankel_1 (v,z)                 Hankel function of the 1st kind
 hankel_2 (v,z)                 Hankel function of the 2nd kind
@@ -165,14 +166,18 @@ struve_h (v,z)                 Struve H function
 struve_l (v,z)                 Struve L function
 ```
 
+
  * Notes: None of these functions are currently exposed at the top level in Sage. Evaluation is possible using mpmath.  [#15024](https://trac.sagemath.org/ticket/15024) adds Hankel.  [#16221](https://trac.sagemath.org/ticket/16221) is for Struve.
+
 
 ```
 assoc_legendre_p[v,u] (z)      Associated Legendre function of degree v and order u 
 assoc_legendre_q[v,u] (z)      Associated Legendre function, 2nd kind
 ```
 
+
  * These are not Maxima's `legendre_p(n,x)` and `legendre_q(n,x)` functions, which correspond to `legendre_P(n,x)` and `legendre_Q(n,x)` in Sage.
+
 
 ```
 %f[p,q] ([], [], expr)         Generalized Hypergeometric function
@@ -182,7 +187,9 @@ slommel
 %w[u,k] (z)                    Whittaker function, 2nd kind
 ```
 
+
  * Notes: `hypergeometric(l1, l2, z)` needs a conversion to Sage's `hypergeometric_U` (see [#2516](https://trac.sagemath.org/ticket/2516)). The others can be evaluated using mpmath. `slommel` is presumably mpmath's `lommels1()` or `lommels2()` (or both?). This isn't well documented in Maxima.
+
 
 ```
 expintegral_e (v,z)            Exponential integral E
@@ -196,7 +203,9 @@ expintegral_chi (z)            Exponential integral Chi
 erfc (z)                       Complement of the erf function
 ```
 
+
  * Notes: This was done in [#11143](https://trac.sagemath.org/ticket/11143)!
+
 
 ```
 kelliptic (z)                  Complete elliptic integral of the first 
@@ -204,8 +213,10 @@ kelliptic (z)                  Complete elliptic integral of the first
 parabolic_cylinder_d (v,z)     Parabolic cylinder D function
 ```
 
+
  * Notes: `kelliptic(z)` needs a conversion to `elliptic_kc` in Sage (done in [#15046](https://trac.sagemath.org/ticket/15046))
 and `parabolic_cylinder_d (v,z)` does not seem to be exposed at top level. It can be evaluated by mpmath.
+
 
 ```
 inverse_jacobi_cd
@@ -233,7 +244,9 @@ jacobi_sc
 jacobi_sd
 jacobi_sn
 ```
+
  * It turns out there are a slew of elliptic functions that we only have thinly wrapped and could make better - see [this Maxima page](http://maxima.sourceforge.net/docs/manual/en/maxima_16.html).  Basically, all of these are in Sage, but could be made more native. This was done in [#14996](https://trac.sagemath.org/ticket/14996).
+
 
 ```
 dgauss_a
@@ -245,4 +258,5 @@ gauss_b
 kummer_m
 kummer_u 
 ```
+
  * These are some specific functions defined in Maxima's `contrib_ode` package, some of which we may have.  Some hypergeometric function returned by certain ODE solvers in Maxima and which mpmath can evaluate are out there too (maybe same ones?). See [#2516](https://trac.sagemath.org/ticket/2516), for instance.
