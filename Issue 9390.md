@@ -1,0 +1,431 @@
+# Issue 9390: is_galois_relative() not always right
+
+Issue created by migration from Trac.
+
+Original creator: arminstraub
+
+Original creation time: 2010-06-30 04:33:44
+
+Assignee: davidloeffler
+
+CC:  cturner mstreng
+
+Keywords: galois extension
+
+In 4.4.4 the following code produces a number field which is Galois over the rationals but (allegedly) not over an intermediate field.
+
+
+```
+sage: K.<a>=NumberField(x^2+1)
+sage: Kt.<t> = K[]
+sage: L.<b> = K.extension(t^3-3*t-1)
+sage: L.is_galois_absolute()
+True
+sage: L.is_galois_relative()
+False
+```
+
+
+
+
+---
+
+Comment by fwclarke created at 2010-06-30 07:39:55
+
+This fails because the present definition for relative number fields:
+
+
+```
+def is_galois_relative(self):
+    return self.Hom(self).order() == self.relative_degree()
+```
+
+is completely wrong.  In the case above
+
+
+```
+sage: L.Hom(L).order()
+6
+```
+
+while the relative degree is 3.  Clearly the Homset contains all endomorphisms of of L, not just the relative ones.  One obvious possibility would be to count those endomorphisms which fix the base field.  But the following might be better
+
+
+```
+def is_galois_relative(self):
+    rel_poly = self.relative_polynomial()
+    return len(rel_poly.base_extend(self).factor()) == self.relative_degree()
+
+```
+
+I'll do some testing and post a patch later today.
+
+
+---
+
+Comment by fwclarke created at 2010-12-10 15:07:01
+
+After a rather longer than expected delay, I'm attaching a patch which gives correct results for `is_galois_relative`.  I've also rewritten `is_galois_absolute` using a corresponding algorithm because it is (i) faster than the existing code, and (ii) capable of handling extension of larger degree.
+
+
+---
+
+Comment by fwclarke created at 2010-12-10 15:07:01
+
+Changing status from new to needs_review.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mstreng created at 2010-12-13 12:10:03
+
+Nice, that is a lot faster, and correct. There is one thing I don't like though: you introduced a difference between `is_galois` of absolute number fields and `is_galois_absolute` of relative number fields:
+
+With your patch on Sage 4.6.1.alpha2:
+
+```
+sage: M.<c> = NumberField(cyclotomic_polynomial(100))
+sage: M
+Number Field in c with defining polynomial x^40 - x^30 + x^20 - x^10 + 1
+sage: M.is_galois()
+NotImplementedError
+sage: M.relativize(1, 'd').is_galois_absolute()
+True
+sage: M.relativize(1, 'd').is_galois_relative()
+True
+```
+
+Without your patch, it is NotImplementedError, NotImplementedError, False, so your patch is a definite improvement, but could be better.
+
+I think it would be better to put your new code in `is_galois` of absolute fields instead of `is_galois_absolute` of relative fields. Then `is_galois_absolute()` can simply call `self.absolute_field().is_galois()`
+
+PS grammar: line 1177 of number_field_rel.py after the patch, previous should be previously (or simply replace the line by "Check that bug #9390 is fixed::")
+
+
+---
+
+Comment by mstreng created at 2010-12-13 12:10:03
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by fwclarke created at 2010-12-16 08:19:18
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by fwclarke created at 2010-12-16 08:19:18
+
+Replying to [comment:4 mstreng]:
+
+> I think it would be better to put your new code in `is_galois` of absolute fields instead of `is_galois_absolute` of relative fields. Then `is_galois_absolute()` can simply call `self.absolute_field().is_galois()`
+
+I've done this in a new replacement patch, and dealt with the grammatical point you raised.
+
+It was also necessary to make a minor change to an unconnected doctest.  This is because of PARI's inconsistent behaviour when choosing ideal generators.  The same issue arose in #5842.
+
+
+---
+
+Attachment
+
+Replaces previous patch
+
+
+---
+
+Comment by mstreng created at 2010-12-16 14:33:28
+
+On which Sage version is this a speedup for is_galois_absolute?
+
+With Sage 4.6.1.alpha2 and no patches
+
+```
+sage: K.<a>=NumberField(x^2+1)
+sage: Kt.<t> = K[]
+sage: L.<b> = K.extension(t^3-3*t-1)
+sage: M.<c> = L.absolute_field()
+sage: time L.is_galois_absolute()
+CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
+Wall time: 0.00 s
+True
+sage: time L.is_galois_relative()
+CPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s
+Wall time: 0.08 s
+False
+sage: time M.is_galois()
+CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
+Wall time: 0.00 s
+True
+```
+
+
+Same version, but with your patch:
+
+```
+sage: K.<a>=NumberField(x^2+1)
+sage: Kt.<t> = K[]
+sage: L.<b> = K.extension(t^3-3*t-1)
+sage: M.<c> = L.absolute_field()
+sage: time L.is_galois_absolute()
+CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s
+Wall time: 0.04 s
+True
+sage: time L.is_galois_relative()
+CPU times: user 0.04 s, sys: 0.01 s, total: 0.05 s
+Wall time: 0.05 s
+True
+sage: time M.is_galois()
+CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s
+Wall time: 0.03 s
+True
+```
+
+So you did correct (and apparently speed up) is_galois_relative. However, it seems to slow down is_galois and is_galois_absolute. This gets worse if you use is_galois multiple times for the same field, as the old version uses cached data and your version doesn't:
+
+Without patch:
+
+```
+sage: K.<b> = NumberField(cyclotomic_polynomial(11))
+sage: time K.is_galois()
+CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
+Wall time: 0.02 s
+True
+sage: time [K.is_galois() for i in range(500)];
+CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s
+Wall time: 0.03 s
+```
+
+With patch:
+
+```
+sage: K.<b> = NumberField(cyclotomic_polynomial(11))
+sage: time K.is_galois()
+CPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s
+Wall time: 0.06 s
+True
+sage: time [K.is_galois() for i in range(500)];
+CPU times: user 11.66 s, sys: 0.05 s, total: 11.71 s
+Wall time: 11.72 s
+```
+
+I'm very sorry for not noticing this earlier and for letting you do make the changes you did after my first review.
+
+On the other hand, my suggestion allowed for a good test of your code, as is_galois is ubiquitous:
+
+```
+sage -t -long devel/sage/sage/schemes/elliptic_curves/gal_reps.py
+*** *** Error: TIMED OUT! PROCESS KILLED! *** ***
+```
+
+
+Maybe it is better to stick with the is_galois_relative correction only.
+
+Also, if you know about cached methods, then perhaps you could make is_galois_relative and is_galois_absolute cached while you're at it.
+
+You can also make a distinction in is_galois between degree <= 11 (use the old method) and degree > 11 (old method only works if KASH is installed, use your method).
+
+I suppose it is good to still let is_galois_absolute() simply call absolute_field().is_galois().
+
+
+---
+
+Comment by mstreng created at 2010-12-16 14:33:28
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by fwclarke created at 2010-12-16 21:48:45
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by fwclarke created at 2010-12-16 21:48:45
+
+Replying to [comment:6 mstreng]:
+
+> On which Sage version is this a speedup for is_galois_absolute? ...
+
+I'm sorry about this.  I don't know how I convinced myself that the absolute version was faster.
+
+> On the other hand, my suggestion allowed for a good test of your code, as is_galois is ubiquitous:
+
+```
+sage -t -long devel/sage/sage/schemes/elliptic_curves/gal_reps.py
+ *** *** Error: TIMED OUT! PROCESS KILLED! *** *** 
+```
+
+
+I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):
+
+
+```
+sage -grep -l is_galois
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+coding/linear_code.py
+rings/number_field/galois_group.py
+rings/number_field/number_field.py
+rings/number_field/number_field_rel.py
+rings/number_field/totallyreal_rel.py
+rings/padics/unramified_extension_generic.py
+rings/number_field/number_field_element.pyx
+```
+
+> Maybe it is better to stick with the is_galois_relative correction only.  Also, if you know about cached methods, then perhaps you could make is_galois_relative and is_galois_absolute cached while you're at it. You can also make a distinction in is_galois between degree <= 11 (use the old method) and degree > 11 (old method only works if KASH is installed, use your method). I suppose it is good to still let is_galois_absolute() simply call absolute_field().is_galois().
+| Sage Version 4.6, Release Date: 2010-10-30                         |
+| Type notebook() for the GUI, and license() for information.        |
+The new patch implements this, except it doesn't do any caching.  `is_galois_absolute` is already cached in the degree <= 11 cases via `self.absolute_field()`.  In the other cases, I think what really needs caching is the factorisation of the defining polynomial over `self,` since it's also what's needed to compute endomorphisms. But that is for another patch, I think.
+
+
+---
+
+Comment by fwclarke created at 2010-12-16 21:49:44
+
+Replaces previous two patches
+
+
+---
+
+Attachment
+
+Replying to [comment:7 fwclarke]:
+> I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):
+
+How could you be so sure about that? The timeout is caused by the long test `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`
+The image_type() part runs forever on 4.6.1.alpha2 with your second patch, and is quite fast without any patches. That method is a long piece of code, so I didn't read it all, but it does suggest that it uses is_galois somewhere via another function.
+
+
+---
+
+Comment by fwclarke created at 2010-12-17 12:50:24
+
+Replying to [comment:8 mstreng]:
+
+> > I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):
+> How could you be so sure about that?
+
+My mistake was that I was using 4.6.  The long test in question was introduced in #8451 which was merged in sage-4.6.1.alpha2.  I haven't checked it fully, but it looks like in this case the function `image_type` calls `galois_group`, which calls `is_galois`.  It seem that `is_galois` is much more ubiquitous that I thought as it's used in several functions of the classes `GaloisGroup_v2` and `GaloisGroupElement`.  Sorry for not noticing this before.
+
+
+---
+
+Comment by mstreng created at 2010-12-18 22:46:27
+
+Strange: I remove all patches, build, and the long gal_reps.py test is fine, then I apply your latest patch, build, and it times out again after 1800 seconds.
+
+The only thing I could think of is that (somewhere in a function called by `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`) an Error of is_galois with degree > 11 is raised and handled in some way. With your patch, that computation will just go on and on.
+
+Or there is something wrong with my sage installation. Can anyone reproduce this increase in test time? (4.6.1.alpha2 with no other patches applied)
+
+For [buildbot](http://wiki.sagemath.org/buildbot):
+
+Apply trac_9390-2nd_replacement.patch
+
+
+---
+
+Comment by mstreng created at 2010-12-19 21:27:50
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by mstreng created at 2010-12-19 21:27:50
+
+Replying to [comment:10 mstreng]:
+> The only thing I could think of is that (somewhere in a function called by `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`) an Error of is_galois with degree > 11 is raised and handled in some way. With your patch, that computation will just go on and on.
+
+Same problem with a fresh install.
+
+Actually, something fishy happens in image_type(7). Without your patch, it outputs `'The image is a group of order 36.'` quickly. With your patch, it goes on and on, until I press Ctrl+C, in which case it catches my KeyboardInterrupt and outputs `'The image is a group of order 36.'` without showing me any Error! So image_type catches all errors, which is why it stops working with your improvement.
+
+Sorry, but that means this patch can't go in the way it is: either fix gal_reps or don't touch is_galois.
+
+
+---
+
+Comment by fwclarke created at 2010-12-20 19:30:56
+
+With the #8451 patch, and with `is_galois` unchanged,  I find
+
+
+```
+sage: set_verbose(1)
+sage: EllipticCurve([1, -1, 0, -107, -379]).galois_representation().image_type(7)
+verbose 1 (1326: free_module.py, coordinate_module) rational in-place Gauss elimination on 0 x 0 matrix
+...
+verbose 1 (811: gal_reps.py, image_type) field of degree 36.  try to compute galois group (time = 14.321421)
+'The image is a group of order 36.'
+```
+
+deriving from the following lines in `gal_reps.py` (as patched by #8451):
+
+
+```
+        if p <= 13:
+            K = _division_field(self.E,p)
+            d = K.absolute_degree()
+
+            misc.verbose("field of degree %s.  try to compute galois group"%(d),2)
+            try:
+                G = K.galois_group()
+            except:
+                self.__image_type[p] = "The image is a group of order %s."%d
+                return self.__image_type[p]
+```
+
+So what's happening is that `K.is_galois()` (called via `K.galois_group()`) is taking ages when my patch is implemented.  The unqualified `except:` is then catching the keyboard interrupt.  But with the existing implementation of `is_galois` applied to the degree 36 field in question, a `NotImplementedError` is raised and caught.
+
+Anyway, as you suggest, the way forward is a minimal patch which only changes  `is_galois_relative`.  I'm attaching this.
+
+
+---
+
+Comment by fwclarke created at 2010-12-20 19:30:56
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+Replaces previous three patches
+
+
+---
+
+Comment by mstreng created at 2010-12-21 11:36:19
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mstreng created at 2010-12-21 11:36:19
+
+Too bad about the improvements to is_galois. I suppose that code from trac_9390-2nd_replacement.patch can go into a new ticket, if someone wants to revise image_type.
+
+Apply trac_9390-3rd_replacement.patch
+
+
+---
+
+Comment by jdemeyer created at 2011-01-19 22:21:17
+
+Resolution: fixed

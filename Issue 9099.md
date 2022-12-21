@@ -1,0 +1,224 @@
+# Issue 9099: Maxima fails to build on OpenSolaris x64, though ECL does.
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-05-31 01:09:33
+
+Assignee: drkirkby
+
+## Build environment
+ * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
+ * OpenSolaris 2009.06 snv_111b X86
+ * Sage 4.4.2
+ * gcc 4.4.4
+
+## How gcc 4.4.4 was configured
+Since the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. 
+
+
+```
+drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+Using built-in specs.
+Target: i386-pc-solaris2.11
+Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
+Thread model: posix
+gcc version 4.4.4 (GCC) 
+```
+
+
+gcc 4.3.4 was failing to build iconv. 
+
+## The problem
+
+```
+config.status: creating plotting/mgnuplot
+config.status: creating share/Makefile
+config.status: creating demo/Makefile
+config.status: creating plotting/Makefile
+config.status: creating locale/Makefile
+
+Summary:
+ECL enabled. Executable name: "ecl"
+default lisp: ecl
+wish executable name: "wish"
+make[2]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src'
+Making all in src
+make[3]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src/src'
+test -d binary-ecl || mkdir binary-ecl
+ecl -norc -eval '(progn (load "../lisp-utils/defsystem.lisp") (funcall (intern (symbol-name :operate-on-system) :mk) "maxima" :compile :verbose t) (build-maxima-lib))' -eval '(ext:quit)'
+ld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit
+make[3]: *** [binary-ecl/maxima] Killed
+make[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src'
+***********************************************************
+Failed to make Maxima.
+***********************************************************
+
+real	0m2.050s
+user	0m0.506s
+sys	0m0.833s
+sage: An error occurred while installing maxima-5.20.1.p0
+```
+
+
+The ECL library is a 64-bit library:
+
+
+```
+drkirkby`@`hawk:~/sage-4.4.2$ file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so
+/export/home/drkirkby/sage-4.4.2/local/lib//libecl.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
+}}} 
+
+but obviously something is wrong. Whether it is an Sage, ECL or Maxima issue I don't know.
+
+
+---
+
+Comment by mhansen created at 2010-05-31 03:56:27
+
+Another thing to try would be the ECL spkg from #8951 and the Maxima spkg from #8731.
+
+
+---
+
+Comment by drkirkby created at 2010-05-31 04:08:56
+
+Replying to [comment:2 mhansen]:
+> Another thing to try would be the ECL spkg from #8951 and the Maxima spkg from #8731.
+I've tried that - the same result. 
+
+Googling, I find this error is not specific to ECL or Maxima, but can crop up in all sort of programs. 
+
+http://developers.sun.com/solaris/articles/about_amd64_abi.html
+
+indicates a couple of possible workarounds, but I'm unsure what is the best course of action. I guess building with position independent code might be, as it might hopefully be fairly easy to add -fPIC to the ECL build, though I'll take advice from the ECL developer on that.
+
+
+---
+
+Comment by drkirkby created at 2010-06-18 22:14:52
+
+I should have added that in order to get ECL to build, I had added the option
+
+
+```
+--with-dffi=no
+```
+
+
+Without that option ECL will not build. With the option, ECL builds ok, but Maxima does not. 
+
+I have tried compiling with position independant code, by adding -fPIC to the CFLAGS, but that did not help. 
+
+Dave
+
+
+---
+
+Comment by jhpalmieri created at 2010-08-04 04:00:30
+
+More data: maxima failed with a 64-bit build in fulvia (Solaris on x86), but seems to have succeeded with a 64-bit build on t2 (Solaris on sparc).  The 32-bit build on fulvia succeeded, but some of the output is different than on other platforms, causing some doctest failures:
+
+```
+sage -t  -long devel/sage/sage/symbolic/expression.pyx
+**********************************************************************
+File "/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx", line 498\
+3:
+    sage: maxima('sinh(1.0)')
+Expected:
+    1.175201193643801
+Got:
+    1.175201193643802
+**********************************************************************
+File "/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx", line 508\
+8:
+    sage: maxima('asinh(1.0)')
+Expected:
+    0.881373587019543
+Got:
+    .8813735870195429
+**********************************************************************
+```
+
+(This is a somewhat hacked build: R didn't build, so it is missing completely.  I don't think that would have anything to do with this failure.)
+
+
+---
+
+Comment by drkirkby created at 2010-08-04 09:53:22
+
+I'd agree, a lack of R will not affect these results. 
+
+I computed results to 30 digits of precision with Mathematica
+
+
+```
+In[1]:= a=N[Sinh[1],30]   
+
+Out[1]= 1.17520119364380145688238185060
+
+In[2]:= b=N[ArcSinh[1],30]
+
+Out[2]= 0.881373587019543025232609324980
+```
+
+That means the absolute error on the expected value is 4.5688e-16 and the absolute error on the Solaris case is -5.43117e-16. I think it's quite reasonable to attribute the `sinh()` case to numerical noise. I need to go out soon, but if you don't beat me to it, I'll open a numerical-noise ticket for this within the next 5 hours. 
+
+The `asinh()` case is not so obvious, as while the actual error is small, the zero is missing from the start on the 64-bit SPARC case, with only `.8813735870195429` instead of `0.8813735870195429`. I find that a bit harder to explain - it is not just a numerical noise issue. Have you any ideas? 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-08-04 10:00:13
+
+Replying to [comment:3 drkirkby]:
+
+> Googling, I find this error is not specific to ECL or Maxima, but can crop up in all sort of programs. 
+> 
+> http://developers.sun.com/solaris/articles/about_amd64_abi.html
+> 
+> indicates a couple of possible workarounds, but I'm unsure what is the best course of action. I guess building with position independent code might be, as it might hopefully be fairly easy to add -fPIC to the ECL build, though I'll take advice from the ECL developer on that. 
+
+I'm now aware that any shared library should be build as position independent code. The Sun linker manual is very clear on this and the GCC manual implies it. I've managed to convince the Pari developers to always add -fPIC on all platforms, despite it gives a small (about 10%) performance decrease in Pari. Quite simply, it is not correct to build shared libraries with objects which are not position independent. However, I'm not sure if this is a shared library or not.
+
+
+---
+
+Comment by drkirkby created at 2010-08-04 13:35:46
+
+Replying to [comment:6 drkirkby]:
+> The `asinh()` case is not so obvious, as while the actual error is small, the zero is missing from the start on the 64-bit SPARC case, with only `.8813735870195429` instead of `0.8813735870195429`. I find that a bit harder to explain - it is not just a numerical noise issue. Have you any ideas? 
+> 
+> Dave 
+
+I realise this was on fulvia (Solaris 10 x86), not SPARC. Still, the same issues concern arises why does the second test not print the leading zero? 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-08-30 11:30:30
+
+Relocation errors seen on 64-bit SPARC (t2.math) when buidling with LD_OPTIONS=-Dreloc,detail
+
+
+---
+
+Attachment
+
+This has been fixed by the upgrade to ECL on #10766, so this can be closed as fixed in sage-4.7.alpha1. 
+
+Dave
+
+
+---
+
+Comment by jdemeyer created at 2011-04-05 15:55:46
+
+Resolution: duplicate

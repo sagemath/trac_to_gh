@@ -1,0 +1,142 @@
+# Issue 4976: [with patch, needs review] fill option for plot, polar_plot and parametric_plot
+
+Issue created by migration from Trac.
+
+Original creator: whuss
+
+Original creation time: 2009-01-14 17:17:39
+
+Assignee: whuss
+
+This patch adds the new options "fill", "fillcolor", and "fillalpha" to the plot functions,
+which allow to fill the area between two functions in a plot, or to fill the area between 
+the function and the x-axis.
+
+The syntax for fill is similar to what Mathematica uses.
+
+I also attach a file with some examples for easier testing.
+
+Greetings,
+
+Wilfried
+
+
+---
+
+Comment by whuss created at 2009-01-14 17:19:54
+
+some examples
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+I think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.
+
+My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.
+
+There should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.
+
+But that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.
+
+
+---
+
+Comment by jason created at 2009-01-29 05:18:00
+
+This patch seems to also be a big refactoring of the plot code, and also seems to change the code to plot a list of functions in multiple colors.  I'm not disagreeing with it, but just commenting that this patch addresses more than the ticket says it does.
+
+
+---
+
+Comment by jason created at 2009-01-29 05:39:21
+
+First, I really appreciate this patch and the beautiful functionality it adds.  We've needed it for a long time.  It also appears to do a much-needed refactoring of the plot code.  I haven't tested the patch, though, or looked at it extremely closely.  
+
+Just a short comment about a piece of code.  The patch uses map and max/min to calculate filling to the max or min of the function.  It would be slightly faster and probably a lot clearer to just use list comprehensions:
+
+
+```
+
+sage: data=[(x,x*x) for x in [0..10,step=0.01]]
+sage: timeit('min(map(lambda t: t[1], data))')
+625 loops, best of 3: 1.29 ms per loop
+sage: timeit('min(i[1] for i in data)')
+625 loops, best of 3: 1.15 ms per loop
+```
+
+
+It would be orders of magnitude faster to use numpy to store the list of data.  This would be a more major change in the plotting code, but here is the equivalent numpy code:
+
+
+```
+sage: import numpy
+sage: ndata=numpy.array(data,dtype=float)
+sage: timeit('numpy.max(ndata[:,1])')
+625 loops, best of 3: 30.7 µs per loop
+```
+
+
+
+---
+
+Attachment
+
+rebased for sage-3.3.alpha2
+
+
+---
+
+Comment by whuss created at 2009-02-02 14:56:48
+
+Replying to [comment:1 kcrisman]:
+> My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.
+
+In the new patch a warning gets printed if min or max is used as the parameter for fill.
+
+Replying to [comment:3 jason]:
+> The patch uses map and max/min to calculate filling to the max or min of the function. It would be slightly faster and probably a lot clearer to just use list comprehensions
+
+I changed it to use generator comprehensions.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by kcrisman created at 2009-02-04 03:57:12
+
+Positive review off 3.3.alpha4; as we've all noted, this will be a great addition.  I did try quite a bit to crack it, but couldn't; I can't check plot.py doctests, unfortunately, so there is still the potential, but I doubt it.
+
+Two comments: 
+
+1. I added the reviewer patch because it was not clear that in parametric_plot, all fill options behave the same.  This is ok behavior, I think, for the parametric case, but should be documented.  
+
+2. With the fix for max/min versus 'max'/'min', the behavior of max and min (without quotes) has changed, in a very interesting way; in fact, it behaves somewhat similarly to the parametric filling.  I think it's a feature, not a bug, which should be documented and made easily available, but that should be on another ticket.
+
+
+---
+
+Comment by mabshoff created at 2009-02-05 13:02:10
+
+Resolution: fixed
+
+
+---
+
+Attachment
+
+Merged all three patches in Sage 3.3.alpha6.
+
+Cheers,
+
+Michael

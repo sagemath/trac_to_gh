@@ -1,0 +1,597 @@
+# Issue 5736: Improve doctest coverage for sage/modular/hecke
+
+Issue created by migration from Trac.
+
+Original creator: davidloeffler
+
+Original creation time: 2009-04-10 19:43:47
+
+Assignee: davidloeffler
+
+This patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.
+
+
+---
+
+Comment by mabshoff created at 2009-04-10 23:49:51
+
+This patch does cause one doctest failure:
+
+```
+mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc2$ ./sage -t -long devel/sage/sage/tests/book_stein_modform.py
+sage -t -long "devel/sage/sage/tests/book_stein_modform.py" 
+**********************************************************************
+File "/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/tests/book_stein_modform.py", line 205:
+    : M.boundary_map()
+Expected:
+    Hecke module morphism boundary map defined by the matrix
+    [ 1 -1]
+    Domain: Modular Symbols space of dimension 1 for
+    Gamma_0(2) of weight ...
+    Codomain: Space of Boundary Modular Symbols for
+    Congruence Subgroup Gamma0(2) ...
+Got:
+    Hecke module morphism boundary map defined by the matrix
+    [ 1 -1]
+    Domain: 'Modular Symbols space of dimension 1 for Gamma_0(2) of weight ...'
+    Codomain: 'Space of Boundary Modular Symbols for Congruence Subgroup Gamma0(2) ...'
+**********************************************************************
+```
+
+I am not sure why the `'` was added in the first place, but it seems to be non-standard in Sage to add the quotes.
+
+William might have the definite POV on this issue :)
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by davidloeffler created at 2009-04-13 09:21:10
+
+Oops. Mea culpa. The quotes were added because I was trying to hunt down some funny behaviour in a doctest which I suspected was because the output of the doctest ended in "...", which I suspected conflicted with the use of ... as an abbreviation in example docstring output. It turned out to be something completely different causing the problems, but I forgot to take the quotes out again.
+
+Here is a new patch, without the quotes (and with one small additional change: the tests in bordeaux_2008/generators_for_rings now work, as a consequence of the work I did on find_generators.py, so I've removed the ..skip:: directives in that file.)
+
+
+---
+
+Comment by davidloeffler created at 2009-04-13 09:21:10
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by was created at 2009-04-13 14:57:57
+
+REFEREE REPORT:
+
+1. Where you have
+
+```
+ 	623	        elif self.__ambient != other.__ambient: 
+ 	624	            return cmp(self.__ambient, other.__ambient)
+```
+
+I would typically write
+
+```
+c = cmp(self.__ambient, other.__ambient)
+if c: return c
+```
+
+since that entails only one comparison instead of 2.
+
+2. This code makes me nervous
+
+```
+ 	86	                    verbose("Trying to copy over precomputed matrix...") 
+ 	87	                    y._HeckeOperator__matrix = x._HeckeOperator__matrix 
+ 	88	                    verbose("...Succeeded") 
+```
+
+One worry is that the basis might be different.   I think there is nothing a priori to guarantee that the basis are the same for two generic Hecke modules that compare as equal, so one should check not only that the parents are equal but that they have the same basis.  Second, why use the hidden _HeckeOperator__matrix attribute?  Could you just use the .matrix() method (assuming there is one)?  A similar comment also applies about basis in the next elif.
+
+3. In hecke_operator.py there is a spurious period in line 55 of your patch:
+
+```
+ 	54	    Return True if x is of type HeckeAlgebraElement. 
+ 	55	    . 
+ 	56	    EXAMPLES:: 
+```
+
+
+4. In hecke_operator.py, there is a TypeError, which should be a RuntimeError:
+
+```
+        455	            else: 
+ 	456	                raise TypeError, "Bug in coercion code" # can't get here. 
+```
+
+It should be RuntimeError, since it's reporting a bug, so shouldn't just silently get absorbed by the coercion models exception catching.
+
+5. Here, I wonder if we could remove the 5x5 constraint, since now matrices have their own (I think 20x20) cutoff for printing:
+
+```
+347	459	    def _repr_(self): 
+ 	460	        r""" 
+ 	461	        String representation of self. The matrix is not printed if the number 
+ 	462	        of rows or columns is > 5.  
+ 	463	 
+ 	464	        EXAMPLES:: 
+ 	465	 
+ 	466	            sage: M = ModularSymbols(1,12) 
+ 	467	            sage: M.hecke_operator(2).matrix_form()._repr_() 
+ 	468	            'Hecke operator on Modular Symbols space of dimension 3 for Gamma_0(1) of weight 12 with sign 0 over Rational Field defined by:\n[ -24    0    0]\n[   0  -24    0]\n[4860    0 2049]' 
+ 	469	        """ 
+348	470	        if max(self.__matrix.nrows(),self.__matrix.ncols()) > 5: 
+349	471	            mat = "(not printing %s x %s matrix)"%(self.__matrix.nrows(), self.__matrix.ncols()) 
+```
+
+
+6. I guess this should be RuntimeError too?
+
+```
+ 	578	            else: 
+ 	579	                raise TypeError, "Bug in coercion code" # can't get here 
+```
+
+
+7. A doctest for the __hash__() method is _wrong_:
+
+```
+340	514	    def __hash__(self): 
+341	 	        return hash((self.__weight, self.level(), self.base_ring(), str(self))) 
+ 	515	        r""" 
+ 	516	        Return a hash of self.  
+ 	517	 
+ 	518	        EXAMPLES:: 
+ 	519	             
+ 	520	            sage: ModularSymbols(22).__hash__ # random 
+ 	521	        """ 
+ 	522	        return hash((self.__weight, self.level(), self.base_ring())) 
+```
+
+
+Note above you just print the function, not its value. Replace by `.__hash__()`
+
+Many thanks for doing such an amazing job documented all this code!!
+
+
+---
+
+Comment by davidloeffler created at 2009-04-13 15:59:58
+
+What would you suggest for your point number 2 above? The scenario I had in mind was that one might be somehow using "loads" to read in a Hecke operator that had been precomputed at great expense, and it would make sense to avoid recomputing all that data when comparing it with / adding it to / whatever something else that had been computed afresh. E.g. in one session
+
+```
+sage: H = ModularForms(Gamma0(10), 12).hecke_operator(123456789)
+sage: H.matrix() # very long!
+sage: save(H, "./bigheckeop.sobj")
+```
+
+(let's assume this would actually terminate in some reasonable time)
+and later
+
+```
+sage: H = load("./bigheckeop.sobj")
+sage: ModularForms(Gamma0(10), 12).hecke_operator(6) + H
+```
+
+
+At present this will raise a RuntimeError, which is clearly bad. But doing the computation of the enormous Hecke operator's matrix again from scratch isn't ideal either. 
+
+Checking that the bases are "the same" is a bit of a problem because what we really need to do is to check that the basis vectors have the same interpretation as a mathematical objects, rather than just that they're the same ones and zeros in memory. E.g. we might have changed the order in which modular symbol basis vectors were enumerated between versions, and then the second basis vector would still be (0,1,0,..), but it would correspond to a different mathematical object.
+
+It's not a very likely use case, I suppose, so maybe it is safer just to force the recomputation. Let me know what you think, and I'll do a new patch.
+
+
+---
+
+Comment by was created at 2009-04-13 18:28:29
+
+> It's not a very likely use case, I suppose, so maybe it is safer 
+> just to force the recomputation. Let me know what you think, and I'll do a new patch. 
+
+You have some good points.  The safest thing I can think of that also "solves" your problem (at least for a sufficiently diligent user!), would be to provide the option to set the n-th Hecke operator from a known matrix.   Something like
+
+```
+sage: M = ModularForms(Gamma0(10), 12)
+sage: M.unsafe_set_hecke_matrix(123456789, mat)
+sage: M.hecke_operator(123456789).matrix()
+# instant
+```
+
+The documentation for the function would make the issues with bases clear.
+
+This should be done as part of another patch, imho.   It could be useful in a lot of contexts, where for some reason one knows what the n-th hecke matrix is much more efficiently than Sage does, but doesn't want to dive into the guts of Sage's modular forms and code why one has this extra knowledge.
+
+
+---
+
+Comment by davidloeffler created at 2009-04-14 10:26:54
+
+Replying to [comment:3 was]:
+> One worry is that the basis might be different.   I think there is nothing a priori to guarantee that the basis are the same for two generic Hecke modules that compare as equal, so one should check not only that the parents are equal but that they have the same basis.  Second, why use the hidden _HeckeOperator!__matrix attribute?  Could you just use the .matrix() method (assuming there is one)?  A similar comment also applies about basis in the next elif.
+
+Investigation revealed several bugs related to this. If you create two submodules of the same ambient module which are equal as submodules but with different bases, then (since they compare as equal) the factory function caching machinery will return the same object as the Hecke algebra of both of them, despite the fact that this will be using the wrong basis matrix for one of them.
+
+I have fixed this, so the Hecke operators on submodules with custom bases are calculated correctly; and I've made it so the !__call!__ method of Hecke algebra objects, if asked to convert in a Hecke operator on a submodule that is equal to its own, will check that the basis matrices are the same, and if they're not it will apply the appropriate transformation. There is a long doctest in sage.modular.hecke.algebra.!__call!__ which checks that this is all OK.
+
+The patch trac_5736-fixes.patch fixes this issue and the other issues 1-7 that you raised above.
+
+David
+
+
+---
+
+Comment by davidloeffler created at 2009-04-14 13:09:38
+
+Hold it, I accidentally introduced a bug (the doctests for supersingular modules fail).
+
+
+---
+
+Comment by davidloeffler created at 2009-04-14 14:01:09
+
+Turns out that the doctests fail as a knock-on effect of #4306: the basis_matrix method fails for SupersingularModules, and the changes I made to the HeckeAlgebra factory function exposed that. The tiny patch trac_5736-3.patch adds a workaround.
+
+
+---
+
+Attachment
+
+replaces all previous patches, rebased to 3.4.2.alpha0
+
+
+---
+
+Comment by davidloeffler created at 2009-04-26 09:09:54
+
+I have added a new patch that is equivalent to the three patches above combined, rebased to apply over 3.4.2.alpha0. (Isn't the Mercurial Queues add-on wonderful?)
+
+
+---
+
+Comment by was created at 2009-04-26 15:57:37
+
+I applied this to 3.4.2.alpha0, and did "make ptestlong":
+
+```
+sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+	 [181.8 s]
+ 
+----------------------------------------------------------------------
+
+The following tests failed:
+
+	sage -t -long devel/sage/sage/modular/modform/space.py # 2 doctests failed
+	sage -t -long devel/sage/sage/modular/hecke/hecke_operator.py # 8 doctests failed
+	sage -t -long devel/sage/sage/modular/hecke/algebra.py # 1 doctests failed
+	sage -t -long devel/sage/sage/modular/hecke/module.py # 14 doctests failed
+----------------------------------------------------------------------
+Total time for all tests: 387.7 seconds
+wstein`@`sage:~/build/sage-3.4.2.alpha0$ 
+```
+
+
+
+---
+
+Comment by davidloeffler created at 2009-04-27 09:00:53
+
+I am unable to replicate these failures: it works fine for me both on my laptop (32-bit Linux) and on sage.math.washington.edu. Which system are you using? Could you tell me exactly which doctests are failing, and how?
+
+
+---
+
+Comment by davidloeffler created at 2009-04-30 10:23:19
+
+William: any movement on this? It would be nice to get this into 4.0 at least (we seem to have missed the 3.4.2 deadline now), but I can't fix the problems you're having if I don't know what's broken. It works for me on 64-bit and 32-bit Linux so I'm guessing you're using a Mac, but I don't have access to a Mac for testing. 
+
+(I have several other modular forms fixes + improvements ready that are dependent on this one.)
+
+
+---
+
+Comment by mabshoff created at 2009-04-30 21:30:22
+
+I applied trac_5736-rebase.patch to 3.4.2.rc0 on sage.math and long doctests pass.
+
+William: Any chances you had crap in your tree unrelated to this patch? While it is too late for 3.4.2 this patch raises coverage by 0.2% [aside from all the nice bug fixes :)], so it really ought to go into 4.0.
+
+Changing to "needs review" again.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-04-30 22:13:56
+
+Hmm, skimming the patch:
+
+```
+ 	519	        EXAMPLES:: 
+ 	520	             
+ 	521	            sage: ModularSymbols(22).__hash__() # random 
+ 	522	            1471905187 
+```
+
+Why on earth would the hash be random (there are two cases in the patch)? I assume there are 32 vs. 64 bit issues (which can be properly dealt with), but a hash should certainly not be random.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-04-30 22:15:10
+
+Changing back to "needs work" for the hashing issue. Just grep the Sage library tree for either `32-bit` or `64-bit` to see how to create 32 and 64 bit specific output.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-04-30 22:21:43
+
+Another thing: This is wrong since the current LaTeX framework that will be in 3.4.2 uses macros like `\QQ` to make the output customizable:
+
+```
+1158	 	        NOTE: The base ring must be `\QQ` or `\ZZ`. 
+ 	1187	        NOTE: The base ring must be `mathbb{Q}` or `mathbb{Z}`. 
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+apply over previous patch
+
+
+---
+
+Comment by davidloeffler created at 2009-04-30 22:50:38
+
+Here's a tiny patch that addresses the two issues raised by mabshoff.
+
+
+---
+
+Comment by was created at 2009-05-03 21:34:18
+
+I applied both patches to a clean 3.4.2.rc0 install and got:
+
+```
+make ptestlong
+
+...
+
+The following tests failed:
+
+        sage -t -long devel/sage/sage/modular/modsym/ambient.py # 4 doctests failed
+        sage -t -long devel/sage/sage/tests/book_stein_modform.py # 3 doctests failed
+        sage -t -long devel/sage/sage/modular/modsym/manin_symbols.py # 1 doctests failed
+        sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed
+----------------------------------------------------------------------
+Total time for all tests: 312.6 seconds
+wstein`@`sage:~/build/sage-3.4.2.rc0$ 
+```
+
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 00:59:18
+
+Ok, I was surprised this patch did break things again, but there are two issues here:
+
+An extra space has been inserted when printing the basis, for example:
+
+```
+File "/scratch/wstein/build/sage-3.4.2.rc0/devel/sage-0/sage/tests/book_stein_modform.py", line 70:
+    : M.basis()
+Expected:
+    ({Infinity,0}, {-1/8,0}, {-1/9,0})
+Got:
+    ({Infinity, 0}, {-1/8, 0}, {-1/9, 0})
+```
+
+In addition the printing order for modular_symbol_rep() is reversed:
+
+```
+age -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst
+**********************************************************************
+File "/scratch/wstein/build/sage-3.4.2.rc0/devel/sage-0/doc/en/bordeaux_2008/modular_symbols.rst", line 124:
+    sage: a.modular_symbol_rep()
+Expected:
+    36*X^2*{-1/6,0} + 12*X*Y*{-1/6,0} + Y^2*{-1/6,0}
+Got:
+    Y^2*{-1/6, 0} + 12*X*Y*{-1/6, 0} + 36*X^2*{-1/6, 0}
+**********************************************************************
+```
+
+
+So all those four doctests are simple to fix.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 01:30:31
+
+Now the truly puzzling thing is this: 
+
+ * The above failures are in William's tree on sage.math - I ran them there.
+ * When I take those two patches and import them into my clean 3.4.2.rc0 tree in /scratch on sage.math all doctests passs. 
+
+William's testing tree seems to be a clone from a tree that has the following patches in sage-main:
+
+```
+changeset:   12151:e0257aa492ab
+tag:         tip
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 22:56:24 2009 -0700
+summary:     trac #5968 -- part 2 -- increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
+
+changeset:   12150:673cc9b82a7d
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 22:46:52 2009 -0700
+summary:     trac 5968 -- increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
+
+changeset:   12149:901f4946fd7e
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 02:15:34 2009 -0700
+summary:     trac #5882 -- part 4 -- mop up some issues with overzealous changes to matrix_morphism.
+
+changeset:   12148:312499531bcb
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 01:31:38 2009 -0700
+summary:     trac #5882 -- part 3 of "implement general package for finitely generated not-necessarily free R-modules"
+
+changeset:   12147:82b9ade5605a
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 01:48:24 2009 -0700
+summary:     trac #5882 (part 2) -- implement general package for finitely generated not-necessarily free R-modules
+
+changeset:   12146:6023d9680d5e
+user:        William Stein <wstein`@`gmail.com>
+date:        Thu Apr 30 13:30:21 2009 -0700
+summary:     trac #5882 -- part 1 of implementation of finitely generated modules over a PID
+
+changeset:   12145:9ee83eda286e
+user:        William Stein <wstein`@`gmail.com>
+date:        Sat May 02 01:38:52 2009 -0700
+summary:     trac #5887 -- major bugs in morphisms of R-modules (rebased against 3.4.2.rc0)
+```
+
+So I assume that his build directory contains crap from those patches that cause these failures that a `sage -b` does not fix since there are no dependencies when cloning from the rc0 revision. A `sage -ba` while using the sage-0 clone would clear this up, but since this isn't my tree I will not do so :)
+
+In the end this patch should be reviewed on a truly clean tree, so I am changing this patch to "needs review". 
+
+Thoughts?
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 01:36:19
+
+Indeed, this was exactly caused by this issue mentioned above:
+
+```
+wstein`@`sage:~/build/sage-3.4.2.rc0$ ./sage -sh
+
+Starting subshell with Sage environment variables set.
+Be sure to exit when you are done and do not do anything
+with other copies of Sage!
+
+wstein`@`sage:~/build/sage-3.4.2.rc0$ cd devel/sage
+wstein`@`sage:~/build/sage-3.4.2.rc0/devel/sage$ touch sage/modular/modsym/modular_symbols.py
+wstein`@`sage:~/build/sage-3.4.2.rc0/devel/sage$ cd ../..
+wstein`@`sage:~/build/sage-3.4.2.rc0$ ./sage -b
+
+----------------------------------------------------------
+sage: Building and installing modified Sage library files.
+
+
+Installing c_lib
+scons: `install' is up to date.
+Updating Cython code....
+Time to execute 0 commands: 1.38282775879e-05 seconds
+Finished compiling Cython code (time = 0.30867099762 seconds)
+running install
+running build
+running build_py
+copying sage/modular/modsym/modular_symbols.py -> build/lib.linux-x86_64-2.5/sage/modular/modsym
+running build_ext
+running build_scripts
+running install_lib
+copying build/lib.linux-x86_64-2.5/sage/modular/modsym/modular_symbols.py -> /scratch/wstein/build/sage-3.4.2.rc0/local/lib/python2.5/site-packages/sage/modular/modsym
+byte-compiling /scratch/wstein/build/sage-3.4.2.rc0/local/lib/python2.5/site-packages/sage/modular/modsym/modular_symbols.py to modular_symbols.pyc
+running install_scripts
+changing mode of /scratch/wstein/build/sage-3.4.2.rc0/local/bin/spkg-debian-maybe to 755
+running install_egg_info
+Removing /scratch/wstein/build/sage-3.4.2.rc0/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info
+Writing /scratch/wstein/build/sage-3.4.2.rc0/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info
+
+real	0m1.006s
+user	0m0.810s
+sys	0m0.190s
+wstein`@`sage:~/build/sage-3.4.2.rc0$        sage -t -long devel/sage/sage/modular/modsym/ambient.py # 4 doctests failed
+sage -t -long "devel/sage/sage/modular/modsym/ambient.py"   
+	 [5.8 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 5.8 seconds
+wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/tests/book_stein_modform.py # 3 doctests failedsage -t -long "devel/sage/sage/tests/book_stein_modform.py" 
+	 [3.3 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 3.3 seconds
+wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/modular/modsym/manin_symbols.py # 1 doctests failed
+sage -t -long "devel/sage/sage/modular/modsym/manin_symbols.py"
+	 [1.5 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 1.5 seconds
+wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed
+sage -t -long "devel/sage/doc/en/bordeaux_2008/modular_symbols.rst"
+	 [1.1 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 1.1 seconds
+wstein`@`sage:~/build/sage-3.4.2.rc0$ 
+```
+
+
+
+---
+
+Comment by was created at 2009-05-04 03:48:31
+
+OK, you are right.  Positive review, since when reading the patches everything looks good to me.  Thanks!!
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 17:57:43
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 17:57:43
+
+Merged both patches in Sage 4.0.alpha0.
+
+Cheers,
+
+Michael

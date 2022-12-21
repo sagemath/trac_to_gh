@@ -1,0 +1,306 @@
+# Issue 5538: Family does not copy it's input.
+
+Issue created by migration from Trac.
+
+Original creator: hivert
+
+Original creation time: 2009-03-16 23:43:12
+
+Assignee: hivert
+
+CC:  sage-combinat
+
+Keywords: Family, mutable input
+
+When family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. 
+
+```
+sage: d = {1:"a", 3:"b", 4:"c"}
+sage: f = Family(d)
+sage: f
+Finite family {1: 'a', 3: 'b', 4: 'c'}
+sage: d.
+sage: d[2] = 'DD'
+sage: d
+{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}
+sage: f
+Finite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}
+```
+
+
+Florent
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by hivert created at 2009-04-06 21:52:05
+
+The uploaded patch improve family in several ways.
+
+ - first of all the input is now systematically copied to avoid modification;
+
+ - now family can handle list and tuple with the class `TrivialFamily`;
+
+ - I also corrected the pickling of function when possible and attrcall;
+
+ - since it has nothing to do with combinatorics I moved family to sage.set
+
+Cheers,
+
+Florent
+
+
+---
+
+Attachment
+
+Doc fix
+
+
+---
+
+Comment by hivert created at 2009-04-09 20:43:18
+
+Since the file is moved, the patch is not very useful. I added a diff from the former `sage/combinat/family.py` to the new `sage/sets/family.py`. It is *not* a patch and should not be applied.
+
+
+---
+
+Attachment
+
+Difference of family.py before and after the patch.
+
+
+---
+
+Comment by hivert created at 2009-04-10 17:05:51
+
+On irc, it was decided that we should take chance of this patch to finish the cleanup of the interface of family. I've taken care of this but several issues are still open:
+
+1. The former implementation of family accepted a parameter "name" which was never used and which was there to provide a functionality similar to `SageObject.rename`. Therefore it should be removed. Is it ok to keep it and raise a warning so that people in sage-combinat adapt their code according to ?
+
+2. On the other hand, for `LazyFamily` I can use the name of the function to generate a proper name for the family. Here are some examples:
+
+```
+sage: def fun(i): 2*i
+sage: f = LazyFamily([3,4,7], fun); f
+Lazy family (fun(i))_{i in [3, 4, 7]}
+
+sage: f = Family(Permutations(3), attrcall("to_lehmer_code"), lazy=True); f
+Lazy family (i.to_lehmer_code())_{i in Standard permutations of 3}
+
+sage: f = LazyFamily([3,4,7], lambda i: 2*i); f
+Lazy family (<lambda>(i))_{i in [3, 4, 7]}
+```
+
+Is this ok ? In particular the last one used to be printed
+
+```
+Lazy family (f(i))_{i in [3, 4, 7]}
+```
+
+I find `<lambda>` more explicit.
+
+3. To have a single interface it was also decided to add a keyword parameter lazy which call's `LazyFamily`. The parameter is False by for now default. I think it depends on the input. In particular if `index` is a combinatorial class which is not a finite one, then the former implementation turned lazy by default. Should we do that ? 
+
+Cheers,
+
+Florent
+
+
+---
+
+Comment by nthiery created at 2009-04-13 23:16:33
+
+Agreed on 1, 2, 3. I very much like the printing in 2.
+I looked at the current diff, and it looks good to me.
+
+Just two suggestions in TrivialFamily:
+-  __iter__ could return self.set.__iter__()
+- self.set is a bit of a misnomer since the order is relevant. self.enumeration?
+
+
+---
+
+Attachment
+
+Cleanup of the interface.
+
+
+---
+
+Attachment
+
+Adapted root system with the new interface
+
+
+---
+
+Comment by hivert created at 2009-04-14 17:09:07
+
+The current versions of the patch should be definitive ! Please review. 
+They are four patch that should applied without problem in the following order:
+  
+ * attachment:family_improve-fh-5538-submitted.patch
+
+ * attachment:family_doc_fix-final.patch
+
+ * attachment:family_interface-cleanup-fh-final.patch
+
+ * attachment:family_adapt-fh-final.patch
+
+The last two clean the interface up and adapt part of combinat and in particular root-systems to the new interface. The test should runs without deprecation warning.
+
+Cheers,
+
+Florent
+
+
+---
+
+Attachment
+
+Positive review.
+
+Florent: please update the summary accordingly, after double checking my (trivial) review patch. It needs to be applied last.
+
+Michael: do you mind setting the gard +3_4_1 on the patch server just after the merge?
+(and possibly also for the other recently merged in sage-combinat patches). Thanks!
+
+
+---
+
+Comment by nthiery created at 2009-04-14 18:10:21
+
+I meant: +3_4_1 or +3_4_2 depending on where it goes of course.
+
+
+---
+
+Comment by hivert created at 2009-04-14 19:00:02
+
+Reviewed the review patch. All light green
+
+Florent
+
+
+---
+
+Comment by hivert created at 2009-04-14 22:13:05
+
+Dear Michael, 
+
+If it's still possible I'd like to see this one merged in 3.4.1.
+This is a basic stuff that is useful and should be advertised.
+
+Cheers,
+
+Florent
+
+
+---
+
+Comment by hivert created at 2009-04-14 22:14:22
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by mabshoff created at 2009-04-14 23:29:12
+
+This patch breaks a lot of pickles:
+
+```
+    Failed:
+    _class__sage_combinat_family_FiniteFamilyWithHiddenKeys__.sobj
+    _class__sage_combinat_family_FiniteFamily__.sobj
+    _class__sage_combinat_family_LazyFamily__.sobj
+    _class__sage_combinat_finite_class_FiniteCombinatorialClass_l__.sobj
+    _class__sage_combinat_free_module_CombinatorialFreeModuleElement__.sobj
+    _class__sage_combinat_free_module_CombinatorialFreeModule__.sobj
+    _class__sage_combinat_root_system_root_space_RootSpace__.sobj
+    _class__sage_combinat_root_system_type_A_ambient_space__.sobj
+    _class__sage_combinat_root_system_type_C_ambient_space__.sobj
+    _class__sage_combinat_root_system_type_E_ambient_space__.sobj
+    _class__sage_combinat_root_system_type_F_ambient_space__.sobj
+    _class__sage_combinat_root_system_type_G_ambient_space__.sobj
+    _class__sage_combinat_root_system_type_reducible_CartanType__.sobj
+    _class__sage_combinat_root_system_weight_space_WeightSpace__.sobj
+    _class__sage_combinat_root_system_weyl_characters_WeightRing__.sobj
+    _class__sage_combinat_root_system_weyl_characters_WeylCharacterRing_class__.sobj
+    _class__sage_combinat_root_system_weyl_characters_WeylCharacter__.sobj
+    _class__sage_combinat_root_system_weyl_group_WeylGroupElement__.sobj
+    _class__sage_combinat_root_system_weyl_group_WeylGroup_gens__.sobj
+    Successfully unpickled 464 objects.
+    Failed to unpickle 19 objects.
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by hivert created at 2009-04-15 10:03:17
+
+Oups ! The problem is due to a file which has been moved and a class which has been renamed. Everything was ready to correctly pickle, but I mixed things up in my backward compatibility import links. I just updated a simple patch which solve the problem on my machine.
+
+Michael: can you review it ? You are the master of checking pickle !
+
+I'm still hoping to be in time for 3.4.1 ...
+
+Sorry for the mess,
+
+Florent
+
+
+---
+
+Comment by hivert created at 2009-04-15 14:56:24
+
+Fixing the Pickle + Minimal doc header.
+
+
+---
+
+Attachment
+
+Positive review for the pickle fix patch. The five patches together make the test suite pass.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-04-15 22:22:15
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2009-04-15 22:22:15
+
+Merged
+
+ * trac_5538_part_1_family_improve-fh-5538-submitted.patch
+ * trac_5538_part_2_family_doc_fix-final.patch
+ * trac_5538_part_3_family_interface-cleanup-fh-final.patch
+ * trac_5538_part_4_family_adapt-fh-final.patch
+ * trac_5538_part_5_family_pickle_fix-fh.patch
+
+in Sage 3.4.1.rc3.
+
+Cheers,
+
+Michael

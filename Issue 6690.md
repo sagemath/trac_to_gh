@@ -1,0 +1,32 @@
+# Issue 6690: spell-check all modules under sage/coding
+
+Issue created by migration from Trac.
+
+Original creator: mvngu
+
+Original creation time: 2009-08-08 17:35:54
+
+Assignee: tba
+
+CC:  wdj
+
+As the subject says.
+
+
+---
+
+Comment by mvngu created at 2009-08-11 11:05:33
+
+based on Sage 4.1.1.rc2
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mvngu created at 2009-08-12 04:35:45
+
+Resolution: fixed

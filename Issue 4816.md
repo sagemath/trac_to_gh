@@ -1,0 +1,223 @@
+# Issue 4816: Test failure in ell_rational_field.py
+
+Issue created by migration from Trac.
+
+Original creator: justin
+
+Original creation time: 2008-12-16 16:44:39
+
+Assignee: tbd
+
+Testing in sage-3.2.2.rc0 yields a failure, below, (on Mac OS X, 10.5.5, on a Dual Quad Xeon).  To spoil the fun, there are two differences between "Expected" and "Got":
+
+
+```
+Expected:
+    ...
+    lambda 0.485997517468082
+    ...
+    k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489361
+```
+
+
+
+```
+Got:
+    ...
+    lambda 0.485997517468080
+    ...
+    k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489360
+```
+
+
+Here's the full failure:
+
+```
+sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
+**********************************************************************
+File "/Users/tmp/sage-3.2.2.alpha2/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py", line 3248, in __main__.example_111
+Failed example:
+    a=E.S_integral_points(S=[Integer(2),Integer(3)], mw_base=[P1,P2,P3], verbose=True);a###line 4640:_sage_    >>> a=E.S_integral_points(S=[2,3], mw_base=[P1,P2,P3], verbose=True);a
+Expected:
+    max_S: 3 len_S: 3 len_tors: 1
+    lambda 0.485997517468082
+    k1,k2,k3,k4 6.68597129142710e234 1.31952866480763 3.31908110593519e9 2.42767548272846e17
+    mw_base [(1 : -1 : 1), (2 : 0 : 1), (0 : -3 : 1)]
+    mw_base_log [0.667789378224099, 0.552642660712417, 0.818477222895703]
+    mp [5, 7]
+    mw_base_p_log [[2^2 + 2^3 + 2^6 + 2^7 + 2^8 + 2^9 + 2^14 + 2^15 + 2^18 + 2^19 + O(2^20), 2^2 + 2^3 + 2^5 + 2^6 + 2^9 + 2^11 + 2^12 + 2^14 + 2^15 + 2^16 + 2^18 + O(2^20), 2 + 2^3 + 2^6 + 2^7 + 2^8 + 2^9 + 2^11 + 2^12 + 2^13 + 2^16 + 2^17 + 2^19 + O(2^20)], [2*3^2 + 2*3^5 + 2*3^6 + 2*3^7 + 3^8 + 3^9 + 2*3^10 + 3^12 + 2*3^14 + 3^15 + 3^17 + 2*3^19 + O(3^20), 2*3 + 2*3^2 + 2*3^3 + 2*3^4 + 2*3^6 + 2*3^7 + 2*3^8 + 3^10 + 2*3^12 + 3^13 + 2*3^14 + 3^15 + 3^18 + O(3^20), 3 + 3^2 + 2*3^3 + 3^6 + 2*3^7 + 2*3^8 + 3^9 + 2*3^11 + 2*3^12 + 2*3^13 + 3^15 + 2*3^16 + 3^18 + 2*3^19 + O(3^20)]]
+    k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489361
+    initial bound 2.62270974833657e117
+    bound_list [58, 58, 58]
+    bound_list [8, 9, 9]
+    bound_list [8, 7, 7]
+    bound_list [8, 7, 7]
+    starting search of points using coefficient bound  8
+    x-coords of S-integral points via linear combination of mw_base and torsion:
+    [-3, -26/9, -8159/2916, -2759/1024, -151/64, -1343/576, -2, -7/4, -1, -47/256, 0, 1/4, 4/9, 9/16, 58/81, 7/9, 6169/6561, 1, 17/16, 2, 33/16, 172/81, 9/4, 25/9, 3, 31/9, 4, 25/4, 1793/256, 8, 625/64, 11, 14, 21, 37, 52, 6142/81, 93, 4537/36, 342, 406, 816, 207331217/4096]
+    starting search of extra S-integer points with absolute value bounded by 3.89321964979420
+    x-coords of points with bounded absolute value
+    [-3, -2, -1, 0, 1, 2]
+    Total number of S-integral points: 43
+    [(-3 : 0 : 1), (-26/9 : 28/27 : 1), (-8159/2916 : 233461/157464 : 1), (-2759/1024 : 60819/32768 : 1), (-151/64 : 1333/512 : 1), (-1343/576 : 36575/13824 : 1), (-2 : 3 : 1), (-7/4 : 25/8 : 1), (-1 : 3 : 1), (-47/256 : 9191/4096 : 1), (0 : 2 : 1), (1/4 : 13/8 : 1), (4/9 : 35/27 : 1), (9/16 : 69/64 : 1), (58/81 : 559/729 : 1), (7/9 : 17/27 : 1), (6169/6561 : 109871/531441 : 1), (1 : 0 : 1), (17/16 : -25/64 : 1), (2 : 0 : 1), (33/16 : 17/64 : 1), (172/81 : 350/729 : 1), (9/4 : 7/8 : 1), (25/9 : 64/27 : 1), (3 : 3 : 1), (31/9 : 116/27 : 1), (4 : 6 : 1), (25/4 : 111/8 : 1), (1793/256 : 68991/4096 : 1), (8 : 21 : 1), (625/64 : 14839/512 : 1), (11 : 35 : 1), (14 : 51 : 1), (21 : 95 : 1), (37 : 224 : 1), (52 : 374 : 1), (6142/81 : 480700/729 : 1), (93 : 896 : 1), (4537/36 : 305425/216 : 1), (342 : 6324 : 1), (406 : 8180 : 1), (816 : 23309 : 1), (207331217/4096 : 2985362173625/262144 : 1)]
+Got:
+    max_S: 3 len_S: 3 len_tors: 1
+    lambda 0.485997517468080
+    k1,k2,k3,k4 6.68597129142710e234 1.31952866480763 3.31908110593519e9 2.42767548272846e17
+    mw_base [(1 : -1 : 1), (2 : 0 : 1), (0 : -3 : 1)]
+    mw_base_log [0.667789378224099, 0.552642660712417, 0.818477222895703]
+    mp [5, 7]
+    mw_base_p_log [[2^2 + 2^3 + 2^6 + 2^7 + 2^8 + 2^9 + 2^14 + 2^15 + 2^18 + 2^19 + O(2^20), 2^2 + 2^3 + 2^5 + 2^6 + 2^9 + 2^11 + 2^12 + 2^14 + 2^15 + 2^16 + 2^18 + O(2^20), 2 + 2^3 + 2^6 + 2^7 + 2^8 + 2^9 + 2^11 + 2^12 + 2^13 + 2^16 + 2^17 + 2^19 + O(2^20)], [2*3^2 + 2*3^5 + 2*3^6 + 2*3^7 + 3^8 + 3^9 + 2*3^10 + 3^12 + 2*3^14 + 3^15 + 3^17 + 2*3^19 + O(3^20), 2*3 + 2*3^2 + 2*3^3 + 2*3^4 + 2*3^6 + 2*3^7 + 2*3^8 + 3^10 + 2*3^12 + 3^13 + 2*3^14 + 3^15 + 3^18 + O(3^20), 3 + 3^2 + 2*3^3 + 3^6 + 2*3^7 + 2*3^8 + 3^9 + 2*3^11 + 2*3^12 + 2*3^13 + 3^15 + 2*3^16 + 3^18 + 2*3^19 + O(3^20)]]
+    k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489360
+    initial bound 2.62270974833657e117
+    bound_list [58, 58, 58]
+    bound_list [8, 9, 9]
+    bound_list [8, 7, 7]
+    bound_list [8, 7, 7]
+    starting search of points using coefficient bound  8
+    x-coords of S-integral points via linear combination of mw_base and torsion:
+    [-3, -26/9, -8159/2916, -2759/1024, -151/64, -1343/576, -2, -7/4, -1, -47/256, 0, 1/4, 4/9, 9/16, 58/81, 7/9, 6169/6561, 1, 17/16, 2, 33/16, 172/81, 9/4, 25/9, 3, 31/9, 4, 25/4, 1793/256, 8, 625/64, 11, 14, 21, 37, 52, 6142/81, 93, 4537/36, 342, 406, 816, 207331217/4096]
+    starting search of extra S-integer points with absolute value bounded by 3.89321964979420
+    x-coords of points with bounded absolute value
+    [-3, -2, -1, 0, 1, 2]
+    Total number of S-integral points: 43
+    [(-3 : 0 : 1), (-26/9 : 28/27 : 1), (-8159/2916 : 233461/157464 : 1), (-2759/1024 : 60819/32768 : 1), (-151/64 : 1333/512 : 1), (-1343/576 : 36575/13824 : 1), (-2 : 3 : 1), (-7/4 : 25/8 : 1), (-1 : 3 : 1), (-47/256 : 9191/4096 : 1), (0 : 2 : 1), (1/4 : 13/8 : 1), (4/9 : 35/27 : 1), (9/16 : 69/64 : 1), (58/81 : 559/729 : 1), (7/9 : 17/27 : 1), (6169/6561 : 109871/531441 : 1), (1 : 0 : 1), (17/16 : -25/64 : 1), (2 : 0 : 1), (33/16 : 17/64 : 1), (172/81 : 350/729 : 1), (9/4 : 7/8 : 1), (25/9 : 64/27 : 1), (3 : 3 : 1), (31/9 : 116/27 : 1), (4 : 6 : 1), (25/4 : 111/8 : 1), (1793/256 : 68991/4096 : 1), (8 : 21 : 1), (625/64 : 14839/512 : 1), (11 : 35 : 1), (14 : 51 : 1), (21 : 95 : 1), (37 : 224 : 1), (52 : 374 : 1), (6142/81 : 480700/729 : 1), (93 : 896 : 1), (4537/36 : 305425/216 : 1), (342 : 6324 : 1), (406 : 8180 : 1), (816 : 23309 : 1), (207331217/4096 : 2985362173625/262144 : 1)]
+**********************************************************************
+1 items had failures:
+   1 of   9 in __main__.example_111
+***Test Failed*** 1 failures.
+```
+
+
+
+
+
+---
+
+Comment by cremona created at 2008-12-16 16:50:36
+
+I'll put up a patch for this in a minute.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cremona created at 2008-12-16 17:02:53
+
+Patch attached which puts some ... at the end of the offending reals.  Based on 3.2.2.rc0.  Tested ok on 32-bit Suse.
+
+BUT when I made a clone of my fresh 64-bit build  (./sage -clone 4816 i nthe build directory) I found that I could not run sage (./sage quit with errors:
+
+```
+SyntaxError: Non-ASCII character '\xc3' in file /home/jec/sage-3.2.2.rc0/local/lib/python2.5/site-packages/sage/combinat/ranker.py on line 3, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details (ranker.py, line 3)
+Error importing ipy_profile_sage - perhaps you should run %upgrade?
+WARNING: Loading of ipy_profile_sage failed.
+```
+
+which looks like something else entirely!
+
+
+---
+
+Comment by mabshoff created at 2008-12-16 18:11:38
+
+Changing priority from major to blocker.
+
+
+---
+
+Comment by mabshoff created at 2008-12-16 18:11:38
+
+Changing component from algebra to doctest.
+
+
+---
+
+Comment by mabshoff created at 2008-12-16 18:11:38
+
+Changing assignee from tbd to mabshoff.
+
+
+---
+
+Comment by mabshoff created at 2008-12-16 18:11:38
+
+I am seeing the same numerical failure on an Itanium box:
+
+```
+<     lambda 0.485997517468082
+---
+>     lambda 0.485997517468080
+---
+<     k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489361
+---
+>     k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489360
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cremona created at 2008-12-16 18:24:39
+
+Replying to [comment:3 mabshoff]:
+> I am seeing the same numerical failure on an Itanium box:
+
+Before or after my patch?
+
+John
+
+> {{{
+> <     lambda 0.485997517468082
+> ---
+> >     lambda 0.485997517468080
+> ---
+> <     k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489361
+> ---
+> >     k5,k6,k7 0.321154513240167 1.55246328915541 0.161999172489360
+> }}}
+> 
+> Cheers,
+> 
+> Michael
+
+
+---
+
+Comment by mabshoff created at 2008-12-16 18:26:25
+
+Before. With the patch:
+
+```
+sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
+         [403.0 s]
+```
+
+
+So positive review.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-12-17 14:05:26
+
+Merged in Sage 3.2.2.rc1
+
+
+---
+
+Comment by mabshoff created at 2008-12-17 14:05:26
+
+Resolution: fixed

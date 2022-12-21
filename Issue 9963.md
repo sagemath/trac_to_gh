@@ -1,0 +1,141 @@
+# Issue 9963: Document _pari_ and _pari_init_
+
+Issue created by migration from Trac.
+
+Original creator: jdemeyer
+
+Original creation time: 2010-09-21 21:12:48
+
+Assignee: mvngu
+
+CC:  mhansen simonking
+
+Many Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:
+ * what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?
+ * Why is `_pari_init_` also used for the GP interpreter `Gp`?
+ * Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?
+
+
+---
+
+Comment by jdemeyer created at 2010-09-21 21:17:39
+
+I don't know if there even exists a person which understands these issues (my post at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/ff993da70fc9f7ac/424c62f0bfb16c78?lnk=raot) got very few replies).  In that case, it might be that some people need to get together, read the source and try to understand what is going on (during a future Sage Days perhaps?)
+
+
+---
+
+Comment by mhansen created at 2010-09-21 23:56:32
+
+I'll add my post from sage-devel here.
+
+
+```
+
+Here's what is going on.  We have the pexpect interface to GP (which
+we will refer to as gp) as well as C interface to PARI (which we will
+refer to as pari).
+
+gp:
+  - Defined in sage/intefaces/gp.py
+  - Specifies name="pari" in the constructor
+(sage/interfaces/gp.py:156), which would normally make gp(foo) try to
+call foo._pari_(), but there is special case code in Expect.__call__
+to change this to use foo._gp_() instead.
+(sage/interfaces/expect.py:1056)
+  -  foo._gp_(gp) which is supposed to return a GpElement
+  - SageObject provides a default implementation of _gp_() which
+calls SageObject._interface_(gp), which in turn tries to call
+_pari_init_ (since gp has name="pari")
+  - Generally, the thing returned from the _XXX_init_ methods is a
+string, but what really matters is that it is some object such that
+when it's passed to the __call__ method of the interface object, it
+"returns the right thing".  See sage/structure/sage_object.pyx:387.
+  - SageObject also defines a default implementation of _gp_init_
+which just calls _pari_init_.  I don't think this function is run
+anywhere.
+
+
+pari:
+ - Defined in sage/libs/pari/gen.pyx
+ - Uses foo._pari_() which is supposed to return a PARI GEN object.
+sage/libs/pari/gen.pyx:8414
+ - SageObject defines a default implementation of _pari_() which will
+try calling pari(foo._pari_init_()).
+ - pari("string") will eventually call gp_read_str("string") which
+should return a GEN object.
+
+The idea behind all of the _XXX_ and _XXX_init_ methods is that _XXX_
+returns the actual object whereas _XXX_init_ returns something which
+is fed into the parent's __call__ method.
+
+The reason why the PARI situation is a bit more complicated is that
+anything string you return from _gp_init_ should be valid as a
+_pari_init_ function.  We should really name the name="pari" in the gp
+Expect object so that we can remove the special case code.  We should
+then also just have the default implementation of _gp_init_ call
+_pari_init_ so that if you just define that, it will work for both gp
+and pari.
+```
+
+
+
+---
+
+Comment by jdemeyer created at 2010-09-24 16:36:15
+
+Replying to [comment:3 mhansen]:
+> The idea behind all of the _XXX_ and _XXX_init_ methods is that _XXX_
+> returns the actual object whereas _XXX_init_ returns something which
+> is fed into the parent's __call__ method.
+> 
+> The reason why the PARI situation is a bit more complicated is that
+> anything string you return from _gp_init_ should be valid as a
+> _pari_init_ function.  We should really name the name="pari" in the gp
+> Expect object so that we can remove the special case code.  We should
+> then also just have the default implementation of _gp_init_ call
+> _pari_init_ so that if you just define that, it will work for both gp
+> and pari.
+> }}}
+
+I think I understand what you're saying, I just don't understand why things are implemented like this.  If what you say is correct, then in almost no case it makes sense to have a `_pari_init_` function, since constructing an object through a string is almost certainly slower than using the PARI library. So we really should use `_pari_` instead of `_pari_init_`.
+
+Then we should rename `_pari_init_` to `_gp_init_` because we still need the strings for the Gp interface (and specifying `name="gp"` instead of `name="pari"` in Gp and removing all the special case code).
+
+What do you think?
+
+
+---
+
+Comment by jdemeyer created at 2010-09-24 16:41:52
+
+I was a little too fast.  If an object has a `_pari_` method and a `_pari_init_` method, the `_pari_` method takes precedence, right?  So it doesn't hurt to have both (where `_pari_init` is then only used for Gp).
+
+
+---
+
+Comment by jdemeyer created at 2010-09-24 16:45:43
+
+Also note that currently no single object has a `_gp_` or `_gp_init_` method.
+
+
+---
+
+Comment by mhansen created at 2010-09-24 17:36:07
+
+Replying to [comment:5 jdemeyer]:
+
+> I was a little too fast.  If an object has a `_pari_` method and a `_pari_init_` method, the `_pari_` method takes precedence, right?  So it doesn't hurt to have both (where `_pari_init` is then only used for Gp).
+
+Yes, _pari_ takes precedence over _pari_init_.  _pari_init_ is only used in the default implmentation of _pari_.
+
+SageObject provides default implementations of _gp_ and _gp_init_, and most things are subclasses of SageObject.
+
+I would be surprised if there weren't objects that used strings to construct objects in the PARI C library interface since it is the default implementation of !`pari(foo)`.
+
+
+---
+
+Comment by mpatel created at 2010-10-07 12:23:42
+
+Changing priority from blocker to major.

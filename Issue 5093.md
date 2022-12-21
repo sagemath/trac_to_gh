@@ -1,0 +1,551 @@
+# Issue 5093: [with preliminary patch, request comments] rewrite fast_float to support more datatypes
+
+Issue created by migration from Trac.
+
+Original creator: cwitty
+
+Original creation time: 2009-01-25 03:33:37
+
+Assignee: cwitty
+
+CC:  robertwb jason bober
+
+I've mentioned several times over the past months that I'm rewriting fast_float.  Here's a preliminary patch, that shows the direction I'm taking (automatically generate interpreters for each type, by having Python code write C code).
+
+This version replaces fast_float with the new code, and also adds a new entry point, fast_callable.
+
+fast_callable(EXPR, domain=R)
+
+(where EXPR is a symbolic expression or a polynomial) is essentially equivalent to evaluating EXPR with calls to R() at every node.  There's special fast support for domain=RDF or domain=RealField(n), and there's slowish generic code that should work for arbitrary R.
+
+The code is not ready for submission... there are very few doctests, and a lot of the documentation is simply wrong.  But if anybody has any comments, I'd be happy to hear them.
+
+
+---
+
+Comment by robertwb created at 2009-01-27 22:08:17
+
+This looks very interesting, and much further reaching than the original fast_float code I mostly wrote on a plane ride home from DC. Wish I had time to review it.
+
+
+---
+
+Comment by cwitty created at 2009-02-24 02:26:00
+
+Changing status from new to assigned.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2009-03-01 05:39:11
+
+OK, I've put up a new patch which I think is ready for review.  The big feature here is support for multiple types -- we get accelerated evaluation over `RealField(k)` as well as RDF, and even the unaccelerated Python-object evaluator (which calls `PyNumber_Add` and friends) is still faster than the evaluators for multivariate and univariate polynomials over QQ.
+
+We're also typically somewhat faster than the old fast_float, but often not by a lot.  (In the three benchmarks below, the speed gain ranges from 2% faster to more than 2x as fast.)  There's still a lot of optimization I can do.
+
+Here are the benchmark details:
+
+```
+sage: set_random_seed(0)
+sage: K.<x,y,z> = QQ[]
+sage: p = K.random_element(10, 20)
+sage: p_rr = p.change_ring(RR)
+sage: p_rdf = p.change_ring(RDF)
+sage: fp_old = fast_float(p, x, y, z, old=True)
+sage: fp_rdf = fast_callable(p, domain=RDF)
+sage: fp_rr = fast_callable(p, domain=RR)
+sage: fp_any = fast_callable(p)
+sage: 
+sage: timeit('p(1,2,3)')
+625 loops, best of 3: 369 µs per loop
+sage: timeit('fp_any(1,2,3)')
+625 loops, best of 3: 115 µs per loop
+sage: 
+sage: timeit('p(1.0,2.0,3.0)')
+625 loops, best of 3: 460 µs per loop
+sage: timeit('p_rr(1.0,2.0,3.0)')
+625 loops, best of 3: 341 µs per loop
+sage: timeit('fp_rr(1.0,2.0,3.0)')
+625 loops, best of 3: 121 µs per loop
+sage: 
+sage: timeit('p(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 334 µs per loop
+sage: timeit('p_rdf(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 101 µs per loop
+sage: timeit('fp_old(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 4.27 µs per loop
+sage: timeit('fp_rdf(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 4.18 µs per loop
+sage: 
+sage: set_random_seed(0)
+sage: K.<x> = QQ[]
+sage: p = K.random_element(20)
+sage: p_rr = p.change_ring(RR)
+sage: p_rdf = p.change_ring(RDF)
+sage: fp_old = fast_float(p, x, old=True)
+sage: fp_rdf = fast_callable(p, domain=RDF)
+sage: fp_rr = fast_callable(p, domain=RR)
+sage: fp_any = fast_callable(p)
+sage: 
+sage: timeit('p(2)')
+625 loops, best of 3: 53.3 µs per loop
+sage: timeit('fp_any(2)')
+625 loops, best of 3: 37 µs per loop
+sage: 
+sage: timeit('p(2.0)')
+625 loops, best of 3: 54.9 µs per loop
+sage: timeit('p_rr(2.0)')
+625 loops, best of 3: 5.76 µs per loop
+sage: timeit('fp_rr(2.0)')
+625 loops, best of 3: 7.8 µs per loop
+sage: 
+sage: timeit('p(2.0r)')
+625 loops, best of 3: 153 µs per loop
+sage: timeit('p_rdf(2.0r)')
+625 loops, best of 3: 20.6 µs per loop
+sage: timeit('fp_old(2.0r)')
+625 loops, best of 3: 973 ns per loop
+sage: timeit('fp_rdf(2.0r)')
+625 loops, best of 3: 403 ns per loop
+sage: 
+sage: var('x,y,z')
+(x, y, z)
+sage: v = sin(sqrt(x*x + y^3) + z/4) * (x+y+z^5)
+sage: fv_old = fast_float(v, x, y, z, old=True)
+sage: fv_rdf = fast_callable(v, domain=RDF)
+sage: fv_rr = fast_callable(v, domain=RR)
+sage: fv_any = fast_callable(v)
+sage: 
+sage: timeit('v(x=1.0,y=2.0,z=3.0)')
+625 loops, best of 3: 438 µs per loop
+sage: timeit('fv_rr(1.0,2.0,3.0)')
+625 loops, best of 3: 35.5 µs per loop
+sage: 
+sage: timeit('v(x=2.0r,y=2.0r,z=3.0r)')
+625 loops, best of 3: 400 µs per loop
+sage: timeit('fv_old(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 680 ns per loop
+sage: timeit('fv_rdf(1.0r,2.0r,3.0r)')
+625 loops, best of 3: 544 ns per loop
+```
+
+
+
+---
+
+Comment by cwitty created at 2009-03-01 05:39:58
+
+Changing type from defect to enhancement.
+
+
+---
+
+Comment by jason created at 2009-03-12 23:02:48
+
+Is anyone looking at reviewing this ticket?  Lots of people are getting emailed about updates, so apparently there is interest :).
+
+I think it could probably benefit from more than one pair of eyes since it is a major rewrite of a very key piece of functionality.  I might be able to look at at least some of it next week.  Who's with me? :)
+
+
+---
+
+Comment by robertwb created at 2009-03-12 23:07:26
+
+I'll be happy to help out too. Should we set a time to get together on IRC?
+
+
+---
+
+Comment by jason created at 2009-03-13 17:41:28
+
+robertwb: would Monday morning work for you?
+
+
+---
+
+Comment by jason created at 2009-03-13 17:42:51
+
+cwitty says that only the second patch should be applied.
+
+
+---
+
+Comment by jason created at 2009-03-13 19:29:44
+
+#5413 also affects this ticket...
+
+
+---
+
+Comment by jason created at 2009-03-13 19:30:04
+
+(I mean, *should* affect this patch.)
+
+
+---
+
+Comment by robertwb created at 2009-03-14 01:05:53
+
+Sure, Monday morning would work for me (not too early though...)
+
+
+---
+
+Comment by ncalexan created at 2009-03-17 00:18:40
+
+I'm having troubles with the domain option:
+
+
+```
+ipdb> sincospart2
+0.031415926535897932384626433832795028841971693993751058209749445923078164062862090?*u^2 + 128.81577077269348875442992085907054992836460260571058901270931143326149871242219?*u - 903.2497758091134199678561412713008059118088312456679249412429028830613210260356?
+ipdb> sincospart2.parent()
+Multivariate Polynomial Ring in u over Real Interval Field with 268 bits of precision
+
+ipdb> fast_callable(sincospart2)(-1)
+-1032.0341306552710107899014356965385608113314621573847628957424648703997415743949?
+ipdb> fast_callable(sincospart2, domain=sincospart2.base_ring())(-1)
+[.. NaN ..]
+
+ipdb> p sincospart2.dumps()
+'x\x9c\x9dSmO\xd4`@`\x10\xf6PA\n\x02\x82\x08\xa8\xc8\x8a\xa7\xde\x05hzpo\x184|\xf0%\xe6 \x9a\x8b\xfd\xa4\xb2\xd9\xb6\xdb\xeer\xdb\x97i\xb7\r\xa8\x97\xe8\x074\xfe^\xff\x80\xdb\xe38\xce\x0f&\xca\x97\xcd\xec\xcc<\xcf<;;\xf3u\xc4N\x88G\xf5\x98\x07^\xa2G\xa18\x0eB\x9f\x13\xa1\xfb\xa9\x90\x1c\x9f;0\x15\xd4\xa7\x81\xd4\xf6\xdf\x9e\xfb\xf2\xb0\xc3m\xa9A\xa1\xfc\r\xfe\x99*\xcf\xc0\x1e\rh\xccm-\r"nw\x04\xc5C\xc4\xed\xa1\x04\x9cU4\xb8\\\x1a\xe6\x8e\xa9"\xf1#\x97k\x18\xdb\xea")\xc6m\xe5{\x1dH\x1agD\xbc\xe4T88\xa3q\xc2\xc3\xc0\xd0\xe0\xca\xfed\xe1\xe7\xf76\\m\x15\xccBz\x02\xa3\x7f\x11\xaa\xd0>\x0ec\x87\xc6\xda;e\xbe\xe9Y0\xa6\x9ev\xad\x0b\xe3%s\x11\x0f\xdc\x18\'\n\x9d\n\x12\xe3D\xc6\xa0\x99#N\x04\x13\xe6\xccpF`@`|\n\x93\xe6\xb8C\xbd\x98f\x82\x1e\xc1us\x0cc\'\xb41\x86)\xf3\x97\xf6<\x0fP\xa4\x82J*E*\x83\xdb\xa1\x17\x93\x88q\x1b\x95\x06\xb02\xca\x85\xa1\x9e0UT\xd7\xb4=*QQ\xc5KG\x07\xa4\x8c\x9e"\x82\r\xb4\x86t]W\'\xc1\x9f\x83\x8dJw\xbd\x88$\xa3\x01*\xaa\x14\xb4\x83\x8e\x0e,\xb4\xf3\xf4\x19\x1a\x80v\xfa\xa6U.*fm\x98\xed<`@`\x02\x07\x15?(Y\x89L> C1 \xae\x90\xc1\x93\xb3**\xdb\xea\xd7\xcb\xcb\xaf\xe7~\xbev\xe6\xcf\xad\xdc\xc5\xd13u\xe5zQ\x83isi\xb8E>\xb1\x89j\xe2\xf1f\xaf\x8b3\xe6\xd8\xab6\xcd\xf6T\xa7n\x98\xb3\xc3y\x82\x06\x9ed0\xab>p\xd4\x12\xa1\xddI`\x8e\xe5\x1fs\xb3\x0b\xf3%\xa6\xb1\t\xf6G\xa3o\xb1)6\xcdf\xd8\r\xa6 l\xael\xce\xffY\xd5\xf3I\xaf\xe2\x829\xbe\xda\xc7\xac\xc2bj\x9d\xc0\x12[`\xca\x90m\xb8\xdd\x85;\xe6\xf2\xf0X\x9e\xed\x00>3\xe0\xee_&i\xb0\x18>\xe9P\x9c3<\xef\xad\xc9r\x17\xee\x95\xfe\t\xf3\xe2]\x1a\t\xaa\xc1J\xb7UP\xa3\x8b\xfe{\xfe_\xf4\xb5\x9e\xaf\xc1}v\xd5\xfc\xf2~#\xd1\x1b\x8d,\xecH;\x8e\xac\x0e\xa7\xd6\xa1\xbb%\x03\xe0n\xdc\x14\xec\x90\x1f\x92\x86\xbbE\xea\xb4\x11n\xd6\x9a$ lS$\xbcaEUc\xb7\xa2\xbe\x18]\x0c\x1e\x1a\n\xfe\xb1\x85~\xb4a\x95\xadt\xe1A\xebR\xab\x90\xf4^Vd\xb9\xaeO\xef\xab\xba\x01[V\xad#\xa9\xb1\xed\xdb\xf6v\x85Vi5\xdc\xce8\xa4\xae\x1bZ\x95&\x87\x8a\xdc\xce`3r\x1c+\xad\xd4\x84\xeb\xd6S?\xed\xcb\xba\x10:\xa8\x0eT=\xccU=R\xaaFNU=f\xa7\xdd\xaa\xe8F\xcd\xc9x\xd3\xe2\xb4N\xeb\x91\xd1\x902\xde\xf2|\x11\xb9U\x03\x1a\xb1\xa8\xd6\xa2\xcc\xf3,;\x12P\xb7djd^\x95\xc8\x0eo\xeen\xf4d]\x0c~h(\xf8\xa9\xaeRz\xd2\x86r\xf2\xdd\xd2\x7f\x03\xd6\r\xef\xde'
+```
+
+
+Perhaps that loads/dumps string can help.
+
+
+---
+
+Comment by cwitty created at 2009-03-17 00:41:15
+
+OK, this is due to a missing feature in fast_callable.  I intended to fix things so that domain=... would not affect integral exponents (and actually documented this intention as fact), but didn't actually implement it.
+
+So the failure is caused from:
+
+```
+sage: RIF(-1)^RIF(1)
+[.. NaN ..]
+```
+
+
+which happens because RIF exponentiation for an exponent that is not an Integer is based on .log()/.exp(), and .log() of a negative RIF is NaN.
+
+The two easy workarounds are:
+
+1) don't use domain=... (it will probably only slow things down for you anyway; it's useful if there is a specialized interpreter for your type, but RIF doesn't have one yet)
+
+2) use sincospart2.univariate_polynomial() instead; fast_callable for univariate polynomials uses Horner's rule, so it doesn't use exponentiation at all.  This will be faster, too.
+
+(BTW, why do you have a multivariate polynomial ring in one variable?)
+
+
+---
+
+Comment by jason created at 2009-03-17 02:19:53
+
+Shouldn't this work?
+
+
+```
+sage: fast_callable(0,domain=RDF)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+
+/home/jason/.sage/temp/littleone/22491/_home_jason__sage_init_sage_0.py in <module>()
+
+/home/jason/sage/local/lib/python2.5/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:2350)()
+
+AttributeError: 'sage.rings.integer.Integer' object has no attribute 'variables'
+sage: fast_callable(0,vars=('x'),domain=RDF)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+
+/home/jason/.sage/temp/littleone/22491/_home_jason__sage_init_sage_0.py in <module>()
+
+/home/jason/sage/local/lib/python2.5/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:2569)()
+
+AttributeError: 'sage.rings.integer.Integer' object has no attribute '_fast_callable_'
+```
+
+
+
+---
+
+Comment by ncalexan created at 2009-03-17 02:33:23
+
+For Jason Grout, the problems I'm having with types and zero:
+
+
+```
+ipdb> p sincospart2
+0
+ipdb> p type(sincospart2)
+<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>
+ipdb> p sincospart2.parent()
+Multivariate Polynomial Ring in u over Real Interval Field with 268 bits of precision
+ipdb> fast_callable(sincospart2)(-1)
+0
+ipdb> type(fast_callable(sincospart2)(-1))
+<type 'int'>
+ipdb> (sincospart2)(-1)
+0
+ipdb> type((sincospart2)(-1))
+<type 'sage.rings.real_mpfi.RealIntervalFieldElement'>
+ipdb> dumps(sincospart2)
+'x\x9c\x8dSMo\xd3`@`\x10U\n4d[\xda\xb4\xa5\xb4\x05\n\xab\xca\x87D-V\xca\x11\xa5=U D+\x90\xc5\xde\xaa\xae\xd6\xf6\xe0]\xc5^gl\'J\x85"\xc1!\x95\xf8\xbd\xfc\x01\xc6Q>\xdcC%.\xd6\xec\x9b\xf7\xde\x8cgw~\xad\x04\xb9\x8a\xc0\xcd\x8c\x8dr\xb7\x9f\xc6\xb76M\x8c\x8a\xddd\x10\x17F.\x01\t1$`\x0bv\xf5m\x89\x95\xe9\xd0\x04\x05\xc3Z\xfb7\xfe\xb7U\xc9\x90\x11X\xc8L\xc0\x06\xb6o\x82^\x0c\xb2b\xecU\x08rx\xca\xf0Q\xab\xea\x9d\x01\x99$\xfd\x1f\x86I\x19\xd0\xa1\x00)=\xc2>\xdb\x02\xb2\xa1\x8a?\x1a\x88C9\x84,7\xa9\xed0||\xb5^\xfbs\xe7\xe1\x93/5Q\x1bLp\xf5\x81FI\x9d\xc84\x0b!c\xdf)\xfc:\x8d\xb0N\xbf\xf6t\x8c\x8d\x96\xd8\x97\x0bX\xca\x9c\xd4\x83Xe2/2db%\xec\xe3\x9ahV\x19V%\x80\xeb\xa2\x11B\x94\xc10\x86\x11>\x13u)\xc34\x90\x127\xc4_vQ&\x80S\x92Z\x05N\x0c\x13\xa4Q\xa6\xfa\xda\x04\xbc\xb5\x90\xb5y\xd9\x18\x9f6FE]\xc6.\xa1\xe0\x0e\xe5[\xa3\x1b\xd5\xe6g\\\xc9\x0e?\xe6\xae\xeb\xd2W\xc9\x9f\xf6\xdd\xe9\xf8\xc4\xe1\x85\x06\xcb\x1d\xa2\xf0.\x1f\xdd\xf8\xbc{v\xce\x17\xa2\xee,\xf4\xdb\x0e9\xb3\xaa\xdb2\xa1l\xc8\x9dkj+/\xf2k\xde!\x07nHi?\xcc\xab\x10\xdb\x9f\xd5+\xcb\x9f\x94\xb89\x9e\xe3eTB\x86\x9f\xd3\xd1\xb8\x0e\xc3MqP\x1dQ\xa2\x02EC\xbc}?\x9dbS\xd4?y0\xbc\xa4Im\x89\xed*/\x06\x1b\x15\x1a\xb7\xe9\x02W\xfd8\rz9\xee\xe8\xf2b\x9e\x8fq\xb7\xa5\x99^\xd3\xf7\x06\xfdBo\xe8M\xdd\xd4[\x9a$z\xa7-v\xefW\x8d\x125\xad\xb8\'\x1aG3\xcd\x11\xee\x0f\xfc\t\x1e\xe8=MA\xe1\xe1\xcb1\xbe\x12\x87\xd5g9\xdf\x019\x0f\xf0\xf5\x03/i\xb1\x18\x89\xea\x81,\x1d.\xa6kr8\xc67\x13\x0f\xdf\xe6w\xbe\xfb\x0f\x14^3!'
+```
+
+
+
+---
+
+Comment by cwitty created at 2009-03-17 03:18:02
+
+OK, I can't fix this so that fast_callable matches the behavior of multivariate polynomials while keeping my code generic, because Singular-based polynomials return values of their base_ring in this case and polydict polynomials return values with the same parent as their first argument (falling back to the base ring if the argument has no parent).
+
+```
+K.<x,y> = QQ[]
+type(K(0)(0, 0))
+type(K(0)(0r, 0r))
+type(K(0)(RIF(0), RIF(0)))
+type(K(0)(0.0, 0.0))
+K.<x,y> = RIF[]
+type(K(0)(0, 0))
+type(K(0)(0r, 0r))
+type(K(0)(RIF(0), RIF(0)))
+type(K(0)(0.0, 0.0))
+```
+
+My plan is to use the former behavior for all multivariate polynomials, so it won't exactly match polydict polynomials; is that good enough?  (That's much easier to implement.)
+
+
+---
+
+Comment by robertwb created at 2009-03-17 06:12:16
+
+I've ready most of the patch, it looks really good, and works on all my examples. I'm still digesting it all... One comment I have is that 
+
+
+```
+sage: from sage.ext.fast_callable import ExpressionTreeBuilder
+sage: etb = ExpressionTreeBuilder(vars=['x','y'])
+sage:  etb.var('z')
+Traceback (most recent call last):
+  File "<ipython console>", line 1, in <module>
+  File "fast_callable.pyx", line 555, in sage.ext.fast_callable.ExpressionTreeBuilder.var (sage/ext/fast_callable.c:3720)
+ValueError: list.index(x): x not in list
+```
+
+
+could have a better error. 
+
+Something else that would be really nice is an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not. 
+
+For elements, we can use the _xxx_ arithmetic operators, skipping coercion. Also, PY_TYPE_CHECK(x, Element) is potentially slow--it would be nice to have a "generic" element of the domain so you can do "type(x) == type(generic_element) or PY_TYPE_CHECK(x, Element). But perhaps this is optimization for a later day.
+
+
+---
+
+Comment by cwitty created at 2009-03-17 15:24:35
+
+_Something else that would be really nice is an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not._
+
+Any suggestions for syntax for this?  I'm coming up with things like (..., domain=RIF, ignore_domain_if_no_specialized_interpreter_exists=True), which seems cumbersome :) (I'm probably being too picky about being precise in my parameter names).
+
+I've vaguely planned to use _xxx_ arithmetic, but didn't do it for this version because I don't know how to call Cython methods from C.  Help would be appreciated :)
+
+The type(x)==type(generic_element) is a good idea.  I'll implement it eventually.  (Then if I could access the _parent field from C, probably almost all of the element interpreter slowdown would be gone; in conjunction with _xxx_ arithmetic, it might actually be faster than the generic Python interpreter.)
+
+
+---
+
+Comment by cwitty created at 2009-03-18 15:18:35
+
+I've attached a patch (fast-callable-cleanup.patch, to be applied after trac5093-fast-callable.patch) that fixes many of the issues raised, including everything I considered to be a serious bug.
+
+Fixed:
+
+* fast_callable functions with domain=RDF used to return a Python float; now they correctly return an element of RDF.  (If you want a Python float, you can now use domain=float; this is the default for fast_float.)
+
+* Power expressions with constant integer exponents are handled specially; this fixes Nick's problem with RIF expressions returning NaN (and probably lots of other problems).
+
+* fast_callable of a zero multivariate polynomial now returns a zero in the base ring, instead of a Python int 0.
+
+* some docstrings in sphinxified files were not sphinxified
+
+* misc documentation typos/minor rewording
+
+Not fixed:
+
+* Robert's suggestion: _an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not_ (I don't mind the idea, and the implementation is easy; what should the syntax be?  Part of my problem picking a syntax is that I don't want to promise that a specialized interpreter is always faster than the Python-object interpreter, so I don't particularly want to use the word "fast" in any option names.)
+
+* fast_callable on list,tuple,vector,matrix arguments
+
+* any interaction with #5413 (my plan is to wait until either #5093 or #5413 gets a positive review, then fix the other one to match)
+
+* fast_callable on constant arguments (waiting for a spec from Jason!)
+
+* fast_callable of a zero multivariate polynomial returns a zero of the base ring, without paying attention to the types of the arguments
+
+I'm hoping the reviewers will agree that the unfixed issues can wait until later.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2009-03-18 17:24:21
+
+fast-callable-cleanup.patch had issues (I got confused from developing on two different machines, and based it on the wrong version).  So I deleted it, and posted trac5093-fast-callable-cleanup.patch to replace it.  (Thanks to Jason for pointing out the problem!)
+
+
+---
+
+Comment by ncalexan created at 2009-03-18 19:44:23
+
+With the cleanup patch, I am finding the following doctest error:
+
+
+```
+-*- mode: sage-test; default-directory: "~/sage-3.4.rc0/devel/sage-main/sage/ext/" -*-
+sage-test started at Wed Mar 18 12:43:18
+
+/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 4 /Users/ncalexan/sage-3.4.rc0/devel/sage-main/sage/ext/fast_callable.pyx
+
+real	0m1.816s
+user	0m1.313s
+sys	0m0.493s
+Global iterations: 1
+File iterations: 1
+Using cached timings.
+Doctesting 1 files doing 4 jobs in parallel
+sage -t  fast_callable.pyx
+**********************************************************************
+File "/Users/ncalexan/sage-3.4.rc0/devel/sage-main/sage/ext/fast_callable.pyx", line 1570:
+    sage: fc(-3)
+Expected:
+    Traceback (most recent call last):
+    ...
+    ValueError: math domain error
+Got:
+    nan
+**********************************************************************
+1 items had failures:
+   1 of  90 in __main__.example_55
+***Test Failed*** 1 failures.
+For whitespace errors, see the file /Users/ncalexan/sage-3.4.rc0/tmp/.doctest_fast_callable.py
+	 [6.3 s]
+ 
+----------------------------------------------------------------------
+
+The following tests failed:
+
+	sage -t  devel/sage-main/sage/ext/fast_callable.pyx # 1 doctests failed
+----------------------------------------------------------------------
+Total time for all tests: 6.4 seconds
+
+sage-test finished (all test passed) at Wed Mar 18 12:43:26
+```
+
+
+
+---
+
+Comment by robertwb created at 2009-03-18 20:00:52
+
+I think your list of unfixed issues are fine postponing 'till later, though perhaps we should open followup tickets for them.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2009-03-19 04:09:42
+
+One more patch (hopefully the last for this ticket).  I changed my mind about whether to incorporate #5413-style deprecation; if I make sure the functionality is disabled at the start, then I don't have to worry about "deprecation" later.  (And if we decide we actually do want some of this functionality, it can safely be added later without backward-compatibility worries.)
+
+This also hopefully fixes Nick's OSX doctest failure.
+
+
+---
+
+Comment by jason created at 2009-03-19 22:28:54
+
+I agree with merging this now, and addressing the above list of unfixed things in other tickets.  I give this positive review based on the following.
+
+ * I've spent a fair amount of time browsing the code and trying examples.
+ * Some design issues raised are being addressed in other tickets
+ * The current fast_float is falling back to the old implementation for non-implemented features (e.g., arbitrary callables, integers, etc.)
+ * This thing is being doctested all over the place.  Nearly every plotting command is calling it through fast_float, as well as a lot of other code.  Doctests in plot/*.py, plot3d/*.py[x] and fast_callable.pyx all pass for me on Ubuntu 32-bit and run in roughly the same time as before the patch (so no serious speed regressions).
+ * Carl generally writes very good code and is very responsive to fix issues if they crop up.
+ * The code is very well documented and doctested
+ * We will have some time before the next release in which to hammer this code with a lot more people to expose any other issues.
+
+So with that, positive review!  However, it'd be great if robertwb and ncalexan, at least, could give their approval.
+
+
+---
+
+Comment by jason created at 2009-03-19 22:31:07
+
+okay, if at least one of robertwb or ncalexan also gives this a positive review, please change the title of the ticket to reflect it (unless you want further review)
+
+
+---
+
+Comment by robertwb created at 2009-03-19 23:56:06
+
+I am of the same opinion--I have also read most of the code and tried a lot of things and it works great for me. 
+
+Followup at #5572.
+
+
+---
+
+Comment by ncalexan created at 2009-03-20 17:15:59
+
+Late to the party, but I agree -- merge now.  I have used it for computing Riemann theta functions and it works well for me.
+
+
+---
+
+Comment by jason created at 2009-03-24 21:53:32
+
+cwitty: could you specify which patches to apply and in what order?
+
+
+---
+
+Comment by cwitty created at 2009-03-24 22:20:55
+
+I've deleted the obsolete preliminary patch, so: apply all three posted patches, in the order posted.
+
+
+---
+
+Comment by mabshoff created at 2009-03-25 06:24:30
+
+Merged all three patches in Sage 3.4.1.alpha0.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-03-25 06:24:30
+
+Resolution: fixed

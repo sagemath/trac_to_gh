@@ -1,0 +1,766 @@
+# Issue 5520: implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2009-03-14 22:17:05
+
+Assignee: craigcitro
+
+CC:  bober
+
+I started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. 
+
+See http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.
+
+
+---
+
+Comment by was created at 2009-03-14 22:40:16
+
+Apply the patch from #5521 for all doctests to pass after applying any patches on this ticket.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by was created at 2009-03-26 19:59:38
+
+Try it out:
+
+```
+sage: A = J0(95).new_subvariety()[1]; A
+Simple abelian subvariety 95b(1,95) of dimension 4 of J0(95)
+sage: time A.tamagawa_number(19)
+CPU times: user 1.56 s, sys: 0.11 s, total: 1.67 s
+Wall time: 1.83 s
+6
+```
+
+
+
+---
+
+Comment by mabshoff created at 2009-03-26 20:25:03
+
+It also doesn't look too bad against my current 3.4.1.alpha0 merge tree:
+
+```
+sage-3.4.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_5520.patch 
+patching file c_lib/include/convert.h
+patching file c_lib/src/convert.c
+patching file module_list.py
+patching file sage/algebras/all.py
+patching file sage/algebras/quatalg/__init__.py
+patching file sage/algebras/quatalg/all.py
+patching file sage/algebras/quatalg/quaternion_algebra.py
+patching file sage/algebras/quatalg/quaternion_algebra_cython.pyx
+patching file sage/algebras/quatalg/quaternion_algebra_element.pxd
+patching file sage/algebras/quatalg/quaternion_algebra_element.pyx
+patching file sage/algebras/quaternion_algebra.py
+Hunk #1 FAILED at 1.
+1 out of 1 hunk FAILED -- saving rejects to file sage/algebras/quaternion_algebra.py.rej
+patching file sage/algebras/quaternion_algebra_element.pxd
+patching file sage/algebras/quaternion_algebra_element.py
+patching file sage/algebras/quaternion_algebra_element.pyx
+patching file sage/all.py
+Hunk #1 succeeded at 273 (offset 3 lines).
+patching file sage/libs/pari/gen.pxd
+patching file sage/libs/pari/gen.pyx
+patching file sage/matrix/matrix1.pyx
+patching file sage/matrix/matrix2.pyx
+Hunk #1 succeeded at 3733 (offset 17 lines).
+Hunk #2 succeeded at 3741 (offset 17 lines).
+Hunk #3 succeeded at 3752 (offset 17 lines).
+Hunk #4 succeeded at 3777 (offset 17 lines).
+patching file sage/matrix/matrix_integer_dense.pxd
+patching file sage/matrix/matrix_integer_dense.pyx
+patching file sage/matrix/matrix_rational_dense.pxd
+patching file sage/matrix/matrix_rational_dense.pyx
+Hunk #3 FAILED at 629.
+Hunk #4 FAILED at 637.
+Hunk #5 succeeded at 744 (offset 23 lines).
+Hunk #6 succeeded at 768 (offset 23 lines).
+Hunk #7 succeeded at 792 (offset 23 lines).
+Hunk #8 succeeded at 996 (offset 23 lines).
+Hunk #9 succeeded at 1292 (offset 23 lines).
+Hunk #10 succeeded at 1343 (offset 23 lines).
+Hunk #11 succeeded at 1368 (offset 23 lines).
+Hunk #12 succeeded at 1403 (offset 23 lines).
+Hunk #13 succeeded at 1551 (offset 23 lines).
+Hunk #14 succeeded at 1673 (offset 23 lines).
+Hunk #15 succeeded at 1699 (offset 23 lines).
+Hunk #16 succeeded at 2081 (offset 23 lines).
+Hunk #17 succeeded at 2162 (offset 23 lines).
+Hunk #18 succeeded at 2375 (offset 23 lines).
+2 out of 18 hunks FAILED -- saving rejects to file sage/matrix/matrix_rational_dense.pyx.rej
+patching file sage/misc/hg.py
+patching file sage/modular/abvar/abvar.py
+patching file sage/modular/all.py
+patching file sage/modular/hecke/ambient_module.py
+patching file sage/modular/hecke/element.py
+patching file sage/modular/hecke/module.py
+patching file sage/modular/modsym/ambient.py
+patching file sage/modular/quatalg/__init__.py
+patching file sage/modular/quatalg/all.py
+patching file sage/modular/quatalg/brandt.py
+patching file sage/modules/free_module.py
+Reversed (or previously applied) patch detected!  Assume -R? [n] n
+Apply anyway? [n] n
+Skipping patch.
+5 out of 5 hunks ignored -- saving rejects to file sage/modules/free_module.py.rej
+patching file sage/modules/module.pyx
+patching file sage/rings/extended_rational_field.py
+patching file sage/rings/rational.pyx
+patching file sage/rings/rational_field.py
+patching file setup.py
+Hunk #1 succeeded at 543 (offset 7 lines).
+Hunk #2 succeeded at 619 (offset 8 lines).
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2009-03-26 21:15:50
+
+NOTE: I found one issue with the massive (10-100 times speedups) for small linear algebra using PARI, when running a very large computation with this code (a table of running it for all modabvars of level up to 1000):
+ 
+
+  http://sage.math.washington.edu/home/wstein/db/compgroup/
+
+In some cases the PARI stack overflows because I guess a matrix is very small but maybe it's hermite form or a product or something is too big.    The problem is that to do very fast linear algebra it's all done on the PARI stack, and by default the PARI stack size is too small.  The solution is either to make it bigger by default (not an option), or be much more conservative about what uses PARI, or to automatically increase it (very tricky). 
+
+I will have to fix the above, though it's nearly orthogonal to the rest of this patch, so I hope this patch can be reviewed as is anyways.
+
+
+---
+
+Comment by was created at 2009-03-26 21:31:21
+
+Here is a way to trigger the problem mentioned above:
+
+```
+sage: n = 10000000; a = random_matrix(ZZ,4,x=-2^n,y=2^n).change_ring(QQ)
+sage: b = a._multiply_pari(a)
+
+  ***   the PARI stack overflows !
+  current stack size: 32000000 (30.518 Mbytes)
+  [hint] you can increase GP stack with allocatemem()
+
+```
+
+
+The easiest solution is probably just to just compute the height of a and if it isn't "very big", then -- and only then -- use PARI:
+
+```
+sage: n = 10000000; a = random_matrix(ZZ,4,x=-2^n,y=2^n).change_ring(QQ)
+sage: time h = a.height()
+CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
+```
+
+
+
+---
+
+Comment by tornaria created at 2009-03-26 22:54:41
+
+I suggest a change in interface for `BrandtModule`, namely, allow the first parameter to be non-prime, and eliminate parameter r. IOW, `BrandtModule(3,7,5)` becomes `BrandtModule(3^5,7)`:
+
+
+```
+BrandtModule(N, M=1, weight=2, base_ring=Rational Field, use_cache=True)
+```
+
+
+The rules are:
+ - N and M must be coprime
+ - the number of prime factors of N must be odd
+ - for starters, the prime factors of N must show up with odd power (can accomodate p^2 factors eventually).
+ - the ramification of the quat. algebra is given by prime factors of N; the discriminant of the order would be N*M
+
+The current implementation is for prime N. Sould raise `NotImplementedError` otherwise. As it is now, the `BrandtModule` constructor succeeds, and the dimension formula works, but then `hecke_matrix` gives wrong results.
+
+
+---
+
+Comment by tornaria created at 2009-03-27 02:50:59
+
+Performance of `BrandtModule.right_ideals()`: equivalence testing is done using is_equivalent with B=2*dim+10. This is not optimal, and it seems to lead to a O(n<sup>2</sup>) algorithm:
+
+```
+sage: time len(BrandtModule(1009,use_cache=False).right_ideals())
+CPU times: user 9.72 s, sys: 0.02 s, total: 9.74 s
+Wall time: 9.74 s
+84
+sage: time len(BrandtModule(2003,use_cache=False).right_ideals())
+CPU times: user 38.44 s, sys: 0.00 s, total: 38.44 s
+Wall time: 38.44 s
+168
+```
+
+
+OTOH, I hacked `right_ideals` to take an extra parameter to set B (bound passed to is_equivalent). The timing is now:
+
+```
+sage: time len(BrandtModule(1009,use_cache=False).right_ideals(20))
+CPU times: user 4.75 s, sys: 0.00 s, total: 4.75 s
+Wall time: 4.75 s
+84
+sage: time len(BrandtModule(2003,use_cache=False).right_ideals(30))
+CPU times: user 11.02 s, sys: 0.04 s, total: 11.06 s
+Wall time: 11.05 s
+168
+```
+
+The optimal bound is unclear. I'd guess something around O(sqrt(n)) may work... I discovered those by trial and error.
+
+Now, it is worth precomputing (short) theta series for the ideals, but if these are hashed as keys of a dictionary --- then the inner loop
+
+```
+                    for K in ideals:
+                        if J.is_equivalent(K, B):
+                            is_new = False
+                            break
+```
+
+can be handled more efficiently as in (pseudo-code):
+
+```
+  theta = J.theta_vector()
+  if theta in ideals_theta:
+    for K in ideals_theta[theta]:
+      if J.is_equivalent(K, B):
+        is_new = False
+        break
+```
+
+IOW, only call is_equivalent for ideals that match in the theta series...
+
+Otherwise, this algorithm is indeed O(n<sup>2</sup>), because each new ideal requires testing equivalence to false for each of the previously found ideals.
+
+The same is true for the hecke_matrix_directly() computation...
+
+
+---
+
+Comment by tornaria created at 2009-03-27 03:28:41
+
+Here's an implementation of the suggestion above:
+
+```
+diff -r e8e97f260027 sage/modular/quatalg/brandt.py
+--- a/sage/modular/quatalg/brandt.py	Thu Mar 26 12:34:13 2009 -0700
++++ b/sage/modular/quatalg/brandt.py	Thu Mar 26 20:06:25 2009 -0700
+`@``@` -936,7 +936,7 `@``@`
+         K = self.base_ring()
+         return matrix(K, [[K(B[i][j][n]) for i in range(m)] for j in range(m)], sparse=sparse)
+ 
+-    def right_ideals(self):
++    def right_ideals(self, B=None):
+         """
+         Return sorted tuple of representatives for the equivalence
+         classes of right ideals in self.
+`@``@` -962,9 +962,11 `@``@`
+         I = R.unit_ideal()
+         I = R.right_ideal([4*x for x in I.basis()])
+ 
+-        B = 2*self.dimension()+10
++        if B is None:
++            B = 2*self.dimension()+10
+ 
+         ideals = [I]
++        ideals_theta = { tuple(I.theta_series_vector(B)) : [I] }
+         new_ideals = [I]
+ 
+         newly_computed_ideals = []
+`@``@` -976,13 +978,19 `@``@`
+                 L = self.cyclic_supermodules(I, p)
+                 for J in L:
+                     is_new = True
+-                    for K in ideals:
+-                        if J.is_equivalent(K, B):
+-                            is_new = False
+-                            break
++                    J_theta = tuple(J.theta_series_vector(B))
++                    if J_theta in ideals_theta:
++                        for K in ideals_theta[J_theta]:
++                            if J.is_equivalent(K, B):
++                                is_new = False
++                                break
+                     if is_new:
+                         newly_computed_ideals.append(J)
+                         ideals.append(J)
++                        if J_theta in ideals_theta:
++                            ideals_theta[J_theta].append(J)
++                        else:
++                            ideals_theta[J_theta] = [J]
+                         verbose("found %s of %s ideals"%(len(ideals), self.dimension()), level=2)
+                         if len(ideals) >= self.dimension():
+                             ideals = tuple(sorted(ideals))
+```
+
+
+----
+
+With the patch above I get:
+
+```
+sage: time len(BrandtModule(1009,use_cache=False).right_ideals(42))
+CPU times: user 2.48 s, sys: 0.02 s, total: 2.50 s
+Wall time: 2.50 s
+84
+sage: time len(BrandtModule(2003,use_cache=False).right_ideals(84))
+CPU times: user 3.98 s, sys: 0.02 s, total: 4.00 s
+Wall time: 4.00 s
+168
+sage: time len(BrandtModule(3001,use_cache=False).right_ideals(125))
+CPU times: user 10.32 s, sys: 0.08 s, total: 10.40 s
+Wall time: 10.40 s
+250
+```
+
+The optimal bound now seems to be around half the dimension of the space (experimental, just for those three levels). Take into account that the faster the function `is_equivalent()` is, the smallest the optimal bound (because we can afford to test more false positives).
+ 
+With this patch, it makes sense to call an is_equivalent function which doesn't test the theta series, just computes I*Jbar, etc. I don't know if it would make much difference (I'm currently trying to decipher output of %prun).
+
+
+---
+
+Comment by tornaria created at 2009-03-27 04:41:59
+
+Here's a one-liner you definitely want to apply (with or without my patch above):
+
+```
+         while got_something_new:
+             got_something_new = False
++            newly_computed_ideals = []
+             for I in new_ideals:
+                 L = self.cyclic_supermodules(I, p)
+                 for J in L:
+                     is_new = True
+```
+
+In fact, the list `newly_computed_ideals` needs to be reset after each cycle --- otherwise, each iteration computes `self.cyclic_supermodules()` again for all the ideals (not just the new ones)...
+
+This (`right_ideals()`) is now running in definitely sub-quadratic time... it seems quasi-linear besides the issue of figuring out the optimal bound for the theta series. For instance:
+
+```
+sage: time Is=BrandtModule(20011,use_cache=False).right_ideals(150)
+CPU times: user 25.45 s, sys: 0.05 s, total: 25.50 s
+Wall time: 25.50 s
+sage: time Is=BrandtModule(100003,use_cache=False).right_ideals(500)
+CPU times: user 275.69 s, sys: 0.69 s, total: 276.38 s
+Wall time: 276.39 s
+```
+
+
+The same idea can be applied to `hecke_matrix_directly` so that computing decomposition of the Brandt module scales better (maybe quasi-linear, definitely sub-quadratic).
+
+
+---
+
+Comment by tornaria created at 2009-03-27 05:32:24
+
+Here's a similar patch for `BrandtModule._compute_hecke_matrix_directly()`:
+
+```
+diff -r e8e97f260027 sage/modular/quatalg/brandt.py
+--- a/sage/modular/quatalg/brandt.py    Thu Mar 26 12:34:13 2009 -0700
++++ b/sage/modular/quatalg/brandt.py    Thu Mar 26 22:09:42 2009 -0700
+`@``@` -822,7 +822,7 `@``@`
+         """
+         return self._compute_hecke_matrix_brandt(n, sparse=sparse)
+ 
+-    def _compute_hecke_matrix_directly(self, n, sparse=False):
++    def _compute_hecke_matrix_directly(self, n, B=None, sparse=False):
+         """
+         Given an integer n coprime to the level, return the matrix of
+         the n-th Hecke operator on self, computed on our fixed basis
+`@``@` -881,17 +881,27 `@``@`
+         # of ideals modulo equivalence -- we always provably check
+         # equivalence if the theta series are the same up to this
+         # bound.
+-        B = self.hecke_bound() + 5
++        if B is None:
++            B = self.hecke_bound() + 5
+ 
+         T = matrix(self.base_ring(), self.dimension(), sparse=sparse)
+         C = self.right_ideals()
+-        r = 0
+-        for I in C:
+-            for J in self.cyclic_supermodules(I, n):
+-                for i in range(len(C)):
+-                    if C[i].is_equivalent(J, B):
++        theta_dict = {}
++        for i in range(len(C)):
++           I_theta = tuple(C[i].theta_series_vector(B))
++           if I_theta in theta_dict:
++               theta_dict[I_theta].append(i)
++           else:
++               theta_dict[I_theta] = [i]
++        for r in range(len(C)):
++            for J in self.cyclic_supermodules(C[r], n):
++                J_theta = tuple(J.theta_series_vector(B))
++                for i in theta_dict[J_theta]:
++                    CiJbar = C[i].multiply_by_conjugate(J)
++                    c = CiJbar.theta_series_vector(2)[1]
++                    if c != 0:
+                         T[r,i] += 1
+-            r += 1
++                        break
+         return T
+ 
+     def _compute_hecke_matrix_brandt(self, n, sparse=False):
+```
+
+Again, I'm exposing the bound `B` for tuning; we need to figure out how to pick a sensible default.
+
+Note that, for a fixed value of `B`, the dictionary `theta_dict` is fixed (independent of `n`, that is) so it could be cached to improve running time. Indeed, that information could be cached in `right_ideals()` as it was already computed in there. However, I don't expect more than 10-20% speedup for p=2, less for higher primes, since we are only saving the computation of `n` theta series out of a total of `(p+2)` theta series which need to be computed.
+
+Here's some benchmarks, BEFORE the patch:
+
+```
+sage: B=BrandtModule(1009,use_cache=False)
+sage: time Is=B.right_ideals(40)
+CPU times: user 0.73 s, sys: 0.00 s, total: 0.73 s
+Wall time: 0.73 s
+sage: time T2=B._compute_hecke_matrix_directly(2)
+CPU times: user 8.88 s, sys: 0.06 s, total: 8.94 s
+Wall time: 8.94 s
+```
+
+
+AFTER the patch:
+
+```
+sage: B=BrandtModule(1009,use_cache=False)
+sage: time Is=B.right_ideals(40)
+CPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s
+Wall time: 0.78 s
+sage: time T2=B._compute_hecke_matrix_directly(2,40)
+CPU times: user 1.08 s, sys: 0.00 s, total: 1.08 s
+Wall time: 1.08 s
+sage: time T3=B._compute_hecke_matrix_directly(3)
+CPU times: user 1.35 s, sys: 0.01 s, total: 1.36 s
+Wall time: 1.35 s
+```
+
+For comparision:
+
+```
+sage: time B2=B._compute_hecke_matrix_brandt(2)
+CPU times: user 3.97 s, sys: 0.03 s, total: 4.00 s
+Wall time: 4.00 s
+```
+
+Bear in mind that after using the brandt method for p=2, computing hecke_matrix_brandt for other p's is instantaneous or at least much faster, but computing with the _directly method will take time proportional to p+1.
+
+IOW, for this dimension, the direct method is better if we only want to compute 3 hecke ops, but the brandt method is better for 4 or more hecke ops.
+
+
+For larger dimensions, the advantage should be much larger for the direct method:
+
+```
+sage: B=BrandtModule(20011,use_cache=False)
+sage: time Is=B.right_ideals(120)
+prof = [1665, 4994, 4394, 17625, 3327, 1667]
+CPU times: user 27.80 s, sys: 0.10 s, total: 27.90 s
+Wall time: 27.91 s
+sage: time T2=B._compute_hecke_matrix_directly(2,120)
+CPU times: user 29.80 s, sys: 0.30 s, total: 30.10 s
+Wall time: 30.10 s
+sage: time T2=B._compute_hecke_matrix_directly(3,120)
+CPU times: user 37.45 s, sys: 0.32 s, total: 37.77 s
+Wall time: 37.77 s
+```
+
+Since the dimension of the space is 1668, in order to compute brandt matrices we would need 1391946 multiplications of quaternion ideals, same number of theta series computation. That's about 400 times more multiplications than the example for p=1009, hence it could take at least 1600 seconds.
+
+
+---
+
+Comment by tornaria created at 2009-03-27 14:14:10
+
+Here's the timing for the computation of the Brandt matrix `B_2` for the same example of level `p=20011` using `_compute_hecke_matrix_brandt()`:
+
+```
+sage: B=BrandtModule(20011,use_cache=False)
+sage: time Is=B.right_ideals(120)
+CPU times: user 27.06 s, sys: 0.12 s, total: 27.18 s
+Wall time: 27.18 s
+sage: time B2=B._compute_hecke_matrix_brandt(2)
+CPU times: user 20126.94 s, sys: 24.05 s, total: 20150.99 s
+Wall time: 20151.13 s
+sage: time B3=B._compute_hecke_matrix_brandt(3)
+CPU times: user 1025.46 s, sys: 0.13 s, total: 1025.59 s
+Wall time: 1025.61 s
+```
+
+
+Note that the 1025 seconds of the computation of `B3` seems to be mostly about pushing coefficients around, since the theta series have been computed to 14 coefficients already in the computation of `B2`, i.e. essentially doing this:
+
+```
+sage: n=3 ; BB=B._BrandtModule_class__brandt_series_vectors;
+sage: time B3c = matrix(QQ, [[QQ(BB[i][j][n]) for i in range(m)] for j in range(m)])
+CPU times: user 1030.95 s, sys: 16.70 s, total: 1047.65 s
+Wall time: 1047.65 s
+```
+
+And despite the fact that `BB[i][j][n]` are already in `QQ` (but they are in fact integers), the following is much faster (_why?_):
+
+```
+sage: B3b = matrix(ZZ, [[ZZ(BB[i][j][n]) for i in range(m)] for j in range(m)])
+CPU times: user 166.30 s, sys: 0.00 s, total: 166.30 s
+Wall time: 166.30 s
+```
+
+
+Also note that the process computing brandt matrices takes `18g` of resident memory in sage.math after this computation (because all the 1668<sup>2</sup>/2 ideal products and the 1668<sup>2</sup> theta series are cached). IOW, I wouldn't be able to do this computation in my laptop.
+
+In contrast, after computing T2 and T3 using `_directly`, the resident memory is `673m`, and only `166m` if using `sparse=True` option.
+
+
+---
+
+Comment by tornaria created at 2009-03-27 14:31:58
+
+The construction of the brandt matrix at the bottom of `_compute_hecke_matrix_brandt()` can be accelerated quite a lot by this:
+
+```
+             B = self._brandt_series_vectors(2*n+10)  
+         m = len(B)
+         K = self.base_ring()
+-        return matrix(K, [[K(B[i][j][n]) for i in range(m)] for j in range(m)], sparse=sparse)
++        Bmat = matrix(K, m, m, sparse=sparse)
++        for i in range(m):
++            for j in range(m):
++                Bmat[i,j] = K(B[j][i][n])
++        return Bmat
+```
+
+In the example above (p=20011) it would still take 5 hours to compute the first brandt matrix, but I expect only 5 seconds (instead of 1000) to return the second brandt matrix (assuming the coefficients were already precomputed).
+
+
+---
+
+Comment by robertwb created at 2009-03-27 19:49:12
+
+It looks like people are already in the process of reviewing this ticket, but lest there be any question about the pickling changes to sage/structure/parent_gens.pyx, I give that part a positive review.
+
+
+---
+
+Attachment
+
+trac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization
+
+
+---
+
+Comment by was created at 2009-03-28 04:48:28
+
+from Gonzalo T.
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+This replaces the above three patches and is rebased against 3.4.1.alpha0.
+
+
+---
+
+Attachment
+
+tiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*
+
+
+---
+
+Comment by tornaria created at 2009-03-29 02:36:45
+
+These are my final comments on this patch:
+
+ - in `quaternion_algebra.py`: definition of `is_equivalent` for class
+   `QuaternionFractionalIdeal_rational`.
+
+ The parameter B is auxiliary; it could be a good idea to use a 
+ default value for it, so that a user doesn't need to specify it.
+
+ The choice of B doesn't affect the correctness of the algorithm, 
+ since full equivalence is tested when the theta series match to 
+ coefficient B.
+
+
+ - in `c_lib/src/convert.c`: definition of `QQ_to_t_FRAC`, maybe it should use "mkfrac" instead of "gdiv".
+
+ Rationale: we do know "num" and "den" are "t_INT" and coprime,
+ since they came from a QQ.
+
+ Advantage: "mkfrac" is a very fast macro vs. "gdiv" being a
+ function with dispatch on types, and involving a gcd computation.
+
+ Example:
+
+ Using "gdiv":
+ {{{
+sage: a=QQ.random_element(10<sup>100,10</sup>100)
+sage: timeit('a._pari_()')
+625 loops, best of 3: 18.8 µs per loop
+}}}
+
+ Using "mkfrac":
+ {{{
+sage: a=QQ.random_element(10<sup>100,10</sup>100)
+sage: timeit('a._pari_()')
+625 loops, best of 3: 4.01 µs per loop
+}}}
+
+ - in `gen.pyx`, definition of `PariInstance.matrix()`, there's this line:
+ {{{
++        A = self.new_gen(gtomat(zeromat(m,n)))  # the gtomat is very important!!
+}}}
+
+ I fail to see why gtomat() is needed. I'm sure you have a very
+ good reason, maybe you can document it for the record?
+
+ Calling "gtomat" doesn't seem to make a significative difference in running time, anyway.
+
+
+---
+
+Attachment
+
+Small patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment
+
+
+---
+
+Comment by was created at 2009-03-29 03:15:54
+
+I am very happy with trac_5520-rebase-ref1.patch.
+
+Regarding your point 3 about gtomat, I simply do *not* have the slightest clue why gtomat is needed.  However it is.  If it isn't there, PARI will crash/segfault like crazy.  Do you think my putting in a comment that says "I have no clue why" is useful?
+
+william
+
+
+---
+
+Comment by was created at 2009-03-29 03:24:35
+
+WAIT -- I tested your trac_5520-rebase-ref1.patch and 
+
+```
+sage: d = BrandtModule(17,19).decomposition()
+  ***   division by zero
+/scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython "$`@`" -i
+wstein`@`sage:/scratch/wstein/build/sage-3.4.1.alpha0$ 
+```
+
+
+But then if I revert it everything works fine again.  So I do *not* agree with it. 
+
+If I revert *only* the change you made involving mkfrac and gdiv, then everything works fine. 
+
+I'm posting a patch "trac_5520-rebase3.4.1.alpha0-part3.patch" that does *not* make the mkfrac change, and also has a comment about gotomat.   I have run the full test suite on all of sage with that patch applied and everything passes.
+
+
+---
+
+Attachment
+
+apply this *instead* of the previous patch!
+
+
+---
+
+Comment by tornaria created at 2009-03-29 03:36:10
+
+Replying to [comment:22 was]:
+> WAIT -- I tested your trac_5520-rebase-ref1.patch and 
+> {{{
+> sage: d = BrandtModule(17,19).decomposition()
+>   ***   division by zero
+> /scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython "$`@`" -i
+> wstein`@`sage:/scratch/wstein/build/sage-3.4.1.alpha0$ 
+> }}}
+
+Auch! Sorry for my sloppiness... It looked innocent and the difference in runtime looked interesting. I guess the same issue is behind the need for `gtomat`.
+
+Having a concrete example where sage crashes without this (gdiv or gtomat) is useful. Maybe it has to do with the layout of the pari objects in the stack --- as some of the copy/restack functions assume some specific order on recursive types. Most of the g* functions ensure returned objects are in the correct layout, but the internal functions don't.
+
+
+---
+
+Comment by tornaria created at 2009-03-29 04:18:24
+
+For the record (kind of unrelated), the following line:
+
+```
+matrix(QQ,2,2,[1,0,0,1])._pari_().qfrep(10)
+```
+
+reproduces the need for using `gdiv` and `gtomat`. Indeed, if `gtomat` is removed(for this case in `sage/matrix/matrix_rational_dense.pyx`), then pari raises
+
+```
+PariError:  (8)
+```
+
+OTOH, if `gtomat` is used, but `gdiv` is replaced by `mkfrac`, then pari raises
+
+```
+PariError: incorrect type (20)
+```
+
+
+The latter makes a lot of sense, since `qfrep` indeed expects a matrix with _integer_ coefficients, but we are passing a matrix with rational coefficients, which just happen to be of the form `a/1`. Now, of course, when calling `mkfrac(a,1)`, we obtain a fraction, but when calling `gdi(a,1)` we get `a` as a "t_INT".
+
+
+---
+
+Comment by robertwb created at 2009-03-29 10:23:59
+
+I have looked at all the new code in that touches linear algebra (mostly fast pari conversion and using pari for small examples) and it all looks very good. Lots of cleanup of old code (e.g. pre-list-comprehension) and doctests too. I'll second the positive review for this part of the code. 
+
+Some notes, but certainly not a blockers: it would be nice to split the pari declarations so you don't have to do "cdef extern from 'pari/pari.h'" in two places (and perhaps elsewhere). Also, did you know there is are mpz_swap and mpq_swap functions (that are much faster than using a tmp and mpz_set/mpq_set).
+
+
+---
+
+Comment by mabshoff created at 2009-03-31 03:45:09
+
+Merged 
+
+ * trac_5520-rebase3.4.1.alpha0.patch
+ * trac_5520-rebase3.4.1.alpha0-part2.patch
+ * trac_5520-rebase3.4.1.alpha0-part3.patch
+
+in Sage 3.4.1.rc0.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-03-31 03:45:09
+
+Resolution: fixed

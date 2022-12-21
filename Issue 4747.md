@@ -1,0 +1,199 @@
+# Issue 4747: [with patch; needs review] add custom hash function for cusps.
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-12-09 21:59:30
+
+Assignee: was
+
+This speeds up hash(c) for c a cusp by a lot.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cremona created at 2008-12-09 22:21:50
+
+Patch applies fine and test ok on 32-bit but on 64-bit I get this:
+
+```
+sage -t  "sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py"**********************************************************************
+File "/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py", line 319:
+    sage: hash(Cusp(1/3))
+Expected:
+    3713081631933328131    
+Got:
+    163512108431620420
+**********************************************************************
+File "/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py", line 322:
+    sage: hash(Cusp(oo))
+Expected:
+    3713081631936575706    
+Got:
+    6982220252595711780
+**********************************************************************
+```
+
+
+I am amazed at the effect this has on the speed.  Hashing is not something I ever think about, but clearly I should!
+
+
+---
+
+Comment by craigcitro created at 2008-12-14 08:05:28
+
+John -- is there any chance you forgot to do a `sage -b` before testing this patch? I'm only suspicious because the incorrect values getting returned are exactly the values that `hash(Cusp(1/3))` and `hash(Cusp(oo))` returned *before* the patch ...
+
+
+---
+
+Comment by cremona created at 2008-12-14 11:02:58
+
+Replying to [comment:2 craigcitro]:
+> John -- is there any chance you forgot to do a `sage -b` before testing this patch? I'm only suspicious because the incorrect values getting returned are exactly the values that `hash(Cusp(1/3))` and `hash(Cusp(oo))` returned *before* the patch ...
+
+May be.  I'll try again.
+
+
+---
+
+Comment by cremona created at 2008-12-14 14:39:59
+
+William was right.  Sorry!
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 17:39:43
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 17:39:43
+
+Merged in Sage 3.2.2.rc0
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 18:14:24
+
+This patch causes the following doctest failures:
+
+```
+sage -t -long "devel/sage/sage/modular/congroup.py"
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py", line 540, in __main__.example_25
+Failed example:
+    Gamma0(Integer(36)).cusps()###line 514:_sage_    >>> Gamma0(36).cusps()
+Expected:
+    {1/6, 1/4, 1/3, 1/2, 1/9, 0, 1/18, 5/12, Infinity, 1/12, 2/3, 5/6}
+Got:
+    {1/2, 0, 1/3, 1/12, 5/6, 5/12, 1/4, 1/18, 1/6, 1/9, 2/3, Infinity}
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py", line 1064, in __main__.example_48
+Failed example:
+    Gamma1(Integer(5))._find_cusps()###line 1283:_sage_    >>> Gamma1(5)._find_cusps()Expected:
+    {0, Infinity, 1/2, 2/5}
+Got:    {0, 1/2, Infinity, 2/5}
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py", line 1066, in __main__.example_48
+Failed example:
+    Gamma1(Integer(35))._find_cusps()###line 1285:_sage_    >>> Gamma1(35)._find_cusps()
+Expected:
+    {3/35, 9/10, 9/14, 11/35, 3/14, 9/35, 3/10, 11/14, 8/35, 4/7, 8/15, Infinity, 13/14, 16/35, 13/35, 0, 4/15, 1/13, 2/35, 1/11, 1/10, 1/17, 1/1
+6, 1/15, 1/14, 1/7, 1/6, 1/5, 1/4, 1/3, 1/2, 6/35, 1/9, 1/8, 6/7, 3/5, 3/7, 7/10, 4/35, 2/5, 17/35, 2/7, 5/7, 1/12, 4/5, 5/14, 12/35, 2/15}
+Got:
+    {4/7, 1/3, 3/35, 16/35, 1/17, 1/15, 6/35, 1/6, 11/14, 3/7, 2/5, 1/11, 4/35, 3/14, 1/2, 6/7, 3/10, 1/14, 1/5, 2/35, 7/10, 5/7, 1/10, 8/15, 0, 
+9/14, 13/35, 4/5, 1/13, 1/4, 11/35, 9/10, 1/9, 8/35, Infinity, 12/35, 3/5, 2/7, 1/12, 13/14, 4/15, 9/35, 5/14, 1/8, 17/35, 1/7, 2/15, 1/16}
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py", line 1397, in __main__.example_65
+Failed example:
+    Gamma0(Integer(90))._find_cusps()###line 1681:_sage_    >>> Gamma0(90)._find_cusps()
+Expected:
+    {1/6, 1/5, 1/3, 1/2, 11/30, 1/9, 2/3, 1/30, Infinity, 5/6, 1/45, 0, 1/18, 1/10, 1/15, 2/15}
+Got:
+    {0, 1/3, 11/30, 5/6, 1/15, 1/10, 2/3, 1/9, Infinity, 1/2, 1/45, 1/18, 1/5, 2/15, 1/6, 1/30}
+**********************************************************************
+```
+
+
+Thoughts? 
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 18:18:13
+
+Reopened for now due to non-trivial doctest failure.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 18:18:13
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 18:18:13
+
+Changing status from closed to reopened.
+
+
+---
+
+Comment by cremona created at 2008-12-14 18:59:04
+
+Replying to [comment:8 mabshoff]:
+The change in hash function means that sets of cusps will be ordered differently.  I'll check visually that the sets have not changed;  assuming that is the case I'll just adjust the doctests to agree with the new output order.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cremona created at 2008-12-14 19:10:43
+
+New patch fixes the problem.
+
+
+---
+
+Comment by craigcitro created at 2008-12-14 19:40:54
+
+Looks good.
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 20:07:57
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-12-14 20:07:57
+
+Merged in Sage 3.2.2.rc0

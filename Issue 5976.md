@@ -1,0 +1,814 @@
+# Issue 5976: [with patch; needs work] Add an Elliptic Curve Isogeny object
+
+Issue created by migration from Trac.
+
+Original creator: shumow
+
+Original creation time: 2009-05-04 05:40:10
+
+Assignee: was
+
+CC:  kohel
+
+Keywords: Elliptic Curves
+
+
+
+
+---
+
+Comment by shumow created at 2009-05-04 05:46:22
+
+Changing assignee from was to shumow.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by shumow created at 2009-05-04 05:48:40
+
+I am interested in getting feed back for this patch, namely:
+
+1) I have just made these objects inherit from sage object.  I am certain that this is not the best object to inherit from.  However, I do not know which is.  I think that the morphism object from the category module seems most reasonable, but I am interested in more feedback.
+
+2) Any other functions these objects should implement.
+
+3) If adding these objects to the sage.schemes.elliptic_curves module is the correct place.
+
+4) Any other feed back.
+
+
+---
+
+Comment by shumow created at 2009-05-04 05:48:40
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by cremona created at 2009-05-04 15:48:56
+
+I am changing the tag on this from "needs work" to "needs review", since that's the way to get people to look at it and review it!  Which I now intend to do.
+
+At a first read through this looks really excellent and useful.  One question:  why do you allow as input the list of coefficients of the kernel poly but not a suitable kernel poly itself?  For example, I would expect to compute a 3-isogeny (for example) by forming the 3-division polynomial, factoring it and passing any degree 1 factors to your code.
+
+Second minor point:  it would be sufficient for the two allowed values of the algorithm parameter to be "velu" and "kohel" rather than the longer forms you use.  (Do you check that the supplied value is one of the two allowed values and raise an error if not?)
+
+Lastly, one of the things to do next is to insert member functions into either ell_generic or ell_field to allow computation of an isogeny from a given curve.  i.e. if E is the curve and (say) poly is a suitable kernel poly then I would like to be able to do E.isogeny(poly) which would return your isogeny class object.  There are more things one would do after that.
+
+This is an excellent contribution to Sage.  I will finish the review when I have finished building 3.4.2 and can test it.
+
+
+---
+
+Attachment
+
+Apply after previous (reviewer's patch)
+
+
+---
+
+Comment by cremona created at 2009-05-04 17:14:52
+
+Review:  applies fine to 3.4.2.rc0 and tests pass.
+
+My reviewer's patch just does the following:
+
+    1. Corrects spelling of "separable" throughout
+    1. simplifies algorithm strings to "velu" and "kohel"
+    1. Corrects some ReST glitches, and added to reference  manual
+    1. removed semicolons from ens of lines (redundant in python!)
+
+I think this should go in -- then we can develop it and add other functionality later.  So I have given it a positive review.
+
+
+---
+
+Comment by mabshoff created at 2009-05-04 17:34:07
+
+All the private functions with leading double underscore aren't doctested, so this is "needs work". Dan never intended to put this up for review so quickly, but I guess once the coverage is at 100% it ought to go in since John is happy.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cremona created at 2009-05-04 18:23:18
+
+Michael is quite right (of course).  I went for dinner and realised too late that I had forgotten to complain about the <100% coverage.  I will be happy to review it again when that is seen to.
+
+I have another problem:
+
+```
+sage: E=EllipticCurve('11a1')
+sage: phi=EllipticCurveIsogeny(E,E.division_polynomial(2).list(),algorithm='kohel')
+sage: phi
+Isogeny of degree 4 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 1260*x - 13797 over Rational Field
+sage: phi.domain_curve().j_invariant()
+-122023936/161051
+sage: phi.range_curve().j_invariant()
+221401204903936/40810683805
+```
+
+Here, I was expecting that phi would be the multiplication-by-2 map from E to itself. but it clearly is not:
+
+```
+sage: phi.rational_maps()
+
+((64*x^7 - 192*x^6 - 1088*x^5 - 80*x^4 + 10240*x^3 + 17312*x^2 + 3476*x - 24628)/(16*x^6 - 32*x^5 - 304*x^4 - 312*x^3 + 2232*x^2 + 6320*x + 6241),
+ (1024*x^9*y + 512*x^9 - 3584*x^8*y - 1792*x^8 - 20992*x^7*y - 10496*x^7 + 15744*x^6*y + 7864*x^6 + 265728*x^5*y + 132880*x^5 + 329152*x^4*y + 164728*x^4 - 821728*x^3*y - 410708*x^3 - 2809920*x^2*y - 1406076*x^2 - 2932320*x*y - 1469320*x - 1259724*y - 1265965/2)/(64*x^9 - 192*x^8 - 1728*x^7 - 16*x^6 + 24864*x^5 + 52848*x^4 - 64948*x^3 - 454092*x^2 - 748920*x - 493039))
+```
+
+so I think this is actually wrong.
+
+When this is fixed it would be nice to make it easier to construct this multiplication as an isgeny from E to itself (and not just from E to an isomorphic curve).  Which would suggest making the isogeny code work alongside the weierstrass map code (since weierstrass isomorphisms [u,r,s,t] are nothing other than isogenies of degree 1), for example by allowing the construction of an isogeny from a urst and vice versa for isogenies of degree 1.
+
+
+---
+
+Comment by AlexGhitza created at 2009-05-05 00:23:49
+
+Replying to [comment:2 shumow]:
+> I am interested in getting feed back for this patch, namely:
+> 
+> 1) I have just made these objects inherit from sage object.  I am certain that this is not the best object to inherit from.  However, I do not know which is.  I think that the morphism object from the category module seems most reasonable, but I am interested in more feedback.
+> 
+
+I would think that SchemeMorphism or one of its descendants in schemes/generic/morphism.py would be a natural choice.  I'm working on fixing a number of things in that file, so it might not be a good idea to make your isogeny object inherit from it just yet.  I'll try to be done soon, though.
+
+
+---
+
+Comment by shumow created at 2009-05-06 07:50:15
+
+Replying to [comment:6 mabshoff]:
+> All the private functions with leading double underscore aren't doctested, so this is "needs work". Dan never intended to put this up for review so quickly, but I guess once the coverage is at 100% it ought to go in since John is happy.
+> 
+
+Yup, mabshoff is one hundred percent correct.  I just got done w/ the velu / kohel algorithms and figured I'd get thoughts from the real sage number theory devs on how I was doing.
+
+So far this feed back has been great, thanks everyone!
+
+
+Replying to [comment:7 cremona]:
+
+> When this is fixed it would be nice to make it easier to construct this multiplication as an isgeny from E to itself (and not just from E to an isomorphic curve).  Which would suggest making the isogeny code work alongside the weierstrass map code (since weierstrass isomorphisms [u,r,s,t] are nothing other than isogenies of degree 1), for example by allowing the construction of an isogeny from a urst and vice versa for isogenies of degree 1.
+
+Yes, I totally see what you are saying.  And this is a point of clarification that I need on some of the math here:  All the algorithms that I have been looking at for isogenies are for computing "normalized" isogenies.  It is my partial (possibly incorrect) understanding that the multiplication by "m" map is not a normalized isogeny, and as such, these algorithms don't work.
+
+I was in fact planning on trying to rectify this when I figured out how to do the correct inheritance.
+
+Replying to [comment:8 AlexGhitza]:
+> Replying to [comment:2 shumow]:
+ 
+> I would think that SchemeMorphism or one of its descendants in schemes/generic/morphism.py would be a natural choice.  I'm working on fixing a number of things in that file, so it might not be a good idea to make your isogeny object inherit from it just yet.  I'll try to be done soon, though.
+
+Cool, do you have an ETA on that?
+
+Replying to [comment:4 cremona]:
+> My reviewer's patch just does the following:
+> 
+>     1. Corrects spelling of "separable" throughout
+
+Ugh, embarrassing.  I never was very good at spelling.  It's why I liked maths more in school...
+
+
+---
+
+Comment by cremona created at 2009-05-06 11:05:19
+
+That is probably right, but how do you define "normalised"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.
+
+Or do you in fact mean "cyclic" isogeny?
+
+We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).
+
+I'm in a rush, so apologise if this is nonsense.
+
+
+---
+
+Comment by shumow created at 2009-05-06 16:40:30
+
+Replying to [comment:10 cremona]:
+> That is probably right, but how do you define "normalised"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.
+> 
+> Or do you in fact mean "cyclic" isogeny?
+> 
+> We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).
+> 
+> I'm in a rush, so apologise if this is nonsense.
+
+I don't mean "cyclic" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.
+
+I agree with you that we should support non normalized.  When I was doing some testing, I was calculating the "normalized dual" meaning the normalized isogeny to an isomorphic curve, and post composing w/ an isomorphism, to make sure I had the right thing.
+
+I think the way to handle non-normalized isogenies is to have a post isomorphism (and possibly pre isomorphism) that gets applied after the normalized isogeny does.  I'm not sure the best way to specify this in the constructor, but I haven't thought about it a lot.  What are your thoughts on this?
+
+I as well am in a hurry, so apologies if what I am saying here didn't make sense.
+
+
+---
+
+Comment by cremona created at 2009-05-06 17:43:28
+
+Replying to [comment:11 shumow]:
+> Replying to [comment:10 cremona]:
+> > That is probably right, but how do you define "normalised"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.
+> > 
+> > Or do you in fact mean "cyclic" isogeny?
+> > 
+> > We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).
+> > 
+> > I'm in a rush, so apologise if this is nonsense.
+> 
+> I don't mean "cyclic" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.
+
+OK, that's the definition I meant.  (e.g. with this definition, multiplication-by-m is normalised iff m=1, since c=m).  Except that the precise characterization you give is only correct when the curve has short Weierstrass form (y^2=f(x)).  Otherwise it something like (I(x), cI'(x)(y+(a1*x+a3)/2) - (A1*I(x)+A3)/2)  where E=[a1,a2,a3,...] and the isogenous curve is [A1,A2,...].
+
+> 
+> I agree with you that we should support non normalized.  When I was doing some testing, I was calculating the "normalized dual" meaning the normalized isogeny to an isomorphic curve, and post composing w/ an isomorphism, to make sure I had the right thing.
+> 
+> I think the way to handle non-normalized isogenies is to have a post isomorphism (and possibly pre isomorphism) that gets applied after the normalized isogeny does.  I'm not sure the best way to specify this in the constructor, but I haven't thought about it a lot.  What are your thoughts on this?
+
+Since we are specifying the isogeny from its kernel, it is well-defined up to an automorphism, so usually up to +/-1 (with the usual awkward special cases).  So if the user asks for an isogeny with a given kernel they surely don't get to specify whether or not it is normalised (except for the sign)?
+
+> 
+> I as well am in a hurry, so apologies if what I am saying here didn't make sense.
+
+I am hoping that David Kohel will comment,  since he is the real expert on all this!
+
+
+---
+
+Comment by shumow created at 2009-05-06 19:24:10
+
+Replying to [comment:12 cremona]:
+> Replying to [comment:11 shumow]:
+> > Replying to [comment:10 cremona]:
+> > > That is probably right, but how do you define "normalised"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.
+> > > 
+> > > Or do you in fact mean "cyclic" isogeny?
+> > > 
+> > > We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).
+> > > 
+> > > I'm in a rush, so apologise if this is nonsense.
+> > 
+> > I don't mean "cyclic" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.
+> 
+> OK, that's the definition I meant.  (e.g. with this definition, multiplication-by-m is normalised iff m=1, since c=m).  Except that the precise characterization you give is only correct when the curve has short Weierstrass form (y^2=f(x)).  Otherwise it something like (I(x), cI'(x)(y+(a1*x+a3)/2) - (A1*I(x)+A3)/2)  where E=[a1,a2,a3,...] and the isogenous curve is [A1,A2,...].
+> 
+
+I think this is correct.  My apologies for using the short form, I just grabbed the first one I saw in my notes.
+
+> Since we are specifying the isogeny from its kernel, it is well-defined up to an automorphism, so usually up to +/-1 (with the usual awkward special cases).  So if the user asks for an isogeny with a given kernel they surely don't get to specify whether or not it is normalised (except for the sign)?
+
+Do you think it would be nice to give the expected isogeny even if it isn't normalized in some cases?
+
+For example, if the user asks for the dual isogeny, then we can use the algorithms for computing normalized isogenies, and figure out what the post isomorphism is to get back to the original Weierstrass model.  This addresses the problem of wanting to get the dual isogeny such that the composition provides the expected multiplication by d map (where d is the degree of the isogeny.)
+
+We could also provide an option that if the domain and range curves are isomorphic, then the code determines the isomorphism and post-composes appropriately.
+
+In the usual case, when the user specifies just the Kernel, then I agree, they surely should not get to specify whether or not it is normalized (except up to sign.)
+
+I think that this solution is a good balance between allowing users who want to naturally use non normalized isogenies in simple cases, and not making the interface over complicated by trying to be overly flexible.
+
+Thoughts?
+
+
+---
+
+Comment by cremona created at 2009-05-06 21:25:31
+
+That all sounds very sensible to me.  Thanks for working on this!
+
+
+---
+
+Comment by cremona created at 2009-05-07 08:57:52
+
+Comments by David Kohel, posted by John Cremona from an email:
+
+There's not too much for me to comment on, except that given (E,G), the
+isogeny \phi_G: E -> E' is well-defined up to isomorphism of the codomain.
+The condition on the pull-back of the standard invariant differential
+rigidifies the choice of E' up to affine translations fixing leading
+coefficients of x and y and possible automorphisms which are 1 mod (pi)
+[pi = Frobenius], e.g. -1 = 1 mod (pi) in characteristic 2.
+
+On notation, I've called my isogeny from kernel function Velu's isogeny.
+In retrospect it might be useful to just plug in a point, or points,
+and construct the kernel from the group elements using Velu's original
+algorithm or by constructing the kernel polynomial psi(x) and applying
+the algorithms of my thesis (which just reformulates Velu's construction
+in terms of psi(x) rather than its roots).
+
+Note that Velu retains the first coefficients a1, a2, a3, which makes
+the codomain curve more rigid (killing off the affine translation).
+
+I suggest a syntax like (note that I haven't actually inspected the
+algorithm which has been implemented or its syntax):
+
+E.isogeny_from_kernel(
+       kernel,
+       codomain=None,
+       order=None,
+       pullback_scalar=None,
+       algorithm=None)
+
+The inputs are thus:
+  kernel : which is a kernel polynomial, a torsion point, or
+    list of torsion points; or, once such an class is created,
+    a torsion subgroup scheme.
+  codomain : the codomain curve, if one other than Velu's choice
+    is desired.
+  order : the order of the kernel (this can be inferred, but can
+    bypass a gcd with the 2-torsion polynomial).
+  pullback_scalar : [find a better name] the scalar f^*(w')/w
+    of the pullback of the standard invariant differential w'
+    on the codomain divided by that on the domain E.
+  algorithm : this was 'velu' or 'kohel', but is now redundant,
+    if I understand correctly the intended difference, since
+    it can be determined from the input type (to kernel).
+
+Maybe an abelian_invariants=None (a list of one or two integers,
+the first dividing the second, to indicate the group structure)
+could be added, to differentiate cyclic and acyclic groups of the
+same order.  I think this may only be relevant to the algorithm
+if 4 divides the order.
+
+Unlike Magma, the returned object should be the isogeny (not the
+codomain curve + isogeny).  The codomain curve is part of the
+isogeny data: E.isogeny_from_kernel(psi).codomain().
+
+One could also define:
+
+E.isogeny_codomain_from_kernel(...)
+
+which only constructs the codomain (this is much more efficient,
+and sometimes the isogeny is not desired).
+
+Note that if one is interested in defining endomorphisms, then
+one can define a homomorphism c of O = End(E) to R = E.base_ring()
+(with kernel generated by Frobenius is finite characteristic),
+and set the pullback scalar to c(alpha) when constructing an
+isogeny from ker(alpha).  This gives one control to determine
+the right pullback scalar for endomorphisms.  Is one then specifies
+the codomain to be E (the domain curve), then one should be able
+to recognize a a trivial identity isomorphism to tehis given
+codomain.
+
+Cheers,
+
+David
+
+P.S. I have my original Magma code for Velu isogenies if this
+is of any use.  In terms of notation, I tend to prefer torsion
+polynomial as clearer in meaning to the standard term division
+polynomial (which I have imposed on Magma and Sage).
+
+
+---
+
+Comment by cremona created at 2009-05-07 09:13:52
+
+I realized this morning that I had been saying confusing things about this "normalization" question.  This is really superseded by David's suggestions, but anyway:  while it is true that E and the kernel G uniquely determine the isogenous curve E' = E/G up to isomorphism, if we replace E' by an isomorphic curve E", isomorphic to E' via [u,r,s,t], then the scaling constant gets multiplied (possibly divided) by u.
+
+This means that if we do not care in advance about the model we use for E' we can always replace E' by a suitable E" such that the scaling constant is 1;  then it seems to me that E" and the isogeny are uniquely determined up to translations (as David says), i.e. [u,r,s,t] with u=1.  (And _not_ up to general automorphisms of E", since these may multiply the scaling constant by a root of unity (or order at most 6 of course).
+
+In the context of finite fields, there is no reason to choose any one scaling of a Weierstrass model over another, so it is harmless to insist that isogenies are normalized (or at least to reduce to that case).  Indeed, the only place I have seen the adjective "normalized" applied to isogenies was precisely in this context (e.g. papers of Morain).
+
+The situation is different over number fields:  when the class number is 1 and global minimal models exist we may well want to insist that E' is a minimal model, which fixes the scaling constant up to a unit in the field only.  We cannot therefore normalize the isogeny without sacrificing integrality or minimality of the model.  For example, given an isogeny of prime degree ell, and its dual, the product of the two scaling constants is ell.  Over Q with minimal (or at least ell-minimal) models, one of them has constant ell and the other has constant 1.  (Or they could be -ell and -1, but we could then compose with [u,r,s,t]=[-1,0,0,0], the negation map.)  In this context I think one says that the isogeny with constant 1 is etale, rather than normalized.
+
+I think David's proposed framework allows for all these possibilities.  Over finite fields, given E and G the default would be to return a normalised isogeny.  Over Q the default would be (I think?) to return an isogeny whose codomain is a minimal model.  I'm not sure about other number fields.  And teh user could override this if they provide their own codomain.
+
+
+---
+
+Comment by kohel created at 2009-05-07 11:53:19
+
+Just one additional comment on John's message: we could add "model" as
+an option to specify the desired model of the codomain: "minimal_model",
+"short_weierstrass", etc.; in characteristic 2 there are some special
+Weierstrass models used in crypto.
+
+There are numerous other models which are becoming trendy in crypto
+applications: http://www.hyperelliptic.org/EFD/
+
+But not all of them are isogeny invariant, even over a finite field.
+E.g. the Edward's model has a rational 4-torsion subgroup, which
+might change to a subgroup Z/2Z x Z/2Z under a 2-isogeny, but it is
+stable under odd degree isogenies.
+
+Although such special models are not yet implemented as classes in
+Sage, it is good to keep them in mind when determining the optional
+parameters one might want to feed into an isogeny.  Obviously one
+would also want to generalise the isomorphisms [u,r.s,t] of the
+Weierstrass models (as well as the translation-by-P maps which are
+isomorphisms of curves but not of elliptic curves, since they don't
+fix the base point).
+
+--David
+
+P.S. I have a question:
+
+If one starts with a minimal Weierstrass model (over QQ or a number
+field), and applies a Velu isogeny phi (fixing a1, a2, a3) with pullback
+scalar 1.  How close or far from a minimal model is it -- e.g. is it
+immediately p-minimal for all p coprime to the deg(phi)?  What happens
+at 2 and 3?  John's argument shows that we can lose p-minimality since
+the Velu isogeny with kernel E[p] is not [p] which has pullback scalar p,
+so we must lose minimality at p. In short, how much or how little work
+is needed to transform the codomain to a minimal model?
+
+
+---
+
+Comment by cremona created at 2009-05-07 12:21:37
+
+Answering the question:   over Q I think I answered this in my book;  if deg(phi)=ell (prime) then Velu gives a modal integral away from ell and either integral at ell or nearly so (such that scaling by ell makes it integral).  Over general number fields I guess it would depend on the ramification degree.  There is also a nice related result by Samir Siksek (On standardised models of isogenous elliptic curves, Math Comp 74 # 250 pp 949--951, 2004) but that is only over Q.
+
+
+---
+
+Comment by shumow created at 2009-05-12 01:40:42
+
+I can't say anything cogent about the math, from an API perspective, what I would say is the following:
+
+1) When determining the codomain model, I think that the default behavior should be to do whatever the underlying formulas do.  However, if the user wishes this to be overridden they should be able to do so.  It sounds like the two cases of interest are:
+  a) If the user explicitly specifies an isomorphic model to the calculated codomain.  This would be specified by setting the codomain parameter in the Isogeny constructor.
+  b) In the case of curves over the rationals, if the user sets a flag named something like compute_minimal_codomain, the isogeny should be setup to compute evaulate to the minimal model of the codomain.
+2) D. Kohel's advice re: a function that just calculates the codomain only is a good idea.  I will implement that.
+
+I am mainly interested in the finite field case, so I have a question:  In the rational case, is the option to compute the isogeny to the minimal model something that would be useful?
+
+I think doing what the underlying formulas say be default is the clearest thing from the perspective of the API.  But we still definitely want to give users the ability to override this.
+
+Also, I am not concerned about finding a canonical codomain model in the numberfield case.  That seems somewhat out of the scope of this class, unless there is something that is clearly the right choice?  (From the above interchange it seems like there is not a clear choice.)
+
+To give a rough idea of the signature of the constructor I am thinking of:
+
+isogeny_from_kernel(
+
+    kernel, codomain=None, order=None, compute_minimal_model=False, algorithm=None)
+
+The inputs are thus:
+
+    kernel : the kernel of the isogeny, necessary, unless the codomain is specified and one of the isogeny from domain/codomain algorithms is used.
+
+    codomain : the codomain curve, if one other than Velu's choice is desired, OR if we are calculating the isogeny based on the domain/codomain algorithm
+
+    order : the order of the kernel (this can be inferred, but can bypass a gcd with the 2-torsion polynomial).  Also necessary in the case that a domain/codomain algorithm is used.
+
+    compute_minimal_model : In the case of a curve over the rationals this calculates the isogeny such that the codomain model is the minimal weierstrass model.
+
+    algorithm : this was 'velu' or 'kohel', but is now partially redundant.  I plan to write the code to look at this, and if it is NOT present then it will try to determine the algorithm from the input parameters.
+
+
+Does this sound good to everyone?
+
+
+---
+
+Comment by cremona created at 2009-05-12 08:06:00
+
+That all sounds very good to me.  Yes, over the rationals (and number fields) one is definitely interested in having specific models of the codomain.  We can add extra bits for the number field case later.
+
+There are of course some striking differences between the number field and finite field cases.  Over finite fields, when two curves are isogenous there are infinitely many isogenies (e.g.in the ordinary case, the isogenies form a rank 1 projective module over the endommorphism ring), so it would not be sufficient just to give the two curves;  one might also want to give a possible degree.  While over number fields (amd more generally in char. 0) there is less choice.
+
+John
+
+
+---
+
+Comment by kohel created at 2009-05-12 13:50:05
+
+Replying to [comment:20 cremona]:
+> That all sounds very good to me.  Yes, over the rationals (and number fields) one is definitely interested in having specific models of the codomain.  We can add extra bits for the number field case later.
+
+Over finite fields too -- if one begins with a given model then one often wants to have that model for the codomain.
+
+> There are of course some striking differences between the number field and finite field cases.  Over finite fields, when two curves are isogenous there are infinitely many isogenies (e.g.in the ordinary case, the isogenies form a rank 1 projective module over the endomorphism ring), so it would not be sufficient just to give the two curves;  one might also want to give a possible degree.  While over number fields (and more generally in char. 0) there is less choice.
+
+It is a much harder problem to determine an isogeny given two curves (over a finite field or not).  I don't think we're discussing this (interesting) problem, rather, given a curve, kernel polynomial, the possibly a codomain curve (e.g. the domain, if the kernel polynomial is known to determine an endomorphism).
+
+Anyway, I don't find the number field and finite field cases that dissimilar.  Ordinary curves at least lift to CM curves over H/K (or a local field) over which the isogenies lift from finite characteristic, and even in the generic (non-CM) case, at primes of good reduction, the (few) isogenies which exist over the ground field are just  the rational points in an infinite graph which is a universal cover (containing the l+1-regular tree for each prime degree l) of the isogeny graph the residue field.  Over the number field, one just wants finer control over what happens simultaneously at all primes, and I view isogenies over number fields as an 'intersection' over all finite primes of reduction (a global isogeny with image in the product of all local isogenies).
+
+In all cases, Velu gives a preferred choice of normalization, which we can efficiently modify with a pullback scalar, or by requesting a particular codomain model such as the minimal model.
+
+On that note, rather than 'compute_minimal_model', I would suggest just 'model' (default None or 'velu') so that one can do:
+
+E.isogeny_from_kernel(psi,model='minimal') 
+
+in order to induce the computation of a minimal model (for the codomain).  I think it is clear that 'model' only refers to the codomain which is that which is computed.  This is flexible enough to also allow for standard models {'edwards', 'montgomery', 'hessian', 'legendre', 'short_weierstrass', 'binary_weierstrass', etc.} in vogue in cryptographic settings.
+
+
+---
+
+Attachment
+
+second version of the isogeny code
+
+
+---
+
+Comment by shumow created at 2009-05-14 07:37:35
+
+I have uploaded a patch that has a few changes that we were discussing.
+
+I did:
+
+1) Change the constructor signature, as per our discussion
+2) added a function isogeny_codomain_from_kernel, that computes the codomain only
+3) Added a few doctests.
+4) refactored the code somewhat
+
+I did not:
+
+1) Write any code to map to a specified or minimal model yet.
+
+At this point, this still needs work
+
+My next TODOs are:
+ 
+1) To add a couple new algorithms for computing isogenies (from Morain's paper,)
+2) Write the code to map to the specified or a minimal model.
+3) add LOTS of doctests :-)
+
+
+---
+
+Comment by shumow created at 2009-05-14 16:52:48
+
+I forgot to mention in my last post that I made the isogeny now inherit from Morphism.  I decided on this because of Alex Ghitza's warning that he is planning on changing the "SchemeMorphism" class.  Also, the Weierstrass isomorphism class derives from the morphism class, not from SchemeMorphism.
+
+
+---
+
+Comment by cremona created at 2009-05-20 13:55:04
+
+This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).
+
+
+---
+
+Comment by cremona created at 2009-05-20 13:56:42
+
+Replying to [comment:24 cremona]:
+> This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).
+
+PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?
+
+```
+masgaj`@`host-56-150%sage -hg qimport ~/isogeny_v2.patch
+adding isogeny_v2.patch to series file
+masgaj`@`host-56-150%sage -hg qpush
+applying isogeny_v2.patch
+patching file doc/en/reference/plane_curves.rst
+Hunk #1 succeeded at 33 with fuzz 2 (offset 12 lines).
+patching file sage/schemes/elliptic_curves/all.py
+Hunk #1 FAILED at 34
+1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/all.py.rej
+unable to find 'sage/schemes/elliptic_curves/ell_curve_isogeny.py' for patching
+31 out of 31 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_curve_isogeny.py.rej
+patch failed, unable to continue (try -v)
+patch failed, rejects left in working dir
+Errors during apply, please fix and refresh isogeny_v2.patch
+```
+
+This is with 4.0.alpha0
+
+
+---
+
+Comment by shumow created at 2009-05-21 16:57:36
+
+Replying to [comment:25 cremona]:
+> Replying to [comment:24 cremona]:
+> > This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).
+> 
+
+Thank you!  Will do.
+
+> PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?
+
+Hmm, yeah, I created the patch with 3.4, so I'm guessing that the patch is trying to jump too many versions at once.  Because most of everything in this change is in one new file, I can fairly easily update to the newest version, and recreate a patch.  But in general, is there an easy way to counter this type of patch rot?  I have heard other sage devs talking about "rebasing patches."  Is this what they are talking about?
+
+
+Also, when I release the fixed patch.  I have a few changes in the code that will improve things.  I might as well get your feedback on the ideas now.  As we discussed the isogenies (with specified kernel) are only specified upto a factor of +/-1, so that we have a problem if we want to create the multiplication_by_m isogeny (for example.)  Because it would be nice to easily switch between the two, I have added a few new member functions:
+
+set_post_isomorphism(isomorphism):
+post composes the isogeny object with WeierstrassIsomorphism isomorphism
+
+switch_sign():
+calls post compose with the weierstrass isomorphism (x,-y)
+
+Also, I made it so that the unary operator -phi is defined, basically it deep copies phi, then calls switch_sign() on the copy, and returns it.
+
+This seems to me like the best way to overcome the fact that the isomorphism is only defined up to +/-1 factor, while balancing people actually wanting to compute something specific.  Your thoughts?
+
+
+---
+
+Comment by cremona created at 2009-05-21 18:43:29
+
+Replying to [comment:26 shumow]:
+> Replying to [comment:25 cremona]:
+> > Replying to [comment:24 cremona]:
+> > > This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).
+> > 
+> 
+> Thank you!  Will do.
+> 
+> > PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?
+> 
+> Hmm, yeah, I created the patch with 3.4, so I'm guessing that the patch is trying to jump too many versions at once.  Because most of everything in this change is in one new file, I can fairly easily update to the newest version, and recreate a patch.  But in general, is there an easy way to counter this type of patch rot?  I have heard other sage devs talking about "rebasing patches."  Is this what they are talking about?
+
+Yes, precisely.  It should be pretty easy as you are mainly creating a new file.  It's just the changes to other files which will need to be redone if they have changed.
+
+> 
+> 
+> Also, when I release the fixed patch.  I have a few changes in the code that will improve things.  I might as well get your feedback on the ideas now.  As we discussed the isogenies (with specified kernel) are only specified upto a factor of +/-1, so that we have a problem if we want to create the multiplication_by_m isogeny (for example.)  Because it would be nice to easily switch between the two, I have added a few new member functions:
+> 
+> set_post_isomorphism(isomorphism):
+> post composes the isogeny object with WeierstrassIsomorphism isomorphism
+> 
+> switch_sign():
+> calls post compose with the weierstrass isomorphism (x,-y)
+> 
+
+Good (except:  (x, -y-a1*x-a3) :)
+
+> Also, I made it so that the unary operator -phi is defined, basically it deep copies phi, then calls switch_sign() on the copy, and returns it.
+> 
+> This seems to me like the best way to overcome the fact that the isomorphism is only defined up to +/-1 factor, while balancing people actually wanting to compute something specific.  Your thoughts?
+
+That sounds good.  Pedantically one might want to post-compose with other autmorphisms (when j=0 or j=1728 and ...) but I cannot quote imagine needing that.  If there was the possibility to compose with any W. iso. that would be useful perhaps.
+
+Don't worry about doing everything now -- let's get something working (as you have) and  let people use it!
+
+
+---
+
+Comment by shumow created at 2009-05-23 22:27:02
+
+3rd version of isogeny code - patch made with sage-4.0.rc0
+
+
+---
+
+Attachment
+
+I rebased the patch onto 4.0.rc0.  Hopefully this will not be jumping so many versions that it causes a problem.
+
+The latest version is in isogeny_v3.patch.
+
+The code I wrote that implemented "switch_sign" as well as unary negation, actually gives the ability to (post) compose with any W.iso, see the function set_post_isomorphism.
+
+This still isn't ready to go in terms of being checked in, because I'm not at 100% doctests (I'm at 59% now.)  That said, the only things that I need to write doctests for at this point are internal functions, which I know have already been exercised by other doc tests.
+
+My next "to do" items on this code are (in order of priority):
+
+-Finish doctests
+-add the isogeny function to ell_field
+-add a function "is_normalized"
+-finish implementing starks method
+-use starks method to implement computing the dual
+
+
+---
+
+Comment by shumow created at 2009-05-25 19:51:41
+
+update of isogeny code - Apply after isogeny_v3.patch
+
+
+---
+
+Attachment
+
+Just uploaded isogeny_v4.patch,
+
+This adds:
+
+-"is_normalized" function
+
+-isogeny and isogeny_codomain functions to the ell_field file, so that we can say E.isogeny(...)  and it returns EllipticCurveIsogeny(E, ...) and also E.isogeny_codomain(...) that returns the codomain only of the isogeny from E with given kernel data.
+
+-100% doctests
+
+
+
+Next, I will finish the Starks algorithm and a function to compute the dual.  After that I would say (modulo feedback from a review) that this will be good to checkin.
+
+
+---
+
+Attachment
+
+patch made with sage-4.0 - apply this patch clean.  Ignore all previous patches
+
+
+---
+
+Comment by shumow created at 2009-06-04 19:46:46
+
+I have attached a patch for review.  Please apply isogeny_v5.patch clean.
+
+The latest update has stark's algorithm, the ability to compute the dual, and instantiate from domain and codomain.
+
+
+---
+
+Comment by cremona created at 2009-06-05 12:05:19
+
+Reviewer's patch;  apply *instead of* previous
+
+
+---
+
+Attachment
+
+I don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.
+
+I have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!
+
+It might be a good idea if David K also looked at it, since he is more familiar with "his" algorithm than I am;  I also know nothing about Stark's algorithm.
+
+Overall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.
+
+Now for the (mainly) minor points:
+
+    * Several ReST glitches (e.g. missing double ::). [fixed]
+
+    * In the doctests for the helper functions I think it would be better to
+      have direct rather than indirect doctests.  For example in the tests at 
+      lines 98-99 surely the fact that the twosides agree is a tautology
+      since the same code is used on both sides?  And in
+      compute_codomain_formula(), why not put in a direct doctest.  (In that
+      function you do not really need A1,A2,A3 and you can define a1,...,a6
+      in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)
+
+    * compute_vw_kohel_even_deg1() does not use parameter a6.
+
+    * l.225: incomplete sentence! [look for "missing text" in the source, I put in at least 2]
+
+    * I like the very clear list of private data for the isogeny class,
+      where all are set to None by default, though I suspect this is more
+      like C++ than Python.  It makes it *very* much easier to see what is
+      going on.
+
+    * There are lots of good examples.
+
+    * The docstring for the isogeny method for elliptic curves should say
+      more: it should certainly detail the input parameters and give more
+      examples (possibly copied from the EllipticCurveIsogeny
+      documentation).  The point is the when someone E.<tab> and sees
+      E.isogeny is available and then types E.isogeny? they need to see how
+      to use that function.
+
+
+---
+
+Comment by shumow created at 2009-06-06 03:46:38
+
+apply *after* trac_5976_review.patch, incorporates J. Cremona's suggestions.
+
+
+---
+
+Attachment
+
+I have just posted a patch incorporating J. Cremona's suggestions, after trac_5976_review.patch, apply trac_5976_review2.patch.
+
+very explicitly, I have fixed the following things:
+
+    * In the doctests for the helper functions I think it would be better to have direct rather than indirect doctests. For example in the tests at lines 98-99 surely the fact that the twosides agree is a tautology since the same code is used on both sides? And in compute_codomain_formula(), why not put in a direct doctest. (In that function you do not really need A1,A2,A3 and you can define a1,...,a6 in one line via a1,a2,a3,a4,a6=E.ainvs(). Similarly elsewhere.) [fixed, in particular, all private / helper functions now have doctests]
+
+    * compute_vw_kohel_even_deg1() does not use parameter a6. [fixed]
+
+
+    * l.225: incomplete sentence! [look for "missing text" in the source, I put in at least 2] [fixed the two "missing texts", didn't see others.]
+
+    * The docstring for the isogeny method for elliptic curves should say more: it should certainly detail the input parameters and give more examples (possibly copied from the EllipticCurveIsogeny? documentation). The point is the when someone E.<tab> and sees E.isogeny is available and then types E.isogeny? they need to see how to use that function. [fixed]
+
+
+---
+
+Comment by cremona created at 2009-06-06 09:45:53
+
+Positive review on the latest patch, which applies cleanly and passes all doctests in sage/schemes/elliptic_curves. I had some errors rebuilding the documentation but they were not from the files touched here so I think they were just a leftover from the past patches I was working on in the same clone.
+
+
+---
+
+Comment by ncalexan created at 2009-06-13 20:24:28
+
+Resolution: fixed

@@ -1,0 +1,683 @@
+# Issue 9668: Fix hardcoding of paths in R binary
+
+Issue created by migration from Trac.
+
+Original creator: kcrisman
+
+Original creation time: 2010-08-02 14:33:47
+
+Assignee: tbd
+
+CC:  leif jhpalmieri
+
+See [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.
+
+
+```
+Here is how I got the optional package automap to install into a 
+binary sage R. 
+Go into the sage directory and edit the following files: 
+local/bin/R and local/lib/R/bin/R 
+and change all the hard-set user variables "/scratch/...." to the true 
+locations of R_HOME_DIR, R_HOME, R_INCLUDE_DIR, R_SHARE_DIR and for 
+good measure, R_DOC_DIR. Replace the default string EVERYWHERE in the 
+file. 
+I then exported SAGE_HOME as well (Not sure that this is needed.), and 
+run local/bin/R 
+Inside R, install.packages("automap") 
+No more build errors, and when I restart R, automap loads using 
+library. Just have to try it out from sage now. 
+Any chance there's a script to find all of these hard-set strings and 
+change them to correct values? 
+```
+
+
+
+---
+
+Comment by leif created at 2011-08-03 14:26:07
+
+IIRC I have some "almost" ready R spkg for #9906, which also does a lot of clean-up in `spkg-install`...
+
+
+---
+
+Comment by kcrisman created at 2011-08-03 15:04:50
+
+Well, I would certainly welcome and help review this.  Anything which cleans up parts of #8274 could be commented there, and perhaps even a new ticket opened if there isn't much left.  
+
+But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+
+
+---
+
+Comment by leif created at 2011-08-05 11:27:31
+
+Replying to [comment:3 kcrisman]:
+> But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+
+Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
+
+
+---
+
+Comment by leif created at 2011-08-05 16:09:39
+
+Replying to [comment:4 leif]:
+> Replying to [comment:3 kcrisman]:
+> > But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+> 
+> Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
+
+Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).
+
+----
+
+There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a "complicated" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.
+
+
+---
+
+Comment by kcrisman created at 2011-08-05 16:29:20
+
+Replying to [comment:5 leif]:
+> Replying to [comment:4 leif]:
+> > Replying to [comment:3 kcrisman]:
+> > > But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+> > 
+> > Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
+> Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).
+Okay, I'll watch this space.
+> There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a "complicated" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.
+Agreed.
+
+
+---
+
+Comment by kcrisman created at 2011-08-19 13:47:40
+
+See also #10967.  We should probably either incorporate that here, or make a followup spkg there.
+
+
+---
+
+Comment by leif created at 2011-08-19 14:43:09
+
+Replying to [comment:7 kcrisman]:
+> See also #10967.  We should probably either incorporate that here, or make a followup spkg there.  
+
+Almost certainly the former.
+
+[Note to myself:]
+
+The problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being "automatically" relocated in the first place.
+
+I'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.
+
+
+---
+
+Comment by leif created at 2011-08-21 00:36:32
+
+Changing keywords from "" to "R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR".
+
+
+---
+
+Comment by leif created at 2011-08-21 00:36:32
+
+Changing assignee from tbd to leif.
+
+
+---
+
+Comment by leif created at 2011-08-21 00:36:32
+
+Replying to [comment:8 leif]:
+> [Note to myself:] 
+
+> 
+> The problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being "automatically" relocated in the first place.
+> 
+> I'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.
+
+Guessing `SAGE_ROOT` there is simply bullshit. Simply add a sanity check, pointing to `sage --R`, `install_scripts()` and perhaps `sage --sh` in case `SAGE_LOCAL` isn't defined.
+
+Furthermore:
+
+ * Address / check the following (copied from [comment:ticket:10967:14]):
+
+```
+The problem was with hard-coded paths, not the 
+permissions.  Anyway, the fix was easy.  I opened all the files listed 
+above by George: 
+sage/local/lib/R/bin/R 
+sage/local/lib/R/bin/libtool 
+sage/local/lib/R/etc/Makeconf 
+sage/local/lib/R/etc/ldpath 
+sage/local/lib/R/etc/Renviron 
+sage/local/bin/R 
+and edited obvious lines containing hardcoded paths (using find- 
+replace-all at once). 
+```
+
+
+ * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)
+
+
+---
+
+Comment by leif created at 2011-08-21 02:16:55
+
+Replying to [comment:9 leif]:
+>  * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)
+
+Should read:
+
+ * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, set `PKG_CONFIG_TOP_BUILD_DIR` to `$SAGE_ROOT` unless it is already, perhaps issuing a warning in case it isn't, or especially if its setting differs.) 
+
+   Also prepend `$SAGE_ROOT/local/lib/pkgconfig` to `PKG_CONFIG_PATH`, unless it is already contained. Warn if `PKG_CONFIG_PATH` is empty, then set it to `$SAGE_ROOT/local/lib/pkgconfig`.
+
+
+---
+
+Comment by was created at 2011-08-24 23:41:24
+
+Changing keywords from "R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR" to "R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR sd32".
+
+
+---
+
+Comment by kcrisman created at 2011-11-20 01:20:26
+
+Changing keywords from "R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR sd32" to "R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR sd32 r-project".
+
+
+---
+
+Comment by jhpalmieri created at 2012-10-26 16:45:23
+
+This problem prevents Sage from being relocatable on Solaris, or at least on the skynet machines mark and mark2: if I build Sage, then move the entire Sage directory, then run `sage` so the relocation scripts get executed, and then run `sage -R`, I get an error:
+
+```
+$ ./sage -R
+ld.so.1: R: fatal: libgcc_s.so.1: version `GCC_4.3.0' not found (required by file /usr/local/gcc-4.7.0/sparc-SunOS-ultrasparc3/lib/libgomp.so.1)
+ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory
+/home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  "$SAGE_LOCAL/bin/R" "$`@`"
+```
+
+I tried just modifying local/bin/R and local/lib/R/bin/R, replacing the hard-coded paths with `$SAGE_ROOT`, but I still got an error.
+
+
+---
+
+Comment by leif created at 2012-10-26 19:28:39
+
+I doubt this is related to the original topic at all.  The setup on skynet's Solaris machines is (or used to be) quite broken, as there are outdated versions of shared libraries left around in typical paths, and some R scripts insist on messing up your paths such that the former gets relevant.
+
+Unfortunately I don't recall what the exact problem was, and how I managed to work around it, just that I had to [and _somehow_ successfully did]; I think this problem appeared with, or was related to, [the installation of] GCC 4.7.0.  In case I am right, changing `PATH` and/or `LD_LIBRARY_PATH` should "solve" the issue.
+
+Sorry for not being of much help here, at least right now... ;-)
+
+
+---
+
+Comment by jhpalmieri created at 2012-10-26 19:47:45
+
+Well, if the problems on mark are not related, then for this ticket, we could just add some lines at the end of spkg-install:
+
+```
+# Make R relocatable by using "$SAGE_ROOT" instead of the hardcoded path.
+sed -e "s|$SAGE_ROOT|\$SAGE_ROOT/|" "$SAGE_LOCAL/bin/R" > "$SAGE_LOCAL/bin/R.tmp" && mv "$SAGE_LOCAL/bin/R.tmp" "$SAGE_LOCAL/bin/R" && chmod a+x "$SAGE_LOCAL/bin/R"
+sed -e "s|$SAGE_ROOT|\$SAGE_ROOT/|" "$SAGE_LOCAL/lib/R/bin/R" > "$SAGE_LOCAL/lib/R/bin/R.tmp" && mv "$SAGE_LOCAL/lib/R/bin/R.tmp" "$SAGE_LOCAL/lib/R/bin/R" && chmod a+x "$SAGE_LOCAL/lib/R/bin/R"
+```
+
+(It's too bad that the `-i` flag for sed is not portable.) `libR.pc` already uses SAGE_ROOT. What else needs to be done?
+
+
+---
+
+Comment by jhpalmieri created at 2012-10-26 20:27:22
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by jhpalmieri created at 2012-10-26 20:27:22
+
+I've posted a new spkg, along with the corresponding patch.
+
+
+---
+
+Comment by jhpalmieri created at 2012-10-26 20:41:48
+
+Replying to [comment:9 leif]:
+>  * Address / check the following (copied from [comment:ticket:10967:14]):
+> {{{
+> The problem was with hard-coded paths, not the 
+> permissions.  Anyway, the fix was easy.  I opened all the files listed 
+> above by George: 
+> sage/local/lib/R/bin/R 
+> sage/local/lib/R/bin/libtool 
+> sage/local/lib/R/etc/Makeconf 
+> sage/local/lib/R/etc/ldpath 
+> sage/local/lib/R/etc/Renviron 
+> sage/local/bin/R 
+> and edited obvious lines containing hardcoded paths (using find- 
+> replace-all at once). 
+> }}}
+It's easy enough to add these to the "for" loop that I added to spkg-install, so I might as well do that. For what it's worth, the binary files `Rscript` in both local/bin and local/lib/R/bin also have the path hard-coded in them, but I don't know how to fix this, or whether it's important. When are those files used?
+
+
+---
+
+Attachment
+
+patch for R spkg; for review only
+
+
+---
+
+Comment by kcrisman created at 2013-01-03 21:17:13
+
+This patch for the spkg makes sense to me, anyway.
+
+Did you end up changing the libR.pc stuff in comment:10?  Or was that done elsewhere?
+
+
+---
+
+Comment by jhpalmieri created at 2013-01-03 21:36:40
+
+The ".pc" files are handled by the `sage-location` script, I think. In any case, I believe that if you run `make build` on a fresh Sage tarball, then libR.pc should be in good shape.
+
+
+---
+
+Comment by kcrisman created at 2013-01-03 21:58:29
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by kcrisman created at 2013-01-03 21:58:29
+
+This looks good, and I now recall the sage-location discussion.  I think this is ready to go; it behaves as advertised.   I can't check whether this fixes the problems on Solaris directly, but it should fix the problem in the original post too - well, if such a person were to upgrade the spkg without just downloading a new Sage.
+
+
+---
+
+Comment by jhpalmieri created at 2013-01-03 22:39:42
+
+A slight correction to what I said before: just doing `make build` doesn't fix libR.pc, but running Sage once takes care of it.
+
+
+---
+
+Comment by kcrisman created at 2013-01-04 01:26:59
+
+Or anything else that triggers `sage-location` (nowadays, any spkg upgrade even), yes.
+
+
+---
+
+Comment by jdemeyer created at 2013-01-04 12:39:44
+
+I think using `sed` for this is very fragile, as any special characters in `$SAGE_ROOT` might cause this script to malfunction. A better solution would be to patch the R sources. This is already partially done (see `R.sh.patch` in the R sources) to allow for basic relocation of R, but apparently installing R packages doesn't work.
+
+
+---
+
+Comment by jdemeyer created at 2013-01-04 12:39:44
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by kcrisman created at 2013-01-04 14:55:58
+
+Replying to [comment:25 jdemeyer]:
+> I think using `sed` for this is very fragile, as any special characters in `$SAGE_ROOT` might cause this script to malfunction. A better 
+Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?  I feel like we already don't allow whitespace, though that might be an old memory.  Does Sage work in non-ASCII paths as well, say with Cyrillic characters?
+
+
+---
+
+Comment by jdemeyer created at 2013-01-04 15:05:26
+
+Replying to [comment:26 kcrisman]:
+> Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?
+We certainly do, although only "no spaces" is documented.
+
+But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|"+*=`@`$'` (which is a valid UNIX filename)
+
+
+---
+
+Comment by kcrisman created at 2013-01-04 15:09:34
+
+> > Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?
+> We certainly do, although only "no spaces" is documented.
+> 
+> But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|"+*=`@`$'` (which is a valid UNIX filename)
+You sound like you're arguing that we might as well use `sed` :-)  If I wasn't lazy I'd try to grep through other spkgs to see if it's used elsewhere - I'm almost sure I've seen it in use before...
+
+
+---
+
+Attachment
+
+patch for R spkg; for review only
+
+
+---
+
+Comment by jhpalmieri created at 2013-02-01 02:13:07
+
+Changing status from needs_work to positive_review.
+
+
+---
+
+Comment by jhpalmieri created at 2013-02-01 02:13:07
+
+Here is another attempt at fixing this.
+
+
+---
+
+Comment by jhpalmieri created at 2013-02-01 06:55:16
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by jhpalmieri created at 2013-02-01 06:56:57
+
+Wishful thinking: I accidentally set this to "positive review". Oops.
+
+I think the changes in [attachment:trac_9668-r.v2.patch] could be polished a bit, but I'm not going to bother until people agree with the general approach.
+
+
+---
+
+Comment by jhpalmieri created at 2013-02-01 06:56:57
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2013-03-16 22:27:28
+
+I don't like this at all:
+
+```
+./configure --prefix="\$SAGE_LOCAL"
+```
+
+If it works, you're probably relying on a bug. Why is it needed?
+
+Also, the first hunk in `Makefile.in.patch` is not needed.
+
+In any case, this needs to be rebased as R has been upgraded.
+
+
+---
+
+Comment by jhpalmieri created at 2013-03-16 23:55:14
+
+Replying to [comment:32 jdemeyer]:
+> I don't like this at all:
+> {{{
+> ./configure --prefix="\$SAGE_LOCAL"
+> }}}
+> If it works, you're probably relying on a bug. Why is it needed?
+
+If I remember correctly, the prefix directory gets written into various of the files in `SAGE_LOCAL/lib/R/bin/`, so using `\$SAGE_LOCAL` instead of `$SAGE_LOCAL` means that "$SAGE_LOCAL" gets written verbatim to the file, instead of expanded first and then written. This makes those files relocatable.
+
+Why don't you like it?
+
+
+---
+
+Comment by jdemeyer created at 2013-03-17 10:07:26
+
+Replying to [comment:33 jhpalmieri]:
+> Why don't you like it?
+Because the fact that it works looks like a bug rather than a feature.
+
+
+---
+
+Comment by jhpalmieri created at 2013-03-17 15:45:27
+
+If you look at `src/scripts/R.sh.in`, it has lines like
+
+```
+        R_HOME_DIR="`@`prefix`@`/${libnn}/R"
+```
+
+My understanding is that `prefix` gets set by the configure script, stored in `Makefile.conf`, and then read by `src/scripts/Makefile` so this variable's value can get used when making the R script. In particular, the R people are deliberately using the `prefix` variable here. So it looks like their design decision, not a bug. But I'm not sure I understand your point.
+
+
+---
+
+Comment by jdemeyer created at 2013-03-17 15:50:14
+
+Replying to [comment:35 jhpalmieri]:
+> If you look at `src/scripts/R.sh.in`, it has lines like
+> {{{
+>         R_HOME_DIR="`@`prefix`@`/${libnn}/R"
+> }}}
+This line is completely irrelevant, as we already patch `R.sh.in` to overwrite `R_HOME_DIR`.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jhpalmieri created at 2013-03-18 01:05:58
+
+I'll post a new version of the spkg when sage.math is back up. I've attached the patch. This has the effect of changing lines in `local/bin/R` (and the corresponding file `local/lib/R/bin/R`) from
+
+```
+R_SHARE_DIR=.../sage-5.8.beta4/local/lib/R/share
+export R_SHARE_DIR
+R_INCLUDE_DIR=.../sage-5.8.beta4/local/lib/R/include
+export R_INCLUDE_DIR
+R_DOC_DIR=.../sage-5.8.beta4/local/lib/R/doc
+export R_DOC_DIR
+```
+
+to
+
+```
+R_SHARE_DIR="${R_HOME_DIR}/share"
+export R_SHARE_DIR
+R_INCLUDE_DIR="${R_HOME_DIR}/include"
+export R_INCLUDE_DIR
+R_DOC_DIR="${R_HOME_DIR}/doc"
+export R_DOC_DIR
+```
+
+With this change, running `sage -R` and then `install.packages("automap")` seems to work.
+
+
+---
+
+Comment by jhpalmieri created at 2013-03-18 17:38:17
+
+New spkg posted.
+
+
+---
+
+Comment by leif created at 2013-03-18 18:12:44
+
+Replying to [comment:37 jhpalmieri]:
+> I'll post a new version of the spkg when sage.math is back up.
+
+Replying to [comment:38 jhpalmieri]:
+> New spkg posted.
+
+I still cannot log into sage.math... ;-)
+
+
+---
+
+Comment by jhpalmieri created at 2013-03-18 18:33:22
+
+Replying to [comment:39 leif]:
+> Replying to [comment:37 jhpalmieri]:
+> > I'll post a new version of the spkg when sage.math is back up.
+> 
+> Replying to [comment:38 jhpalmieri]:
+> > New spkg posted.
+> 
+> I still cannot log into sage.math... ;-)
+
+I did an `scp` to boxen. If you want, I can try to keep my promise by posting the new version (again) when sage.math comes back up...
+
+
+---
+
+Comment by jhpalmieri created at 2013-04-16 17:34:03
+
+For what it's worth, someone reported on [ask.sagemath.org](http://ask.sagemath.org/question/2476/cant-install-r-packages-in-sage) that this spkg fixed their problem with installing an R package.
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 17:48:15
+
+I think that sounds like a positive review, combined with Jeroen's good comments... What do you think?
+
+
+---
+
+Comment by jhpalmieri created at 2013-04-16 17:54:15
+
+I think that someone should confirm that with the new spkg, in the script `local/bin/R`, the variables `R_SHARE_DIR`, `R_INCLUDE_DIR`, and `R_DOC_DIR` are now defined in terms of `R_HOME_DIR` rather than being hard-coded paths as they are with the current spkg.
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 19:30:25
+
+> I think that someone should confirm that with the new spkg, in the script `local/bin/R`, the variables `R_SHARE_DIR`, `R_INCLUDE_DIR`, and `R_DOC_DIR` are now defined in terms of `R_HOME_DIR` rather than being hard-coded paths as they are with the current spkg.
+I can do this.
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 19:47:27
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 19:47:27
+
+I confirmed that moving a Sage install (not just binary) caused installing an R package to fail with precisely the problems one would expect if these were incorrectly defined (e.g. 
+
+```
+Warning: R include directory is empty -- perhaps need to install R-devel.rpm or similar
+```
+
+with appropriate nonexistent directory referenced).  The script `local/bin/R` had the (now incorrect) paths.  
+
+Then installing this spkg and retrying caused success, and `local/bin/R` looks right now too.  Nice work!
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 20:09:46
+
+One question, though... when I move Sage back and run Sage, it doesn't change `R_HOME_DIR` back.
+
+```
+R_HOME_DIR=/Users/.../Downloads/tempR/sage-5.9.beta5/local/lib/R
+```
+
+when it should be
+
+```
+R_HOME_DIR=/Users/.../Downloads/sage-5.9.beta5/local/lib/R
+```
+
+So this was changed, presumably, when I reinstalled the spkg.  It doesn't impact installing new R packages, by the way, nor functionality of R.
+
+In particular, moving a _different_ Sage installation and starting Sage changes some things, but doesn't change the location of `R_HOME_DIR` in `local/bin/R`.    I'm not sure why that doesn't affect functionality, but presumably this should somehow be taken care of.  On this ticket?
+
+
+---
+
+Comment by kcrisman created at 2013-04-16 20:09:46
+
+Changing status from positive_review to needs_info.
+
+
+---
+
+Comment by jhpalmieri created at 2013-04-16 22:20:17
+
+It took me a little while to understand this, too. Right before the lines defining `R_SHARE_DIR`, etc., there are lines
+
+```sh
+if test x$SAGE_BUILDING_R = x; then
+    R_HOME_DIR="$SAGE_LOCAL/lib/R/"
+fi
+```
+
+If you're not _building_ the R spkg, then this will be executed, overriding the hard-coded path earlier in the script, and setting `R_HOME_DIR` to the desired portable setting. I don't know R, so I don't know how to test this: if you run `sage -R`, can you execute some R command to tell you the current setting of `R_HOME_DIR`?
+
+
+---
+
+Comment by kcrisman created at 2013-04-17 01:36:38
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by kcrisman created at 2013-04-17 01:36:38
+
+Well, that is a Sage-specific thing, I think, but we have
+
+```
+R_HOME="${R_HOME_DIR}"
+```
+
+later on and also
+
+```
+$ ./sage -R RHOME
+/Users/.../Downloads/sage-5.9.beta5/local/lib/R/
+```
+
+So all is well, I think.
+
+
+---
+
+Comment by kcrisman created at 2013-04-17 01:36:47
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by jdemeyer created at 2013-04-18 10:07:58
+
+Resolution: fixed

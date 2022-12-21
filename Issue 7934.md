@@ -1,0 +1,77 @@
+# Issue 7934: Cannot import sage.matrix.all in isolation
+
+Issue created by migration from Trac.
+
+Original creator: dagss
+
+Original creation time: 2010-01-15 08:50:27
+
+Assignee: tbd
+
+This is against Sage 4.3.
+
+I'm assuming that this should be possible from a normal Python session:
+
+```
+import sage.matrix.all
+```
+
+
+(after all, one can do `import sage.all`)
+
+But it fails:
+
+```
+$ sage -python
+Python 2.6.2 (r262:71600, Jan  3 2010, 23:23:52) 
+[GCC 4.1.2 20080704 (Red Hat 4.1.2-46)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sage.matrix.all
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/matrix/all.py", line 1, in <module>
+    from matrix_space import MatrixSpace, is_MatrixSpace
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py", line 33, in <module>
+    import matrix
+  File "matrix.pyx", line 1, in init sage.matrix.matrix (sage/matrix/matrix.c:1767)
+  File "matrix2.pyx", line 1, in init sage.matrix.matrix2 (sage/matrix/matrix2.c:42673)
+  File "matrix1.pyx", line 1, in init sage.matrix.matrix1 (sage/matrix/matrix1.c:10948)
+  File "matrix0.pyx", line 32, in init sage.matrix.matrix0 (sage/matrix/matrix0.c:22905)
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/modules/free_module.py", line 161, in <module>
+    import free_module_element
+  File "free_module_element.pyx", line 111, in init sage.modules.free_module_element (sage/modules/free_module_element.c:22824)
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/rings/arith.py", line 18, in <module>
+    from sage.rings.rational_field import QQ
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/rings/rational_field.py", line 52, in <module>
+    import rational
+  File "rational.pyx", line 70, in init sage.rings.rational (sage/rings/rational.c:23702)
+  File "real_mpfr.pyx", line 1, in init sage.rings.real_mpfr (sage/rings/real_mpfr.c:29089)
+  File "complex_number.pxd", line 8, in init sage.libs.mpmath.utils (sage/libs/mpmath/utils.c:5332)
+  File "complex_double.pxd", line 13, in init sage.rings.complex_number (sage/rings/complex_number.c:14336)
+  File "complex_double.pyx", line 88, in init sage.rings.complex_double (sage/rings/complex_double.c:13660)
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/rings/complex_field.py", line 86, in ComplexField
+    C = ComplexField_class(prec)
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/rings/complex_field.py", line 175, in __init__
+    ParentWithGens.__init__(self, self._real_field(), ('I',), False)
+  File "/mn/corcaroli/d1/dagss/sage-4.3/local/lib/python2.6/site-packages/sage/rings/complex_field.py", line 228, in _real_field
+    self.__real_field = real_mpfr.RealField_constructor(self._prec)
+  File "real_mpfr.pyx", line 247, in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3668)
+TypeError: 'NoneType' object is unsubscriptable
+```
+
+
+
+
+
+---
+
+Comment by was created at 2010-03-30 00:37:06
+
+One cannot import any subset of the Sage library without first importing sage.all.    The above is very, very much not supported.
+
+
+---
+
+Comment by was created at 2010-03-30 00:37:06
+
+Resolution: invalid

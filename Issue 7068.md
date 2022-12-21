@@ -1,0 +1,389 @@
+# Issue 7068: gfan 0.3.p4 Shows numerous missing header files with Sun compiler.
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2009-09-29 13:02:21
+
+Assignee: tbd
+
+CC:  david.kirkby@onetel.ne dimpase
+
+Using
+
+    * Solaris 10 update 7 on SPARC
+    * sage-4.1.2.alpha2
+    * Sun Studio 12.1
+    * An updated configure script to allow the Sun compiler to be used #7021
+
+
+```
+gfan-0.3.p4/src/wallideal.h
+gfan-0.3.p4/src/xfig.cpp
+gfan-0.3.p4/src/xfig.h
+Finished extraction
+****************************************************
+Host system
+uname -a:
+SunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000
+****************************************************
+****************************************************
+CC Version
+/opt/xxxsunstudio12.1/bin/cc -v
+usage: cc [ options] files.  Use 'cc -flags' for details
+****************************************************
+make[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/gfan-0.3.p4/src'
+g++ -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -O2 -DGMPRATIONAL    -c lp_cdd.cpp
+lp_cdd.cpp:2:21: error: setoper.h: No such file or directory
+lp_cdd.cpp:3:17: error: cdd.h: No such file or directory
+lp_cdd.cpp:4:19: error: cdd_f.h: No such file or directory
+lp_cdd.cpp:12: error: 'ddf_MatrixPtr' does not name a type
+lp_cdd.cpp: In function 'void cddinit()':
+lp_cdd.cpp:54: error: 'ddf_set_global_constants' was not declared in this scope
+lp_cdd.cpp: In member function 'virtual bool LpSolverCdd::isFacet(const IntegerVectorList&, std::_List_const_iterator<Vektor<int> >)':
+lp_cdd.cpp:63: error: 'ddf_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:63: error: expected ';' before 'M'
+lp_cdd.cpp:64: error: 'ddf_colrange' was not declared in this scope
+lp_cdd.cpp:64: error: expected ';' before 'd'
+lp_cdd.cpp:65: error: 'ddf_ErrorType' was not declared in this scope
+lp_cdd.cpp:65: error: expected ';' before 'err'
+lp_cdd.cpp:66: error: 'ddf_rowset' was not declared in this scope
+lp_cdd.cpp:66: error: expected ';' before 'redrows'
+lp_cdd.cpp:67: error: 'ddf_colset' was not declared in this scope
+lp_cdd.cpp:67: error: expected ';' before 'ignoredcols'
+lp_cdd.cpp:69: error: 'mytype' was not declared in this scope
+lp_cdd.cpp:69: error: expected ';' before 'val'
+lp_cdd.cpp:70: error: 'ddf_DataFileType' was not declared in this scope
+lp_cdd.cpp:70: error: expected ';' before 'inputfile'
+lp_cdd.cpp:78: error: 'M' was not declared in this scope
+lp_cdd.cpp:78: error: 'err' was not declared in this scope
+lp_cdd.cpp:78: error: 'vectorList2Matrix' was not declared in this scope
+lp_cdd.cpp:80: error: 'ddf_NoError' was not declared in this scope
+lp_cdd.cpp:82: error: 'd' was not declared in this scope
+lp_cdd.cpp:93: error: 'ddf_Arow' does not name a type
+lp_cdd.cpp:95: error: 'temp' was not declared in this scope
+lp_cdd.cpp:95: error: 'ddf_InitializeArow' was not declared in this scope
+lp_cdd.cpp:97: error: 'ddf_Redundant' was not declared in this scope
+lp_cdd.cpp:99: error: 'ddf_FreeMatrix' was not declared in this scope
+lp_cdd.cpp:100: error: 'ddf_FreeArow' was not declared in this scope
+lp_cdd.cpp:103: error: 'ddf_NoError' was not declared in this scope
+lp_cdd.cpp: In function 'void cddinitGmp()':
+lp_cdd.cpp:124: error: 'dd_set_global_constants' was not declared in this scope
+lp_cdd.cpp: At global scope:
+lp_cdd.cpp:130: error: 'dd_MatrixPtr' does not name a type
+lp_cdd.cpp:178: error: 'dd_MatrixPtr' does not name a type
+lp_cdd.cpp: In member function 'virtual bool LpSolverCddGmp::hasHomogeneousSolution(int, const IntegerVectorList&, const IntegerVectorList&)':
+lp_cdd.cpp:229: error: 'dd_LPSolverType' was not declared in this scope
+lp_cdd.cpp:229: error: expected ';' before 'solver'
+lp_cdd.cpp:230: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:230: error: expected ';' before 'A'
+lp_cdd.cpp:231: error: 'dd_LPSolutionPtr' was not declared in this scope
+lp_cdd.cpp:231: error: expected ';' before 'lps1'
+lp_cdd.cpp:232: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:232: error: expected ';' before 'err'
+lp_cdd.cpp:236: error: 'dd_LPPtr' was not declared in this scope
+lp_cdd.cpp:236: error: expected ';' before 'lp'
+lp_cdd.cpp:238: error: 'A' was not declared in this scope
+lp_cdd.cpp:238: error: 'err' was not declared in this scope
+lp_cdd.cpp:238: error: 'vectorList2MatrixIncludingFirstColumnGmp' was not declared in this scope
+lp_cdd.cpp:240: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:242: error: 'dd_LPmax' was not declared in this scope
+lp_cdd.cpp:243: error: 'lp' was not declared in this scope
+lp_cdd.cpp:243: error: 'dd_Matrix2LP' was not declared in this scope
+lp_cdd.cpp:244: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:251: error: 'lp1' was not declared in this scope
+lp_cdd.cpp:251: error: 'dd_MakeLPforInteriorFinding' was not declared in this scope
+lp_cdd.cpp:252: error: 'solver' was not declared in this scope
+lp_cdd.cpp:252: error: 'dd_LPSolve' was not declared in this scope
+lp_cdd.cpp:253: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:260: error: 'lps1' was not declared in this scope
+lp_cdd.cpp:260: error: 'dd_CopyLPSolution' was not declared in this scope
+lp_cdd.cpp:273: error: 'dd_Positive' was not declared in this scope
+lp_cdd.cpp:274: error: 'dd_Negative' was not declared in this scope
+lp_cdd.cpp:278: error: 'dd_FreeLPData' was not declared in this scope
+lp_cdd.cpp:279: error: 'dd_FreeLPSolution' was not declared in this scope
+lp_cdd.cpp:281: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp: In member function 'virtual bool LpSolverCddGmp::isFacet(const IntegerVectorList&, std::_List_const_iterator<Vektor<int> >)':
+lp_cdd.cpp:294: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:294: error: expected ';' before 'M'
+lp_cdd.cpp:295: error: 'dd_colrange' was not declared in this scope
+lp_cdd.cpp:295: error: expected ';' before 'd'
+lp_cdd.cpp:296: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:296: error: expected ';' before 'err'
+lp_cdd.cpp:297: error: 'dd_rowset' was not declared in this scope
+lp_cdd.cpp:297: error: expected ';' before 'redrows'
+lp_cdd.cpp:298: error: 'dd_colset' was not declared in this scope
+lp_cdd.cpp:298: error: expected ';' before 'ignoredcols'
+lp_cdd.cpp:300: error: 'mytype' was not declared in this scope
+lp_cdd.cpp:300: error: expected ';' before 'val'
+lp_cdd.cpp:301: error: 'dd_DataFileType' was not declared in this scope
+lp_cdd.cpp:301: error: expected ';' before 'inputfile'
+lp_cdd.cpp:310: error: 'M' was not declared in this scope
+lp_cdd.cpp:310: error: 'err' was not declared in this scope
+lp_cdd.cpp:310: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:312: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:314: error: 'd' was not declared in this scope
+lp_cdd.cpp:325: error: 'dd_Arow' does not name a type
+lp_cdd.cpp:327: error: 'temp' was not declared in this scope
+lp_cdd.cpp:327: error: 'dd_InitializeArow' was not declared in this scope
+lp_cdd.cpp:329: error: 'dd_Redundant' was not declared in this scope
+lp_cdd.cpp:332: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp:333: error: 'dd_FreeArow' was not declared in this scope
+lp_cdd.cpp:335: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp: In function 'int staticInteriorPoint(__mpq_struct (*)[1], const IntegerVectorList&, bool, const IntegerVector*)':
+lp_cdd.cpp:349: error: 'dd_LPSolverType' was not declared in this scope
+lp_cdd.cpp:349: error: expected ';' before 'solver'
+lp_cdd.cpp:350: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:350: error: expected ';' before 'A'
+lp_cdd.cpp:351: error: 'dd_LPSolutionPtr' was not declared in this scope
+lp_cdd.cpp:351: error: expected ';' before 'lps1'
+lp_cdd.cpp:352: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:352: error: expected ';' before 'err'
+lp_cdd.cpp:356: error: 'dd_LPPtr' was not declared in this scope
+lp_cdd.cpp:356: error: expected ';' before 'lp'
+lp_cdd.cpp:365: error: 'A' was not declared in this scope
+lp_cdd.cpp:365: error: 'err' was not declared in this scope
+lp_cdd.cpp:365: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:368: error: 'A' was not declared in this scope
+lp_cdd.cpp:368: error: 'err' was not declared in this scope
+lp_cdd.cpp:368: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:369: error: 'err' was not declared in this scope
+lp_cdd.cpp:369: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:375: error: 'A' was not declared in this scope
+lp_cdd.cpp:375: error: 'dd_set_si' was not declared in this scope
+lp_cdd.cpp:380: error: 'A' was not declared in this scope
+lp_cdd.cpp:380: error: 'set_addelem' was not declared in this scope
+lp_cdd.cpp:383: error: 'A' was not declared in this scope
+lp_cdd.cpp:383: error: 'dd_LPmax' was not declared in this scope
+lp_cdd.cpp:384: error: 'lp' was not declared in this scope
+lp_cdd.cpp:384: error: 'err' was not declared in this scope
+lp_cdd.cpp:384: error: 'dd_Matrix2LP' was not declared in this scope
+lp_cdd.cpp:385: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:392: error: 'lp1' was not declared in this scope
+lp_cdd.cpp:392: error: 'dd_MakeLPforInteriorFinding' was not declared in this scope
+lp_cdd.cpp:393: error: 'solver' was not declared in this scope
+lp_cdd.cpp:393: error: 'dd_LPSolve' was not declared in this scope
+lp_cdd.cpp:394: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:400: error: 'lps1' was not declared in this scope
+lp_cdd.cpp:400: error: 'dd_CopyLPSolution' was not declared in this scope
+lp_cdd.cpp:402: error: 'dd_Positive' was not declared in this scope
+lp_cdd.cpp:403: error: 'dd_Negative' was not declared in this scope
+lp_cdd.cpp:412: error: 'dd_FreeLPData' was not declared in this scope
+lp_cdd.cpp:413: error: 'dd_FreeLPSolution' was not declared in this scope
+lp_cdd.cpp:415: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp: In function 'int staticRelativeInteriorPoint(__mpq_struct (*)[1], const IntegerVectorList&, bool, const IntegerVector*)':
+lp_cdd.cpp:428: error: 'dd_LPSolverType' was not declared in this scope
+lp_cdd.cpp:428: error: expected ';' before 'solver'
+lp_cdd.cpp:429: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:429: error: expected ';' before 'A'
+lp_cdd.cpp:430: error: 'dd_LPSolutionPtr' was not declared in this scope
+lp_cdd.cpp:430: error: expected ';' before 'lps1'
+lp_cdd.cpp:431: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:431: error: expected ';' before 'err'
+lp_cdd.cpp:435: error: 'dd_LPPtr' was not declared in this scope
+lp_cdd.cpp:435: error: expected ';' before 'lp'
+lp_cdd.cpp:444: error: 'A' was not declared in this scope
+lp_cdd.cpp:444: error: 'err' was not declared in this scope
+lp_cdd.cpp:444: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:447: error: 'A' was not declared in this scope
+lp_cdd.cpp:447: error: 'err' was not declared in this scope
+lp_cdd.cpp:447: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:448: error: 'err' was not declared in this scope
+lp_cdd.cpp:448: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:454: error: 'A' was not declared in this scope
+lp_cdd.cpp:454: error: 'dd_set_si' was not declared in this scope
+lp_cdd.cpp:459: error: 'A' was not declared in this scope
+lp_cdd.cpp:459: error: 'set_addelem' was not declared in this scope
+lp_cdd.cpp:462: error: 'A' was not declared in this scope
+lp_cdd.cpp:462: error: 'dd_LPmax' was not declared in this scope
+lp_cdd.cpp:463: error: 'lp' was not declared in this scope
+lp_cdd.cpp:463: error: 'err' was not declared in this scope
+lp_cdd.cpp:463: error: 'dd_Matrix2LP' was not declared in this scope
+lp_cdd.cpp:464: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:471: error: 'lp1' was not declared in this scope
+lp_cdd.cpp:471: error: 'dd_MakeLPforInteriorFinding' was not declared in this scope
+lp_cdd.cpp:472: error: 'solver' was not declared in this scope
+lp_cdd.cpp:472: error: 'dd_LPSolve' was not declared in this scope
+lp_cdd.cpp:473: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:479: error: 'lps1' was not declared in this scope
+lp_cdd.cpp:479: error: 'dd_CopyLPSolution' was not declared in this scope
+lp_cdd.cpp:481: error: 'dd_Positive' was not declared in this scope
+lp_cdd.cpp:482: error: 'dd_Negative' was not declared in this scope
+lp_cdd.cpp:491: error: 'dd_FreeLPData' was not declared in this scope
+lp_cdd.cpp:492: error: 'dd_FreeLPSolution' was not declared in this scope
+lp_cdd.cpp:494: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp: In member function 'virtual bool LpSolverCddGmp::positiveVectorInKernel(const IntegerVectorList&, IntegerVector*)':
+lp_cdd.cpp:762: error: 'dd_LPSolverType' was not declared in this scope
+lp_cdd.cpp:762: error: expected ';' before 'solver'
+lp_cdd.cpp:763: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:763: error: expected ';' before 'A'
+lp_cdd.cpp:764: error: 'dd_LPSolutionPtr' was not declared in this scope
+lp_cdd.cpp:764: error: expected ';' before 'lps1'
+lp_cdd.cpp:765: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:765: error: expected ';' before 'err'
+lp_cdd.cpp:769: error: 'dd_LPPtr' was not declared in this scope
+lp_cdd.cpp:769: error: expected ';' before 'lp'
+lp_cdd.cpp:771: error: 'A' was not declared in this scope
+lp_cdd.cpp:771: error: 'err' was not declared in this scope
+lp_cdd.cpp:771: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:773: error: 'set_addelem' was not declared in this scope
+lp_cdd.cpp:776: error: 'dd_set_si' was not declared in this scope
+lp_cdd.cpp:781: error: 'dd_set_si' was not declared in this scope
+lp_cdd.cpp:784: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:785: error: 'dd_LPmax' was not declared in this scope
+lp_cdd.cpp:800: error: 'lp' was not declared in this scope
+lp_cdd.cpp:800: error: 'dd_Matrix2LP' was not declared in this scope
+lp_cdd.cpp:801: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:805: error: 'solver' was not declared in this scope
+lp_cdd.cpp:805: error: 'dd_LPSolve' was not declared in this scope
+lp_cdd.cpp:806: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:809: error: 'dd_WriteLPResult' was not declared in this scope
+lp_cdd.cpp:812: error: 'lps1' was not declared in this scope
+lp_cdd.cpp:812: error: 'dd_CopyLPSolution' was not declared in this scope
+lp_cdd.cpp:814: error: 'dd_Positive' was not declared in this scope
+lp_cdd.cpp:827: error: 'dd_WriteNumber' was not declared in this scope
+lp_cdd.cpp:835: error: 'dd_Arow' was not declared in this scope
+lp_cdd.cpp:835: error: expected ';' before 'point'
+lp_cdd.cpp:844: error: 'point' was not declared in this scope
+lp_cdd.cpp:854: error: 'point' was not declared in this scope
+lp_cdd.cpp:867: error: 'dd_WriteNumber' was not declared in this scope
+lp_cdd.cpp:890: error: 'dd_FreeLPData' was not declared in this scope
+lp_cdd.cpp:891: error: 'dd_FreeLPSolution' was not declared in this scope
+lp_cdd.cpp:892: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp: In member function 'virtual int LpSolverCddGmp::rankOfMatrix(const IntegerVectorList&)':
+lp_cdd.cpp:907: error: 'dd_rowset' was not declared in this scope
+lp_cdd.cpp:907: error: expected ';' before 'r'
+lp_cdd.cpp:919: error: 'dd_LPSolverType' was not declared in this scope
+lp_cdd.cpp:919: error: expected ';' before 'solver'
+lp_cdd.cpp:920: error: 'dd_MatrixPtr' was not declared in this scope
+lp_cdd.cpp:920: error: expected ';' before 'A'
+lp_cdd.cpp:921: error: 'dd_ErrorType' was not declared in this scope
+lp_cdd.cpp:921: error: expected ';' before 'err'
+lp_cdd.cpp:926: error: 'A' was not declared in this scope
+lp_cdd.cpp:926: error: 'err' was not declared in this scope
+lp_cdd.cpp:926: error: 'vectorList2MatrixGmp' was not declared in this scope
+lp_cdd.cpp:931: error: 'set_addelem' was not declared in this scope
+lp_cdd.cpp:935: error: 'dd_set_si' was not declared in this scope
+lp_cdd.cpp:943: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:944: error: 'dd_LPmax' was not declared in this scope
+lp_cdd.cpp:950: error: 'r' was not declared in this scope
+lp_cdd.cpp:950: error: 'dd_RedundantRows' was not declared in this scope
+lp_cdd.cpp:951: error: 'dd_NoError' was not declared in this scope
+lp_cdd.cpp:953: error: 'set_card' was not declared in this scope
+lp_cdd.cpp:957: error: 'set_free' was not declared in this scope
+lp_cdd.cpp:959: error: 'dd_FreeMatrix' was not declared in this scope
+lp_cdd.cpp: At global scope:
+lp_cdd.cpp:971: error: variable or field 'dd_ComputeAinc' declared void
+lp_cdd.cpp:971: error: 'dd_PolyhedraPtr' was not declared in this scope
+make[2]: *** [lp_cdd.o] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/gfan-0.3.p4/src'
+Error building gfan
+
+real    0m2.359s
+user    0m1.011s
+sys     0m0.174s
+sage: An error occurred while installing gfan-0.3.p4
+```
+
+
+
+---
+
+Comment by drkirkby created at 2009-11-09 14:06:19
+
+Changing component from algebra to solaris.
+
+
+---
+
+Comment by drkirkby created at 2010-01-05 03:43:05
+
+There's a later version of gfan in Sage now. 
+
+Looking at the above, it seems g++ was used, not the Sun compiler, since g++ was hard-coded.
+
+
+---
+
+Comment by drkirkby created at 2010-01-05 03:43:05
+
+Resolution: wontfix
+
+
+---
+
+Comment by drkirkby created at 2010-01-05 03:46:08
+
+Correction, the version in Sage is still 0.3.
+
+
+---
+
+Comment by drkirkby created at 2010-01-05 03:46:08
+
+Resolution changed from wontfix to 
+
+
+---
+
+Comment by drkirkby created at 2010-01-05 03:46:08
+
+Changing status from closed to new.
+
+
+---
+
+Comment by drkirkby created at 2010-01-07 01:03:49
+
+#7820 is a ticket to update the version of gfan to 0.4plus. At the time of writing, the ticket is awaiting review. 
+
+I tested that changed package with Sun Studio 12.1 on Open Solaris (not SPARC like this about). gfan 0.4plus will not build with the Sun compiler on Open Solaris, so I doubt it will build on SPARC either, but I've not checked that. 
+
+Dave
+
+
+---
+
+Comment by mkoeppe created at 2020-07-08 16:51:35
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by mkoeppe created at 2020-07-08 16:51:35
+
+Outdated, should be closed
+
+
+---
+
+Comment by mjo created at 2020-07-12 19:56:12
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mjo created at 2020-07-12 19:56:12
+
+The goal of these tickets is laudable, but:
+
+* We need at least one user who is able to test.
+* The package/OS information on this ticket is outdated beyond usefulness.
+* Upstream is a better place to report portability issues these days.
+
+
+---
+
+Comment by chapoton created at 2020-07-15 07:18:41
+
+Resolution: invalid
+
+
+---
+
+Comment by chapoton created at 2020-07-15 07:18:41
+
+Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.

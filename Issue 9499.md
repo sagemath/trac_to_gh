@@ -1,0 +1,238 @@
+# Issue 9499: recovery gracefully from libsingular errors
+
+Issue created by migration from Trac.
+
+Original creator: malb
+
+Original creation time: 2010-07-14 16:53:17
+
+Assignee: was
+
+Keywords: libsingular
+
+
+```
+sage: from sage.libs.singular.function import singular_function
+sage: from sage.libs.singular.function import lib as singular_libary
+sage: singular_lib('triang.lib'
+sage: triangL = singular_function("triangL"
+sage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex'
+sage: I = sage.rings.ideal.Cyclic(P
+sage: triangL(I
+Traceback (most recent call last)
+..
+RuntimeError: There has been an error in a Singular function.
+
+sage: G = I.groebner_basis(
+sage: triangL(G,attributes={G:{"isSB":1}}
+[[e + d + c + b + a, ...]
+
+
+```
+
+
+
+---
+
+Comment by was created at 2010-07-14 20:20:56
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by was created at 2010-07-14 20:28:29
+
+This is an improvement, in that if an error occurs, then after trying *two* more calls to libsingular, the second one seems to partly work, instead of the library being totally broken.  To replicate, apply trac #9500, then do:
+
+
+```
+flat:rings wstein$ sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)
+<class 'sage.rings.quotient_ring_element.QuotientRingElement'>
+sage: 1/a
+   ? 2nd module does not lie in the first
+ERROR: An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line statement', (189, 0))
+| Sage Version 4.4.4, Release Date: 2010-06-23                       |
+| Type notebook() for the GUI, and license() for information.        |
+---------------------------------------------------------------------------
+NotImplementedError                       Traceback (most recent call last)
+
+/Users/wstein/sage/build/sage-4.4.4/devel/sage-main/sage/rings/<ipython console> in <module>()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6126)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11973)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement._div_ (sage/structure/element.c:12046)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in _div_(self, right)
+    361         XY = L.lift([R] + B)
+    362         if XY == [0]*len(XY):
+--> 363             raise NotImplementedError
+    364         return P(XY[0])
+    365 
+
+NotImplementedError: 
+sage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)
+   ? error occurred in standard.lib::groebner line 850: `parameter def i_par; parameter  list #;  `
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+
+/Users/wstein/sage/build/sage-4.4.4/devel/sage-main/sage/rings/<ipython console> in <module>()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject._first_ngens (sage/structure/category_object.c:2992)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.gens (sage/structure/parent_gens.c:2707)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring.pyc in gen(self, i)
+    693             d
+    694         """
+--> 695         return self(self.__R.gen(i))
+    696 
+    697 
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring.pyc in __call__(self, x, coerce)
+    575             R = self.cover_ring()
+    576             x = R(x)
+--> 577         return quotient_ring_element.QuotientRingElement(self, x)
+    578 
+    579     def _coerce_impl(self, x):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in __init__(self, parent, rep, reduce)
+    102         self.__rep = rep
+    103         if reduce:
+--> 104             self._reduce_()
+    105 
+    106     def _reduce_(self):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in _reduce_(self)
+    121         """
+    122         I = self.parent().defining_ideal()
+--> 123         self.__rep = I.reduce(self.__rep)
+    124 
+    125     def lift(self):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in reduce(self, f)
+   2769         """
+   2770         try:
+-> 2771             strat = self._groebner_strategy()
+   2772             return strat.normal_form(f)
+   2773         except (TypeError, NotImplementedError, ValueError):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)
+    320             2
+    321          """
+--> 322         return self._cachedmethod._instance_call(self._instance, *args, **kwds)
+    323 
+    324     def get_cache(self, *args, **kwds):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in _instance_call(self, inst, *args, **kwds)
+    464             return cache[key]
+    465         else:
+--> 466             cache[key] = self._cachedfunc.f(inst, *args, **kwds)
+    467             return cache[key]
+    468 
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in _groebner_strategy(self)
+    557         from sage.libs.singular.groebner_strategy import GroebnerStrategy
+    558 
+--> 559         return GroebnerStrategy(MPolynomialIdeal(self.ring(), self.groebner_basis()))
+    560 
+    561     def plot(self, singular=singular_default):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)
+    320             2
+    321          """
+--> 322         return self._cachedmethod._instance_call(self._instance, *args, **kwds)
+    323 
+    324     def get_cache(self, *args, **kwds):
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in _instance_call(self, inst, *args, **kwds)
+    464             return cache[key]
+    465         else:
+--> 466             cache[key] = self._cachedfunc.f(inst, *args, **kwds)
+    467             return cache[key]
+    468 
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in groebner_basis(self, algorithm, *args, **kwds)
+   2641         if algorithm is '':
+   2642             try:
+-> 2643                 gb = self._groebner_basis_libsingular("groebner", *args, **kwds)
+   2644             except (TypeError,NameError), msg: # conversion to Singular not supported
+   2645                 try:
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in wrapper(*args, **kwds)
+    367         """
+    368         with RedSBContext():
+--> 369             return func(*args, **kwds)
+    370 
+    371     from sage.misc.sageinspect import sage_getsource 
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in _groebner_basis_libsingular(self, algorithm, redsb, red_tail)
+   1248             S = slimgb_libsingular(self)
+   1249         elif algorithm == "groebner":
+-> 1250             S = groebner(self)
+   1251         else:
+   1252             try:
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.SingularFunction.__call__ (sage/libs/singular/function.cpp:9648)()
+
+/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.call_function (sage/libs/singular/function.cpp:10937)()
+
+RuntimeError: A Singular function call failed.
+sage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)
+   skipping text from `parameter`
+<class 'sage.rings.quotient_ring_element.QuotientRingElement'>
+sage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)
+<class 'sage.rings.quotient_ring_element.QuotientRingElement'>
+```
+
+
+
+---
+
+Comment by was created at 2010-07-14 20:28:29
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by malb created at 2010-07-14 21:08:35
+
+The updated patch fixed the problem.
+
+
+---
+
+Comment by malb created at 2010-07-14 21:08:35
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+next attempt
+
+
+---
+
+Comment by was created at 2010-07-14 23:06:45
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mpatel created at 2010-07-20 09:31:35
+
+Resolution: fixed

@@ -1,0 +1,474 @@
+# Issue 8680: untabify Sage again, and make it stick
+
+Issue created by migration from Trac.
+
+Original creator: jhpalmieri
+
+Original creation time: 2010-04-13 04:09:49
+
+Assignee: jason
+
+CC:  ddrake mvngu
+
+There are two patches: one removes tabs from all files except symbolic/expression.pyx -- see [#3852](http://trac.sagemath.org/sage_trac/ticket/3852#comment:20).  The second patches sage-doctest so that files with tabs in them will fail doctesting.
+
+
+
+---
+
+Comment by jhpalmieri created at 2010-04-13 04:12:45
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by was created at 2010-04-13 04:15:27
+
+Can you implement a way to override the "no tab" behavior?   E.g., some special string in the file that allows tabs.  This could be very important for certain rare cases.     E.g., if the file contains the string SAGE_DOCTEST_ALLOW_TABS, then the tab test isn't made.
+
+
+---
+
+Comment by jhpalmieri created at 2010-04-13 04:37:56
+
+Okay, here's a new version implementing that.  It's only documented at the top of sage-doctest (and as a comment in the code later) because I didn't know where else to put it.  Minh, do you have any opinions?
+
+
+---
+
+Comment by mvngu created at 2010-04-13 05:15:07
+
+Replying to [comment:3 jhpalmieri]:
+> Okay, here's a new version implementing that.  It's only documented at the top of sage-doctest (and as a comment in the code later) because I didn't know where else to put it. 
+
+Eventually, the new variable `SAGE_DOCTEST_ALLOW_TABS` would need to be documented in the Developer's Guide, along with all others defined by Sage. Ticket #8263 keeps track of this issue.
+
+
+
+
+> Minh, do you have any opinions?
+
+Explicitly disallowing TABs is just one of many tasks in sanitizing a patch before the patch is committed. I recall a few months ago, the sage-combinat team had a discussion about creating a new script for the script repository. The purpose of this script was to sanitize the commit message of a patch. In particular, the commit message must contain the ticket number. I think it's time we think about writing such a script called, say, `sage-sanitize`. As a tentative list of rules to check for, `sage-sanitize` would check for the following in a patch:
+
+ * TAB characters
+ * The preamble of a Mercurial patch, which consists at minimum of the following:
+ {{{
+# HG changeset patch
+# User <Your Name> your.name`@`home.com
+# Date
+# Node
+# Parent
+#xxxx: <commit message goes here>
+ }}}
+
+I'm in favour of automating as much as possible tedious tasks such as the above. An advantage is that prior to reviewing a patch, a reviewer (or indeed a continuous integration system) could run a patch through this sanity checker script. If all rules in the script pass, then the reviewer could then proceed with reviewing the implementation contained in the patch.
+
+
+
+
+If you agree, a ticket could be opened for this new `sage-sanitize` script.
+
+
+---
+
+Comment by jason created at 2010-04-13 07:28:04
+
+Replying to [comment:4 mvngu]:
+
+> I'm in favour of automating as much as possible tedious tasks such as the above. An advantage is that prior to reviewing a patch, a reviewer (or indeed a continuous integration system) could run a patch through this sanity checker script. If all rules in the script pass, then the reviewer could then proceed with reviewing the implementation contained in the patch.
+> 
+
+
+
+
+In this spirit, I'm strongly in favor of the sage -merge script prepending the ticket number where a patch came from, thus fulfilling the requirement that the ticket number be in the patch.  This way (1) the ticket number is guaranteed to be accurate and consistently done (i.e., reflects what ticket you can find the patch at, and always is #xxxx: <commit>), and (2) it doesn't waste developer's time to look up and type in correctly a 4-5 digit number which could be totally automated.
+
+
+---
+
+Comment by ddrake created at 2010-04-13 08:25:49
+
+I applied the patches here, and when doctesting, there are still some tabs:
+
+  * devel/sage/sage/symbolic/expression.pyx (which is known; John deliberately avoided that file)
+  * devel/sage/doc/fr/tutorial/tour_algebra.rst
+  * devel/sage/doc/en/tutorial/tour_functions.rst
+  * devel/sage/doc/en/developer/coding_in_python.rst
+  * devel/sage/doc/en/developer/conventions.rst
+  * devel/sage/doc/common/builder.py
+  * devel/sage/doc/en/developer/doctesting.rst
+
+The only problem here is that the untabify patch will almost certainly screw up a bunch of other patches; are we willing to do that? In technical terms, I can give these two patches a positive review, but in social terms, I'm hesitant to make a bunch of people rebase patches.
+
+
+---
+
+Comment by ddrake created at 2010-04-13 08:25:49
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by jhpalmieri created at 2010-04-13 18:56:17
+
+I missed the tab in builder.py.  I'm going to skip the others: I think we should only care about tabs in Python or Cython files.  I've attached new patches to deal with these issues.
+
+I think that no matter when we apply this, it has the potential to be a little painful.  Right now there are 121 tickets with positive review.  I don't know the plan for the next release, but we could merge the scripts patch ASAP and then we (probably meaning me) could keep rebasing the patch for untabifying the Sage library until 4.4 was officially released.  Maybe the release managers have another idea...
+
+
+---
+
+Comment by jhpalmieri created at 2010-04-13 18:56:17
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+Sage repo
+
+
+---
+
+Attachment
+
+scripts repo
+
+
+---
+
+Comment by jhpalmieri created at 2010-04-13 20:20:20
+
+Changing component from misc to doctest.
+
+
+---
+
+Comment by leif created at 2010-04-15 18:33:11
+
+*sage-devel thread:* http://groups.google.com/group/sage-devel/browse_thread/thread/3a777192a361fed7
+
+I'm not happy with "brute-force" converting _any_ tab to space(s), and it would be better to have a tool that (conditionally) does this rather than supplying patches to lots of files converted by Emacs. The same tool could be used just to check for "illegal" tabs. As I understand this, these are _tabs in leading whitespace_.
+
+Trailing whitespace could be removed. (Currently trailing tabs are converted to many trailing spaces.)
+
+I've also come across files that do not end with newline...
+
+Opinions?
+
+-Leif
+
+
+---
+
+Comment by jhpalmieri created at 2010-06-23 21:23:30
+
+Replying to [comment:5 jason]:
+> In this spirit, I'm strongly in favor of the sage -merge script prepending the ticket number where a patch came from, thus fulfilling the requirement that the ticket number be in the patch.  This way (1) the ticket number is guaranteed to be accurate and consistently done (i.e., reflects what ticket you can find the patch at, and always is #xxxx: <commit>), and (2) it doesn't waste developer's time to look up and type in correctly a 4-5 digit number which could be totally automated.
+
+See #9319.
+
+
+---
+
+Attachment
+
+Sage repo; rebased to 4.5.alpha1
+
+
+---
+
+Comment by davidloeffler created at 2010-06-30 17:54:17
+
+I've done a rebased/updated version of jhpalmieri's library code patch, and checked that it doesn't conflict with any of the 103 (!) positively reviewed non-spkg patches on trac. (I've also checked to see that none of those 103 patches adds any tabs). 
+
+Let's get this in ASAP, before it starts happening again.
+
+
+---
+
+Comment by davidloeffler created at 2010-06-30 17:54:17
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by leif created at 2010-06-30 18:42:46
+
+Replying to [comment:11 davidloeffler]:
+> I've done a rebased/updated version of jhpalmieri's library code patch, and checked that it doesn't conflict with any of the 103 (!) positively reviewed non-spkg patches on trac. (I've also checked to see that none of those 103 patches adds any tabs).
+
+:-) Well done...
+ 
+> Let's get this in ASAP, before it starts happening again.
+
++100, asap.
+
+(I though still prefer to have [configurable] tools doing such jobs.)
+
+
+---
+
+Comment by leif created at 2010-07-01 00:35:05
+
+Just for the record: I've successfully applied David's patch to 4.5.alpha1 (without the optional GLPK package) and all tests passed (`ptestlong`).
+
+(I did _not_ yet apply the patch to `sage-doctest`.)
+
+
+---
+
+Comment by davidloeffler created at 2010-07-01 17:01:04
+
+Replying to [comment:13 leif]:
+> Just for the record: I've successfully applied David's patch to 4.5.alpha1 (without the optional GLPK package) and all tests passed (`ptestlong`).
+> 
+> (I did _not_ yet apply the patch to `sage-doctest`.)
+> 
+
+If you had done so, you'd have noticed that it brings up the following bug: 
+
+```
+**********************************************************************
+File "/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/combinat/words/suffix_trees.py", line 604:
+    sage: s._word_content
+Expected:
+    doctest:492: DeprecationWarning: _word_content is deprecated, use _letters instead
+    ['c', 'a', 'c', 'a', 'o']
+Got:
+    doctest:509: DeprecationWarning: _word_content is deprecated, use _letters instead
+    ['c', 'a', 'c', 'a', 'o']
+```
+
+I didn't notice this before either, since it doesn't occur if you use `sage -t`, but it does occur if you use `make ptest[long]`, for some reason. In any case the correct solution is clearly for the line number to be replaced by `...`, so it doesn't break every time someone changes the doctest script.
+
+
+---
+
+Comment by davidloeffler created at 2010-07-01 17:31:01
+
+Apply to sage repo over trac_8680-untabify-4.5.alpha1.patch
+
+
+---
+
+Comment by davidloeffler created at 2010-07-01 17:31:09
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by davidloeffler created at 2010-07-01 17:31:27
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by davidloeffler created at 2010-07-01 17:31:27
+
+Here's the requisite one-line fix.
+
+
+---
+
+Comment by jhpalmieri created at 2010-07-01 20:41:35
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by jhpalmieri created at 2010-07-01 20:41:35
+
+I don't know if "492" is a line number or not.  Also, with "make ptestlong" on sage.math, I don't see the doctest failure either before or after applying the "tinyfix" patch.  Regardless, the patch makes sense and fits with how other depreciation warnings are handled in doctests.  So positive review.
+
+
+---
+
+Comment by leif created at 2010-07-01 22:25:48
+
+Sorry for the delay, I'm currently trying to make sense of all the doctest-related scripts... ;-) (By doing so, I encountered a number of flaws, inconsistencies and things I'm not sure if they are correct and/or intentional.)
+
+I suggest splitting this ticket into two, such that the tab-removing Sage library patch can be merged immediately (cf. Robert Miller's mail, not posted on sage-release).
+
+I don't think the detection of "illegal" tabs is in the right place/done the appropriate way; it's IMHO undesirable to slow down _every_ doctesting by scanning each file twice in addition.
+
+An alternative would be to (also) make tab-checking an _option_ to the test scripts and/or control it by another environment variable, something I wanted to provide a reviewer patch for, but couldn't yet because of the issues mentioned above that ate my time. :(
+
+
+---
+
+Comment by jhpalmieri created at 2010-07-02 00:08:10
+
+> it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.
+
+I just wrote a function like this:
+
+```
+def search_for_tabs(file):
+    # search for tabs.  if found, the doctest fails, unless the string                             
+    # "SAGE_DOCTEST_ALLOW_TABS" is also present somewhere in the file.                             
+    import os
+    ext = os.path.splitext(file)[1]
+    if ext in [".py", ".pyx", ".sage", ".spyx"]:
+        ff = open(file)
+        source = ff.read()
+        ff.close()
+        if (source.find("SAGE_DOCTEST_ALLOW_TABS") == -1
+            and source.find("\t") != -1):
+            numfail += 1
+            s = "*"*70 + "\n" + "Error: TAB character found.\n" + s
+```
+
+If I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using "timeit", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total.  Some timings for the "homology" directory: with the old version of sage-doctest: 49.2 and 48.8 seconds.  With the new version: 49.5 and 48.9 seconds.  In other words, the variation in these timings due to whatever else is going on with the computer are larger than the differences in timing due to the changes in sage-doctest from this ticket.
+
+I would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.
+
+
+---
+
+Comment by leif created at 2010-07-02 01:00:02
+
+Replying to [comment:19 jhpalmieri]:
+> > it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.
+> [...]
+> If I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using "timeit", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total. [...]
+
+Well this obviously depends on the CPU, amount of cache, available or free memory, disk speed etc.
+
+The main problem with such things is that they accumulate. Everybody thinks he can add some little inefficiency; once it got in it's likely to never be removed or improved again, that's the sad story.
+
+Another point is the concept of adding such functionality to where it IMHO does not belong; there have been discussions on what to (hopefully automatically) check before new or modified code gets in - even on this ticket.
+
+For me, the minimum requirement is to provide a way to disable it _somehow_ (for a whole doctest job, not just by a tag specific to an individual file being tested); I don't mind if it's enabled by default. Obviously reviewers should either enable or otherwise not disable tab-checking, but as said before, I'd implement it in another script. There's e.g. no need to look for tabs on dozens of platforms, since they'll most probably be present on all or none of them.
+
+> I would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.
+
+If that was the only thing postponed... ;-)
+
+
+---
+
+Comment by leif created at 2010-07-02 01:08:47
+
+P.S.: I think searching for `SAGE_DOCTEST_ALLOW_TABS` _in the first few lines_ would be sufficient.
+
+_"... slowing down every doctesting"_ should have read _"... slowing down doctesting *further*"_. ;-)
+
+
+---
+
+Comment by jhpalmieri created at 2010-07-02 01:20:58
+
+Replying to [comment:20 leif]:
+> Replying to [comment:19 jhpalmieri]:
+> > > it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.
+> > [...]
+> > If I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using "timeit", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total. [...]
+> 
+> Well this obviously depends on the CPU, amount of cache, available or free memory, disk speed etc.
+
+The same with all of doctesting.  The point is, this adds very little, percentagewise, to the time.
+
+> The main problem with such things is that they accumulate. Everybody thinks he can add some little inefficiency; once it got in it's likely to never be removed or improved again, that's the sad story.
+
+Not if you open another ticket and post a patch implementing what you're talking about. Do the same for other inefficiencies you see, and if you feel that they're not getting the proper attention after a while, post about them on sage-devel.
+
+> Another point is the concept of adding such functionality to where it IMHO does not belong; there have been discussions on what to (hopefully automatically) check before new or modified code gets in - even on this ticket.
+> 
+> For me, the minimum requirement is to provide a way to disable it _somehow_ (for a whole doctest job, not just by a tag specific to an individual file being tested); I don't mind if it's enabled by default. Obviously reviewers should either enable or otherwise not disable tab-checking, but as said before, I'd implement it in another script. There's e.g. no need to look for tabs on dozens of platforms, since they'll most probably be present on all or none of them.
+
+Having a way to disable it is a fine idea, but it's much lower priority than implementing a test for tabs in the first place, so that more don't get into the Sage library.  As Voltaire said, sometimes "The perfect is the enemy of the good".  Anyway, if testing on every platform costs each person doing doctests 1 second, or 10 seconds, or 100 seconds, out of 3 or 4 thousand, it's not a big deal.
+
+> > I would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.
+> 
+> If that was the only thing postponed... ;-)
+
+Don't just complain about it, post a patch here or open a new ticket and fix what you think needs fixing.  Not implementing this because it's not perfect is worse, I think, than implementing it and fixing it up later.
+
+
+---
+
+Comment by leif created at 2010-07-02 01:26:35
+
+
+```
+==> make-test.1.log <==
+[...] 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 4527.9 seconds
+Please see /home/leif64/.sage//tmp/test.log for the complete log from this test.
+
+real	75m47.091s
+user	65m25.857s
+sys	5m55.522s
+
+==> make-test-check-tabs.2.log <==
+[...]
+----------------------------------------------------------------------
+The following tests failed:
+
+	sage -t  "devel/sage/doc/common/builder.py"
+[...]
+	sage -t  "devel/sage/sage/modules/free_module_element.pyx"
+Total time for all tests: 4837.5 seconds
+Please see /home/leif64/.sage//tmp/test.log for the complete log from this test.
+
+real	80m53.804s
+user	69m48.782s
+sys	6m9.019s
+```
+
+
+That's `make test` (i.e. single-threaded) on a relatively fast machine, both times sysload <= number of cores.
+(Sage 4.4.4)
+
+
+---
+
+Comment by leif created at 2010-07-02 01:51:08
+
+_"Make things as simple as possible, but not simpler."_ (Einstein, by rumor)
+
+Kant gave other nice statements regarding how or when things will get good.
+
+So I'll provide a patch (as originally intended), either for this or - reluctantly - on another ticket. The problem in the latter case is there are so many things to clean up in the doctest scripts, and it's unclear when it will get merged (as with yours if we'd split this ticket). :-)
+
+I wonder if someone in the mean time (3 month) opened a ticket for `sage-sanitize`...
+
+
+---
+
+Comment by davidloeffler created at 2010-07-02 09:54:04
+
+Replying to [comment:24 leif]:
+> So I'll provide a patch (as originally intended), either for this or - reluctantly - on another ticket. 
+
+Please do the latter. I don't think sage-doctest gets changed all that often, so merging more changes to it at some point in the future is unlikely to be an issue. The reason time is of the essence with this ticket isn't the rate at which sage-doctest gets changed, but the rate at which inexperienced/careless Sage devs introduce tabs into the main library.
+
+
+---
+
+Comment by rlm created at 2010-07-02 22:40:19
+
+Resolution: fixed
+
+
+---
+
+Comment by davidloeffler created at 2010-07-02 22:45:26
+
+And there was much rejoicing.

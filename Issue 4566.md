@@ -1,0 +1,109 @@
+# Issue 4566: speed up assume command (easy change)
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-11-20 17:50:48
+
+Assignee: burcin
+
+
+```
+This could be greatly sped up by changing
+  maxima.assume('...')
+to
+ maxima.eval("assume(..)")
+in the calculus code...
+
+sage: timeit("maxima.eval('assume(x>0)')")
+5 loops, best of 3: 53.2 ms per loop
+sage: timeit("maxima.assume(x>0)")
+5 loops, best of 3: 122 ms per loop
+
+I don't have time to do this...
+- Hide quoted text -
+
+On Tue, Oct 14, 2008 at 7:32 AM, Stan Schymanski <schymans`@`gmail.com> wrote:
+>
+> Dear all,
+>
+> Is there a reason why the assume(...) command takes so much longer
+> than var(...)?
+> Example:
+> %time
+> var('av jbiom lwat p rwat veloc mort epot esv etv esb etb wv wb qbv
+> bv')
+> gives:
+> CPU time: 0.00 s,  Wall time: 0.00 s
+> On the other hand,
+> %time
+> assume(p>0, veloc>0,
+> mort>0,lwat>0,jbiom>0,rwat>0,av>0,av<1,wv>0,wb>0,bv>0)
+> gives:
+> CPU time: 2.91 s,  Wall time: 8.78 s
+>
+> This is with sage 3.1.2. on an Intel Mac with OS X 10.4.11.
+>
+> Thanks for your help!
+>
+> Stan
+>
+```
+
+
+
+---
+
+Comment by AlexGhitza created at 2009-01-22 18:22:25
+
+Changing type from defect to enhancement.
+
+
+---
+
+Comment by kcrisman created at 2009-09-04 17:57:38
+
+To release manager: This should probably be marked Invalid or Wontfix.
+
+The Pynac switch has massively sped up assumptions, so that the timing above that was 2.91 s is now about 0.02 s, presumably on a fairly similar machine.  In addition, the fix indicated by was is no longer correct (if it ever was), because although maxima.eval is indeed faster, it needs to have a string passed in, not a string evaluated at a SymbolicExpression...
+
+Anyway, the proof is in the pudding: with 4.1.1, both with and without the appropriate version of the proposed change, assume(x>0) requires 33 microseconds.  Since that is already 1000 times faster than the fastest time above, we probably don't need to worry about this any more.
+
+
+---
+
+Comment by was created at 2009-09-05 15:31:10
+
+It indeed works now:
+
+```
+sage: timeit("maxima.eval('assume(x>0)')")
+
+5 loops, best of 3: 1.29 ms per loop
+sage: 
+sage: timeit("assume(x>0)")
+5 loops, best of 3: 40.2 µs per loop
+```
+
+
+
+---
+
+Comment by was created at 2009-09-05 15:31:10
+
+Resolution: fixed
+
+
+---
+
+Comment by kcrisman created at 2009-09-05 15:56:52
+
+More to the point, the maxima.eval didn't do what you think it did, because of the preparser (Maxima doesn't understand assume(x>Integer(0))), and fixing things so it did actually assume x>0 and then yielded
+
+```
+sage: bool(x>0)
+True
+```
+
+ended up making things the same speed as the regular assume. That was what I intended to convey above.

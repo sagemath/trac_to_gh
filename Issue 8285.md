@@ -1,0 +1,138 @@
+# Issue 8285: Update R's spkg-install to work on Solaris
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-02-16 20:49:13
+
+Assignee: drkirkby
+
+## Build environment
+ * Sage 4.3.3.alpha0, which includes R 2.10.1
+ * Sun Blade 1000 with two 900 MHz UltraSPARC III+ CPUs, 2 GB RAM. (This is the same sort of processor as 't2', but is a much older machine, though still quicker than t2 for building Sage!)
+ * Solaris 10 03/2005 (The first release of Solaris 10). 
+ * gcc 4.4.3 (The latest as I write). 
+
+## The problem
+Someone updated R in Sage, without testing on Solaris. The update caused several problems on Solaris - the most obvious one being R now needs iconv, which Sage does not currently include. 
+
+However, despite a new standard package for iconv #8191, R would still not build on Solaris, but failed with:
+  {{{
+Undefined                       first referenced
+ symbol                             in file
+uiter_setUTF8                       libR.a(util.o)
+ucol_strcollIter                    libR.a(util.o)
+ld: fatal: Symbol referencing errors. No output written to R.bin
+collect2: ld returned 1 exit status 
+  }}}
+
+## The Solution
+Several changes were made to R's spkg-install file, to fix not only the fact R would not build at all, but also some other enhancements. The updated package can be found at 
+
+http://boxen.math.washington.edu/home/kirkby/Solaris-fixes/r-2.10.1.p0/
+
+ * Adds the undocumented option 
+  {{{
+  --without-ICU
+  }}}
+  as that allows R to build without the ICU library from http://site.icu-project.org/ The option was suggested to me in a private email after a post to r-help <at> r-project.org. The build now shows: 
+  {{{
+Making Sage/Python scripts relocatable...
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Making script relocatable
+Finished installing rpy2-2.0.8.spkg
+Finished installing rpy2-2.0.8.spkg
+
+real    25m49.233s
+user    22m33.551s
+sys     3m1.363s
+Successfully installed r-2.10.1.p0
+ }}}
+ * Ensures SAGE64 will attempt a 64-bit build on any platform, not just OS X. (I've not actually built R 64-bit.) 
+ * Removed all references to the option 
+  {{{
+--with-iconv=no 
+   }}} 
+  as R *must* have iconv now - it is no longer optional. #8191 is an iconv library. 
+ * Better detection for X support on Solaris. (The previous test would always indicate R could not be built with X support, despite the fact it could be). R's configure script should work this out itself, but some comments in spkg-install suggest this was not working right on a OSX Intel 10.5.1. *The changes I made will only impact Solaris*. 
+ * Added some hopefully helpful comments in spkg-install, as I believe there are still multiple issues in that file - see  #8274
+
+
+## How to test
+This should have no impact on any platform other than Solaris, though of course it is useful to test on multiple platforms to be 100% sure.
+
+To test on Solaris 10, one needs access to a SPARC box. Some notes about how to test on 't2' are given at 
+
+http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2
+
+First one needs to add a new standard package for iconv - #8191. 
+
+ * Get the spkg from http://boxen.math.washington.edu/home/kirkby/new-packages/iconv/iconv-1.13.1.spkg and place it in $SAGE_ROOT/spkg/standard
+ * Copy http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8191/deps to $SAGE_ROOT/spkg/standard/deps
+ * Copy http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8191/install to $SAGE_ROOT/spkg/install (This must be made executable - it will probably lose the execute permission when downloading)
+
+Once that is all down, typing 'make' should allow R to build, and you should get: 
+   {{{
+Successfully installed r-2.10.1.p0
+   }}}
+
+
+ 
+
+
+---
+
+Attachment
+
+Mercurial patch
+
+
+---
+
+Comment by drkirkby created at 2010-02-17 00:34:29
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by drkirkby created at 2010-02-17 00:36:28
+
+Once this ticket is closed, so can #8272, as this addresses that issue.
+
+
+---
+
+Comment by mvngu created at 2010-02-21 21:43:28
+
+The updated R spkg builds on sage.math, bsd.math, rosemary.math, t2.math, Skynet machines (cleo and iras). However, it doesn't build on Cygwin (winxp1 on boxen.math). As of Sage 4.3.3.alpha1, the build on Cygwin fails during the compilation process of gd, which normally gets built before R. Also, I would note that #8191 is a prerequisite for this updated R spkg.
+
+
+---
+
+Comment by mvngu created at 2010-02-21 21:43:28
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by drkirkby created at 2010-03-01 16:24:34
+
+Changing priority from major to blocker.
+
+
+---
+
+Comment by mvngu created at 2010-03-02 23:21:04
+
+Resolution: fixed
+
+
+---
+
+Comment by mvngu created at 2010-03-02 23:21:04
+
+Merged [r-2.10.1.p0.spkg](http://boxen.math.washington.edu/home/kirkby/Solaris-fixes/r-2.10.1.p0/r-2.10.1.p0.spkg) in the standard spkg repository.

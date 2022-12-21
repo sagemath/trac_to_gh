@@ -1,0 +1,73 @@
+# Issue 4537: inverse_mod for number field ideals
+
+Issue created by migration from Trac.
+
+Original creator: davidloeffler
+
+Original creation time: 2008-11-17 07:51:11
+
+Assignee: davidloeffler
+
+The inverse_mod method currently isn't implemented for ideals in rings of integers of number fields. It should be, as it's not difficult.
+
+
+---
+
+Attachment
+
+I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). 
+
+I've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet).
+
+
+---
+
+Comment by davidloeffler created at 2008-11-17 07:58:40
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by cremona created at 2008-11-17 09:51:01
+
+I would find something slightly more general useful, and you could implement your functions via this one too:
+
+If A and B are coprime integral ideals, express 1=a+b with a in A, b in B.  (cf Prop 1.3.1 of Cohen's GTM 193 which I know you are using already).  The more general version of Thm 1.3.3 (op cit) would also be useful.
+
+
+---
+
+Comment by cremona created at 2008-11-18 17:29:27
+
+Replying to [comment:1 davidloeffler]:
+> I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). 
+> 
+> I've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet). 
+
+Note that #4536 now has a second bug-fixing patch attached, though the coordinates() funciton is not affected.  John
+
+
+---
+
+Comment by was created at 2008-11-28 06:33:49
+
+REFEREE REPORT:
+
+Positive review, since this is a very nice patch.  I agree with John that it would be nice to have something more general, but that can be for another patch later. 
+
+This is very nice.  Good to go.
+
+
+---
+
+Comment by mabshoff created at 2008-11-28 08:36:03
+
+Merged in Sage 3.2.1.rc0
+
+
+---
+
+Comment by mabshoff created at 2008-11-28 08:36:03
+
+Resolution: fixed

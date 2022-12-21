@@ -1,0 +1,545 @@
+# Issue 4205: [with patch, needs review] Fix deprecation warnings from numpy 1.2
+
+Issue created by migration from Trac.
+
+Original creator: jason
+
+Original creation time: 2008-09-27 07:19:13
+
+Assignee: was
+
+Apparently we use the numpy C API in the RDF/CDF vector classes, which causes deprecation warnings with numpy 1.2.  This patch updates this code to use current functions in numpy 1.2.
+
+
+---
+
+Comment by jason created at 2008-09-27 07:20:39
+
+This patch depends on the patches at #3498.  Both patches touch the numpy.pxd file, so this needs to be applied after the patches at #3498.
+
+
+---
+
+Comment by jason created at 2008-09-27 07:22:15
+
+sage -t sage/modules/*.pyx passes with the patch applied.
+
+
+---
+
+Comment by mabshoff created at 2008-09-27 08:19:36
+
+With #3498 and numpy-deprecations.patch applied we get some segfaults:
+
+```
+sage -t -long devel/sage/sage/numerical/optimize.py # Segfault
+sage -t -long devel/sage/sage/modules/real_double_vector.pyx # Segfault
+sage -t -long devel/sage/sage/modules/complex_double_vector.pyx # Segfault
+```
+
+We need the following patch to quiet one deprecation warning:
+
+```
+--- a/sage/numerical/test.py    Fri Sep 26 18:15:26 2008 -0500
++++ b/sage/numerical/test.py    Sat Sep 27 01:03:08 2008 -0700
+`@``@` -6,7 +6,7 `@``@`
+ sage: from scipy import optimize
+ sage: from scipy import special
+ sage: from scipy import integrate
+-sage: from scipy import linsolve   
++sage: from scipy.sparse.linalg.dsolve import linsolve   
+ sage: from scipy import interpolate
+ sage: from scipy import sparse    
+ sage: import arpack
+```
+
+Various other deprecation warnings which I was too lazy to fix :p
+
+```
+sage -t -long devel/sage/sage/plot/plot3d/list_plot3d.py    
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/list_plot3d.py", line 68:
+    sage: list_plot3d(m, texture='yellow', interpolation_type='nn',frame_aspect_ratio=[1,1,1/3])
+Expected nothing
+Got:
+    doctest:1431: DeprecationWarning: scipy.stats.corrcoef is deprecated; please update your code to use numpy.corrcoef.
+    Please note that:
+        - numpy.corrcoef rowvar argument defaults to true, not false
+        - numpy.corrcoef bias argument defaults to false, not true
+    <BLANKLINE>
+    doctest:1395: DeprecationWarning: scipy.stats.cov is deprecated; please update your code to use numpy.cov.
+    Please note that:
+        - numpy.cov rowvar argument defaults to true, not false
+        - numpy.cov bias argument defaults to false, not true
+    <BLANKLINE>
+    doctest:413: DeprecationWarning: scipy.stats.mean is deprecated; please update your code to use numpy.mean.
+    Please note that:
+        - numpy.mean axis argument defaults to None, not 0
+        - numpy.mean has a ddof argument to replace bias in a more general manner.
+          scipy.stats.mean(a, bias=True) can be replaced by numpy.mean(x,
+    axis=0, ddof=1).
+    <BLANKLINE>
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/list_plot3d.py", line 74:
+    sage: list_plot3d(m, texture='yellow', interpolation_type='spline',frame_aspect_ratio=[1,1,1/3])
+Expected nothing
+Got:
+    doctest:760: DeprecationWarning: PyArray_FromDims: use PyArray_SimpleNew.
+    doctest:760: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    doctest:837: DeprecationWarning: PyArray_FromDims: use PyArray_SimpleNew.
+    doctest:837: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    <BLANKLINE>
+**********************************************************************
+```
+
+Some numerical noise:
+
+```
+sage -t -long devel/sage/sage/matrix/matrix_double_dense.pyx
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/matrix_double_dense.py", line 854:
+    sage: U*U.transpose()
+Expected:
+    [              1.0 2.13506512817e-16]
+    [2.13506512817e-16               1.0]
+Got:
+    [              1.0 2.66876364757e-16]
+    [2.66876364757e-16               1.0]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/matrix_double_dense.py", line 859:
+    sage: V*V.transpose()
+Expected:
+    [               1.0  2.02230810223e-16 -2.11947972194e-16]
+    [ 2.02230810223e-16                1.0  7.09339271349e-17]
+    [-2.11947972194e-16  7.09339271349e-17                1.0]
+Got:
+    [               1.0  5.94955942151e-17 -1.77117977403e-16]
+    [ 5.94955942151e-17                1.0 -8.87690528723e-17]
+    [-1.77117977403e-16 -8.87690528723e-17                1.0]
+**********************************************************************
+```
+
+Some more:
+
+```
+sage -t -long devel/sage/sage/finance/time_series.pyx       
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 531:
+    sage: F = v.autoregressive_fit(100)
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 569:
+    sage: F = v[:-1].autoregressive_fit(5); F
+Expected:
+    [1.0019, -0.0524, -0.0643, 0.1323, -0.0539]
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    [1.0019, -0.0524, -0.0643, 0.1323, -0.0539]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 95:
+    sage: w = v.numpy()
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1487:
+    sage: bm.hurst_exponent()
+Expected:
+    0.527450972...
+Got:
+    doctest:413: DeprecationWarning: scipy.stats.mean is deprecated; please update your code to use numpy.mean.
+    Please note that:
+        - numpy.mean axis argument defaults to None, not 0
+        - numpy.mean has a ddof argument to replace bias in a more general manner.
+          scipy.stats.mean(a, bias=True) can be replaced by numpy.mean(x,
+    axis=0, ddof=1).
+    0.52745097242535754
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1494:
+    sage: fbm = finance.fractional_brownian_motion_simulation(0.7,0.1,10^5,1)[0]
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1844:
+    sage: w = v.numpy(copy=False); w
+Expected:
+    array([ 1. , -3. ,  4.5, -2. ])
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    array([ 1. , -3. ,  4.5, -2. ])
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 2154:
+    sage: w = v.fft(); w
+Expected:
+    [45.0000, -4.5000, 12.3636, -4.5000, 5.3629, -4.5000, 2.5981, -4.5000, 0.7935]
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    [45.0000, -4.5000, 12.3636, -4.5000, 5.3629, -4.5000, 2.5981, -4.5000, 0.7935]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 2206:
+    sage: v.ifft()
+Expected:
+    [5.1000, -5.6876, 1.4764, -1.0774, 0.4249, -0.1000, -0.2249, 0.6663, -1.2764, 1.6988]
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    [5.1000, -5.6876, 1.4764, -1.0774, 0.4249, -0.1000, -0.2249, 0.6663, -1.2764, 1.6988]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 2299:
+    sage: y = finance.multifractal_cascade_random_walk_simulation(3700,0.02,0.01,0.01,1000,100)
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 2356:
+    sage: for v in y_out:
+          s1.append(sum([(v[:-i].autoregressive_forecast(F)-v[-i])**Integer(2) for i in range(Integer(1),Integer(20))]))
+          F2 = v[:-len(F)].autoregressive_fit(len(F))
+          s2.append(sum([(v[:-i].autoregressive_forecast(F2)-v[-i])**Integer(2) for i in range(Integer(1),Integer(20))]))
+Expected nothing
+Got:
+    doctest:3: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+```
+
+and finally:
+
+```
+sage -t -long devel/sage/sage/finance/fractal.pyx    
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 66:
+    sage: sim = finance.stationary_gaussian_simulation(s, N)[0]
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 155:
+    sage: finance.fractional_gaussian_noise_simulation(0.8,1,10,2)
+Expected:
+    [[-0.1157, 0.7025, 0.4949, 0.3324, 0.7110, 0.7248, -0.4048, 0.3103, -0.3465, 0.2964],
+     [-0.5981, -0.6932, 0.5947, -0.9995, -0.7726, -0.9070, -1.3538, -1.2221, -0.0290, 1.0077]]
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    [[-0.1157, 0.7025, 0.4949, 0.3324, 0.7110, 0.7248, -0.4048, 0.3103, -0.3465, 0.2964], 
+    [-0.5981, -0.6932, 0.5947, -0.9995, -0.7726, -0.9070, -1.3538, -1.2221, -0.0290, 1.0077]]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 201:
+    sage: finance.fractional_brownian_motion_simulation(0.8,0.1,8,1)
+Expected:
+    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 237:
+    sage: a = finance.multifractal_cascade_random_walk_simulation(3770,0.02,0.01,0.01,10,3)
+Expected nothing
+Got:
+    doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+**********************************************************************
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-09-27 09:30:18
+
+One more fix not yet in the patch:
+
+```
+[02:20am] mabshoff: mk
+[02:21am] jason-:         cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))
+[02:21am] jason-: #        temp = PyArray_SimpleNew(1, dims, NPY_DOUBLE)
+[02:21am] jason-: #        _n = temp
+[02:21am] jason-: #        for i from 0<=i<_V.v.size:
+[02:21am] jason-: #            _n[i] = float(_V.v.data[i])
+[02:21am] jason-: comment from that line down to the end of the function
+[02:21am] jason-: and replace it with the above numpy.array line.
+[02:21am] jason-: oh, and add import numpy above that.
+<SNIP>
+[02:24am] mabshoff: sage: sage: v = vector(RDF,4,range(4))
+[02:24am] mabshoff: sage: v.numpy()
+[02:24am] mabshoff: array([ 0.,  1.,  2.,  3.])
+[02:24am] mabshoff: sage: v
+[02:24am] mabshoff: (0.0, 1.0, 2.0, 3.0)
+[02:24am] mabshoff: so that works now
+[02:24am] jason-: can I just replace it?
+[02:24am] jason-: it's going to be really slow, but it works
+[02:25am] mabshoff: well, I guess for now we can live with that.
+[02:25am] jason-: well, I don't know how much slower
+[02:25am] jason-: can you do a timeit test?
+[02:25am] mabshoff: sure, in a minute
+```
+
+
+
+---
+
+Attachment
+
+Ok, the latest patch has the following issues left:
+
+```
+sage -t -long devel/sage/sage/plot/plot3d/list_plot3d.py    
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/list_plot3d.py", line 68:
+    sage: list_plot3d(m, texture='yellow', interpolation_type='nn',frame_aspect_ratio=[1,1,1/3])
+Expected nothing
+Got:
+    doctest:1431: DeprecationWarning: scipy.stats.corrcoef is deprecated; please update your code to use numpy.corrcoef.
+    Please note that:
+        - numpy.corrcoef rowvar argument defaults to true, not false
+        - numpy.corrcoef bias argument defaults to false, not true
+    <BLANKLINE>
+    doctest:1395: DeprecationWarning: scipy.stats.cov is deprecated; please update your code to use numpy.cov.
+    Please note that:
+        - numpy.cov rowvar argument defaults to true, not false
+        - numpy.cov bias argument defaults to false, not true
+    <BLANKLINE>
+    doctest:413: DeprecationWarning: scipy.stats.mean is deprecated; please update your code to use numpy.mean.
+    Please note that:
+        - numpy.mean axis argument defaults to None, not 0
+        - numpy.mean has a ddof argument to replace bias in a more general manner.
+          scipy.stats.mean(a, bias=True) can be replaced by numpy.mean(x,
+    axis=0, ddof=1).
+    <BLANKLINE>
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/list_plot3d.py", line 74:
+    sage: list_plot3d(m, texture='yellow', interpolation_type='spline',frame_aspect_ratio=[1,1,1/3])
+Expected nothing
+Got:
+    doctest:760: DeprecationWarning: PyArray_FromDims: use PyArray_SimpleNew.
+    doctest:760: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    doctest:837: DeprecationWarning: PyArray_FromDims: use PyArray_SimpleNew.
+    doctest:837: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
+    <BLANKLINE>
+**********************************************************************
+```
+
+and after fixing the same issue as in the other places, i.e
+
+```
+        cdef ndarray n = numpy.array(list(self),dtype=numpy.dtype('float64'))
+        #cdef ndarray n = PyArray_SimpleNewFromData(1, dims, NPY_DOUBLE, self._values)
+        if copy:
+            return n.copy()
+        else:
+            return n
+```
+
+we get
+
+```
+sage -t -long devel/sage/sage/finance/time_series.pyx       
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1477:
+    sage: bm.hurst_exponent()
+Expected:
+    0.527450972...
+Got:
+    doctest:413: DeprecationWarning: scipy.stats.mean is deprecated; please update your code to use numpy.mean.
+    Please note that:
+        - numpy.mean axis argument defaults to None, not 0
+        - numpy.mean has a ddof argument to replace bias in a more general manner.
+          scipy.stats.mean(a, bias=True) can be replaced by numpy.mean(x,
+    axis=0, ddof=1).
+    0.52745097242535754
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1485:
+    sage: fbm.hurst_exponent()
+Expected:
+    0.706511951...
+Got:
+    0.52044004048795489
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1489:
+    sage: fbm = finance.fractional_brownian_motion_simulation(0.2,0.1,10^5,1)[0]
+Exception raised:
+    Traceback (most recent call last):
+      File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/local/lib/python2.5/doctest.py", line 1228, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_46[8]>", line 1, in <module>
+        fbm = finance.fractional_brownian_motion_simulation(RealNumber('0.2'),RealNumber('0.1'),Integer(10)**Integer(5),Integer(1))[Integer(0)]###line 1489:
+    sage: fbm = finance.fractional_brownian_motion_simulation(0.2,0.1,10^5,1)[0]
+      File "fractal.pyx", line 210, in sage.finance.fractal.fractional_brownian_motion_simulation (sage/finance/fractal.c:1145)
+      File "fractal.pyx", line 183, in sage.finance.fractal.fractional_gaussian_noise_simulation (sage/finance/fractal.c:1059)
+      File "fractal.pyx", line 118, in sage.finance.fractal.stationary_gaussian_simulation (sage/finance/fractal.c:642)
+    NotImplementedError: Stationary Gaussian simulation only implemented when Fourier transform is nonnegative
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/time_series.py", line 1490:
+    sage: fbm.hurst_exponent()
+Expected:
+    0.278997441...
+Got:
+    0.52044004048795489
+```
+
+and some numerical noise, but this might be related to the stats function:
+
+```
+sage -t -long devel/sage/sage/finance/fractal.pyx           
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 69:
+    sage: [sim.autocovariance(i) for i in [0..4]]
+Expected:
+    [0.98665816086255..., 0.69201577095377..., 0.56234006792017..., 0.48647965409871..., 0.43667043322102...]
+Got:
+    [353.87586761938252, 4.1452524114948925, 2.6438582436312341, -5.3373197046012857, 1.2666878806249871]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 155:
+    sage: finance.fractional_gaussian_noise_simulation(0.8,1,10,2)
+Expected:
+    [[-0.1157, 0.7025, 0.4949, 0.3324, 0.7110, 0.7248, -0.4048, 0.3103, -0.3465, 0.2964],
+     [-0.5981, -0.6932, 0.5947, -0.9995, -0.7726, -0.9070, -1.3538, -1.2221, -0.0290, 1.0077]]
+Got:
+    [[3.0262, -0.9109, 0.8122, -1.0340, -1.6515, -1.6213, -0.9947, 1.2976, -0.8180, -0.2633], 
+     [-1.5913, -0.6777, 2.7479, 1.5428, -0.0232, -1.4984, -0.9457, -1.0283, 0.6810, 0.1817]]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 161:
+    sage: finance.fractional_gaussian_noise_simulation(0.8,1,10,1)[0].sums()
+Expected:
+    [-0.1157, 0.5868, 1.0818, 1.4142, 2.1252, 2.8500, 2.4452, 2.7555, 2.4090, 2.7054]
+Got:
+    [3.0262, 2.1154, 2.9275, 1.8935, 0.2420, -1.3793, -2.3740, -1.0764, -1.8944, -2.1577]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 201:
+    sage: finance.fractional_brownian_motion_simulation(0.8,0.1,8,1)
+Expected:
+    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+Got:
+    [This is the Trac macro *0.8560, 0.5983, 0.8280, 0.5356, 0.0685, -0.3901, -0.6715, -0.3045* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0.8560, 0.5983, 0.8280, 0.5356, 0.0685, -0.3901, -0.6715, -0.3045-macro)
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 204:
+    sage: finance.fractional_brownian_motion_simulation(0.8,0.01,8,1)
+Expected:
+    [This is the Trac macro *-0.0239, 0.0593, 0.0865, 0.1600, 0.2158, 0.1982, 0.2044, 0.1989* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0239, 0.0593, 0.0865, 0.1600, 0.2158, 0.1982, 0.2044, 0.1989-macro)
+Got:
+    [This is the Trac macro *0.2707, 0.1892, 0.2618, 0.1694, 0.0216, -0.1234, -0.2123, -0.0963* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0.2707, 0.1892, 0.2618, 0.1694, 0.0216, -0.1234, -0.2123, -0.0963-macro)
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 206:
+    sage: finance.fractional_brownian_motion_simulation(0.8,0.01,8,2)
+Expected:
+    [[-0.0167, 0.0342, 0.0261, 0.0856, 0.1735, 0.2541, 0.1409, 0.1692],
+     [0.0244, -0.0153, 0.0125, -0.0363, 0.0764, 0.1009, 0.1598, 0.2133]]
+Got:
+    [[0.0866, 0.1219, 0.0045, 0.0102, -0.0459, -0.0883, 0.0837, 0.1999], 
+     [0.3499, 0.3886, 0.5201, 0.4895, 0.6820, 0.7656, 0.8753, 0.8654]]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 238:
+    sage: a
+Expected:
+    [[-0.0096, 0.0025, 0.0066, 0.0016, 0.0078, 0.0051, 0.0047, -0.0013, 0.0003, -0.0043],
+     [0.0003, 0.0035, 0.0257, 0.0358, 0.0377, 0.0563, 0.0661, 0.0746, 0.0749, 0.0689],
+     [-0.0120, -0.0116, 0.0043, 0.0078, 0.0115, 0.0018, 0.0085, 0.0005, 0.0012, 0.0060]]
+Got:
+    [[-0.0600, -0.0520, -0.0482, -0.0526, -0.0463, -0.0477, -0.0482, -0.0557, -0.0543, -0.0614], 
+     [0.0072, 0.0114, 0.0220, 0.0274, 0.0295, 0.0422, 0.0495, 0.0550, 0.0553, 0.0459], 
+     [-0.1452, -0.1446, -0.1266, -0.1228, -0.1167, -0.1271, -0.1169, -0.1227, -0.1220, -0.1199]]
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 244:
+    sage: a[0].exp()
+Expected:
+    [0.9905, 1.0025, 1.0067, 1.0016, 1.0078, 1.0051, 1.0047, 0.9987, 1.0003, 0.9957]
+Got:
+    [0.9418, 0.9493, 0.9529, 0.9488, 0.9548, 0.9534, 0.9529, 0.9459, 0.9472, 0.9404]
+**********************************************************************
+```
+
+
+
+---
+
+Comment by robertwb created at 2008-11-04 07:06:33
+
+Hmm... what's up with
+
+
+```
+-sage: from scipy import linsolve   
++sage: from scipy.sparse.linalg.dsolve import linsolve
+```
+
+
+in sage/numerical/test.py? Does scipy.linsolve not work anymore?
+
+Also, those doctest failures look like more than trivial noise, but I have no experience in the area so someone else should comment.
+
+
+---
+
+Comment by was created at 2008-11-27 07:40:13
+
+
+```
+23:36 < mabshoff> #4205 isn't useful yet.
+23:36 < wstein-4205> #4205 is scrwed up!
+23:36 < wstein-4205> The thing says "needs review"
+23:36 < wstein-4205> but it clearly "needs work".
+23:37 < mabshoff> That one is more or less in limbo until we do the Scipy 0.7 update.
+23:37 < mabshoff> Yep
+23:37 < wstein-4205> And the patch itself just deletes *all* the C API code that Josh Kantor spent a *huge* amount
+23:37 -!- craigcitro is now known as cc-4612
+23:37 < wstein-4205> of time writing, and replaces it with a bunch of slow python numpy code.
+23:37 < mabshoff> ok
+23:37 < wstein-4205> Huh?
+23:37 < wstein-4205> Or maybe I don't get it.
+23:37 < mabshoff> Ask jason|log 
+23:37 < wstein-4205> I'm changing it to "needs work".
+```
+
+
+
+---
+
+Comment by jason created at 2008-11-27 15:15:07
+
+Sorry; as is obvious from the discussion and iterative approach, this ticket is indeed "needs work"; I thought that was how it was marked.  I think in the initial iteration, we thought we had something good, so it started out as "needs review" and then we forgot to change it to "needs work" when we started playing whack-a-mole.
+
+
+---
+
+Comment by jason created at 2008-11-27 15:15:48
+
+And mabshoff is right, it's on hold until scipy 0.7 is release soon.
+
+
+---
+
+Comment by jason created at 2008-11-27 15:17:57
+
+In fact, this ticket may not be needed anymore if the patch from #4206 is applied.
+
+
+---
+
+Comment by mabshoff created at 2008-11-28 06:50:21
+
+Some bits of this patch fix scipy import issues since things have moved around. Other than that I agree with Jason that we likely will end up canning the rest of this patch.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by jason created at 2009-05-27 22:12:18
+
+This ticket can probably be closed once #6140 and #3391 are closed.
+
+
+---
+
+Comment by craigcitro created at 2009-06-12 06:57:41
+
+Resolution: wontfix
+
+
+---
+
+Comment by craigcitro created at 2009-06-12 06:57:41
+
+Closing this as `wontfix`, because it's superseded by #6140.

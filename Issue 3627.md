@@ -1,0 +1,286 @@
+# Issue 3627: illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-07-09 18:50:02
+
+Assignee: craigcitro
+
+On a P4 3.4Ghz machine with RHEL4 I get upon doing a source build of rc0:
+
+
+```
+sage -t  devel/sage/sage/modular/modsym/subspace.py         sh: line 1: 26365 Illegal instruction     /u/was/sage-3.0.4.rc1/local/bin/python /u/was/sage-3.0.4.rc1/tmp/.doctest_subspace.py >/tmp/tmpdmHxDr 2>/tmp/tmpx-xlyH
+
+A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
+         [32.1 s]
+```
+
+
+
+More details
+
+```
+timpani%  gcc -v
+Reading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux
+Thread model: posix
+gcc version 3.4.5 20051201 (Red Hat 3.4.5-2)
+
+
+% uname -a
+Linux 2.6.9-34.ELsmp #1 SMP Fri Feb 24 16:56:28 EST 2006 x86_64 x86_64 x86_64 GNU/Linux
+timpani% cat /etc/issue
+Red Hat Enterprise Linux WS release 4 (Nahant Update 3)
+Kernel \r on an \m
+```
+
+
+
+---
+
+Comment by was created at 2008-07-09 18:51:03
+
+The output of --gdb --verbose doctesting of that file
+
+```
+Trying:
+    M.eisenstein_submodule().hecke_bound()###line 311:_sage_    >>> M.eisenstein_submodule().hecke_bound()
+Expecting:
+    53
+
+Program received signal SIGILL, Illegal instruction.
+[Switching to Thread 182894175264 (LWP 18352)]
+0x0000002aa1a61dd8 in ZmodF_poly_pointwise_mul () from /u/was/sage-3.0.4.rc1/local/lib/libflint-1.010.so
+(gdb) bt
+#0  0x0000002aa1a61dd8 in ZmodF_poly_pointwise_mul () from /u/was/sage-3.0.4.rc1/local/lib/libflint-1.010.so
+#1  0x0000002aa1a697ea in ZmodF_poly_convolution () from /u/was/sage-3.0.4.rc1/local/lib/libflint-1.010.so
+#2  0x0000002aa1a49d4e in _fmpz_poly_mul_SS () from /u/was/sage-3.0.4.rc1/local/lib/libflint-1.010.so
+#3  0x0000002aa1906fa2 in __pyx_f_4sage_5rings_10polynomial_30polynomial_integer_dense_flint_30Polynomial_integer_dense_flint__mul_c_impl (__pyx_v_self=0x2aad241fa0, __pyx_v_right=0x2aad241fa0) at sage/rings/polynomial/polynomial_integer_dense_flint.cpp:6925
+#4  0x0000002a9c101ce8 in __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (__pyx_v_self=0x2aad241fa0,
+    __pyx_v_right=0x2aad241fa0) at sage/structure/element.c:16532
+#5  0x0000000000416007 in binary_op1 (v=Variable "v" is not available.
+) at Objects/abstract.c:398
+#6  0x0000000000417ff8 in PyNumber_Multiply (v=0x2aad241fa0, w=0x2aad241fa0) at Objects/abstract.c:669
+#7  0x0000002aa167b53e in __pyx_f_4sage_5rings_10polynomial_19polynomial_compiled_6sqr_pd_eval (__pyx_v_self=0x2aaef3a310,
+    __pyx_v_vars=Variable "__pyx_v_vars" is not available.
+) at sage/rings/polynomial/polynomial_compiled.c:2730
+#8  0x0000002aa167afff in __pyx_f_4sage_5rings_10polynomial_19polynomial_compiled_6mul_pd_eval (__pyx_v_self=0x2aaef40170,
+    __pyx_v_vars=0x2aad241e50, __pyx_v_coeffs=0x27f0710) at sage/rings/polynomial/polynomial_compiled.c:1887
+#9  0x0000002aa167f119 in __pyx_f_4sage_5rings_10polynomial_19polynomial_compiled_26CompiledPolynomialFunction_eval (
+    __pyx_v_self=0x2aae528c20, __pyx_v_x=Variable "__pyx_v_x" is not available.
+) at sage/rings/polynomial/polynomial_compiled.c:1887
+#10 0x0000002aa154fce8 in __pyx_pf_4sage_5rings_10polynomial_18polynomial_element_10Polynomial___call__ (__pyx_v_self=0x2aad241c90,
+    __pyx_args=0x2aae528c20, __pyx_kwds=Variable "__pyx_kwds" is not available.
+) at sage/rings/polynomial/polynomial_element.c:4565
+#11 0x00000000004197c3 in PyObject_Call (func=Variable "func" is not available.
+) at Objects/abstract.c:1861
+#12 0x0000002aa78fa7b4 in __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense_charpoly (
+    __pyx_v_self=0x2aaef361a0, __pyx_args=Variable "__pyx_args" is not available.
+) at sage/matrix/matrix_rational_dense.c:7735
+#13 0x000000000048aa9c in PyEval_EvalFrameEx (f=0x2497ac0, throwflag=Variable "throwflag" is not available.
+) at Python/ceval.c:3573
+#14 0x000000000048c371 in PyEval_EvalCodeEx (co=0x2aa863e648, globals=Variable "globals" is not available.
+) at Python/ceval.c:2836
+#15 0x000000000048a5da in PyEval_EvalFrameEx (f=0x276dd80, throwflag=Variable "throwflag" is not available.
+) at Python/ceval.c:3668
+#16 0x000000000048c371 in PyEval_EvalCodeEx (co=0x2aa86326c0, globals=Variable "globals" is not available.
+
+```
+
+
+
+---
+
+Comment by was created at 2008-07-09 18:55:11
+
+Here is another quick way to replicate the problem:
+
+```
+timpani% ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 3.0.4.rc1, Release Date: 2008-07-08                   |
+| Type notebook() for the GUI, and license() for information.        |
+sage: ModularSymbols(24,8).eisenstein_submodule()
+/u/was/sage-3.0.4.rc1/local/bin/sage-sage: line 216: 18591 Illegal instruction     sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+```
+
+
+The actual problem appears to be with linbox.
+
+
+---
+
+Comment by was created at 2008-07-09 19:48:44
+
+I mean the problem appears to be with flint.
+I'll try the new flint-1.011 which fixes some itnaium bugs.
+
+
+---
+
+Comment by was created at 2008-07-09 20:11:05
+
+
+```
+OK, so flint-1.011 fails its test suite on this machine I'm working at right now:
+
+All tests passed
+Testing zmod_poly_reverse()... ok
+Testing zmod_poly_addsub()... ok
+Testing zmod_poly_neg()... ok
+Testing zmod_poly_shift()... ok
+Testing zmod_poly_swap()... ok
+Testing zmod_poly_setequal()... ok
+Testing zmod_poly_getset_coeff()... ok
+Testing zmod_poly_mul_classicalKS()... ok
+Testing zmod_poly_sqr_classicalKS()... ok
+Testing zmod_poly_mul_classical_trunc()... ok
+Testing zmod_poly_mul_KS_trunc()... ok
+Testing zmod_poly_mul_KS_precomp()... ./spkg-check: line 54: 21571 Illegal instruction     ./zmod_poly-test
+*************************************
+Error testing package ** flint-1.011 **
+*************************************
+
+timpani% gcc -v
+Reading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux
+Thread model: posix
+gcc version 3.4.5 20051201 (Red Hat 3.4.5-2)
+timpani% uname -a
+Linux timpani 2.6.9-34.ELsmp #1 SMP Fri Feb 24 16:56:28 EST 2006 x86_64 x86_64 x86_64 GNU/Linux
+timpani% cat /proc/cpuinfo
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 15
+model           : 4
+model name      :               Intel(R) Pentium(R) 4 CPU 3.40GHz
+stepping        : 10
+cpu MHz         : 3391.744
+cache size      : 2048 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 5
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tmsyscall lm pni monitor ds_cpl est cid cx16 xtpr
+bogomips        : 6788.56
+clflush size    : 64
+cache_alignment : 128
+address sizes   : 36 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : GenuineIntel
+cpu family      : 15
+model           : 4
+model name      :               Intel(R) Pentium(R) 4 CPU 3.40GHz
+stepping        : 10
+cpu MHz         : 3391.744
+cache size      : 2048 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 5
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tmsyscall lm pni monitor ds_cpl est cid cx16 xtpr
+bogomips        : 6783.16
+clflush size    : 64
+cache_alignment : 128
+address sizes   : 36 bits physical, 48 bits virtual
+power management:
+
+```
+
+
+
+---
+
+Comment by was created at 2008-07-09 22:37:45
+
+Bill Hart and I figured this out:
+
+```
+
+
+On Wed, Jul 9, 2008 at 3:01 PM, Bill Hart <goodwillhart`@`googlemail.com> wrote:
+> Another thing to try is to put -march=pentium4 -mtune=pentium4 when
+> you compile flint.
+>
+
+Ah ha!  That doesn't fix the problem -- in fact that doesn't work
+at all.  However, it immediately reminded me to check
+what we actually do set, and it turns out the stupid Sage 
+spkg-install has a mistake in it (which is not at all your fault)!
+Check this out:
+
+if [ "`uname`" = "Linux" -a "`uname -m`" = "x86_64" ]; then
+   FLINT_TUNE="-mtune=opteron -march=opteron -fPIC -funroll-loops "
+elif...
+fi
+
+Guess what?  uname being linux and machine being
+x86_64 does *not* imply that the machine is an opteron!
+In fact, most machines where I'm at right now
+are linux boxes with uname -m equal to x86_64, and
+none of them are opterons.  They are pentium 4's
+from intel, and do *not* support the full opteron 
+instruction set.
+
+I'm changing the code to this for now:
+
+if [ "`uname`" = "Linux" -a "`uname -m`" = "x86_64" ]; then
+   # This line causes *MAJOR* Illegal Instruction problems on
+   # 64-bit Pentium 4's.  Do *not* do that!!  Only enable the
+   # opteron stuff with a surefire way of detecting that a
+   # machine is really an opteron.
+   #FLINT_TUNE="-mtune=opteron -march=opteron -fPIC -funroll-loops "
+
+   FLINT_TUNE="-fPIC -funroll-loops "
+
+...
+```
+
+
+
+---
+
+Comment by was created at 2008-07-09 22:39:49
+
+New spkg up here:
+
+http://sage.math.washington.edu/home/was/patches/flint-1.011.p1.spkg
+
+
+---
+
+Comment by mabshoff created at 2008-07-10 01:56:38
+
+The fix is the correct one. Positive review.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-07-10 02:01:45
+
+Merged in Sage 3.0.4.rc3
+
+
+---
+
+Comment by mabshoff created at 2008-07-10 02:01:45
+
+Resolution: fixed

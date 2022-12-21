@@ -1,0 +1,289 @@
+# Issue 6278: linbox-1.1.6 fails to build in sage 4.0.1 with Solaris and gcc 4.4.0
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2009-06-14 07:38:34
+
+Assignee: tbd
+
+I noticed an error building linbox on the 16-core Sun T5240 't2' which currently runs Solaris 10 update 4 and uses gcc 4.4.0.
+
+It would appear that linbox needs blas library, which the configure script does not find. Looking at the list of installed packages, this is true. The 'blas-20070724.spkg' has NOT been built. Only the following have been built at the time linbox attempted to compile. 
+
+
+```
+
+atlas-3.8.3.p2
+bzip2-1.0.5
+conway_polynomials-0.2
+dir-0.1
+eclib-20080310.p7
+elliptic_curves-0.1
+extcode-4.0.1.alpha0
+flint-1.2.4.p3
+fortran-20071120.p5
+freetype-2.3.5.p0
+gd-2.0.35.p1
+gdmodule-0.56.p5
+givaro-3.2.13rc2
+gnutls-2.2.1.p1
+graphs-20070722
+gsl-1.10.p1
+iml-1.0.1.p11
+ipython-0.9.1
+lapack-20071123.p0
+libgcrypt-1.4.3.p0
+libgpg_error-1.6.p0
+libpng-1.2.35
+mpir-1.2.p0
+ntl-5.4.2.p7
+opencdk-0.6.6
+pari-2.3.3.p0
+prereq-0.3
+python-2.5.4.p1
+readline-5.2.p6
+sage_scripts-4.0.1.alpha0
+sqlite-3.5.3.p3
+termcap-1.3.1.p0
+zlib-1.2.3.p4
+```
+
+
+
+I'm a bit puzzled by this one. I would not have thought this to be a Solaris-specific issue, so why it should not have been caught earlier by others I don't know. 
+
+
+```
+
+Machine:
+SunOS t2 5.10 Generic_127111-09 sun4v sparc SUNW,T5240
+Deleting directories from past builds of previous/current versions of linbox-1.1.6
+Extracting package /home/kirkby/sage-4.0.1.alpha0/spkg/standard/linbox-1.1.6.spkg ...
+-rw-r--r--   1 kirkby   1093     1577140 May 15 18:42 /home/kirkby/sage-4.0.1.alpha0/spkg/standard/linbox-1.1.6.spkg
+linbox-1.1.6/
+linbox-1.1.6/spkg-rebuild
+linbox-1.1.6/.hgignore
+linbox-1.1.6/.hg/
+linbox-1.1.6/.hg/dirstate
+linbox-1.1.6/.hg/requires
+linbox-1.1.6/.hg/store/
+linbox-1.1.6/.hg/store/undo
+linbox-1.1.6/.hg/store/data/
+<SNIP >
+linbox-1.1.6/src/examples/sparseelimrank.C
+linbox-1.1.6/src/examples/valence.C
+linbox-1.1.6/src/examples/fields/
+linbox-1.1.6/src/examples/fields/Makefile.am
+linbox-1.1.6/src/examples/fields/Makefile.in
+linbox-1.1.6/src/examples/fields/ex-fields.C
+linbox-1.1.6/src/examples/fields/ex-fields-archetype.C
+linbox-1.1.6/src/examples/fields/modular-int.C
+Finished extraction
+****************************************************
+Host system
+uname -a:
+SunOS t2 5.10 Generic_127111-09 sun4v sparc SUNW,T5240
+****************************************************
+****************************************************
+GCC Version
+gcc -v
+Using built-in specs.
+Target: sparc-sun-solaris2.10
+Configured with: ../gcc-4.4.0/configure --with-gnu-as --with-as=/home/kirkby/bin/as --with-gnu-ld --with-ld=/home/kirkby/bin/ld --with-gmp=/home/kirkby/dependencies/ --with-mpfr=/home/kirkby/dependencies/ --enable-languages=c,c++,fortran --prefix=/home/kirkby/dependencies/
+Thread model: posix
+gcc version 4.4.0 (GCC)
+****************************************************
+Copying commentator patch
+Solaris cblas
+*************************************************
+ Using LINBOX_BLAS=-lcblas -latlas
+*************************************************
+checking for a BSD-compatible install... ./install-sh -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... nawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/sfw/bin/ggrep
+checking for egrep... /usr/sfw/bin/ggrep -E
+checking for ANSI C header files... yes
+checking build system type... sparc-sun-solaris2.10
+checking host system type... sparc-sun-solaris2.10
+checking for a sed that does not truncate output... /home/kirkby/dependencies/bin/sed
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for ld option to reload object files... -r
+checking for BSD-compatible nm... /home/kirkby/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... f77
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether f77 accepts -g... yes
+checking the maximum length of command line arguments... 786240
+checking command to parse /home/kirkby/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... solaris2.10 ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... ld
+checking if the linker (ld) is GNU ld... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... solaris2.10 ld.so
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for f77 option to produce PIC... -fPIC
+checking if f77 PIC flag -fPIC works... yes
+checking if f77 static flag -static works... no
+checking if f77 supports -c -o file.o... yes
+checking whether the f77 linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... solaris2.10 ld.so
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+checking for char... yes
+checking size of char... 1
+checking for short... yes
+checking size of short... 2
+checking for int... yes
+checking size of int... 4
+checking for long... yes
+checking size of long... 4
+checking for long long... yes
+checking size of long long... 8
+checking for __int64... no
+checking size of __int64... 0
+checking whether byte ordering is bigendian... yes
+Default path = /usr /usr/local
+checking whether to compile the drivers... no
+checking for GMP >= 3.1.1... found
+checking whether GMP is 4.0 or greater... yes
+checking whether GMP was compiled with --enable-cxx... yes
+checking for NTL >= 5.0... found
+checking for GIVARO >= 3.2.10... found
+checking whether to compile the sage interface... yes
+checking for C interface to BLAS... not found
+checking for others BLAS... not found
+
+*******************************************************************************
+ ERROR: BLAS not found!
+
+ BLAS routines are required for this library to compile. Please
+ make sure BLAS are installed and specify its location with the option
+ --with-blas=<lib> when running configure.
+*******************************************************************************
+Error configuring linbox
+
+real    0m53.809s
+user    0m20.064s
+sys     0m21.375s
+sage: An error occurred while installing linbox-1.1.6
+Please email sage-devel http://groups.google.com/group/sage-devel
+explaining the problem and send the relevant part of
+of /home/kirkby/sage-4.0.1.alpha0/install.log.  Describe your computer, operating system, etc.
+If you want to try to fix the problem, yourself *don't* just cd to
+/home/kirkby/sage-4.0.1.alpha0/spkg/build/linbox-1.1.6 and type 'make'.
+Instead type "/home/kirkby/sage-4.0.1.alpha0/sage -sh"
+in order to set all environment variables correctly, then cd to
+/home/kirkby/sage-4.0.1.alpha0/spkg/build/linbox-1.1.6
+(When you are done debugging, you can type "exit" to leave the
+subshell.)
+make[1]: *** [installed/linbox-1.1.6] Error 1
+make[1]: Leaving directory `/home/kirkby/sage-4.0.1.alpha0/spkg'
+
+real    497m40.205s
+user    443m47.011s
+sys     25m30.557s
+python: can't open file '/home/kirkby/sage-4.0.1.alpha0/devel/sage/doc/common/builder.py': [Errno 2] No such file or directory
+
+```
+
+
+
+
+---
+
+Comment by was created at 2009-06-15 23:38:57
+
+Changing priority from blocker to critical.
+
+
+---
+
+Comment by drkirkby created at 2009-06-19 10:03:40
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by drkirkby created at 2009-06-19 10:03:40
+
+Changing assignee from tbd to drkirkby.
+
+
+---
+
+Comment by drkirkby created at 2009-06-19 10:03:40
+
+I've found this is not a bug, but a result of a bug in the GNU linker, version 2.15 at /usr/sfw/bin/gld in Solaris 10. 
+
+How does one close the bug?
+
+
+---
+
+Comment by was created at 2009-06-20 10:42:43
+
+Resolution: invalid

@@ -1,0 +1,161 @@
+# Issue 6071: Weight 1 Eisenstein series
+
+Issue created by migration from Trac.
+
+Original creator: davidloeffler
+
+Original creation time: 2009-05-18 15:20:16
+
+Assignee: davidloeffler
+
+CC:  was
+
+Computing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.
+
+
+---
+
+Comment by davidloeffler created at 2009-05-18 15:22:48
+
+patch against 4.0.alpha0
+
+
+---
+
+Comment by davidloeffler created at 2009-05-18 15:23:12
+
+Changing status from new to assigned.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by davidloeffler created at 2009-05-18 15:23:12
+
+Changing keywords from "" to "eisenstein series".
+
+
+---
+
+Comment by cremona created at 2009-05-30 16:12:18
+
+I think I am too ignorant about weight 1 forms to review this honestly.  All I can say is that there's a typo on line 285 of the patch (in a comment) -- chi <--> psi?
+
+
+---
+
+Comment by davidloeffler created at 2009-06-08 08:26:51
+
+You are right about the comment typo, I will do a micro-patch to fix it when the pile of exam scripts on my desk has decreased far enough.
+
+I am adding William to the CC list, since he certainly knows about weight 1 forms.
+
+
+---
+
+Comment by was created at 2009-06-20 14:51:17
+
+REFEREE REPORT:
+
+There is not a single example in this patch of computing an Eisenstein series of weight 1.  Can you add some examples?
+
+
+Also, this seems very very wrong to me:
+
+```
+ 	361	        try: 
+ 	362	            d = self.dimension() 
+ 	363	        except NotImplementedError: 
+ 	364	            d = self._dim_eisenstein() 
+ 	365	        self.__module = free_module.VectorSpace(self.base_ring(), d) 
+```
+
+
+You've changed the dimension for *ambient* modular forms spaces to return the dimension of the Eisenstein subspace in case the dimension function isn't implemented.  What if I take a space with both a cuspidal and eisenstein part -- it'll just say the dimension of the whole space is the dimension of the eisenstein subspace. Somehow I have the feeling you made this change to get things to work in a special case of interest to you, not worrying that you might break other cases.
+
+
+---
+
+Comment by davidloeffler created at 2009-06-20 20:06:33
+
+Fair point; I will add some more examples.
+
+For your second point: if you install the patch and try it out, you'll see that (for instance) ModularForms(Gamma1(23), 1) will raise a NotImplementedError, as it should, but EisensteinForms(Gamma1(23),1) will work. The thing that you describe as "very very wrong" is forced by the general design we have for modular forms spaces, which insists that Eisenstein forms are always a subspace of an ambient ModularForms space spanned by the *last* few basis vectors. The point of the workaround above is that when we can't find the dimension of the wt 1 cusp forms, we pretend that there aren't any for the purposes of working with Eisenstein series, but intercept any attempt to create the whole modular forms space (or its cuspidal part) by raising an error.
+
+Even once we have proper code for calculating weight 1 cusp forms this will still be an issue, since for large N calculating dim S_1(Gamma_1(N)) is a serious and time-consuming calculation that we don't want to be forced to do solely in order to know how many zeros to stick at the front of the Eisenstein series.
+
+
+---
+
+Comment by cremona created at 2009-06-20 21:47:27
+
+For what it's worth: that sounds like a good explanation.  Perhaps when you put the examples in you can include some which illustrate those points too.
+
+
+---
+
+Attachment
+
+Replaces previous patch
+
+
+---
+
+Comment by was created at 2009-07-21 04:28:09
+
+REFEREE REPORT:
+
+ * This comment must be changed, and I've changed it in the attached referee patch:
+
+
+```
+File:           /scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/modular/modform/ambient.py
+Definition:     M.module(self)
+Docstring:
+    
+            Return the underlying free module corresponding to this space of
+            modular forms. This is a free module (viewed as a tuple space) of
+            the same dimension as this space over the same base ring.
+```
+
+This is because of the following example:
+
+```
+sage: M = ModularForms(Gamma1(23), 1,prec=20); M
+Modular Forms space of dimension (unknown) for Congruence Subgroup Gamma1(23) of weight 1 over Rational Field
+sage: M.module()
+Vector space of dimension 11 over Rational Field
+```
+
+so it is now no longer the case that `M.module().dimension() == M.dimension()` as is stated in the docstring.
+The change should just be to state that "If the dimension of M can be computed, then [same as before].  Otherwise, the dimension of M.module() may be smaller.  E.g., in the case of weight 1 forms..."  Then include an example in the docstring that illustrates this. 
+
+
+This ticket should be changed to "[with patch; positive review]" as soon as somebody else signs off on the referee patch I've attached.
+
+
+---
+
+Attachment
+
+Fair point. The new patch looks fine to me, so positive review.
+
+
+---
+
+Comment by mvngu created at 2009-07-23 03:10:04
+
+Merged:
+ 1. `trac_6071-weight1_eisenstein.patch`
+ 1. `trac_6071-referee.patch`
+
+
+---
+
+Comment by mvngu created at 2009-07-23 03:10:04
+
+Resolution: fixed

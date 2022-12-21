@@ -1,0 +1,384 @@
+# Issue 9264: Apply ALL relevent fixes to ECL 10.4.1
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-06-18 12:16:14
+
+Assignee: tbd
+
+CC:  was jhpalmieri mpatel leif jsp jason vbraun jdemeyer
+
+There are a number of tickets active at the minute with patches to ECL
+
+ * #8808
+ * #9187
+ * #8951
+ * #8089
+
+none have been merged, but the patches are not consistent across all or them. 
+
+ * The option --with-dffi=no  from #8089 has not been been missed which is very important. 
+ * Some other less important changes (such as removing an inaccurate, but innocuous mention of building a 32-bit version) are removed. 
+ * There is a 10.4.1.p0 package, despite no 10.4.1 has actually been merged. 
+
+The aim of this ticket is to update to the 10.4.1 source code, whilst ensuring all the relevant patches are applied. 
+
+Dave
+
+
+---
+
+Comment by nbruin created at 2010-06-18 16:03:22
+
+Your best chance is to see if you can give a positive review to
+#8645. The maxima spkg there:
+
+```
+http://sage.math.washington.edu/home/nbruin/maxima-5.20.1.p1.spkg
+```
+
+is the same maxima that is in sage now, with minimal changes applied to let maxima build under ECL 10.4.1.
+
+If maxima.5.20.1.p1 on ecl.10.4.1 needs work, we might as well wait until maxima.5.21 is ready to be merged, because then the problem is ecl.10.4.1.
+
+When I tried, I couldn't get maxima to build properly under ecl.10.2 (its "ASDF" is too buggy)
+
+
+---
+
+Comment by drkirkby created at 2010-06-19 19:23:17
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by drkirkby created at 2010-06-19 19:23:17
+
+I've created a new ECL package
+
+http://boxen.math.washington.edu/home/kirkby/revised-patches/ecl-10.4.1.spkg
+
+which has the following fixes applied:
+
+ * Updates ECL to the latest upstream, 10.4.1
+ * Applies a fix to stop ECL building in parallel, which is ticket #9187. This already has positive review. 
+ * Applies the fix from #8089 to disable the dynamic foreign function interface as advised by the ECL developer. This disables the use of assembly code on OpenSolaris x64, but no other platform.
+ * Removes files from /tmp/ECL* as soon as they are no longer needed, as failure to do so can present problems on multi-user systems. 
+
+All changes have been checked with #8645, which has a change to Maxima which allows Maxima to build with the latest ECL. The patch on #8645 does *not* update Maxima to the latest version, as that creates problems which are non-trivial to solve. It does however fix a problem with Maxima not installing the library properly, and allows Maxima to build with the latest ECL>
+
+As such, the attached ticket:
+ 
+ * Allows Maxima to build the library properly whilst still working with the latest ECL. 
+ * Remove unwanted ECL tmp files. 
+ * Allows spkgs to build in parallel
+ * Allow ECL to build on OpenSolaris x64. 
+
+Here are the test results:
+
+ == Testing on Solaris 10 SPARC in 32-bit mode. ==
+    * Sun Blade 1000
+    * 2 x 900 MHz UltraSPARC III+ CPUs
+    * 2 GB RAM
+    * Solaris 10 03/2005 (first release of Solaris 10)
+    * gcc 4.4.3 (uses Sun linker and assembler) 
+    * Sage 4.4.4.alpha1
+
+
+```
+	done
+for i in Copyright LGPL; do \
+	  /usr/bin/ginstall -c -m 644 /export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/ecl-10.4.1/src/src/../$i /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/; \
+	done
+/bin/sh /export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/ecl-10.4.1/src/src/gc/mkinstalldirs /export/home/drkirkby/sage-4.4.4.alpha1/local/share/man/man1
+for i in doc/ecl.man doc/ecl-config.man; do \
+	    /usr/bin/ginstall -c -m 644 $i /export/home/drkirkby/sage-4.4.4.alpha1/local/share/man/man1/ecl.1; \
+	done
+make[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/ecl-10.4.1/src/build'
+
+real	1m26.075s
+user	1m17.655s
+sys	0m7.531s
+Successfully installed ecl-10.4.1
+}}} 
+
+Here is the Maxima 5.20.1.p1 installation from #8645
+
+{{{
+installing Maxima library as /export/home/drkirkby/sage-4.4.4.alpha1/local/lib/ecl//maxima.fas
+
+real    22m32.432s
+user    19m9.372s
+sys     2m51.674s
+Successfully installed maxima-5.20.1.p1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/maxima-5.20.1.p1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing maxima-5.20.1.p1.spkg
+drkirkby`@`redstart:~/sage-4.4.4.alpha1$ 
+}}}
+
+ == Testing on OpenSolaris x64 06/2009 64-bit mode. ==
+    * Sun Ultra 27
+    * 2 x 3.33 GHz quad core Intel Xeon MHz
+    * 12 GB RAM
+    * OpenSolaris 06/2009 (Last release of OpenSolaris, updated to build 134)
+    * gcc 4.4.4 (uses Sun linker and GNU assembler) 
+    * Sage 4.4.4.alpha1
+
+{{{
+/bin/sh /export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/ecl-10.4.1/src/src/gc/mkinstalldirs /export/home/drkirkby/sage-4.4.4.alpha1/local/share/man/man1
+for i in doc/ecl.man doc/ecl-config.man; do \
+	    /usr/bin/ginstall -c -m 644 $i /export/home/drkirkby/sage-4.4.4.alpha1/local/share/man/man1/ecl.1; \
+	done
+make[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/ecl-10.4.1/src/build'
+
+real	1m26.075s
+user	1m17.655s
+sys	0m7.531s
+Successfully installed ecl-10.4.1
+}}}
+
+Maxima 5.20.1.p1 will *not* build on this platform, but such a problem is not related to this ticket, and appears it might be an incorrect flag given in the source (-Wl,-G instead of -shared). This is documented at #9099
+
+## Testing on sage.math (Linux), 64-bit.
+{{{
+n/man1/ecl.1; \
+	done
+make[1]: Leaving directory `/home/kirkby/sage-4.4.3/spkg/build/ecl-10.4.1/src/build'
+
+real	2m16.904s
+user	1m44.990s
+sys	0m14.980s
+Successfully installed ecl-10.4.1
+Now cleaning up tmp files.
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing ecl-10.4.1.spkg
+}}}
+
+We can also see Maxima, and the library are ok now. 
+
+{{{
+;;; 
+installing Maxima library as /home/kirkby/sage-4.4.3/local/lib/ecl//maxima.fas
+
+real	4m41.594s
+user	3m14.160s
+sys	0m46.000s
+Successfully installed maxima-5.20.1.p1
+Now cleaning up tmp files.
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing maxima-5.20.1.p1.spkg
+}}}
+
+## Note to Release manager
+There are many tickets active at the minute for updates to Maxima and ECL. Once positively, this should be integrated with Maxima at #8645. At the time of writing, the use of the latest Maxima will cause problems with doctest failures, as Maxima's output is changed from the current version.
+
+
+---
+
+Comment by nbruin created at 2010-06-21 06:02:28
+
+I have tested this ticket by building sage 4.4.3 with the following spkgs substituted:
+http://boxen.math.washington.edu/home/kirkby/revised-patches/ecl-10.4.1.spkg
+http://sage.math.washington.edu/home/nbruin/maxima-5.20.1.p1.spkg
+All doctests pass on `sage.math.washington.edu`. Furthermore, the ecl-10.4.1 package looks like it does what it's supposed to. When I diff it with http://sage.math.washington.edu/home/nbruin/ecl-10.4.1.spkg there are some unexpected files and differences in binary files in the `.hg` subdir, but otherwise the packages agree.
+
+Merging this ticket should be a good stepping stone towards #8731 (assuming the issues there haven't been resolved by the time the next release merges are made). Merging this ticket would also resolve #8645, as well as all ECL related ticket referred to.
+
+
+---
+
+Comment by nbruin created at 2010-06-21 06:02:28
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by drkirkby created at 2010-06-25 12:39:56
+
+I just noticed a small inaccuracy in the description of the hardware used to test this on OpenSolaris. It does not affect the validity of the ticket, but it is sensible to correct the error. 
+
+The section marked _Testing on OpenSolaris x64 06/2009 64-bit mode._ states the processors are:
+
+ * 2 x 3.33 GHz quad core Intel Xeon MHz 
+
+which is incorrect. Unfortunately, the Sun Ultra 27 does not support more than one CPU. A more accurate description of the hardware/software used to test this ECL package on OpenSolaris is:
+
+## Testing on OpenSolaris x64 06/2009 64-bit mode.
+ * [Sun Ultra 27 workstation](http://www.sun.com/desktop/workstation/ultra27/)
+ * 1 x 3.33 GHz 64-bit [Intel Xeon W3580](http://ark.intel.com/Product.aspx?id=39723) CPU (4 cores, 8 threads, 8 MB cache). 
+ * 12 GB RAM
+ * [OpenSolaris](http://www.opensolaris.com/) 06/2009 (Last release of OpenSolaris, updated to build 134)
+ * [gcc 4.4.4](http://gcc.gnu.org/gcc-4.4/changes.html) (uses Sun linker and GNU assembler)
+ * Sage 4.4.4.alpha1 
+
+Dave
+
+
+---
+
+Comment by rlm created at 2010-06-25 15:45:15
+
+Resolution: fixed
+
+
+---
+
+Comment by rlm created at 2010-06-25 15:45:35
+
+Applied http://boxen.math.washington.edu/home/kirkby/revised-patches/ecl-10.4.1.spkg
+
+
+---
+
+Comment by rlm created at 2010-07-11 19:16:40
+
+Changing status from closed to new.
+
+
+---
+
+Comment by rlm created at 2010-07-11 19:16:40
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by vbraun created at 2010-10-29 01:20:19
+
+ecl-10.2.1.p3 does not compile on Fedora 14:
+
+```
+libeclmin.a(sequence.o): In function `cl_sublis':
+/home/vbraun/Code/ecl/src/c/sequence.d:106: multiple definition of `cl_sublis'
+libeclmin.a(list.o):/home/vbraun/Code/ecl/src/c/list.d:778: first defined here
+c/all_symbols.o:(.data.rel+0x9b20): undefined reference to `cl_subseq'
+libeclmin.a(string.o): In function `string_trim0':
+/home/vbraun/Code/ecl/src/c/string.d:756: undefined reference to `cl_subseq'
+libeclmin.a(sequence.o): In function `cl_copy_seq':
+tmp.c:(.text+0x4c0): undefined reference to `cl_subseq'
+libeclmin.a(pathname.o): In function `make_one':
+/home/vbraun/Code/ecl/src/c/pathname.d:234: undefined reference to `cl_subseq'
+/home/vbraun/Code/ecl/src/c/pathname.d:234: undefined reference to `cl_subseq'
+collect2: ld returned 1 exit status
+make[1]: *** [ecl_min] Error 1
+```
+
+The current ecl-10.4.1 compiles fine. Given that Fedora 14 is scheduled to be released next Monday, is there any chance we can update ecl? Ideally in the next Sage (4.6.1) release...
+
+
+---
+
+Comment by drkirkby created at 2010-10-29 02:47:28
+
+You should open a new trac ticket for this. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-29 03:40:49
+
+I've created a new trac ticket for you - see #10185.
+
+
+---
+
+Comment by drkirkby created at 2010-10-29 03:56:17
+
+I realise this ticket was still open, but I still think the Fedora issue should go on a ticket of its own. The package I made for this ticket is not the latest ECL, so if we do update ECL, we will probably end up using a later version of it. The version here does not have some fixes which are in the current ECL in Sage. In particular, #9917 has fixes which are not in my package referenced here.
+
+
+---
+
+Comment by vbraun created at 2010-10-29 13:59:11
+
+I went through `./src/src/c/dpp.c` in your ecl-10.4.1 spkg (http://boxen.math.washington.edu/home/kirkby/revised-patches/ecl-10.4.1.spkg) and checked that all `fprint()`s have the right number of arguments. So upstream fixed #9917 and we don't have to patch it any more.
+
+I removed the included gmp as discussed in #9493.
+
+Are there any other outstanding patches? I've looked through trac and there seem to be many overlapping discussions. But I could not find any outstanding bugs.
+
+The new ecl requires also a new maxima (5.22.1 is newest upstream release), so we have to update both at the same time. I've created #10187 for a simultaneous ecl+maxima update.
+
+
+---
+
+Comment by vbraun created at 2011-02-19 13:37:56
+
+This ticket can be closed as we did update to ecl-10.4.1 a while ago.
+
+
+---
+
+Comment by kcrisman created at 2011-06-28 16:07:52
+
+In fact, now ECL is at version 11.1.1 in Sage.  #9493 is still open for the GMP removal, otherwise this ticket can be closed.
+
+
+---
+
+Comment by kcrisman created at 2011-06-28 16:07:52
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by kcrisman created at 2011-06-28 16:09:08
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by leif created at 2011-06-28 16:15:25
+
+Replying to [comment:15 kcrisman]:
+> In fact, now ECL is at version 11.1.1 in Sage.  #9493 is still open for the GMP removal, otherwise this ticket can be closed.
+
+I wonder if at least my _Special Update / Build Instructions_ from there went into the ECL spkg... 8)
+
+
+---
+
+Comment by kcrisman created at 2011-06-28 16:19:44
+
+Well, unpack ecl-11.1.1.p1.spkg and find out.  At any rate, that is on the ticket description at #9493 still, so this ticket should be closed.
+
+
+---
+
+Comment by kcrisman created at 2011-06-28 16:20:11
+
+Replying to [comment:18 kcrisman]:
+> Well, unpack ecl-11.1.1.p1.spkg and find out.  At any rate, that is on the ticket description at #9493 still, so this ticket should be closed.
+No offense intended, by the way - it just seems more relevant to discuss this at that ticket.
+
+
+---
+
+Comment by leif created at 2011-06-28 16:29:02
+
+Replying to [comment:18 kcrisman]:
+> Well, unpack ecl-11.1.1.p1.spkg and find out.  At any rate, that is on the ticket description at #9493 still, so this ticket should be closed.
+
+Could be the first time I ever use `sage -info ...` (which ought to dump `SPKG.txt` to the screen, but unfortunately currently doesn't: #11021). :D
+
+
+---
+
+Comment by jdemeyer created at 2011-07-05 10:08:25
+
+Resolution: duplicate

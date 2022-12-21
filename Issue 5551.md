@@ -1,0 +1,346 @@
+# Issue 5551: Permutation from a pair of standard tableaux
+
+Issue created by migration from Trac.
+
+Original creator: slabbe
+
+Original creation time: 2009-03-17 20:29:32
+
+Assignee: slabbe
+
+CC:  sage-combinat
+
+Keywords: robinson schensted
+
+1. In sage 3.4, the Robinson Schensted algorithm is coded for a permutation :
+
+
+```
+sage: p = Permutation([3, 6, 5, 2, 7, 4, 1])
+sage: p.robinson_schensted()
+[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]
+```
+
+
+Since this algorithm is invertible, it would be nice to allow to construct a permutation from a pair of standard tableaux of the same shape.
+
+2. The Robinson-Schensted is broken on the empty permutation. It should simply return a pair of empty tableaux :
+
+
+```
+sage: p=Permutation([])
+sage: p.robinson_schensted()
+Traceback (most recent call last):
+...
+ValueError: invalid tableau
+```
+
+
+
+---
+
+Comment by slabbe created at 2009-03-17 21:04:28
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by slabbe created at 2009-03-17 21:17:46
+
+Changing type from defect to enhancement.
+
+
+---
+
+Comment by hivert created at 2009-03-17 22:34:31
+
+Dear Sebastien,
+
+It's good to have this ! Thanks. There are three little problems:
+
+1) The documentation says:
+
+```
+-  a pair of two standard tableaux of the same shape.  
+   The right tableau must be over the integers 1 to n,  
+   where n is its size.
+```
+
+As far as I know a tableau with entries from 1 to n is what is called a *standard tableau*. When there are repeated entries the usual terminology is semi standard tableaux or young tableaux. See eg: http://en.wikipedia.org/wiki/Young_diagram
+
+
+
+2) why not call it `robinson_schented_inv` ?
+
+
+---
+
+Comment by slabbe created at 2009-03-18 14:47:17
+
+Dear Florent,
+
+Thanks for your quick answer,
+
+Replying to [comment:3 hivert]:
+>       Dear Sebastien,
+> 
+> It's good to have this ! Thanks. 
+
+Cool!
+
+> There are three little problems:
+
+Did you forget the third one or is this a joke meaning you are of the second type of mathematician?
+
+> 
+> 1) The documentation says:
+> {{{
+> -  a pair of two standard tableaux of the same shape.  
+>    The right tableau must be over the integers 1 to n,  
+>    where n is its size.
+> }}}
+> As far as I know a tableau with entries from 1 to n is what is called a *standard tableau*.
+
+And increasing in row and column. Right. I agree. I should remove the second sentence above.
+
+So this leads me to a related question. From a permutation, Robinson-Schensted Algo gives a pair of standard tableaux :
+
+```
+sage: p = Permutation([3, 6, 5, 2, 7, 4, 1])
+sage: p.robinson_schensted()
+[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]
+```
+
+But from the following "non bijective" permutation, we obtain a pair of tableaux (p,q) where p is semi-standard and q is standard. Well, we can say more about p : there are no repeated entry, only possible weigth 1 and 0.
+
+```
+sage: p = Permutation([3, 6, 5, 2, 117, 4, 1])
+sage: p.robinson_schensted()
+[[[1, 4, 117], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]
+sage: t1,t2 = _
+sage: t1.weight()
+[1, 1, 1, 1, 1, 1, 0, 0, 0, ..., 0, 0, 1]
+sage: t2.weight()
+[1, 1, 1, 1, 1, 1, 1]
+```
+
+Should from_tableaux handle the above pair of tableaux? Actually it does :
+
+```
+sage: p = Permutation([3, 6, 5, 2, 117, 4, 1]) ; p
+[3, 6, 5, 2, 117, 4, 1]
+sage: import sage.combinat.permutation as permutation
+sage: p.robinson_schensted()
+[[[1, 4, 117], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]
+sage: permutation.from_tableaux(*_)
+[3, 6, 5, 2, 117, 4, 1]
+```
+
+Then, what should the input of from_tableaux say? Should it say simply a pair of standard tableaux as robinson_shensted doc string says it returns a pair of standard tableaux? Should it say that it handles a pair (p, q) of tableaux where p is semi-standard (weigth 0 or 1) and q is standard?
+
+> When there are repeated entries the usual terminology is semi standard tableaux or young
+> tableaux. See eg: http://en.wikipedia.org/wiki/Young_diagram
+> 
+> 
+> 
+> 2) why not call it `robinson_schented_inv` ? 
+> 
+
+There is a section in permutation.py containing functions constructing a permutation from different objects :
+
+```
+#############################
+# Constructing Permutations #
+#############################
+def from_permutation_group_element(pge):
+def from_rank(n, rank):
+def from_inversion_vector(iv):
+def from_cycles(n, cycles):
+def from_lehmer_code(lehmer):
+def from_reduced_word(rw):
+```
+
+
+The name from_tableaux was then natural. Also, I coded the function for a colleague used to mathematica and he told me in mathematica they use `TableauxToPermutation` and `PermutationToTableaux`. I don't mind change it to robinson_schensted_inv or robinson_schensted_inverse(). Do I?
+
+
+---
+
+Comment by hivert created at 2009-03-18 19:17:40
+
+> Did you forget the third one or is this a joke meaning you are of the second type of mathematician?
+
+Both !!! Every people doing combinatorics should know that he is of the second type ! Do you know how to count the number of twin prime numbers ? If not you are of the second type ! 
+ 
+> Then, what should the input of from_tableaux say? Should it say simply a pair of standard tableaux as robinson_shensted doc string says it returns a pair of standard tableaux? Should it say that it handles a pair (p, q) of tableaux where p is semi-standard (weigth 0 or 1) and q is standard?
+
+Obviously you never tried the following one: 
+
+```
+sage: p = Permutation([1,3,2,2,4,3])
+sage: p.robinson_schensted()
+[[[1, 2, 2, 3], [3, 4]], [[1, 2, 4, 5], [3, 6]]]
+sage: permutation.from_tableaux(*_)
+[1, 3, 2, 2, 4, 3]
+```
+
+
+Yes !!! Do it !!! Try It !!!
+
+Does it answer your question ? 
+
+> There is a section in permutation.py containing functions constructing a permutation from different objects :
+> [...]
+> The name from_tableaux was then natural. Also, I coded the function for a colleague used to mathematica and he told me in mathematica they use `TableauxToPermutation` and `PermutationToTableaux`. I don't mind change it to robinson_schensted_inv or robinson_schensted_inverse(). Do I?
+
+In MuPAD we had `schensted` and `schenstedInv`. I'd rather have either `robinson_schensted_inv}}/{{{inverse()` of `from_tableaux_pair`. 
+I think you should ask for a vote on sage-combinat-devel.
+
+
+Finally, my third remark is that you should raise a `ValueError` with a proper explanation of what is wrong if the two tableaux are not of the same shape:
+
+
+```
+sage: permutation.from_tableaux(Tableau([This is the Trac macro *1,2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3-macro)), Tableau([This is the Trac macro *1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2-macro)))
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+
+/home/averell/.sage/temp/tomahawk/7383/_home_averell__sage_init_sage_0.py in <module>()
+
+/usr/local/sage/sage/local/lib/python2.5/site-packages/sage/combinat/permutation.pyc in from_tableaux(p, q)
+   3112     p = map(list, p)
+   3113     for n in range(size, 0, -1):
+-> 3114         i,j = d[n]
+   3115         x = p[i][j]
+   3116         del p[i][j]
+
+KeyError: 3
+}}} 
+
+Cheers,
+
+Florent
+
+
+---
+
+Attachment
+
+Against sage 3.4. This patch is part of sage-combinat tree.
+
+
+---
+
+Comment by slabbe created at 2009-03-20 15:08:26
+
+I improved the patch after Florent's comments. I just uploaded it.
+
+slabbe
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by hivert created at 2009-03-20 18:18:18
+
+The review patche solve two remaining issues in the doc
+
+1) The input was claimed to be "a pair (p, q) of tableaux [...]" which suggest that the function accept a *tuple*, whereas it actually needs two objects: 
+
+```
+robinson_schensted_inverse(t1, t2)
+}}} 
+is correct whereas 
+{{{
+p = (t1,t2); robinson_schensted_inverse(p)
+}}}
+if not. 
+
+2) the submitted patch tests the result of `robinson_schensted_inverse` on things that are not semi-standard Young tableaux which should not be accepted by the constructor of tableaux. I even don't think that the RSK has any mathematical meaning for those objects, has it ? So I removed the tests and replaced them by a sentences saying that this should not be asked. Note that there is a plan to remove this feature for Tableaux and to add a new class called Fillings. 
+
+See the copy of the mail at the bottom of http://wiki.sagemath.org/CombinatorialClass
+
+
+---
+
+Comment by saliola created at 2009-03-22 11:11:31
+
+I think it would be better if the user can pass two lists that define tableaux to the constructor instead of having to first create the tableaux. Explicitly, I'd like to write:
+
+```
+sage: Permutation(([[1,2],[3]], [[1,2],[3]]))
+```
+
+instead of 
+
+```
+sage: Permutation((Tableau([[1,2],[3]]), Tableau([[1,2],[3]])))
+```
+
+especially since
+
+```
+sage: [[1,2],[3]] in StandardTableaux(3)
+True
+```
+
+Looking at the code suggests this is possible? Are there any reasons to not do this?
+
+
+---
+
+Comment by slabbe created at 2009-03-25 02:44:55
+
+Hi,
+
+I agree with saliola suggestion and I think it is possible. We simply need to have a unique way to understand the input. A list of list of list -> tableau. A list of tuple -> cycles...etc.
+
+I will propose a new patch soon...
+
+slabbe
+
+
+---
+
+Comment by slabbe created at 2009-04-01 16:57:28
+
+This patch applies over the precedent two.
+
+
+---
+
+Attachment
+
+I addressed saliola comments in the patch I just uploaded. Needs review...
+
+
+---
+
+Comment by hivert created at 2009-04-04 16:00:13
+
+Everthing looks good. `All tests passed!` I'm giving a positive review.
+
+Florent
+
+
+---
+
+Comment by mabshoff created at 2009-04-06 00:14:44
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2009-04-06 00:14:44
+
+Merged all three patches in Sage 3.4.1.rc1.
+
+Cheers,
+
+Michael

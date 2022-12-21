@@ -1,0 +1,168 @@
+# Issue 5974: [with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2009-05-04 05:22:33
+
+Assignee: was
+
+CC:  rbeezer
+
+Behold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!
+
+
+```
+BEFORE:
+sage: A = random_matrix(QQ,50)
+sage: v = [1..50]
+sage: timeit('A.linear_combination_of_rows(v)')
+125 loops, best of 3: 5.48 ms per loop
+
+AFTER:
+sage: A = random_matrix(QQ,50)
+sage: v = [1..50]
+sage: timeit('A.linear_combination_of_rows(v)')
+625 loops, best of 3: 503 µs per loop
+
+```
+
+
+
+---
+
+Comment by was created at 2009-05-04 06:00:54
+
+While making sure all doctests pass for this, I uncovered the following serious bug:
+
+
+```
+sage: e = random_matrix(QQ,1,2,sparse=True); e.echelon_form().parent().is_dense()
+True
+sage: type(e)
+<type 'sage.matrix.matrix_rational_sparse.Matrix_rational_sparse'>
+sage: e = random_matrix(QQ,1,2,sparse=True); e.echelon_form().parent().is_dense()
+True
+sage: e = random_matrix(QQ,1,2,sparse=True); e.echelon_form().parent().is_dense()
+True
+sage: e = random_matrix(QQ,1,2,sparse=True); e.echelon_form().parent().is_dense()
+True
+sage: e = random_matrix(QQ,2,2,sparse=True); e.echelon_form().parent().is_dense()
+False
+sage: e = random_matrix(QQ,2,2,sparse=True); e.echelon_form().parent().is_dense()
+True
+```
+
+
+We're getting a sparse matrix with *DENSE* parent out of echelon form for some reason.  This totally breaks my new much better implementation of linear_combination_of_rows, and would of course break all kinds of other code in random and surprising ways eventually.  
+
+The above is all present in the default sage-3.4.2.rc0.
+
+
+---
+
+Attachment
+
+I ran a fulldoctest cycle with this patch applied and found yet another serious bug in matrix multiplication (not caused by this patch, but uncovered by it).  E.g., in vanilla released 3.4.1, some multiplies of cyclotomic matrices just go boom!
+
+
+```
+wstein`@`sage:~$ sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+| Sage Version 3.4.1, Release Date: 2009-04-21                       |
+| Type notebook() for the GUI, and license() for information.        |
+/scratch/wstein/sage/temp/sage.math.washington.edu/15110/_scratch_wstein_sage_init_sage_0.py in <module>()
+
+/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11263)()
+
+/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5396)()
+
+/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/action.so in sage.matrix.action.MatrixMatrixAction._call_ (sage/matrix/action.c:2485)()
+
+/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_cyclo_dense.so in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_ (sage/matrix/matrix_cyclo_dense.cpp:5674)()
+
+/home/wstein/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:32188)()
+
+IndexError: list index out of range
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jhpalmieri created at 2009-05-06 21:04:39
+
+In trac_5974.patch, I like the new code better than the old and I see the speed up (not quite 10 times on my machine, but close).  However, should you raise an error if the length of v is longer than the number of rows of the matrix, the way the old code did?  With the new code, I get an error about sizes of matrices being wrong, which is a little opaque:
+
+```
+sage: A = random_matrix(QQ,50)                                                               
+sage: v = [1..52]                                                                            
+sage: A.linear_combination_of_rows(v)                                                        
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+...
+TypeError: unsupported operand parent(s) for '*': 'Full MatrixSpace of 1 by 52 dense matrices over Integer Ring' and 'Full MatrixSpace of 50 by 50 dense matrices over Rational Field'
+```
+
+Also, this is a little silly, but if A is a matrix with 0 rows, then `A.linear_combination_of_rows(range(3000))` works just fine.
+
+Otherwise, looks good.  All tests pass on sage.math.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jhpalmieri created at 2009-05-07 21:49:36
+
+Looks good.
+
+
+---
+
+Comment by mabshoff created at 2009-05-11 12:07:07
+
+This patch causes two doctest failures for me:
+
+```
+        sage -t -long devel/sage/sage/combinat/species/series.py
+        sage -t -long devel/sage/sage/rings/padics/padic_capped_absolute_element.pyx # Segfault
+```
+
+
+They seems to be not reproducible at the moment, but I am paranoid enough to wait and see post 4.0.a0 so I can valgrind this.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-11 12:41:38
+
+Merged in Sage 4.0.alpha0. I reran long doctests eight times and did not see any more issues. Should something lurk in here (or expose some other problem) we will catch it post 4.0.a.0.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-11 12:41:38
+
+Resolution: fixed

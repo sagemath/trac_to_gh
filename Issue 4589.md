@@ -1,0 +1,177 @@
+# Issue 4589: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure due to #4583
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2008-11-23 02:52:58
+
+Assignee: mabshoff
+
+CC:  malb
+
+With #4583 applied I am seeing the following issue:
+
+```
+mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
+sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py", line 58:
+    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))
+Expected nothing
+Got:
+    End Of File (EOF) in read_nonblocking(). Exception style platform.
+    <pexpect.spawn instance at 0x2b0c44965248>
+    version: 2.0 ($Revision: 1.151 $)
+    command: /usr/local/bin/M2
+    args: ['/usr/local/bin/M2', '--no-debug', '--no-readline', '--silent']
+    patterns:
+        i[0-9]* : 
+    buffer (last 100 chars): 
+    before (last 100 chars): ine 332: /scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/M2: No such file or directory
+    <BLANKLINE>
+    after: <class 'pexpect.EOF'>
+    match: None
+    match_index: None
+    exitstatus: None
+    flag_eof: 1
+    pid: 19482
+    child_fd: 4
+    timeout: 30
+    delimiter: <class 'pexpect.EOF'>
+    logfile: None
+    maxread: 10000
+    searchwindowsize: None
+    delaybeforesend: 0
+    verbose 0 (1790: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.
+**********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py", line 144:
+    sage: I.groebner_basis()
+Expected:
+    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]
+Got:
+    End Of File (EOF) in read_nonblocking(). Exception style platform.
+    <pexpect.spawn instance at 0x2b0c44b007a0>
+    version: 2.0 ($Revision: 1.151 $)
+    command: /usr/local/bin/M2
+    args: ['/usr/local/bin/M2', '--no-debug', '--no-readline', '--silent']
+    patterns:
+        i[0-9]* : 
+    buffer (last 100 chars): 
+    before (last 100 chars): ine 332: /scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/M2: No such file or directory
+    <BLANKLINE>
+    after: <class 'pexpect.EOF'>
+    match: None
+    match_index: None
+    exitstatus: None
+    flag_eof: 1
+    pid: 19506
+    child_fd: 4
+    timeout: 30
+    delimiter: <class 'pexpect.EOF'>
+    logfile: None
+    maxread: 10000
+    searchwindowsize: None
+    delaybeforesend: 0
+    verbose 0 (1790: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.
+    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]
+**********************************************************************
+1 items had failures:
+   2 of  49 in __main__.example_0
+***Test Failed*** 2 failures.
+For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/tmp/.doctest_multi_polynomial_ideal.py
+	 [11.0 s]
+exit code: 1024
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mabshoff created at 2008-11-23 04:46:29
+
+Odd, but the hunk
+
+```
+`@``@` -164,7 +166,7 `@``@`
+
+         sage: I.change_ring(P.change_ring( IntegerModRing(2*7) )).groebner_basis()
+         verbose 0 (...: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.
+-        [x + y + z, y^2 + y + 8, y*z + y + 2, 2*y + 6, z^2 + 3, 2*z + 10]
++        [x + y + z^3 + z^2 + 11, y^2 + y + 5*z^3 + 2*z^2 + 3*z + 10, y*z + y + 9*z^3 + 5*z^2 + 9*z + 11, 2*y + 2*z^3 + 4*z^2 + 4*z + 8, z^2 + 3, 2*z + 10]
+
+     Modulo any other prime the Groebner basis is trivial so there are
+     no other solutions. For example:
+```
+
+causes a doctest failure for me. Thoughts?
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-11-23 04:51:37
+
+
+```
+[8:45pm] mabshoff: wstein-4591: I am having some trouble with #4589 ?
+[8:45pm] wstein-4591: what trouble.
+[8:45pm] mabshoff: Commented on the ticket.
+[8:45pm] wstein-4591: yes.
+[8:45pm] wstein-4591: it's because you're testing on a machine with m2 installed.
+[8:46pm] wstein-4591: The output is different if you have m2.
+[8:46pm] mabshoff: I thought that was it.
+[8:46pm] wstein-4591: mark the output random, I guess.
+[8:46pm] wstein-4591: dang.
+[8:46pm] wstein-4591: or put in ... for the whole ideal.
+[8:46pm] wstein-4591: [...]
+[8:46pm] mabshoff: It is on sage.math, no m2 there.
+[8:46pm] mabshoff: At least no in $PATH
+[8:46pm] wstein-4591: was`@`sage:~$ which M2
+[8:46pm] wstein-4591: /usr/local/bin/M2
+[8:46pm] wstein-4591: It's M2
+[8:46pm] mabshoff: shit
+[8:47pm] mabshoff: Case sensitive executable names are just dumb.
+[8:47pm] mabshoff: Then that test should be #optional - m2
+[8:47pm] wstein-4591: but then you would have to change the output back to m2's output.
+[8:47pm] wstein-4591: stupid design.
+[8:47pm] mabshoff: I will open a ticket for that crap since the doctest result should not change with optional packages installed.
+[8:48pm] wstein-4591: true
+[8:48pm] mabshoff: Yep, I am opening a ticket and make the result optional for now.
+[8:48pm] wstein-4591: pok
+[8:48pm] wstein-4591: ok
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-11-23 04:59:43
+
+Positive review. I deleted the last hunk from the patch and made that doctest optional for now. The issue with the doctest changing depending on M2 being installed or not will be dealt with at #4593.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-11-23 05:01:20
+
+Merged in Sage 3.2.1.alpha0
+
+
+---
+
+Comment by mabshoff created at 2008-11-23 05:01:20
+
+Resolution: fixed

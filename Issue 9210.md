@@ -1,0 +1,1352 @@
+# Issue 9210: pkg-config prefix statements in SAGE_LOCAL/lib/pkg-config not changed upon Sage move
+
+Issue created by migration from Trac.
+
+Original creator: jason
+
+Original creation time: 2010-06-11 04:12:13
+
+Assignee: GeorgSWeber
+
+CC:  drkirkby kcrisman
+
+The attached patch fixes the above issue which causes matplotlib to pick up the system freetype2 after moving Sage (even after #9208).  One thing led to another and I ended up restructuring and rewriting lots of the code in the file too.  I hope it's cleaner and has less portability issues (I changed a lot of things to use os.path.join, for example).
+
+
+---
+
+Comment by jason created at 2010-06-11 06:15:59
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by jason created at 2010-06-11 06:15:59
+
+Note that if you've already moved your build directory, you will have to move it again to trigger the code in this patch that updates the pkg-config file paths.
+
+
+---
+
+Comment by jason created at 2010-06-11 06:42:00
+
+#5776 is related (it's a general ticket about the stuff that old paths that still hang around in various places).
+
+
+---
+
+Comment by jason created at 2010-06-11 16:59:25
+
+In the R .pc file, there are still some other directories that are not changed (besides just the prefix directory).
+
+
+---
+
+Comment by jason created at 2010-06-11 16:59:25
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Attachment
+
+apply to sage-scripts repository
+
+
+---
+
+Comment by jason created at 2010-06-11 20:40:20
+
+Updated script to initially set a SAGE_ROOT variable inside the file, and then just update that variable.  This should take care of all paths in the file that need to be changed.
+
+
+---
+
+Comment by jason created at 2010-06-11 20:40:20
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by drkirkby created at 2010-06-11 21:38:07
+
+I've started to build the binary on my old Blade 1000. It's not the fastest machine in the world, (not even the fastest SPARC I own, but its convenient at the minute). It will take a few hours to build this, unpack it, then check for hard-coded paths. But I'm working on it. If I can stay awake, I might have something by 0200 GMT on Saturday. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-11 22:28:43
+
+It was a lot quicker than I expected. 
+
+Something has gone wrong here though. The installation worked fine before it was moved. First I create the binary. 
+
+
+```
+drkirkby`@`redstart:~/32/sage-4.4.3$ ./sage -bdist 4.4.3-ax                                                 
+Sage works!
+Copying files over to tmp directory
+local/lib/python2.6/python2.6: failed to get acl entries
+local/lib/libgfortran.so: failed to get acl entries
+cp: cannot access *.sage
+Copying Sage library over
+Making empty spkg's
+```
+
+
+I think we need to copy libgfortran (see #8049) though the failure to do so should not cause me a problem, as the system has it. But when I tried to move the distribution, I get:
+
+
+```
+-bash-3.00$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+The Sage install tree may have moved
+(from /export/home/drkirkby/32/sage-4.4.3 to /export/home/sageserv/sage-4.4.3-after-rewrite-sage-location-patch-Solaris10_03_2005-sun4u-SunOS)
+Changing various hardcoded paths
+(please wait at most a few minutes)...
+Do not interrupt this.
+Done resetting paths
+| Sage Version 4.4.3, Release Date: 2010-06-04                       |
+| Type notebook() for the GUI, and license() for information.        |
+
+------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occured in Sage.
+This probably occured because a *compiled* component
+of Sage has a bug in it (typically accessing invalid memory)
+or is not properly wrapped with _sig_on, _sig_off.
+You might want to run Sage under gdb with 'sage -gdb' to debug this.
+Sage will now terminate (sorry).
+------------------------------------------------------------
+```
+
+
+I don't have gdb on this machine. I'll investigate, but for now, there may be a problem here. 
+
+
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-11 22:43:46
+
+On closer inspection, gdb was on the machine, so I run sage with the option -gdb.
+
+The SIGSEGV seems to be caused by Singular failing to find a file 'tesths.cc' though that file does exist. 
+
+
+```
+-bash-3.00$ export PATH=$PATH:/usr/local/bin
+-bash-3.00$ ./sage -gdb
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+/export/home/sageserv/sage-4.4.3-after-rewrite-sage-location-patch-Solaris10_03_2005-sun4u-SunOS/local/bin/sage-ipython
+GNU gdb (GDB) 7.0.1
+Copyright (C) 2009 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.10".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /export/home/sageserv/sage-4.4.3-after-rewrite-sage-location-patch-Solaris10_03_2005-sun4u-SunOS/local/bin/python...done.
+[Thread debugging using libthread_db enabled]
+[New Thread 1 (LWP 1)]
+Python 2.6.4 (r264:75706, Jun  6 2010, 00:37:24) 
+[GCC 4.4.3] on sunos5
+Type "help", "copyright", "credits" or "license" for more information.
+| Sage Version 4.4.3, Release Date: 2010-06-04                       |
+| Type notebook() for the GUI, and license() for information.        |
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 1 (LWP 1)]
+siInit (name=0x1e169b4 <error reading variable>) at tesths.cc:65
+65      tesths.cc: No such file or directory.
+        in tesths.cc
+Current language:  auto
+The current source language is "auto; currently c++".
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 6182    ] will be killed.
+
+Quit anyway? (y or n) y
+-bash-3.00$ find . -name tesths.cc
+./spkg/standard/singular-3.1.0.4.p6/src/Singular/tesths.cc
+-bash-3.00$ cat ./spkg/standard/singular-3.1.0.4.p6/src/Singular/tesths.cc
+/****************************************
+*  Computer Algebra System SINGULAR     *
+****************************************/
+/* $Id: tesths.cc,v 1.115 2008/09/10 09:33:58 Singular Exp $ */
+```
+
+
+Do you think this can be related? It was fine before the distribution was moved. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-11 22:43:46
+
+Changing assignee from GeorgSWeber to drkirkby.
+
+
+---
+
+Comment by jason created at 2010-06-11 23:33:06
+
+It doesn't seem like it should be related (i.e., my guess is that you'd have this problem without the patch as well).  Can you zip up the SAGE_LOCAL/lib/pkgconfig/ directory and the SAGE_LOCAL/lib/sage-current-location.txt file so I can just double-check that the paths are right?
+
+
+---
+
+Comment by drkirkby created at 2010-06-12 00:52:47
+
+Sure. I've attached two .tar.gz files. It should be obvious which is which from the name. Note I created a second user account to test the moved version on, so you might see different user names on the two tarballs.
+
+
+---
+
+Comment by drkirkby created at 2010-06-12 00:53:32
+
+After creating a binary distribution and moving it to somewhere else.
+
+
+---
+
+Attachment
+
+The files were Sage was built.
+
+
+---
+
+Comment by jason created at 2010-06-12 02:10:05
+
+Enough stuff looked fishy in your output that I have to ask: Are you using the most recent version of the patch?  From the pkg-config files, it doesn't look like it.
+
+What commands are you running?  The following two sequences of commands should work to update the .pc files:
+
+1. Build sage from source in directory A
+
+2. Run Sage (this may be optional---it depends on if the build creates a correct local/lib/sage-current-location.txt file)
+
+3. Move the sage build directory to directory B
+
+4. Run Sage in the new directory (this updates the sage-current-location.txt file, and also updates the .pc files, etc.)
+
+Then the file paths should be updated.
+
+Alternatively, this should work:
+
+1. Build sage from source in directory A
+
+2. Make a bdist (this automatically runs Sage, so it takes care of step 2 above)
+
+3. Extract the bdist
+
+4. Run Sage in the new directory (this updates the sage-current-location.txt file, and also updates the .pc files, etc.)
+
+
+In either situation, at the top of each local/lib/pkgconfig/*.pc file, there should be a SAGE_ROOT=new directory after step 3, and the local/lib/sage-current-location.txt file should also contain the new directory name.  Neither of those are true for your attached outputs, so I think either you are using the old version of the patch or didn't follow one of the steps.  Or my code has a bug :).
+
+
+---
+
+Comment by jason created at 2010-06-12 02:12:27
+
+Replying to [comment:10 jason]:
+ 
+> In either situation, at the top of each local/lib/pkgconfig/*.pc file, there should be a SAGE_ROOT=new directory after step 3
+
+I meant after step 4.
+
+
+---
+
+Comment by drkirkby created at 2010-06-12 02:20:35
+
+I'll have to look at this later today - it is 3:19 am here! It's possible I don't have the latest patch, or I've somehow mess up installing it. Could you attach the full file (not just the patch) of whatever you think I might have wrong. I'll then copy that in directly. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-12 16:52:38
+
+I thought I might have messed up, as I was tired, but as far as I can see, I do get a problem.
+
+The method I used was:
+
+1. Build sage from source in directory /export/home/drkirkby/32/sage-4.4.3
+
+2. Make a binary distribution using your updated sage-bdist, which I've confirmed works on other systems and mine. 
+
+3. Log in as a different user 'sageserv' on my system.
+
+4. Extract the binary .tar.gz file, which was extracted to
+/export/home/sageserv/sage-4.4.3-after-rewrite-sage-location-patch-Solaris10_03_2005-sun4u-SunOS
+
+5. Run Sage in the new directory, where upon I get the seg fault. But in the other directory, as a different user name, it works fine. 
+
+
+As far as I can see, I have the latest patches. These are the sizes of the patched files.
+
+
+```
+-rwxr-xr-x   1 drkirkby other       3680 Jun  9 23:54 sage-bdist
+-rwxr-xr-x   1 drkirkby other      10216 Jun 10 20:00 sage-env
+-rwxr-xr-x   1 drkirkby other       7133 Jun 12 15:40 sage-location
+```
+
+
+The 'sage-location' script starts
+
+{{{#!/usr/bin/env python
+
+import os, sys
+
+OLD_SAGE_ROOT = None
+SAGE_ROOT     = os.path.realpath(os.environ['SAGE_ROOT'])
+
+location_file = os.path.join(SAGE_ROOT, 'local', 'lib', 'sage-curent-location.txt')
+flags_file    = os.path.join(SAGE_ROOT, 'local', 'lib', 'sage-flags.txt')
+
+# The flags we care about recording in the local/lib/sage-flags.txt file
+# In SAGE_FAT_BINARY mode we only require that ['sse', 'sse2', '3d',
+#  'mmx', 'cmov'] be available, and in particular, don't require pni
+#  or ssse3.
+
+try:
+    SAGE_FAT_BINARY = os.environ['SAGE_FAT_BINARY']
+except:
+    SAGE_FAT_BINARY = ""
+```
+
+
+Anything look wrong? 
+
+
+Dave
+
+
+---
+
+Comment by jason created at 2010-06-12 17:22:45
+
+new sage-location file (after patch) - do not apply; only for reviewing convenience
+
+
+---
+
+Attachment
+
+I've attached the full (new) sage-location script, for reviewing convenience.
+
+
+---
+
+Comment by jason created at 2010-06-12 17:25:08
+
+Replying to [comment:13 drkirkby]:
+
+> The 'sage-location' script starts
+> 
+> {{{
+> #!/usr/bin/env python
+> 
+> import os, sys
+> 
+> OLD_SAGE_ROOT = None
+> SAGE_ROOT     = os.path.realpath(os.environ['SAGE_ROOT'])
+> 
+> location_file = os.path.join(SAGE_ROOT, 'local', 'lib', 'sage-curent-location.txt')
+> flags_file    = os.path.join(SAGE_ROOT, 'local', 'lib', 'sage-flags.txt')
+> 
+> # The flags we care about recording in the local/lib/sage-flags.txt file
+> # In SAGE_FAT_BINARY mode we only require that ['sse', 'sse2', '3d',
+> #  'mmx', 'cmov'] be available, and in particular, don't require pni
+> #  or ssse3.
+> 
+> try:
+>     SAGE_FAT_BINARY = os.environ['SAGE_FAT_BINARY']
+> except:
+>     SAGE_FAT_BINARY = ""
+> }}}
+> 
+> Anything look wrong? 
+
+
+Yep.  Notice that the sage-location file is 'sage-curent-location' (misspelled "current").  That's the old patch.  I've attached the full new file for convenience, or you can pull the patch attached to this ticket currently.
+
+Jason
+
+
+---
+
+Comment by drkirkby created at 2010-06-12 23:14:57
+
+I'm just building another binary distribution. 
+
+I should be able to update this within the next hour or two.
+
+
+---
+
+Comment by drkirkby created at 2010-06-13 00:22:49
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by drkirkby created at 2010-06-13 00:22:49
+
+Hi Jason, 
+
+I made another binary distribution, and moved it again. (I mistakenly used the number 4.4.4 in the name, rather than 4.4.3, but it makes no difference. I could call it zebra if I wanted! But this is based on the 4.4.3 in Sage, not on the 4.4.4.alpha0 source code). 
+
+Sage reports it has been moved, and an attempt to factorise a Mersenne prime behaves as expected. So there is no segmentation fault as there was before. 
+
+
+```
+-bash-3.00$ cd sage-4.4.4-revised-sage-location-without-misspelling-sun4u-SunOS
+-bash-3.00$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+The Sage install tree may have moved
+(from /export/home/drkirkby/32/sage-4.4.3 to /export/home/sageserv/sage-4.4.4-revised-sage-location-without-misspelling-sun4u-SunOS)
+Changing various hardcoded paths
+(please wait at most a few minutes)...
+Do not interrupt this.
+Done resetting paths
+sage: factor(2^607 -1)
+531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728127
+sage: 
+```
+
+| Sage Version 4.4.3, Release Date: 2010-06-04                       |
+| Type notebook() for the GUI, and license() for information.        |
+But when I look at the .pc files, the prefix is not updated. This does not look right to me. 
+
+
+```
+-bash-3.00$ pwd
+/export/home/sageserv/sage-4.4.4-revised-sage-location-without-misspelling-sun4u-SunOS/local/lib/pkgconfig
+-bash-3.00$ cat  freetype2.pc
+prefix=/export/home/drkirkby/32/sage-4.4.3/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FreeType 2
+Description: A free, high-quality, and portable font engine.
+Version: 9.16.3
+Requires:
+Libs: -L${libdir} -lfreetype -lz 
+Cflags: -I${includedir}/freetype2 -I${includedir}SAGE_ROOT=/export/home/sageserv/sage-4.4.4-revised-sage-location-without-misspelling-sun4u-SunOS
+-bash-3.00$ 
+```
+
+
+The file sage-location is the one attached to this ticket
+
+
+```
+-bash-3.00$ digest -a md5 ./local/bin/sage-location
+d73f790e23a60751f6b1b58941515744
+```
+
+
+
+---
+
+Comment by jason created at 2010-06-13 04:50:32
+
+You're right, that .pc file does not look right.  I'll try to take a look at this early next week.
+
+
+---
+
+Comment by jason created at 2010-06-15 02:41:55
+
+I think we need to be more careful about how we review this patch.  I know what files to delete to re-initialize things, but just to make sure, here are the new review instructions.  I'm following these myself, and I'll post them in a bit.
+
+
+---
+
+Comment by jason created at 2010-06-15 04:22:50
+
+Okay, here are I think better instructions for reviewing this patch:
+
+1. Download and extract the Sage 4.4.3 source tarball
+
+2. Download http://sage.math.washington.edu/home/jason/sage_scripts-4.4.3.spkg and put it in the spkg/standard directory, replacing the existing file of the same name.  This is just an spkg with the patch on this ticket applied, so that the .pc files are initialized correctly
+
+3. Build the source (i.e., type "make")
+
+4. Run Sage (this is very important, as hardcoded paths will depend on the build directory, and this step will initialize things to know what the build directory is)
+
+5. Then either move the sage directory, or create a bdist.  Now running Sage after moving directories or extracting and running sage from the bdist should correctly update the .pc files.  The freetype2.pc file, for example, should be something like:
+
+
+```
+SAGE_ROOT=/home/grout/sage-4.4.3-pkgconfig
+prefix=${SAGE_ROOT}/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FreeType 2
+Description: A free, high-quality, and portable font engine.
+Version: 9.16.3
+Requires:
+Libs: -L${libdir} -lfreetype -lz 
+Cflags: -I${includedir}/freetype2 -I${includedir}
+
+
+```
+
+
+where the SAGE_ROOT variable should update to the current sage root directory.
+
+
+---
+
+Comment by jason created at 2010-06-15 04:22:50
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by jason created at 2010-06-15 04:42:32
+
+FYI, in April, some discussion happened on the pkg-config mailing list about making some automatic variables to support relocation: 
+
+http://lists.freedesktop.org/archives/pkg-config/2010-April/000520.html
+
+
+---
+
+Comment by jason created at 2010-06-15 04:43:10
+
+(nothing came out of that discussion yet, but it might be nice to keep an eye on it in the future...)
+
+
+---
+
+Comment by drkirkby created at 2010-06-25 05:07:04
+
+Since 4.4.4 has now been released, should I be able to apply trac-9210-rewrite-sage-location.patch and get this to work? I've built 4.4.4 but have not moved it yet. 
+
+
+Dave
+
+
+---
+
+Comment by mpatel created at 2010-08-20 06:26:25
+
+Not updating the .pc files in `SAGE_LOCAL/lib/pkgconfig` may also cause problems during an upgrade after moving Sage.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/5499fab47d031a21#5499fab47d031a21) for Karl-Dieter's report about a 4.5.2.rc1-4.5.3.alpha1 upgrade on PPC OS X 10.4
+
+Also, for some packages that compile Python extension modules during the upgrade, it seems to help to update old paths in `SAGE_LOCAL/lib/python/config/Makefile`.
+
+I checked the .pc file and `Makefile` changes on sage.math with the equivalent of
+
+```sh
+$ tar xf /home/release/sage-4.5.2/sage-4.5.2.tar
+$ mv sage-4.5.2 sage-FOOO
+$ cd sage-FOOO
+$ make build
+$ cd ..
+$ cp -a sage-FOOO/ sage-yyyy
+$ cd sage-yyyy
+$ sed -i 's/FOOO/yyyy/g' local/lib/pkgconfig/*
+$ sed -i 's/FOOO/yyyy/g' local/lib/python/config/Makefile
+$ echo "y" | ./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.5.3.alpha1/sage-4.5.3.alpha1.tar | tee -a upgrade.log
+$ grep FOOO upgrade.log
+$
+```
+
+If I don't update the .pc files and/or the `Makefile`, I get many matches for `FOOO`.
+
+
+---
+
+Comment by jason created at 2010-09-09 20:07:10
+
+To review, this should be sufficient:
+
+1. Download and build Sage (important; it must be a fresh build from source).
+
+2. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):
+
+http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch
+
+3. Delete the file SAGE_ROOT/local/lib/sage-current-location.txt, if it exists
+
+4. Now run Sage, then exit (this updates the sage-current-location and pkgconfig files appropriately).
+
+5. Move the sage directory and run Sage again.  The SAGE_ROOT/local/lib/sage-current-location.txt should be updated, and the pkgconfig files in SAGE_ROOT/local/lib/pkgconfig/ should also be updated to the new path (you can check the freetype2.pc file, for example, to see the new sage directory is listed there in the SAGE_ROOT variable).
+
+
+---
+
+Comment by drkirkby created at 2010-09-09 22:38:44
+
+This is simply not working for me. The system is a Sun Ultra 27 running OpenSolaris on an Intel Xeon processor. This is what I did.
+
+1) Build Sage fresh in the directory 
+
+`/export/home/drkirkby/9/sage-4.5.3.alpha2`
+
+Sage had not been run. There was no file SAGE_ROOT/local/lib/sage-current-location.txt
+
+2) Created a tar file with all this in:
+
+
+```
+$ tar cvf test.tar sage-4.5.3.alpha2
+```
+
+
+3) Changed to the directory /tmp.
+
+```
+$ cd /tmp
+```
+
+
+4) Extracted the tar file in /tmp
+
+
+```
+$ tar xf $HOME/9/test.tar
+```
+
+
+5) Run Sage from /tmp.
+
+That created 
+
+
+```
+$SAGE_LOCAL/lib/sage-current-location.txt
+```
+
+
+which had `/tmp/sage-4.5.3.alpha2` 
+
+as the contents  - I note there is no end of line. 
+
+6) Changed to the directory where all the .pc files are
+
+
+```
+$ cd /tmp/sage-4.5.3.alpha2/local/lib/pkgconfig
+```
+
+
+7) Now run grep, and look for my user name "drkirkby" which was in the path before, but now I'm in /tmp, it should not be there. 
+
+
+```
+drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby *
+bdw-gc.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+freetype2.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+gnutls-extra.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+gnutls-extra.pc:Libs.private: -L${exec_prefix}/lib -lgnutls-extra -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lopencdk -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgcrypt -lsocket -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgpg-error -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lz -R/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib  -L${exec_prefix}/lib -lgnutls  -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgcrypt -lgpg-error -lnsl -lsocket 
+gnutls.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+gnutls.pc:Libs.private: -L${exec_prefix}/lib -lgnutls  -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgcrypt -lgpg-error -lnsl -lsocket  
+gsl.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+gsl.pc:exec_prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+gsl.pc:libdir=/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib
+gsl.pc:includedir=/export/home/drkirkby/9/sage-4.5.3.alpha2/local/include
+gsl.pc:Libs: -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgsl -lgslcblas -lm 
+gsl.pc:Cflags: -I/export/home/drkirkby/9/sage-4.5.3.alpha2/local/includeSAGE_ROOT=/tmp/sage-4.5.3.alpha2
+libpng.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+libpng12.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+libR.pc:rhome=/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib/R
+libR.pc:rincludedir=/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib/R/include
+opencdk.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+opencdk.pc:Libs.private: -L${exec_prefix}/lib -lopencdk -L/export/home/drkirkby/9/sage-4.5.3.alpha2/local/lib -lgcrypt -lgpg-error  -lz
+pynac.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+sqlite3.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+zlib.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
+zlib.pc:includedir=/export/home/drkirkby/9/sage-4.5.3.alpha2/local/include
+```
+
+
+As you can see, there are tons of references to the old location. 
+
+Now lets see how many of those files have "tmp" in them. 
+
+
+```
+drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby * | grep tmp
+gsl.pc:Cflags: -I/export/home/drkirkby/9/sage-4.5.3.alpha2/local/includeSAGE_ROOT=/tmp/sage-4.5.3.alpha2
+drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ 
+```
+
+
+So for me at least, those .pc files are not being updated. 
+
+Would it be easier to do this with a _simple_ `sed` script? I don't know precisely how to do this, but I could ask on [comp.unix.shell](http://groups.google.com/group/comp.unix.shell/topics?hl=en) I reckon this could be done in a very short unix shell script - it does not need loads of Python IMHO. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-09-09 22:38:44
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by drkirkby created at 2010-09-09 22:39:48
+
+I forgot to add  - I did apply the patch!!
+
+
+---
+
+Comment by kcrisman created at 2010-09-09 22:44:06
+
+Data point - this does seem to work for me.  
+
+```
+Crismans-Computer:~ crisman$ cd Desktop/sage-4.6/local/lib/pkgconfig/
+Crismans-Computer:~/Desktop/sage-4.6/local/lib/pkgconfig crisman$ grep 4.5.3 *
+```
+
+Though it wasn't a *totally* fresh build... I did delete everything, though.  Why does this have to be totally fresh?  On this computer (one of the original report computers) it takes a long time to build, that's why I ask.
+
+
+---
+
+Comment by jason created at 2010-09-09 22:47:08
+
+Replying to [comment:28 kcrisman]:
+> Data point - this does seem to work for me.  
+> {{{
+> Crismans-Computer:~ crisman$ cd Desktop/sage-4.6/local/lib/pkgconfig/
+> Crismans-Computer:~/Desktop/sage-4.6/local/lib/pkgconfig crisman$ grep 4.5.3 *
+> }}}
+> Though it wasn't a *totally* fresh build... I did delete everything, though.  Why does this have to be totally fresh?  On this computer (one of the original report computers) it takes a long time to build, that's why I ask.
+
+The totally fresh part is to make sure that the initialization the first time Sage is started up is done correctly.  In reality, as long as the current directory is the same as the build directory, and the sage-current-location.txt is deleted, it will probably also work.
+
+
+---
+
+Comment by jason created at 2010-09-09 22:51:56
+
+Replying to [comment:26 drkirkby]:
+> This is simply not working for me. The system is a Sun Ultra 27 running OpenSolaris on an Intel Xeon processor. This is what I did.
+
+You didn't quite follow the instructions.
+
+> 
+> 1) Build Sage fresh in the directory 
+> 
+> `/export/home/drkirkby/9/sage-4.5.3.alpha2`
+> 
+> Sage had not been run. There was no file SAGE_ROOT/local/lib/sage-current-location.txt
+
+Here you need to apply the patch and run Sage (step 4).  Sage must be run, with the patch applied, from the original build directory, to properly initialize the pkconfig files and the sage-current-location.txt file.
+
+After applying the patch, making sure there is no sage-current-location.txt file, then running Sage once, only *then* should you move the directory.
+
+> 
+> Would it be easier to do this with a _simple_ `sed` script? I don't know precisely how to do this, but I could ask on [comp.unix.shell](http://groups.google.com/group/comp.unix.shell/topics?hl=en) I reckon this could be done in a very short unix shell script - it does not need loads of Python IMHO. 
+
+More than just the pkgconfig files are being updated, so it's not just that simple.  However, a sufficiently talented (or un-busy) shell programmer could do the job, probably.
+
+
+---
+
+Comment by jason created at 2010-09-09 22:51:56
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by drkirkby created at 2010-09-10 09:07:05
+
+Replying to [comment:30 jason]:
+> Replying to [comment:26 drkirkby]:
+> > This is simply not working for me. The system is a Sun Ultra 27 running OpenSolaris on an Intel Xeon processor. This is what I did.
+> 
+> You didn't quite follow the instructions.
+
+I think it was a case of not exactly explaining what I did. I believe I did run Sage in the original location. When I extracted the tar file for a second time, it showed the file 
+
+`$SAGE_LOCAL/lib/sage-current-location.txt`
+
+But prior to running Sage that file did not exist. Then when I moved Sage, the contents of 
+
+$SAGE_LOCAL/lib/sage-current-location.txt
+
+changed, but the contents of the .pc files did not substantially change. 
+
+I will revisit this - but I'm still not convinced it is working myself. It might be a platform specific problem. 
+
+Dave
+
+
+---
+
+Comment by jason created at 2010-10-15 00:33:20
+
+Replying to [comment:31 drkirkby]:
+> Replying to [comment:30 jason]:
+> > Replying to [comment:26 drkirkby]:
+> > > This is simply not working for me. The system is a Sun Ultra 27 running OpenSolaris on an Intel Xeon processor. This is what I did.
+> > 
+> > You didn't quite follow the instructions.
+> 
+> I think it was a case of not exactly explaining what I did. I believe I did run Sage in the original location. When I extracted the tar file for a second time, it showed the file 
+> 
+> `$SAGE_LOCAL/lib/sage-current-location.txt`
+> 
+> But prior to running Sage that file did not exist. Then when I moved Sage, the contents of 
+> 
+> $SAGE_LOCAL/lib/sage-current-location.txt
+> 
+> changed, but the contents of the .pc files did not substantially change. 
+> 
+> I will revisit this - but I'm still not convinced it is working myself. It might be a platform specific problem. 
+
+
+The fact that in your before tarball, the pkgconfig files did not start with SAGE_ROOT leads me to believe that the sage-current-location.txt file was created *before* the patch was applied, and was never deleted and sage run before moving the directory.  With the new patch applied, when that file is created, the pkgconfig files should be modified to include a SAGE_ROOT line at the very top.
+
+I tried to use the python OS-agnostic functions everywhere, so on the surface, I doubt it's an OS-specific problem.
+
+So, if you have time, please try again, and make sure that after the patch is applied, the sage-current-location.txt file is deleted which for convenience, are repeated below:
+
+
+
+To review, this should be sufficient:
+
+  #. Download and build Sage (important; it must be a fresh build from source).
+
+  #. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):
+
+ http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch
+
+  #. Delete the file SAGE_ROOT/local/lib/sage-current-location.txt, if it exists
+
+  #. Now run Sage, then exit (this updates the sage-current-location and pkgconfig files appropriately).  Check to make sure that sage-current-location.txt is now created, and that each pkgconfig file starts with a line "SAGE_ROOT=" (followed by the build directory)
+
+  #. Move the sage directory and run Sage again. The SAGE_ROOT/local/lib/sage-current-location.txt should be updated, and the pkgconfig files in SAGE_ROOT/local/lib/pkgconfig/ should also be updated to the new path (you can check the freetype2.pc file, for example, to see the new sage directory is listed there in the SAGE_ROOT variable).
+
+Thanks!
+
+
+---
+
+Comment by jason created at 2010-10-15 00:35:47
+
+Apparently I don't remember the right wiki syntax.  Here are the 5 steps again:
+
+ 1. Download and build Sage (important; it must be a fresh build from source).
+ 1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)(http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
+ 1. Delete the file SAGE_ROOT/local/lib/sage-current-location.txt, if it exists
+ 1. Now run Sage, then exit (this updates the sage-current-location and  pkgconfig files appropriately).  Check to make sure that  sage-current-location.txt is now created, and that each pkgconfig file  starts with a line "SAGE_ROOT=" (followed by the build directory)
+ 1. Move the sage directory and run Sage again. The  SAGE_ROOT/local/lib/sage-current-location.txt should be updated, and the  pkgconfig files in SAGE_ROOT/local/lib/pkgconfig/ should also be  updated to the new path (you can check the freetype2.pc file, for  example, to see the new sage directory is listed there in the SAGE_ROOT  variable).
+
+
+---
+
+Comment by kcrisman created at 2010-10-15 02:02:09
+
+>  1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)(http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
+
+The link is wrong but the text is right; http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch
+
+
+---
+
+Comment by kcrisman created at 2010-10-15 02:12:57
+
+After doing this on a NON fresh build, just to fix something dumb, I get
+
+```
+new-host-2:pkgconfig karl-dietercrisman$ grep 4.6 *
+bdw-gc.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+freetype2.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+gnutls-extra.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+gnutls.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+gsl.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+libR.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+libR.pc:rhome=/Users/.../sage-4.6.alpha1/local/lib/R
+libR.pc:rincludedir=/Users/.../sage-4.6.alpha1/local/lib/R/include
+libpng.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+libpng12.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+opencdk.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+pynac.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+pynac.pc:prefix=/Users/.../sage-4.6.alpha2/local
+sqlite3.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+zlib.pc:SAGE_ROOT=/Users/.../sage-4.6.alpha4
+new-host-2:pkgconfig karl-dietercrisman$ grep 4.5 *
+bdw-gc.pc:prefix=/Users/.../sage-4.5.1/local
+freetype2.pc:prefix=/Users/.../sage-4.5.1/local
+gnutls-extra.pc:prefix=/Users/.../sage-4.5.1/local
+gnutls-extra.pc:Libs.private: -L${exec_prefix}/lib -lgnutls-extra -L/Users/.../sage-4.5.1/local/lib -lopencdk -L/Users/.../sage-4.5.1/local/lib -lgcrypt -L/Users/.../sage-4.5.1/local/lib -lgpg-error -L/Users/.../sage-4.5.1/local/lib -lz -R/Users/.../sage-4.5.1/local/lib  -L${exec_prefix}/lib -lgnutls  -L/Users/.../sage-4.5.1/local/lib -lgcrypt -lgpg-error 
+gnutls.pc:prefix=/Users/.../sage-4.5.1/local
+gnutls.pc:Libs.private: -L${exec_prefix}/lib -lgnutls  -L/Users/.../sage-4.5.1/local/lib -lgcrypt -lgpg-error  
+gsl.pc:prefix=/Users/.../sage-4.5.2/local
+gsl.pc:exec_prefix=/Users/.../sage-4.5.2/local
+gsl.pc:libdir=/Users/.../sage-4.5.2/local/lib
+gsl.pc:includedir=/Users/.../sage-4.5.2/local/include
+gsl.pc:Libs: -L/Users/.../sage-4.5.2/local/lib -lgsl -lgslcblas -lm 
+gsl.pc:Cflags: -I/Users/.../sage-4.5.2/local/include
+libpng.pc:prefix=/Users/.../sage-4.5.1/local
+libpng12.pc:prefix=/Users/.../sage-4.5.1/local
+opencdk.pc:prefix=/Users/.../sage-4.5.1/local
+opencdk.pc:Libs.private: -L${exec_prefix}/lib -lopencdk -L/Users/.../sage-4.5.1/local/lib -lgcrypt -lgpg-error  -lz
+sqlite3.pc:prefix=/Users/.../sage-4.5.1/local
+zlib.pc:prefix=/Users/.../sage-4.5.1/local
+zlib.pc:includedir=/Users/.../sage-4.5.1/local/include
+```
+
+So although it relists the `SAGE_ROOT` variable correctly, all those prefixes and includes and whatever else still are bad news.   I don't know how to use `sed` like Mitesh suggested on sage-release, but I think I can change the freetype one by hand.
+
+
+---
+
+Comment by jason created at 2010-10-15 02:20:04
+
+Replying to [comment:35 kcrisman]:
+> After doing this on a NON fresh build, just to fix something dumb, I get
+> 
+
+The result is expected.  The SAGE_ROOT directory is no longer the same as the build directory (as evidenced by the plethora of other build directories in the pkgconfig files).  This patch only works correctly if things are initialized in the original build directory.
+
+
+---
+
+Comment by kcrisman created at 2010-10-15 02:36:42
+
+I had a long followup, but your reply explained things.  So why can't we also update those things?   The new sage-location script `update_pkgconfig_files` doesn't seem to touch anything but that `SAGE_ROOT` guy, but it looks like there isn't any reason it couldn't, in theory, do those prefix statements too and just make them `${SAGE_ROOT}/local` or whatever is appropriate.
+
+(I'm going to try that change 'by hand' on freetype, by the way.)
+
+
+---
+
+Comment by jason created at 2010-10-15 03:58:14
+
+Replying to [comment:37 kcrisman]:
+> I had a long followup, but your reply explained things.  So why can't we also update those things?   The new sage-location script `update_pkgconfig_files` doesn't seem to touch anything but that `SAGE_ROOT` guy, but it looks like there isn't any reason it couldn't, in theory, do those prefix statements too and just make them `${SAGE_ROOT}/local` or whatever is appropriate.
+> 
+> (I'm going to try that change 'by hand' on freetype, by the way.)
+
+I suppose the general problem is that we only know what the previous `SAGE_ROOT` was (given in the sage-location.txt file).  We don't know what any other path in those pkgconfig files are, including the SAGE_ROOT from the time before the last move.
+
+I suppose we could be more invasive and always change the prefix path as well.  But there are other paths too.  What paths do you change?  In your example, you had at least 3-4 paths from old build directories, and lots of them are in things other than prefix statements.  Which ones are old `SAGE_ROOT`s, and which ones are still valid locations that shouldn't be changed?  For the ones that are old `SAGE_ROOT`s, which are the `SAGE_ROOT` parts and which are the parts that shouldn't be changed?
+
+The strategy now is to replace all SAGE_ROOT paths with the SAGE_ROOT variable on the first startup, and then only change that in subsequent runs if needed.  That seems *much* safer.
+
+Right now, the strategy breaks down for pkgconfig files created after the initial build.  
+
+Another ticket should be created to update pkgconfig files that don't have `SAGE_ROOT` already defined, which takes care of spkgs installed later.
+
+
+---
+
+Comment by kcrisman created at 2010-10-15 13:22:34
+
+> > (I'm going to try that change 'by hand' on freetype, by the way.)
+Which worked! 
+
+On another machine, doing that wasn't enough to get out of this issue... there was still a reference to the wrong thing in libR.dylib, which is a binary file, and which I have no idea how to change.  But that's not this ticket.  As far as I have time to test this, it did what it said, so positive review from me.  I don't have time to do the complete build from scratch, but it definitely changed what it claimed to in the right way from a non-scratch situation - and it WAS changed.
+
+> Another ticket should be created to update pkgconfig files that don't have `SAGE_ROOT` already defined, which takes care of spkgs installed later.
+This seems reasonable, and hopefully with time won't be much of an issue.  Sorry I can't give final positive review.
+
+
+---
+
+Comment by jason created at 2010-10-15 15:03:41
+
+Replying to [comment:39 kcrisman]:
+
+> > Another ticket should be created to update pkgconfig files that don't have `SAGE_ROOT` already defined, which takes care of spkgs installed later.
+> This seems reasonable, and hopefully with time won't be much of an issue.  Sorry I can't give final positive review.
+
+So I think that means we need at least one more reviewer.  Dave, do you have time to look at this again?
+
+
+---
+
+Comment by drkirkby created at 2010-10-16 05:08:02
+
+Replying to [comment:40 jason]:
+
+> So I think that means we need at least one more reviewer.  Dave, do you have time to look at this again?
+
+I won't have much time to play with this until Wednesday, but I'm just doing a fresh build. This time I'm using the 'script' command so it will have an *exact* record of what I did - even my typos are recorded. If there's a problem I'll make that file available, if there's not, I'll give it a positive review. 
+
+BTW, someone above said they did not know how to use 'sed'. There are plenty of references on the web, but this file I always find useful, as it normally has something there which is sufficiently similar to what I want to achieve, that I can modify it to do what I want. 
+
+http://sed.sourceforge.net/sed1line.txt
+
+dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-16 05:59:14
+
+OK, Sage is built. Let's try my luck for the Nth time!
+
+
+---
+
+Comment by drkirkby created at 2010-10-16 06:11:22
+
+I think that has worked. I am just going to run the doctests to make sure. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-16 06:34:48
+
+Em, this is odd. I used 'mv' to move the Sage directory from:
+
+
+```
+/export/home/drkirkby/9210/sage-4.6.alpha3/local
+```
+
+
+to:
+
+
+```
+/tmp/9210/sage-4.6.alpha3/local
+```
+
+
+I got some warnings about unable to save ACLs. Now when I run the doctests, several are failing. One at least is due to the fact 'Maxima' can't run. When I look at the script $SAGE_ROOT/local/bin/maxima, I see that still have the old location:
+
+
+
+```
+drkirkby`@`hawk:/tmp/9210/sage-4.6.alpha3$ pwd
+/tmp/9210/sage-4.6.alpha3
+drkirkby`@`hawk:/tmp/9210/sage-4.6.alpha3$ grep drkirkby local/bin/maxima
+  prefix=`unixize "/export/home/drkirkby/9210/sage-4.6.alpha3/local"`
+  top_srcdir=`unixize "/export/home/drkirkby"`
+```
+
+
+So perhaps the .pc files are not the only things that need changing. I realise that's outside of the scope of this ticket, and it may be due to the warnings about unable to save ALCs, so I build Sage again and use 'tar' to move it. 
+
+Dave
+
+
+---
+
+Comment by jason created at 2010-10-16 15:26:09
+
+Replying to [comment:44 drkirkby]:
+
+> So perhaps the .pc files are not the only things that need changing. I realise that's outside of the scope of this ticket, and it may be due to the warnings about unable to save ALCs, so I build Sage again and use 'tar' to move it. 
+> 
+
+Most definitely there are other issues besides the pkgconfig files.  I'm not confident in moving my installation at all anymore.  This ticket just takes care of one aspect of the problem that prevented compiling things in a new location.
+
+
+---
+
+Comment by drkirkby created at 2010-10-17 10:38:15
+
+I've taken another look at this. It looks like I was mistaken when I thought the .pc file were not being updated properly, since they do now need to be. 
+
+Prior to moving the distribution, there were two doctest failures - #10041 and 10042. 
+
+
+```
+sage -t -long "devel/sage/sage/rings/polynomial/polynomial_element.pyx" 
+sage -t -long "devel/sage/sage/tensor/differential_forms.py" 
+```
+
+
+After moving the location, there are 5 doctest failures. 
+
+
+```
+The following tests failed:
+
+	sage -t  -long -force_lib devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed
+	sage -t  -long -force_lib devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed
+	sage -t  -long -force_lib devel/sage/sage/tensor/differential_forms.py # 1 doctests failed
+	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed
+	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/groebner_fan.py # 76 doctests failed
+	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed
+----------------------------------------------------------------------
+Total time for all tests: 1583.2 seconds
+```
+
+
+So clearly this is not a complete fix for moving Sage, but it's a step in the right direction. 
+
+So I'm giving this positive review. 
+
+I'm sorry I have dragged this ticket out so long. I was of the belief it was not working correctly, so that is why I declined to give it positive review before, but now I'm convinced it is ok. 
+
+Like Jason, I'm not happy to move Sage. It makes me wonder how good the binaries are that we distribute. Does anyone doctest the binaries after they are created before they are made public? 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-17 10:38:15
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mpatel created at 2010-10-17 11:45:31
+
+Replying to [comment:46 drkirkby]:
+> {{{
+> The following tests failed:
+> 
+> 	sage -t  -long -force_lib devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed
+> 	sage -t  -long -force_lib devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed
+> 	sage -t  -long -force_lib devel/sage/sage/tensor/differential_forms.py # 1 doctests failed
+> 	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed
+> 	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/groebner_fan.py # 76 doctests failed
+> 	sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed
+> ----------------------------------------------------------------------
+> Total time for all tests: 1583.2 seconds
+> }}}
+
+If you still have it, could you attach or give a link to the test log?
+
+
+---
+
+Comment by drkirkby created at 2010-10-17 12:40:49
+
+Replying to [comment:47 mpatel]:
+
+> If you still have it, could you attach or give a link to the test log?
+
+Sure, it is here. The tests were run on 'hawk', my OpenSolaris machine.
+
+http://boxen.math.washington.edu/home/kirkby/logs/ptestlong-sage-4.6.alpha3-after-applying-9210-and-moving-to-another-location.log
+
+
+---
+
+Comment by mpatel created at 2010-10-17 22:40:33
+
+Replying to [comment:48 drkirkby]:
+> Replying to [comment:47 mpatel]:
+> > If you still have it, could you attach or give a link to the test log?
+
+> Sure, it is here. The tests were run on 'hawk', my OpenSolaris machine.
+ 
+> http://boxen.math.washington.edu/home/kirkby/logs/ptestlong-sage-4.6.alpha3-after-applying-9210-and-moving-to-another-location.log
+
+Thanks.  At least, the new errors all have one "cause":
+
+```python
+RuntimeError: ld.so.1: gfan: fatal: relocation error: file /export/home/test/sage-4.6.alpha3/local/bin/gfan: symbol _ZNSt15_List_node_base7_M_hookEPS_: referenced symbol not found
+```
+
+Of course, we can make this a separate ticket, but why would this `fatal: relocation error` happen?
+
+
+---
+
+Comment by leif created at 2010-10-20 12:41:48
+
+I wonder if this should be a blocker...
+
+
+---
+
+Comment by jason created at 2010-10-20 13:19:27
+
+Replying to [comment:50 leif]:
+> I wonder if this should be a blocker...
+
+No.  At most critical.  Sage certainly has been released for a long time without this fix.
+
+
+---
+
+Comment by drkirkby created at 2010-10-20 13:28:05
+
+I found the reason gfan has unresolved variables when moved - it is to do with gcc and the linker run time search path. 
+
+In a Sage shell, before the move:
+
+
+```
+(sage subshell) hawk:sage-4.6.alpha3 drkirkby$ ldd local/bin/gfan
+	libgmp.so.3 =>	 /export/home/drkirkby/sage-4.6.alpha3/local/lib//libgmp.so.3
+	libstdc++.so.6 =>	 /usr/local/gcc-4.5.0/lib/libstdc++.so.6
+	libm.so.2 =>	 /lib/libm.so.2
+	libgcc_s.so.1 =>	 /usr/local/gcc-4.5.0/lib/libgcc_s.so.1
+	libc.so.1 =>	 /lib/libc.so.1
+SAGE_ROOT=/export/home/drkirkby/sage-4.6.alpha3
+```
+
+
+After creating another account, and moving Sage, I must have not set LD_LIBRARY_PATH identically, so ldd shows:
+
+
+```
+(sage subshell) hawk:bin test$ ldd gfan
+	libgmp.so.3 =>	 /export/home/test/sage-4.6.alpha3/local/lib//libgmp.so.3
+	libstdc++.so.6 =>	 /usr/lib/libstdc++.so.6
+	libm.so.2 =>	 /lib/libm.so.2
+	libgcc_s.so.1 =>	 /usr/lib/libgcc_s.so.1
+	libc.so.1 =>	 /lib/libc.so.1
+SAGE_ROOT=/export/home/test/sage-4.6.alpha3
+```
+
+
+i.e. instead of gfan finding the C++ libary it was linked against (e..g. /usr/local/gcc-4.5.0/lib/libstdc++.so.6) if finds an older library in `/usr/lib/libstdc++.so.6`. That is from gcc 3.4.3 - i.e. very old. 
+
+This is something we have to be very weary of on Solaris. We should make available recent run-time libraries, otherwise the user will probably have trouble. I know there have been reports of this on sage-support, and other sage-developers have hit it on t2.math. If we compile Sage with a recent gcc, and the person using a binary only had old gcc libraries, and/or new libraries are not in their linker search path, Sage will not run well. 
+
+There was one other thing I found odd. *Before* moving the code, though after Sage had been run, I tried this in a Sage shell. 
+
+
+```
+(sage subshell) hawk:sage-4.6.alpha3 drkirkby$ local/bin/gfan
+1+2
+PARSER ERROR: Expected: "field"    Found: "1"
+Assertion failed: 0, file parser.cpp, line 509
+Abort (core dumped)
+SAGE_ROOT=/export/home/drkirkby/sage-4.6.alpha3
+```
+
+
+I've got no idea how gfan is supposed to be used, but trying 1+2 is enough to make it dump core, which is a bug in my opinion. 
+
+I tried it on sage.math too. Whilst it does not dump core, it is not very elegant:
+
+
+```
+(sage subshell) sage:bin kirkby$ gfan
+1+2
+PARSER ERROR: Expected: "field"    Found: "1"
+gfan: parser.cpp:509: Field CharacterBasedParser::parseField(): Assertion `0' failed.
+Aborted
+SAGE_ROOT=/usr/local/sage
+```
+
+
+And on bsd.math (OS X)
+
+
+```
+(sage subshell) bsd:bin kirkby$ gfan
+1+1
+PARSER ERROR: Expected: "field"    Found: "1"
+Assertion failed: (0), function parseField, file parser.cpp, line 509.
+Abort trap
+SAGE_ROOT=/Users/kirkby/sage-4.6.alpha0
+```
+
+
+So as soon as the parser sees something it does not reconise, it either aborts or dumps core. Not very elegant. 
+
+Dave
+
+
+---
+
+Comment by jason created at 2010-10-20 13:32:24
+
+Dave,
+
+Just to clarify, are you saying something more needs to be done on this ticket, or are you commenting on another issue (with valuable information that should go on another ticket to fix the gfan issue)?
+
+
+---
+
+Comment by drkirkby created at 2010-10-20 13:37:19
+
+No, I'm happy with this ticket. 
+
+The gfan core dump should go on another ticket. 
+
+I'm not sure how best to handle the situation with libraries that are older than the version Sage was built with. 
+
+Neither issue is related to the ticket as such. 
+
+Dave
+
+
+---
+
+Comment by mpatel created at 2010-10-21 08:44:52
+
+Changing priority from major to blocker.
+
+
+---
+
+Comment by mpatel created at 2010-10-21 10:07:28
+
+Resolution: fixed
+
+
+---
+
+Comment by leif created at 2010-10-21 14:10:01
+
+Replying to [comment:24 mpatel]:
+> Not updating the .pc files in `SAGE_LOCAL/lib/pkgconfig` may also cause problems during an upgrade after moving Sage.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/5499fab47d031a21#5499fab47d031a21) for Karl-Dieter's report about a 4.5.2.rc1-4.5.3.alpha1 upgrade on PPC OS X 10.4
+> 
+> Also, for some packages that compile Python extension modules during the upgrade, it seems to help to update old paths in `SAGE_LOCAL/lib/python/config/Makefile`. [...]
+
+Cf. #9896. Python's Makefile and  `pyconfig.h` define lots of variables that contain hard-coded paths. These all go into `distutils.sysconfig.get_config_vars()` (a dictionary), but only some are used, and not all obsolete paths are actually harmful.
+
+My patch to `devel/sage/setup.py` at #9896 e.g. just fixes invalid / obsolete library search directories coded into distutils' dynamic linker *command*(!) (on Darwin).
+
+An alternative is to patch distutils itself.
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-23 21:16:01
+
+See #10162 for a follow-up.
+
+
+---
+
+Comment by leif created at 2010-11-02 17:12:32
+
+Replying to [comment:59 jhpalmieri]:
+> See #10162 for a follow-up.
+
+And also (more important) #10202.

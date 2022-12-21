@@ -1,0 +1,271 @@
+# Issue 3671: ssmod.py doctest failures in Sage 3.0.4 or later
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2008-07-18 06:13:40
+
+Assignee: cpernet
+
+Since Sage 3.0.4 we hit the following bug with a probability of about 1.5%:
+
+```
+sage -t -long devel/sage/sage/modular/ssmod/ssmod.py        **********************************************************************
+File "/scratch/mabshoff/release-cycle/sage-3.0.4-vg/tmp/ssmod.py", line 14:
+    sage: D[:3]
+Expected:
+    [
+    (Vector space of degree 33 and dimension 1 over Finite Field of size 97
+    Basis matrix:
+    [ 0  0  0  1 96 96  1 96 96  0  2 96 96  0  1  0  1  2 95  0  1  1  0  1  0 95  0 96 95  1 96  0  2], True),
+    (Vector space of degree 33 and dimension 1 over Finite Field of size 97
+    Basis matrix:
+    [ 0  1 96 75 16 81 22 17 17  0  0 80 80  1 16 40 74  0  0 96 81 23 57 74  0  0  0 24  0 23 73  0  0], True),
+    (Vector space of degree 33 and dimension 1 over Finite Field of size 97
+    Basis matrix:
+    [ 0  1 96 90 90  7  7  6 91  0  0 91  6 13  7  0 91  0  0 84 90  6  0  6  0  0  0 90  0 91  7  0  0], True)
+    ]
+Got:
+    [
+    (Vector space of degree 33 and dimension 0 over Finite Field of size 97
+    Basis matrix:
+    [], True),
+    (Sparse vector space of degree 33 and dimension 3 over Finite Field of size 97
+    Basis matrix:
+    [ 1  0 82  0 69 38 37 68 83 45 62 73  6 50 89 55 49 50 23 76 93 82 94 59 69 92  4 60 75 42 79 22 65]
+    [ 0  1 17  0 42 91 33  6 42 67  2 67 64 39  0 61  7 44 30 49 71 46 78 76  9  0 27 38 65 23 79 58 39]
+    [ 0  0  0  1 21 84  0  6 45 56 22 24 92 50 52 12 84 30 87 86 87 60 45 60 59 47  6 67 31  5  6 20 46], True),
+    (Sparse vector space of degree 33 and dimension 12 over Finite Field of size 97
+    Basis matrix:
+    [ 1  0  0  0  0  0  0  0  0  0  0  0 94 63 82 59 38 20 41 78 81 74 35 84 79 20 46 55 73 74 81 38  1]
+    [ 0  1  0  0  0  0  0  0  0  0  0  0 76  3  0 54 73 57 83 82 77 90 33 10  5 29 63 61 21 52 54 60 39]
+    [ 0  0  1  0  0  0  0  0  0  0  0  0 62 14 50 40 66 15 45 74 64 26 89 38 96  1 24 74  7 72 28 13 85]
+    [ 0  0  0  1  0  0  0  0  0  0  0  0 48 53 95 37 31 13  5 20 48 15 29 32 91 18 82 68  8 40 11 21 95]
+    [ 0  0  0  0  1  0  0  0  0  0  0  0  5 18  4 51 21 60 61 56 92  5 48  5 37 95 66 16 90 20 75 64 35]
+    [ 0  0  0  0  0  1  0  0  0  0  0  0 31 72 80 95 51 87 81 74 64 27 11 38  0 42 80 13 87 37 54 54 45]
+    [ 0  0  0  0  0  0  1  0  0  0  0  0 57 52 45 86 67 14 39 36 72 10 36 51 17 72  9 22 49 60 37  7 53]
+    [ 0  0  0  0  0  0  0  1  0  0  0  0 26  8 68 59 45 17 16 85 41 33 54  8 87  7 57 43 16 13 22 94 49]
+    [ 0  0  0  0  0  0  0  0  1  0  0  0 90 46 72 36 55 53 44 69 96  3 25 74 62 38 77 59 44 24 79 85 84]
+    [ 0  0  0  0  0  0  0  0  0  1  0  0 22  8  7 38 82 95  3 35 47 29 70  4 69 32 27 82 78 46 55 22 68]
+    [ 0  0  0  0  0  0  0  0  0  0  1  0 62  3 91 64 36 36 53 17 44 68 49 12 54 46 37 62 61 17  5  2 23]
+    [ 0  0  0  0  0  0  0  0  0  0  0  1 73 81 58  7 50 30  1 27 42 54 31  6 23  4  1 85 55 72 32 60 28], True)
+    ]
+**********************************************************************
+```
+
+Some likely culprit here is charpoly mod p. 
+
+See also https://groups.google.com/group/sage-devel/t/4a94d64a83cb4adc
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-07-19 04:23:49
+
+Clement's patch fixes the issue for me by selecting another default algorithm. An install which failed the doctest roughly 2% of the time now passes the ssmod.py doctest 500 times.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-07-19 13:24:58
+
+Clement's patch, which switches the default charpoly mod p to the "old" implementation fixes the issue.
+
+Re performance: The old code, i.e. non mod-p algorithm:
+
+```
+sage: A = random_matrix(GF(997),500)
+sage: time p=A.charpoly()
+CPU times: user 1.42 s, sys: 0.06 s, total: 1.48 s
+Wall time: 1.51 s
+sage: A = random_matrix(GF(997),1000)
+sage: time p=A.charpoly()
+CPU times: user 9.24 s, sys: 0.08 s, total: 9.32 s
+Wall time: 9.33 s
+sage: A = random_matrix(GF(997),1500)
+sage: time p=A.charpoly()
+CPU times: user 30.74 s, sys: 0.24 s, total: 30.98 s
+Wall time: 30.98 s
+sage: A = random_matrix(GF(997),2000)
+sage: time p=A.charpoly()
+CPU times: user 64.48 s, sys: 0.36 s, total: 64.83 s
+Wall time: 64.83 s
+sage: A = random_matrix(GF(997),3000)
+sage: time p=A.charpoly()
+CPU times: user 208.93 s, sys: 0.78 s, total: 209.71 s
+Wall time: 209.78 s
+sage: A = random_matrix(GF(997),4000)
+sage: time p=A.charpoly()
+CPU times: user 512.62 s, sys: 1.29 s, total: 513.91 s
+Wall time: 513.99 s
+sage:
+```
+
+With the old modp code:
+
+```
+sage: A = random_matrix(GF(997),500)
+sage: time p=A.charpoly()
+CPU times: user 2.12 s, sys: 0.04 s, total: 2.16 s
+Wall time: 2.26 s
+sage: A = random_matrix(GF(997),1000)
+sage: time p=A.charpoly()
+CPU times: user 9.21 s, sys: 0.12 s, total: 9.34 s
+Wall time: 9.34 s
+sage: A = random_matrix(GF(997),1500)
+sage: time p=A.charpoly()
+CPU times: user 30.39 s, sys: 0.23 s, total: 30.62 s
+Wall time: 30.71 s
+sage: A = random_matrix(GF(997),2000)
+sage: time p=A.charpoly()
+CPU times: user 74.39 s, sys: 0.40 s, total: 74.79 s
+Wall time: 74.79 s
+sage: A = random_matrix(GF(997),3000)
+sage: time p=A.charpoly()
+CPU times: user 178.98 s, sys: 0.96 s, total: 179.94 s
+Wall time: 180.05 s
+sage: A = random_matrix(GF(997),4000)
+sage: time p=A.charpoly()
+CPU times: user 518.67 s, sys: 1.46 s, total: 520.13 s
+Wall time: 520.16 s 
+```
+
+Clement says:
+
+```
+For the dimensions you are considering (and up to a thousand) I don't
+expect any performance loss.
+But the probabilistic alg improves on larger matrices and gets
+asymptotically better (the best algorithm indeed!)
+
+I'll let you know when I've made progress on this one.
+
+Clement 
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-07-19 14:05:07
+
+This can be fixed by patching Linbox's charpoly to use another default algorithm. Should it be fixed by Clement we can switch it back.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-07-21 07:57:03
+
+An updated spkg which only adds the fix posted by Clement is available at
+
+http://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/linbox-1.1.6rc0.p0.spkg
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2008-07-21 14:02:12
+
+REFEREE REPORT:
+
+1. Fixed a typo in spkg-install. New spkg here:
+http://sage.math.washington.edu/home/was/patches/linbox-1.1.6rc0.p1.spkg
+
+2. Otherwise, everything looks good. Positive review.
+
+
+---
+
+Comment by mabshoff created at 2008-07-21 14:15:46
+
+Merged linbox-1.1.6rc0.p1.spkg in Sage 3.0.6.rc0
+
+
+---
+
+Comment by mabshoff created at 2008-07-21 14:15:46
+
+Resolution: fixed
+
+
+---
+
+Comment by cpernet created at 2008-08-12 18:53:52
+
+Patch fixing the charpoly bug and reverting the "good algorithm"
+
+
+---
+
+Comment by cpernet created at 2008-08-12 19:01:39
+
+Changing priority from blocker to critical.
+
+
+---
+
+Attachment
+
+I fixed the bug in the charpoly algorithm that was used before.
+The attached patch also fixes the bug, fixes some memleaks and improves memory management as a bonus, and removes the workaround in spkg-install, that we used to fix the bug, replacing this algorithm by the former LUKrylov.
+
+I am cooking a new linbox spkg, so no review needed right now. You can apply the patch on 1.1.6.rc0.p1 and check if it also fixes the bug for you (I already checked it on sage.math).
+
+
+---
+
+Comment by cpernet created at 2008-08-12 19:01:39
+
+Changing type from defect to enhancement.
+
+
+---
+
+Comment by cpernet created at 2008-08-12 19:02:09
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by cpernet created at 2008-08-12 19:02:09
+
+Changing status from closed to reopened.
+
+
+---
+
+Comment by mabshoff created at 2008-08-12 23:59:11
+
+This ticket was accidentally reopened. The linbox.spkg update is now #3828.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-08-13 00:10:04
+
+Resolution: fixed

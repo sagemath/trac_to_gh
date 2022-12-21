@@ -1,0 +1,1051 @@
+# Issue 9530: Improve/fix readline workarounds for Arch Linux and openSuSE
+
+Issue created by migration from Trac.
+
+Original creator: baechler
+
+Original creation time: 2010-07-17 14:31:52
+
+Assignee: GeorgSWeber
+
+CC:  leif drkirkby mpatel hivert
+
+Keywords: Arch Linux SuSE readline
+
+Sage currently has workarounds against building an incompatible libreadline on openSuSE 11.1 and Arch Linux - instead of building it, the system version is copied.
+
+The SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermore, SuSE offers libreadline.so.5 in addition to .so.6, so we only copy .6.
+
+The workaround on Arch Linux is unreliable, as it detects Arch Linux by "-ARCH" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.
+
+I am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.
+
+
+---
+
+Attachment
+
+Is it actually worth fixing the workarounds?  It seems like upgrading readline (#9523) wouldn't be much more work, and then we could probably just remove the workarounds.
+
+
+---
+
+Comment by baechler created at 2010-07-18 06:31:48
+
+It might fix the problem for now. And when the system readline is upgraded again, everything is broken again.
+
+I don't like that situation that sage wants to build its own version of libreadline - in my opinion it causes more problems than it solves. As long as sage wants to use its own readline version in favor of the system library, this problem will never fully go away.
+
+
+---
+
+Comment by TheBlackCat created at 2010-08-09 16:17:20
+
+What if you used symlinks to the native libreadline instead of copying it?
+
+So instead of:
+
+cp -a /lib64/libreadline.so.6* "$SAGE_LOCAL"/lib
+cp -a /lib/libreadline.so.6* "$SAGE_LOCAL"/lib
+cp -r /usr/include/readline  "$SAGE_LOCAL"/include 
+cp /lib/libreadline.so.* "$SAGE_LOCAL"/lib 
+cp -a /lib/libreadline.so.6* "$SAGE_LOCAL"/lib 
+
+It does:
+
+ln -s /lib64/libreadline.so.6* "$SAGE_LOCAL"/lib
+ln -s /lib/libreadline.so.6* "$SAGE_LOCAL"/lib
+ln -s /usr/include/readline  "$SAGE_LOCAL"/include
+ln -s /lib/libreadline.so.* "$SAGE_LOCAL"/lib 
+ln -s /lib/libreadline.so.6* "$SAGE_LOCAL"/lib 
+
+This should avoid the problem with upgrades changing libreadline again, and will save a little space.
+
+
+---
+
+Comment by TheBlackCat created at 2010-08-09 16:19:22
+
+The formatting got messed up.  Here is an example:
+
+This:
+
+cp -a /lib64/libreadline.so.6* "$SAGE_LOCAL"/lib 
+
+becomes:
+
+ln -s /lib64/libreadline.so.6* "$SAGE_LOCAL"/lib
+
+
+---
+
+Comment by TheBlackCat created at 2010-10-07 15:35:27
+
+Since the update for readline has been pushed back to at least 4.6.1, can we get this workaround in 4.6?  We have a patch that fixes the problem, is small, and is low-risk.  With the switch from 4.5 to 4.6 I think it is important that it successfully compiles on significant distributions like openSUSE and Arch.
+
+
+---
+
+Comment by leif created at 2010-10-24 16:59:20
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by leif created at 2010-10-24 16:59:20
+
+Though the patch is not a Mercurial changeset...
+
+If we keep using the system's readline on OpenSuSE 11[.1], we could incorporate the patch into #9523 (upgrade to readline 6.1).
+
+
+---
+
+Comment by TheBlackCat created at 2010-10-24 17:14:25
+
+I was thinking this made more as temporary workaround until 9523 render the workarounds unnecessary.
+
+I should add that I tried this patch and it worked.
+
+
+---
+
+Comment by leif created at 2010-10-24 17:29:17
+
+Well, the milestone of #9523 has been set to Sage 4.6.1.
+
+Also, it's not clear to me if we should use the system's readline on OpenSuSE 11.1, and Sage's new readline 6.1 on OpenSuSE >11.1.
+
+
+---
+
+Comment by TheBlackCat created at 2010-10-24 18:04:38
+
+Replying to [comment:9 leif]:
+> Well, the milestone of #9523 has been set to Sage 4.6.1.
+
+Yes, that is the problem.  As it stand now, Sage 4.6 will be released without being able to build as-is on a major distribution and won't build reliably on another.  We have a small, simple, low-risk fix available right now.  I think it would be good to incorporate the fix now rather than pushing it back again.
+
+I think having it build successfully on the current version of major distributions would be a worthwhile goal for 4.6.  Optimizing that could wait until later.
+
+And that is assuming #9523 isn't bushed back again.  It was originally a 4.6 blocker.
+
+
+---
+
+Comment by leif created at 2010-10-24 18:24:00
+
+Replying to [comment:10 TheBlackCat]:
+> Replying to [comment:9 leif]:
+> > Well, the milestone of #9523 has been set to Sage 4.6.1.
+> 
+> Yes, that is the problem.  As it stand now, Sage 4.6 will be released without being able to build as-is on a major distribution and won't build reliably on another.  We have a small, simple, low-risk fix available right now.  I think it would be good to incorporate the fix now rather than pushing it back again.
+
+That's what I meant or intended: include #9530 into 4.6 (which requires a positive review), but _also_ merge (some of) the changes here into #9530.
+
+
+---
+
+Comment by leif created at 2010-10-24 18:27:16
+
+Replying to [comment:11 leif]:
+> ... include #9530 into 4.6 (which requires a positive review)
+
+... and also a patched new spkg. I do not even know the name of the author, _baechler_.
+
+
+---
+
+Comment by drkirkby created at 2010-10-24 18:39:00
+
+Replying to [comment:10 TheBlackCat]:
+> Replying to [comment:9 leif]:
+> > Well, the milestone of #9523 has been set to Sage 4.6.1.
+> 
+> Yes, that is the problem.  As it stand now, Sage 4.6 will be released without being able to build as-is on a major distribution and won't build reliably on another.  We have a small, simple, low-risk fix available right now.  I think it would be good to incorporate the fix now rather than pushing it back again.
+
+
+Despite trying - see for example 
+
+http://wiki.sagemath.org/suggested-for-supported-platforms
+
+I've never managed to get any agreement on what is "supported". But it we believe README.txt, both ArchLinux and !OpenSUSE are supported. However, in my opinion we should not hold a release of Sage just because on Linux distro has bought at yet another backwards incompatible version. But if a change in Sage has broken one of these systems, then I think it should be addressed in 4.6. But if the breakages are caused by updated versions of Linux, then I think these systems will just have to accept that.
+
+
+---
+
+Comment by baechler created at 2010-10-24 19:07:40
+
+Replying to [comment:13 drkirkby]:
+> However, in my opinion we should not hold a release of Sage just because on Linux distro has bought at yet another backwards incompatible version.
+
+You don't understand the problem at all. Sage overrides the system libreadline with an older version, one that lacks features that the system shell requires. This is a problem that affects EVERY Linux distribution that is not terribly outdated (if I would say "it doesn't build on Ubuntu", you would probably suddenly take this seriously, but as long as it works on Ubuntu, it can't be not broken, right? It's not Ubuntu, so I have to keep repeating myself, until the problem eventually also affects Ubuntu)
+
+As long as sage does not build its own shell for the build process, overriding the system libreadline is simply plain stupid, and will keep breaking again and again. In my opinion, sage should not ship its own libreadline if the system already provides readline version 6 or newer - eliminating all the mentioned problems.
+
+Replying to [comment:12 leif]:
+> ... and also a patched new spkg. I do not even know the name of the author, baechler.
+
+Since when does that matter? If you must know:
+http://wwwb.math.rwth-aachen.de/Mitarbeiter/baechler.php?lang=eng
+http://www.archlinux.org/developers/#thomas
+
+
+---
+
+Comment by TheBlackCat created at 2010-10-24 19:21:51
+
+Replying to [comment:13 drkirkby]:
+> > Yes, that is the problem.  As it stand now, Sage 4.6 will be released without being able to build as-is on a major distribution and won't build reliably on another.  We have a small, simple, low-risk fix available right now.  I think it would be good to incorporate the fix now rather than pushing it back again.
+
+> I've never managed to get any agreement on what is "supported". But it we believe README.txt, both ArchLinux and !OpenSUSE are supported. However, in my opinion we should not hold a release of Sage just because on Linux distro has bought at yet another backwards incompatible version. But if a change in Sage has broken one of these systems, then I think it should be addressed in 4.6. But if the breakages are caused by updated versions of Linux, then I think these systems will just have to accept that. 
+
+I agree we should not hold a release because of the lack of a fix for a new break caused by the distribution. However, neither is the case here.
+
+The breakage first appeared in openSUSE 11.2, which was released almost a year ago.  openSUSE 11.3, which also has the problem, was released over 3 months ago.  So it is a long-standing issue.
+
+Further, a fix is available, and has been for over 3 months now (shortly after openSUSE 11.3 was released).  The fix was published several weeks before sage 4.5.2 was released, over a month and a half before 4.5.3.
+
+So this is a long-standing issue for which a fix has been available for a while.  Given that, I do not think holding 4.6 until the existing fix has been incorporated is outlandish.
+
+
+---
+
+Comment by leif created at 2010-10-24 19:51:41
+
+Replying to [comment:14 baechler]:
+> Replying to [comment:12 leif]:
+> > ... and also a patched new spkg. I do not even know the name of the author, baechler.
+> 
+> Since when does that matter?
+
+It's just because we put the real names into the _Authors_ field of the ticket, the changelogs of the spkgs and usually also into the Mercurial change sets.
+
+> If you must know:
+> http://wwwb.math.rwth-aachen.de/Mitarbeiter/baechler.php?lang=eng
+> http://www.archlinux.org/developers/#thomas
+
+You can add your name to http://trac.sagemath.org/sage_trac/wiki#AccountNamesmappedtoRealNames
+
+If you'd been listed there, I would perhaps have created a new spkg from your patch.
+
+Replying to [comment:15 TheBlackCat]:
+> Further, a fix is available, and has been for over 3 months now (shortly after openSUSE 11.3 was released). The fix was published several weeks before sage 4.5.2 was released, over a month and a half before 4.5.3.
+
+Unfortunately, the ticket hadn't been set to "needs review", there are apparently only a few Sage _developers_ dealing with OpenSuSE, and there hasn't been activity on the ticket for a while.
+
+
+---
+
+Comment by drkirkby created at 2010-10-24 22:08:20
+
+Replying to [comment:14 baechler]:
+> Replying to [comment:13 drkirkby]:
+> > However, in my opinion we should not hold a release of Sage just because on Linux distro has bought at yet another backwards incompatible version.
+> 
+> You don't understand the problem at all. Sage overrides the system libreadline with an older version, one that lacks features that the system shell requires. This is a problem that affects EVERY Linux distribution that is not terribly outdated (if I would say "it doesn't build on Ubuntu", you would probably suddenly take this seriously, but as long as it works on Ubuntu, it can't be not broken, right? It's not Ubuntu, so I have to keep repeating myself, until the problem eventually also affects Ubuntu)
+
+I suggest you do some homework on what operating systems I use, then you might draw a different conclusion about me and Ubunta. 
+
+Dave 
+
+Dave
+
+
+---
+
+Comment by TheBlackCat created at 2010-10-25 00:10:16
+
+Replying to [comment:16 leif]:
+> Replying to [comment:15 TheBlackCat]:
+> > Further, a fix is available, and has been for over 3 months now (shortly after openSUSE 11.3 was released). The fix was published several weeks before sage 4.5.2 was released, over a month and a half before 4.5.3.
+> Unfortunately, the ticket hadn't been set to "needs review", there are apparently only a few Sage _developers_ dealing with OpenSuSE, 
+
+That indicates that something is wrong with the patch handling process.  It is one thing if developers do not fix a problem because they cannot reproduce it.  But the patch was available and just sat here.  Further, it is a patch for a "major" issue.  Shouldn't such patches receive particular attention from developers?
+
+> and there hasn't been activity on the ticket for a while.
+
+Yes, that is exactly the problem.  Why did did it take this long for such a simple patch for a major issue to receive any attention?  If I hadn't posted the comment, how long would it have taken for developers to act on it?
+
+
+---
+
+Comment by leif created at 2010-10-25 00:35:42
+
+Replying to [comment:18 TheBlackCat]:
+> Replying to [comment:16 leif]:
+> > Unfortunately, the ticket hadn't been set to "needs review", there are apparently only a few Sage _developers_ dealing with OpenSuSE, 
+> 
+> That indicates that something is wrong with the patch handling process.
+
+If somebody provides a patch, the status should be changed from "new" to "needs review" (by the author / the one that uploaded a patch).
+
+> It is one thing if developers do not fix a problem because they cannot reproduce it.  But the patch was available and just sat here.  Further, it is a patch for a "major" issue.
+
+"major" is the default priority. It should perhaps have been at least critical. Also, the title doesn't suggest higher importance (it's "improve...", which doesn't sound like fixing a major bug).
+
+> Shouldn't such patches receive particular attention from developers?
+
+It's more likely that people search for tickets e.g. needing review, or "new" ones that are marked "crtitical" or "blocker".
+
+> > and there hasn't been activity on the ticket for a while.
+> 
+> Yes, that is exactly the problem.  Why did did it take this long for such a simple patch for a major issue to receive any attention?  If I hadn't posted the comment, how long would it have taken for developers to act on it?
+
+See above. Posting just "ping" on the ticket also causes attention by those people involved (owner, reporter, cc'ed people and everyone who commented on a ticket, at least if they have e-mail notification enabled, which should be the case for most, if not all).
+
+Also, I haven't seen recent build [failure] reports regarding OpenSuSE and that issue on sage-release, which is another way to bring back attention.
+
+Florent's post on sage-release (and incidentally? Dave's activity on #9530) brought me back to this.
+
+
+---
+
+Comment by leif created at 2010-10-25 00:40:21
+
+s/#9530/#9523/
+
+
+---
+
+Comment by leif created at 2010-10-25 00:42:36
+
+Changing priority from major to critical.
+
+
+---
+
+Comment by mpatel created at 2010-10-25 02:00:17
+
+Would a `readline-6.0.p3.spkg` with the attached patch definitely fix the broken builds on Arch Linux and/or openSUSE, at least in the short term?  I'm willing to merge this into 4.6.
+
+
+---
+
+Comment by mpatel created at 2010-10-25 02:20:36
+
+See the description for a link to a p3 spkg with Thomas' patch.  I'll attach a Mercurial spkg patch shortly.  Note: I have not tested the new package.  Please do this!
+
+
+---
+
+Comment by mpatel created at 2010-10-25 02:22:51
+
+SPKG Mercurial patch of changes from p2 to p3
+
+
+---
+
+Attachment
+
+This should work at least through openSUSE 11.4.  The earliest it could be broken is an openSUSE release labeled 12.0.  That will not happen until at least 8 months after the release of 11.4, which is in March, so at least a year total.
+
+
+---
+
+Comment by leif created at 2010-10-25 05:58:58
+
+Well, the current patch(es) will only work if a _development_ version of readline is already installed.
+
+Is it installed by default on these systems? (To me that's rather unlikely.)
+
+If not, on Arch the build will fail _later_ because of that (with a compilation or perhaps `configure` error), while on OpenSuSE, we then build Sage's one which IMHO causes the same problem we had previously: bash will crash if it requires a newer 6.0 than we ship.
+
+
+---
+
+Comment by leif created at 2010-10-25 06:01:41
+
+P.S.: Anyway, probably better than what we currently have in Sage (the p2).
+
+
+---
+
+Comment by drkirkby created at 2010-10-25 07:06:02
+
+I  believe the `cp -a` will only be executed on Linux, so it's not a massive problem here, but note that is note that `-a` is not an option defined by POSIX, so is unportable and will break on some systems. Was there a good reason for using `-a`? Unless there was, it would be good to get into the habbit of using a more portable alternative - I suspect `-p` would have done the job here. 
+
+As always, one can get an alphabetical list of the commands at:
+
+http://opengroup.org/onlinepubs/007908799/idx/index.html
+
+and in particular for 'cp':
+
+http://opengroup.org/onlinepubs/007908799/xcu/cp.html
+
+Note the *only* portable options are `-f`, `-i`, `-p` , `-r` and `-R`. 
+
+
+Dave
+
+
+---
+
+Comment by baechler created at 2010-10-25 09:16:23
+
+drkirkby, cp -a is a rough equivalent to cp -dpR - as -d is (according to your post) not portable, this might be problematic, as -d copies symlinks as symlinks, instead of copying the underlying file (this is what I intended there).
+
+Two more comments:
+1) On Arch, the development headers for libreadline are always installed. On openSuSE not by default.
+2) I am thinking to extend this test further: Instead of testing for a particular distribution, test whether libreadline.so.6 is installed and the development headers are present - and in those cases, never build libreadline. This way, only systems lacking libreadline or providing the old libreadline.so.5 would have to build libreadline, all others would use the system's library.
+
+
+---
+
+Comment by drkirkby created at 2010-10-25 13:17:58
+
+Replying to [comment:29 baechler]:
+> drkirkby, cp -a is a rough equivalent to cp -dpR - as -d is (according to your post) not portable, this might be problematic, as -d copies symlinks as symlinks, instead of copying the underlying file (this is what I intended there).
+
+Two other options are to use `tar` or `pax`. Since I assume you are more familiar with `tar`, that might be your preference. You could use a temporary file, or you copy stdout of one tar command to stdin of another using a pipe. 
+
+A third option might be to use `mv` instead of `cp`. 
+
+> Two more comments:
+> 1) On Arch, the development headers for libreadline are always installed. On openSuSE not by default.
+
+Linux is a moving target - that can change at any time. 
+
+> 2) I am thinking to extend this test further: Instead of testing for a particular distribution, test whether libreadline.so.6 is installed and the development headers are present - and in those cases, never build libreadline. This way, only systems lacking libreadline or providing the old libreadline.so.5 would have to build libreadline, all others would use the system's library.
+
+In general I am not over keen on Sages system of installing everything. However, if you do this on every platform not just Linux, have you thought about how you would do this on Solaris and OpenSolaris, for 64-bit builds, where the libraries would not reside in `/usr/lib`, but in a subdirectory which depends on the type of CPU? How about if only static libraries are installed? 
+
+Have you thought about it when someone has an older version of readline in `/usr/local`, but a later one in `/usr/local/lib`, or some other random directory? 
+
+Basically I'm saying I don't think this is quite as easy as you might be thinking it is. To make a change on every system, where there are only one or two Linux distributions having this problem, is probably unwise. 
+
+Dave
+
+
+---
+
+Comment by leif created at 2010-10-25 16:04:15
+
+Replying to [comment:29 baechler]:
+> 2) I am thinking to extend this test further: Instead of testing for a particular distribution, test whether libreadline.so.6 is installed and the development headers are present - and in those cases, never build libreadline. This way, only systems lacking libreadline or providing the old libreadline.so.5 would have to build libreadline, all others would use the system's library.
+
+Sounds reasonable, but we'd have to take care of that when building binary distributions (`./sage -bdist`), too, since the build system might have a (suitable) system libreadline, but we cannot assume every target system (where a bdist gets installed) to also have it.
+
+In general, I'd like to not (ship and) build Sage-specific versions of basic tools and libraries like readline (at least by default), but that's a long-lasting discussion and there are different reasons to do so for each individual package.
+
+The situation with readline and bash is even more specific, since it's IMHO a bad idea to dynamically link the system shell against it, which is only the case on OpenSuSE and Arch. But it's also the readline developers' fault, because they changed the library's interface without bumping the version number.
+
+
+---
+
+Comment by baechler created at 2010-10-25 16:17:15
+
+Replying to [comment:31 leif]:
+> The situation with readline and bash is even more specific, since it's IMHO a bad idea to dynamically link the system shell against it, which is only the case on OpenSuSE and Arch.
+
+Linking the shell dynamically, as far as I know, has been readline's default for a long time - other distributions just still use libreadline.so.5 for this.
+
+> But it's also the readline developers' fault, because they changed the library's interface without bumping the version number.
+
+You are wrong, this is standard and expected behaviour, at least in the GNU ld world. Increasing the library SONAME version is only required when a binary compiled against an older library version will fail to work with a newer version.
+
+In this case, a binary (bash) compiled against a newer library version does not work with an older library version. This is normal and will be the case with all system libraries, even the C library in some cases. The reason is simple: Nobody ever downgrades system libraries.
+
+
+---
+
+Comment by leif created at 2010-10-25 16:56:48
+
+Replying to [comment:32 baechler]:
+> Replying to [comment:31 leif]:
+> > The situation with readline and bash is even more specific, since it's IMHO a bad idea to dynamically link the system shell against it, which is only the case on OpenSuSE and Arch.
+> 
+> Linking the shell dynamically, as far as I know, has been readline's default for a long time - other distributions just still use libreadline.so.5 for this.
+
+No, at least some _statically_ link bash against readline, which is much safer.
+
+> > But it's also the readline developers' fault, because they changed the library's interface without bumping the version number.
+> 
+> You are wrong, this is standard and expected behaviour, at least in the GNU ld world. Increasing the library SONAME version is only required when a binary compiled against an older library version will fail to work with a newer version.
+
+In principle, the opposite (a binary requiring some newer version) is the more common use case.
+
+> In this case, a binary (bash) compiled against a newer library version does not work with an older library version. This is normal and will be the case with all system libraries, even the C library in some cases.
+
+Yes, and _that_ should be catched as well, see above. Therefore one keeps older library versions installed, with a different "name". But here, both are "6.0", or worse, the soname recorded as required by bash simply contains the major number, "6".
+ 
+> The reason is simple: Nobody ever downgrades system libraries.
+
+This will frequently happen when people install dynamically linked executables (or even libraries) built on newer systems; usually a packet manager will take care of also installing the needed libraries, but not all programs come as packages. into which more specific dependencies are coded.
+
+
+---
+
+Comment by leif created at 2010-10-25 21:22:11
+
+Replying to [comment:28 drkirkby]:
+> I  believe the `cp -a` will only be executed on Linux, so it's not a massive problem here, but note that is note that `-a` is not an option defined by POSIX, so is unportable and will break on some systems. Was there a good reason for using `-a`? Unless there was, it would be good to get into the habbit of using a more portable alternative
+
+`[ `uname -p` = "x86_64" ]` isn't portable either, this might give "unknown" even on Linux; `uname -m` should be better.
+
+Also, I think `ln -s ...` should be `ln -snf ...` (or at least `ln -sf ...`).
+
+
+---
+
+Comment by leif created at 2010-10-25 21:28:11
+
+Replying to [comment:34 leif]:
+> Also, I think `ln -s ...` should be `ln -snf ...` (or at least `ln -sf ...`).
+
+Ok, _currently_ the libs are deleted prior to [re]installation, so the `-f` is superfluous, but doesn't hurt either, since we want the link to be created in any case.
+
+
+---
+
+Comment by mpatel created at 2010-10-27 08:30:46
+
+Can someone (Thomas?) please update a patch or the spkg with the suggested improvements?
+
+The main remaining potential blockers to releasing 4.6 are this ticket and the other problem Florent Hivert reported on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/bb636656e2153332) (cf. [comment:ticket:10097:16 comment 16ff] at #10097).
+
+I'll investigate the latter later today.
+
+
+---
+
+Comment by leif created at 2010-10-28 01:07:34
+
+Replying to [comment:36 mpatel]:
+> The main remaining potential blockers to releasing 4.6 are this ticket and the other problem Florent Hivert reported on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/bb636656e2153332) (cf. [comment:ticket:10097:16 comment 16ff] at #10097).
+> 
+> I'll investigate the latter later today.
+
+That's now #10176, currently needing review. There's a new SageNB spkg to get around strange behavoir on *some* OpenSuSE (11.1 and 11.3, both x86_64) installations (i.e., the problem did not arise on an OpenSuSE 11.1 x86_64 machine on Skynet, unless the buildbot cheated).
+
+
+---
+
+Comment by mpatel created at 2010-10-28 02:17:49
+
+Use `uname -m` and `ln -snf` but leave `cp -a`.  Updated SPKG patch.  Replaces previous.
+
+
+---
+
+Attachment
+
+I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.
+
+The new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?
+
+Also, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?
+
+
+---
+
+Comment by leif created at 2010-10-28 03:02:13
+
+Replying to [comment:38 mpatel]:
+> I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.
+
+Argh, I've just created a .p4 with some "reviewer patch"... :/
+
+(But Firefox crashed, my fault.)
+
+
+---
+
+Comment by leif created at 2010-10-28 03:37:51
+
+SPKG reviewer patch, based on the *previous* p3. (The new, perhaps now alternate spkg is p4.) See commit message for an overview of the changes.
+
+
+---
+
+Attachment
+
+Replying to [comment:38 mpatel]:
+> I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.
+
+Note also that the '`n`' option to '`ln`' is not portable either. 
+
+http://www.opengroup.org/onlinepubs/009695399/utilities/ln.html
+
+I'd be very weary of using non-portable options, even on Linux, as there have been reports of some of the cut-down linux distributions failing to recognise some of the unportable options. See for example #8566, where the '`m`' option to  '`tar`' is failing on a minimal linux distribution. I should remove that option, as it is totally unnecessary in the bit of code that uses it. 
+
+I would at least comment any such non-portable code. 
+
+> The new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?
+> 
+> Also, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?
+
+I've installed openSUSE 11.3, but hit a problem in that g++ is called g++-4.5. Since I know setting CXX is unreliable in Sage, I need to mess around creating links to call it g++. I wish Sage would respect values for CC and CXX. Currently setting those will work for some packages, but not all of them. 
+
+Dave
+
+
+---
+
+Comment by mpatel created at 2010-10-28 03:51:39
+
+I'm happy to go with Leif's patch and make a p4 with it.  Leif, do you want to remove `-n` from the `ln` commands?
+
+
+---
+
+Comment by leif created at 2010-10-28 03:54:53
+
+*New alternate spkg: http://spkg-upload.googlecode.com/files/readline-6.0.p4.spkg*
+
+*md5sum:* `9f5a955d4d6b4240e5ba7e23e6193160  readline-6.0.p4.spkg`
+
+(Contains my reviewer patch which is based on Mitesh's *previous* p3.)
+
+Feel free to test and review this one or Mitesh's new one.
+
+
+---
+
+Comment by leif created at 2010-10-28 03:55:45
+
+Replying to [comment:42 mpatel]:
+> I'm happy to go with Leif's patch and make a p4 with it.  Leif, do you want to remove `-n` from the `ln` commands?
+
+Not really. We have it all around by the way...
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 04:04:53
+
+I just got this on openSUSE 11.3
+
+
+```
+Deleting old readline headers and libs
+OpenSuSE detected
+OpenSuSE 11 detected
+No readline headers found. Please install OpenSuSE's development
+version of libreadline 6.x since building the version currently
+shipped with Sage would break your shell (bash). Sorry.
+
+real    0m0.010s
+user    0m0.004s
+sys     0m0.001s
+sage: An error occurred while installing readline-6.0.p4
+```
+
+
+so I'll follow the instructions. 
+
+Why do people keep calling this openSuSE? It was in the title, and now I see it in Leif's comments. According to the openSUSE web page, it is openSUSE. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 04:12:51
+
+FYI, 
+
+
+```
+$ sudo zypper install readline-devel
+```
+
+
+installs the headers, and allows sqlite to build, which I think was the program that was causing problems. I'm just installing this, but like an idiot I only allocated one CPU to the virtual machine, not 8. It might be quicker to shut down and allocate more CPUs to the virtual machine. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 04:29:00
+
+Undoubtadly unrelated, but I can't get ATLAS to build, in the virtual machine:
+
+
+```
+gcc -DL2SIZE=4194304 -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/include -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//include -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_Corei7 -DATL_CPUMHZ=3324 -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_USE64BITS -DATL_GAS_x8664  -fomit-frame-pointer -mfpmath=sse -msse3 -O2 -fno-schedule-insns2 -fPIC -m64 -DATL_BETA=1 -c dmm.c 
+gcc -DL2SIZE=4194304 -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/include -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//include -I/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_Corei7 -DATL_CPUMHZ=3324 -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_USE64BITS -DATL_GAS_x8664  -fomit-frame-pointer -mfpmath=sse -msse3 -O2 -fno-schedule-insns2 -fPIC -m64 -o xdfc dfc.o dmm.o \
+                                    /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/sysinfo/time.o 
+/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin/ATLrun.sh /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm xdfc 
+Near-zero time 0.000000e+00 rejected
+Near-zero time 0.000000e+00 rejected
+Near-zero time 0.000000e+00 rejected
+Near-zero time 0.000000e+00 rejected
+Near-zero time 0.000000e+00 rejected
+Too many zero-time values, dying
+make[7]: *** [dmmcase0] Error 255
+make[7]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make[6]: *** [mmcase] Error 2
+make[6]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+Error in command:  make mmcase pre=d loopO=JIK ta=T tb=N M=60 N=60 K=60 mb=60 nb=60 kb=60 lda=60 ldb=60 ldc=0 lda2=60 ldb2=60 ldc2=0 mu=4 nu=2 ku=60 alpha=1 beta=1 muladd=1 lat=5 cleanup=1 ff=1 if=8 nf=1 pfA=513 
+mmnreg = 19
+
+NB's to try: 60   
+
+
+pre=d, muladd=0, lat=1, pf=0, nb=35, mu=5, nu=1, ku=35, mflop=2269.50
+
+pre=d, muladd=0, lat=1, pf=0, nb=35, mu=5, nu=1, ku=35, mflop=2269.50
+
+pre=d, muladd=0, lat=1, pf=0, nb=36, mu=4, nu=1, ku=36, mflop=7056.25
+
+pre=d, muladd=1, lat=1, pf=0, nb=36, mu=4, nu=1, ku=36, mflop=15572.92
+make[5]: *** [RunMMDef] Error 255
+make[5]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make[4]: *** [IRunMMDef] Error 2
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dMMRES INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dNCNB INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dbestNN_44x44x44 INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dbestNT_44x44x44 INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dbestTN_44x44x44 INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cp /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/dbestTT_44x44x44 INSTALL_LOG/.
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cd /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm ; make dinstall
+make[5]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+./xemit_mm  -p d -R -2
+pre=d, CU=0, ma=0, ff=0, if=-1, nf=-1, lo=1, ta=112, tb=111, lat=4, mu=4, nu=4, ku=1, m=0, n=0, k=0, lda=0, ldb=0, ldc=0, csA=1, csB=1, csC=1, alpha=1, beta=1
+
+line 4023 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+line 4025 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+line 4027 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+line 3770 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+line 3772 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+line 3774 of /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c
+cat: CASES/: Is a directory
+xemit_mm: /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/emit_mm.c:3737: GenAllUNBCases: Assertion `system(ln) == 0' failed.
+make[5]: *** [dinstall] Aborted
+make[5]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make[4]: *** [MMinstall] Error 2
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cd /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm ; make res/atlas_cacheedge.h pre=d
+make[5]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make dRunFindCE
+make[6]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+cd /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm ; make dlib
+make[7]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm'
+make auxillib dcleanuplib dusergemm
+make[8]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm'
+cd /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/auxil ; make lib
+make[9]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/auxil'
+make[9]: Nothing to be done for `lib'.
+make[9]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/auxil'
+cd KERNEL ; make -f dMakefile dlib
+make[9]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm/KERNEL'
+make[9]: dMakefile: No such file or directory
+make[9]: *** No rule to make target `dMakefile'.  Stop.
+make[9]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm/KERNEL'
+make[8]: *** [dcleanuplib] Error 2
+make[8]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm'
+make[7]: *** [dlib] Error 2
+make[7]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/src/blas/gemm'
+make[6]: *** [dmmlib] Error 2
+make[6]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make[5]: *** [res/atlas_cacheedge.h] Error 2
+make[5]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm'
+make[4]: *** [/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/tune/blas/gemm/res/atlas_cachedge.h] Error 2
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+ERROR 639 DURING CACHE EDGE DETECTION!!.
+make[4]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+cd /home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build ; make error_report
+make[5]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+make -f Make.top error_report
+make[6]: Entering directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+uname -a 2>&1 >> bin/INSTALL_LOG/ERROR.LOG
+gcc -v 2>&1  >> bin/INSTALL_LOG/ERROR.LOG
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/4.5/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.5 --enable-ssp --disable-libssp --disable-plugin --with-bugurl=http://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --disable-libgcj --disable-libmudflap --with-slibdir=/lib64 --with-system-zlib --enable-__cxa_atexit --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --program-suffix=-4.5 --enable-linux-futex --without-system-libunwind --enable-gold --with-plugin-ld=/usr/bin/gold --with-arch-32=i586 --with-tune=generic --build=x86_64-suse-linux
+Thread model: posix
+gcc version 4.5.0 20100604 [gcc-4_5-branch revision 160292] (SUSE Linux) 
+gcc -V 2>&1  >> bin/INSTALL_LOG/ERROR.LOG
+gcc: '-V' option must have argument
+make[6]: [error_report] Error 1 (ignored)
+gcc --version 2>&1  >> bin/INSTALL_LOG/ERROR.LOG
+tar cf error_Corei764SSE3.tar Make.inc bin/INSTALL_LOG/*
+gzip --best error_Corei764SSE3.tar
+mv error_Corei764SSE3.tar.gz error_Corei764SSE3.tgz
+make[6]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+make[5]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+make[4]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build/bin'
+Error report error_<ARCH>.tgz has been created in your top-level ATLAS
+directory.  Be sure to include this file in any help request.
+cat: ../../CONFIG/error.txt: No such file or directory
+cat: ../../CONFIG/error.txt: No such file or directory
+
+
+IN STAGE 1 INSTALL:  SYSTEM PROBE/AUX COMPILE
+
+
+   Level 1 cache size calculated as 32KB
+   dFPU: Separate multiply and add instructions with 5 cycle pipeline.
+         Apparent number of registers : 17
+         Register-register performance=802.87MFLOPS
+   sFPU: Separate multiply and add instructions with 4 cycle pipeline.
+         Apparent number of registers : 17
+         Register-register performance=877.97MFLOPS
+
+
+IN STAGE 2 INSTALL:  TYPE-DEPENDENT TUNING
+
+
+STAGE 2-1: TUNING PREC='d' (precision 1 of 4)
+
+
+   STAGE 2-1-1 : BUILDING BLOCK MATMUL TUNE
+make -f Makefile IRunMMDef pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG
+make -f Makefile INSTALL_LOG/dMMRES pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG
+      dL1MATMUL: lat=5, nb=60, pf=513, mu=4, nu=2, ku=60, if=8, nf=1;
+                 Performance: -4730.15 (-142.30 percent of of detected clock rate)
+make -f Makefile INSTALL_LOG/dNCNB pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOGmake -f Makefile INSTALL_LOG/dbestNN_44x44x44 pre=d nb=44 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNN : muladd=1, lat=8, pf=513, nb=44, mu=4, nu=2 ku=44,
+                 ForceFetch=1, ifetch=8 nfetch=1
+                 Performance = -4637.83 (98.05 of copy matmul, -139.53 of clock)
+make -f Makefile INSTALL_LOG/dbestNT_44x44x44 pre=d nb=44 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNT : muladd=1, lat=8, pf=513, nb=44, mu=4, nu=2 ku=44,
+                 ForceFetch=1, ifetch=8 nfetch=1
+                 Performance = -4328.51 (91.51 of copy matmul, -130.22 of clock)
+make -f Makefile INSTALL_LOG/dbestTN_44x44x44 pre=d nb=44 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTN : muladd=1, lat=5, pf=513, nb=44, mu=4, nu=2 ku=44,
+                 ForceFetch=1, ifetch=8 nfetch=1
+                 Performance = -4296.23 (90.83 of copy matmul, -129.25 of clock)
+make -f Makefile INSTALL_LOG/dbestTT_44x44x44 pre=d nb=44 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTT : muladd=1, lat=2, pf=513, nb=44, mu=4, nu=2 ku=44,
+                 ForceFetch=1, ifetch=8 nfetch=1
+                 Performance = -4511.62 (95.38 of copy matmul, -135.73 of clock)
+make -f Makefile MMinstall pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG
+
+
+   STAGE 2-1-2: CacheEdge DETECTION
+make -f Makefile INSTALL_LOG/atlas_cacheedge.h pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMCACHEEDGE.LOG
+make[3]: *** [build] Error 255
+make[3]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+make[2]: *** [build] Error 2
+make[2]: Leaving directory `/home/drkirkby/sage-4.6.rc0/spkg/build/atlas-3.8.3.p16/ATLAS-build'
+Failed to build ATLAS
+```
+
+
+so I can't check this myself. 
+
+Dave
+
+
+---
+
+Comment by leif created at 2010-10-28 04:56:43
+
+Replying to [comment:46 drkirkby]:
+> I'll follow the instructions.
+
+Fine. I just added this (otherwise your bash would have crashed).
+
+> Why do people keep calling this openSuSE? It was in the title, and now I see it in Leif's comments. According to the openSUSE web page, it is openSUSE.
+
+Oh, I noticed that. It's because openSUSE started as SuSE Linux, a distribution created by the S.u.S.E. GmbH (the "u" meaning "&", German "und", since the "S"s stand for the given names of the founders of the company, which happened to be siblings).
+
+----
+
+W.r.t. `ln -a` and `-n`:
+
+I really wonder if we should make GNU coreutils (and perhaps some more) prerequisites for Sage (or even ship coreutils as an spkg), since there seems to be not much progress with POSIX commands.
+
+Or build at least some of our own commands (as part of the scripts spkg).
+
+`sed -i` is also quite useful, though one can relatively easily work around that, in contrast to other not-yet-POSIX features of some other commands.
+
+
+---
+
+Comment by leif created at 2010-10-28 05:35:32
+
+Hmmm, though it doesn't hurt here, we don't need the `-n` when creating the symbolic links to the libraries. It's only relevant for directories.
+
+But I'm not going to change the spkg again; there's always a #9523...
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 05:59:20
+
+Replying to [comment:49 leif]:
+> Replying to [comment:46 drkirkby]:
+> > I'll follow the instructions.
+> 
+> Fine. I just added this (otherwise your bash would have crashed).
+> 
+> > Why do people keep calling this openSuSE? It was in the title, and now I see it in Leif's comments. According to the openSUSE web page, it is openSUSE.
+> 
+> Oh, I noticed that. It's because openSUSE started as SuSE Linux, 
+
+I see. But it would be sensible to call it by the correct name now. Not that it should be a major hassle. 
+
+> W.r.t. `ln -a` and `-n`:
+> 
+> I really wonder if we should make GNU coreutils (and perhaps some more) prerequisites for Sage (or even ship coreutils as an spkg), since there seems to be not much progress with POSIX commands.
+> 
+> Or build at least some of our own commands (as part of the scripts spkg).
+
+It just encourages people to write non-portable code. So they write non-portable code for Sage, then if they write code for other projects, they do the same there. At least Sage being cross-platform encourages developers to think about portability. I'm sure it has contributed to the education of many. 
+
+BTW, I don't see the need to copy the readline files to $SAGE_LOCAL - why not create links? It saves disk space and CPU cycles. 
+
+Dave
+
+
+---
+
+Comment by leif created at 2010-10-28 06:29:10
+
+Replying to [comment:51 drkirkby]:
+> BTW, I don't see the need to copy the readline files to $SAGE_LOCAL - why not create links? It saves disk space and CPU cycles. 
+
+Well, we copy the library, and the user might decide to upgrade the system libreadline (devel version) later, perhaps even "unintentionally" by installing a bunch of upgraded packages.
+
+We then might use newer headers that do not match the library we copied, which would break a later [re]build. So it's safer to copy them, too. My readline 6.1 headers are 80 KB btw.
+
+(For the same reason I prefer *copying* the library, since otherwise an upgrade of the system library might break *our*, the Sage installation.)
+
+
+---
+
+Comment by mpatel created at 2010-10-28 08:51:44
+
+Replying to [comment:48 drkirkby]:
+
+> Undoubtadly unrelated, but I can't get ATLAS to build, in the virtual machine: ... so I can't check this myself.
+
+Would it help to build with `SAGE_FAT_BINARY=yes`?
+
+By the way, how large is the VM image?
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 08:59:16
+
+Replying to [comment:53 mpatel]:
+> Replying to [comment:48 drkirkby]:
+> 
+> > Undoubtadly unrelated, but I can't get ATLAS to build, in the virtual machine: ... so I can't check this myself.
+> 
+> Would it help to build with `SAGE_FAT_BINARY=yes`?
+
+Worth a try I guess
+ 
+> By the way, how large is the VM image?
+
+3.4 GB. This is VirtualBox, not VMWare. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 09:02:09
+
+Despite being unable to check this fully, I'm going to give it a positive review. 
+
+I'm sure Leif has checked it builds on his Linux. I've checked it builds on OpenSolaris and Solaris. I've also checked it builds on openSUSE 11.3, though I was unable to build on openSUSE fully, as ATLAS would not build - totally unrelated to this. 
+
+Looking at #9523, I can see the old readline was causing issues with building sqlite. I can confirm there are no issues building sqlite on openSUSE any more. 
+
+I don't have access to ArchLinux and can't be bothered to install it, but in any case that's not a supported platform. 
+
+I do wish people would not use `grep -q` though - as it will break on Solaris. 
+
+So I think given all this, I'm reasonably confident this is OK. I can't possibly imagine it would break any supported platform.
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 09:02:09
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 09:14:05
+
+Replying to [comment:53 mpatel]:
+> Replying to [comment:48 drkirkby]:
+> 
+> > Undoubtedly unrelated, but I can't get ATLAS to build, in the virtual machine: ... so I can't check this myself.
+> 
+> Would it help to build with `SAGE_FAT_BINARY=yes`?
+
+It did not help. I also tried unsetting MAKE - again no help. 
+
+I've not managed to build ATLAS on Debian either in a virtual machine. I have the latest version of VirtualBox. I did wonder if I loaded the machine up, so the CPU usage was high, if this would increase the times and so hopefully get non-zero values.
+
+
+---
+
+Comment by leif created at 2010-10-28 09:25:42
+
+Replying to [comment:55 drkirkby]:
+> I'm sure Leif has checked it builds on his Linux.
+
+Of course. (Ubuntu 10.04 x86_64)
+
+> I've also checked it builds on openSUSE 11.3, though I was unable to build on openSUSE fully, as ATLAS would not build - totally unrelated to this.
+
+You could perhaps steal an ATLAS library from Florent, if you don't care about its performance.
+
+> I do wish people would not use `grep -q` though - as it will break on Solaris.
+
+I really think Sage users on [Open]Solaris should set up their path to have the POSIX versions first in it. Sage's `configure` could check that. (Or we could modify `PATH` in `sage-env` accordingly.)
+
+
+---
+
+Comment by drkirkby created at 2010-10-28 09:35:28
+
+Replying to [comment:57 leif]:
+> Replying to [comment:55 drkirkby]:
+
+> > I do wish people would not use `grep -q` though - as it will break on Solaris.
+> 
+> I really think Sage users on [Open]Solaris should set up their path to have the POSIX versions first in it. Sage's `configure` could check that. (Or we could modify `PATH` in `sage-env` accordingly.)
+> 
+
+I don't think Solaris is the only system which lacks the -q by default. In any case, it is very easy to work around. 
+
+Dave
+
+
+---
+
+Comment by mpatel created at 2010-10-28 10:41:56
+
+Formality.
+
+
+---
+
+Comment by mpatel created at 2010-10-28 10:41:56
+
+Changing priority from critical to blocker.
+
+
+---
+
+Comment by mpatel created at 2010-10-30 10:38:40
+
+Resolution: fixed

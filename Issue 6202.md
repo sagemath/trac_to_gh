@@ -1,0 +1,336 @@
+# Issue 6202: bitset "noise" on solaris sparc (mark)
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2009-06-03 23:09:18
+
+Assignee: tbd
+
+
+```
+sage -t  devel/sage/sage/misc/misc_c.pyx
+**********************************************************************
+File "/home/wstein/build-4.4.0/mark/sage-4.0.1.alpha0/devel/sage-main/sage/misc/misc_c.pyx", line 359:
+    sage: test_bitset('00'*32, '01'*32, 64)
+Expected:
+    a 0000000000000000000000000000000000000000000000000000000000000000
+    a.size 64
+    len(a) 0
+    a.limbs ...
+    b 0101010101010101010101010101010101010101010101010101010101010101
+    a.in(n)   False
+    a.not_in(n)   True
+    a.add(n)     0000000000000000000000000000000000000000000000000000000000000000
+    a.discard(n)   0000000000000000000000000000000000000000000000000000000000000000
+    a.set_to(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.flip(n)    0000000000000000000000000000000000000000000000000000000000000000
+    a.isempty()  True
+    a.eq(b)      False
+    a.cmp(b)     -1
+    a.issubset(b) True
+    a.issuperset(b) False
+    a.copy()     0000000000000000000000000000000000000000000000000000000000000000
+    r.clear()     0000000000000000000000000000000000000000000000000000000000000000
+    complement a        1111111111111111111111111111111111111111111111111111111111111111
+    a intersect b      0000000000000000000000000000000000000000000000000000000000000000
+    a union b       0101010101010101010101010101010101010101010101010101010101010101
+    a minus b      0000000000000000000000000000000000000000000000000000000000000000
+    a symmetric_difference b      0101010101010101010101010101010101010101010101010101010101010101
+    a.rshift(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.lshift(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.first()           -1
+    a.next(n)           -1
+    a.first_diff(b)     1
+    a.next_diff(b, n)   -1
+    a.hamming_weight()  0
+    a.hamming_weight_sparse()  0
+Got:
+    a 0000000000000000000000000000000000000000000000000000000000000000
+    a.size 64
+    len(a) 0
+    a.limbs 2
+    b 0101010101010101010101010101010101010101010101010101010101010101
+    a.in(n)   True
+    a.not_in(n)   False
+    a.add(n)     0000000000000000000000000000000000000000000000000000000000000000
+    a.discard(n)   0000000000000000000000000000000000000000000000000000000000000000
+    a.set_to(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.flip(n)    0000000000000000000000000000000000000000000000000000000000000000
+    a.isempty()  True
+    a.eq(b)      False
+    a.cmp(b)     -1
+    a.issubset(b) True
+    a.issuperset(b) False
+    a.copy()     0000000000000000000000000000000000000000000000000000000000000000
+    r.clear()     0000000000000000000000000000000000000000000000000000000000000000
+    complement a        1111111111111111111111111111111111111111111111111111111111111111
+    a intersect b      0000000000000000000000000000000000000000000000000000000000000000
+    a union b       0101010101010101010101010101010101010101010101010101010101010101
+    a minus b      0000000000000000000000000000000000000000000000000000000000000000
+    a symmetric_difference b      0101010101010101010101010101010101010101010101010101010101010101
+    a.rshift(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.lshift(n)  0000000000000000000000000000000000000000000000000000000000000000
+    a.first()           -1
+    a.next(n)           -1
+    a.first_diff(b)     1
+    a.next_diff(b, n)   -1
+    a.hamming_weight()  0
+    a.hamming_weight_sparse()  0
+```
+
+
+
+---
+
+Comment by was created at 2009-06-03 23:11:33
+
+Changing component from algebra to solaris.
+
+
+---
+
+Comment by was created at 2009-06-03 23:25:49
+
+This is the part that is wrong
+
+```
+    a.in(n)   True
+    a.not_in(n)   False
+```
+
+
+
+---
+
+Comment by jason created at 2009-06-04 19:51:43
+
+Did someone find the bug?  What is the status of this?
+
+
+---
+
+Comment by was created at 2009-06-06 16:32:31
+
+Somewhat bizarrely I got this exact doctest failure once on OSX 32-bit PPC, but I can't reproduce it.  It's there in the log on my OSX10.5 ppc box
+
+```
+pdlc424:sage-4.0.1.rc3 wstein$ pwd
+/Users/wstein/build/sage-4.0.1.rc3
+```
+
+
+
+---
+
+Comment by robertwb created at 2009-06-06 23:38:04
+
+I looked at this earlier, but didn't make any progress. I'm looking at it again now.
+
+
+---
+
+Comment by robertwb created at 2009-06-06 23:51:30
+
+OK, taking a fresh look, it's not obvious this test is indexing off the end of the bitset. Bitsets are zero-indexed, and the third parameter is supposed to be an index into this set (used for setting, clearing, etc.)
+
+It looks like it wasn't added that long ago, but I'm actually surprised it has been so consistent (and not caused random segfaults anywhere else).
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by robertwb created at 2009-06-07 00:09:01
+
+Jason, does this still test what was intended to be tested?
+
+
+---
+
+Comment by jason created at 2009-06-07 05:38:25
+
+No.  You're right; there was an error in the original doctest; it should have been testing for 31, not 32.  The problem this was testing was a case where complementing the bit would actually zero out the last word if the number of bits was an integral multiple of the wordsize (not an "even" multiple).
+
+So, if you changed the test so that the third parameter was 127 instead of 64, it would be testing the correct thing.
+
+This is good to know that the code wasn't at fault here, just the doctest!
+
+
+---
+
+Comment by jason created at 2009-06-07 05:49:12
+
+To clarify, your patch looks good if you:
+
+ * Change the third parameter to 127
+ * Change "even multiple" to "integral multiple" or just "multiple"
+
+I haven't applied or run it yet, though.  I'll do that next week and probably give it a positive review (with the above changes).
+
+
+---
+
+Comment by jason created at 2009-06-07 05:50:36
+
+(and thanks for figuring out my mistake in making this doctest!)
+
+
+---
+
+Comment by was created at 2009-06-08 12:25:52
+
+Woops.  It's no surprise but though you fixed the test on mark (the solaris box), it is now completely broke on sage.math:
+
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: 
+Exiting SAGE (CPU time 0m0.04s, Wall time 0m1.13s).
+wstein`@`sage:~/build/sage-4.0.1$ ./sage -t devel/sage/sage/misc/misc_c.pyx 
+sage -t  "devel/sage/sage/misc/misc_c.pyx"                  
+**********************************************************************
+File "/scratch/wstein/build/sage-4.0.1/devel/sage/sage/misc/misc_c.pyx", line 359:
+    sage: test_bitset('00'*64, '01'*64, 64)
+Expected:
+    a 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.size 128
+    len(a) 0
+    a.limbs 4
+    b 01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a.in(n)   False
+    a.not_in(n)   True
+    a.add(n)     00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.discard(n)   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.set_to(n)  00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.flip(n)    00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.isempty()  True
+    a.eq(b)      False
+    a.cmp(b)     -1
+    a.issubset(b) True
+    a.issuperset(b) False
+    a.copy()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    r.clear()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    complement a        11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+    a intersect b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a union b       01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a minus b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a symmetric_difference b      01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a.rshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.lshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.first()           -1
+    a.next(n)           -1
+    a.first_diff(b)     1
+    a.next_diff(b, n)   65
+    a.hamming_weight()  0
+    a.hamming_weight_sparse()  0
+    rshifts add  True
+    lshifts add  True
+    intersection commutes True
+    union commutes  True
+    not not = id True
+    flipped bit  64
+    add bit      64
+    discard bit    64
+    lshift add unset ok True
+    rshift set unset ok True
+Got:
+    a 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.size 128
+    len(a) 0
+    a.limbs 2
+    b 01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a.in(n)   False
+    a.not_in(n)   True
+    a.add(n)     00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.discard(n)   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.set_to(n)  00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.flip(n)    00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    a.isempty()  True
+    a.eq(b)      False
+    a.cmp(b)     -1
+    a.issubset(b) True
+    a.issuperset(b) False
+    a.copy()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    r.clear()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    complement a        11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+    a intersect b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a union b       01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a minus b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a symmetric_difference b      01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+    a.rshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.lshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    a.first()           -1
+    a.next(n)           -1
+    a.first_diff(b)     1
+    a.next_diff(b, n)   65
+    a.hamming_weight()  0
+    a.hamming_weight_sparse()  0
+    rshifts add  True
+    lshifts add  True
+    intersection commutes True
+    union commutes  True
+    not not = id True
+    flipped bit  64
+    add bit      64
+    discard bit    64
+    lshift add unset ok True
+    rshift set unset ok True
+**********************************************************************
+1 items had failures:
+   1 of   7 in __main__.example_8
+***Test Failed*** 1 failures.
+For whitespace errors, see the file /scratch/wstein/build/sage-4.0.1/tmp/.doctest_misc_c.py
+         [1.2 s]
+exit code: 1024
+ 
+----------------------------------------------------------------------
+The following tests failed:
+| Sage Version 4.0.1, Release Date: 2009-06-06                       |
+| Type notebook() for the GUI, and license() for information.        |
+
+        sage -t  "devel/sage/sage/misc/misc_c.pyx"
+Total time for all tests: 1.2 seconds
+wstein`@`sage:~/build/sage-4.0.1$ 
+
+```
+
+
+
+---
+
+Comment by jason created at 2009-06-08 15:33:39
+
+The number of limbs is different; that indicates that this is a 64-bit computer.  There should be a "..." for the number of limbs, as it will be 4 on a 32-bit computer, but 2 on a 64-bit computer.
+
+I still think the changes I mentioned above need to be fixed, so I'm also leaving it a "needs work" for that.
+
+
+---
+
+Comment by robertwb created at 2009-06-10 08:39:41
+
+apply only this patch
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by was created at 2009-06-15 23:35:53
+
+Resolution: fixed
+
+
+---
+
+Comment by was created at 2009-06-15 23:35:53
+
+merged into 4.0.2.rc1

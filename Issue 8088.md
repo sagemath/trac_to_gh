@@ -1,0 +1,517 @@
+# Issue 8088: sage library 4.3.1 failing to build on Open Solaris x64
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-01-27 04:05:18
+
+Assignee: drkirkby
+
+CC:  jas jsp was
+
+## Build environment
+ * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
+ * OpenSolaris 2009.06 snv_111b X86
+ * Sage 4.3.1 (with a few packages hacked to work on 64-bit)
+ * gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.
+ * 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. 
+
+## The problem
+The sage library is failing to build on Open Solaris on the x64 platform. It has recently been broken on Solaris 10 SPARC too, for other reasons - see #7990 
+
+
+```
+../src/kernel/none/level1.h: In function ‘mpsub’:
+../src/kernel/none/level1.h:973: warning: right shift count >= width of type
+../src/kernel/none/level1.h:974: warning: right shift count >= width of type
+../src/kernel/none/level1.h:975: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpmul’:
+../src/kernel/none/level1.h:981: warning: right shift count >= width of type
+../src/kernel/none/level1.h:982: warning: right shift count >= width of type
+../src/kernel/none/level1.h:983: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpdiv’:
+../src/kernel/none/level1.h:989: warning: right shift count >= width of type
+../src/kernel/none/level1.h:990: warning: right shift count >= width of type
+../src/kernel/none/level1.h:991: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘dvdiiz’:
+../src/kernel/none/level1.h:1001: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘itou’:
+../src/kernel/none/level1.h:1012: warning: right shift count >= width of type
+../src/kernel/none/level1.h:1015: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affui’:
+../src/kernel/none/level1.h:1022: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1023: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘gtodouble’:
+../src/kernel/none/level1.h:1049: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1051: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘expi’:
+../src/kernel/none/level1.h:1111: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+src/convert.c: In function ‘t_INT_to_ZZ’:
+src/convert.c:29: warning: left shift count >= width of type
+src/convert.c:34: warning: right shift count >= width of type
+src/convert.c: In function ‘ZZ_to_t_INT’:
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:48: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+gcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/interrupt.c
+In file included from /export/home/drkirkby/sage-4.3.1/local/include/python2.6/Python.h:58,
+                 from include/stdsage.h:35,
+                 from src/interrupt.c:12:
+/export/home/drkirkby/sage-4.3.1/local/include/python2.6/pyport.h:685:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+scons: *** [src/interrupt.pic.o] Error 1
+pulling from /export/home/drkirkby/sage-4.3.1/spkg/build/sage-4.3.1
+searching for changes
+no changes found
+abort: can't merge with ancestor
+nothing changed
+0 files updated, 0 files merged, 0 files removed, 0 files unresolved
+Deleting the scons target.
+Removed src/convert.pic.o
+scons: Reading SConscript files ...
+scons: done reading SConscript files.
+scons: Cleaning targets ...
+scons: done cleaning targets.
+Building Sage on Solaris in 64-bit mode
+Creating SAGE_LOCAL/lib/sage-64.txt since it does not exist
+Detected SAGE64 flag
+Building Sage on Solaris in 64-bit mode
+
+----------------------------------------------------------
+sage: Building and installing modified Sage library files.
+
+
+Installing c_lib
+gcc -o src/convert.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/convert.c
+In file included from /export/home/drkirkby/sage-4.3.1/local/include/pari/pari.h:76,
+                 from include/convert.h:12,
+                 from src/convert.c:14:
+../src/kernel/none/level1.h: In function ‘evallg’:
+../src/kernel/none/level1.h:180: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘evalvalp’:
+../src/kernel/none/level1.h:187: warning: left shift count >= width of type
+../src/kernel/none/level1.h:188: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘evalexpo’:
+../src/kernel/none/level1.h:195: warning: left shift count >= width of type
+../src/kernel/none/level1.h:196: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘constant_term’:
+../src/kernel/none/level1.h:201: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘leading_term’:
+../src/kernel/none/level1.h:203: warning: left shift count >= width of type
+../src/kernel/none/level1.h:203: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘stackdummy’:
+../src/kernel/none/level1.h:218: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cgetg_copy’:
+../src/kernel/none/level1.h:252: warning: left shift count >= width of type
+../src/kernel/none/level1.h:252: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘init_gen_op’:
+../src/kernel/none/level1.h:257: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cgetg’:
+../src/kernel/none/level1.h:266: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cgeti’:
+../src/kernel/none/level1.h:274: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cgetr’:
+../src/kernel/none/level1.h:282: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘zeropadic’:
+../src/kernel/none/level1.h:354: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘zeroser’:
+../src/kernel/none/level1.h:362: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘zeropol’:
+../src/kernel/none/level1.h:369: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpcopy’:
+../src/kernel/none/level1.h:414: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘icopy’:
+../src/kernel/none/level1.h:423: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘icopy_av’:
+../src/kernel/none/level1.h:433: warning: left shift count >= width of type
+../src/kernel/none/level1.h:437: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpneg’:
+../src/kernel/none/level1.h:445: warning: left shift count >= width of type
+../src/kernel/none/level1.h:445: warning: right shift count >= width of type
+../src/kernel/none/level1.h:445: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpabs’:
+../src/kernel/none/level1.h:452: warning: right shift count >= width of type
+../src/kernel/none/level1.h:452: warning: left shift count >= width of type
+../src/kernel/none/level1.h:452: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘utoineg’:
+../src/kernel/none/level1.h:476: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘utoipos’:
+../src/kernel/none/level1.h:483: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘stosmall’:
+../src/kernel/none/level1.h:513: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘itos’:
+../src/kernel/none/level1.h:520: warning: right shift count >= width of type
+../src/kernel/none/level1.h:524: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘itos_or_0’:
+../src/kernel/none/level1.h:532: warning: left shift count >= width of type
+../src/kernel/none/level1.h:532: warning: left shift count >= width of type
+../src/kernel/none/level1.h:533: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘itou_or_0’:
+../src/kernel/none/level1.h:538: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affii’:
+../src/kernel/none/level1.h:554: warning: left shift count >= width of type
+../src/kernel/none/level1.h:554: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affsi’:
+../src/kernel/none/level1.h:561: warning: left shift count >= width of type
+../src/kernel/none/level1.h:564: warning: left shift count >= width of type
+../src/kernel/none/level1.h:565: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affsr’:
+../src/kernel/none/level1.h:572: warning: left shift count >= width of type
+../src/kernel/none/level1.h:581: warning: left shift count >= width of type
+../src/kernel/none/level1.h:581: warning: left shift count >= width of type
+../src/kernel/none/level1.h:586: warning: left shift count >= width of type
+../src/kernel/none/level1.h:586: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affur’:
+../src/kernel/none/level1.h:594: warning: left shift count >= width of type
+../src/kernel/none/level1.h:602: warning: left shift count >= width of type
+../src/kernel/none/level1.h:602: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affiz’:
+../src/kernel/none/level1.h:607: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affsz’:
+../src/kernel/none/level1.h:609: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpaff’:
+../src/kernel/none/level1.h:611: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘real_1’:
+../src/kernel/none/level1.h:621: warning: left shift count >= width of type
+../src/kernel/none/level1.h:621: warning: left shift count >= width of type
+../src/kernel/none/level1.h:622: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘real_m1’:
+../src/kernel/none/level1.h:629: warning: left shift count >= width of type
+../src/kernel/none/level1.h:629: warning: left shift count >= width of type
+../src/kernel/none/level1.h:630: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘real2n’:
+../src/kernel/none/level1.h:635: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘shiftr’:
+../src/kernel/none/level1.h:653: warning: left shift count >= width of type
+../src/kernel/none/level1.h:653: warning: left shift count >= width of type
+../src/kernel/none/level1.h:656: warning: left shift count >= width of type
+../src/kernel/none/level1.h:657: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cmpir’:
+../src/kernel/none/level1.h:666: warning: right shift count >= width of type
+../src/kernel/none/level1.h:666: warning: right shift count >= width of type
+../src/kernel/none/level1.h:667: warning: right shift count >= width of type
+../src/kernel/none/level1.h:667: warning: right shift count >= width of type
+../src/kernel/none/level1.h:668: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘cmpsr’:
+../src/kernel/none/level1.h:678: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘subii’:
+../src/kernel/none/level1.h:692: warning: right shift count >= width of type
+../src/kernel/none/level1.h:692: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘addii’:
+../src/kernel/none/level1.h:695: warning: right shift count >= width of type
+../src/kernel/none/level1.h:695: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘addrr’:
+../src/kernel/none/level1.h:697: warning: right shift count >= width of type
+../src/kernel/none/level1.h:697: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘subrr’:
+../src/kernel/none/level1.h:699: warning: right shift count >= width of type
+../src/kernel/none/level1.h:699: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘addir’:
+../src/kernel/none/level1.h:701: warning: right shift count >= width of type
+../src/kernel/none/level1.h:701: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘subir’:
+../src/kernel/none/level1.h:703: warning: right shift count >= width of type
+../src/kernel/none/level1.h:703: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘subri’:
+../src/kernel/none/level1.h:705: warning: right shift count >= width of type
+../src/kernel/none/level1.h:705: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘addsi’:
+../src/kernel/none/level1.h:707: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘subsi’:
+../src/kernel/none/level1.h:709: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘vali’:
+../src/kernel/none/level1.h:717: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘sdivsi_rem’:
+../src/kernel/none/level1.h:752: warning: right shift count >= width of type
+../src/kernel/none/level1.h:756: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘sdivsi’:
+../src/kernel/none/level1.h:766: warning: right shift count >= width of type
+../src/kernel/none/level1.h:769: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘umodui’:
+../src/kernel/none/level1.h:845: warning: right shift count >= width of type
+../src/kernel/none/level1.h:846: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘rdiviiz’:
+../src/kernel/none/level1.h:907: warning: left shift count >= width of type
+../src/kernel/none/level1.h:909: warning: left shift count >= width of type
+../src/kernel/none/level1.h:909: warning: left shift count >= width of type
+../src/kernel/none/level1.h:909: warning: left shift count >= width of type
+../src/kernel/none/level1.h:911: warning: right shift count >= width of type
+../src/kernel/none/level1.h:911: warning: left shift count >= width of type
+../src/kernel/none/level1.h:911: warning: right shift count >= width of type
+../src/kernel/none/level1.h:911: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpcmp’:
+../src/kernel/none/level1.h:948: warning: right shift count >= width of type
+../src/kernel/none/level1.h:949: warning: right shift count >= width of type
+../src/kernel/none/level1.h:950: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mptrunc’:
+../src/kernel/none/level1.h:954: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpfloor’:
+../src/kernel/none/level1.h:956: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpceil’:
+../src/kernel/none/level1.h:958: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpround’:
+../src/kernel/none/level1.h:960: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpadd’:
+../src/kernel/none/level1.h:965: warning: right shift count >= width of type
+../src/kernel/none/level1.h:966: warning: right shift count >= width of type
+../src/kernel/none/level1.h:967: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpsub’:
+../src/kernel/none/level1.h:973: warning: right shift count >= width of type
+../src/kernel/none/level1.h:974: warning: right shift count >= width of type
+../src/kernel/none/level1.h:975: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpmul’:
+../src/kernel/none/level1.h:981: warning: right shift count >= width of type
+../src/kernel/none/level1.h:982: warning: right shift count >= width of type
+../src/kernel/none/level1.h:983: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘mpdiv’:
+../src/kernel/none/level1.h:989: warning: right shift count >= width of type
+../src/kernel/none/level1.h:990: warning: right shift count >= width of type
+../src/kernel/none/level1.h:991: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘dvdiiz’:
+../src/kernel/none/level1.h:1001: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘itou’:
+../src/kernel/none/level1.h:1012: warning: right shift count >= width of type
+../src/kernel/none/level1.h:1015: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘affui’:
+../src/kernel/none/level1.h:1022: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1023: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘gtodouble’:
+../src/kernel/none/level1.h:1049: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1051: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘expi’:
+../src/kernel/none/level1.h:1111: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+src/convert.c: In function ‘t_INT_to_ZZ’:
+src/convert.c:29: warning: left shift count >= width of type
+src/convert.c:34: warning: right shift count >= width of type
+src/convert.c: In function ‘ZZ_to_t_INT’:
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:48: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+gcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/interrupt.c
+In file included from /export/home/drkirkby/sage-4.3.1/local/include/python2.6/Python.h:58,
+                 from include/stdsage.h:35,
+                 from src/interrupt.c:12:
+/export/home/drkirkby/sage-4.3.1/local/include/python2.6/pyport.h:685:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+scons: *** [src/interrupt.pic.o] Error 1
+ERROR: There was an error building c_lib.
+
+
+real	0m0.508s
+user	0m0.287s
+sys	0m0.215s
+Error building new version of SAGE.
+You might try typing 'sage -ba' or write to sage-support with as much information as possible.
+
+real	0m2.600s
+user	0m1.453s
+sys	0m1.106s
+sage: An error occurred while installing sage-4.3.1
+```
+
+
+
+
+---
+
+Comment by jsp created at 2010-02-01 20:14:26
+
+What I see happening is that CFLAGS are not propagated.
+
+What I tried to do is adapting SConstruct:
+
+
+
+```
+## the details.
+if env['PLATFORM']=="darwin":
+    if os.environ['SAGE64']=="yes":
+        # We want the debug and optimization flags, since debug symbols are so useful, etc.
+        print "MacIntel in 64 bit mode"
+        env.Append( CFLAGS="-O2 -g -m64" )
+        env.Append( CXXFLAGS="-O2 -g -m64" )
+        env.Append( LINKFLAGS="-m64 -single_module -flat_namespace -undefined dynamic_lookup" )
+    else:
+        env.Append( LINKFLAGS="-single_module -flat_namespace -undefined dynamic_lookup" )
+
+if env['PLATFORM']=="SunOS":
+    if os.environ['SAGE64']=="yes":
+        # We want the debug and optimization flags, since debug symbols are so useful, etc.
+        print "Open Solaris in 64 bit mode"
+        env.Append( CFLAGS="-O2 -g -m64" )
+        env.Append( CXXFLAGS="-O2 -g -m64" )
+        env.Append( LDFLAGS="-m64 " )
+
+# SCons doesn't automatically pull in system environment variables
+# However, we only need SAGE_LOCAL, so that's easy.
+env['SAGE_LOCAL'] = os.environ['SAGE_LOCAL']
+
+```
+
+
+
+I think there is nothing wrong with this flags.
+
+But I must admit I'm not very knowledgeable with scons nor the library build system.
+
+
+
+Jaap
+
+
+---
+
+Comment by drkirkby created at 2010-02-01 20:25:06
+
+SCons by design ignores all environment settings - CC, CFLAGS - aboslutely everything. I don't know how to use it, but I can assure you, even if you import CC/CFLAGS etc, into the Sconscript file, SCons will ignore them. That is how it is designed. 
+
+I have found it very frustrating. 
+
+Take a look at #6595 - it might give you some clues as to the problem of SCons and encvironment variables. 
+
+Dave
+
+
+---
+
+Comment by jsp created at 2010-02-01 20:55:49
+
+I mimicked the Darwin approach, assuming there was some sense in it :(
+
+Jaap
+
+
+
+```
+sage subshell$ ./spkg-install 2>&1 | tee -a build.log
+gcc -o src/interrupt.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/interrupt.c
+In file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/Python.h:58,
+                 from include/stdsage.h:35,
+                 from src/interrupt.c:12:
+/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/pyport.h:685:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+scons: *** [src/interrupt.pic.o] Error 1
+pulling from /export/home/jaap/Downloads/sage-4.3.2.alpha0/spkg/build/sage-4.3.2.alpha0
+searching for changes
+no changes found
+abort: can't merge with ancestor
+nothing changed
+0 files updated, 0 files merged, 0 files removed, 0 files unresolved
+Deleting the scons target.
+Removed src/convert.pic.o
+scons: Reading SConscript files ...
+scons: done reading SConscript files.
+scons: Cleaning targets ...
+scons: done cleaning targets.
+Building Sage on Solaris in 64-bit mode
+Creating SAGE_LOCAL/lib/sage-64.txt since it does not exist
+Detected SAGE64 flag
+Building Sage on Solaris in 64-bit mode
+
+----------------------------------------------------------
+sage: Building and installing modified Sage library files.
+
+
+Installing c_lib
+gcc -o src/convert.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/convert.c
+In file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/pari/pari.h:76,
+                 from include/convert.h:12,
+                 from src/convert.c:14:
+../src/kernel/none/level1.h: In function ‘evallg’:
+../src/kernel/none/level1.h:180: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘evalvalp’:
+../src/kernel/none/level1.h:187: warning: left shift count >= width of type
+../src/kernel/none/level1.h:188: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘evalexpo’:
+../src/kernel/none/level1.h:195: warning: left shift count >= width of type
+../src/kernel/none/level1.h:196: warning: left shift count >= width of type
+../src/kernel/none/level1.h: In function ‘constant_term’:
+../src/kernel/none/level1.h:201: warning: right shift count >= width of type
+../src/kernel/none/level1.h: In function ‘leading_term’:
+[...]
+../src/kernel/none/level1.h:1111: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+../src/kernel/none/level1.h:1112: warning: left shift count >= width of type
+src/convert.c: In function ‘t_INT_to_ZZ’:
+src/convert.c:29: warning: left shift count >= width of type
+src/convert.c:34: warning: right shift count >= width of type
+src/convert.c: In function ‘ZZ_to_t_INT’:
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:47: warning: left shift count >= width of type
+src/convert.c:48: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+src/convert.c:49: warning: left shift count >= width of type
+gcc -o src/interrupt.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/interrupt.c
+In file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/Python.h:58,
+                 from include/stdsage.h:35,
+                 from src/interrupt.c:12:
+/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/pyport.h:685:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+scons: *** [src/interrupt.pic.o] Error 1
+ERROR: There was an error building c_lib.
+
+
+real	0m1.228s
+user	0m0.400s
+sys	0m0.489s
+Error building new version of SAGE.
+You might try typing 'sage -ba' or write to sage-support with as much information as possible.
+/export/home/jaap/Downloads/sage-4.3.2.alpha0
+sage subshell$ 
+
+
+```
+
+
+
+---
+
+Comment by drkirkby created at 2010-02-20 23:56:19
+
+I'm not convinced there is any logic to the Darwin approach. I think the fact Sage builds 64-bit on some OS X platforms is that it builds 64-bit by default. The problem is, nobody working on the Sage project seems to really know how to use SCons. 
+
+I think the best approach is to ask on the SCons users list (users`@`scons.tigris.org) and hope you get an answer. It took me months to solve the issue of just getting SCons to use the right C compiler. Setting CC is totally pointless - it gets ignored. So I'm not really surprised this fails. 
+
+Dave
+
+
+---
+
+Comment by jdemeyer created at 2010-12-09 21:49:06
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2010-12-09 21:49:06
+
+Is this bug report still valid?
+
+
+---
+
+Comment by drkirkby created at 2010-12-12 12:24:43
+
+Resolution: fixed
+
+
+---
+
+Comment by drkirkby created at 2010-12-12 12:24:43
+
+No. I'#ve managed to build all of Sage (except R and ECL/Maxima) 64-bit on Solaris x64. It does not work very well at all, but it does all build, with those exceptions. ECL/Maxima issue should soon be resolved. R may need to be compiled with the Sun compiler. But I expect there will be other issues too. 
+
+Dave
+
+
+---
+
+Comment by jdemeyer created at 2010-12-12 22:11:14
+
+Resolution changed from fixed to worksforme

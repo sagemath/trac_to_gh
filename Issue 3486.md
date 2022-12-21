@@ -1,0 +1,78 @@
+# Issue 3486: fix NTL+gcc 4.3+csh build issue
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2008-06-20 19:45:59
+
+Assignee: mabshoff
+
+When building NTL with a csh using gcc 4.3 the following happens:
+
+```
+make[2]: Leaving directory `/home/mabshoff/sage-3.0.3-cicero-gcc-4.3/spkg/build/ntl-5.4.2.p3/src/src'
+make[2]: Entering directory `/home/mabshoff/sage-3.0.3-cicero-gcc-4.3/spkg/build/ntl-5.4.2.p3/src/src'
+rm -f FFT.o FacVec.o GF2.o GF2E.o GF2EX.o GF2EXFactoring.o GF2X.o GF2X1.o GF2XFactoring.o GF2XVec.o GetTime.o HNF.o ctools.o LLL.o LLL_FP.o LLL_QP.o LLL_RR.o LLL_XD.o RR.o WordVector.o ZZ.o Z
+ZVec.o ZZX.o ZZX1.o ZZXCharPoly.o ZZXFactoring.o ZZ_p.o ZZ_pE.o ZZ_pEX.o ZZ_pEXFactoring.o ZZ_pX.o ZZ_pX1.o ZZ_pXCharPoly.o ZZ_pXFactoring.o fileio.o lip.o lzz_p.o lzz_pE.o lzz_pEX.o lzz_pEXF
+actoring.o lzz_pX.o lzz_pX1.o lzz_pXCharPoly.o lzz_pXFactoring.o mat_GF2.o mat_GF2E.o mat_RR.o mat_ZZ.o mat_ZZ_p.o mat_ZZ_pE.o mat_lzz_p.o mat_lzz_pE.o mat_poly_ZZ.o mat_poly_ZZ_p.o mat_poly_
+lzz_p.o pair_GF2EX_long.o pair_GF2X_long.o pair_ZZX_long.o pair_ZZ_pEX_long.o pair_ZZ_pX_long.o pair_lzz_pEX_long.o pair_lzz_pX_long.o quad_float.o tools.o vec_GF2.o vec_GF2E.o vec_GF2XVec.o 
+vec_RR.o vec_ZZ.o vec_ZZVec.o vec_ZZ_p.o vec_ZZ_pE.o vec_double.o vec_long.o vec_lzz_p.o vec_lzz_pE.o vec_quad_float.o vec_vec_GF2.o vec_vec_GF2E.o vec_vec_RR.o vec_vec_ZZ.o vec_vec_ZZ_p.o ve
+c_vec_ZZ_pE.o vec_vec_long.o vec_vec_lzz_p.o vec_vec_lzz_pE.o vec_xdouble.o xdouble.o G_LLL_FP.o G_LLL_QP.o G_LLL_XD.o G_LLL_RR.o vec_ulong.o vec_vec_ulong.o # clean, preserving tuning parame
+ters
+make shobj
+make[3]: Entering directory `/home/mabshoff/sage-3.0.3-cicero-gcc-4.3/spkg/build/ntl-5.4.2.p3/src/src'
+g++ -I../include -I.  -O2 -g  -fPIC -fPIC -c FFT.c
+In file included from ../include/NTL/ctools.h:5,
+                 from ../include/NTL/tools.h:5,
+                 from ../include/NTL/vector.h:5,
+                 from ../include/NTL/vec_long.h:5,
+                 from ../include/NTL/FFT.h:6,
+                 from FFT.c:3:
+../include/NTL/config.h:57:5: error: #if with no expression
+../include/NTL/config.h:88:5: error: #if with no expression
+../include/NTL/config.h:95:5: error: #if with no expression
+../include/NTL/config.h:112:5: error: #if with no expression
+../include/NTL/config.h:120:5: error: #if with no expression
+../include/NTL/config.h:143:7: error: #if with no expression
+../include/NTL/config.h:169:5: error: #if with no expression
+../include/NTL/config.h:188:5: error: #if with no expression
+../include/NTL/config.h:206:5: error: #if with no expression
+../include/NTL/config.h:228:5: error: #if with no expression
+../include/NTL/config.h:240:5: error: #if with no expression
+../include/NTL/config.h:253:5: error: #if with no expression
+../include/NTL/config.h:269:5: error: #if with no expression
+../include/NTL/config.h:289:5: error: #if with no expression
+../include/NTL/config.h:306:7: error: #if with no expression
+```
+
+This is critical to fix.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-06-20 19:46:04
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by mabshoff created at 2008-06-26 03:50:16
+
+This problem turned out to be a NFS problem. gcc 4.3.x just triggered the error that has always been on that machine since `#if ` now produces an error.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-06-26 03:50:16
+
+Resolution: invalid

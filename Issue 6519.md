@@ -1,0 +1,388 @@
+# Issue 6519: improve the words library code
+
+Issue created by migration from Trac.
+
+Original creator: saliola
+
+Original creation time: 2009-07-12 14:33:51
+
+Assignee: mhansen
+
+CC:  slabbe
+
+Keywords: words
+
+The current words library in Sage needs to be improved (mainly for speed, better code organization, etc.).
+
+We essentially got a patch ready to do this. I'll post it soon.
+
+
+---
+
+Comment by saliola created at 2009-07-12 16:02:57
+
+You can find comparisons of the new code and the old code at the bottom of
+the site [http://wiki.sagemath.org/WordDesign](http://wiki.sagemath.org/WordDesign). The new code is much
+faster.
+
+
+---
+
+Comment by saliola created at 2009-07-12 17:36:02
+
+This patch includes code from Sébastien Labbé, Vincent Delecroix and
+myself, so we should all get author credit. (I added all names to the Author
+field).
+
+The development took place on the sage-combinat patch server, and the attached patch
+is just a folding together and re-organizing of all the relevant patches
+from the server. It applies cleanly to sage-4.1 and passes all doctests.
+
+*Partial Review:* I reviewed and documented Vincent's code, to which give a positive
+review. I also reviewed Sébastien's code, which also gets a positive review.
+
+Sébastien, can you look over the changes that I made that you haven't yet
+reviewed? I guess these are just the changes that I made this past week?
+(You can find these changes as four independent patches in the sage-combinat
+patches server history.)
+
+
+---
+
+Comment by rlm created at 2009-07-13 19:18:21
+
+On top of a fresh sage-4.1 build (OS X), this patch fails to build:
+
+
+```
+building 'sage.combinat.words.word_datatypes' extension
+gcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Isage/combinat/words -I/Users/rlmill/sage-4.1.32bit/local//include -I/Users/rlmill/sage-4.1.32bit/local//include/csage -I/Users/rlmill/sage-4.1.32bit/devel//sage/sage/ext -I/Users/rlmill/sage-4.1.32bit/local/include/python2.6 -c sage/combinat/words/word_cpp_basic_string.cpp -o build/temp.macosx-10.3-i386-2.6/sage/combinat/words/word_cpp_basic_string.o -w
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for C/ObjC but not for C++
+sage/combinat/words/word_cpp_basic_string.cpp: In member function ‘size_t Word::find_factor_naive(Word*)’:
+sage/combinat/words/word_cpp_basic_string.cpp:70: error: ‘memmem’ was not declared in this scope
+error: command 'gcc' failed with exit status 1
+sage: There was an error installing modified sage library code.
+```
+
+
+
+---
+
+Comment by saliola created at 2009-07-13 23:20:00
+
+Replying to [comment:3 rlm]:
+
+> On top of a fresh sage-4.1 build (OS X), this patch fails to build:
+
+Okay, I've factored the offending code out of this patch (once it is fixed,
+we will create a new ticket for it), so there should no longer be any
+problems. Can you test it again?
+
+
+---
+
+Comment by rlm created at 2009-07-14 16:02:18
+
+Replying to [comment:4 saliola]:
+> Can you test it again?
+
+The patch now applies, builds and passes long doctests in `sage/combinat`. I've also skimmed the patch (`historic.txt` was interesting), and it looked good. If you want, I can also run a valgrind session.
+
+Doesn't the date in the deprecation comments need to be updated?
+
+```
++    ###########################################################################
++    ##### DEPRECATION WARNINGS (next 4 functions) #############################
++    ##### Added 23 February 2008 ##############################################
++    ###########################################################################
+```
+
+
+
+---
+
+Comment by rlm created at 2009-07-15 16:27:38
+
+I ran valgrind on sage-4.1 + the patch here on the `sage/combinat/words` directory, and all looks good!
+
+
+---
+
+Comment by saliola created at 2009-07-15 16:32:58
+
+Robert! Thank you very much for doing this. That's great.
+
+
+---
+
+Comment by rlm created at 2009-07-16 18:35:04
+
+#6526 should probably be merged right after this, to avoid later conflicts.
+
+
+---
+
+Comment by slabbe created at 2009-07-17 02:44:09
+
+Dear Robert, I want to thank you for reviewing this huge patch we are working on since so long time. It was an heavy task that was following us for more than one semester. And all this time, I was affraid not to find a reviewer so that the code get old again with another ReST sphinfixication 2 or something like that because things are moving so fast with Sage. So, I feel more light now that this will get merged apparently really soon. Thank you for your contribution.
+
+By the way, I was having a good excuse to be absent from this ticket review this week. I was organising and giving a course on Sage this week in Montreal. There was between 10 and 20 persons present in the class at all time. We migth have triple the number of Sage users in all Quebec province with this course!! See the link here : http://wiki.sagemath.org/SébastienLabbé/JoursSageUQAM
+
+Dear Franco, even if Robert already gave a positive review, I will look the modifications/improvements you have done in the last week tommorow and I will give you feedback if I have any.
+
+
+---
+
+Comment by mvngu created at 2009-07-17 09:53:28
+
+I'm getting a doctest failure:
+
+```
+sage -t -long devel/sage-exp/sage/structure/sage_object.pyx
+**********************************************************************
+File "/scratch/mvngu/release/sage-4.1.1/devel/sage-exp/sage/structure/sage_object.pyx", line 813:
+    sage: sage.structure.sage_object.unpickle_all(std)
+Expected:
+    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.
+    Successfully unpickled 572 objects.
+    Failed to unpickle 0 objects.
+Got:
+    ** failed:  _class__sage_combinat_words_morphism_WordMorphism__.sobj
+    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj
+    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj
+    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj
+    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj
+    ** failed:  _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj
+    ** failed:  _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj
+    ** failed:  _class__sage_combinat_words_word_AbstractWord__.sobj
+    ** failed:  _class__sage_combinat_words_word_Word_over_Alphabet__.sobj
+    ** failed:  _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj
+    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead
+    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.
+    Failed:
+    _class__sage_combinat_words_morphism_WordMorphism__.sobj
+    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj
+    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj
+    _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj
+    _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj
+    _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj
+    _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj
+    _class__sage_combinat_words_word_AbstractWord__.sobj
+    _class__sage_combinat_words_word_Word_over_Alphabet__.sobj
+    _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj
+    Successfully unpickled 562 objects.
+    Failed to unpickle 10 objects.
+**********************************************************************
+1 items had failures:
+   1 of   7 in __main__.example_18
+***Test Failed*** 1 failures.
+For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sage_object.py
+	 [6.6 s]
+```
+
+
+
+---
+
+Comment by slabbe created at 2009-07-17 19:32:55
+
+I am currently trying to understand the pickle problem... Using debug=True, I am getting more information (see below). The 10 problems look the same... I still don't know how to fix this...
+
+Sébastien
+
+
+```
+sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'
+sage: sage.structure.sage_object.unpickle_all(std, debug=True)
+...
+[same thing as above]
+...
+Successfully unpickled 562 objects.
+Failed to unpickle 10 objects.
+
+[(<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbef502c>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbef5c84>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf006bc>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf005cc>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf00554>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf091bc>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf095f4>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf0966c>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf09b6c>),
+ (<type 'exceptions.TypeError'>,
+  TypeError('__new__() takes at least 3 arguments (1 given)',),
+  <traceback object at 0xbf09c84>)]
+```
+
+
+
+---
+
+Comment by slabbe created at 2009-07-17 20:47:02
+
+Replying to [comment:2 saliola]:
+> *Partial Review:* I reviewed and documented Vincent's code, to which give a positive
+> review. I also reviewed Sébastien's code, which also gets a positive review.
+> 
+> Sébastien, can you look over the changes that I made that you haven't yet
+> reviewed? I guess these are just the changes that I made this past week?
+
+I just looked at the changes that Franco made in the last week and I am giving a positive review to them. We now have to tackle the pickle problem described above.
+
+
+---
+
+Comment by saliola created at 2009-07-17 21:16:15
+
+I have a working patch right now. I am going to run a few more tests, and the post it.
+
+
+---
+
+Comment by saliola created at 2009-07-17 21:49:10
+
+The problem. The picklejar contains objects saved with older versions of
+Sage, and since we changed a bunch of things, these older objects don't get
+loaded correctly.
+
+The solution. The old word objects use the `WordContent` backend, which
+my original patch completely removed (the new implementation is much
+better). So my fix was to restore the (`word_content.py` and
+`utils.py`); this way, an old-style word can be unpickled, and during
+the unpickling, it gets converted to a new-style word, and the user is
+given a warning to re-save the word:
+
+```
+sage: load /tmp/foo
+...DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
+word: abbabaab
+```
+
+I also added a bunch of deprecation warnings to these files and to the
+documentation for these files. 
+
+This is a temporary fix: since the `WordContent` code is not necessary
+for any other part of Sage, it will be deleted in a few months. In the
+meantime, if there is anyone with some saved word objects, then unpickling
+will work.
+
+
+---
+
+Comment by saliola created at 2009-07-17 21:54:28
+
+(now with unpickle support for words save with older versions of Sage)
+
+
+---
+
+Attachment
+
+DO NOT APPLY!
+
+
+---
+
+Attachment
+
+To make reviewing my fix easier: I've attached the file
+`old_pickle_support.patch`, which contains only the changes that I made
+to address the pickle issue. This patch has already been folded into o
+`trac_6519-words_ng.patch`, so do not apply it.
+
+Besides restoring the files `word_content.py` and `utils.py` (and
+adding warnings), I needed to touch `word.py`, so this is where the
+reviewer needs to concentrate their attention.
+
+
+---
+
+Comment by slabbe created at 2009-07-18 13:04:48
+
+I applied the latest `trac_6519-words_ng.patch` on a clean version of sage-4.1. The following now works :
+
+
+```
+slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  "devel/sage/sage/structure/sage_object.pyx"
+sage -t  "devel/sage/sage/structure/sage_object.pyx"        
+	 [4.9 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 4.9 seconds
+```
+
+
+I also run sage -t -long on all the sage tree and the only tests that failed are the following :
+
+
+```
+slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
+sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"    
+**********************************************************************
+File "/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py", line 549:
+    sage: r.library('foobar')
+Expected:
+    Traceback (most recent call last):
+    ...
+    ImportError: there is no package called 'foobar'
+Got nothing
+**********************************************************************
+File "/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py", line 835:
+    sage: r.completions('tes')
+Expected:
+    ['testPlatformEquivalence', 'testVirtual']
+Got:
+    ['testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']
+**********************************************************************
+2 items had failures:
+   1 of   5 in __main__.example_17
+   1 of   3 in __main__.example_34
+***Test Failed*** 2 failures.
+For whitespace errors, see the file /home/slabbe/sage-4.1/tmp/.doctest_r.py
+	 [4.5 s]
+exit code: 1024
+ 
+----------------------------------------------------------------------
+The following tests failed:
+
+
+	sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
+Total time for all tests: 4.5 seconds
+slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ 
+```
+
+
+but those were also broken on my clean version of sage-4.1. Hence, I am giving a positive review to the changes made by Franco to solve the pickle problem.
+
+
+---
+
+Comment by mvngu created at 2009-07-18 14:07:07
+
+Resolution: fixed
+
+
+---
+
+Comment by mvngu created at 2009-07-18 14:07:07
+
+Merged `trac_6519-words_ng.patch`.

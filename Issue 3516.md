@@ -1,0 +1,318 @@
+# Issue 3516: [new coercion] libSingular segfault
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2008-06-26 22:49:44
+
+Assignee: roed
+
+CC:  malb robertwb
+
+On sage.math with the coercion branch on top of 3.0.3 from June 26th we get a segfault in libSingular on startup. The valgrind log points to an invalid read in line 267 of multi_polynomial_libsingular.pyx
+
+Line 267 is `self._ring = <ring*>omAlloc0Bin(sip_sring_bin)` in the following code block:
+
+```
+        # from the SINGULAR source code documentation for the rInit function
+        ##  characteristic --------------------------------------------------
+        ##  input: 0 ch=0 : Q     parameter=NULL    ffChar=FALSE   float_len (done)
+        ##         0    1 : Q(a,...)        *names         FALSE             (todo)
+        ##         0   -1 : R               NULL           FALSE  0
+        ##         0   -1 : R               NULL           FALSE  prec. >6
+        ##         0   -1 : C               *names         FALSE  prec. 0..?
+        ##         p    p : Fp              NULL           FALSE             (done)
+        ##         p   -p : Fp(a)           *names         FALSE             (done)
+        ##         q    q : GF(q=p^n)       *names         TRUE              (todo)
+
+        if PY_TYPE_CHECK(base_ring, FiniteField_prime_modn):
+            if base_ring.characteristic() <= 2147483629:
+                characteristic = base_ring.characteristic()
+            else:
+                raise TypeError, "Characteristic p must be <= 2147483629."
+
+        elif PY_TYPE_CHECK(base_ring, RationalField):
+            characteristic = 0
+
+        elif PY_TYPE_CHECK(base_ring, FiniteField_generic):
+            if base_ring.characteristic() <= 2147483629:
+                characteristic = -base_ring.characteristic() # note the negative characteristic
+            else:
+                raise TypeError, "characteristic must be <= 2147483629."
+            k = MPolynomialRing_libsingular(base_ring.prime_subfield(), 1, base_ring.variable_name(), 'lex')
+            minpoly = base_ring.polynomial()(k.gen())
+            is_extension = True
+
+        elif PY_TYPE_CHECK(base_ring, NumberField_generic):
+            raise NotImplementedError, "Number fields are not fully supported yet."
+            characteristic = 1
+            k = MPolynomialRing_libsingular(RationalField(), 1, base_ring.variable_name(), 'lex')
+            minpoly = base_ring.polynomial()(k.gen())
+            is_extension = True
+        else:
+            raise NotImplementedError, "Only GF(q) and QQ are supported."
+
+        self._ring = <ring*>omAlloc0Bin(sip_sring_bin)
+        self._ring.ch = characteristic
+        self._ring.N = n
+        self._ring.names  = _names
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-07-04 15:07:21
+
+Singular compiled with "-O0" and the coercion branch from the 4th of July says:
+
+```
+#0  0x00002b51a44ea434 in omInsertBinPage (after=0x2b51a3e07720, page=0x2b51a6b4d000, bin=0x2b51a3e05e30) at om_Alloc.c:109
+#1  0x00002b51a44ea376 in omAllocBinFromFullPage (bin=0x2b51a3e05e30) at om_Alloc.c:145
+#2  0x00002b51a44de1f0 in __omDebugAlloc (size_bin=0x2b51a3e05e30, flags=33, track=0 '\0', r=0x2b51a44c138d) at omDebug.c:323
+#3  0x00002b51a44ddb5c in _omDebugAlloc (size_bin=0x2b51a3e05e30, flags=33, check=0 '\0', track=0 '\0') at omDebug.c:138
+#4  0x00002b51a44c138d in __pyx_pf_4sage_5rings_10polynomial_28multi_polynomial_libsingular_27MPolynomialRing_libsingular___init__ (__pyx_v_self=0x372d4f0, __pyx_args=0x36374f0, __pyx_kwds=0x0)
+    at sage/rings/polynomial/multi_polynomial_libsingular.cpp:4110
+#5  0x000000000045e58c in type_call (type=0x2b51a4605a20, args=0x36374f0, kwds=0x0) at Objects/typeobject.c:436
+#6  0x000000000041b0fb in PyObject_Call (func=0x2b51a4605a20, arg=0x36374f0, kw=0x0) at Objects/abstract.c:1861
+#7  0x00000000004952f4 in do_call (func=0x2b51a4605a20, pp_stack=0x7fff1a325508, na=4, nk=0) at Python/ceval.c:3784
+#8  0x0000000000494bab in call_function (pp_stack=0x7fff1a325508, oparg=4) at Python/ceval.c:3596
+#9  0x0000000000491175 in PyEval_EvalFrameEx (f=0x372c590, throwflag=0) at Python/ceval.c:2272
+#10 0x0000000000494d89 in fast_function (func=0x1c30420, pp_stack=0x7fff1a325858, n=5, na=5, nk=0) at Python/ceval.c:3659
+#11 0x0000000000494b92 in call_function (pp_stack=0x7fff1a325858, oparg=5) at Python/ceval.c:3594
+#12 0x0000000000491175 in PyEval_EvalFrameEx (f=0x1c54fa0, throwflag=0) at Python/ceval.c:2272
+#13 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x1b9d050, globals=0x1b98f50, locals=0x0, args=0x372c3e8, argcount=2, kws=0x0, kwcount=0, defs=0x1babe38, defcount=6, closure=0x0) at Python/ceval.c:2836
+#14 0x00000000004f0694 in function_call (func=0x1c2a580, arg=0x372c3d0, kw=0x0) at Objects/funcobject.c:517
+#15 0x000000000041b0fb in PyObject_Call (func=0x1c2a580, arg=0x372c3d0, kw=0x0) at Objects/abstract.c:1861
+#16 0x00002b5196446c9a in __pyx_pf_4sage_5rings_4ring_4Ring___getitem__ (__pyx_v_self=0x122d440, __pyx_v_x=0x36982d0) at sage/rings/ring.c:2150
+#17 0x00000000004f1001 in PyCFunction_Call (func=0x3058560, arg=0x374bc60, kw=0x0) at Objects/methodobject.c:93
+#18 0x000000000041b0fb in PyObject_Call (func=0x3058560, arg=0x374bc60, kw=0x0) at Objects/abstract.c:1861
+#19 0x000000000045f35e in call_method (o=0x122d440, name=0x50d89e "__getitem__", nameobj=0x677018, format=0x50d90a "(O)") at Objects/typeobject.c:929
+#20 0x0000000000468c74 in slot_mp_subscript (self=0x122d440, arg1=0x36982d0) at Objects/typeobject.c:4371
+#21 0x000000000041706b in PyObject_GetItem (o=0x122d440, key=0x36982d0) at Objects/abstract.c:120
+#22 0x000000000048cb74 in PyEval_EvalFrameEx (f=0x374b750, throwflag=0) at Python/ceval.c:1193
+#23 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x374bd70, globals=0x3637340, locals=0x3637340, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#24 0x000000000048b386 in PyEval_EvalCode (co=0x374bd70, globals=0x3637340, locals=0x3637340) at Python/ceval.c:494
+#25 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a328590 "sage.combinat.sf.macdonald", co=0x374bd70, 
+    pathname=0x7fff1a3263a0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/macdonald.pyc") at Python/import.c:675
+#26 0x00000000004adb61 in load_source_module (name=0x7fff1a328590 "sage.combinat.sf.macdonald", 
+    pathname=0x7fff1a3263a0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/macdonald.pyc", fp=0x3614800) at Python/import.c:959
+#27 0x00000000004aef5a in load_module (name=0x7fff1a328590 "sage.combinat.sf.macdonald", fp=0x3614800, 
+    buf=0x7fff1a327480 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/macdonald.py", type=1, loader=0x0) at Python/import.c:1749
+#28 0x00000000004b06c5 in import_submodule (mod=0x35ba940, subname=0x7fff1a3285a1 "macdonald", fullname=0x7fff1a328590 "sage.combinat.sf.macdonald") at Python/import.c:2400
+#29 0x00000000004aff2e in load_next (mod=0x35ba940, altmod=0x6491e0, p_name=0x7fff1a328578, buf=0x7fff1a328590 "sage.combinat.sf.macdonald", p_buflen=0x7fff1a328588) at Python/import.c:2220
+#30 0x00000000004af6a8 in import_module_level (name=0x0, globals=0x360e2c0, locals=0x360e2c0, fromlist=0x6491e0, level=-1) at Python/import.c:2001
+#31 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x3610bf4 "macdonald", globals=0x360e2c0, locals=0x360e2c0, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#32 0x0000000000485264 in builtin___import__ (self=0x0, args=0x36144b0, kwds=0x0) at Python/bltinmodule.c:47
+#33 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x36144b0, kw=0x0) at Objects/methodobject.c:77
+#34 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x36144b0, kw=0x0) at Objects/abstract.c:1861
+#35 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x36144b0, kw=0x0) at Python/ceval.c:3442
+#36 0x000000000049077b in PyEval_EvalFrameEx (f=0x3612a10, throwflag=0) at Python/ceval.c:2067
+#37 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x36128d0, globals=0x360e2c0, locals=0x360e2c0, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#38 0x000000000048b386 in PyEval_EvalCode (co=0x36128d0, globals=0x360e2c0, locals=0x360e2c0) at Python/ceval.c:494
+#39 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a32bdc0 "sage.combinat.sf.classical", co=0x36128d0, 
+    pathname=0x7fff1a329bd0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/classical.pyc") at Python/import.c:675
+#40 0x00000000004adb61 in load_source_module (name=0x7fff1a32bdc0 "sage.combinat.sf.classical", 
+    pathname=0x7fff1a329bd0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/classical.pyc", fp=0x360e020) at Python/import.c:959
+#41 0x00000000004aef5a in load_module (name=0x7fff1a32bdc0 "sage.combinat.sf.classical", fp=0x360e020, 
+    buf=0x7fff1a32acb0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/classical.py", type=1, loader=0x0) at Python/import.c:1749
+#42 0x00000000004b06c5 in import_submodule (mod=0x35ba940, subname=0x7fff1a32bdd1 "classical", fullname=0x7fff1a32bdc0 "sage.combinat.sf.classical") at Python/import.c:2400
+#43 0x00000000004aff2e in load_next (mod=0x35ba940, altmod=0x6491e0, p_name=0x7fff1a32bda8, buf=0x7fff1a32bdc0 "sage.combinat.sf.classical", p_buflen=0x7fff1a32bdb8) at Python/import.c:2220
+#44 0x00000000004af6a8 in import_module_level (name=0x0, globals=0x35da380, locals=0x35da380, fromlist=0x6491e0, level=-1) at Python/import.c:2001
+#45 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x1ec6474 "classical", globals=0x35da380, locals=0x35da380, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#46 0x0000000000485264 in builtin___import__ (self=0x0, args=0x360daf0, kwds=0x0) at Python/bltinmodule.c:47
+#47 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x360daf0, kw=0x0) at Objects/methodobject.c:77
+#48 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x360daf0, kw=0x0) at Objects/abstract.c:1861
+#49 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x360daf0, kw=0x0) at Python/ceval.c:3442
+#50 0x000000000049077b in PyEval_EvalFrameEx (f=0x360d900, throwflag=0) at Python/ceval.c:2067
+#51 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x360dfa0, globals=0x35da380, locals=0x35da380, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#52 0x000000000048b386 in PyEval_EvalCode (co=0x360dfa0, globals=0x35da380, locals=0x35da380) at Python/ceval.c:494
+#53 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a32f5f0 "sage.combinat.sf.schur", co=0x360dfa0, 
+    pathname=0x7fff1a32d400 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/schur.pyc") at Python/import.c:675
+#54 0x00000000004adb61 in load_source_module (name=0x7fff1a32f5f0 "sage.combinat.sf.schur", 
+    pathname=0x7fff1a32d400 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/schur.pyc", fp=0x35df930) at Python/import.c:959
+#55 0x00000000004aef5a in load_module (name=0x7fff1a32f5f0 "sage.combinat.sf.schur", fp=0x35df930, 
+    buf=0x7fff1a32e4e0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/schur.py", type=1, loader=0x0) at Python/import.c:1749
+#56 0x00000000004b06c5 in import_submodule (mod=0x35ba940, subname=0x7fff1a32f601 "schur", fullname=0x7fff1a32f5f0 "sage.combinat.sf.schur") at Python/import.c:2400
+#57 0x00000000004aff2e in load_next (mod=0x35ba940, altmod=0x6491e0, p_name=0x7fff1a32f5d8, buf=0x7fff1a32f5f0 "sage.combinat.sf.schur", p_buflen=0x7fff1a32f5e8) at Python/import.c:2220
+#58 0x00000000004af6a8 in import_module_level (name=0x0, globals=0x35bc150, locals=0x35bc150, fromlist=0x6491e0, level=-1) at Python/import.c:2001
+#59 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x35d8f34 "schur", globals=0x35bc150, locals=0x35bc150, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#60 0x0000000000485264 in builtin___import__ (self=0x0, args=0x36030c0, kwds=0x0) at Python/bltinmodule.c:47
+#61 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x36030c0, kw=0x0) at Objects/methodobject.c:77
+#62 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x36030c0, kw=0x0) at Objects/abstract.c:1861
+#63 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x36030c0, kw=0x0) at Python/ceval.c:3442
+#64 0x000000000049077b in PyEval_EvalFrameEx (f=0x3602e70, throwflag=0) at Python/ceval.c:2067
+#65 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x3604400, globals=0x35bc150, locals=0x35bc150, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#66 0x000000000048b386 in PyEval_EvalCode (co=0x3604400, globals=0x35bc150, locals=0x35bc150) at Python/ceval.c:494
+#67 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a332e20 "sage.combinat.sf.sfa", co=0x3604400, 
+    pathname=0x7fff1a330c30 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/sfa.pyc") at Python/import.c:675
+#68 0x00000000004adb61 in load_source_module (name=0x7fff1a332e20 "sage.combinat.sf.sfa", 
+    pathname=0x7fff1a330c30 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/sfa.pyc", fp=0x35bb730) at Python/import.c:959
+#69 0x00000000004aef5a in load_module (name=0x7fff1a332e20 "sage.combinat.sf.sfa", fp=0x35bb730, 
+    buf=0x7fff1a331d10 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/sf/sfa.py", type=1, loader=0x0) at Python/import.c:1749
+#70 0x00000000004b06c5 in import_submodule (mod=0x35ba940, subname=0x7fff1a332e31 "sfa", fullname=0x7fff1a332e20 "sage.combinat.sf.sfa") at Python/import.c:2400
+#71 0x00000000004aff2e in load_next (mod=0x35ba940, altmod=0x35ba940, p_name=0x7fff1a332e08, buf=0x7fff1a332e20 "sage.combinat.sf.sfa", p_buflen=0x7fff1a332e18) at Python/import.c:2220
+#72 0x00000000004af707 in import_module_level (name=0x0, globals=0x35cf8f0, locals=0x35cf8f0, fromlist=0x6491e0, level=-1) at Python/import.c:2008
+#73 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x35d0644 "sage.combinat.sf.sfa", globals=0x35cf8f0, locals=0x35cf8f0, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#74 0x0000000000485264 in builtin___import__ (self=0x0, args=0x35cfb40, kwds=0x0) at Python/bltinmodule.c:47
+#75 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x35cfb40, kw=0x0) at Objects/methodobject.c:77
+#76 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x35cfb40, kw=0x0) at Objects/abstract.c:1861
+#77 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x35cfb40, kw=0x0) at Python/ceval.c:3442
+#78 0x000000000049077b in PyEval_EvalFrameEx (f=0x35b7f00, throwflag=0) at Python/ceval.c:2067
+#79 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x35d07c0, globals=0x35cf8f0, locals=0x35cf8f0, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#80 0x000000000048b386 in PyEval_EvalCode (co=0x35d07c0, globals=0x35cf8f0, locals=0x35cf8f0) at Python/ceval.c:494
+#81 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a336650 "sage.combinat.skew_partition", co=0x35d07c0, 
+    pathname=0x7fff1a334460 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/skew_partition.pyc") at Python/import.c:675
+#82 0x00000000004adb61 in load_source_module (name=0x7fff1a336650 "sage.combinat.skew_partition", 
+    pathname=0x7fff1a334460 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/skew_partition.pyc", fp=0x35aeb20) at Python/import.c:959
+#83 0x00000000004aef5a in load_module (name=0x7fff1a336650 "sage.combinat.skew_partition", fp=0x35aeb20, 
+    buf=0x7fff1a335540 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/skew_partition.py", type=1, loader=0x0) at Python/import.c:1749
+#84 0x00000000004b06c5 in import_submodule (mod=0x1c70580, subname=0x7fff1a33665e "skew_partition", fullname=0x7fff1a336650 "sage.combinat.skew_partition") at Python/import.c:2400
+#85 0x00000000004aff2e in load_next (mod=0x1c70580, altmod=0x1c70580, p_name=0x7fff1a336638, buf=0x7fff1a336650 "sage.combinat.skew_partition", p_buflen=0x7fff1a336648) at Python/import.c:2220
+#86 0x00000000004af707 in import_module_level (name=0x0, globals=0x3558540, locals=0x3558540, fromlist=0x6491e0, level=-1) at Python/import.c:2008
+#87 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x35b7c04 "sage.combinat.skew_partition", globals=0x3558540, locals=0x3558540, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#88 0x0000000000485264 in builtin___import__ (self=0x0, args=0x35586a0, kwds=0x0) at Python/bltinmodule.c:47
+#89 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x35586a0, kw=0x0) at Objects/methodobject.c:77
+#90 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x35586a0, kw=0x0) at Objects/abstract.c:1861
+#91 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x35586a0, kw=0x0) at Python/ceval.c:3442
+#92 0x000000000049077b in PyEval_EvalFrameEx (f=0x35ae5d0, throwflag=0) at Python/ceval.c:2067
+#93 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x35b7e60, globals=0x3558540, locals=0x3558540, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#94 0x000000000048b386 in PyEval_EvalCode (co=0x35b7e60, globals=0x3558540, locals=0x3558540) at Python/ceval.c:494
+#95 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a339e80 "sage.combinat.partition", co=0x35b7e60, 
+    pathname=0x7fff1a337c90 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/partition.pyc") at Python/import.c:675
+#96 0x00000000004adb61 in load_source_module (name=0x7fff1a339e80 "sage.combinat.partition", 
+    pathname=0x7fff1a337c90 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/partition.pyc", fp=0x35582a0) at Python/import.c:959
+#97 0x00000000004aef5a in load_module (name=0x7fff1a339e80 "sage.combinat.partition", fp=0x35582a0, 
+    buf=0x7fff1a338d70 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/partition.py", type=1, loader=0x0) at Python/import.c:1749
+#98 0x00000000004b06c5 in import_submodule (mod=0x1c70580, subname=0x7fff1a339e8e "partition", fullname=0x7fff1a339e80 "sage.combinat.partition") at Python/import.c:2400
+#99 0x00000000004aff2e in load_next (mod=0x1c70580, altmod=0x1c70580, p_name=0x7fff1a339e68, buf=0x7fff1a339e80 "sage.combinat.partition", p_buflen=0x7fff1a339e78) at Python/import.c:2220
+#100 0x00000000004af707 in import_module_level (name=0x0, globals=0x35860a0, locals=0x35860a0, fromlist=0x6491e0, level=-1) at Python/import.c:2008
+#101 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x3564d24 "sage.combinat.partition", globals=0x35860a0, locals=0x35860a0, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#102 0x0000000000485264 in builtin___import__ (self=0x0, args=0x3586200, kwds=0x0) at Python/bltinmodule.c:47
+#103 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x3586200, kw=0x0) at Objects/methodobject.c:77
+#104 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x3586200, kw=0x0) at Objects/abstract.c:1861
+#105 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x3586200, kw=0x0) at Python/ceval.c:3442
+#106 0x000000000049077b in PyEval_EvalFrameEx (f=0x3557d90, throwflag=0) at Python/ceval.c:2067
+#107 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x3562cc0, globals=0x35860a0, locals=0x35860a0, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#108 0x000000000048b386 in PyEval_EvalCode (co=0x3562cc0, globals=0x35860a0, locals=0x35860a0) at Python/ceval.c:494
+#109 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a33d6b0 "sage.combinat.set_partition", co=0x3562cc0, 
+    pathname=0x7fff1a33b4c0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/set_partition.pyc") at Python/import.c:675
+#110 0x00000000004adb61 in load_source_module (name=0x7fff1a33d6b0 "sage.combinat.set_partition", 
+    pathname=0x7fff1a33b4c0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/set_partition.pyc", fp=0x3585e40) at Python/import.c:959
+#111 0x00000000004aef5a in load_module (name=0x7fff1a33d6b0 "sage.combinat.set_partition", fp=0x3585e40, 
+    buf=0x7fff1a33c5a0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/combinat/set_partition.py", type=1, loader=0x0) at Python/import.c:1749
+#112 0x00000000004b06c5 in import_submodule (mod=0x1c70580, subname=0x7fff1a33d6be "set_partition", fullname=0x7fff1a33d6b0 "sage.combinat.set_partition") at Python/import.c:2400
+#113 0x00000000004aff2e in load_next (mod=0x1c70580, altmod=0x1c70580, p_name=0x7fff1a33d698, buf=0x7fff1a33d6b0 "sage.combinat.set_partition", p_buflen=0x7fff1a33d6a8) at Python/import.c:2220
+#114 0x00000000004af707 in import_module_level (name=0x0, globals=0x35858f0, locals=0x35858f0, fromlist=0x356c320, level=-1) at Python/import.c:2008
+#115 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x3588c24 "sage.combinat.set_partition", globals=0x35858f0, locals=0x35858f0, fromlist=0x356c320, level=-1) at Python/import.c:2072
+#116 0x0000000000485264 in builtin___import__ (self=0x0, args=0x3585db0, kwds=0x0) at Python/bltinmodule.c:47
+#117 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x3585db0, kw=0x0) at Objects/methodobject.c:77
+#118 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x3585db0, kw=0x0) at Objects/abstract.c:1861
+#119 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x3585db0, kw=0x0) at Python/ceval.c:3442
+#120 0x000000000049077b in PyEval_EvalFrameEx (f=0x3585b40, throwflag=0) at Python/ceval.c:2067
+#121 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x3588db0, globals=0x35858f0, locals=0x35858f0, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#122 0x000000000048b386 in PyEval_EvalCode (co=0x3588db0, globals=0x35858f0, locals=0x35858f0) at Python/ceval.c:494
+#123 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a340ee0 "sage.coding.linear_code", co=0x3588db0, 
+    pathname=0x7fff1a33ecf0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/linear_code.pyc") at Python/import.c:675
+#124 0x00000000004adb61 in load_source_module (name=0x7fff1a340ee0 "sage.coding.linear_code", 
+    pathname=0x7fff1a33ecf0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/linear_code.pyc", fp=0x3556f20) at Python/import.c:959
+#125 0x00000000004aef5a in load_module (name=0x7fff1a340ee0 "sage.coding.linear_code", fp=0x3556f20, 
+    buf=0x7fff1a33fdd0 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/linear_code.py", type=1, loader=0x0) at Python/import.c:1749
+#126 0x00000000004b06c5 in import_submodule (mod=0x34c40e0, subname=0x7fff1a340eec "linear_code", fullname=0x7fff1a340ee0 "sage.coding.linear_code") at Python/import.c:2400
+#127 0x00000000004aff2e in load_next (mod=0x34c40e0, altmod=0x6491e0, p_name=0x7fff1a340ec8, buf=0x7fff1a340ee0 "sage.coding.linear_code", p_buflen=0x7fff1a340ed8) at Python/import.c:2220
+#128 0x00000000004af6a8 in import_module_level (name=0x0, globals=0x3556980, locals=0x3556980, fromlist=0x6491e0, level=-1) at Python/import.c:2001
+#129 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x35550f4 "linear_code", globals=0x3556980, locals=0x3556980, fromlist=0x6491e0, level=-1) at Python/import.c:2072
+#130 0x0000000000485264 in builtin___import__ (self=0x0, args=0x3552c00, kwds=0x0) at Python/bltinmodule.c:47
+#131 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x3552c00, kw=0x0) at Objects/methodobject.c:77
+#132 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x3552c00, kw=0x0) at Objects/abstract.c:1861
+#133 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x3552c00, kw=0x0) at Python/ceval.c:3442
+#134 0x000000000049077b in PyEval_EvalFrameEx (f=0x3556d70, throwflag=0) at Python/ceval.c:2067
+#135 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x3556cd0, globals=0x3556980, locals=0x3556980, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#136 0x000000000048b386 in PyEval_EvalCode (co=0x3556cd0, globals=0x3556980, locals=0x3556980) at Python/ceval.c:494
+#137 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a344710 "sage.coding.ag_code", co=0x3556cd0, 
+    pathname=0x7fff1a342520 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/ag_code.pyc") at Python/import.c:675
+#138 0x00000000004adb61 in load_source_module (name=0x7fff1a344710 "sage.coding.ag_code", 
+    pathname=0x7fff1a342520 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/ag_code.pyc", fp=0x35554e0) at Python/import.c:959
+#139 0x00000000004aef5a in load_module (name=0x7fff1a344710 "sage.coding.ag_code", fp=0x35554e0, 
+    buf=0x7fff1a343600 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/ag_code.py", type=1, loader=0x0) at Python/import.c:1749
+#140 0x00000000004b06c5 in import_submodule (mod=0x34c40e0, subname=0x7fff1a34471c "ag_code", fullname=0x7fff1a344710 "sage.coding.ag_code") at Python/import.c:2400
+#141 0x00000000004aff2e in load_next (mod=0x34c40e0, altmod=0x6491e0, p_name=0x7fff1a3446f8, buf=0x7fff1a344710 "sage.coding.ag_code", p_buflen=0x7fff1a344708) at Python/import.c:2220
+#142 0x00000000004af6a8 in import_module_level (name=0x0, globals=0x3554ca0, locals=0x3554ca0, fromlist=0x2b2fb40, level=-1) at Python/import.c:2001
+#143 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x35537d4 "ag_code", globals=0x3554ca0, locals=0x3554ca0, fromlist=0x2b2fb40, level=-1) at Python/import.c:2072
+#144 0x0000000000485264 in builtin___import__ (self=0x0, args=0x346e970, kwds=0x0) at Python/bltinmodule.c:47
+#145 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x346e970, kw=0x0) at Objects/methodobject.c:77
+#146 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x346e970, kw=0x0) at Objects/abstract.c:1861
+#147 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x346e970, kw=0x0) at Python/ceval.c:3442
+#148 0x000000000049077b in PyEval_EvalFrameEx (f=0x3555310, throwflag=0) at Python/ceval.c:2067
+#149 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x3555270, globals=0x3554ca0, locals=0x3554ca0, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#150 0x000000000048b386 in PyEval_EvalCode (co=0x3555270, globals=0x3554ca0, locals=0x3554ca0) at Python/ceval.c:494
+#151 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a347f40 "sage.coding.all", co=0x3555270, 
+    pathname=0x7fff1a345d50 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/all.pyc") at Python/import.c:675
+#152 0x00000000004adb61 in load_source_module (name=0x7fff1a347f40 "sage.coding.all", pathname=0x7fff1a345d50 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/all.pyc", 
+    fp=0x349fa30) at Python/import.c:959
+#153 0x00000000004aef5a in load_module (name=0x7fff1a347f40 "sage.coding.all", fp=0x349fa30, 
+    buf=0x7fff1a346e30 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/coding/all.py", type=1, loader=0x0) at Python/import.c:1749
+#154 0x00000000004b06c5 in import_submodule (mod=0x34c40e0, subname=0x7fff1a347f4c "all", fullname=0x7fff1a347f40 "sage.coding.all") at Python/import.c:2400
+#155 0x00000000004aff2e in load_next (mod=0x34c40e0, altmod=0x34c40e0, p_name=0x7fff1a347f28, buf=0x7fff1a347f40 "sage.coding.all", p_buflen=0x7fff1a347f38) at Python/import.c:2220
+#156 0x00000000004af707 in import_module_level (name=0x0, globals=0x794c20, locals=0x794c20, fromlist=0x78db30, level=-1) at Python/import.c:2008
+#157 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x791024 "sage.coding.all", globals=0x794c20, locals=0x794c20, fromlist=0x78db30, level=-1) at Python/import.c:2072
+#158 0x0000000000485264 in builtin___import__ (self=0x0, args=0x6b1210, kwds=0x0) at Python/bltinmodule.c:47
+#159 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x6b1210, kw=0x0) at Objects/methodobject.c:77
+#160 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x6b1210, kw=0x0) at Objects/abstract.c:1861
+#161 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x6b1210, kw=0x0) at Python/ceval.c:3442
+#162 0x000000000049077b in PyEval_EvalFrameEx (f=0x7917c0, throwflag=0) at Python/ceval.c:2067
+#163 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x791d10, globals=0x794c20, locals=0x794c20, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#164 0x000000000048b386 in PyEval_EvalCode (co=0x791d10, globals=0x794c20, locals=0x794c20) at Python/ceval.c:494
+#165 0x00000000004ad390 in PyImport_ExecCodeModuleEx (name=0x7fff1a34b770 "sage.all", co=0x791d10, 
+    pathname=0x7fff1a349580 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/all.pyc") at Python/import.c:675
+#166 0x00000000004adb61 in load_source_module (name=0x7fff1a34b770 "sage.all", pathname=0x7fff1a349580 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/all.pyc", fp=0x78dee0)
+    at Python/import.c:959
+#167 0x00000000004aef5a in load_module (name=0x7fff1a34b770 "sage.all", fp=0x78dee0, buf=0x7fff1a34a660 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/lib/python2.5/site-packages/sage/all.py", type=1, 
+    loader=0x0) at Python/import.c:1749
+#168 0x00000000004b06c5 in import_submodule (mod=0x76aab0, subname=0x7fff1a34b775 "all", fullname=0x7fff1a34b770 "sage.all") at Python/import.c:2400
+#169 0x00000000004aff2e in load_next (mod=0x76aab0, altmod=0x76aab0, p_name=0x7fff1a34b758, buf=0x7fff1a34b770 "sage.all", p_buflen=0x7fff1a34b768) at Python/import.c:2220
+#170 0x00000000004af707 in import_module_level (name=0x0, globals=0x6b9e50, locals=0x6b9e50, fromlist=0x6d1560, level=-1) at Python/import.c:2008
+#171 0x00000000004afa2f in PyImport_ImportModuleLevel (name=0x7834b4 "sage.all", globals=0x6b9e50, locals=0x6b9e50, fromlist=0x6d1560, level=-1) at Python/import.c:2072
+#172 0x0000000000485264 in builtin___import__ (self=0x0, args=0x6aaeb0, kwds=0x0) at Python/bltinmodule.c:47
+#173 0x00000000004f0f44 in PyCFunction_Call (func=0x690b20, arg=0x6aaeb0, kw=0x0) at Objects/methodobject.c:77
+#174 0x000000000041b0fb in PyObject_Call (func=0x690b20, arg=0x6aaeb0, kw=0x0) at Objects/abstract.c:1861
+#175 0x0000000000494359 in PyEval_CallObjectWithKeywords (func=0x690b20, arg=0x6aaeb0, kw=0x0) at Python/ceval.c:3442
+#176 0x000000000049077b in PyEval_EvalFrameEx (f=0x78cc10, throwflag=0) at Python/ceval.c:2067
+#177 0x0000000000492e65 in PyEval_EvalCodeEx (co=0x78dd30, globals=0x6b9e50, locals=0x6b9e50, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#178 0x000000000048b386 in PyEval_EvalCode (co=0x78dd30, globals=0x6b9e50, locals=0x6b9e50) at Python/ceval.c:494
+#179 0x00000000004bc10c in run_mod (mod=0x78b400, filename=0x7fff1a34fbf4 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/bin/sage-gdb-pythonstartup", globals=0x6b9e50, locals=0x6b9e50, flags=0x7fff1a34d050, 
+    arena=0x6b11d0) at Python/pythonrun.c:1273
+#180 0x00000000004bc096 in PyRun_FileExFlags (fp=0x76a620, filename=0x7fff1a34fbf4 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/bin/sage-gdb-pythonstartup", start=257, globals=0x6b9e50, locals=0x6b9e50, 
+    closeit=0, flags=0x7fff1a34d050) at Python/pythonrun.c:1259
+#181 0x00000000004baf9a in PyRun_SimpleFileExFlags (fp=0x76a620, filename=0x7fff1a34fbf4 "/scratch/mabshoff/release-cycle/sage-3.0.3-vg/local/bin/sage-gdb-pythonstartup", closeit=0, flags=0x7fff1a34d050)
+    at Python/pythonrun.c:879
+#182 0x0000000000411996 in RunStartupFile (cf=0x7fff1a34d050) at Modules/main.c:134
+#183 0x00000000004126ae in Py_Main (argc=2, argv=0x7fff1a34d1c8) at Modules/main.c:520
+#184 0x0000000000411843 in main (argc=2, argv=0x7fff1a34d1c8) at ./Modules/python.c:23
+```
+
+
+That build is in /scratch/mabshoff/release-cycle/sage-3.0.3-vg on sage.math
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-09-14 09:40:37
+
+Resolution: duplicate
+
+
+---
+
+Comment by mabshoff created at 2008-09-14 09:40:37
+
+The issue is independent of the new coercion code and we are tracking the problem at  #3605. So I am closing this as a dupe.
+
+Cheers,
+
+Michael

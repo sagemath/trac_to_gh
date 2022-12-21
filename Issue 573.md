@@ -28,7 +28,7 @@ sage: superflip in G
 True
 sage: superflip.word_problem([b,d,f,l,r,u])
           x1^-1
-          [This is the Trac macro *'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'-macro) called with arguments (33,35,40,38)
+          [This is the Trac macro *'* that was inherited from the migration called with arguments (33,35,40,38))](https://trac.sagemath.org/wiki/WikiMacros#'-macro)
 '(33,35,40,38)(34,37,39,36)(3,9,46,32)(2,12,47,29)(1,14,48,27)^-1'
 sage: ########## wrong #############
 ```

@@ -1,0 +1,79 @@
+# Issue 8319: elliptic curve canonical height bug for non-minimal models
+
+Issue created by migration from Trac.
+
+Original creator: cremona
+
+Original creation time: 2010-02-21 17:27:58
+
+Assignee: cremona
+
+Keywords: canonical height
+
+For canonical heights of points on elliptic curves defined over QQ, we call the pari function ellheight(), BUT that function only gives the correct value for global minimal models!  (At primes where the model is not minimal the local component is wrong).
+
+Here is an example to show this:
+
+```
+sage: E = EllipticCurve([-5580472329446114952805505804593498080000,
+....:           -157339733785368110382973689903536054787700497223306368000000])
+sage: P3=E([204885147732879546487576840131729064308289385547094673627174585676211859152978311600/23625501907057948132262217188983681204856907657753178415430361,92736254270288706000052529616433462503893110244786566575440613880920567197984949809570153263207165494624214991751142500000000/114834283590033957142081201488956527887145361353994063932282392800295014255070987824900081891])
+sage: P3.height()
+157.086024926474
+sage: 4*(P3.height())-(2*P3).height() # should == 0
+-1.38629436111989
+```
+
+while on the minimal model:
+
+```
+sage: Emin = E.minimal_model()
+sage: urst = E.isomorphism_to(Emin)
+sage: 4*urst(P3).height()-urst(2*P3).height()
+0.000000000000000
+```
+
+
+The cure is to compute the minimal model and transfer the point there before computing the height, as illustrated above.  (Of course, pari could do that too, but this behaviour has been tolerated by pari users for many years!)
+
+
+---
+
+Comment by cremona created at 2010-02-24 21:00:14
+
+Applies to 4.3.3
+
+
+---
+
+Attachment
+
+The patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.
+
+
+---
+
+Comment by cremona created at 2010-02-24 21:02:54
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by wuthrich created at 2010-02-25 04:05:10
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by wuthrich created at 2010-02-25 04:05:10
+
+Looks fine to me. All tests pass.
+
+
+---
+
+Comment by mvngu created at 2010-03-03 14:03:21
+
+Resolution: fixed

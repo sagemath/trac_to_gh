@@ -1,0 +1,367 @@
+# Issue 5522: [with patch; needs work] Fix segfault if libsingular.so can't be found
+
+Issue created by migration from Trac.
+
+Original creator: tabbott
+
+Original creation time: 2009-03-15 00:21:22
+
+Assignee: mabshoff
+
+CC:  georgsweber
+
+If for some reason libsingular.so doesn't exist, Sage will segfault when trying to call dlerror() when dlopen() was never called.
+
+I've attached a patch which avoids doing so.
+
+With this patch, however, Sage then segfaults sometime after trying to raise the ImportError on the next line.
+
+I don't have time to investigate further, but it is easy to reproduce the condition by just moving aside the libsingular.so and trying to start sage.
+
+
+---
+
+Attachment
+
+Hi,
+
+right after
+
+```
+if handle == NULL
+```
+
+one could do
+
+```
+print "cannot load libSINGULAR library"
+```
+
+and only then try to call dlerror() or raise ImportError or whatsoever. If then the SegFault (sometimes) occurs, the user still knows why. With this change, I would consider this such an enhancement over the current situation, that I would vote to have it in.
+
+
+---
+
+Comment by Snark created at 2015-02-07 09:59:48
+
+The attached patch doesn't apply, and the corresponding code in src/sage/libs/singular/singular.pyx looks like the target code already, so I'm putting that bug up as "needs review" with the proposition to just close it as obsolete!
+
+
+---
+
+Comment by Snark created at 2015-02-07 09:59:48
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2015-02-07 10:08:02
+
+Replying to [comment:6 Snark]:
+> the corresponding code in `src/sage/libs/singular/singular.pyx` looks like the target code already
+
+This statement is completely false.
+
+Nevertheless, the patch might not be needed, I'll check.
+
+
+---
+
+Comment by Snark created at 2015-02-07 10:29:17
+
+Uh... indeed, I had "applied" the patch by hand yesterday and forgot about it overnight, so it's no surprise it was looking the same :-(
+
+I'll provide the adapted patch when I'll have checked its correctness.
+
+
+---
+
+Comment by jdemeyer created at 2015-02-07 10:47:55
+
+I would prefer to move the error inside the `for` loop, like
+
+```
+handle = ...
+if not handle:
+    dlerror(...)
+```
+
+
+I think that's the simplest solution
+
+
+---
+
+Comment by Snark created at 2015-02-07 11:03:31
+
+It avoids the flag variable. Good idea.
+
+
+---
+
+Comment by mmezzarobba created at 2015-02-07 12:08:19
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by Snark created at 2015-02-07 12:20:57
+
+I pushed the branch because it looked nice, but then I tested what happens without the patch... and the result is in fact the same! Indeed, if libsingular.so isn't available, we already have an ImportError because of missing symbols:
+
+```
+   /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/__init__.py in <module>()
+   ---->
+   1 from sage.libs.singular.function import singular_function, lib
+        global sage.libs.singular.function = undefined
+        global singular_function = undefined
+        global lib = undefined
+      2 
+      3 from sage.libs.singular.function_factory import SingularFunctionFactory
+      4 
+      5 ff = SingularFunctionFactory()
+      6 
+
+sage/rings/polynomial/plural.pxd in init sage.libs.singular.function (build/cythonized/sage/libs/singular/function.cpp:18713)()
+
+sage/rings/polynomial/plural.pyx in init sage.rings.polynomial.plural (build/cythonized/sage/rings/polynomial/plural.cpp:24145)()
+
+sage/libs/singular/polynomial.pyx in init sage.libs.singular.polynomial (build/cythonized/sage/libs/singular/polynomial.cpp:6414)()
+
+ImportError: /home/jpuydt/sage-6.5.beta5/local/lib/python2.7/site-packages/sage/libs/singular/singular.so: undefined symbol: _Z6naInitlP9sip_sring
+
+```
+
+----
+New commits:
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-07 12:56:14
+
+Hi, I would suggest to improve the error handling for loading libSingular even further as in 
+
+http://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9
+see ticket #17254 (upgrade to Singular 4.0.1)
+
+
+This issue puzzled me for two days, since the error handling was not clean,
+and I failed to interpret the crash messages.
+
+
+Attention: do not pick 
+
+```
+lib = os.environ['SAGE_LOCAL']+"/lib/libSingular."+extension # libsingular renamed to libSingular
+```
+
+since this is only for upgrade to Singular 4.0.1 (libsingular renamed to libSingular)
+
+
+---
+
+Comment by Snark created at 2015-02-07 13:11:13
+
+Replying to [comment:14 jakobkroeker]:
+> Hi, I would suggest to improve the error handling for loading libSingular even further as in 
+> 
+> http://git.sagemath.org/sage.git/commit/?id=1e847897b9fce54fa25f1b91dea78f9e225ad0c9
+> see ticket #17254 (upgrade to Singular 4.0.1)
+
+
+Did you check that this patch was of any use?
+
+If libsingular.so can't be loaded, then that file can't either. So any error handling within that file won't ever run, because the missing library will already have triggered an ImportError.
+
+That is my point in comment:13.
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-07 13:21:37
+
+> Did you check that this patch was of any use?
+
+I do not exactly understand, what you mean.
+
+My point is that an error message should be descriptive as possible,
+so if a file cannot be found it should be 
+
+```
+   raise OSError, "did not find libsingular file!"
+```
+
+
+and if dlopen fails ,it should be something like (I improved the message)
+
+```
+        raise ImportError, " failed to dlopen " + lib + " "
+```
+
+
+Before your or mine patch it was even worse,
+(a SIGSEGV because dlerror() is NULL in that case) and that 
+puzzled me, since because of the compiled cython stuff I could not exactly see what happened.
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-07 13:24:29
+
+> That is my point in comment:13.
+
+That is a different issue. I recall that hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing c with c++ issues.
+
+In case libsingular.so was missing, for me it usually ended in 
+a SIGSEGV.
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-07 13:31:34
+
+> That is my point in comment:13.
+
+That is a different issue. I recall that I hit similar errors and for me './sage -ba' solved them, so I guess this are caching issues or  mixing C with C++ issues.
+
+In case libsingular.so was missing, for me it usually ended in 
+a SIGSEGV or other strange crashes
+
+
+---
+
+Comment by jdemeyer created at 2015-02-07 13:45:08
+
+I'm happy with this patch (would set to positive_review) but I don't quite understand the issues raised above.
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-07 14:41:18
+
+> I'm happy with this patch
+
+I'm not happy yet with this patch
+
+
+---
+
+Comment by Snark created at 2015-02-09 07:40:51
+
+I have compiled sage from scratch without my patch, moved libsingular.so, tried to launch sage, got a nice backtrace.
+
+I have compiled sage from scratch with my patch, moved libsingular.so, tried to launch sage, got the same nice backtrace.
+
+This rules out the case where "./sage -ba" would have made things better.
+
+I reiterate my point of comment:13 : that piece of code doesn't get executed if it can't even be loaded itself because libsingular is missing.
+
+I think the correct way to use the dl* functions is with dlsym : you dlopen a library, use dlsym to get the symbol you want, then call it (and you can check every step). That way you don't link-depend on the symbol you want. The current code tries to explicitly load the library, but since it uses directly the functions it wants, it can come into memory only if the linker already opened the lib and found those functions, so playing with dl* is pointless.
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-09 12:13:55
+
+> This rules out the case where `./sage -ba` would have made things better.
+
+The issue happened to me when I tried to update Singular (from 3.1.7 to 4.0.1) in a working branch
+(and will of course not happen if you compile from scratch!; that is equivalent to
+`make distclean` and implies `./sage -ba`
+
+Here are some more hints and  I hope it is reproducible
+
+- Compile from scratch the develop branch  (in doubt use commit d27f8497dcd19d70ec08155888e6fec9c74b839a)
+- merge in changes from http://git.sagemath.org/sage.git/commit/?id=221c5d63e02d7f1d7fdc57cf6c819677553dd262 
+- rename "/lib/libSingular." tp "/lib/libsingular." in singular.pyx
+- build (parallelized) again with `make build -j 6` or something similar;
+
+Then I predict that you may hit something you did hit in comment:13.
+In fact, I have no idea, how you managed to trigger an `ImportError` as in comment:13
+``
+> so playing with dl* is pointless.
+
+are you sidetracking? I issued something different, namely that an error message should be as descriptive as possible;
+especially when a file is missing a developer would be happy to see that a file is missing and not an `ImportError` or a SIGSEGV as before
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-09 15:11:11
+
+`@`Snark
+it is likely that I cannot exactly recall, how I triggered  ImportError ,
+maybe it was by removing the shared library and only keeping the static one.
+I hope that it does not matter anyway.
+
+
+---
+
+Comment by vbraun created at 2015-02-10 01:35:39
+
+Deleted post to try the issue reported in 
+https://groups.google.com/d/msg/sage-devel/IpeIDqTo4mE/hzs3cLA3N_YJ
+
+
+---
+
+Comment by Snark created at 2015-02-18 10:50:29
+
+I'm a little at loss as to how I'll improve the patch : I don't exactly know how to reproduce the issue.
+
+Indeed, what kind of error will that code detect? It will only trigger when the library will have been loaded in memory (because it links to it), but for some reason cannot be reloaded with the new RTLD_* flags!
+
+
+---
+
+Comment by jakobkroeker created at 2015-02-18 11:11:54
+
+> Indeed, what kind of error will that code detect?
+> It will only trigger when the library will have been loaded in memory (because it links to it)
+
+I'm not sure, but it seems you can't see the case I described, because you are too focused on the scenario you have in mind. Try to think "what may happen", not "what do we want to achieve"
+``
+Case 1: 
+ The name of the library is _hardcoded_ in 'singular.pyx', so we might get an issue if there is a typo or the name of the library changed. That happened in Singular 4.0.1, so I was able to compile sage, but then dlopen tried to open a file which did not exist.
+
+case 2: 
+> It will only trigger when the library will have been loaded in memory (because it links to it), but for some reason cannot be reloaded with the new RTLD_* flags!
+Exactly. Who knows why dlopen() may fail, so better catch it and watch out for dlerror() == NULL
+
+
+---
+
+Comment by git created at 2015-03-14 07:52:52
+
+Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+---
+
+Comment by Snark created at 2015-03-14 07:54:11
+
+Ok, I tried to rebase my branch and make a better change.
+
+
+---
+
+Comment by Snark created at 2015-03-14 07:54:11
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2015-03-23 18:32:21
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by vbraun created at 2015-03-24 10:48:31
+
+Resolution: fixed

@@ -1,0 +1,408 @@
+# Issue 7118: remove quaddouble from sage
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2009-10-04 22:56:48
+
+Assignee: tbd
+
+Since quaddouble was deprecated a year ago, and voted out, we should finally actually remove it.  This is motivated also by us getting numerous build failure reports that involve quaddouble lately.
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by was created at 2009-10-05 02:54:53
+
+I also removed the rqdf objects from the pickle jar test, since they obviously no longer unpickle.  People using RQDF have been warned not to for a year now.
+
+
+---
+
+Comment by was created at 2009-10-05 02:55:27
+
+I did a clean build test of sage with these patches, plus the appropriate changes to spkg/standard/deps and spkg/install (which can't be expressed as patches right now), and it all works perfectly.
+
+
+---
+
+Comment by was created at 2009-10-05 02:56:38
+
+Changing priority from major to blocker.
+
+
+---
+
+Comment by mvngu created at 2009-10-10 21:05:27
+
+Applied patches in this order to Sage 4.1.2.rc0:
+
+ 1. `trac_7118.patch`
+ 1. `trac_7118-part2.patch`
+ 
+Doctesting resulted in the following failure:
+
+```
+sage -t -long "devel/sage-main/sage/structure/sage_object.pyx"
+**********************************************************************
+File "/scratch/mvngu/release/sage-4.1.2.rc0/devel/sage-main/sage/structure/sage_object.pyx", line 931:
+    sage: sage.structure.sage_object.unpickle_all(std)
+Expected:
+    doctest...
+    Successfully unpickled 571 objects.
+    Failed to unpickle 0 objects.
+Got:
+    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
+    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
+    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
+    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
+    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead
+    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.
+    Successfully unpickled 572 objects.
+    Failed to unpickle 0 objects.
+**********************************************************************
+1 items had failures:
+   1 of   7 in __main__.example_21
+***Test Failed*** 1 failures.
+For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py
+	 [6.0 s]
+```
+
+
+
+---
+
+Comment by was created at 2009-10-10 21:07:53
+
+
+```
+oh, your own failure is in the pickle jar.
+[2:06pm] williamstein:
+That requires manually removing a pickle from the pickle jar.
+[2:07pm] williamstein:
+There is a quaddouble pickle in there.
+[2:07pm] williamstein:
+Notice that the doctest failure is in the message about how many pickles there are.
+[2:07pm] williamstein:
+so that's fine.
+[2:07pm] williamstein:
+In my tree i've removed that.
+[2:07pm] williamstein:
+that = 1 pickle
+```
+
+
+
+---
+
+Comment by mvngu created at 2009-10-10 21:14:13
+
+
+```
+14:08 < mvngu> williamstein: Which file(s) exactly must be removed?
+14:08 < mvngu> williamstein: Can you give me the path to those files to remove?
+14:09 < williamstein> you have to remove a file from the tarball in
+                      data/extcode/pickle_jar
+14:09 < williamstein> it's the one with "rqdf" in its name, I think.
+14:09 < williamstein> then you remake the tarball.
+14:10 < mvngu> williamstein: OK. Thank you.
+```
+
+
+
+---
+
+Comment by mvngu created at 2009-10-11 02:05:02
+
+install log on sage.math
+
+
+---
+
+Attachment
+
+Applied patches in this order to Sage 4.1.2.rc0:
+
+ 1. `trac_7118.patch`
+ 1. `trac_7118-part2.patch`
+ 
+Then uncompressed the file `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar.tar.bz2` and removed the following files from the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar`:
+
+ 1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`
+ 1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`
+ 
+With these files removed, the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar` is compressed into a tarball again and replaced the previous version of the same tarball. From Mercurial's point of view, this would result in a change to a file it tracks, i.e. the pickle_jar.tar.bz2 has changed and all changes should be checked in. Now edit the file `SAGE_ROOT/spkg/install` to comment out the line related to quaddouble. The commented lines should be:
+
+```
+# See ticket #7118: remove quaddouble from sage                                 
+# QUADDOUBLE=`$newest quaddouble`                                               
+# export QUADDOUBLE
+```
+
+The file `SAGE_ROOT/spkg/install` is not tracked by Mercurial, so no need to check in changes. Also, edit the file `SAGE_ROOT/spkg/standard/deps` to comment out all lines related to quaddouble. The commented lines should be:
+
+```
+# See ticket #7118: remove quaddouble from sage
+# $(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)
+#       $(SAGE_SPKG) $(QUADDOUBLE) 2>&1
+
+<SNIP>
+
+                  # See ticket #7118: remove quaddouble from sage
+                  # $(INST)/$(QUADDOUBLE) \
+```
+
+This file is also not tracked by Mercurial, so no need to check in changes. Finally, remove the package quaddouble-2.2.p9.spkg from the directory `SAGE_ROOT/spkg/standard` of standard Sage packages. With these changes, I made a new source tarball called "sage-4.1.2.rc1-7118-quaddouble". After unpacking that tarball and compiling from scratch, I got the following error. The full install log is attached.
+
+```
+g++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local/lib -lntl -lgmp -lpari
+*** TOUCHING ALL CYTHON (.pyx) FILES ***
+scons: `install' is up to date.
+
+----------------------------------------------------------
+sage: Building and installing modified Sage library files.
+
+
+Installing c_lib
+scons: `install' is up to date.
+Traceback (most recent call last):
+  File "setup.py", line 16, in <module>
+    from module_list import ext_modules
+  File "/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/devel/sage-main/module_list.py", line 84, in <module>
+    for line in open(SAGE_LOCAL + "/share/polybori/flags.conf"):
+IOError: [Errno 2] No such file or directory: '/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local//share/polybori/flags.conf'
+sage: There was an error installing modified sage library code.
+
+ERROR installing SAGE
+
+real    0m4.375s
+user    0m3.050s
+sys     0m1.290s
+sage: An error occurred while installing sage-4.1.2.rc1-7118-quaddouble
+Please email sage-devel http://groups.google.com/group/sage-devel
+explaining the problem and send the relevant part of
+of /scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/install.log.  Describe your computer, operating system, etc.
+If you want to try to fix the problem yourself, *don't* just cd to
+/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble and type 'make'.
+Instead type "/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/sage -sh"
+in order to set all environment variables correctly, then cd to
+/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble
+(When you are done debugging, you can type "exit" to leave the
+subshell.)
+make[1]: *** [installed/sage-4.1.2.rc1-7118-quaddouble] Error 1
+make[1]: Leaving directory `/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg'
+
+real    50m13.360s
+user    42m20.520s
+sys     7m27.370s
+Error building Sage.
+```
+
+
+
+---
+
+Comment by was created at 2009-10-11 06:44:31
+
+The error you get suggests a messed up deps file.  Here's mine, which worked (I think):
+
+http://sage.math.washington.edu/home/wstein/patches/7118/deps
+
+
+---
+
+Comment by mvngu created at 2009-10-11 10:14:52
+
+
+```
+23:35 < mvngu> williamstein: Any ideas about the error I reported at #7118 (remove quaddouble)?
+23:40 < williamstein> wow, I can't belive the pickle jar is under revision control -- that's stupid.
+23:41 < williamstein> but that is orthogonal.
+23:41 < williamstein> maybe you made a typo when editing module_list.py?
+23:42 < williamstein> wait, that was my patch.
+23:42 < mvngu> williamstein: I didn't touch module_list.py
+23:42 < williamstein> hmm.
+23:42 < williamstein> i'll post my deps file.
+23:42 < williamstein> maybe there is a typo ther.e
+23:43 < williamstein> the error you get suggests a messed up deps file.
+23:44 < williamstein> http://sage.math.washington.edu/home/wstein/patches/7118/deps
+23:45 < williamstein> my wife just decided to stay overnight at her friends house, since they are having so much fun... so
+23:45 < williamstein> sounds like a good night for a Sage all nighter for me!
+23:46 < williamstein> 3 new sagenb users in the last few minutes...
+23:47 < williamstein> mvngu -- thanks again for looking at the #7118!
+23:49 < mvngu> williamstein: A diff of the original deps vs. your changed deps... this suggests that I should really delete lines relating to quaddouble, instead of commenting them out.
+23:49 < williamstein> You should try that.
+23:50 < mvngu> trying now...
+```
+
+
+
+---
+
+Comment by mvngu created at 2009-10-12 03:19:32
+
+doctest on bsd.math
+
+
+---
+
+Attachment
+
+doctest on cicero on SkyNet
+
+
+---
+
+Comment by mvngu created at 2009-10-12 03:28:03
+
+doctest on eno on SkyNet
+
+
+---
+
+Attachment
+
+doctest on mandriva2009-64 on boxen.math
+
+
+---
+
+Attachment
+
+doctest on cento53-64 on boxen.math
+
+
+---
+
+Attachment
+
+doctest on opensuse32 on boxen.math
+
+
+---
+
+Comment by mvngu created at 2009-10-12 03:56:19
+
+doctest on opensuse64 on boxen.math
+
+
+---
+
+Attachment
+
+This time, I really deleted the following lines from the file `SAGE_ROOT/spkg/standard/deps`:
+
+```
+$(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)
+      $(SAGE_SPKG) $(QUADDOUBLE) 2>&1
+
+<SNIP>
+
+                  See ticket #7118: remove quaddouble from sage
+                  $(INST)/$(QUADDOUBLE) \
+```
+
+I made a new source tarball called "sage-4.1.2.rc1-7118-quaddouble" that incorporates the cliquer spkg at #6681. The new source tarball was tested on the following platforms:
+
+ * sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.
+ * rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.
+ * bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:
+ {{{
+sage -t -long "rc1-7118-6681/devel/sage/sage/calculus/calculus.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/calculus/tests.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/calculus/wester.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/ext/fast_eval.pyx"
+sage -t -long "rc1-7118-6681/devel/sage/sage/functions/hyperbolic.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/functions/other.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/functions/trig.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/gsl/interpolation.pyx"
+sage -t -long "rc1-7118-6681/devel/sage/sage/matrix/matrix_symbolic_dense.pyx"
+sage -t -long "rc1-7118-6681/devel/sage/sage/rings/polynomial/pbori.pyx"
+sage -t -long "rc1-7118-6681/devel/sage/sage/symbolic/constants.py"
+sage -t -long "rc1-7118-6681/devel/sage/sage/symbolic/expression.pyx"
+sage -t -long "rc1-7118-6681/devel/sage/sage/symbolic/function.pyx"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-bsd.math.log`.
+ * cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
+ {{{
+sage -t -long "devel/sage/sage/misc/randstate.pyx"
+sage -t -long "devel/sage/sage/interfaces/expect.py"
+sage -t -long "devel/sage/sage/interfaces/sage0.py"
+sage -t -long "devel/sage/sage/server/simple/twist.py"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-cicero.log`.
+ * eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
+ {{{
+sage -t -long "devel/sage/sage/rings/fast_arith.pyx"
+sage -t -long "devel/sage/sage/rings/tests.py"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-eno.log`.
+ * lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.
+ * menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.
+ * cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:
+ {{{
+sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-cento53-64-boxen.log`.
+ * debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
+ * debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
+ * mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.
+ * mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:
+ {{{
+sage -t -long "devel/sage/sage/server/simple/twist.py"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-mandriva2009-64.boxen.log`.
+ * opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
+ {{{
+sage -t -long "devel/sage/sage/server/simple/twist.py"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-opensuse32-boxen.log`.
+ * opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
+ {{{
+sage -t -long "devel/sage/sage/graphs/graph_plot.py"
+ }}}
+ Full doctest log is attached; see the attachment `doctest-opensuse64-boxen.log`.
+ * ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
+ * ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
+
+
+---
+
+Comment by ddrake created at 2009-10-30 00:06:07
+
+This is "needs review", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?
+
+
+---
+
+Comment by mvngu created at 2009-10-30 05:09:42
+
+Replying to [comment:12 ddrake]:
+> This is "needs review", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?
+
+I wanted to give the ticket a positive after writing up my test results on various platforms. But my mind at the time was more focused on my thesis, so I didn't actually change the status to "positive review". I apologize for the confusion. Now the status is positive review, and the ticket can be closed as fixed.
+
+
+---
+
+Comment by mvngu created at 2009-10-30 05:09:42
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mhansen created at 2009-10-31 16:39:12
+
+Resolution: fixed

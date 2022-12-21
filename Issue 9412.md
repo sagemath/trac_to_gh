@@ -1,0 +1,292 @@
+# Issue 9412: some random crap coming from zodb *sometimes*
+
+Issue created by migration from Trac.
+
+Original creator: rlm
+
+Original creation time: 2010-07-02 21:26:03
+
+Assignee: GeorgSWeber
+
+In sage-4.5.alpha1, I see this:
+
+
+```
+SAGE_ROOT/local/bin$ hg status
+? fsdump
+? fsoids
+? fsrefs
+? fstail
+? mkzeoinst
+? repozo
+? runzeo
+? zdaemon
+? zeoctl
+? zeopack
+? zeopasswd
+```
+
+
+As discussed in the thread
+
+http://groups.google.com/group/sage-release/browse_thread/thread/7286e07fd3f06375
+
+
+
+---
+
+Comment by rlm created at 2010-07-02 22:04:34
+
+Robert Miller said:
+
+Should I add a dependency to deps to include setuptools in the
+dependencies for zodb, and add these files to hgignore?
+
+then John Palmieri said:
+
+Looking at src/setup.py, I think that they seem to be a standard part
+of the installation for zodb, so I don't see why not.  But I don't
+actually know anything about this package or these scripts...
+
+
+---
+
+Comment by drkirkby created at 2010-07-02 23:55:16
+
+Robert, 
+
+There are a couple of tickets open (#9274 and #9351 come to mind) to make some changes to 'deps', as a result of problems when setting SAGE_PARALLEL_SPKG_BUILD=yes. 
+
+I think you need to balance how significant these bits of random crap are, against the potential for introducing problems if you make changes to 'deps'. IMHO, such changes are not low-risk, given the pivotal role that file plays. This is especially so if the changes are extensive, as they are in #9274. The problem with making major changes to 'deps' is it's easy to get it wrong and screw up things. That rather defeats your plan of having a decent stabilisation period, if you add quite risky changes in now. 
+
+Hence you might want to consider 3 different possibilities. 
+
+ * Merge this ticket only
+ * Merging the other two tickets before the next release. 
+ * Ignoring all such 'deps' related tickets for now, and sort our all 'deps' issue out more fully later. 
+
+There are some obvious problems with 'deps' now. For a start, most, if not all things in spkg/standard are not depending on things in spkg/base. So *prereq* in spkg/base, which checks the compilers  and the build environment is generally sound, is not completing until after several standard packages in spkg/standard are built. 
+
+On My Ultra 27, these are the order packages are built (ignore R and Maxima, as they are not built - I had to touch the relevant file in spkg/installed to fake these). The options to 'ls' show time stamps to the nearest nanosecond and are sorted in order of build. 
+
+
+```
+drkirkby`@`hawk:~/SAGE-4.5.alpha1/spkg$ ls -Etr installed
+total 187
+-rw-r--r--   1 drkirkby staff          0 2010-07-02 10:52:57.158697583 +0100 dir-0.1
+-rw-r--r--   1 drkirkby staff        146 2010-07-02 10:52:57.529261285 +0100 fortran-20100629
+-rw-r--r--   1 drkirkby staff        140 2010-07-02 10:52:58.143692572 +0100 cephes-2.8
+-rw-r--r--   1 drkirkby staff        143 2010-07-02 10:53:08.571473353 +0100 blas-20070724
+-rw-r--r--   1 drkirkby staff        148 2010-07-02 10:53:12.390217432 +0100 lapack-20071123.p1
+-rw-r--r--   1 drkirkby staff          0 2010-07-02 10:53:12.439601309 +0100 prereq-0.7
+-rw-r--r--   1 drkirkby staff          0 2010-07-02 10:53:15.383181301 +0100 bzip2-1.0.5
+-rw-r--r--   1 drkirkby staff        223 2010-07-02 10:53:15.596730823 +0100 sage_scripts-4.5.alpha1
+-rw-r--r--   1 drkirkby staff        222 2010-07-02 10:53:15.948186085 +0100 conway_polynomials-0.2
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 10:53:16.397958658 +0100 graphs-20070722.p1
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:53:16.434216201 +0100 elliptic_curves-0.1
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:53:16.454898152 +0100 examples-4.5.alpha1
+-rw-r--r--   1 drkirkby staff        220 2010-07-02 10:53:16.594791262 +0100 boost-cropped-1.34.1
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 10:53:16.900069648 +0100 termcap-1.3.1.p1
+-rw-r--r--   1 drkirkby staff        221 2010-07-02 10:53:17.248709862 +0100 polytopes_db-20100210
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:53:17.995179327 +0100 f2c-20070816.p2
+-rw-r--r--   1 drkirkby staff        210 2010-07-02 10:53:30.220543581 +0100 zlib-1.2.5
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 10:53:34.171508443 +0100 sympow-1.018.1.p7
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:53:46.993312627 +0100 rubiks-20070912.p12
+-rw-r--r--   1 drkirkby staff        211 2010-07-02 10:54:08.058342609 +0100 palp-1.1.p3
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 10:54:14.034489250 +0100 libpng-1.2.35.p2
+-rw-r--r--   1 drkirkby staff        220 2010-07-02 10:54:16.581895295 +0100 tachyon-0.98beta.p11
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:54:18.926580784 +0100 readline-6.0.p2
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 10:54:31.443335621 +0100 freetype-2.3.5.p2
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 10:54:33.079958987 +0100 symmetrica-2.0.p5
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:54:33.991424620 +0100 boehm_gc-7.1.p6
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 10:54:37.613535323 +0100 libm4ri-20100221
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:54:39.413995207 +0100 iconv-1.13.1.p2
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:54:46.608207765 +0100 libgpg_error-1.6.p3
+-rw-r--r--   1 drkirkby staff        212 2010-07-02 10:54:50.554313407 +0100 gd-2.0.35.p5
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 10:55:12.325217810 +0100 libgcrypt-1.4.4.p3
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 10:55:15.667698199 +0100 sqlite-3.6.22
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 10:55:25.521084519 +0100 opencdk-0.6.6.p4
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 10:55:30.798581260 +0100 mpir-1.2.2.p1
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:55:32.006187645 +0100 flintqs-20070817.p5
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 10:55:33.470839978 +0100 ratpoints-2.1.3.p1
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 10:55:58.674267819 +0100 pari-2.3.5.p1
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 10:56:00.848843542 +0100 cddlib-094f.p7
+-rw-r--r--   1 drkirkby staff        222 2010-07-02 10:56:01.000733827 +0100 genus2reduction-0.3.p6
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:56:32.978792721 +0100 gfan-0.4plus.p1
+-rw-r--r--   1 drkirkby staff        212 2010-07-02 10:56:43.171344539 +0100 ecm-6.2.1.p2
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 10:57:04.918730706 +0100 givaro-3.2.13rc2.p1
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:57:18.193782858 +0100 gnutls-2.2.1.p5
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 10:57:24.706791930 +0100 zn_poly-0.9.p4
+-rw-r--r--   1 drkirkby staff        210 2010-07-02 10:57:52.534794778 +0100 mpfr-2.4.2
+-rw-r--r--   1 drkirkby staff        225 2010-07-02 10:58:04.591833962 +0100 mpfi-1.3.4-cvs20071125.p8
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 10:58:16.515180215 +0100 libfplll-3.0.12.p1
+-rw-r--r--   1 drkirkby staff        222 2010-07-02 10:58:25.806900374 +0100 lcalc-20100428-1.23.p0
+-rw-r--r--   1 drkirkby staff        210 2010-07-02 10:58:27.720582468 +0100 ecl-10.4.1
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 10:58:41.095367718 +0100 python-2.6.4.p9
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:00:44.517649927 +0100 ntl-5.4.2.p12
+-rw-r--r--   1 drkirkby staff          0 2010-07-02 11:05:33.191001098 +0100 maxima-5.20.1.p1
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:05:51.758705462 +0100 pexpect-2.0.p4
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 11:05:54.152745405 +0100 gdmodule-0.56.p7
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:05:54.210243367 +0100 docutils-0.5.p0
+-rw-r--r--   1 drkirkby staff        211 2010-07-02 11:05:54.211349757 +0100 scons-1.2.0
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:05:54.400018268 +0100 networkx-1.0.1
+-rw-r--r--   1 drkirkby staff        211 2010-07-02 11:05:55.100015661 +0100 mpmath-0.15
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 11:05:57.780936613 +0100 ipython-0.9.1.p0
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 11:06:01.484460102 +0100 mercurial-1.3.1.p2
+-rw-r--r--   1 drkirkby staff        222 2010-07-02 11:06:01.959766669 +0100 python_gnutls-1.1.4.p7
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 11:06:03.199721187 +0100 setuptools-0.6c9.p0
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:06:06.178719156 +0100 sagetex-2.2.5
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 11:06:08.119509216 +0100 pycrypto-2.0.1.p5
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:09.989050580 +0100 cliquer-1.2.p5
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 11:06:10.049774612 +0100 extcode-4.5.alpha1
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:11.031070387 +0100 sympy-0.6.4.p0
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:15.935392045 +0100 flint-1.5.0.p5
+-rw-r--r--   1 drkirkby staff        212 2010-07-02 11:06:29.305251045 +0100 pil-1.1.6.p2
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:29.497953777 +0100 twisted-9.0.p2
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:44.759714756 +0100 pynac-0.2.0.p4
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:06:59.917471673 +0100 zodb3-3.7.0.p3
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 11:07:03.857360945 +0100 pygments-0.11.1.p0
+-rw-r--r--   1 drkirkby staff        218 2010-07-02 11:07:08.280465825 +0100 eclib-20080310.p10
+-rw-r--r--   1 drkirkby staff        212 2010-07-02 11:07:08.293841584 +0100 jinja-1.2.p0
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:07:09.127468258 +0100 jinja2-2.1.1.p0
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:07:10.319788725 +0100 sphinx-0.6.3.p4
+-rw-r--r--   1 drkirkby staff        216 2010-07-02 11:07:12.050765981 +0100 sqlalchemy-0.5.8
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:07:13.710665492 +0100 cython-0.12.1
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:07:27.422765792 +0100 sagenb-0.8.p2
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:08:03.510259944 +0100 moin-1.9.1.p1
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 11:10:02.505307748 +0100 polybori-0.6.4.p1
+-rw-r--r--   1 drkirkby staff        219 2010-07-02 11:14:46.045854540 +0100 singular-3.1.0.4.p8
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:15:11.858819594 +0100 atlas-3.8.3.p12
+-rw-r--r--   1 drkirkby staff          0 2010-07-02 11:15:12.134614583 +0100 r-2.10.1.p2
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:16:06.636233836 +0100 numpy-1.3.0.p4
+-rw-r--r--   1 drkirkby staff        214 2010-07-02 11:16:08.254165510 +0100 weave-0.4.9.p0
+-rw-r--r--   1 drkirkby staff        211 2010-07-02 11:16:25.334373912 +0100 gsl-1.10.p2
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:16:36.210929830 +0100 iml-1.0.1.p12
+-rw-r--r--   1 drkirkby staff        217 2010-07-02 11:16:47.590387768 +0100 matplotlib-0.99.3
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:17:03.477005965 +0100 cvxopt-0.9.p8
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:17:33.580770558 +0100 linbox-1.1.6.p3
+-rw-r--r--   1 drkirkby staff        212 2010-07-02 11:20:22.401566564 +0100 scipy-0.7.p5
+-rw-r--r--   1 drkirkby staff        225 2010-07-02 11:20:40.955072874 +0100 scipy_sandbox-20071020.p5
+-rw-r--r--   1 drkirkby staff        215 2010-07-02 11:36:53.004209439 +0100 sage-4.5.alpha1
+-rw-r--r--   1 drkirkby staff        213 2010-07-02 11:37:04.505917055 +0100 gap-4.4.12.p4
+```
+
+
+Note, since `prereq` is a longish script, that is taking 15 seconds to build, whereas other code like cephes, blas and fortran are already finished in under 15 seconds. (This machine is a quad core 3.33 GHz Xeon, so is not a slouch). By luck, I'm getting away with this, but it is not right. 
+
+John Palmieri has made some updates to the documentation (#8263) which document SAGE_PARALLEL_SPKG_BUILD. That documentation specifically says SAGE_PARALLEL_SPKG_BUILD is experimental. 
+
+I'm finding the SAGE_PARALLEL_SPKG_BUILD very good, and I can live with its minor problems though I'd like to see the problems resolved. It is one area of Sage able to benefit many people, so deserves higher priority than some of the more obscure Sage patches. 
+
+Anyway, there is a few things for you to consider before adding any or all of these! 
+
+Dave
+
+
+---
+
+Comment by rlm created at 2010-07-05 21:01:36
+
+Replying to [comment:2 drkirkby]:
+> I think you need to balance how significant these bits of random crap are, against the potential for introducing problems if you make changes to 'deps'. IMHO, such changes are not low-risk, given the pivotal role that file plays.
+
+Changes which cause problems can and will be reverted before the final release.
+
+> This is especially so if the changes are extensive, as they are in #9274... That rather defeats your plan of having a decent stabilisation period...
+
+First, #9274 isn't even ready yet -- nothing is going in without a positive review. Second, we're not in the stabilization period anyway.
+
+> Hence you might want to consider 3 different possibilities. 
+
+In fact I'm not doing any of these three choices.
+
+> There are some obvious problems with 'deps' now.
+
+This is entirely off topic for this ticket. The topic of this ticket is to fix one problem with deps, not rehaul it. Since you are aware of #9274, I have no idea why you're ranting here.
+
+> I'm finding the SAGE_PARALLEL_SPKG_BUILD very good
+
+This is even further off topic!
+
+
+---
+
+Comment by rlm created at 2010-07-05 21:09:22
+
+Replying to [comment:3 rlm]:
+> Second, we're not in the stabilization period anyway.
+
+Sorry. I did say I wouldn't merge any more changes outside of sage-main, unless they were critical. But I view #9274 as critical. The real stabilization period will be when I release `rc0`.
+
+
+---
+
+Comment by rlm created at 2010-07-05 21:09:22
+
+Changing status from new to needs_info.
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by rlm created at 2010-07-05 21:40:19
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by drkirkby created at 2010-07-05 21:49:02
+
+This looks good. setup.py does have:
+
+
+```
+try:
+    from setuptools import setup
+```
+
+
+so clearly it needs setuptools. 
+
+You don't have it depending on BASE - I assume that will be taken care of with #9274. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-07-05 21:49:02
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by rlm created at 2010-07-05 21:50:08
+
+Replying to [comment:6 drkirkby]:
+> You don't have it depending on BASE - I assume that will be taken care of with #9274. 
+
+Correct, that is the plan. Thank you for the review.
+
+
+---
+
+Comment by rlm created at 2010-07-05 22:10:39
+
+Resolution: fixed

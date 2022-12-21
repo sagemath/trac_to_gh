@@ -1,0 +1,301 @@
+# Issue 9676: Random Tree constructor for graphs section
+
+Issue created by migration from Trac.
+
+Original creator: edward.scheinerman
+
+Original creation time: 2010-08-03 18:12:47
+
+Assignee: jason, ncohen, rlm
+
+This adds a [RandomTree](RandomTree) constructor to the graphs class. Users can type g=graphs.RandomTree(n) to create a new random tree with n vertices named 0 through n-1. 
+
+
+---
+
+Comment by ncohen created at 2010-08-04 08:15:16
+
+Changing status from new to needs_work.
+
+
+---
+
+Comment by ncohen created at 2010-08-04 08:15:16
+
+Hellooooo !!
+
+Well, a long list of comments, which is perfectly normal for a first patch :-)
+
+ * First of all, you forgot to set our ticket as "needs_review". It means that if you hadn't given me its number by email, I would never had noticed this ticket, as I usually list those who are waiting to be reviewed
+
+ * I am really sorry, but I totally forgot to tell you about a patch which was reviewed a few days ago #9373. Among other things, it removes one of the two lists of generators given in graph_generators (where you added your constructor), and the other one is reformatted. This means that your patch can not be applied once #9373 has been... Hence, your patch needs to be rebased on top of this one. (It means you first need to create a new branch, then apply #9373, then write your patch on top of it).
+
+ * When writing docstrins, you can indeed use LaTeX formulas. For this, you need to add a special character, so that Sphinx notices you are indeed using LaTeX. In your case,
+
+
+```
+      n^(n-2) and {0,1,...,n-1}	
+```
+
+  should become
+
+
+```
+      `n^(n-2)` and `\{0,1,...,n-1\}`
+```
+
+ * If you build the documentation after applying your patch ( sage -docbuild reference hmtl ), you will also notice that your example does not appear like the other ones. This is because we make use of the double-column "::". You can give these other methods a look to see how it works, and build the documentation to mak sure it does.
+
+ * The result you mention is, if I remember correctly, for Labelled trees. It means that trees with a large automorphism group will appear more often, so I think this method should be renamed RandomLabelledTree.
+
+ * I see how you are building those trees, but I do not know how to prove this is indeed a uniform sampling. Could you add a reference for this (even a textbook, if it is a result I should know ?). You can even add this reference in the documentation (look for occurences of the string REFERENCES in the code to see how it works -- as usual, uild the documentation to ensure it is correctly understood by Sphinx).
+
+ * If you need a random permutation of [0..(n-1)], you should use something like Permutations(n).random_element()
+
+ * In Sage's documentation, the examples you see are not just examples. They are used to ensure that the code remains correct. This is what happens when you write something like {{{ sage -t graph_generators.py }} Sage reads all the docstring, and ensure what they output is what it expects. If it is not the case, the error is reported and we know something is wrong. Your doctest only prints it, which is not useful.. Here is one I could write, but it's really up to you, if you find something more interesting, funnier, or can check a known result using your function...
+
+
+```
+      Checking the generated graphs are indeed trees::
+
+          sage: all( graphs.RandomTree(10).is_tree() for i in range(30) )
+	  True
+```
+
+  It does not need to be complicatd, most of the time. It is just a way for Sage to check it "seems" fine, so that we notice something has gone wrong is we modify the method is_tree or anything related.
+
+And I am sure there is something else I had to say but forgot it O_o
+
+Well, if you have any question, I'll be behind my emails `:-)`
+
+Nathann
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-10 23:12:26
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-10 23:12:26
+
+Dear all,
+I have uploaded a new version of the [RandomTree](RandomTree) constructor. The algorithm is an inverse Prufer code method. We generate an (n-2)-long sequence of random values in {0,...,n-1} and use that to build a tree. Looking forward to seeing if this new version passes muster.
+Ed
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-11 14:55:44
+
+The patch I uploaded yesterday was incorrectly built. I believe this one should be OK.
+
+
+---
+
+Comment by ncohen created at 2010-08-12 01:57:44
+
+Helloooooo !!!
+
+Well, I hold nothing against this new version... I did not know about this encoding for trees, and I am glad I learned about it `:-)`
+
+I still have several remarks... From top to bottom :
+
+    * It is very nice that you are describing how the algorithm works. I try to do that with my patches but I do not always make a good work of it. Could you add "ALGORITHM:" just before, though ? That's how it is done in other patches, we create a small "section" dedicated to that. Nothing important actually.
+
+    * Instead of checking just one tree (is_tree()), could you test something like 20 ? This method is very quick anyway. These doctests are actually automated tests to ensure there is nothing wrong with the function, so it is not just about explaining how to use the commands. The call to show is not very useful in this setting.
+
+Ok, some explanations may be needed with the docstrings. In any Sage method you will see a lot of examples, like the ones you just wrote yourself. It is nice for the users, who have an idea how to use the methods, and it is also tested automatically. A new version of Sage is *NOT* released if ALL the tests do not pass. This way, if some mistake in a part of Sage's code creates a problem 10 methods further, we can locate it. And here is how it works : You have been copying a list of commands, and the result they give. When running tests on only one file, in your case by  `sage -t graph_generators.py`, you will see a rather long (in this case) output. Those are errors reported when automatically testing the lines of code you entered. Let's see why.
+
+    * First, and don't ask me why because I have absolutely no idea, there is something to change about the indentation when one is typing those doctests. This does not work :
+
+      {{{
+      sage: for i in xrange(reps): 
+      sage:    g = graphs.RandomTree(6) 
+      sage:    if max(g.degree_sequence()) == 2: count += 1 
+      }}}
+
+      Write this instead:
+
+      {{{
+      sage: for i in xrange(reps): 
+      ...      g = graphs.RandomTree(6) 
+      ...      if max(g.degree_sequence()) == 2: count += 1 
+      }}}
+
+      Syntaxically, I still think it was possible to understand the code with `sage:` at the beginning of the line, but well... This is not so bad anyway.
+
+    * Oh. A consequence of all that. What happens if you test random algorithms ? They give random results. Which means that if your doctest says that 0.276920000000000 is the expected value, Sage will complain as soon as it is not EXACTLY that. Let's face it, this will never happen. I do not like this constraint, as it prevents one from writing doctests interesting for the user. Two ways around it :
+
+        * A doctest line containing `# not tested` will not be tested. You can find other occurrences of this in the code. This way, the user gets to see your example, but Sage does not complain. Of course, the developpers will complain for as long as your have not added enough docstrings to your method so that we can be somehow sure its behaviour is under close surveillance. (hence the "`is_tree()`" at least 20 different times)
+
+	* Instead of controlling the exact value, check the distance with the expected value is not large. Each tree has a specific probability of being a path, so testing many of them amounts to studying a binomial distribution. So if you make a *BIG* number of trials, you can be somehow sure (?) that the mean you get empirically is not far from the theoretical mean. And I mean *BIG*. I recently had this very problem in #9715, and there was nothing wrong very large samplings... Actually, this kind of example is not very good either, it would be better to add #not tested in front of them, but it there was a way around with #9815, I can not think of any trick in this case `:-/`
+
+The actual code, now. Mostly asthetics:
+
+    * I read
+      {{{
+      while idx < len(code):
+           (things)
+	   idx += 1
+      }}}
+
+      What about a "for" loop ? By the way, do you really need to have a idx variable in this case ? It just keeps increasing to point to a different element of code.. That's C style !! (just joking, I *LOVE* C). In Python, you can do instead :
+
+      {{{
+      for s in code:
+      	   (whatever_you_want)
+      }}}
+
+      Which is enough in this situation.
+
+    * About `avail`. Why do you need such a list ? Isn't `count` enough ? 
+
+      {{{
+      xlist = [k for k,d in count.iteritems() if d==0 ]
+      }}}
+
+      When you are adding a new leaf to your graph, simply do
+
+      {{{
+      count[k] = -1
+      }}}
+
+    * By the way, you are at each loop building a list that you do not need. You are just interested in its first element. So instead of this `xlist` stuff, what about just :
+
+      {{{
+      for x in range(n):
+          if count[x] == 0:
+	      break
+      }}}
+      
+      This way `x` is directly the value you need. No `xlist`, no `avail`. And it is faster.
+      
+    * I also read 
+
+      {{{
+      if len(xlist)==0: break
+      }}}
+
+      When I read the algorithm, I though : This should never happen. I added a "print", to ensure it did not, and all my attempts shown it was never used. Is there any situation in which it is required ?
+
+Well, this was a long list again. Many of my remarks being just aesthetic, disregard those if you do not like them. And please forgive me `:-)`.
+
+Generally, a method can not be accepted if all the doctests do not pass. So ensure that `sage -t graph_generators.py` reports nothing wrong before anything.
+
+I expect the next one version will be the last `:-)`
+
+Nathann
+
+
+---
+
+Comment by ncohen created at 2010-08-12 01:57:44
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-15 21:56:13
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-15 21:56:13
+
+Now passes all tests.
+
+
+---
+
+Comment by ncohen created at 2010-08-23 02:41:39
+
+Hello Edward !!
+
+Well, as you told me you were busy these times, and I am on vacation waiting for a plane.... If you like these modifications, you can set my patch (and so this whole tiket, as I reviewed yours) as positively reviewed `:-)`
+
+Thank you for your additions ! I'll try to take care of your other patches now.
+
+Nathann
+
+
+---
+
+Comment by ncohen created at 2010-08-23 02:42:07
+
+Cosmetics on top of Edward's patch
+
+
+---
+
+Attachment
+
+Hi Nathann, I tested the new code and am satisfied with the results. I think this is fine to incorporate into the next Sage release. Thanks for the help!!!  -Ed
+
+
+---
+
+Comment by edward.scheinerman created at 2010-08-24 22:59:09
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by ncohen created at 2010-08-25 00:47:59
+
+Yet another graph patch ! 
+
+Yeahhhhhhhhhhhhhhhhhhhh !!! `:-)`
+
+Nathann
+
+
+---
+
+Comment by mpatel created at 2010-09-05 03:50:13
+
+Could someone prepend the ticket number to the commit string for [attachment:trac_9676.patch] (and restore the status to "positive review")?
+
+Also, please update the "Author(s)" and/or "Reviewer(s)" fields.
+
+
+---
+
+Comment by mpatel created at 2010-09-05 03:50:13
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by edward.scheinerman created at 2010-09-06 00:41:29
+
+New, improved, repaired [RandomTree](RandomTree) graph constructor
+
+
+---
+
+Attachment
+
+Commit string edited as requested.
+
+
+---
+
+Comment by edward.scheinerman created at 2010-09-06 00:42:07
+
+Changing status from needs_work to positive_review.
+
+
+---
+
+Comment by mpatel created at 2010-09-15 22:52:30
+
+Resolution: fixed

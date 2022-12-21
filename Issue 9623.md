@@ -1,0 +1,647 @@
+# Issue 9623: interacts for high school level
+
+Issue created by migration from Trac.
+
+Original creator: schilly
+
+Original creation time: 2010-07-28 10:41:53
+
+Assignee: itolkov, jason
+
+CC:  kcrisman mhampton robert.marik rbeezer jthurber
+
+Include the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`
+
+
+---
+
+Comment by schilly created at 2010-07-28 22:56:31
+
+Changing status from new to needs_work.
+
+
+---
+
+Comment by schilly created at 2010-07-29 18:00:26
+
+Finished porting most of the examples to the sage library. There are some remaining issues:
+
+ * `practice_differentiating_polynomials` - mixups with the states happen
+ * `trigonometric_properties_triangle` and
+ * `special_points` - drawing the items doesn't always work as it should. 
+
+If there is somebody who sees the bug, please correct it ;)
+
+Apart from that, they are now conveniently accessible via `interacts.calculus.[TAB]`, `interacts.geometry.[TAB]` and `interacts.statistics.[TAB]`. Maybe I implement some additional ones from the wiki, too... (and it probably doesn't hurt to add a h2 header and some introduction text to each example)
+
+
+---
+
+Comment by schilly created at 2010-07-29 18:18:20
+
+the "from the wiki" patch is meant to be applied on top of the "high school" patch to keep things separate for now.
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by schilly created at 2010-07-30 16:34:38
+
+I know that `practice_differentiating_polynomials` is buggy and that a few more comments in the generated output of each example to explain what it is all about won't hurt, but I call it finished for now and I will not add more examples. Maybe a reviewer finds the bug or donates some additional words?
+
+
+---
+
+Comment by schilly created at 2010-07-30 16:34:38
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by schilly created at 2010-07-31 13:23:11
+
+I've added a short introduction and a pointer to these interacts in the reference manual. `9623-interact-examples.patch` combines both patches and the other ones can be removed.
+
+
+---
+
+Comment by robert.marik created at 2010-08-16 10:06:39
+
+Thanks for nice patch, I'll look at it. First ideas: practice_differentiating_polynomials does not work as expected, so I think that it could be removed. 
+
+I think that it is better to enter limits from keyboard for trapezoidal and Simpson integration rather than input from slider. I also think that it is better to use html.table in Newton method and it is worth to include option which puts computation fot trapezoidal and Simposon integration in a table. Also newton_method and secant method should have similar input forms (presicion is negative power of ten in one of the interacts and positive in the other). 
+
+In the integrals, dx should be TeX-ed as \mathrm{d}x
+
+I am collecting these ideas and include then in a reviewer patch which comes (hope) in few days.
+
+
+---
+
+Comment by schilly created at 2010-08-16 10:19:59
+
+Replying to [comment:9 robert.marik]:
+> practice_differentiating_polynomials does not work as expected
+
+I know, it's something odd about the state transitions and I just did not have enough patience ...
+
+> 
+> I think that it is better to enter limits from keyboard for trapezoidal and Simpson integration rather than input from slider.
+
+Ok, well, I like the range slider better. It's a matter of taste but the reason for that is that I tried to make it as intuitive as possible and that includes using mouse handles than having to type in numbers.
+
+I'm fine with your other comments.
+
+
+---
+
+Comment by robert.marik created at 2010-08-17 14:03:09
+
+Replying to [comment:10 schilly]:
+> 
+> Ok, well, I like the range slider better. 
+
+On the other hand, with sliders you cannot integrate from 0 to 1. I changed the interacts for trapezoidal and simpson rule and they accept both input from slider and keyboard. I hope, this is intuitive enough. 
+
+I tested all interacts and give a positive review (removed practice_differentiating_polynomials which does not work as expected)
+
+Added interact for bisection, since it is close to secant method and newton method.
+
+Added interact for definition of Riemann integral, which is close to trapezoidal rule and Simpson formula, removed. 
+
+Fixed one deprecation warning. Added titles to (most) of the interacts. Added tables for computation related to Simpson and trapezoidal rule.
+
+Positive review for 9623-interact-examples.patch! Thank you for the patch. I wonder if the layout parameter in interact can be used also with library_interact.
+
+I included reviewer patch in 9623-interact-examples2.patch. Could you or someone else review my changes?
+
+
+---
+
+Comment by robert.marik created at 2010-08-17 14:03:45
+
+apply after 9623-interact-examples.patch
+
+
+---
+
+Attachment
+
+Btw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRVŠ](http://www.frvs.cz/)
+
+Known problem for trapezoidal and simpson integration: bad rendering of the computation if we integrate negative function: minus sign follows dot or plus sign.
+
+
+---
+
+Comment by jason created at 2010-09-28 14:48:12
+
+Some comments:
+
+* several typos and nicer latex symbols---see patch
+* `interacts.library.cube_hemisphere()` -- the cube corners do not touch the hemisphere, so I'm confused what the picture is supposed to be.
+* `interacts.library.coin()` -- Again, I'm confused about what the picture should be.  The code looks like it is plotting `[(i,k/i) for i in num_points random numbers]`.  I'm not sure what the y-axis is supposed to represent, given that there is no documentation.
+* `function_tool` -- you can have a button selected in each row, which looks really weird.  This is a problem with interacts, and should be another ticket.
+
+
+---
+
+Comment by jason created at 2010-09-28 14:49:48
+
+Try again:
+
+
+
+Some comments:
+
+  * several typos and nicer latex symbols---see patch 
+
+  * `interacts.library.cube_hemisphere()` -- the cube corners do not touch the hemisphere, as the docs indicate that they should
+  
+  * `interacts.library.coin()` -- Again, I'm confused about what the picture should be. The code looks like it is plotting `[(i,k/i) for i in num_points random numbers]`. I'm not sure what the y-axis is supposed to represent, given that there is no documentation. I think the fix is to add documentation
+
+  * (for another ticket) `function_tool` -- you can have a button selected in each row, which looks really weird. This is a problem with interacts, and should be another ticket.
+
+
+---
+
+Comment by jason created at 2010-09-28 14:50:13
+
+apply on top of previous patches
+
+
+---
+
+Attachment
+
+Robert's changes look good.  Can someone comment on points 2 and 3 in my list above?
+
+
+---
+
+Comment by mhampton created at 2011-01-12 23:03:40
+
+Rebases all previous patches against 4.6.1 and makes minor import changes
+
+
+---
+
+Attachment
+
+Rather than let this bit-rot I would like to see it go in soon.  There are endless tweaks and improvements that can be made to these but it would be nice to have this much included.
+
+I removed the __init__.py and replaced it with an all.py that avoids importing everything in the library.py file, which leaves the autocompletion options of interacts much less cluttered.
+
+
+---
+
+Comment by kcrisman created at 2011-01-13 01:25:34
+
+Adding the _original_ author!  It only seems fair, even if she didn't commit a patch.
+
+Also, did we ever get the issue about how these are doctested figured out?
+
+Finally, there is at least one place where I see the word 'intergral' :)  Though I wouldn't hold up positive review for that, since I am not formally reviewing (yet).
+
+
+---
+
+Comment by mhampton created at 2011-01-13 18:40:17
+
+Karl, I did fix that spelling mistake.  I'll continue to improve these until this is reviewed (but I would be happy if that was very soon!).
+
+
+---
+
+Comment by mhampton created at 2011-01-13 19:05:21
+
+Apply only this patch; using Jason's idea from #10622
+
+
+---
+
+Attachment
+
+Agreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.
+> Also, did we ever get the issue about how these are doctested figured out?
+I can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.
+
+
+---
+
+Comment by jason created at 2011-01-13 21:55:06
+
+No, I don't think we ever had any conclusion about doctesting them.
+
+
+---
+
+Comment by jthurber created at 2011-01-13 23:09:40
+
+I've done a modest review, applying the patch, running tests on the sage/interacts, and looking at a few of the interacts in the notebook.  So far, all is good.
+
+Unless someone is doing it sooner, I'll run --testall --long tonight.
+
+
+---
+
+Comment by kcrisman created at 2011-01-14 01:39:20
+
+Replying to [comment:20 jason]:
+> No, I don't think we ever had any conclusion about doctesting them.
+Okay, then I would say a prerequisite for positive review is opening a ticket for figuring out what to do about that.  Do you (or anyone else) have any objections to incorporating this nonetheless?  I think it's far more useful than whatever bitrot may occur in the interacts themselves over time, to be honest, and at least provides a nice place to put them all.
+
+
+---
+
+Comment by jthurber created at 2011-01-15 14:49:15
+
+I've done the standard testing against the new release of 4.6.1, and all pass, but I'm inclined to step back and leave the status change to those of you who have been more involved with this one.  I joined in because Marshall brought it up at bugdays, but some of you may have more vested in it.  
+
+Perhaps new tickets should be opened to address Jason's points about cube.hemisphere() and coin().
+The hemisphere picture is disconcerting, adding documentation to coin() would be easy.
+
+
+---
+
+Comment by jason created at 2011-01-15 20:31:27
+
+I'm fine with getting this in and opening up other tickets to address the small number of points I raised.
+
+
+---
+
+Comment by jason created at 2011-01-15 20:32:48
+
+Actually, maybe the best thing to do is put the hemisphere and coin interacts on another ticket, and let everything else go in.  That would be better than contributing interacts that clearly need work.
+
+
+---
+
+Comment by kcrisman created at 2011-01-15 20:38:09
+
+Replying to [comment:26 jason]:
+> Actually, maybe the best thing to do is put the hemisphere and coin interacts on another ticket, and let everything else go in.  That would be better than contributing interacts that clearly need work.
+Okay, if someone else doesn't, I'll try to take care of that tonight.  We certainly want the interacts in the library to be top-notch.
+
+
+---
+
+Comment by mhampton created at 2011-01-15 20:42:17
+
+Getting rid of the hemisphere and coin interacts sounds good to me.  I like the coin one, thought it was totally self-explanatory, but clearly I'm in the minority.
+
+
+---
+
+Comment by jthurber created at 2011-01-15 21:21:46
+
+Replying to [comment:28 mhampton]:
+> Getting rid of the hemisphere and coin interacts sounds good to me.  I like the coin one, thought it was totally self-explanatory, but clearly I'm in the minority.
+
+I agree in that I can think of only one interpretation for the y-axis.  Explaining what it must be could be a good exercise when using it.
+
+
+---
+
+Comment by kcrisman created at 2011-01-16 05:14:11
+
+I am really glad I looked at these.  In general, they are really nice, and ready for prime time - and SO much easier to use than sifting through the wiki!
+
+But oh my goodness... SO many minor things that still had to be taken care of.  I apologize for not creating a new diff - I had already started making the changes quite a bit when I realized I should have just made a reviewer patch.  I tried to make the commit message maximally informative, though.  There is already too much stuff on here to try to avoid the patch bomb; in retrospect, we should have added these a little more incrementally so as to avoid this situation.
+
+So, *very* unfortunately, I must still ask for review on this.  There are too many changes.  *BUT* I feel like many of them are ones which would have impacted the professionalism pretty significantly.   Read on.
+
+Things I fixed:
+
+ * We needed to import `fast_callable` for the Julia set one, for whatever reason.
+
+ * I removed the hemisphere, tried to improve the wording of the coin as well as I could - it's a nice example, in fact.
+
+ * Many formatting things, $, ticks in doc, confusing wording, bad parenthesis in label of difference quotient, etc.
+
+ * Fixed bad thing in function tool where deprecation warning appeared because of `f(x*a)`-type stuff in the code.
+
+ * The two formulas on the Simpson one were on top of each other in Safari (not FF).  Since the author used the equals sign incorrectly in any case, I added some words to clarify it was an approximation, and that fixed it.  I think Safari may not like math without words between math (see below for another possible example).  Same on trapezoid.
+
+ *  In fact, the entire "Area" line in the trigonometry one was gone on Safari, probably because of `\text`, which I removed.  Also note the triangle was called `A`, not `ABC` as it should have been.
+
+PS - I love the fact you can sage -b while the notebook is still running.  This would have been impossible otherwise.
+
+Things I did not fix:
+
+ * Really annoying thing where using these seems to reset my worksheet every so often - I mean it just stops and returns me to the top.  This could be because I had the worksheet open in FF and Safari at the same time.  (?)
+
+ * Annoying thing that I could not access the documentation for an interact in the notebook once I had already viewed that particular interact.   This might be a general interact bug.
+
+ * I could not easily figure out how to get this in the reference manual; I think I have to create a new directory and a .rst file that will somehow autogenerate, but I don't know how to do this (though I'm sure it's easy).  The original patch of Harald's did not work for me.
+
+ * Polar prime spiral consistently complains about failing to evaluate the function at various points.  I had no idea how to fix this, since there are so many functions I couldn't easily identify which one wasn't evaluating, though perhaps it's one of the parametric plots (makes most sense).
+
+ * Trig properties angle and circle and text ALL fail to format properly in Safari (not FF). 
+
+ * The unit circle one should somehow have formatted `pi`, but I still don't know how to do that.
+
+ * Julia set thing doesn't zoom when you zoom, unless you zoom a lot.  Instead it just cuts off the picture for the zoom area.  Maybe it needs a simultaneous plot point uppage?  Incidentally, this one could REALLY use an 'update' button.
+
+ * Julia and Mandelbrot ones look kind of sad compared to easy-to-download apps available nowadays, even at max plot points.  I suppose this is the limit of what we can do with an interact of this kind.
+
+ * Some of these definitely need a teacher to interpret for someone who is brand new to things.  That's not a bug, but worth pointing out, especially if there is a way to get these in the reference manual.  For instance, the trig on a triangle one is a little weird, because you're putting points on a unit circle labeled by degree.  Okay, but then there are still tick marks labeled on the axes!  So we're sending a mixed - and weird - message with that.  Not a game-stopper, but still somewhat rough.
+ 
+ * Quad. Eq. one stacks a little too close in the formatting even in the opening gambit.
+
+ * Some of the graphers need more flexible ranges.  I'm not sure how to do this conceptually, though, since we have to hardcode something in with the interacts, and too big a range will make it too hard to zoom.  I guess my point is these are not universal.
+ 
+ * Trapezoid and simpson didn't always immediately respond to the 'from keyboard' change.  Maybe you have to click that first, before doing any keyboard changes, or it doesn't like it?
+
+ * To me, trig isn't calculus, but I'm not arguing that it can show up there, so I left that one in both calculus and geometry.
+
+So tickets that should be opened after someone (_please_! unless I missed something) gives this positive review:
+
+ * Fixing the problem with buttons in multiple rows Jason mentioned.
+ 
+ * Putting the hemisphere plot back in, if we want to.
+
+ * Polar prime spiral plot point issue.
+ 
+ * Figure out how to get this in the manual
+
+ * Figuring out how to truly doctest them.  For instance, there could at least be a search for deprecation warnings, or even random input typed... but at least more than just checking that an html block is formed.
+
+
+---
+
+Comment by kcrisman created at 2011-01-16 05:19:11
+
+Based to 4.6.2.alpha0, should apply ok
+
+
+---
+
+Attachment
+
+Buildbot may apply only trac_9623-rebase-v3.patch if it so chooses.
+
+
+---
+
+Comment by kcrisman created at 2011-02-14 19:29:43
+
+Still applies to 4.6.2.alpha4.  I'm tempted to give it positive review myself to avoid bitrot; if I wouldn't have had to rebase a fair amount, I would have just made a reviewer patch, but that was hard for me to do.
+
+
+---
+
+Comment by mhampton created at 2011-03-29 03:49:40
+
+This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, with all its faults, and incrementally improve through more tickets.  From that standpoint, not showing up in the reference manual might be a good thing in the short term.
+
+
+---
+
+Comment by kcrisman created at 2011-03-29 13:14:59
+
+Replying to [comment:33 mhampton]:
+> This still applies OK to sage-4.7.alpha2.  My inclination is to let this in, with all its faults, and incrementally improve through more tickets.  From that standpoint, not showing up in the reference manual might be a good thing in the short term.  
+
+I just needed someone to review my changes - I agree totally!  I just had to make the most needed changes, and there were enough that I didn't feel comfortable giving positive review.
+
+So if you think it's fine, do positive review!  Please feel free to open all these followup tickets too :)
+
+
+---
+
+Comment by mhampton created at 2011-03-29 13:45:18
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mhampton created at 2011-03-29 13:45:18
+
+OK.  Lets do it then.
+
+
+---
+
+Comment by jdemeyer created at 2011-04-12 08:29:27
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by jdemeyer created at 2011-04-12 08:29:40
+
+Additional patch
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jdemeyer created at 2011-04-12 08:29:48
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by kcrisman created at 2011-04-12 12:36:15
+
+<rant>
+
+This is an example of the kind of not-really-necessary thing that really delays tickets.  When it was written, it was 2010!
+
+</rant>
+
+But now that you did it, I will have to say 'needs work'.  Although Harald put it in writing, since Lauri Ruotsalainen is the one who came up with many of these in her thesis, it seems inappropriate to not put her in the author listing at the top where you added Harald.   So at least something like `based on work by ...` should be added there.
+
+
+---
+
+Comment by kcrisman created at 2011-04-12 12:36:15
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by jdemeyer created at 2011-04-12 12:56:29
+
+Replying to [comment:40 kcrisman]:
+> This is an example of the kind of not-really-necessary thing that really delays tickets.  When it was written, it was 2010!
+
+Note that changing the year was only a trivial change, I made the headers compliant with the developers manual [http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files)
+
+
+---
+
+Comment by jdemeyer created at 2011-04-25 18:17:37
+
+Anyone wants to fix this????
+
+
+---
+
+Comment by kcrisman created at 2011-04-25 19:10:34
+
+Yes, but it's just tedious enough (for me, because I'm very non-automated and still am a novice with queues) that it isn't as high a priority.   Is there any way you can just merge the previous material and move the copyright patch, with the request to add Ruotsalainen, on another ticket?  I feel like that would be much more productive, and actually rather easier for me (or someone else) to fix easily.
+
+
+---
+
+Comment by mhampton created at 2011-04-26 12:09:27
+
+Added "partially based on work by Lauri Ruotsalainen"
+
+
+---
+
+Attachment
+
+I updated the copyright patch to reflect the contributions of Lauri Ruotsalainen.  I can change it if someone objects.
+
+
+---
+
+Comment by mhampton created at 2011-04-26 12:11:15
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by kcrisman created at 2011-04-26 14:03:32
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by kcrisman created at 2011-04-26 14:03:32
+
+This seems reasonable enough; Harald did do the actual turning into a Sage file.  Thanks, Marshall.    
+
+I assume that is positive review of Jeroen's changes, and I don't think such a trivial change (in terms of code) that Marshall just made needs other review.  They aren't in the reference manual yet, so nothing needed there.  Passes tests.  Positive review!
+
+
+---
+
+Comment by jdemeyer created at 2011-05-03 12:28:40
+
+Resolution: fixed
+
+
+---
+
+Comment by jhpalmieri created at 2011-09-29 05:50:27
+
+A question for anyone who contributed to this ticket: the file `library_cython.pyx` has this code in it:
+
+```
+cpdef cellular(rule, int N):
+    '''
+    Cythonized helper function for the callular_automata fractal.
+    Yields a matrix showing the evolution of a Wolfram's cellular automaton.
+    Based on work by Pablo Angulo.
+    http://wiki.sagemath.org/interact/misc#CellularAutomata
+    
+    INPUT:
+
+        - `rule` -- determines how a cell's value is updated, depending on its neighbors
+        - `N` -- number of iterations
+
+    TESTS::
+
+        sage: from sage.interacts.library_cython import cellular
+        sage: rule = [1, 0, 1, 0, 0, 1, 1, 0]
+        sage: N = 3
+        sage: print cellular(rule, 3)
+
+    '''
+```
+
+Note that the output from the last line of the doctest is missing.  Since the docstring is enclosed in triple single quotes instead of triple double quotes, doctesting skipped this altogether.  At #8708, there is a patch which will now run doctests within triple single quotes, in which case this file has one failure.
+
+So the question is: what is the output supposed to be?  When I run this command, I get
+
+```
+        sage: print cellular(rule, 3)
+        [[0 0 0 1 0 0 0]
+         [0 0 0 1 0 0 0]
+         [0 1 0 1 0 1 0]]
+```
+
+Is this right?  I don't know what the mathematics here is trying to do, so I really have no idea...
+
+
+---
+
+Comment by kcrisman created at 2011-09-29 13:21:36
+
+There's also a typo - "callular" isn't an adjective I'm familiar with in Wolfram's work :)  And `N` is not actually used in the rule.
+
+See [this MathWorld site](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) for the descriptions.  The rule is given by binary, so this rule is `2+4+32+128=166`.  It looks like there is in fact an error; I'm having a lot of trouble getting the rules to do what they should with things like rules 1 or 2.  
+
+Here's the problem:
+
+```
+        for k in range(N-j, N+j+1):
+```
+
+instead of 
+
+```
+ for k in range(0,2*N):
+```
+
+as on the wiki.  Someone thought they'd be smart and only update the cells that "need" updating... but that totally screws it up, as ALL cells might need updating if e.g. the rule has the final binary digit = 1.  
+
+I'm opening a ticket for this.  Thanks a lot for catching this, John.
+
+
+---
+
+Comment by kcrisman created at 2011-09-29 13:25:24
+
+This is now #11871.  John, if you want that ticket to "fix" the quoting issue as well, you can put that there; if it doesn't matter because of #8708, then no matter.
+
+
+---
+
+Comment by jdemeyer created at 2017-03-21 13:35:58
+
+Replying to [comment:30 kcrisman]:
+>  * Polar prime spiral plot point issue.
+
+See #22665 for a follow-up on this.
+
+
+---
+
+Comment by jdemeyer created at 2017-03-21 13:38:16
+
+Replying to [comment:30 kcrisman]:
+>  * Figuring out how to truly doctest them.  For instance, there could at least be a search for deprecation warnings, or even random input typed... but at least more than just checking that an html block is formed.
+
+See #22644 for some real tests using Jupyter.

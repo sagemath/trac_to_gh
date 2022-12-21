@@ -1,0 +1,911 @@
+# Issue 7864: libfplll tries to link 64-bit objects to 32-bit libstdc++.so
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-01-07 05:30:12
+
+Assignee: drkirkby
+
+CC:  jsp jhpalmieri
+
+## Build environment
+ * Sun Ultra 27 3.333 GHz Intel Xeon. 12 GB RAM
+ * OpenSolaris 2009.06 snv_111b X86
+ * Sage 4.3.1.alpha1 (with a few packages hacked to work on 64-bit)
+ * gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.
+ * 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. 
+
+ == The problem ==
+Despite the fact all the objects file (.o) are created 64-bit (as intended), the final link phase tries to link against a 32-bit library 
+
+```
+ /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so
+```
+
+rather than the 64-bit version:
+
+```
+/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libstdc
+```
+
+I don't understand why Here is the the failed part of the build. 
+
+```
+if g++ -DPACKAGE_NAME=\"libfplll\" -DPACKAGE_TARNAME=\"libfplll\" -DPACKAGE_VERSION=\"3.0.12\" -DPACKAGE_STRING=\"libfplll\ 3.0.12\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"libfplll\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.  -DFAST_BUILD -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT fplll_micro-topenum.o -MD -MP -MF ".deps/fplll_micro-topenum.Tpo" -c -o fplll_micro-topenum.o `test -f 'topenum.cpp' || echo './'`topenum.cpp; \
+	then mv -f ".deps/fplll_micro-topenum.Tpo" ".deps/fplll_micro-topenum.Po"; else rm -f ".deps/fplll_micro-topenum.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o fplll_micro  fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -lmpfr -lgmp -lmpfr -lgmp 
+g++ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -o fplll_micro fplll_micro-main.o fplll_micro-enumerate.o fplll_micro-evaluator.o fplll_micro-solver.o fplll_micro-tools.o fplll_micro-topenum.o  -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib
+make[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src/src'
+make[3]: Entering directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'
+if /bin/sh ./libtool --tag=CXX --mode=compile g++ -DPACKAGE_NAME=\"libfplll\" -DPACKAGE_TARNAME=\"libfplll\" -DPACKAGE_VERSION=\"3.0.12\" -DPACKAGE_STRING=\"libfplll\ 3.0.12\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"libfplll\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.   -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF ".deps/dummy.Tpo" -c -o dummy.lo dummy.cpp; \
+	then mv -f ".deps/dummy.Tpo" ".deps/dummy.Plo"; else rm -f ".deps/dummy.Tpo"; exit 1; fi
+mkdir .libs
+ g++ "-DPACKAGE_NAME=\"libfplll\"" "-DPACKAGE_TARNAME=\"libfplll\"" "-DPACKAGE_VERSION=\"3.0.12\"" "-DPACKAGE_STRING=\"libfplll 3.0.12\"" "-DPACKAGE_BUGREPORT=\"\"" "-DPACKAGE=\"libfplll\"" "-DVERSION=\"3.0.12\"" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp  -fPIC -DPIC -o .libs/dummy.o
+In file included from src/main.h:27,
+                 from dummy.cpp:11:
+src/fplll.h:29:1: warning: "NAN" redefined
+In file included from src/defs.h:36,
+                 from src/util.h:29,
+                 from src/lexer.h:26,
+                 from src/main.h:26,
+                 from dummy.cpp:11:
+src/dpe.h:30:1: warning: this is the location of the previous definition
+ g++ "-DPACKAGE_NAME=\"libfplll\"" "-DPACKAGE_TARNAME=\"libfplll\"" "-DPACKAGE_VERSION=\"3.0.12\"" "-DPACKAGE_STRING=\"libfplll 3.0.12\"" "-DPACKAGE_BUGREPORT=\"\"" "-DPACKAGE=\"libfplll\"" "-DVERSION=\"3.0.12\"" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp -o dummy.o >/dev/null 2>&1
+/bin/sh ./libtool --tag=CXX --mode=link g++  -m64 -fPIC -I/export/home/drkirkby/sage-4.3.1.alpha1/local/include/ -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib   -o libfplll.la -rpath /export/home/drkirkby/sage-4.3.1.alpha1/local/lib -version-info 1:0:1 dummy.lo -lgmp -lmpfr -lmpfr -lgmp -lmpfr -lgmp 
+g++ -shared -nostdlib  /usr/lib/amd64/crti.o /usr/lib/amd64/values-Xa.o /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtbegin.o  .libs/dummy.o  -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.3.1.alpha1/local/lib -Wl,-R -Wl,/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib -L/export/home/drkirkby/sage-4.3.1.alpha1/local/lib /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libmpfr.so /export/home/drkirkby/sage-4.3.1.alpha1/local/lib/libgmp.so -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4 -L/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/../../.. /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so -lm -lgcc_s /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/gcc/i386-pc-solaris2.11/4.3.4/amd64/crtend.o /usr/lib/amd64/crtn.o  -m64 -Wl,-h -Wl,libfplll.so.0 -o .libs/libfplll.so.0.1.0
+ld: fatal: file /usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/libstdc++.so: wrong ELF class: ELFCLASS32
+ld: fatal: file processing errors. No output written to .libs/libfplll.so.0.1.0
+collect2: ld returned 1 exit status
+make[3]: *** [libfplll.la] Error 1
+make[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage-4.3.1.alpha1/spkg/build/libfplll-3.0.12.p0/src'
+Error building libfplll
+
+real	0m22.114s
+user	0m16.829s
+sys	0m4.053s
+sage: An error occurred while installing libfplll-3.0.12.p0
+```
+
+ == Workaround ==
+A workaround is to delete the library, then create a link to the same library in the amd64 directory. But this is a hack, and obviously means gcc would not work properly for 32-bit builds in this case.
+
+
+---
+
+Comment by wjp created at 2010-05-26 11:54:42
+
+Could you check what compiler_lib_search_path is set to inside the generated libtool in the fplll build directory? (`grep compiler_lib_search_path= src/libtool`)
+
+
+---
+
+Comment by drkirkby created at 2010-06-26 04:49:47
+
+Replying to [comment:2 wjp]:
+> Could you check what compiler_lib_search_path is set to inside the generated libtool in the fplll build directory? (`grep compiler_lib_search_path= src/libtool`)
+
+Yes, sure. 
+
+Since posting this, I recompiled gcc and put it in the prefix
+
+
+```
+/usr/local/gcc-4.4.4-multilib
+```
+
+
+so the output from the build process is different to above. Here is the output, which is achieved when CFLAGS, CXXFLAGS, CPPFLAGS and LDFLAGS all have the option "-m64" addded. 
+
+
+```
+ g++ "-DPACKAGE_NAME=\"libfplll\"" "-DPACKAGE_TARNAME=\"libfplll\"" "-DPACKAGE_VERSION=\"3.0.12\"" "-DPACKAGE_STRING=\"libfplll 3.0.12\"" "-DPACKAGE_BUGREPORT=\"\"" "-DPACKAGE=\"libfplll\"" "-DVERSION=\"3.0.12\"" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -m64 -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp  -fPIC -DPIC -o .libs/dummy.o
+In file included from src/main.h:27,
+                 from dummy.cpp:11:
+src/fplll.h:29:1: warning: "NAN" redefined
+In file included from src/defs.h:36,
+                 from src/util.h:29,
+                 from src/lexer.h:26,
+                 from src/main.h:26,
+                 from dummy.cpp:11:
+src/dpe.h:30:1: warning: this is the location of the previous definition
+ g++ "-DPACKAGE_NAME=\"libfplll\"" "-DPACKAGE_TARNAME=\"libfplll\"" "-DPACKAGE_VERSION=\"3.0.12\"" "-DPACKAGE_STRING=\"libfplll 3.0.12\"" "-DPACKAGE_BUGREPORT=\"\"" "-DPACKAGE=\"libfplll\"" "-DVERSION=\"3.0.12\"" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I. -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -m64 -fPIC -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -m64 -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.cpp -o dummy.o >/dev/null 2>&1
+/bin/sh ./libtool --tag=CXX --mode=link g++  -fPIC -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -m64  -m64 -o libfplll.la -rpath /export/home/drkirkby/sage-4.5.alpha0/local/lib -version-info 1:0:1 dummy.lo -lgmp -lmpfr -lmpfr -lgmp -lmpfr -lgmp 
+g++ -shared -nostdlib -m64 /usr/lib/amd64/crti.o /usr/lib/amd64/values-Xa.o /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/crtbegin.o  .libs/dummy.o  -Wl,-R -Wl,/export/home/drkirkby/sage-4.5.alpha0/local/lib -Wl,-R -Wl,/usr/local/gcc-4.4.4-multilib/lib -Wl,-R -Wl,/export/home/drkirkby/sage-4.5.alpha0/local/lib -Wl,-R -Wl,/usr/local/gcc-4.4.4-multilib/lib -L/export/home/drkirkby/sage-4.5.alpha0/local/lib /export/home/drkirkby/sage-4.5.alpha0/local/lib/libmpfr.so /export/home/drkirkby/sage-4.5.alpha0/local/lib/libgmp.so -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../.. /usr/local/gcc-4.4.4-multilib/lib/libstdc++.so -lm -lgcc_s /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/crtend.o /usr/lib/amd64/crtn.o  -m64 -m64 -Wl,-h -Wl,libfplll.so.0 -o .libs/libfplll.so.0.1.0
+ld: fatal: file /usr/local/gcc-4.4.4-multilib/lib/libstdc++.so: wrong ELF class: ELFCLASS32
+ld: fatal: file processing errors. No output written to .libs/libfplll.so.0.1.0
+collect2: ld returned 1 exit status
+make[3]: *** [libfplll.la] Error 1
+make[3]: Leaving directory `/export/home/drkirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src'
+Error building libfplll
+
+real	0m25.046s
+user	0m19.920s
+sys	0m4.043s
+sage: An error occurred while installing libfplll-3.0.12.p1
+```
+
+
+Here is the output you requested. 
+
+
+```
+drkirkby`@`hawk:~/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1$ grep compiler_lib_search_path= src/libtool
+compiler_lib_search_path=""
+compiler_lib_search_path="-L/export/home/drkirkby/sage-4.5.alpha0/local/lib -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../.."
+compiler_lib_search_path=""
+```
+
+
+
+
+If I manually add 
+
+
+```
+-L /usr/local/gcc-4.4.4-multilib/lib/amd64 -R /usr/local/gcc-4.4.4-multilib/lib/amd64
+```
+
+
+to CFLAGS, CXXFLAGS etc, so this will link properly. But it should not be necessary to do this. 
+
+I sent this problem via email today to the three developers listed in src/README. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-28 07:19:29
+
+I've found a workaround. It is not ideal, but it is the same as I'm using for #7861. Basically this involves adding the directory of the 64-bit GCC libraries with -L and -R options to the compiler. 
+
+An assumption is made that the directories containing the binaries (gcc, g++ etc) and libraries (libgfortran.so etc) share the same parent directory. This is the usual case, although it is possible to install these in different places. So if gcc is built with --prefix=/usr/local/gcc-4.5.0, then it is assumed that the following directories exists
+
+
+```
+/usr/local/gcc-4.5.0/bin
+/usr/local/gcc-4.5.0/lib (32-bit libraries)
+/usr/local/gcc-4.5.0/lib/amd64 (64-bit libraries on x64 platforms)
+/usr/local/gcc-4.5.0/lib/sparcv9 (64-bit libraries on SPARC platforms)
+```
+
+
+
+## Testing on OpenSolaris x64 with a Sun Ultra 27
+
+```
+libfplll-3.0.12.p1/.hg/branch
+Finished extraction
+****************************************************
+Host system
+uname -a:
+SunOS hawk 5.11 snv_134 i86pc i386 i86pc
+****************************************************
+****************************************************
+CC Version
+gcc -v
+Using built-in specs.
+Target: i386-pc-solaris2.11
+Configured with: /export/home/drkirkby/gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4-multilib --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.4.4-multilib --with-mpfr=/usr/local/gcc-4.4.4-multilib --disable-nls --enable-checking=release --enable-werror=no --enable-multilib --with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld
+Thread model: posix
+gcc version 4.4.4 (GCC) 
+****************************************************
+Patching dpe.h
+Building a 64-bit version of libfplll
+64-bit libraries for GCC are assumed to be in /usr/local/gcc-4.4.4-multilib/lib/amd64
+so compiler flags -R/usr/local/gcc-4.4.4-multilib/lib/amd64 and -L/usr/local/gcc-4.4.4-multilib/lib/amd64 will be added
+WARNING - these assumptions may be incorrect if GCC was
+configured with options like --bindir=DIR or --libdir=DIR
+but will be fine for most installations of gcc
+Long-term, a better solution needs to be found
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether build environment is sane... yes
+
+<SNIP>
+
+checking for mpfr_fms in -lmpfr... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: executing depfiles commands
+Making all in src
+make[1]: Entering directory `/export/home/drkirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src/src'
+if g++ -DPACKAGE_NAME=\"libfplll\" -DPACKAGE_TARNAME=\"libfplll\" -DPACKAGE_VERSION=\"3.0.12\" -DPACKAGE_STRING=\"libfplll\ 3.0.12\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"libfplll\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.   -R/usr/local/gcc-4.4.4-multilib/lib/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/amd64 -m64 -I/export/home/drkirkby/sage-4.5.alpha0/local/include/  -R/usr/local/gcc-4.4.4-multilib/lib/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/amd64 -m64  -fPIC -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -MT main.o -MD -MP -MF ".deps/main.Tpo" -c -o main.o main.cpp; \
+	then mv -f ".deps/main.Tpo" ".deps/main.Po"; else rm -f ".deps/main.Tpo"; exit 1; fi
+In file included from main.h:27,
+                 from main.cpp:22:
+fplll.h:29:1: warning: "NAN" redefined
+In file included from defs.h:36,
+
+<SNIP>
+
+real	0m30.225s
+user	0m24.442s
+sys	0m4.708s
+Successfully installed libfplll-3.0.12.p1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/export/home/drkirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing libfplll-3.0.12.p1.spkg
+drkirkby`@`hawk:~/sage-4.5.alpha0$ 
+```
+
+
+## Testing on Solaris 10 (SPARC) using 't2' with SAGE64=yes
+
+This time, instead of the directory for the libraries have 'amd64' in the name, so it has 'sparcv9'. 
+
+
+```
+libfplll-3.0.12.p1/.hg/requires
+libfplll-3.0.12.p1/.hg/branch
+Finished extraction
+****************************************************
+Host system
+uname -a:
+SunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240
+****************************************************
+****************************************************
+CC Version
+gcc -v
+Using built-in specs.
+Target: sparc-sun-solaris2.10
+Configured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++
+Thread model: posix
+gcc version 4.4.1 (GCC) 
+****************************************************
+Patching dpe.h
+Building a 64-bit version of libfplll
+64-bit libraries for GCC are assumed to be in /usr/local/gcc-4.4.1-sun-linker/lib/sparcv9
+so compiler flags -R/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9 and -L/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9 will be added
+WARNING - these assumptions may be incorrect if GCC was
+configured with options like --bindir=DIR or --libdir=DIR
+but will be fine for most installations of gcc
+Long-term, a better solution needs to be found
+checking for a BSD-compatible install... ./install-sh -c
+checking whether build environment is sane... yes
+```
+
+
+Likewise, this builds ok. 
+
+
+```
+./fplll -m fastearly -f double < example_in > foo
+cat foo example_out | ./llldiff
+rm foo
+./fplll -m heuristicearly < example_in > foo
+cat foo example_out | ./llldiff
+rm foo
+make[1]: Leaving directory `/rootpool2/local/kirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src/src'
+make[1]: Entering directory `/rootpool2/local/kirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src'
+make[1]: Nothing to be done for `check-am'.
+make[1]: Leaving directory `/rootpool2/local/kirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src'
+
+real	6m37.010s
+user	5m3.134s
+sys	1m27.456s
+Successfully installed libfplll-3.0.12.p1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/rootpool2/local/kirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing libfplll-3.0.12.p1.spkg
+kirkby`@`t2:[~/sage-4.5.alpha0] $ echo $SAGE_CHECK
+```
+
+
+
+---
+
+Comment by drkirkby created at 2010-06-28 07:19:29
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by drkirkby created at 2010-06-28 07:25:46
+
+The package may be found here for review. 
+
+http://boxen.math.washington.edu/home/kirkby/patches/libfplll-3.0.12.p1.spkg
+
+This may be tested on 't2' if the following are set
+
+
+```
+SAGE64=yes
+SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9/libgfortran.so
+```
+
+
+The latter assumes you use the C compiler /usr/local/gcc-4.4.1-sun-linker/bin/gcc. 
+
+Dave
+
+
+---
+
+Comment by wjp created at 2010-07-05 21:43:28
+
+This is rather confusing. Could you also run
+
+
+```
+/usr/local/gcc-4.4.1-sun-linker/bin/gcc -m64 -print-search-dirs
+/usr/local/gcc-4.4.1-sun-linker/bin/gcc -m32 -print-search-dirs
+```
+
+
+?
+
+(Both with `sage-env` sourced and without, in case it makes a difference.)
+
+
+---
+
+Comment by drkirkby created at 2010-07-05 22:16:45
+
+As noted above (10 days ago), I'm now using a different compiler, /usr/local/gcc-4.4.4-multilib/bin/gcc I've shown the error with the new compiler above, so I don't need to repeat it. So I'm not typing exactly what you said. 
+
+I compared with and without sage-env source. I copied the output to a file, then done a diff between the two files. They were the same, so no point showing it twice. 
+
+First the 32-bit. 
+
+
+```
+drkirkby`@`hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m32 -print-search-dirs
+install: /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/
+programs: =/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/:/usr/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/libexec/gcc/i386-pc-solaris2.11/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/:/usr/ccs/bin/i386-pc-solaris2.11/4.4.4/:/usr/ccs/bin/
+libraries: =/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../:/lib/i386-pc-solaris2.11/4.4.4/:/lib/:/usr/lib/i386-pc-solaris2.11/4.4.4/:/usr/lib/
+```
+
+
+Now, the 64-bit:
+
+
+```
+drkirkby`@`hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m64 -print-search-dirs
+install: /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/
+programs: =/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/:/usr/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/libexec/gcc/i386-pc-solaris2.11/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/:/usr/ccs/bin/i386-pc-solaris2.11/4.4.4/:/usr/ccs/bin/
+libraries: =/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/:/lib/i386-pc-solaris2.11/4.4.4/amd64/:/lib/amd64/:/usr/lib/i386-pc-solaris2.11/4.4.4/amd64/:/usr/lib/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../:/lib/i386-pc-solaris2.11/4.4.4/:/lib/:/usr/lib/i386-pc-solaris2.11/4.4.4/:/usr/lib/
+```
+
+
+
+---
+
+Comment by wjp created at 2010-07-05 22:37:16
+
+Replying to [comment:7 drkirkby]:
+> As noted above (10 days ago), I'm now using a different compiler, /usr/local/gcc-4.4.4-multilib/bin/gcc I've shown the error with the new compiler above, so I don't need to repeat it. So I'm not typing exactly what you said. 
+
+Oh, sorry, I copy/pasted the gcc path from your message (8 days ago) about t2. I'm glad you were more awake than me :-)
+
+If I'm reading this right, then in the 64-bit "libraries" section, the correct path
+
+`/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/`
+
+shows up before the wrong path that it's using
+
+
+```
+/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../
+```
+
+
+(Which is not unexpected.)
+
+
+The question remains: why does libtool pick up the wrong path...
+
+If you're willing to try one more (last ditch effort) command, could you put the (very lengthy) output of the failing libtool command online somewhere (maybe as a .gz'ed attachment or on a webserver somewhere), but with a `--debug` switch added?
+(In a sage shell, right after the failed build, from `/export/home/drkirkby/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1/src` )
+
+This is the failing libtool command with an extra `--debug` switch, hopefully copy-pasted from the right output message above this time :-)
+
+
+```
+/bin/sh ./libtool --debug --tag=CXX --mode=link g++  -fPIC -I/export/home/drkirkby/sage-4.5.alpha0/local/include/ -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -m64  -m64 -o libfplll.la -rpath /export/home/drkirkby/sage-4.5.alpha0/local/lib -version-info 1:0:1 dummy.lo -lgmp -lmpfr -lmpfr -lgmp -lmpfr -lgmp 
+```
+
+
+
+It should be possible to trace back the origin of the offending path from that dump.
+
+
+---
+
+Comment by drkirkby created at 2010-07-05 23:03:39
+
+Replying to [comment:8 wjp]:
+
+> If I'm reading this right, then in the 64-bit "libraries" section, the correct path
+> 
+> `/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/`
+> 
+> shows up before the wrong path that it's using
+> 
+> {{{
+> /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../
+> }}}
+> 
+> (Which is not unexpected.)
+
+
+Yes, I think so. I just checked to make sure the correct library is there
+
+
+```
+drkirkby`@`hawk:~$ file /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/libstdc++.so
+/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/libstdc++.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
+drkirkby`@`hawk:~$ 
+```
+
+
+as you can see, the 64-bit one is there. 
+
+> The question remains: why does libtool pick up the wrong path...
+
+Yes. This is not the only package where I've had this problem. There are two of them. But many packages use libtool ok. 
+ 
+> If you're willing to try one more (last ditch effort) command, could you put the (very lengthy) output of the failing libtool command online somewhere (maybe as a .gz'ed attachment or on a webserver somewhere), but with a `--debug` switch added?
+
+Of course I am willing. I'd like to get a better solution to this. My fix is a hack, I know that. It allows it to build, but I'm not keen on it. Given you have some ideas on how to resolve this, I'm going to change it to 'needs work' so it does not get reviewed. Hopefully we can find a better solution than this one. 
+
+I just started a fresh build of this. I'll have a shower, and by the time I'm finished, it should have failed and I'll post the output in an half an hour or so. (It depends somewhat on the size of the log file. It might take me a time to upload.) Unlike 't2', this machine is pretty quick, so it does not take long to build Sage. Excluding Maxima and R, which are not building on OpenSolaris, it only takes 40 minutes to build all of Sage. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-07-05 23:03:39
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Attachment
+
+Failed libtool command, on a Sun Ultra 27, OpenSolaris 06/2009.
+
+
+---
+
+Comment by drkirkby created at 2010-07-06 00:10:08
+
+I've attached the complete log - it is not that big.
+
+
+---
+
+Comment by wjp created at 2010-07-06 07:25:08
+
+Interestingly the lines for `compiler_lib_search_path` and `sys_lib_search_path_spec` completely lack any reference to the `amd64` library directories.
+
+At first glance this doesn't seem to be consistent with the value of `compiler_lib_search_path` you found earlier. Very strange... Talks at Sage Days 23 are starting in a few minutes, so I'll have to take another look at libtool's internals later.
+(And then it'll likely turn out to be a very simple oversight somewhere, of course :-) )
+
+
+---
+
+Comment by drkirkby created at 2010-07-06 07:34:33
+
+Thanks for looking. It would be good to get a real solution to this, rather than a hack 
+
+Dave
+
+
+---
+
+Comment by wjp created at 2010-07-06 16:00:26
+
+It looks like this list of library search directories is generated by the configure-script by running `$(CC) -print-search-dirs` and then parsing the output. (When using gcc; I haven't looked at the other cases in the configure script.)
+
+This seems to strongly suggest that the way of selecting 32/64 bit builds using autoconf+libtool is to set CC (and consequently CXX. Maybe LD too?) to "gcc -m32" or "gcc -m64" (by using `CC="${CC:-gcc} -m64"` or similar where necessary?), instead of adding those options to CFLAGS/CXXFLAGS.
+
+It would be nice to find confirmation of this in the autotools or libtool documentation somewhere. I found a brief reference here, but that's hardly authorative:
+
+http://www.mail-archive.com/autoconf`@`gnu.org/msg16326.html
+
+
+---
+
+Comment by drkirkby created at 2010-07-06 17:14:28
+
+Replying to [comment:13 wjp]:
+> It looks like this list of library search directories is generated by the configure-script by running `$(CC) -print-search-dirs` and then parsing the output. (When using gcc; I haven't looked at the other cases in the configure script.)
+> 
+> This seems to strongly suggest that the way of selecting 32/64 bit builds using autoconf+libtool is to set CC (and consequently CXX. Maybe LD too?) to "gcc -m32" or "gcc -m64" (by using `CC="${CC:-gcc} -m64"` or similar where necessary?), instead of adding those options to CFLAGS/CXXFLAGS.
+> 
+> It would be nice to find confirmation of this in the autotools or libtool documentation somewhere. I found a brief reference here, but that's hardly authorative:
+> 
+> http://www.mail-archive.com/autoconf`@`gnu.org/msg16326.html
+
+I'm a member of the autoconf mailing list and I think possibly the libtool mailing list too. I will post and ask there. 
+
+I know one has to set CC with Python, but many packages don't need that. There are loads of packages in Sage building with only CFLAGS set, and not CC. 
+
+Dave
+
+
+---
+
+Comment by wjp created at 2010-07-12 09:46:22
+
+Did you already post to the autoconf or libtool mailing lists? (If so, could you post a link to the thread?) I think it would be good to resolve this question soon. I'm also willing to post this question to the autoconf mailing list if you prefer.
+
+
+---
+
+Comment by drkirkby created at 2010-07-12 21:22:29
+
+Replying to [comment:15 wjp]:
+> Did you already post to the autoconf or libtool mailing lists? (If so, could you post a link to the thread?) I think it would be good to resolve this question soon. I'm also willing to post this question to the autoconf mailing list if you prefer.
+
+I had overlooked to do it. I have since posted it on the autoconf list. 
+
+http://lists.gnu.org/archive/html/autoconf/2010-07/msg00032.html
+
+I've attempted to subscribe to the libtool list, but so far got no response to my request to join. I will post a link here when I can join. 
+
+The followup on there suggests not using CFLAGS/LDFLAGS but instead adding the directories manually, which is what this patch does. But that's a lot more difficult for the user, and is not necessary for most packages that use libtool. The vast majority of tools that use libtool manage to work out where the 64-bit libraries are. 
+
+Dave
+
+
+---
+
+Comment by wjp created at 2010-07-13 22:35:27
+
+Do you mean simply using CC="gcc -m64" doesn't already help? My impression from the configure script was that this would make libtool pick up the correct library paths (the output from '`gcc -m64 -print-search-dirs`' you gave above).
+
+
+---
+
+Comment by drkirkby created at 2010-07-14 09:05:08
+
+Replying to [comment:17 wjp]:
+> Do you mean simply using CC="gcc -m64" doesn't already help? My impression from the configure script was that this would make libtool pick up the correct library paths (the output from '`gcc -m64 -print-search-dirs`' you gave above).
+
+I just checked spkg-install and see I had not done this at all. I will check that later. If that works, the solution would be a lot less hackish. I need to go out now, so will not be able to do this for a few hours. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-07-14 15:48:02
+
+Hi William, 
+
+your solution of setting CC="gcc -m64" works well. (Actually, it needs CXX set to "g++ -m64", though I have set both CC and CXX)
+
+I've written the changes to spkg-install in such a way it should work for any compiler (not just gcc/g++. This should help in the unlikely even this is ever ported to AIX or HP-UX. Here are some test results using your method. 
+
+I've put you as an author too.
+
+The package is here and needs review
+
+http://boxen.math.washington.edu/home/kirkby/patches/libfplll-3.0.12.p1.spkg
+
+Here are some test results. I've tested on Solaris 10, OpenSolaris and OS X. 
+
+## Testing on OpenSolaris x64 as a 64-bit build (`SAGE64="yes"`)
+ * Sun Ultra 27 
+ * 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
+ * 12 GB RAM
+ * OpenSolaris 2009.06 snv_134 X86
+ * Sage 4.5.rc0
+ * gcc 4.4.4 configured to use the Sun linker and the GNU assembler
+ * SAGE64 exported to "yes"
+
+```
+drkirkby`@`hawk:~/sage-4.5.rc0$ export SAGE64=yes
+drkirkby`@`hawk:~/sage-4.5.rc0$ cd ..^C
+drkirkby`@`hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
+Force installing libfplll-3.0.12.p1
+Calling sage-spkg on libfplll-3.0.12.p1
+Warning: Attempted to overwrite SAGE_ROOT environment variable
+Building Sage on Solaris in 64-bit mode
+Creating SAGE_LOCAL/lib/sage-64.txt since it does not exist
+Detected SAGE64 flag
+Building Sage on Solaris in 64-bit mode
+libfplll-3.0.12.p1
+<SNIP>
+make[1]: Entering directory `/export/home/drkirkby/sage-4.5.rc0/spkg/build/libfplll-3.0.12.p1/src/src'
+make[1]: warning: -jN forced in submake: disabling jobserver mode.
+if g++ -m64 -DPACKAGE_NAME=\"libfplll\" -DPACKAGE_TARNAME=\"libfplll\" -DPACKAGE_VERSION=\"3.0.12\" -DPACKAGE_STRING=\"libfplll\ 3.0.12\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"libfplll\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 -DHAVE_SQRT=1 -DHAVE_STRTOL=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -I. -I.   -I/export/home/drkirkby/sage-4.5.rc0/local/include/ -m64  -fPIC -I/export/home/drkirkby/sage-4.5.rc0/local/include/ -L/export/home/drkirkby/sage-4.5.rc0/local/lib -m64 -MT main.o -MD -MP -MF ".deps/main.Tpo" -c -o main.o main.cpp; \
+	then mv -f ".deps/main.Tpo" ".deps/main.Po"; else rm -f ".deps/main.Tpo"; exit 1; fi
+<SNIP>
+real	0m17.637s
+user	0m30.920s
+sys	0m5.211s
+Successfully installed libfplll-3.0.12.p1
+```
+
+An inspection of the shared libraries shows they are 64-bit. 
+
+```
+drkirkby`@`hawk:~/sage-4.5.rc0$ file local/lib/libfpll*
+local/lib/libfplll.a:	current ar archive, not a dynamic executable or shared object
+local/lib/libfplll.la:	commands text
+local/lib/libfplll.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0.1.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
+```
+
+
+Hence I conclude this is probably working on OpenSolaris, and is certainly an improvement over the libfplll.p0.spkg. Since Sage does not build fully as an OpenSolaris application, it's impossible to run the doctests and prove conclusively this is working on OpenSolaris x64.
+
+## Testing on OpenSolaris x64 as a 32-bit build (`SAGE64` was unset)
+ * Sun Ultra 27 
+ * 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
+ * 12 GB RAM
+ * OpenSolaris 2009.06 snv_134 X86
+ * Sage 4.5.rc0
+ * gcc 4.4.4 configured to use the Sun linker and the GNU assembler
+ * SAGE64 was unset. 
+
+Since I already had a 64-bit build, a quick test was done to fool the Sage build process into trying to make a 32-bit version of libfplll. This could not be expected to produce a binary, as gmp was already built 64-bit. In fact, a successful installation of libfplll would have indicated a bug!
+
+
+```
+drkirkby`@`hawk:~/sage-4.5.rc0$ rm local/lib/sage-64.txt
+drkirkby`@`hawk:~/sage-4.5.rc0$ unset SAGE64
+drkirkby`@`hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
+<SNIP>
+ld: fatal: file /export/home/drkirkby/sage-4.5.rc0/local/lib/libmpfr.so: wrong ELF class: ELFCLASS64
+ld: fatal: file processing errors. No output written to generate
+collect2: ld returned 1 exit status
+make[1]: *** [generate] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory `/export/home/drkirkby/sage-4.5.rc0/spkg/build/libfplll-3.0.12.p1/src/src'
+make: *** [all-recursive] Error 1
+Error building libfplll
+
+real	0m9.185s
+user	0m23.389s
+sys	0m3.792s
+sage: An error occurred while installing libfplll-3.0.12.p1
+```
+
+The failure to link to the 64-bit GMP library is to be expected. The fact the -m64 flag was not passed to g++ when build libfplll indicates that the code should work when SAGE64 is *not* set to "yes"
+
+## Testing on Solaris 10 SPARC as a 64-bit build (`SAGE64="yes"`)
+ * Sun T4240
+ * 2 x 1167 MHz Sun T2+ UltraSPARC processors (16 cores, 128 threads in total) 
+ * 32 GB RAM
+ * Solaris 10 update 7
+ * Sage 4.5.rc0
+ * gcc 4.4.1 configured to use the Sun linker and the Sun assembler
+ * SAGE64 exported to "yes"
+
+```
+kirkby`@`t2:[~/64/sage-4.5.rc0] $ ./sage -f libfplll-3.0.12.p1
+<SNIP>
+real    4m17.508s
+user    5m32.027s
+sys     1m33.492s
+Successfully installed libfplll-3.0.12.p1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/rootpool2/local/kirkby/64/sage-4.5.rc0/spkg/build/libfplll-3.0.12.p1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing libfplll-3.0.12.p1.spkg
+```
+
+An inspection of the libraries shows they are 64-bit, as expected. 
+
+```
+kirkby`@`t2:[~/64/sage-4.5.rc0] $ file local/lib/libfplll*
+local/lib/libfplll.a:   current ar archive, not a dynamic executable or shared object
+local/lib/libfplll.la:  commands text
+local/lib/libfplll.so:  ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0.1.0:    ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
+kirkby`@`t2:[~/64/sage-4.5.rc0] $ 
+```
+
+
+
+## Testing on Solaris 10 SPARC as a 32-bit build (`SAGE64` was unset)
+ * Sun Blade 2000
+ * 2 x 1200 MHz UltraSPARC III+ CPUs
+ * 8 GB RAM
+ * Solaris 10 update 8 10/09 (The latest release of Solaris 10)
+ * gcc 4.4.4 (uses Sun linker and assembler)
+ * Sage 4.4.4
+
+
+```
+drkirkby`@`swan:~/sage-4.4.4$ ./sage -f libfplll-3.0.12.p1
+<SNIP>
+real    2m33.007s
+user    2m40.012s
+sys     0m48.908s
+Successfully installed libfplll-3.0.12.p1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/export/home/drkirkby/sage-4.4.4/spkg/build/libfplll-3.0.12.p1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing libfplll-3.0.12.p1.spkg
+drkirkby`@`swan:~/sage-4.4.4$ file local/lib/libfplll*
+local/lib/libfplll.a:   current ar archive, not a dynamic executable or shared object
+local/lib/libfplll.la:  commands text
+local/lib/libfplll.so:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0:        ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
+local/lib/libfplll.so.0.1.0:    ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
+```
+
+
+Sage at least works, though I do not know what doc tests would prove that libfplll was working. But I think it's a safe assumption that libfplll would have built ok. 
+
+```
+drkirkby`@`swan:~/sage-4.4.4$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: 1+1
+2
+sage:
+```
+
+## Testing on OS X (bsd.math) This defaults to 64-bit, so no need to set SAGE64
+ * OS X 10.6
+ * gcc 4.2.1
+| Sage Version 4.4.4, Release Date: 2010-06-23                       |
+| Type notebook() for the GUI, and license() for information.        |
+Again, libfplll builds ok. 
+
+```
+[kirkby`@`bsd sage-4.5.rc0]$ ./sage -f libfplll-3.0.12.p1
+<SNIP>
+make[1]: Nothing to be done for `check-am'.
+
+real	1m5.418s
+user	0m31.424s
+sys	0m12.003s
+Successfully installed libfplll-3.0.12.p1
+```
+
+
+So I think this is pretty convincing that this is building properly.
+
+
+---
+
+Comment by drkirkby created at 2010-07-14 15:48:15
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+Replaces earlier patch - work in a different way.
+
+
+---
+
+Comment by drkirkby created at 2010-07-30 10:35:09
+
+Replying to [comment:19 drkirkby]:
+> Hi William, 
+> 
+> your solution of setting CC="gcc -m64" works well. 
+
+Any chance of this being reviewed? William and I can review it together, as long as we are revising changes made by the other. I've confirmed William's suggestion works, so if he confirms my implementation works, this should be ok for us both to review it. 
+
+Dave
+
+
+---
+
+Comment by wjp created at 2010-07-30 11:16:10
+
+I don't think William was involved in this ticket, so I'm going to assume you mean me :-)
+
+
+I don't really like how all this logic is going into spkg-install files. If this keeps up, every spkg-install file will end up having pages and pages of code which is common to (almost) every spkg-install, and this will make maintaining that common code a mess. Additionally, it makes it very untransparent what effect the various environment variables that can be set have (and for that matter _which_ environment variables affect the build).
+
+I'd prefer this being moved up either to a file which is sourced in spkg-install, or the relevant environment variables being set higher up. You've no doubt been following build system discussions much more closely than I have. Do you know if there has been any talk about moving in this direction already?
+
+
+---
+
+Comment by drkirkby created at 2010-07-30 13:10:10
+
+Replying to [comment:22 wjp]:
+> I don't think William was involved in this ticket, so I'm going to assume you mean me :-)
+
+Sorry Willem, I did mean you.  
+
+> I don't really like how all this logic is going into spkg-install files. If this keeps up, every spkg-install file will end up having pages and pages of code which is common to (almost) every spkg-install, and this will make maintaining that common code a mess. Additionally, it makes it very untransparent what effect the various environment variables that can be set have (and for that matter _which_ environment variables affect the build).
+
+I do agree in principle, but we have tried in the past (e.g. #7818) to set things like CFLAGS globally, and it just failed - totally messing up Cython in particular. 
+
+Different packages in Sage have different ways of how to specify 64-bit builds. ATLAS takes a command line option (-b64), zlib takes a command line option (--64), some need CFLAGS set, some need an ABI set. 
+
+Some (in fact most) packages use "gcc" irrespective of the setting of the variable CC, so setting CC is pointless, as packages have "gcc" hard-coded in them. At one point I started fixing some of these, so they would use $CC, but I gave up, as there are so many of them - see for example #7024, #7027, #7038, #7041, #7048, #7066, #7069, #7071, etc etc.)
+
+To my knowledge, there are only three tickets that need this change of adding -m64 to $CC. 
+
+ * This ticket
+ * Pynac #7861
+ * Numpy #8086
+
+I don't think there will be any more either, as I have managed to build a 64-bit Sage on Solaris 10 on the SPARC processor using this change. 
+
+Implementing a global change is likely to cause more problems than on 3 tickets. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-08-02 17:47:08
+
+I don't know if anyone else has any comments on this. The package at 
+
+http://boxen.math.washington.edu/home/kirkby/patches/libfplll-3.0.12.p1.spkg
+
+solves the problem, and I really doubt any other way to solve this problem such as globally setting compilers would be a good idea, given different packages handle 64-bit builds in different ways. 
+
+It only needs this simple change, and similar ones for Pynac (#7861) and Numpy (#8086), with a few totally different changes to ATLAS to get a 64-bit SPARC version of Sage built. From there, we can start debugging it, which will no doubt present some problems. 
+
+Dave
+
+
+---
+
+Comment by jhpalmieri created at 2010-08-02 18:02:39
+
+Sorry for not commenting earlier.  The patch looks good.  I've been testing and it seems to work on various different machines, both 32-bit and 64-bit.  I'm waiting until the build on mark2 finishes, which could be several weeks :)   Then I'll give it a positive review.
+
+
+---
+
+Comment by jhpalmieri created at 2010-08-02 20:11:13
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by jhpalmieri created at 2010-08-02 20:11:13
+
+Okay, looks good.
+
+
+---
+
+Comment by drkirkby created at 2010-08-07 22:33:27
+
+## Note to the release manager
+Just drop in 
+
+http://boxen.math.washington.edu/home/kirkby/patches/libfplll-3.0.12.p1.spkg 
+
+There are no library patches. All patches are in the .spkg file and are committed to the repository.
+
+
+---
+
+Comment by mpatel created at 2010-08-09 09:37:11
+
+Resolution: fixed

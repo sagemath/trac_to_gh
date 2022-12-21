@@ -1,0 +1,74 @@
+# Issue 9843: Fix relevant 'make doc-pdf' warnings
+
+Issue created by migration from Trac.
+
+Original creator: mpatel
+
+Original creation time: 2010-08-31 23:27:06
+
+Assignee: mvngu
+
+[Reported Leif Leonhardy on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/cc9e52f4c97dd887#cc9e52f4c97dd887):
+
+
+```sh
+$ grep -i warning docpdf.log | grep -v "0 warn" | sort | uniq -c | sort -n 
+      1 /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/tutorial/sagetex.rst:: WARNING: unusable reference target found: ../installation/index.html
+      1 /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/fr/tutorial/sagetex.rst:: WARNING: unusable reference target found: ../../en/installation/index.html
+      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/faq/faq-usage.rst:: WARNING: unusable reference target found: about:plugins
+      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/reference/other/sagetex.rst:: WARNING: unusable reference target found: ../../installation/index.html
+      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/tutorial/introduction.rst:: WARNING: unusable reference target found: ../installation/index.html
+      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/fr/tutorial/introduction.rst:: WARNING: unusable reference target found: ../../en/installation/index.html
+      2 build succeeded, 1 warning.
+      2 build succeeded, 2 warnings.
+      3 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+      4 )pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+      5 [5322] [5323] [5324] [5325] [5326] [5327] [5328]pdfTeX warning (ext4): destinat
+      5                                                    [5329]pdfTeX warning (ext4):
+      5 [5330]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo
+      5 [5331]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo
+      5 [5332]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo
+      5 [5333]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo
+      5 [5504pdfTeX warning (ext4): destination with the same identifier (name{mcd}) ha
+      5 dfTeX warning (ext4): destination with the same identifier (name{sage.modular.m
+      5 Package amsmath Warning: Foreign command \atopwithdelims;
+      5 Package amsmath Warning: Foreign command \over;
+      5 pdfTeX warning (dest): name{sudoku-escargot} has been referenced but does not e
+      5 pdfTeX warning (dest): name{sudoku-royle} has been referenced but does not exis
+      5 pdfTeX warning (dest): name{sudoku-top95} has been referenced but does not exis
+      5 pdfTeX warning (dest): name{sudoku-wikipedia} has been referenced but does not 
+      5                                                   pdfTeX warning (ext4): destin
+      5 (see the transcript file for additional information)pdfTeX warning (dest): name
+      5 []\T1/ptm/b/n/10 Warning:  \T1/ptm/m/n/10 You should not cre-ate in-stances of 
+      5 TeX warning (ext4): destination with the same identifier (name{sage.modular.mod
+      8                                                    [1])pdfTeX warning (ext4): d
+      8                                                    [1]pdfTeX warning (ext4): de
+     20 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd)pdfTeX warning (ext4): des
+     45                        [1]pdfTeX warning (ext4): destination with the same iden
+     45 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+     50 pdfTeX warning (ext4): destination with the same identifier (name{sage.modular.
+    735 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+```
+
+
+(The output above is from `make doc-pdf` for 4.5.3.rc0 on sage.math.  [Here's] the full log.)
+
+As [John Cremona suggests](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/6a2c74b8b1490f51#6a2c74b8b1490f51), many of these may be raised by Sphinx itself.
+
+Some of the others are false positives, but others appears to be problems with the Sage documentation.
+
+
+---
+
+Comment by leif created at 2010-09-01 13:40:59
+
+Changing keywords from "" to "LaTeX, documentation, PDF, Sphinx, warning".
+
+
+---
+
+Comment by leif created at 2010-09-01 13:40:59
+
+Thanks for doing my job, Mitesh. :)
+
+(I wanted to sort the warnings by category, but trac was continually unavailable... In general, `"0 warn"` should be substituted by `" 0 warn"`.)

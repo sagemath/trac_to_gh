@@ -1,0 +1,357 @@
+# Issue 7097: bug in polynomial factorization over number fields
+
+Issue created by migration from Trac.
+
+Original creator: cremona
+
+Original creation time: 2009-10-02 15:36:55
+
+Assignee: tbd
+
+Keywords: polynomial factor root number field
+
+Using 4.1.2.rc0.
+
+Define a number field K with the irreducible polynomial g of degree 24, and another polynomial f:
+
+```
+sage: x = polygen(QQ)
+sage: f = 8*x^9 + 42*x^6 + 6*x^3 - 1
+sage: g = x^24 - 12*x^23 + 72*x^22 - 286*x^21 + 849*x^20 - 2022*x^19 + 4034*x^18 - 6894*x^17 + 10182*x^16 - 13048*x^15 + 14532*x^14 - 13974*x^13 + 11365*x^12 - 7578*x^11 + 4038*x^10 - 1766*x^9 + 762*x^8 - 408*x^7 + 236*x^6 - 126*x^5 + 69*x^4 - 38*x^3 + 18*x^2 - 6*x + 1
+sage: assert g.is_irreducible()
+sage: K.<a> = NumberField(g)
+```
+
+
+f has a root in K:
+
+```
+sage: x0 = 3260097/3158212*a^22 - 35861067/3158212*a^21 + 197810817/3158212*a^20 - 722970825/3158212*a^19 + 1980508347/3158212*a^18 - 4374189477/3158212*a^17 + 4059860553/1579106*a^16 - 6442403031/1579106*a^15 + 17542341771/3158212*a^14 - 20537782665/3158212*a^13 + 20658463789/3158212*a^12 - 17502836649/3158212*a^11 + 11908953451/3158212*a^10 - 6086953981/3158212*a^9 + 559822335/789553*a^8 - 194545353/789553*a^7 + 505969453/3158212*a^6 - 338959407/3158212*a^5 + 155204647/3158212*a^4 - 79628015/3158212*a^3 + 57339525/3158212*a^2 - 26692783/3158212*a + 1636338/789553
+sage: f(x0)
+0
+```
+
+(in fact f splits over K) but the root-finder does not find any:
+
+```
+sage: f.roots(K)
+[]
+```
+
+What is worse, even though f factors over QQ:
+
+```
+sage: f.factor()
+(8) * (x^3 + 1/4) * (x^6 + 5*x^3 - 1/2)
+```
+
+it apparently does not over K!
+
+```
+sage: f.change_ring(K).factor()
+(64) * (x^9 + 21/4*x^6 + 3/4*x^3 - 1/8)
+```
+
+
+Remark: f is the 4-division polynomial of the elliptic curve [0,0,1,0,0] and K is the 4-division field.
+
+
+
+---
+
+Comment by cremona created at 2009-10-02 16:16:51
+
+Since Sage uses pari's nffactor() for factoring polynomials over number fields, I tried the same example in pari (gp version 2.4.3 (development svn-11651) to be precise).  there, it found one linear factor but failed to factor the other degree 8 part.  This suggests that we'll have to wait for bug fixes in pari before this can be closed.
+
+
+---
+
+Comment by mhansen created at 2009-10-03 04:59:54
+
+It looks like Maxima does this:
+
+
+```
+(%i9) f;
+
+(%o9) 8*x^9+42*x^6+6*x^3-1
+(%i10) h;
+
+(%o10) a^24-12*a^23+72*a^22-286*a^21+849*a^20-2022*a^19+4034*a^18-6894*a^17
+           +10182*a^16-13048*a^15+14532*a^14-13974*a^13+11365*a^12-7578*a^11
+           +4038*a^10-1766*a^9+762*a^8-408*a^7+236*a^6-126*a^5+69*a^4-38*a^3
+           +18*a^2-6*a+1
+(%i11) factor(f, h);
+
+(%o11) (3158212*x-3260097*a^22+35861067*a^21-197810817*a^20+722970825*a^19
+                 -1980508347*a^18+4374189477*a^17-8119721106*a^16
+                 +12884806062*a^15-17542341771*a^14+20537782665*a^13
+                 -20658463789*a^12+17502836649*a^11-11908953451*a^10
+                 +6086953981*a^9-2239289340*a^8+778181412*a^7-505969453*a^6
+                 +338959407*a^5-155204647*a^4+79628015*a^3-57339525*a^2
+                 +26692783*a-6545352)
+        *(3158212*x+188516*a^22-2073676*a^21+11590464*a^20-43325980*a^19
+                   +122225476*a^18-278937216*a^17+535796097*a^16
+                   -882319104*a^15+1254071028*a^14-1544093240*a^13
+                   +1646197106*a^12-1500956232*a^11+1138302192*a^10
+                   -689737648*a^9+322105959*a^8-122939196*a^7+58570992*a^6
+                   -45023100*a^5+32705982*a^4-17015624*a^3+5914800*a^2
+                   -1247596*a+2111017)
+        *(3158212*x+3637129*a^22-40008419*a^21+220991745*a^20-809622785*a^19
+                   +2224959299*a^18-4932063909*a^17+9191313300*a^16
+                   -14649444270*a^15+20050483827*a^14-23625969145*a^13
+                   +23950858001*a^12-20504749113*a^11+14185557835*a^10
+                   -7466429277*a^9+2883501258*a^8-1024059804*a^7+623111437*a^6
+                   -429005607*a^5+220616611*a^4-113659263*a^3+69169125*a^2
+                   -29187975*a+10767386)
+        *(3376128628*x-13037418309*a^23+147986265103*a^22-842436166379*a^21
+                      +3179679952500*a^20-8992812318199*a^19
+                      +20481211157658*a^18-39183513868608*a^17
+                      +64201696547469*a^16-90642645538435*a^15
+                      +110634699001317*a^14-116846928947581*a^13
+                      +105515418570210*a^12-78998183270169*a^11
+                      +47113502861424*a^10-21976590852910*a^9
+                      +8895376932597*a^8-4325369983083*a^7+2567289532461*a^6
+                      -1378351513869*a^5+720259899784*a^4-435299125839*a^3
+                      +222726821994*a^2-94507315024*a+19159220127)
+        *(3376128628*x-6387038940*a^23+73350186008*a^22-421620000598*a^21
+                      +1604591400717*a^20-4568987819322*a^19
+                      +10461603417962*a^18-20101918099398*a^17
+                      +33066824065209*a^16-46858866959908*a^15
+                      +57379037846352*a^14-60764137178426*a^13
+                      +55013146367973*a^12-41280470420502*a^11
+                      +24608001215702*a^10-11382737677922*a^9
+                      +4526140881603*a^8-2209906206144*a^7+1347712439108*a^6
+                      -715822479258*a^5+359494446867*a^4-218463619790*a^3
+                      +116078029422*a^2-46409847590*a+8745186851)
+        *(3376128628*x-263340429*a^23+4770936780*a^22-37531645806*a^21
+                      +181956914439*a^20-627692491480*a^19+1675167744677*a^18
+                      -3655686220725*a^17+6748030279365*a^16
+                      -10698769298897*a^15+14629386661812*a^14
+                      -17273544259614*a^13+17573023624705*a^12
+                      -15147774806946*a^11+10628171669139*a^10
+                      -5718069302755*a^9+2236895473851*a^8-737433500223*a^7
+                      +412745999502*a^6-309054161436*a^5+167184773693*a^4
+                      -83494234294*a^3+51866715375*a^2-30222204871*a
+                      +8665827713)
+        *(3376128628*x+263340429*a^23-1285893087*a^22-803834817*a^21
+                      +29502848934*a^20-145163320445*a^19+441995678266*a^18
+                      -1020322330188*a^17+1931951582949*a^16
+                      -3075088381381*a^15+4123376691387*a^14
+                      -4681345409271*a^13+4510874165736*a^12
+                      -3562757570835*a^11+2102499569980*a^10-788884502934*a^9
+                      +156904830609*a^8-94442429205*a^7+128135345755*a^6
+                      -53293444647*a^5-1271006050*a^4-1628113741*a^3
+                      +9429236850*a^2+1687619844*a-1668846425)
+        *(3376128628*x+6387038940*a^23-73551709612*a^22+423836760242*a^21
+                      -1616981606733*a^20+4615303291942*a^19
+                      -10592262451806*a^18+20400101983302*a^17
+                      -33639590092902*a^16+47802066082084*a^15
+                      -58719639775284*a^14+62414772851986*a^13
+                      -56772931074287*a^12+42884992632510*a^11
+                      -25824846258950*a^10+12120067223634*a^9
+                      -4870472151774*a^8+2341328206668*a^7-1410324829556*a^6
+                      +763952173158*a^5-394457141625*a^4+236653321846*a^3
+                      -122400950622*a^2+47743527714*a-11001864024)
+        *(3376128628*x+13037418309*a^23-151874356004*a^22+885205166290*a^21
+                      -3415920127905*a^20+9858299075364*a^19
+                      -22859692648289*a^18+44455890187329*a^17
+                      -74027210465169*a^16+106302901463065*a^15
+                      -132068666212380*a^14+142103089963586*a^13
+                      -131118885773279*a^12+100917760071966*a^11
+                      -62277864187039*a^10+29958203750023*a^9
+                      -11977839777399*a^8+5420089913559*a^7-3233395658614*a^6
+                      +1836958507752*a^5-956099056943*a^4+556800877986*a^3
+                      -296668616619*a^2+125709260299*a-30669555761)
+        /5831063333391611960658932226137207117687009423878679719420581600168485617664
+```
+
+
+
+---
+
+Comment by was created at 2009-10-03 06:44:35
+
+> This suggests that we'll have to wait for bug fixes in pari before this can be closed. 
+
+Another option might be to implement the standard "factor over ZZ ==> factor over any number field algorithm" from Cohen's book.  I implemented this over finite fields at Bug Days to try to get around Singular's finite field poly factorization being broken...  We'll either discover that pari's factoring over ZZ is also broken or have a workaround.  (In the case of Singular I discovered that their factoring over GF(p) is also broken, unfortunately.)  This isn't a difficult algorithm: take the norm of the polynomial (product of conjugates), then factor, then take some GCD with a resultant or something.
+
+
+---
+
+Comment by was created at 2009-10-04 01:15:24
+
+
+```
+John Cremona responds:
+> I'm sure that is what pari already does -- you have to avoid some
+> special cases, where the norm is not square free.  That is the case
+> here, so the avoidance is not working.
+
+*Why* are you sure that this is what PARI already does?  
+
+The relevant paper is: http://www.math.fsu.edu/~hoeij/papers/factor_Oct12_2004.dvi
+
+Note that this paper contains statements like: "Then one has a polynomial time 
+algorithm that runs very well in practice, with running times that should be 
+the same as those reported in [Bel03] for QQ[X]."   Such a statement would 
+perhaps be silly if one just reduces to the QQ case by taking norms.  
+
+I'm not 100% sure of anything though since I haven't read the relevant pari
+source code yet. 
+
+William
+```
+
+
+
+---
+
+Comment by cremona created at 2009-10-18 15:45:57
+
+Changing status from new to needs_work.
+
+
+---
+
+Comment by cremona created at 2009-10-18 15:45:57
+
+I reported the bug to pari developers (it is bug #1006 there).  Karim just replied as follows:
+
+```
+* John Cremona [2009-10-02 18:42]:
+> Factoring a non-monic integer polynomial of degree 9 over a number
+> field of degree 24 yields an incomplete factorization.
+[...]
+> ? g = y^24 - 12*y^23 + 72*y^22 - 286*y^21 + 849*y^20 - 2022*y^19 +
+> 4034*y^18 - 6894*y^17 + 10182*y^16 - 13048*y^15 + 14532*y^14 -
+> 13974*y^13 + 11365*y^12 - 7578*y^11 + 4038*y^10 - 1766*y^9 + 762*y^8 -
+> 408*y^7 + 236*y^6 - 126*y^5 + 69*y^4 - 38*y^3 + 18*y^2 - 6*y + 1
+> %1 = y^24 - 12*y^23 + 72*y^22 - 286*y^21 + 849*y^20 - 2022*y^19 +
+> 4034*y^18 - 6894*y^17 + 10182*y^16 - 13048*y^15 + 14532*y^14 -
+> 13974*y^13 + 11365*y^12 - 7578*y^11 + 4038*y^10 - 1766*y^9 + 762*y^8 -
+> 408*y^7 + 236*y^6 - 126*y^5 + 69*y^4 - 38*y^3 + 18*y^2 - 6*y + 1
+> ? K = nfinit(g);
+> ? f = 8*x^9 + 42*x^6 + 6*x^3 - 1
+> %3 = 8*x^9 + 42*x^6 + 6*x^3 - 1
+> ? nffactor(K,f)
+>
+> returns factors of degrees 1 and 8, but there should be 9 linear
+> factors.  In fact, K is the 4-division field of the elliptic curve
+> [0,0,1,0,0] and f is the 4-division polynomial.
+
+The logic used to handle non-monic polynomials in nffactor() was flawed,
+leading to "increasing" leading coefficients that eventually became too
+large compared to our a priori factor bound. Thus factors were missed.
+
+Neither factornf(), nor nfroots() are affected.
+
+Fixed in svn. The fix is non trivial and quite extensive, I won't be
+able to backport it to pari-stable in a safe way. pari-stable user will
+have to rely on factornf() to handle non-monic polynomials for a few
+more months.
+
+Cheers,
+
+   K.B.
+```
+
+
+Since it will be a while until this bugfix in pari percolates through to Sage, I suggest that the code in Sage does a change of variables so that the polynomial passed to pari's `nffactor()` is always monic.
+
+
+---
+
+Comment by cremona created at 2009-10-19 08:22:58
+
+
+```
+* John Cremona [2009-10-18 17:41]:
+> Thanks.  I had not been aware of the difference between factornf and
+> nffactor; in this case, factornf would suffice.  However, Sage is
+> using nffactor to factor polynomials over number fields.  I will
+> suggest to Sage that (until the verion of the pari library in Sage is
+> upgraded) that a work-around is implemented so that nffactor is only
+> passed monic polynomials.
+
+factornf() always uses Trager's trick, reducing to factorization over Z.
+
+nffactor() may also use that trick, but only when it would improve the
+running times; and it should be (much) more efficient when the trick is
+not used.
+
+The only reason why factornf() hasn't been obsoleted yet is that
+nffactor() used to require a 'nf' structure as input; but this is no
+longer the case.
+
+For users of the svn version, where the bug you reported is now fixed,
+there is no point whatsoever in using factornf.
+
+Cheers,
+
+   K.B.
+```
+
+
+
+---
+
+Attachment
+
+Applies to 4.3.rc0
+
+
+---
+
+Comment by cremona created at 2009-12-13 17:57:07
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by cremona created at 2009-12-13 17:57:07
+
+The patch seems to fix the problem by rescaling the polynomial so that it is monic (and rescaling the factors found later).
+
+I am somewhat confused since the code already made polynomials monic (by dividing by the leading coefficient).  Instead, I replace f(x) by u**(d-1)*f(x/u) where u is the leading coefficient and d the degree, which preserves integrality, and that seems to work better.
+
+We should still use factornf instead, once we upgrade the pari library to a version in which the upstream bug has been fixed.
+
+
+---
+
+Comment by mhansen created at 2009-12-27 15:59:02
+
+Looks good.
+
+
+---
+
+Comment by mhansen created at 2009-12-27 15:59:02
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mhansen created at 2010-01-04 01:57:09
+
+Resolution: fixed
+
+
+---
+
+Comment by mhansen created at 2010-03-06 06:26:12
+
+Replying to [comment:7 cremona]:
+> We should still use factornf instead, once we upgrade the pari library to a version in which the upstream bug has been fixed.
+
+There is the latest stable PARI at #8453.
+
+
+---
+
+Comment by cremona created at 2010-03-11 21:14:42
+
+This is all solved by using a later pari release as in the spkg at #8453.

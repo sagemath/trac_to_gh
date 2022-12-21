@@ -1,0 +1,257 @@
+# Issue 7153: Doctest failures don't kill processes and bring system to a halt.
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2009-10-08 09:54:11
+
+Assignee: tbd
+
+Testing Sage on Solaris is next to impossible, as doctest failures (and there are several) each leave processes running, so the as more tests fail, so the load average rises and rises. I think I've only once run all the tests - it just puts too much load on the machine. 
+
+Here's a fuller description, which I also posted to the sage developers mailing list under the title: [Serious issues the way doctest failures are handled.](http://groups.google.com/group/sage-devel/browse_thread/thread/f5502f8489cc2b31) 
+
+I've just tried the patch at #6788
+
+It does not appear to have solved my problem, but it highlights one that has bugged me for some time - one where running doctests can bring the machine to an almost standstill.
+
+I've marked this as *critical*, as for Solaris at least, it makes testing Sage virtually impossible. I've seen load averages as high as 17 testing Sage, which is clearly unacceptable on a dual processor machine. (This is a Sun Blade 2000, 2 x 1200 MHz, 8 GB RAM, Solaris 10 update 7.)
+
+1) First I run the test.
+
+
+
+```
+drkirkby`@`swan:[~/sage/gcc32-sage-4.1.2.rc0] $ sage -t ./devel/sage-main/build/sa ge/symbolic/assumptions.py
+sage -t  "devel/sage-main/build/sage/symbolic/assumptions.py"
+
+```
+
+
+Here's the state of my system sometime during the test. python is using virtually no CPU time, and maxima at 46% is almost CPU bound, as there are two CPUs, and prstat shows the percentage as a total.
+
+
+```
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 26010 drkirkby   30M   24M cpu1    10    0   0:03:56  46% maxima/1
+   692 drkirkby  241M  117M run     58    0   1:43:52 3.4% Xsun/1
+ 18556 drkirkby  179M  141M run     59    0   0:26:24 1.8% firefox-bin/6
+   962 drkirkby   98M   60M sleep   55    0   0:26:29 0.6% gnome-terminal/2
+ 16255 drkirkby  250M  181M run     49    0   0:07:41 0.4% acroread/1
+ 26050 drkirkby 3520K 2752K cpu0    59    0   0:00:00 0.1% prstat/1
+   970 drkirkby  236M   73M sleep   49    0   0:05:14 0.1% java/18
+ 10809 root       21M   10M sleep   49    0   0:02:06 0.1% smbd/1
+   792 noaccess  262M  142M run     59    0   0:03:26 0.1% java/18
+ 25974 drkirkby 8136K 5504K run     59    0   0:00:00 0.1% python/1
+ 10807 drkirkby   20M   14M sleep   49    0   0:15:57 0.0% sunpcbinary/3
+   910 drkirkby   77M   37M sleep   59    0   0:01:31 0.0% gnome-panel/1
+   950 drkirkby   67M 4176K sleep   49    0   0:00:51 0.0% mixer_applet2/1
+   903 drkirkby   12M 2552K sleep   59    0   0:00:38 0.0% gnome-smproxy/1
+ 25905 drkirkby 3440K 2584K run     58    0   0:00:00 0.0% bash/1
+Total: 133 processes, 334 lwps, load averages: 1.67, 1.46, 1.09
+```
+
+
+
+
+Now the test fails.
+
+
+
+```
+*** *** Error: TIMED OUT! PROCESS KILLED! *** ***
+*** *** Error: TIMED OUT! *** ***
+A mysterious error (perhaps a memory error?) occurred, which may have crashed do ctest.
+         [360.5 s]
+exit code: 768
+
+----------------------------------------------------------------------
+The following tests failed:
+
+
+        sage -t  "devel/sage-main/build/sage/symbolic/assumptions.py"
+Total time for all tests: 360.5 seconds
+
+```
+
+
+At this point, I would expect both python and maxima to stop running, since they have done their job. But this is not the case. After the test failure, so the CPU usage just keeps climbing.
+
+
+```
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 26010 drkirkby   30M   24M run     10    0   0:07:29  45% maxima/1
+   692 drkirkby  242M  118M cpu0    59    0   1:44:10 3.9% Xsun/1
+ 13996 drkirkby  337M  266M sleep   49    0   0:31:06 3.4% thunderbird-bin/8
+ 18556 drkirkby  179M  141M run     59    0   0:26:32 2.0% firefox-bin/6
+   962 drkirkby  102M   64M sleep   59    0   0:26:32 0.4% gnome-terminal/2
+ 16255 drkirkby  250M  181M run     49    0   0:07:43 0.4% acroread/1
+   906 drkirkby  103M   41M sleep   59    0   0:07:24 0.3% metacity/1
+ 26050 drkirkby 3880K 3104K sleep   59    0   0:00:01 0.2% prstat/1
+   970 drkirkby  236M   73M sleep   49    0   0:05:15 0.1% java/18
+   925 drkirkby   97M   30M sleep   49    0   0:02:12 0.1% wnck-applet/1
+   792 noaccess  262M  142M sleep   59    0   0:03:26 0.1% java/18
+   903 drkirkby   12M 2552K sleep   59    0   0:00:38 0.0% gnome-smproxy/1
+ 26069 drkirkby 3376K 2640K cpu1    59    0   0:00:00 0.0% prstat/1
+ 10807 drkirkby   20M   13M sleep   49    0   0:15:57 0.0% sunpcbinary/3
+ 10809 root       21M   10M sleep   49    0   0:02:06 0.0% smbd/1
+Total: 129 processes, 330 lwps, load averages: 1.86, 1.67, 1.25
+
+```
+
+
+Give it a bit longer, and so maxima is still eating up tons of cpu time.
+
+
+
+```
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 26010 drkirkby   30M   24M cpu1    10    0   0:10:27  46% maxima/1
+   692 drkirkby  241M  117M run     52    0   1:44:25 3.4% Xsun/1
+ 18556 drkirkby  179M  141M sleep   59    0   0:26:40 1.8% firefox-bin/6
+ 13996 drkirkby  337M  266M sleep   49    0   0:31:17 1.0% thunderbird-bin/8
+ 16255 drkirkby  250M  181M sleep   49    0   0:07:44 0.4% acroread/1
+   962 drkirkby  102M   64M run     59    0   0:26:34 0.3% gnome-terminal/2
+   906 drkirkby  103M   41M sleep   59    0   0:07:25 0.3% metacity/1
+ 26050 drkirkby 3880K 3104K sleep   59    0   0:00:01 0.2% prstat/1
+   970 drkirkby  236M   73M sleep   49    0   0:05:15 0.1% java/18
+   792 noaccess  262M  142M sleep   59    0   0:03:26 0.1% java/18
+ 26072 drkirkby 3376K 2640K cpu0    59    0   0:00:00 0.1% prstat/1
+   925 drkirkby   97M   30M sleep   49    0   0:02:12 0.0% wnck-applet/1
+ 10807 drkirkby   20M   13M sleep   49    0   0:15:57 0.0% sunpcbinary/3
+   910 drkirkby   77M   37M sleep   59    0   0:01:32 0.0% gnome-panel/1
+ 10809 root       21M   10M sleep   49    0   0:02:06 0.0% smbd/1
+Total: 129 processes, 331 lwps, load averages: 1.68, 1.70, 1.35
+
+
+```
+
+
+That load average wont bring the machine to a halt, but when I run the test again, so the old maxima carries along eating up CPU time, and a new one (the test in progress) is also eating up CPU time.
+
+
+```
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 26010 drkirkby   30M   24M cpu0    10    0   0:15:49  35% maxima/1
+ 26140 drkirkby   30M   24M run     10    0   0:01:25  34% maxima/1
+   692 drkirkby  241M  117M sleep   59    0   1:44:58 4.5% Xsun/1
+ 13996 drkirkby  337M  266M sleep   49    0   0:31:48 3.1% thunderbird-bin/9
+ 18556 drkirkby  179M  140M run     59    0   0:26:54 1.8% firefox-bin/6
+   962 drkirkby  102M   64M sleep   59    0   0:26:40 1.1% gnome-terminal/2
+   507 root       17M 7504K sleep   59    0   0:00:04 0.7% fmd/20
+   906 drkirkby  103M   41M sleep   59    0   0:07:27 0.6% metacity/1
+ 16255 drkirkby  250M  179M run     49    0   0:07:47 0.4% acroread/1
+ 26050 drkirkby 3880K 2904K sleep   59    0   0:00:03 0.2% prstat/1
+    91 root     4184K 2552K sleep   59    0   0:00:00 0.2% devfsadm/6
+   925 drkirkby   97M   30M sleep   49    0   0:02:12 0.2% wnck-applet/1
+   912 drkirkby   82M   13M sleep   59    0   0:00:20 0.2% nautilus/5
+   970 drkirkby  236M   73M run     49    0   0:05:16 0.1% java/18
+ 26171 drkirkby 3520K 2784K cpu1    59    0   0:00:00 0.1% prstat/1
+Total: 138 processes, 341 lwps, load averages: 3.30, 2.35, 1.73
+
+
+```
+
+
+After that test fails, so I'm left with two copies of maxima both eating up CPU time.
+
+
+```
+
+   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 26140 drkirkby   30M   24M run     10    0   0:05:29  36% maxima/1
+ 26010 drkirkby   30M   24M run     10    0   0:19:57  35% maxima/1
+   692 drkirkby  242M  117M cpu1    59    0   1:45:23 4.5% Xsun/1
+ 13996 drkirkby  337M  266M sleep   49    0   0:32:06 2.2% thunderbird-bin/8
+ 18556 drkirkby  179M  140M sleep   59    0   0:27:05 1.8% firefox-bin/6
+   906 drkirkby  103M   41M sleep   59    0   0:07:28 1.1% metacity/1
+   925 drkirkby   97M   30M sleep   49    0   0:02:14 1.1% wnck-applet/1
+   962 drkirkby  102M   64M cpu1    59    0   0:26:43 0.7% gnome-terminal/2
+ 16255 drkirkby  250M  179M run     49    0   0:07:49 0.4% acroread/1
+ 26050 drkirkby 3880K 2856K sleep   59    0   0:00:05 0.2% prstat/1
+   970 drkirkby  236M   73M sleep   49    0   0:05:17 0.1% java/18
+   903 drkirkby   12M 2544K sleep   59    0   0:00:39 0.1% gnome-smproxy/1
+   910 drkirkby   77M   37M sleep   59    0   0:01:32 0.1% gnome-panel/1
+   792 noaccess  262M  142M sleep   59    0   0:03:27 0.1% java/18
+ 26187 drkirkby 3376K 2640K cpu0    59    0   0:00:00 0.0% prstat/1
+Total: 133 processes, 334 lwps, load averages: 3.27, 2.87, 2.15
+
+
+```
+
+
+
+It goes without saying, if its run again, then it will create a third maxima process, fail again, then I have 3 maxima processes running.
+
+On occasions this as sent the load average up to about 17 on my box, as test failures are not killing the processes they created.
+
+So one might expect that killing maxima would solve my problems.
+
+drkirkby`@`swan:[~/sage/gcc32-sage-4.1.2.rc0] $ pkill -9 maxima
+
+But no, they do not!! No two python processes, which were using virtually no CPU time, take over where maxima left off, and start using CPU time.
+
+
+
+```
+  PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP
+ 25976 drkirkby  152M   94M run      0    0   0:00:56  33% python/1
+ 26106 drkirkby  152M   97M cpu0     0    0   0:00:52  31% python/1
+   692 drkirkby  242M  118M cpu1    59    0   1:45:39 5.2% Xsun/1
+ 13996 drkirkby  337M  266M sleep   49    0   0:32:24 5.1% thunderbird-bin/8
+ 18556 drkirkby  179M  140M run     59    0   0:27:12 1.8% firefox-bin/6
+   962 drkirkby  102M   64M run     56    0   0:26:45 0.8% gnome-terminal/2
+   906 drkirkby  103M   41M sleep   59    0   0:07:30 0.6% metacity/1
+ 16255 drkirkby  250M  179M sleep   49    0   0:07:51 0.4% acroread/1
+ 26191 drkirkby   30M   24M sleep   49    0   0:00:04 0.3% maxima/1
+ 26195 drkirkby   30M   24M sleep   49    0   0:00:04 0.3% maxima/1
+ 26050 drkirkby 3880K 2856K sleep   59    0   0:00:06 0.2% prstat/1
+   970 drkirkby  236M   73M sleep   49    0   0:05:18 0.1% java/18
+ 26224 drkirkby 3504K 2768K cpu1    59    0   0:00:00 0.1% prstat/1
+   925 drkirkby   97M   30M sleep   49    0   0:02:14 0.1% wnck-applet/1
+   792 noaccess  262M  142M sleep   59    0   0:03:28 0.1% java/18
+Total: 133 processes, 334 lwps, load averages: 2.98, 2.95, 2.32
+
+```
+
+
+As you can see, there is something *very* seriously wrong with the way these doctest failures are handled, which makes testing of Sage next to impossible if there are many failures.
+
+
+---
+
+Comment by mpatel created at 2010-01-20 11:32:05
+
+Could #7995 help?
+
+
+---
+
+Comment by drkirkby created at 2010-01-20 12:41:08
+
+It's hard for me to know. It's not obvious that this is designed to resolve the sort of problems I have, but I could try it, though I don't have a build of Sage handy I can patch and test. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-19 13:07:49
+
+This issue has been resolved. I'm not sure exactly what resolved it. I suspect it was #8391. 
+
+I'm not 100% there are no minor issues with processes remaining run after Sage exits, but there are no serious ones which bring the system to a halt. If minor issues are noticed, these can be put on another ticket. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-06-19 13:07:49
+
+Resolution: fixed

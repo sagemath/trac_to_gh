@@ -1,0 +1,896 @@
+# Issue 7109: polyhedra bugs with linearities, rewrite proposal
+
+Issue created by migration from Trac.
+
+Original creator: vbraun
+
+Original creation time: 2009-10-04 13:46:52
+
+Assignee: mhampton
+
+CC:  cswiercz novoselt
+
+Keywords: polyhedra
+
+The Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, "linearities" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:
+
+*H-representation: inequalities and equalities*
+
+*V-representation: conv(vertices) + IR_+{rays} + IR{lines}*
+
+It is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:
+
+```
+  sage: vert_to_ieq(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).linearities()
+  [This is the Trac macro *0, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1-macro)
+  sage: Polyhedron(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).linearities() 
+  []
+```
+
+Also, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.
+
+Finally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. 
+
+### Proposal
+
+I propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. 
+
+If one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.
+
+
+### cdd caveats
+
+cdd sometimes omits the origin as a vertex:
+
+```
+  sage: Polyhedron(ieqs=[This is the Trac macro *0, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1-macro)).vertices()
+  []
+```
+
+cdd also sometimes adds a "inequality at infininty"; Contrary to the output below, the half-line has only one face
+
+```
+  sage: Polyhedron(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).facial_incidences()
+  [This is the Trac macro *0, [0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [0-macro), [1, [1]]]
+```
+
+Given equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)
+
+### Plan
+
+1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg
+
+2) change polyhedra.py to run cdd only once in the constructor (TODO)
+
+3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an "inequality at infinity" (TODO)
+
+
+
+
+---
+
+Comment by vbraun created at 2009-10-04 13:47:38
+
+Patch for cddlib-094f.spkg
+
+
+---
+
+Attachment
+
+I think your proposal sounds very good.  I have been meaning to do something similar but haven't had time.  When I first started writing the Polyhedron class, I wasn't sure how much should be computed at initialization and how much on demand.  Now it seems clear that its worth it to compute the complementary representation right away.  Things like the face lattice, though, should be computed on-demand, but that is consistent with what you are proposing.
+
+Right now lrs is an optional package but I have been working on preparing to move it to be a standard component.  Then it should be possible to choose to use cddlib or lrs for the representation conversion.  That can wait, but I wanted to mention it so you have it in mind while writing any interface.
+
+Another refactoring I have been thinking about would compute the dimension during initialization, and then only add methods like render_solid() if the dimension was 1,2, or 3.  At some point it would be good to integrate better with the code that Andrey Novoseltsev has for lattice polytopes (this uses PALP instead of cddlib).
+
+Anyway, go for it and I will be very happy to review.  I'm glad you are interested in improving this functionality in Sage.
+
+Cheers,
+Marshall Hampton
+
+
+---
+
+Comment by vbraun created at 2009-10-09 11:30:49
+
+All the basic stuff works now, including the construction of the examples in the polytopes class. Missing bits are projections down to lower dimensions and the face lattice. I removed all triangulation-related code since a) it did not work in general and b) you can plot 3d solids without triangulating the facets.
+
+If you have any suggestions for the general structure then now would be a good time to bring them up. I have attached the full file since it is easier to read than a patch.
+
+
+---
+
+Comment by vbraun created at 2009-10-09 11:30:49
+
+Changing status from new to needs_work.
+
+
+---
+
+Attachment
+
+Refactored version of polyhedra.py
+
+
+---
+
+Comment by vbraun created at 2009-10-12 17:14:37
+
+patch version of polyhedra.py, also touches manual and all.py
+
+
+---
+
+Attachment
+
+Current revision is final version, all goals accomplished.
+
+
+---
+
+Comment by vbraun created at 2009-10-12 17:16:37
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by mhampton created at 2009-10-15 17:38:15
+
+What is the reason for the "automake-1.6 -f" part of the cddlib patch? I don't have that installed on my macs, maybe I can add it but it would be a new dependency which I think is undesirable.  Can that be avoided somehow?
+
+
+---
+
+Comment by vbraun created at 2009-10-15 17:51:59
+
+The automake part is a bit of a kludge since I don't know how other spkgs handle this. The problem is that I am adding a program to the cdd library. To convince the make system to build this program, I added it to the .am files wich automake the configure which generates the makefile. So the minimally invasive step is to edit the .am only and then rerun automake. Though cddlib is a bit fickle and only worked with automake-1.6 for me. The more compatible way would be to patch the result of automake in, but that would add autogenerated stuff to a couple of files.
+
+The third, and perhaps best option, would be to make this program a different project alltogether, and just compile it in from its own makefile. So put it in a different directory, not somewhere in cddlib.
+
+
+---
+
+Comment by vbraun created at 2009-10-15 20:52:34
+
+New version has "autoreconf -fiv" run. I think this is the easiest way to distribute everything. That way, compiling doesn't require any autotools.
+
+
+---
+
+Comment by mhampton created at 2009-10-17 20:10:50
+
+OK, that works for me now.  I am hoping to review this tomorrow, looks very good so far.  I'm excited that this will really advance polytope support for sage.
+
+
+---
+
+Comment by mhampton created at 2009-10-17 23:00:27
+
+Sage -coverage reveals a lot of untested functions.  If you are willing, I'd be happy to write those, since it will force me to really understand what you've done.  It might take me a week or two though.
+
+I also get a test failure on polytopes.great_rhombicuboctahedron, which I think I understand and can fix - the rational vertices need to be explicitly cast.  Actually I don't really understand why this wasn't a problem before, since you didn't change much there, but my fix makes it more readable anyway.
+
+
+---
+
+Comment by vbraun created at 2009-10-18 00:33:19
+
+I didn't know about "-coverage", but it passed doctest without errors or warnings with sage-4.1.1. The cast problem must be from Sage 4.1.2, I guess. 
+
+If you want to add the missing test that would be great. Email me if you have questions / comments.
+
+I tried to stick to the following general philosophy for the polytopes class:
+
+  * if the vertex coordinates can be chosen rational, then the polyhedron should be in QQ
+
+  * otherwise, the polyhedron should be over RDF by default. A rational approximation can be optional via a "field=QQ" parameter.
+
+Floating point coordinates are fine with cddlib as long as the input is sufficiently nondegenerate, and polytopes defined by vertices are no problem.
+
+
+---
+
+Comment by mhampton created at 2009-10-20 21:14:13
+
+OK, I am beginning to add doctests to everything that needs them.
+
+One thing I don't like so far is you preserved a lot of function names, but they return totally different things than they used to.  This breaks basically all of my existing use of the code, and presumably other people's as well.  For example, the vertices() function doesn't return a list of lists of numbers, but instead a generator, and the generator returns some higher-level object instead of a list.
+
+I think some break in back-compatability is definitely worth it, since I think your design is a lot cleaner and better, but it should be minimized.  A compromise would be if I modified some of those functions to behave as before, and we created some new functions that behave as yours do.  So for example, vertices() would return a list of lists as before (or perhaps a list of vectors, that would be different but wouldn't break everything), and there would be another function that returned the generator.  I don't know what a good name would be, perhaps something like vertex_generator().
+
+-Marshall
+
+
+---
+
+Comment by vbraun created at 2009-10-20 21:45:23
+
+I agree with you that compatibily should be preserved if possible. 
+
+But since the returned vertices/rays/... are now their own objects instead of just lists of numbers any old code will break even if we return lists instead of generators. On a more fundamental level, I think one should always return generators instead of lists if possible (unless one is just exposing some internal datastructure). That avoids unnecessary list creation and enables parallelism. This is why I always favoured generators over returning lists when I had the choice. 
+
+The alternative is to rewrite the code to always return lists instead of generators. I don't think anyone is going to use vertex_generator() if one can get a list out of the much shorter vertices() method.
+
+
+---
+
+Comment by mhampton created at 2009-10-20 23:03:40
+
+I don't think it will be all that hard to keep most things compatible.  Part of the point of doctests is to check back-compatibility, so I think if possible all the old doctests of things like vertices() should be put back in.  
+
+Its true that "vertices" might be chosen more often, but I think its worth it.  The present behavior has been around for almost 2 years, so its not a minor issue.  By caching lists I don't think this is terribly inefficient.  Also, anyone who can't understand what vertex_generator does probably doesn't want a generator object.  
+
+I will keep thinking about this; my understanding is improving as I write the doctests.
+
+-Marshall
+
+
+---
+
+Comment by mhampton created at 2009-10-27 00:59:32
+
+I am planning on changing things so that as many former doctests pass as possible.  I think this is doable without changing a whole lot.
+
+I am a little concerned about some major speed regressions.  I think more things need to be cached, but there might be other issues as well.  As just one example, the current polyhedra.py does:
+
+```
+time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(10)])
+```
+
+in about 0.05 seconds on my laptop, while the patched version takes about 3.5 seconds - a factor of 70.  This seems unacceptable.  I will try to profile this a bit but any  insights are appreciated.
+
+In case my tone seems overly negative, I would like to re-iterate that I am still impressed and excited by this rewrite and I think polytopes in sage will be in much better shape after this is completed.
+
+
+---
+
+Comment by vbraun created at 2009-10-28 17:10:31
+
+Previously we only eliminated redundant vertices, now we also eliminate redundant (in)equalities. I added some timing to the output:
+
+
+```
+sage: time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(14)], verbose=true)
+V-representation
+begin
+ 14 6 rational
+ 1 0 0 0 0 0
+ 1 1 1 1 1 1
+ 1 2 4 8 16 32
+[...]
+ 1 13 169 2197 28561 371293
+end
+
+# walltime used for complementary representation: 0s
+# walltime used for canonical H-representation: 6s
+# walltime used for canonical V-representation: 0s
+
+V-representation
+begin
+ 14 6 rational
+ 1 0 0 0 0 0
+ 1 1 1 1 1 1
+[...]
+ 1 13 169 2197 28561 371293
+end
+
+H-representation
+begin
+ 110 6 rational
+ 0 11880 -4578 659 -42 1
+[...]
+ 0 17160 -6026 791 -46 1
+end
+
+Vertex graph
+begin
+  14    14
+ 1 13 : 2 3 4 5 6 7 8 9 10 11 12 13 14 
+[...]
+ 14 13 : 1 2 3 4 5 6 7 8 9 10 11 12 13 
+end
+# walltime used for vertex adjacencies: 0s
+
+Facet graph
+begin
+  110    110
+ 1 5 : 9 45 91 105 110 
+ 2 5 : 8 9 38 92 103 
+[...]
+ 110 5 : 1 46 91 105 109 
+end
+# walltime used for facet adjacencies: 10s
+
+
+CPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s
+Wall time: 16.37 s
+```
+
+
+The polyhedral input is one with relatively few vertices (and without any redundancies), but lots of inequalities. This is why reducing the inequalities to a minimal set takes relatively long.
+
+About 2/3 of the total time is spent on computing facet adjacencies. This part of the computation could be split off, but since it is less than one order of magnitude it is probably not worth the added complexity.
+
+
+---
+
+Attachment
+
+cdd_both_reps now reports timing information for individual operations
+
+
+---
+
+Comment by mhampton created at 2009-11-09 15:36:33
+
+I haven't had as much time as I'd like but I've been working a little on the doctests.  I am still concerned about speed - even when computing the same quantities, the new code seems to be 2 to 3 times slower for most operations.  
+
+For backwards compatibility, I changed the keyword "ineqs" back to "ieqs", and made the vertices function return a list of lists as before.  The function returning a generator of vertices I renamed vertex_generator.  Just those two changes help a lot with compatibility.  I think having vertices() cache the list will speed up some other functions too, once I rewrite them to take advantage of that.  One remaining issue is that the new code uses "equations" instead of "linearities".  I plan on changing that too, for backwards compatibility, although I like the keyword "equations" more.  I used "linearities" originally since that is  what they are called in cddlib.  One solution might be to have both keywords as options, and start deprecating the use of "linearities".  (The current Sage policy is to preserve compatability with former code for at least 1 year and 1 major release.)  I don't think that is worth the effort with "ieqs" and "ineqs".
+
+I will be posting my code as I go to 
+http://sage.math.washington.edu/home/mhampton/polyhedra_latest.py
+in case someone wants to take a look at what I'm doing.  
+
+-Marshall
+
+
+---
+
+Comment by vbraun created at 2009-11-09 16:43:20
+
+I can rewrite the interface to always prefer returning lists over generators when I get back home in 2 weeks or so. Caching lists will not result in any noticeable speedup, though.
+
+Part of the reason why the old code is faster is that it sometimes returns the wrong answer when used with noncompact and/or degenerate polyhedra. We could do less computations at the constructor and more during the later lifetime of the polyhedra object at the cost of added code complexity. In any case, such optimizations can be added later; The first objective should be to yield the correct result.
+
+I definitely advise against using "linearities" and I made a special effort to avoid it in the rewrite. First of all it is not a word, and second cddlib uses it for two different concepts. Old code that accessed linearieties() likely gave the wrong result, so there is no point in backwards compatibility. Use of "linearities" is confusing to novices as well as to those familiar with cddlib.
+
+
+---
+
+Comment by mhampton created at 2009-11-10 22:20:34
+
+I don't think that the speed difference is entirely due to the correct handling of equalities - even for bounded polyhedra described by either vertices or inequalities it is slower by the factor of 2 to 3.  Maybe the list caching won't help this much, but then I wonder what is really responsible.  
+
+I agree, the linearities keyword was very fragile and often didn't work correctly, so perhaps its not necessary to keep it at all.
+
+For back-compatibility I will add back the render_wireframe, render_solid, and schlegel_projection methods of Polyhedron.  We could put in deprecation warnings advising people to switch to the new functions for projections and rendering.  I would also like to make the new rendering commands more flexible, so that one can choose to display any combination of vertices, edges, and/or faces.  I am happy to do all that.  
+
+Looks like there are some other older methods missing, like simplicial_complex, but I haven't looked at all of them in detail yet.
+
+
+---
+
+Comment by mhampton created at 2009-11-10 22:33:02
+
+I should also mention that writing doctests has uncovered a number of small bugs, so I highly recommend working off the polyhedra_latest.py file I mentioned above.
+
+
+---
+
+Comment by mhampton created at 2009-11-10 22:56:34
+
+I just noticed while writing a doctest for is_compact() that some valid inputs result in errors.  For example:
+
+sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]])
+
+crashes the _init_from_cdd_output function.  I'm not sure how to fix that on first glance but I'll keep looking at it.
+
+
+---
+
+Comment by mhampton created at 2009-11-13 03:59:49
+
+I have been looking a bit more at the speed issues.  In cdd_both_reps.c, I wonder if the computation of the FacetGraph and VertexGraph is the problem.  If I understand correctly, the cddlib function dd_Matrix2Adjacency does not re-use all the previously computed information, it just requires a non-redundant V- or H- representation.  If so, that is very inefficient, and its better to use the dd_CopyIncidence and dd_CopyAdjacency functions of cddlib and then construct what we need ourselves.
+
+
+---
+
+Comment by mhampton created at 2009-11-17 22:16:26
+
+I am wondering about putting the Projection class into the main namespace of Sage.  It makes more sense to me to have it as a method of polyhedra.  I have rewritten things with this change.  But maybe I am missing why it would be good to have this class imported - ?
+
+
+---
+
+Comment by mhampton created at 2009-12-10 03:57:04
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by mhampton created at 2009-12-10 03:57:04
+
+I am almost done getting this to 100% coverage.  I am understanding the classes a lot better now so the final doctests should be fairly easy for me to do.
+
+I am checking the building the reference manual and that made me aware of the fact that a few other modules in sage depend on functions that are removed by this patch.  One example is that sage.rings.polynomial.groebner_fan imported the function ieq_to_vert which is deleted by this rewrite.  It should be fairly easy to convert that, but to be safe I think it should be included again, deprecated, and removed in sage-5.0.  
+
+Otherwise with a few more back-compatibility tweaks this should be ready for review soon, by the end of December at the latest.  I think vbraun should look over my changes and then we will really need a 3rd person to do a final review.
+
+
+---
+
+Comment by mhampton created at 2009-12-10 12:51:14
+
+OK, this now passes all tests with 100% coverage.  Current issues I plan on addressing:
+
+1) Add old functions that are missing:
+{{{facial_adjacencies
+facial_incidences
+graph
+linearities
+n_facets
+render_solid
+render_wireframe
+schlegel_projection
+simplicial_complex
+triangulated_facial_incidences
+vertex_adjacencies
+vertex_incidences}}}
+
+2) Fix Groeber_fan.py to reflect these changes.  
+3) Fix newton_polytope function doctests.
+4) Add polyhedra.py to reference manual.
+5) Change some functions for back-compatibility.
+6) Deprecate overlaps where the new name/functionality is clearly better.
+
+
+---
+
+Comment by mhampton created at 2009-12-26 04:25:41
+
+I may be missing something, but I think the new version of the cddlib package you attached is missing 
+
+```
+patch -p0 < patches/cdd_both_reps-make.patch
+```
+
+in its spkg-install.  I posted a modified version at:
+[http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg](http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg)
+
+
+---
+
+Comment by mhampton created at 2009-12-29 23:32:45
+
+OK, I think I am basically happy with everything now.  I am attaching a cumulative patch for everything (I think), apart from the modified cddlib package.
+
+
+---
+
+Attachment
+
+Based against 4.2.1, cumulative of all changes except cddlib spkg
+
+
+---
+
+Comment by mhampton created at 2009-12-30 03:26:14
+
+I just tested my patch against sage-4.3 and it works fine, so this is pretty much ready for review.
+
+
+---
+
+Comment by mhampton created at 2009-12-30 03:26:14
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by mhampton created at 2010-01-21 17:48:19
+
+Apply after polyhedron-v8.patch; requires new gfan from 7820 to pass all doctests
+
+
+---
+
+Attachment
+
+I added a "referee" patch at William Stein's request, to make it easier to see what I did as opposed to Volker (vbraun).  This also updates groebner_fan.py to be in accord with the changes from ticket 7820, the upgrade to gfan-0.4.
+
+
+---
+
+Comment by mhampton created at 2010-01-22 01:02:23
+
+Ignore previous referee patch, I didn't do it correctly
+
+
+---
+
+Attachment
+
+I looked through the patch and it looks pretty good! Some minor changes:
+
+ * Beautified documentation
+ * Made clear that ieqs() is an alias for inequalities().
+ * Fixed the crash _init_from_cdd_output() for the input
+   sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) 
+ * Renamed the generator for incident V-representation objects from
+   Hrepresentation.facet() to Hrepresentation.incident(). Wrote the
+   analogous Vrepresentation.incident()
+ * Added aliases Hrepresentation.adjacent() for
+   Hrepresentation.neighbors() and Vrepresentation.adjacent() for
+   Vrepresentation.neighbors()
+ * Hrepresentation now accepts an optional argumment: 
+   Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation
+ * Rewrote facial_adjacencies(), facial_incidences(),
+   vertex_adjacencies(), vertex_incidences() to make use of the
+   Hrepresentation/Vrepresentation objects.
+ * Equation._repr_() fixed.
+
+As far as I am concerned, this is now ready for inclusion in sage.
+
+
+---
+
+Comment by vbraun created at 2010-01-22 22:56:29
+
+Based on trac_7109_mh1.patch together with the (minor) changes outlined in my comment
+
+
+---
+
+Attachment
+
+It would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)
+
+Anyway, I think we're getting very close with this ticket.
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-22 23:35:03
+
+Changing status from needs_review to needs_info.
+
+
+---
+
+Comment by vbraun created at 2010-01-23 01:22:50
+
+Here is how (I think) everything should be applied. First, the patches from within sage
+
+
+```
+sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh1.patch')
+sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_vb1.patch')
+```
+
+
+Now the cddlib-094f.spkg update: in the sage home directory, do
+
+
+```
+[vbraun`@`volker-two sage]$ ls
+COPYING.txt  data  devel  examples  install.log  ipython  local  makefile  README.txt  sage  sage-README-osx.txt  spkg
+[vbraun`@`volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg
+[...]
+[vbraun`@`volker-two sage]$ ./sage -f cddlib-094f.spkg 
+[...]
+[vbraun`@`volker-two sage]$ ./sage -br
+```
+
+
+I did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctests pass. It seems to me that trac_7109_referee2.patch unnecessarily includes the patch from #7820. In any case, #7820 only fixes output that is used in doctests and should be completely independent of this rewrite.
+
+
+---
+
+Comment by vbraun created at 2010-01-23 01:22:50
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by novoselt created at 2010-01-23 02:01:23
+
+I think the point of referee patches was to separate the work done by different people and make it possible to see what was actually changed by Marshall, as opposed to the code which he already carefully reviewed and accepted modulo his changes.
+
+It would be also nice if Marshall looked over the new patch submitted by Volker, since he can understand it much better than anyone else (except for Volker, of course ;-))
+
+
+---
+
+Comment by mhampton created at 2010-01-23 03:56:06
+
+Yes to both points - the only reason for the referee patch was to clarify what I did, so its irrelevant to actually applying things, and I will look over Volker's patch.  Then hopefully either Alex or Andrey can review the final changes.
+
+I will try to check out Volker's changes tomorrow (January 23) and summarize things after that, although family obligations might cause some delay.
+
+
+---
+
+Comment by mhampton created at 2010-01-23 15:42:06
+
+All of Volker's changes look good to me.  He added two aliases without doctests, so I am adding those in so that it stays at 100% coverage.  I will submit a cumulative patch in a few minutes.  
+
+I am not adding the changes to #7820 this time to keep the two tickets separate.  I can rebase against it if it is merged first (quite likely since I just gave it a positive review, so it should be in 4.3.2).
+
+
+---
+
+Attachment
+
+Cumulative patch, includes vbraun's latest additions + 2 doctests
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-24 01:07:39
+
+The new spkg has a few minor issues:
+
+
+```
+[ghitza`@`artin cddlib-094f-p2]$ hg status
+M spkg-install
+? .DS_Store
+? patches/cdd_both_reps-make.patch
+? patches/cdd_both_reps.c
+```
+
+
+I fixed all of this and put up the new spkg at
+
+http://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg
+
+Note that SPKG.txt is not in the correct format, but this will be another ticket.
+
+
+Now:  There are obviously not enough patches on this ticket :)  So I'm adding another one.  It is small and consists mostly of very minor typo fixes.  It also addresses one major issue: when I ran long doctests on `geometry/polyhedra.py`, it timed out on me.  Here is the reason:
+
+
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: time c5_20 = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(1,21)])
+CPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s
+Wall time: 244.51 s
+sage: time c5_20_fl = c5_20.face_lattice() 
+CPU times: user 64.62 s, sys: 0.06 s, total: 64.68 s
+Wall time: 64.78 s
+sage: time [len(x) for x in c5_20_fl.level_sets()]
+CPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s
+Wall time: 0.22 s
+[1, 20, 190, 580, 680, 272, 1]
+sage: time p600 = polytopes.six_hundred_cell()
+CPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s
+Wall time: 3175.85 s
+sage: time len(list(p600.bounded_edges()))
+CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
+Wall time: 0.02 s
+720
+```
+
+| Sage Version 4.3.1, Release Date: 2010-01-20                       |
+| Type notebook() for the GUI, and license() for information.        |
+These tests are not just long, they are way too long to include.  So I have marked them as `#not tested`.  If you can think of some way to get them under 30 seconds each, they can go back in.  I don't want to just delete them since they are examples of usage.
+
+One thing that I noticed but not fixed is that none of the geometry code is in the reference manual at the moment.  This should be another ticket.
+
+In summary: I'm giving a positive review to everything so far; someone needs to look at my patch.  We'll sort out authors/reviewers/etc when it's all done.
+
+Summary for the release manager who will have to merge this: once everything has a positive review, get the new spkg at
+
+http://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg
+
+then apply `trac_7109_mh2.patch` and `trac_7109_ag.patch`.
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-24 01:08:19
+
+apply after trac_7109_mh2.patch
+
+
+---
+
+Attachment
+
+Thanks Alex!  Your patch looks good, thanks for that attention to detail.
+
+I screwed up my initial trac_7109_mh2.patch by not including the reference manual changes, then overwrote it with a patch that did have them.  I think you must have downloaded the first one in the small window of time it was up.  Sorry about that!  I deleted polytope.py from the reference manual since the optional polymake package is broken, and even if it did work the interface is totally inferior to what is in polyhedra.py - and of course I added polyhedra.py to the reference manual.  I have tested the reference manual build with those changes.
+
+
+---
+
+Comment by mhampton created at 2010-01-24 02:50:06
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mhampton created at 2010-01-24 02:50:06
+
+OK, I've tested Alex's patch and I'm happy, I think Alex is happy, Volker seems happy, so I am going to move this to positive review.  
+
+While Volker probably did the most work, and I probably did the most reviewing, I think it would be fair to say that all three of us should be listed as both authors and reviewers.  This is an unusually large amount of changes for one ticket.
+
+
+---
+
+Comment by vbraun created at 2010-01-24 03:25:11
+
+For future reference, in case of an a new cddlib version ever coming out: patches/cdd_both_reps-make.patch only modifies the Makefile.am's. So this patch is only necessary if you plan on running the autotools machinery to regenerate the actual configure and makefiles. Building the spkg uses the bundled configure/makefiles. Hence applying the patch is, strictly speaking, not necessary in spkg-install. Having said that, I'm happy with cddlib-094f-p2.spkg.
+
+I also like AlexGhitza's patch. My i7 desktop is more than twice as fast, but the 600 cell 4d polyhedron still takes a lot of time. Its just inherently complicated, and I think we can live without doctesting it. The other long tests didn't cover anything that wasn't covered already.
+
+So I give it a green light as well, and I'm happy to share the blame with you guys :-)
+
+
+---
+
+Comment by mvngu created at 2010-01-25 01:38:38
+
+Just a trivial nit-pick: The spkg
+
+http://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg
+
+doesn't follow naming convention for Sage packages. There should be a dot preceding "p2", not a dash. Here's the same spkg, but following naming convention:
+
+http://sage.math.washington.edu/home/mvngu/spkg/standard/cddlib/cddlib-094f.p2.spkg
+
+Do you also want to remove the "dist/" directory from the cddlib spkg? Or do you want to open another ticket for this removal? See #5903 for some background information on why "dist/" can be deleted.
+
+
+---
+
+Comment by vbraun created at 2010-01-25 02:09:46
+
+Feel free to delete dist/ from the cddlib spkg! There is no reason to keep it around.
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-25 02:20:05
+
+I am doing this now, and taking care of SPKG.txt as well (which is now #8050, but might as well be done here).
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-25 02:38:58
+
+OK, the new spkg at
+
+http://sage.math.washington.edu/home/ghitza/cddlib-094f.p2.spkg
+
+gets rid of dist/ and cleans up SPKG.txt.
+
+Marshall and Volker, I have put the two of you down as spkg maintainers, but you should feel free to un-volunteer yourselves (on the other hand, cddlib releases very rarely so it's probably not a high volume job).
+
+
+---
+
+Comment by mvngu created at 2010-01-25 04:27:45
+
+Unfortunately, this ticket conflicts with #7535. I merged #7535 at about 8 hours before the current ticket was positively reviewed. So after merging the patches at #7535, merging the patch [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch) results in a long hunk failure:
+
+```
+[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush
+adding trac_7535-errors-raise.patch to series file
+applying trac_7535-errors-raise.patch
+now at: trac_7535-errors-raise.patch
+[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush
+adding trac_7535-part2.patch to series file
+applying trac_7535-part2.patch
+now at: trac_7535-part2.patch
+[mvngu`@`sage sage-main]$ 
+[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush
+adding trac_7109_mh2.patch to series file
+applying trac_7109_mh2.patch
+patching file sage/geometry/polyhedra.py
+Hunk #8 FAILED at 2795
+1 out of 14 hunks FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej
+patch failed, unable to continue (try -v)
+patch failed, rejects left in working dir
+errors during apply, please fix and refresh trac_7109_mh2.patch
+```
+
+So what happens here is that you could wait for Sage 4.3.2.alpha0 to be released and then rebase the patches on this ticket against Sage 4.3.2.alpha0. Another option is to rebase [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch), and possibly [trac_7109_ag.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_ag.patch) as well, on top of #7535.
+
+
+---
+
+Comment by mvngu created at 2010-01-25 04:30:36
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-25 04:34:42
+
+Minh, I'll try to rebase on top of #7535 right now.
+
+
+---
+
+Attachment
+
+cumulative patch, rebased on top of #7535; apply only this patch
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-25 05:37:41
+
+OK, it was a really tiny rebase, but so annoying nevertheless.
+
+I've put up a combined patch that has everything in it.
+
+No changes were really needed, since the piece that #7535 had modified simply didn't exist any more.  So I'm tempted to set this to positive review again, but maybe Minh can check that it indeed applies for him.
+
+
+---
+
+Comment by AlexGhitza created at 2010-01-25 05:37:41
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by mvngu created at 2010-01-25 12:50:48
+
+Alex's cumulative patch applies OK.
+
+
+---
+
+Comment by mvngu created at 2010-01-25 12:50:48
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mvngu created at 2010-01-25 12:51:44
+
+Merged in the following order:
+
+ 1. [cddlib-094f.p2.spkg](http://sage.math.washington.edu/home/ghitza/cddlib-094f.p2.spkg) in the standard spkg repository
+ 1. [trac_7109-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109-rebase.patch)
+
+
+---
+
+Comment by mvngu created at 2010-01-25 12:51:44
+
+Resolution: fixed
+
+
+---
+
+Comment by mhampton created at 2010-01-25 15:56:01
+
+Thanks Minh, I'm very happy this is going into 4.3.2.alpha0.
+
+
+---
+
+Comment by mvngu created at 2010-01-29 10:10:05
+
+See #8115 for a follow-up to this ticket.
+
+
+---
+
+Comment by mhampton created at 2010-01-30 14:29:45
+
+Cumulative patch, with 7535, fixes deletions in multi_polynomial.pyx
+
+
+---
+
+Attachment
+
+I don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.

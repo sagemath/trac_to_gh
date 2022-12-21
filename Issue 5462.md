@@ -1,0 +1,109 @@
+# Issue 5462: [in progress] Add support for Clawpack to Sage
+
+Issue created by migration from Trac.
+
+Original creator: cswiercz
+
+Original creation time: 2009-03-09 21:02:43
+
+Assignee: cswiercz
+
+CC:  cswiercz
+
+Keywords: clawpack, numerical, differential equations
+
+CLAWPACK (Conservation Laws Package) is a software package designed to compute numerical solutions to hyperbolic partial differential equations using a wave propagation approach.
+
+http://www.amath.washington.edu/~claw/
+
+This ticket will include an spkg containing a C wrapper of Clawpack's Fortran source code as well as a Cython interface for that wrapper. The spkg and C wrapper are part of the Clawpack package. You can obtain the main development branch's source using Subversion:
+
+
+```
+$ svn checkout http://kingkong.amath.washington.edu/svn/claw/trunk/claw
+```
+
+
+Code for creating the wrapper can be found in the clawpack/sageclaw subdirectory.
+
+The primary developer for this project is Chris Swierczewski <cswiercz`@`gmail.com>.
+
+
+---
+
+Comment by mabshoff created at 2009-03-09 21:21:51
+
+I don't think this should go into standard Sage or even optional since the license basically sucks:
+
+```
+This software is made available for research and instructional use only. 
+You may copy and use this software without charge for these non-commercial 
+purposes, provided that the copyright notice and associated text is 
+reproduced on all copies. For all other uses (including distribution of 
+modified versions), please contact the authors.
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by jason created at 2009-03-10 09:20:29
+
+Or to put it more positively, what is the possibility of a license change to GPLv2+, say, so that it may be more seriously considered for inclusion as an optional spkg instead of an experimental spkg?
+
+
+---
+
+Comment by cswiercz created at 2009-03-10 17:01:08
+
+I contacted the creator / moderator of the Clawpack software and will get back with information soon.
+
+If licensing doesn't  work out then at the very least I'll develop an "unofficial" package. That is, from what I understand, there can exist code in Sage that uses spkg contents even if the spkg hasn't been installed. That code just doesn't work. (Is that the situation for accepted optional spkgs?) I"ll simply not "set up" use of the Clawpack library, included in the spkg, on Sage before any spkg instalation.
+
+Until I hear back about the licensing situation what do people suggest I begin doing now that I've written most of the non-Sage-end stuff. I should be starting on a Cython wrapper for a C library but I'm not sure if that's such a good idea until this issue is resolved. My thought is that I could write said Cython code completely external to Sage and have it be "installed" while the `spkg-install` script is running.
+ 
+Sage seems to be a little dry on the numerics side. Clawpack can be a good first step into providing the functionality and beyond of one of the MA*'s, namely Matlab, for the applied mathematics and sciences community.
+
+
+---
+
+Comment by jason created at 2009-03-10 18:30:13
+
+I'd say full speed ahead (if Clawpack is the best out there for what it does)!  I think it's great that you're doing this.  You're right that Sage could use quite a bit more numerical stuff.
+
+If the licensing issue stayed the same, then the package would be an experimental or optional spkg.  You can have code that uses it in Sage, though; the code would just have to check for the installation of the spkg.  For example, Sage includes interfaces to commercial math systems, etc.
+
+I was just asking because we've had several situations where the author was willing to change the license to get the code into Sage; Sage provides a huge amount of exposure for code, which means not only that it is being used, but also that bug fixes are being provided, it's being ported to other platforms, etc.  Licensing the code via GPL would prevent commercial entities from incorporating it into their commercial closed-source products, so that may address the issue in the license.
+
+
+---
+
+Comment by cswiercz created at 2009-03-10 18:39:21
+
+Excellent! I ask about adding code in Sage that uses the contents of the Clawpack spkg because I don't want that code to be subject to a license that isn't compatible with Sage. However, since that code would be part of Sage regardless of the status of Clawpack then it seems fine; that is, independent of the Clawpack licensing.
+
+Thanks, jason, for your help and the positive response.
+
+Full speed ahead!
+
+
+---
+
+Comment by kcrisman created at 2014-10-16 13:54:45
+
+Any updates on this?
+
+
+---
+
+Comment by slelievre created at 2019-01-14 17:59:17
+
+Clawpack is now at version 5 and has adopted the 3-clause BSD license.
+
+- home: http://www.clawpack.org/
+- license: http://www.clawpack.org/license.html
+- code: https://github.com/clawpack

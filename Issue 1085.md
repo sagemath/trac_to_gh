@@ -95,9 +95,9 @@ Got:
 File "totallyreal_rel.py", line 661:
     sage: enumerate_totallyreal_fields_rel(F, 3, 17*10^9)
 Expected:
-    [This is the Trac macro *16240385609L, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#16240385609L, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + -macro) called with arguments (-t^2 - 4*t + 1)*xF^2 + 
+    [This is the Trac macro *16240385609L, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + * that was inherited from the migration called with arguments (-t^2 - 4*t + 1)*xF^2 + )](https://trac.sagemath.org/wiki/WikiMacros#16240385609L, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + -macro)
 Got:
-    [This is the Trac macro *16240385609, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#16240385609, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + -macro) called with arguments (-t^2 - 4*t + 1)*xF^2 + 
+    [This is the Trac macro *16240385609, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + * that was inherited from the migration called with arguments (-t^2 - 4*t + 1)*xF^2 + )](https://trac.sagemath.org/wiki/WikiMacros#16240385609, x^9 - x^8 - 9*x^7 + 4*x^6 + 26*x^5 - 2*x^4 - 25*x^3 - x^2 + 7*x + 1, xF^3 + -macro)
 **********************************************************************
 ```
 

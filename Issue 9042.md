@@ -1,0 +1,388 @@
+# Issue 9042: Cython fails to build in OpenSolaris x64
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-05-25 01:42:02
+
+Assignee: drkirkby
+
+CC:  robertwb jsp
+
+## Build environment
+ * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
+ * OpenSolaris 2009.06 snv_134 X86
+ * Sage 4.4.2
+ * gcc 4.4.4
+
+## How gcc 4.4.4 was configured
+Since the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. 
+
+
+```
+drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+Using built-in specs.
+Target: i386-pc-solaris2.11
+Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
+Thread model: posix
+gcc version 4.4.4 (GCC) 
+```
+
+
+gcc 4.3.4 was failing to build iconv. 
+
+## How the Sage build was attempted
+ * 64-bit build. SAGE64 was set to "yes"
+ * #9008 update zlib to latest upstream release to allow a 64-bit library to be built. 
+ * #9009 update mercurial spkg to build 64-bit.
+ * #7982 update sage_fortran so it can build 64-bit binaries.
+ * Run 'make -k' so make did not stop on errors, so errors can be listed. 
+
+
+## How Python was build
+
+It should be noted that python builds as a 64-bit application. There is no need to set any environment variables like CFLAGS for Python to build 64-bit. 
+
+
+```
+drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/python
+local/bin/python:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
+```
+
+
+We can see a few modules did not build
+
+
+```
+ailed to find the necessary bits to build these modules:
+_bsddb             bsddb185           dl
+gdbm               imageop            linuxaudiodev
+ossaudiodev
+To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+
+
+Failed to build these modules:
+_curses            _curses_panel      _socket
+_ssl               _tkinter           sunaudiodev
+```
+
+
+The faillure of _socket to build has caused problems with pygments (#9041) and ipython (#9022), but does not seem to be the cause of the problem with Cython. 
+
+## The problem with Cython
+This is related to #8116, which was closed as invalid, but it would appear the problem can still rear its ugly head. 
+
+
+```
+copying Cython/Includes/python_version.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes
+copying Cython/Includes/numpy.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes
+copying Cython/Includes/python_bytes.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes
+copying Cython/Includes/python_method.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes
+copying Cython/Includes/python_ref.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes
+copying Cython/Plex/Scanners.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Plex
+copying Cython/Compiler/Parsing.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler
+copying Cython/Compiler/Scanning.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler
+copying Cython/Compiler/Visitor.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler
+copying Cython/Runtime/refnanny.pyx -> build/lib.solaris-2.11-i86pc-2.6/Cython/Runtime
+running build_ext
+building 'Cython.Plex.Scanners' extension
+creating build/temp.solaris-2.11-i86pc-2.6
+creating build/temp.solaris-2.11-i86pc-2.6/export
+creating build/temp.solaris-2.11-i86pc-2.6/export/home
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython
+creating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex
+gcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -c /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.o
+In file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,
+                 from /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c:4:
+/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+error: command 'gcc' failed with exit status 1
+Error installing Cython
+
+real    0m4.426s
+user    0m3.907s
+sys     0m0.505s
+sage: An error occurred while installing cython-0.12.1
+```
+
+
+## The likely cause
+The -m64 flag is not being used in the compile line shown, but Python was built 64-bit, so I suspect the issue is related to a mix of 32-bit and 64-bit code. 
+
+## Other OpenSolaris issues
+Some other problems which are failing to allow Sage to build 64-bit on OpenSolaris are listed at #9026.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 05:59:29
+
+This won't solve the problem, but you could try changing the line in spkg-install to 
+
+
+```
+python setup.py install --no-cython-compile
+```
+
+
+And see if you can then compile anything else.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 08:20:31
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 08:20:31
+
+Again, this was due to Python being misconfigured. As I pointed out earlier, you need -m64 in OPT. New spkg at
+
+http://sage/home/robertwb/python-2.6.4.p8.spkg
+
+
+---
+
+Comment by drkirkby created at 2010-05-25 15:17:28
+
+Thank you. That revised package solves the problem, though I can't see what you have patched! I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. 
+
+Also, there is an unwanted file. 
+
+```
+drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status
+? spkg-install~
+```
+
+
+
+But Cython does now build.
+
+
+```
+Writing /export/home/drkirkby/sage-4.4.2/local/lib/python2.6/site-packages/Cython-0.12.1-py2.6.egg-info
+
+real    0m26.832s
+user    0m25.819s
+sys     0m0.919s
+Successfully installed cython-0.12.1
+Now cleaning up tmp files.
+rm: Cannot remove any directory in the path of the current working directory
+/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1
+Making Sage/Python scripts relocatable...
+Making script relocatable
+Finished installing cython-0.12.1.spkg
+```
+
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-05-25 15:17:28
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 17:37:10
+
+Replying to [comment:4 drkirkby]:
+> Thank you. That revised package solves the problem, though I can't see what you have patched! 
+
+DId you try hg log? 
+
+> I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. 
+
+I suppose I could add an entry there, though that'd be redundant with the revision control. 
+
+> Also, there is an unwanted file. 
+> {{{
+> drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status
+> ? spkg-install~
+> }}}
+
+Oops. Good catch. 
+ 
+> But Cython does now build.
+> 
+> {{{
+> Writing /export/home/drkirkby/sage-4.4.2/local/lib/python2.6/site-packages/Cython-0.12.1-py2.6.egg-info
+> 
+> real    0m26.832s
+> user    0m25.819s
+> sys     0m0.919s
+> Successfully installed cython-0.12.1
+> Now cleaning up tmp files.
+> rm: Cannot remove any directory in the path of the current working directory
+> /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1
+> Making Sage/Python scripts relocatable...
+> Making script relocatable
+> Finished installing cython-0.12.1.spkg
+> }}}
+> 
+> Dave 
+
+Excellent. I'll cleanup and post a new spkg.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 18:55:18
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 18:55:18
+
+New package posted (same place). FYI
+
+
+```
+# HG changeset patch
+# User Robert Bradshaw <robertwb`@`math.washington.edu>
+# Date 1274775281 25200
+# Node ID 9be0b02f70c56491e84f45c2dd113f267c6c4ed6
+# Parent  241ae2ebd744e682efb62a11effceb1f7f0e2bb2
+The -m64 flag is needed in OPT to build distutils extensions.
+
+diff -r 241ae2ebd744 -r 9be0b02f70c5 spkg-install
+--- a/spkg-install	Thu Mar 04 18:25:19 2010 -0800
++++ b/spkg-install	Tue May 25 01:14:41 2010 -0700
+`@``@` -147,7 +147,7 `@``@`
+     elif [ `uname` = "SunOS" ]; then
+         if [ "x$SAGE64" = xyes ]; then
+             echo "64 bit Open Solaris build enabled"
+-            OPT="-g -O3 -Wall -Wstrict-prototypes"; export OPT
++            OPT="-g -O3 -m64 -Wall -Wstrict-prototypes"; export OPT
+             ./configure $EXTRAFLAGS --prefix="$SAGE_LOCAL"  \
+             --enable-unicode=ucs4 --with-gcc="gcc -m64"
+         else
+```
+
+
+and 
+
+
+```
+# HG changeset patch
+# User Robert Bradshaw <robertwb`@`math.washington.edu>
+# Date 1274775421 25200
+# Node ID 81a7be63099e031ff2c0bbe4fb20f4f4f8988e0b
+# Parent  9be0b02f70c56491e84f45c2dd113f267c6c4ed6
+Make sure distutils builtin modules work before trying hashlib.
+
+diff -r 9be0b02f70c5 -r 81a7be63099e spkg-install
+--- a/spkg-install	Tue May 25 01:14:41 2010 -0700
++++ b/spkg-install	Tue May 25 01:17:01 2010 -0700
+`@``@` -208,6 +208,16 `@``@`
+ echo "Sleeping for three seconds before testing python"
+ sleep 3
+ 
++# Make sure extension modules were built correctly.
++python -c "import math"
++
++if [ $? -eq 0 -a -f "$SAGE_LOCAL/bin/python" ]; then
++    echo "math module OK"
++else
++    echo "math module failed to import"
++    exit 1
++fi
++
+ # Make sure sufficient crypto support is available in the built python.
+ # This is critical.
+ python -c "import hashlib"
+```
+
+
+are the changes.
+
+
+---
+
+Comment by robertwb created at 2010-05-25 18:58:30
+
+You may also be interested in #9047 which will prevent me (and others) from checking in garbage.
+
+
+---
+
+Comment by drkirkby created at 2010-05-26 06:07:42
+
+Replying to [comment:5 robertwb]:
+> Replying to [comment:4 drkirkby]:
+> > Thank you. That revised package solves the problem, though I can't see what you have patched! 
+> 
+> DId you try hg log? 
+> 
+
+No, since I did not know about that. 
+
+> > I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. 
+> 
+> I suppose I could add an entry there, though that'd be redundant with the revision control. 
+
+
+True, but I'm doubt the only who is not a Mercuial guru. Having changes documented in a simple text file is useful IMHO. 
+> > Also, there is an unwanted file. 
+> > {{{
+> > drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status
+> > ? spkg-install~
+> > }}}
+> 
+> Oops. Good catch. 
+>  
+> > But Cython does now build.
+
+> > Dave 
+> 
+> Excellent. I'll cleanup and post a new spkg. 
+
+Thank you.
+
+
+---
+
+Comment by drkirkby created at 2010-05-26 06:27:18
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by drkirkby created at 2010-05-26 06:27:18
+
+Replying to [comment:7 robertwb]:
+> You may also be interested in #9047 which will prevent me (and others) from checking in garbage. 
+I like the idea, though I don't understand enough of python or Mercurial to review it. Anything that prevents mistakes, or generally improves the quality is a good idea in my opinion. 
+
+Thank you for the change. Positive review. 
+
+Dave
+
+
+---
+
+Comment by rlm created at 2010-06-25 15:49:40
+
+Resolution: fixed
+
+
+---
+
+Comment by rlm created at 2010-06-25 15:51:16
+
+To give proper credit, I'm closing this as if I've merged the changes here. See #9295.

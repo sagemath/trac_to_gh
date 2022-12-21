@@ -1,0 +1,1242 @@
+# Issue 9797: Accelerate Polyhedron constructor
+
+Issue created by migration from Trac.
+
+Original creator: vbraun
+
+Original creation time: 2010-08-24 21:18:32
+
+Assignee: mhampton
+
+CC:  mhampton novoselt dimpase drkirkby leif
+
+I've run across some polytopes that can't be constructed in finite time because computing the facet and vertex adjacencies takes forever. Just computing the reduced H/V-representation takes just a few minutes. So I propose to *not* compute the adjacency data in the constructor, but only when needed. This requires patches to the `cddlib` spkg and to `polyhedra.py`
+
+
+---
+
+Comment by vbraun created at 2010-08-24 21:45:38
+
+Updated spkg is here:
+
+http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+
+I changed the `cdd_both_reps.c` (whose binary the `sage.geometry.polyhedra` uses) to make the computation of adjacency data optional. I also added more checks to the `spkg-check`. The upstream package comes with tons of more checks, but lots of them are computationally expensive (i.e. take many hours). Some crash the vanilla upstream binaries, for example `allzero.ine`. 
+
+To use the new spkg you need the patch to the polyhedra code, see below.
+
+
+---
+
+Comment by vbraun created at 2010-08-24 21:51:05
+
+Initial patch
+
+
+---
+
+Attachment
+
+Current patch is on top of `trac_9337_toric_divisor_classes.patch` from #9337.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 13:48:11
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 13:48:11
+
+I updated the spkg at
+
+http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+
+Now it includes a random number generator (taken from GNU libc), so the `cddlib` output ordering should be the same on all platforms.
+
+The prerequisite patch has been merged into Sage 4.6.alpha0, so now would be a good time to review this ticket :-)
+
+
+---
+
+Comment by dimpase created at 2010-09-21 14:59:33
+
+Replying to [comment:3 vbraun]:
+> I updated the spkg at
+> 
+> http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+> 
+> Now it includes a random number generator (taken from GNU libc), so the `cddlib` output ordering should be the same on all platforms.
+
+Well, I tested on PPC MacOSX, and sure enough I still get 
+sage -t -long "devel/sage/sage/schemes/generic/toric_divisor.py"
+**********************************************************************
+File "/usr/local/src/sage/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py", line 1522:
+    sage: supp.Vrepresentation()
+Expected:
+    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]
+Got:
+    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]
+**********************************************************************
+1 items had failures:
+   1 of  10 in __main__.example_35
+***Test Failed*** 1 failures.
+For whitespace errors, see the file /Users/dima/.sage//tmp/.doctest_toric_divisor.py
+	 [102.0 s]
+ 
+----------------------------------------------------------------------
+The following tests failed:
+
+
+	sage -t -long "devel/sage/sage/schemes/generic/toric_divisor.py
+
+Probably the GNU rng (in GSL, I suppose, I'd be mighty surprised if there was one in libc!) 
+is not endianness-clean, or something like this.
+Anyway, you should rather use Sage's rng facilities, at least they are known to be 
+uniform accross all the Sage platforms.
+
+
+> 
+> The prerequisite patch has been merged into Sage 4.6.alpha0, so now would be a good time to review this ticket :-)
+
+While I am at it, I don't get the initial motivation for the ticket - computing vertex adjacencies (given a V-representation, say) ought to be much faster than converting to H-representation, as it's a simple LP to check whether two vertices are adjacent.
+(well, I don't know whether this is in cdd, but I recall Komei mentioning this as implemented, or to be implemented)
+
+Dima
+
+
+---
+
+Comment by dimpase created at 2010-09-21 14:59:33
+
+Changing status from needs_review to needs_info.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 16:52:23
+
+Changing status from needs_info to needs_work.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 16:52:23
+
+1. I debugged it some more and apparently the code that uses random numbers ends up not being called in the code path. Which raises the question again, how does cddlib manage to depend on the architecture... I'll change the `polyhedra.py` to sort the cddlib output for now.
+
+  2. According to the (sparse) cdd manual, it exactly does that: solve a LP to get the adjacency data. There is a bit of a combinatorial explosion in high dimension and number of vertices, I guess. 
+
+The other motivation for this ticket is that we can then start and replace `libcdd`s implementation of the dual description with a better one. In particular I'm eying a cythonized version of the Parma Polyhedra Library, but we need at least cython 0.13 for C++.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 17:07:53
+
+Changing status from needs_work to needs_info.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 17:07:53
+
+Oops, I was too quick: In the spkg I had accidentally reverted the change in `cddcore.c` to use the fixed random number generator. A new packaged cddlib is, again, here: 
+
+http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+
+Please give this one a try. I added logging for the random numbers generated. If you still find that the output order differs, please save the output of
+
+```
+Polyhedron(vertices=[(0, 1), (1, 1), (0, 1), (-1, 1), (0, 2), (0, -1), (0, 0), (0, 0), (3, -1), (0, 2), (0, -1), (1, -1), (0, 0)], verbose=True)
+```
+
+to a file and attach it to this ticket.
+
+
+---
+
+Comment by dimpase created at 2010-09-21 17:50:50
+
+Replying to [comment:6 vbraun]:
+> Oops, I was too quick: In the spkg I had accidentally reverted the change in `cddcore.c` to use the fixed random number generator. A new packaged cddlib is, again, here: 
+> 
+> http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+> 
+> Please give this one a try. I added logging for the random numbers generated. If you still find that the output order differs, please save the output of
+> {{{
+> Polyhedron(vertices=[(0, 1), (1, 1), (0, 1), (-1, 1), (0, 2), (0, -1), (0, 0), (0, 0), (3, -1), (0, 2), (0, -1), (1, -1), (0, 0)], verbose=True)
+> }}}
+> to a file and attach it to this ticket.
+
+OK, it works now.
+
+
+---
+
+Comment by dimpase created at 2010-09-21 17:54:03
+
+Replying to [comment:5 vbraun]:
+>   1. I debugged it some more and apparently the code that uses random numbers ends up not being called in the code path. Which raises the question again, how does cddlib manage to depend on the architecture... I'll change the `polyhedra.py` to sort the cddlib output for now.
+> 
+>   2. According to the (sparse) cdd manual, it exactly does that: solve a LP to get the adjacency data. There is a bit of a combinatorial explosion in high dimension and number of vertices, I guess. 
+
+Sorry, I don't get it. Computing the dual description is well-known to be much more expensive in general than computing the vertex adjacencies - the latter is polynomial-time, the former is certainly not...
+
+
+> 
+> The other motivation for this ticket is that we can then start and replace `libcdd`s implementation of the dual description with a better one. In particular I'm eying a cythonized version of the Parma Polyhedra Library, but we need at least cython 0.13 for C++.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 18:18:04
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by vbraun created at 2010-09-21 18:18:04
+
+OK good, I've removed the logging and put the (hopefully final) version of the spkg at the usual place
+
+http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg 
+
+I agree that, in general, the dual description is the time-consuming part. However I have encountered a special case where it was the other way round. I don't know if its an implementation issue or just a weird case, as far as I remember it was a high-dimensional polytope with few facets but ~1500 vertices.
+
+In any case, the new spkg seems to fix the OSX problem and, hopefully, someone will step up and review it :-)
+
+
+---
+
+Comment by dimpase created at 2010-09-22 02:27:27
+
+Replying to [comment:9 vbraun]:
+> OK good, I've removed the logging and put the (hopefully final) version of the spkg at the usual place
+> 
+> http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg 
+> 
+> I agree that, in general, the dual description is the time-consuming part. However I have encountered a special case where it was the other way round. I don't know if its an implementation issue or just a weird case, as far as I remember it was a high-dimensional polytope with few facets but ~1500 vertices.
+
+Hmm, are you saying that computing facets for a polytope with 1500 vertices is faster than computing the vertex adjacencies?
+Shouldn't this at least be reported upstream?
+
+> 
+> In any case, the new spkg seems to fix the OSX problem and, hopefully, someone will step up and review it :-)
+
+
+---
+
+Comment by dimpase created at 2010-09-22 02:30:26
+
+Replying to [comment:9 vbraun]:
+> OK good, I've removed the logging and put the (hopefully final) version of the spkg at the usual place
+> 
+> http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg 
+> 
+> I agree that, in general, the dual description is the time-consuming part. However I have encountered a special case where it was the other way round. I don't know if its an implementation issue or just a weird case, as far as I remember it was a high-dimensional polytope with few facets but ~1500 vertices.
+> 
+> In any case, the new spkg seems to fix the OSX problem and, hopefully, someone will step up and review it :-)
+
+I am not sure whether it is kosher to have a rng in an spkg rather than make it call the Sage's rng. Perhaps somebody more versed in this could comment.
+
+
+---
+
+Comment by mhampton created at 2010-09-22 06:07:51
+
+The spkg built OK and the output order of 
+
+```
+Polyhedron(vertices=[(0, 1), (1, 1), (0, 1), (-1, 1), (0, 2), (0, -1), (0, 0), (0, 0), (3, -1), (0, 2), (0, -1), (1, -1), (0, 0)], verbose=True)
+```
+
+is as expected on OS X 10.5.  I will try to test on other platforms.
+
+
+---
+
+Comment by mhampton created at 2010-09-22 06:13:59
+
+So random.c is from the GNU C library?  Or somewhere else?  Should there be at least a comment about that?
+
+
+---
+
+Comment by dimpase created at 2010-09-22 06:51:57
+
+Replying to [comment:13 mhampton]:
+> So random.c is from the GNU C library?  Or somewhere else?  Should there be at least a comment about that?
+
+IMHO this is a totally unnecessary code bloat. There is an rng in GSL, and GSL is a part of Sage. I don't have time to look at it now, but I am pretty sure the changes to switch to GSL's rng are pretty minimal (probably even the API is the same!)
+
+
+---
+
+Comment by vbraun created at 2010-09-22 08:57:04
+
+* `cddlib` is slow, thats a generally known fact. It basically comes out last in every benchmark I have seen. It was the first implementation, and nobody would have published a competing implementation if it wouldn't have been faster...
+
+  * `random.h` has the GNU C library copyright notice. I've modified the source to cut it down to the essentials, remove other rngs and other libc calls.
+
+I don't mind making `cddlib` depend on `gsl`, but the obvious arguments against would be:
+
+      1. `cddlib` doesn't need a high-quality rng.
+
+      2. Many projects use `cddlib`, should we really try to push a new dependency upstream?
+
+
+---
+
+Comment by mhampton created at 2010-09-22 11:28:49
+
+I'm OK with the code addition.  These are quite small and clean.  
+
+I don't know how you could say cddlib is always slower if you look at the timings towards the end of [http://arxiv.org/abs/math.MG/0210133](http://arxiv.org/abs/math.MG/0210133).  It really depends on the input.  That's why at some point we need to make at least lrs standard (in my opinion it met the bar a long time ago, I just haven't argued for it enough) and provide it and hopefully others as alternative options for Polyhedron.
+
+I would like to test this a bit more before giving a positive review, I'll try to do that today.
+
+
+---
+
+Comment by mhampton created at 2010-09-22 11:53:24
+
+I'm getting a lot of doctest errors involving "dual" method calls from schemes/generic/toric_* files.  I'm not sure if I had some misapplication of the stuff from #9337 or not - can someone run doctests on those after applying the changes in this ticket?
+
+
+---
+
+Comment by dimpase created at 2010-09-22 12:05:29
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by dimpase created at 2010-09-22 12:05:29
+
+Replying to [comment:16 mhampton]:
+> I'm OK with the code addition.  These are quite small and clean.  
+
+but it is an obvious code bloat!
+I have been a user of cdd at some point, published few papers that used it, including
+a paper with Komei himself (whom I know for like 20 years, and to whom I could write if you like...)
+So I am for introducing a dependence of GSL instead of this "clean" bloat...
+ 
+> 
+> I don't know how you could say cddlib is always slower if you look at the timings towards the end of [http://arxiv.org/abs/math.MG/0210133](http://arxiv.org/abs/math.MG/0210133).  It really depends on the input.  That's why at some point we need to make at least lrs standard (in my opinion it met the bar a long time ago, I just haven't argued for it enough) and provide it and hopefully others as alternative options for Polyhedron.
+> 
+> I would like to test this a bit more before giving a positive review, I'll try to do that today.
+
+
+---
+
+Comment by vbraun created at 2010-09-22 12:18:33
+
+LRS takes an orthogonal approach, so it can do some problems that the dual description algorithm cannot and vice versa. I should have said that `cddlib` is the slowest implementation of the dual description :-) I think ideally we would race PPL's implementation of the dual description against lrslib's reverse search and take the winner. Or have some heuristic to pick the most suitable algorithm. But I'm definitely in favor of including lrs. In any case, a more useful comparison is in Table 1 of http://arxiv.org/abs/cs/0612085
+
+I don't get any doctest errors in `sage/schemes/generic/`. My patch queue (on top of Sage-4.5.2) is 
+
+```
+trax_9902_fix_base_extension.patch
+trac_9502_basis_parent_bug_in_FreeModule.2.patch
+trac_9504_add_support_for_toric_sublattices.patch
+trac_9504_change_sublattice_repr.patch
+trac_9504_add_support_for_quotients_of_toric_lattices.patch
+trac_9504_reviewer_changes.patch
+trac_9504_last_changes.patch
+trac_9296_lattice_computations_for_cones.patch
+trac_9296_reviewer.patch
+trac_9782_bug_in_computing_star_generators.patch
+trac_9810_cone_faces_invalidates_facets.patch
+trac_9812_sorting_bug_in_fan_subdivision.patch
+trac_9839_add_dual_cone_computation.patch
+trac_9839_reviewer.2.patch
+trac_9337_divisor_superclasses_fixes.patch
+trac_9337_toric_divisors.patch
+trac_9337_toric_divisors_reviewer.patch
+trac_9337_toric_divisor_classes.patch
+trac_9337_line_bundle_cohomology.patch
+trac_9337_classes_and_cohomology_reviewer.patch
+trac_9337_final.patch
+trac_9798_accelerate_Polyhedron.patch
+```
+
+
+Dima: In principle I agree, but in practice its just a few lines. Your computer will spend more time dlinking with gsl for what? Shave off 1kb? The usual arguments in favour of library use, like being able to update the library without the program, don't make any sense here. In fact, I want cddlib to be as static as possible until we can migrate away from it.
+
+
+---
+
+Comment by drkirkby created at 2010-09-23 10:51:55
+
+FWIW, I can see that using GSL in Sage is sensible, since we have it. 
+
+But whether such changes would be accepted upstream is another matter. If I maintained a bit of software that just needed a low-quality source of random numbers, I'd probably implement something like 
+
+
+```
+X_n= seed
+X_n+1 = ( (X_n * A) + B ) mod C
+```
+
+
+If you make sure that this can't overflow the type of variable (e.g. long) then there's no hardware dependence. The reason such RNG's can have hardware dependence is when they overflow the register. 
+
+I would not want people to have to install GSL just to get a few random numbers. 
+
+I can't see why a simple low-quality RNG should take up 4 KB - I could write it in a few hundred bytes. It would help if people attached patches to the ticket, so others can see what changes you have made. 
+
+If the RNG I showed is not good enough, then there's a bit more of an argument for making GSL a dependence upstream.
+
+
+---
+
+Comment by drkirkby created at 2010-09-23 11:13:53
+
+http://www.opengroup.org/onlinepubs/009695399/functions/rand.html
+shows a simple RNG with no hardware depedance: It's nowhere near 4 KB.
+
+
+```
+static unsigned long next = 1;
+int myrand(void)  /* RAND_MAX assumed to be 32767. */
+{
+    next = next * 1103515245 + 12345;
+    return((unsigned)(next/65536) % 32768);
+}
+
+
+void mysrand(unsigned seed)
+{
+    next = seed;
+}
+
+```
+
+
+
+---
+
+Comment by vbraun created at 2010-09-23 11:36:00
+
+I took the implementation from the GNU C library since we then don't need to change any doctests. I'll attach the added source files for reference. I don't think there is any 32-bit overflow problem as nobody complained about doctests failing on Linux/i386. Seems like OSX really has a different implementation of the rng. Also, the GNU C library implementation changed at least once previously, so there is never a guarantee that rand() is reproducible across platforms. Quality of rng's is not a concern for cdd.
+
+
+---
+
+Comment by mhampton created at 2010-09-23 11:54:33
+
+I was trying to use sage-4.6.alpha0 upgraded from the "prealpha", but something got messed up.  Now using sage-4.6.alpha1 which has everything from #9337 so its simpler.
+
+I think Volker's arguments are reasonable and its a little silly to worry about the size of his random.c file - its smaller than a single block on most filesystems.  I'm only worried about testing that this all works on a variety of platforms now.
+
+
+---
+
+Comment by drkirkby created at 2010-09-23 12:04:17
+
+I would certainly comment the code to know where the algorithm came from. 
+
+Given the size of the numbers, and would not at all be surprised if that produced a different set of numbers on different platforms. The best way would probably be to create a standalone C program with a main(), and let people test that. I could test that on a variety of systems were cddlib will probably not build (AIX & HP-UX for example). That would show if there was any hardware dependence. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2010-09-23 12:09:11
+
+Replying to [comment:15 vbraun]:
+>   * `cddlib` is slow, thats a generally known fact. It basically comes out last in every benchmark I have seen. It was the first implementation, and nobody would have published a competing implementation if it wouldn't have been faster...
+> 
+>   * `random.h` has the GNU C library copyright notice. I've modified the source to cut it down to the essentials, remove other rngs and other libc calls.
+
+I don't know what the GNU C copyright notice looks like, but "cutting it down to the bare essentials" would not be a defense if one was breaching that license. I don't think we can change the license just because you have taken a non-trivial subset of the code. 
+
+Again, if there was a proper patch, it would have all this information in it. 
+
+Dave
+
+
+---
+
+Comment by dimpase created at 2010-09-23 12:22:33
+
+Replying to [comment:20 drkirkby]:
+> FWIW, I can see that using GSL in Sage is sensible, since we have it. 
+> 
+> But whether such changes would be accepted upstream is another matter.
+
+well, I offered to talk to the upstream (whom I happen to know well, and whom I saw last week at a conference...), but, no, somehow this is not the right way to proceed with this ticket. For some reason people prefer to have fun putting in untested pieces of C code and make everyone run circles testing them on a gazzillion of different platform... Thus I wash my hands, and remove myself from CC:
+(Surely, feel free to add me back if you still need anything from me on this.)
+
+
+> If I maintained a bit of software that just needed a low-quality source of random numbers, I'd probably implement something like 
+> 
+> {{{
+> X_n= seed
+> X_n+1 = ( (X_n * A) + B ) mod C
+> }}}
+> 
+> If you make sure that this can't overflow the type of variable (e.g. long) then there's no hardware dependence. The reason such RNG's can have hardware dependence is when they overflow the register. 
+> 
+> I would not want people to have to install GSL just to get a few random numbers. 
+> 
+> I can't see why a simple low-quality RNG should take up 4 KB - I could write it in a few hundred bytes. It would help if people attached patches to the ticket, so others can see what changes you have made. 
+> 
+> If the RNG I showed is not good enough, then there's a bit more of an argument for making GSL a dependence upstream.
+
+
+---
+
+Comment by vbraun created at 2010-09-23 12:37:18
+
+I've copied the copyright notice to `random.c` as well. 
+
+Dave: I don't know what kind of patch you want as `patch` is not supposed to be used in spkgs. You can just call the GNU libc if you want to test it on any platform...
+
+Dima: This is not "untested code", its an excerpt from the GNU C library and has  received more testing on more platforms than you can shake a stick at.
+
+The only potential issue is that a crufty C compiler might not have `stdint.h`, in which case there is no good way if figuring out which data type is a 32-bit int. But even IBM C for AIX (v6+) should work ;-)
+
+
+---
+
+Comment by vbraun created at 2010-09-23 12:38:17
+
+simple random number generator
+
+
+---
+
+Comment by mhampton created at 2010-09-23 13:02:36
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+I think it would be good to add a little more detail to the SPKG.txt as well about where the code comes from.  
+
+I've tested this on two macs (10.5 and 10.6) and a linux machine (core i7 860, Ubuntu 9.10).  Passed all tests in schemes, rings, and geometry on those platforms.  If David or someone else can test this on Solaris and its OK then I think I can give it a positive review.
+
+Nice documentation changes - I've meant to improve the Polyhedron class docstring for a while but I'm glad you beat me to it.
+
+
+---
+
+Comment by vbraun created at 2010-09-23 14:54:01
+
+I've changed the `SPKG.txt` to say:
+
+```
+ * Include a simple random number generator (taken from the GNU C
+   library) to ensure the same output ordering on different platforms,
+   see http://trac.sagemath.org/sage_trac/ticket/9926
+```
+
+
+
+---
+
+Comment by drkirkby created at 2010-09-23 20:20:33
+
+Replying to [comment:27 vbraun]:
+> I've copied the copyright notice to `random.c` as well. 
+> 
+> Dave: I don't know what kind of patch you want as `patch` is not supposed to be used in spkgs. You can just call the GNU libc if you want to test it on any platform...
+
+It's normal practice to commit the changes to the repository in the .spkg file, then export the patches and add that to the ticket. That makes it easy to review.
+
+$ hg export tip > patch_number_and_some_description.patch
+
+then attach "patch_number_and_some_description.patch"
+
+to the ticket. It makes review of the changes easy then. 
+
+That's what nearly everyone else does. 
+
+Dave
+
+
+---
+
+Comment by vbraun created at 2010-09-23 21:05:31
+
+Oh I see what you mean. Though that patch is 700kb because automake scripts changed. I guess we could exclude autogenerated files under `patches/` from the repository. On the other hand we then can't use the mercurial repository to keep track of all patch files. Usually it won't be necessary to redo the automake scripts, so I'll leave it as it is for now.
+
+
+---
+
+Comment by mhampton created at 2010-09-30 20:47:40
+
+This applies cleanly to the candidate sage-4.6.alpha2 and solves the only doctest failure I get from that on OS X (toric_divisor) - i.e. after applying this ticket sage-4.6.alpha2 passes all doctests on OS X 10.6 and on linux (Ubuntu 9.10 on an Intel i7 860).
+
+If anyone can verify this is OK on Solaris I will give a positive review; I don't have an up-to-date sage on t2.
+
+
+---
+
+Comment by dimpase created at 2010-10-01 03:29:56
+
+Replying to [comment:32 mhampton]:
+> This applies cleanly to the candidate sage-4.6.alpha2 and solves the only doctest failure I get from that on OS X (toric_divisor) - i.e. after applying this ticket sage-4.6.alpha2 passes all doctests on OS X 10.6 and on linux (Ubuntu 9.10 on an Intel i7 860).
+> 
+> If anyone can verify this is OK on Solaris I will give a positive review; I don't have an up-to-date sage on t2.
+> 
+t2 is basically down for ordinary users like me, due to an overhaul of disk.math by William.
+But skynet has mark and mark2, which are slow, but running.
+However, I do not know whether the recent gcc upgrade to 4.5.1 rendered them incapable of building Sage, and 
+also the connection to them is pretty bad: I just started copying Sage-4.6-alpha2 source to my account there, and it is likely to finish in 20 hours or so :-(
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-01 22:52:54
+
+I'm running the entire test suite on mark2 right now.  Since it's been going for a few hours already, it should be done within 10 hours :)
+
+All tests pass for me on a Mac OS X 10.6 Intel machine and also on sage.math.
+
+If mark2 works, I'll give it a positive review.
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-01 22:53:17
+
+(Does that mean that we also close #9926?)
+
+
+---
+
+Comment by mhampton created at 2010-10-02 00:31:19
+
+Yes, this fixes #9926.
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-02 03:45:24
+
+mark2 is still testing, but it shows one failure so far:
+
+```
+sage -t  -long devel/sage/sage/rings/polynomial/groebner_fan.py
+**********************************************************************
+File "/home/palmieri/mark2/sage-4.6.alpha2/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1043:
+    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro))
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_40[7]>", line 1, in <module>
+        cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *Integer* that was inherited from the migration called with arguments (1),-Integer)](https://trac.sagemath.org/wiki/WikiMacros#Integer-macro))###line 1043:
+    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro))
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 1536, in __init__
+        if self.ambient_dim() < len(Polyhedron._render_method):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 2629, in ambient_dim
+        return self._ambient_dim
+    AttributeError: 'Polyhedron' object has no attribute '_ambient_dim'
+**********************************************************************
+File "/home/palmieri/mark2/sage-4.6.alpha2/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1044:
+    sage: cone_lines = gf._4d_to_3d(cone_data)
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_40[8]>", line 1, in <module>
+        cone_lines = gf._4d_to_3d(cone_data)###line 1044:
+    sage: cone_lines = gf._4d_to_3d(cone_data)
+    NameError: name 'cone_data' is not defined
+**********************************************************************
+File "/home/palmieri/mark2/sage-4.6.alpha2/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1045:
+    sage: cone_lines
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_40[9]>", line 1, in <module>
+        cone_lines###line 1045:
+    sage: cone_lines
+    NameError: name 'cone_lines' is not defined
+**********************************************************************
+File "/home/palmieri/mark2/sage-4.6.alpha2/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1083:
+    sage: three_d = gf.render3d()
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_41[4]>", line 1, in <module>
+        three_d = gf.render3d()###line 1083:
+    sage: three_d = gf.render3d()
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py", line 1106, in render3d
+        cone_info = [Polyhedron(ieqs = q, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro)) for q in g_cones_ieqs]
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 1536, in __init__
+        if self.ambient_dim() < len(Polyhedron._render_method):
+      File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 2629, in ambient_dim
+        return self._ambient_dim
+    AttributeError: 'Polyhedron' object has no attribute '_ambient_dim'
+**********************************************************************
+2 items had failures:
+   3 of  10 in __main__.example_40
+   1 of   7 in __main__.example_41
+***Test Failed*** 4 failures.
+```
+
+I get the same error on fulvia (Solaris on x86), so it's not something wrong with the build on mark2.
+
+(I installed the new cddlib spkg and also applied the patch here.  Was there anything else I was supposed to do?)
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-02 03:45:24
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by mhampton created at 2010-10-02 04:07:26
+
+Can I get an account on that machine?  Or could you do:
+
+Polyhedron(ieqs = [[0, 0, 0, 0, 1], [0, 0, 0, 2, -1], [0, 0, 2, -1, 0], [0, 2, -1, 0, 0]], eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro), verbose = True)
+
+and give the output?
+
+I'm quite puzzled by that error, maybe Volker will have a better idea of what's going on.
+
+
+---
+
+Comment by dimpase created at 2010-10-02 04:23:04
+
+Replying to [comment:38 mhampton]:
+> Can I get an account on that machine?  Or could you do:
+> 
+> Polyhedron(ieqs = [[0, 0, 0, 0, 1], [0, 0, 0, 2, -1], [0, 0, 2, -1, 0], [0, 2, -1, 0, 0]], eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro), verbose = True)
+> 
+> and give the output?
+> 
+> I'm quite puzzled by that error, maybe Volker will have a better idea of what's going on.
+
+write to William and cc: mariah.lenox [at] gmail.com for an account on skynet (this machine is a part of this network)
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-02 05:03:55
+
+Here's fulvia:
+
+```
+sage: Polyhedron(ieqs = [[0, 0, 0, 0, 1], [0, 0, 0, 2, -1], [0, 0, 2, -1, 0],
+....:  [0, 2, -1, 0, 0]], eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro), verbose = True)
+H-representation
+linearity 1 1
+begin
+ 5 5 rational
+ 1 -1 -1 -1 -1
+ 0 0 0 0 1
+ 0 0 0 2 -1
+ 0 0 2 -1 0
+ 0 2 -1 0 0
+end
+
+
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+
+/home/palmieri/fulvia/32bit/sage-4.6.alpha2/<ipython console> in <module>()
+
+/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in __init__(self, vertices, rays, lines, ieqs, eqns, field, compute_adjacency, verbose)
+   1534 
+   1535         # Only add a show() method if we have one
+-> 1536         if self.ambient_dim() < len(Polyhedron._render_method):
+   1537             render = Polyhedron._render_method[self.ambient_dim()]
+   1538             if render != None:
+
+/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in ambient_dim(self)
+   2627             4
+   2628         """
+-> 2629         return self._ambient_dim
+   2630 
+   2631             
+
+AttributeError: 'Polyhedron' object has no attribute '_ambient_dim'
+```
+
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-02 16:03:08
+
+After running all tests, there were lots of failures, as you might imagine:
+
+```
+The following tests failed:
+
+        sage -t  -long devel/sage/sage/rings/polynomial/groebner_fan.py # 4 doctests failed
+        sage -t  -long devel/sage/sage/rings/polynomial/multi_polynomial.pyx # 4 doctests failed
+        sage -t  -long devel/sage/sage/geometry/fan.py # 139 doctests failed
+        sage -t  -long devel/sage/sage/geometry/cone.py # 409 doctests failed
+        sage -t  -long devel/sage/sage/geometry/polyhedra.py # 733 doctests failed
+        sage -t  -long devel/sage/sage/plot/misc.py # 4 doctests failed
+        sage -t  -long devel/sage/sage/plot/plot.py # 12 doctests failed
+        sage -t  -long devel/sage/sage/schemes/generic/toric_variety.py # 153 doctests failed
+        sage -t  -long devel/sage/sage/schemes/generic/toric_variety_library.py # 99 doctests failed
+        sage -t  -long devel/sage/sage/schemes/generic/toric_divisor_class.pyx # 56 doctests failed
+        sage -t  -long devel/sage/sage/schemes/generic/toric_divisor.py # 312 doctests failed
+        sage -t  -long devel/sage/sage/schemes/generic/fano_toric_variety.py # 7 doctests failed
+```
+
+Many of these are basically the same as the earlier error.  I'm also seeing this one, as in for example plot/misc.py:
+
+```
+sage -t  -long devel/sage/sage/plot/misc.py
+**********************************************************************
+File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/devel/sage-main/sage/plot/misc.py", line 483:
+    sage: plot(sin(x), (x,0,2*pi), ticks=pi/3, tick_formatter=pi)
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_12[2]>", line 1, in <module>
+        plot(sin(x), (x,Integer(0),Integer(2)*pi), ticks=pi/Integer(3), tick_formatter=pi)###line 483:
+    sage: plot(sin(x), (x,0,2*pi), ticks=pi/3, tick_formatter=pi)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/sage/misc/displayhook.py", line 174, in displayhook
+        print_obj(sys.stdout, obj)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/sage/misc/displayhook.py", line 142, in print_obj
+        print >>out_stream, `obj`
+      File "sage_object.pyx", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/sage/plot/plot.py", line 922, in _repr_
+        self.show()
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/sage/plot/plot.py", line 1546, in show
+        self.save(DOCTEST_MODE_FILE, **options)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/sage/plot/plot.py", line 2202, in save
+        figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/figure.py", line 1032, in savefig
+        self.canvas.print_figure(*args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/backend_bases.py", line 1455, in print_figure
+        **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/backends/backend_agg.py", line 358, in print_png
+        FigureCanvasAgg.draw(self)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/backends/backend_agg.py", line 314, in draw
+        self.figure.draw(self.renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/artist.py", line 46, in draw_wrapper
+        draw(artist, renderer, *args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/figure.py", line 773, in draw
+        for a in self.axes: a.draw(renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/artist.py", line 46, in draw_wrapper
+        draw(artist, renderer, *args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/axes.py", line 1735, in draw
+        a.draw(renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/artist.py", line 46, in draw_wrapper
+        draw(artist, renderer, *args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/axis.py", line 742, in draw
+        tick.draw(renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/artist.py", line 46, in draw_wrapper
+        draw(artist, renderer, *args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/axis.py", line 196, in draw
+        self.label1.draw(renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/text.py", line 518, in draw
+        bbox, info = self._get_layout(renderer)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/text.py", line 280, in _get_layout
+        clean_line, self._fontproperties, ismath=ismath)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/backends/backend_agg.py", line 156, in get_text_width_height_descent
+        self.mathtext_parser.parse(s, self.dpi, prop)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/mathtext.py", line 2797, in parse
+        font_output = fontset_class(prop, backend)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/mathtext.py", line 658, in __init__
+        self._stix_fallback = StixFonts(*args, **kwargs)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/mathtext.py", line 900, in __init__
+        fullpath = findfont(name)
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python/site-packages/matplotlib/font_manager.py", line 1306, in findfont
+        if not os.path.exists(font):
+      File "/home/palmieri/fulvia/32bit/sage-4.6.alpha2/local/lib/python2.6/genericpath.py", line 18, in exists
+        st = os.stat(path)
+    TypeError: coercing to Unicode: need string or buffer, dict found
+**********************************************************************
+```
+
+I've put the full test log on-line: [http://sage.math.washington.edu/home/palmieri/misc/fulvia-ptestlong.log](http://sage.math.washington.edu/home/palmieri/misc/fulvia-ptestlong.log).
+
+
+---
+
+Comment by mhampton created at 2010-10-02 17:04:30
+
+That means cddlib is failing; it must not be building correctly on that platform.
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-02 17:43:50
+
+You're right.  When I set SAGE_CHECK=yes, I get failures in the installation.  I've put the install log on-line: [http://sage.math.washington.edu/home/palmieri/misc/cddlib-094f.p8.log](http://sage.math.washington.edu/home/palmieri/misc/cddlib-094f.p8.log).
+
+
+---
+
+Comment by vbraun created at 2010-10-03 12:12:31
+
+Did the previous `cddlib-094f.p7.spkg` build on that machine with the same toolchain? Does it link to the right cddlib (`ldd cdd_both_reps_gmp`)? Is this Solaris 10 i386?
+
+
+---
+
+Comment by drkirkby created at 2010-10-03 14:06:25
+
+The log that John showed 
+
+http://sage.math.washington.edu/home/palmieri/misc/cddlib-094f.p8.log
+
+is for Solaris 10 x86. (That particular machine, _fulvia_, uses Intel Xeons I think). But it is certainly Solaris 10 x86. It will also have been a 32-bit build, as building Sage on Solaris 64-bit is a bit problematic due to issues with R and ECL. (By default executables build 32-bit on Solaris, even though the processors are 64-bit). 
+
+Dave
+
+
+---
+
+Comment by jhpalmieri created at 2010-10-03 15:39:29
+
+Here are the logs on mark2 (Solaris on sparc) for the old cddlib spkg and the new one, with SAGE_CHECK=yes, built one right after the other (so they were definitely built with the same settings):
+
+[http://sage.math.washington.edu/home/palmieri/misc/mark2-cddlib-094f.p7.log](http://sage.math.washington.edu/home/palmieri/misc/mark2-cddlib-094f.p7.log)
+[http://sage.math.washington.edu/home/palmieri/misc/mark2-cddlib-094f.p8.log](http://sage.math.washington.edu/home/palmieri/misc/mark2-cddlib-094f.p8.log)
+
+The test suite for p7 passes, and the test suite for p8 has lots of seg faults.
+
+
+---
+
+Comment by drkirkby created at 2010-10-03 18:19:11
+
+FWIW I had a quick look at the code of that so-called _portable random number generator_, and did a few quick checks. Several things are odd about it. None are serious issues, but make me skeptical of the code - especially use of the word "portable". 
+
+I would certainly *not* trust its statistical properties, given the pretty basic flaws I found in the coding, though I understand that does not matter for this application. 
+
+Anyway, this is what I found. 
+
+ * `portable_srand` is declared as void, but then tries to return 0. That's a pretty basic programming error. Even GCC flags that as a warning. 
+ * The local variable `type` is declared in `portable_srand` then set to the value `rng_state.rand_type`. However, `type` is never used after being set. So it was pointless declaring `type` and setting it. It's anyone's guess if someone actually intended the algorithm to use `{{{rng_state.rand_type` or not. 
+
+GCC can't detect the last problem, but SunStudio detects this programming error. That's one of the advantages of using another SunStudio - it roots out dubious code better than gcc. 
+
+I added a `main`, and compared the sequence of numbers generated on several platforms. All these produced the same sequence for the 4 seeds I tried. 
+ 
+ * AIX 5.3 on PowerPC 32-bit (Since my RS/6000 7025 F50 is only 32-bit, I could not try 64-bit)
+ * Linux on x86 32-bit
+ * Linux on x86 64-bit
+ * OpenSolaris on x86 32-bit 
+ * OpenSolaris on x86 64-bit 
+ * OS X on x86 32-bit 
+ * OS X on x86 64-bit
+ * Solaris 10 on SPARC 32-bit 
+ * Solaris 10 on SPARC 64-bit 
+
+It will not compile at all on my HP C3600 running HP-UX 11.11B, since the RNG uses `stdint.h`, which is only part of the C99 standard and the older HP-UX 11.11B is not C99 aware. Quite why we need C99 code for a RNG I will never know. I was using portable random number generators well before 1999. 
+
+So I'm not sure one could attach the name "portable" to this, as it certainly presents issues on HP-UX. It may do on Cygwin and FreeBSD too. 
+
+In contrast, the GNU Scientific Library builds and passes all tests on HP-UX, FreeBSD and Cygwin, so is more portable. 
+
+It should also be noted this RNG produces the same sequence if the seed is 0 or 1. For at least some other values I tried, the numbers changed as the seed was changed. But for 0 or 1, the output is the same. 
+
+I cc'ed Dima on this, as I thought he might find this interesting! 
+
+Dave
+
+
+---
+
+Comment by vbraun created at 2010-10-03 18:50:03
+
+* Of course it does not produce good random numbers, duh!
+
+* I'll remove the erroneous "0" in the return.
+
+* The GNU libc rng implements other `rng_state.rng_type` random number generators. Those were deleted. I intentionally did not remove this field: save `sizeof(int)` in exchange for more code changes?
+
+* its basically impossible to write portable code without C99. Pick any Sage component and I'll bet you there is a 16-bit machine out there that will break that code :-)
+
+* the "portable_" prefix is just to distinguish it from the libc functions.
+
+* The output is indeed the same for `seed=0` and `seed=1`. Same for the GNU libc `seed()` function.
+
+
+---
+
+Comment by drkirkby created at 2010-10-03 19:19:43
+
+Replying to [comment:48 vbraun]:
+> * Of course it does not produce good random numbers, duh!
+
+So if it produces poor random numbers and is not portable, is is a good choice? I would suggest not. A more trivial bit of code I showed earlier:
+
+
+```
+static unsigned long next = 1;
+int myrand(void)  /* RAND_MAX assumed to be 32767. */
+{
+    next = next * 1103515245 + 12345;
+    return((unsigned)(next/65536) % 32768);
+}
+
+
+void mysrand(unsigned seed)
+{
+    next = seed;
+}
+```
+
+
+would be more portable. Again the random numbers would not be good, but it would be simpler and more portable. Would that not be a better choice? 
+
+> * its basically impossible to write portable code without C99. Pick any Sage component and I'll bet you there is a 16-bit machine out there that will break that code :-)
+
+16-bit machines are pretty old, and not worth worrying about. 
+
+But Even the latest FreeBSD is not fully C99 compliant. 
+
+In fact, not even gcc is fully compliant to the C99 standard, as 11 years after the standard was ratified, gcc still does not fully support it. See the latest status at 
+
+http://gcc.gnu.org/c99status.html
+
+Of course, the gcc developers have been busy in that time adding extensions to gcc, so gcc is able to compile a superset and subset of the C standard. 
+
+Hence I'd personally try to avoid an unnecessary dependence of C99. Clearly this could be written to not need C99. 
+ 
+Needless to say SunStudio is fully C99 compliant. 
+
+> * the "portable_" prefix is just to distinguish it from the libc functions.
+
+Perhaps `semi_portable` might have been better !!
+
+Anyway, all jokes aside, it does produce the same sequence of numbers on the platforms I was able to build it on. 
+
+Dave
+
+
+---
+
+Comment by vbraun created at 2010-10-03 19:43:52
+
+The downside of your code is, of course, that it will change a lot of existing doctests that were written using the GNU libc rng. If that weren't a concern then I would have used a linear congruential generator myself.
+
+> 16-bit machines are pretty old
+
+so is HP-UX 11.11. This December you'll be able to celebrate its 10th birthday ;-)
+
+
+---
+
+Comment by vbraun created at 2010-10-10 21:53:08
+
+I have removed the offending return statement, now compiles without warnings. As usual, get it at http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg 
+
+Maybe someone could try this on Solaris? I don't have any other idea what could cause the segfaults there. But its possible that this was the problem...
+
+
+---
+
+Comment by drkirkby created at 2010-10-10 22:27:31
+
+Replying to [comment:51 vbraun]:
+> I have removed the offending return statement, now compiles without warnings. As usual, get it at http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg 
+> 
+> Maybe someone could try this on Solaris? I don't have any other idea what could cause the segfaults there. But its possible that this was the problem...
+
+
+I tried on OpenSolaris - it still segfaults. 
+
+
+```
+Number Type = integer
+./spkg-check: line 11: 24952: Memory fault(coredump)
+d1 35
+cdd_both_reps not working as expected
+Testing sampleh2.ine
+size = 1 x 4
+Number Type = integer
+./spkg-check: line 11: 24955: Memory fault(coredump)
+d1 31
+```
+
+
+
+---
+
+Comment by vbraun created at 2010-10-18 10:29:52
+
+OK, I installed `OpenSolaris` 2009.06 in a virtual machine and debugged the problem. The issue is that Solaris sets `RAND_MAX=32767` and cddlib does essentially this (pseudocode)
+
+```
+  r = (double)rand()
+  k = int(sizeof(my_array) * r / RAND_MAX)
+  random_element = my_array[k]
+```
+
+which overflows after replacing rand with the glibc rand (which has RAND_MAX=2147483647).
+
+I've fixed the issue by unconditionally overriding `RAND_MAX` in the new `random.h` instead of checking if it is already #defined.
+
+Updated spkg is at http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+
+I tested it on Fedora 13, `OpenSolaris` 2009.06 i386, and OSX 10.6.4. The testsuite passes on all three.
+
+
+---
+
+Comment by vbraun created at 2010-10-18 10:29:52
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by dimpase created at 2010-10-18 11:45:26
+
+Replying to [comment:53 vbraun]:
+> OK, I installed `OpenSolaris` 2009.06 in a virtual machine and debugged the problem. The issue is that Solaris sets `RAND_MAX=32767` and cddlib does essentially this (pseudocode)
+> {{{
+>   r = (double)rand()
+>   k = int(sizeof(my_array) * r / RAND_MAX)
+>   random_element = my_array[k]
+> }}}
+> which overflows after replacing rand with the glibc rand (which has RAND_MAX=2147483647).
+> 
+> I've fixed the issue by unconditionally overriding `RAND_MAX` in the new `random.h` instead of checking if it is already #defined.
+> 
+> Updated spkg is at http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+> 
+> I tested it on Fedora 13, `OpenSolaris` 2009.06 i386, and OSX 10.6.4. The testsuite passes on all three. 
+
+I just tested in on a Debian testing x64; let me test on a MacOSX PPC, just to have one non-x86 in the picture.
+
+
+---
+
+Comment by dimpase created at 2010-10-18 14:49:45
+
+Replying to [comment:53 vbraun]:
+
+> Updated spkg is at http://www.stp.dias.ie/~vbraun/Sage/spkg/cddlib-094f.p8.spkg
+> 
+> I tested it on Fedora 13, `OpenSolaris` 2009.06 i386, and OSX 10.6.4. The testsuite passes on all three. 
+
+tested on MacOSX PPC 10.5 and Debian Linux. Positive!
+
+
+---
+
+Comment by dimpase created at 2010-10-18 14:49:45
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by mhampton created at 2010-10-18 21:33:55
+
+More positive testing: all tests passed on OS X 10.5, 10.6, and 64-bit Ubuntu 10.10.
+
+
+---
+
+Comment by mpatel created at 2010-10-21 07:27:59
+
+I get build errors on several Skynet hosts:
+
+ * [taurus log](http://build.sagemath.org/sage/builders/taurus%20full/builds/25/steps/shell_1/logs/cddlib) (and similarly on eno, flavius, and sextus).
+
+ It seems this stems from a NFS configuration problem on [some of] Skynet's Fedora 13 hosts.  Or is it an auto* problem?  I've had the same problem with GD and MPFI, and I've worked around it by installing these serially and continuing the build.  Installing CDDLIB p8 serially works.  I haven't had any problems with the previous cddlib package.  In particular, I can install p7 successfully in parallel (or serially).
+
+ * [iras log](http://build.sagemath.org/sage/builders/iras%20full/builds/33/steps/shell_1/logs/cddlib)
+
+ Here, serial and parallel builds of p8 do not work.  But they do work with p7.
+
+Some host system information is [here](http://build.sagemath.org/sage/buildslaves).
+
+
+---
+
+Comment by mpatel created at 2010-10-21 08:43:15
+
+Changing priority from major to blocker.
+
+
+---
+
+Comment by mpatel created at 2010-10-21 08:43:25
+
+Changing status from positive_review to needs_info.
+
+
+---
+
+Comment by vbraun created at 2010-10-21 09:00:48
+
+I feel your pain but it seems like autotools can't find a way to lock files on taurus:
+
+```
+autom4te: cannot lock autom4te.cache/requests with mode 2: No locks available
+autom4te: forgo `make -j' or use a file system that supports locks
+```
+
+and it seems like the system clock is wayyy off on iras:
+
+```
+checking whether build environment is sane... configure: error: newly created file is older than distributed files!
+Check your system clock
+```
+
+Its possible that p7 had less sanity checks because it used slightly older autotools. But I don't see anything issue that can be addressed on the spkg level. You can't safely use parallel make without locking and you can't use make without a reasonable timekeeping device.
+
+
+---
+
+Comment by mpatel created at 2010-10-21 09:18:48
+
+Thanks, Volker.  Running `date` on iras and boxen at about the same time gives `Thu Oct 21 05:14:13 EDT 2010` and `Thu Oct 21 02:14:13 PDT 2010`, respectively.  Or is it deeper than this?
+
+Leif and David, do you have any thoughts about the problems in [comment:57 comment 57]?  The Skynet Fedora machines were recently upgraded from F12 to F13.
+
+If there's a problem with the GD and MPFI spkgs, we can leave that for a future release.
+
+
+---
+
+Comment by mpatel created at 2010-10-22 07:35:55
+
+Resolution: fixed

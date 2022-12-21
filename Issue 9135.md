@@ -1,0 +1,222 @@
+# Issue 9135: sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2010-06-03 19:57:34
+
+Assignee: GeorgSWeber
+
+
+```
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/p
+ython2.6 -fPIC    -g -O2 -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c -o utils.lo utils.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/python2.6 -fPIC -g -O2 -MT u
+tils.lo -MD -MP -MF .deps/utils.Tpo -c utils.cpp  -fno-common -DPIC -o .libs/utils.o
+mv -f .deps/utils.Tpo .deps/utils.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/p
+ython2.6 -fPIC    -g -O2 -MT wildcard.lo -MD -MP -MF .deps/wildcard.Tpo -c -o wildcard.lo wildcard.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/python2.6 -fPIC -g -O2 -MT wildcard.lo -MD -MP -MF .deps/wildcard.Tpo -c wildcard.cpp  -fno-common -DPIC -o .libs/wildcard.o
+mv -f .deps/wildcard.Tpo .deps/wildcard.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -g -O2 -version-info 0:0:0 -release 0.2 -no-undefined  -o libpynac.la -rpath /home/wstei
+n/screen/varro/sage-4.4.3.alpha3/local/lib py_funcs.lo add.lo archive.lo basic.lo clifford.lo color.lo constant.lo ex.lo expair.lo expai
+rseq.lo exprseq.lo fail.lo fderivative.lo function.lo idx.lo indexed.lo inifcns.lo inifcns_trans.lo inifcns_gamma.lo inifcns_nstdsums.lo
+ integral.lo lst.lo matrix.lo mul.lo ncmul.lo normal.lo numeric.lo operators.lo power.lo registrar.lo relational.lo remember.lo pseries.
+lo print.lo symbol.lo symmetry.lo tensor.lo utils.lo wildcard.lo -L/home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/python2.6/confi
+g -lpython2.6  
+libtool: link: g++ -dynamiclib  -o .libs/libpynac-0.2.0.dylib  .libs/py_funcs.o .libs/add.o .libs/archive.o .libs/basic.o .libs/clifford.o .libs/color.o .libs/constant.o .libs/ex.o .libs/expair.o .libs/expairseq.o .libs/exprseq.o .libs/fail.o .libs/fderivative.o .libs/function.o .libs/idx.o .libs/indexed.o .libs/inifcns.o .libs/inifcns_trans.o .libs/inifcns_gamma.o .libs/inifcns_nstdsums.o .libs/integral.o .libs/lst.o .libs/matrix.o .libs/mul.o .libs/ncmul.o .libs/normal.o .libs/numeric.o .libs/operators.o .libs/power.o .libs/registrar.o .libs/relational.o .libs/remember.o .libs/pseries.o .libs/print.o .libs/symbol.o .libs/symmetry.o .libs/tensor.o .libs/utils.o .libs/wildcard.o   -L/home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/python2.6/config -lpython2.6 -ldl    -install_name  /home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/libpynac-0.2.0.dylib -compatibility_version 1 -current_version 1.0 -Wl,-single_module
+ld: Undefined symbols:
+_environ
+/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/libtool: internal link edit command failed
+make[4]: *** [libpynac.la] Error 1
+make[3]: *** [all-recursive] Error 1
+make[2]: *** [all] Error 2   
+Error building pynac.
+
+```
+
+
+
+---
+
+Comment by GeorgSWeber created at 2010-06-04 08:40:22
+
+The problem occurs on Intel Mac OS X 10.4, too. Probably also on Mac OS X 10.5. If it doesn't occur on Mac OS 10.6, then Apple finally has heard the complaints from 2003:
+    http://lists.apple.com/archives/Darwin-development/2003/Apr/msg00177.html
+(see the following posts there).
+
+The solution for Sage was/is for many other spkgs under OS X not to use
+
+```
+... -no-undefined  -o libpynac.la ...
+```
+
+as seen in the above log snippet, but
+
+```
+... -undefined dynamic_lookup  -o libpynac.la...
+```
+
+instead for building. (Or else we would need to declare conditionally this variable "environ", as explained e.g. in
+   http://www.mail-archive.com/bug-gnulib`@`gnu.org/msg09272.html
+but this would be a more intrusive change to the upstream src).
+
+
+---
+
+Comment by was created at 2010-06-04 14:23:23
+
+> Probably also on Mac OS X 10.5.
+
+No, Sage builds fine and passes all tests on 10.5:
+
+```
+
+sage -t  -long "devel/sage/sage/tests/startup.py"
+         [2.4 s]
+
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 11236.4 seconds
+
+D-69-91-148-23:~ wstein$ uname -a
+Darwin D-69-91-148-23.dhcp4.washington.edu 9.8.0 Darwin Kernel Version 9.8.0: Wed Jul 15 16:55:01 PDT 2009; root:xnu-1228.15.4~1/RELEASE_I386 i386
+
+```
+
+
+
+---
+
+Comment by was created at 2010-06-04 14:51:57
+
+This change was caused by Mike Hansens changeset 154, which was part of getting pynac to work with Cygwin:
+
+```
+
+varro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ ../../../../../sage -hg history Makefile.am 
+changeset:   154:f92b57e5f035
+user:        Mike Hansen <mhansen`@`gmail.com>
+date:        Thu May 06 05:44:44 2010 +0200
+summary:     Add Python related autoconf macros.
+
+varro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ -undefined dynamic_lookup  -sh
+-bash: -undefined: command not found
+varro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ ../../../../../sage -sh
+
+Starting subshell with Sage environment variables set.
+Be sure to exit when you are done and do not do anything
+with other copies of Sage!
+
+Bypassing shell configuration files ...
+
+/home/wstein/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac
+sage subshell$ hg diff Makefile.am -r 153
+diff -r ceb75efa62b7 ginac/Makefile.am
+--- a/ginac/Makefile.am Sat Mar 13 15:37:21 2010 -0800
++++ b/ginac/Makefile.am Fri Jun 04 11:03:50 2010 -0400
+`@``@` -1,7 +1,8 `@``@`
+ ## Process this file with automake to produce Makefile.in
+ 
++INCLUDES = $(PYTHON_INCLUDES) -fPIC
+ lib_LTLIBRARIES = libpynac.la
+-libpynac_la_SOURCES = add.cpp archive.cpp basic.cpp clifford.cpp color.cpp \
++libpynac_la_SOURCES = py_funcs.cpp add.cpp archive.cpp basic.cpp clifford.cpp color.cpp \
+   constant.cpp ex.cpp expair.cpp expairseq.cpp exprseq.cpp \
+   fail.cpp fderivative.cpp function.cpp idx.cpp indexed.cpp inifcns.cpp \
+   inifcns_trans.cpp inifcns_gamma.cpp inifcns_nstdsums.cpp \
+`@``@` -10,9 +11,10 `@``@`
+   pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \
+   utils.cpp wildcard.cpp \
+   remember.h tostring.h utils.h compiler.h
+-libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE)
++libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE) -no-undefined
++libpynac_la_LIBADD = $(PYTHON_LIBS)
+ ginacincludedir = $(includedir)/pynac
+-ginacinclude_HEADERS = ginac.h add.h archive.h assertion.h basic.h class_info.h \
++ginacinclude_HEADERS = ginac.h py_funcs.h add.h archive.h assertion.h basic.h class_info.h \
+   clifford.h color.h constant.h container.h ex.h expair.h expairseq.h \
+   exprseq.h fail.h fderivative.h flags.h function.h hash_map.h idx.h indexed.h \
+   inifcns.h integral.h lst.h matrix.h mul.h ncmul.h normal.h numeric.h operators.h \
+/home/wstein/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac
+sage subshell$  
+```
+
+
+
+---
+
+Comment by was created at 2010-06-04 15:14:25
+
+Here's a new spkg that reverts Mike's change:
+
+   http://sage.math.washington.edu/home/wstein/patches/pynac-0.2.0.p3.spkg
+
+and yes, I did autoreconf.
+
+
+---
+
+Comment by was created at 2010-06-04 15:14:25
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by mhansen created at 2010-06-04 18:39:35
+
+Reverting that change will break things on Cygwin.  I've put a new spkg up at 
+
+http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.p3.spkg
+
+which only adds the -no-undefined on Cygwin.
+
+
+---
+
+Comment by mhansen created at 2010-06-04 18:40:56
+
+I've tested this on Linux and Cygwin and am testing on t2 now.
+
+
+---
+
+Comment by GeorgSWeber created at 2010-06-04 19:07:39
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by GeorgSWeber created at 2010-06-04 19:07:39
+
+Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous "autom4te.cache" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).
+
+But I give to
+    http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.p3.spkg
+a positive review neverthess. (I just had uploaded myself a pynac spkg where only the "-no-undefined" is removed unconditionally, but maybe this is a must-have for Cygwin, so the solution by Mike is better than mine).
+
+Ah, before I forget to mention it: this "p3" spkg by Mike builds on MacIntel OS X 10.4, but I neither did a complete Sage build / test yet, nor tried it on PPC. From a comparison of the build outputs of the older pynac 0.1.12 spkg, all can be expected to be fine, however.
+
+
+---
+
+Comment by drkirkby created at 2010-06-04 20:25:37
+
+Replying to [comment:7 GeorgSWeber]:
+> Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous "autom4te.cache" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).
+
+I've often wondered if autom4te.cache is superfluous or not. I have purposly copied that. If you look in the directory, there is usually 4 files. At the top of *one* of them (I forget which), it says it may be safely removed. There is no such comment at the top of the other 3 files. Note the directory is created by autoconf - not when runs the configure script. Hence for safety, I've tended to copy it under the assumption it can't do any harm, the size is small, and there is nothing there to indicate it is safe to remove it. 
+
+I will ask on the autoconf list about this some time. 
+
+Dave
+
+
+---
+
+Comment by was created at 2010-06-05 00:38:59
+
+Resolution: fixed

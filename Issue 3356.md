@@ -241,3 +241,14 @@ Michael
 Comment by mabshoff created at 2008-07-06 19:54:02
 
 This patch fixes the numerical noise doctest issues and one mismerge by me
+
+
+---
+
+Attachment
+
+Oops, part10.patch and trac_3356_doctest_fixes.patch have some conflicting changes, but I sorted them out :). part10.patch merged in Sage 3.0.4.alpha2
+
+Cheers,
+
+Michael

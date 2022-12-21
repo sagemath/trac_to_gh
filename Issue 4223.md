@@ -1,0 +1,461 @@
+# Issue 4223: upgrade fpLLL to newest upstream release (3.0)
+
+Issue created by migration from Trac.
+
+Original creator: malb
+
+Original creation time: 2008-09-30 18:57:46
+
+Assignee: mabshoff
+
+
+```
+The main differences between fplll-2.1 and fplll-3.0 are the following:
+
+- short lattice vector enumeration algorithm (by Xavier Pujol).
+- GPL -> LGPLv2
+- no more need to specify the number of rows and columns in the input
+of the fplll binary.
+- new version of dpe.h [Patrick Pelissier and Paul Zimmermann]
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-09-30 19:20:43
+
+A first version of the spkg can be found at
+
+http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha2/libfplll-3.0.7.spkg
+
+I did remove three of our four fixes since they made it upstream. A Solaris fix to dpe.h remains the only outstanding fix that needs to be upstreamed. I will do some more build testing to make sure all the usual suspects are working.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-09-30 19:20:43
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by mabshoff created at 2008-09-30 19:28:57
+
+This ticket should be merged together with #1346 to make sure that fplll actually works :). malb will likely have time to do that ticket before 3.1.3 ships.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-09-30 19:52:42
+
+Builds fine and make check passes on 
+
+ * Linux x86-64 (eno, sage.math, menas)
+ * Linux Itanium (cleo, iras)
+ * OSX 10.4 PPC (varro), OSX 10.5 Intel (bsd)
+
+It is *broken* on 
+
+ * Linux x86 (cicero)
+
+As is it fails to build on Solaris 10:
+
+```
+make[1]: Entering directory `/home/mabshoff/build-3.1.3.alpha0/sage-3.1.3.alpha0-fulvia/libfplll-3.0.7/src/src'
+if g++ -DPACKAGE_NAME=\"libfplll\" -DPACKAGE_TARNAME=\"libfplll\" 
+-DPACKAGE_VERSION=\"3.0.7\" -DPACKAGE_STRING=\"libfplll\ 3.0.7\" 
+-DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"libfplll\" -DVERSION=\"3.0.7\" -DSTDC_HEADERS=1 
+-DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 
+-DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 
+-DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DHAVE_LIBGMP=1 -DHAVE_LIBMPFR=1 -DSTDC_HEADERS=1 
+-DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_TIME_H=1 
+-DHAVE_UNISTD_H=1 -DHAVE_STDBOOL_H=1 -DHAVE_FLOOR=1 -DHAVE_POW=1 -DHAVE_RINT=1 
+-DHAVE_SQRT=1 -DHAVE_STRTOL=1 -I. -I.   -I/home/mabshoff/build-3.1.3.alpha0/sage-
+3.1.3.alpha0-fulvia/local/include/  -fPIC -I/home/mabshoff/build-3.1.3.alpha0/sage-
+3.1.3.alpha0-fulvia/local/include/ -L/home/mabshoff/build-3.1.3.alpha0/sage-
+3.1.3.alpha0-fulvia/local/lib -MT main.o -MD -MP -MF ".deps/main.Tpo" -c -o main.o 
+main.cpp; \
+        then mv -f ".deps/main.Tpo" ".deps/main.Po"; else rm -f ".deps/main.Tpo"; exit 1; fi
+In file included from defs.h:36,
+                 from util.h:29,
+                 from lexer.h:26,
+                 from main.h:26,
+                 from main.cpp:22:
+dpe.h: In function ‘void dpe_normalize(dpe_struct*)’:
+dpe.h:167: error: ‘finite’ was not declared in this scope
+In file included from nr.h:187,
+                 from util.h:30,
+                 from lexer.h:26,
+                 from main.h:26,
+                 from main.cpp:22:
+nr.cpp: In member function ‘void FP_NR<F>::set_nan() [with F = double]’:
+nr.cpp:920: error: ‘NAN’ was not declared in this scope
+nr.cpp: In member function ‘void FP_NR<F>::set_nan() [with F = dpe_struct [1]]’:
+nr.cpp:1085: error: ‘NAN’ was not declared in this scope
+```
+
+
+The spkg should also run spkg-check automatically for now until we are reasonably sure that libfplll works.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-09-30 22:56:01
+
+I moved the spkg to
+
+http://sage.math.washington.edu/home/mabshoff/libfplll-3.0.7.spkg
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-10-26 03:37:24
+
+The latest upstream is 3.0.11 or so and the dpe.h patch has been integrated. 
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-07 07:37:33
+
+This is likely going to come in useful for the gcc 4.4.0 port of Sage, so I will be working on this.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-07 08:09:52
+
+The latest spkg is at
+
+   http://sage.math.washington.edu/home/mabshoff/libfplll-3.0.11.spkg
+
+The attached patch makes the fplll extension depend on the header and also fixes the following doctest (which I am not 100% sure if it works correctly):
+
+```
+sage -t -long "devel/sage/sage/libs/fplll/fplll.pyx"        
+**********************************************************************
+File "/scratch/mabshoff/sage-3.4.2.alpha0/devel/sage/sage/libs/fplll/fplll.pyx", line 808:
+    sage: A = gen_ajtai(10, 0.7); A
+Expected:
+    [117   0   0   0   0   0   0   0   0   0]
+    [ 11  55   0   0   0   0   0   0   0   0]
+    [ 47  21 104   0   0   0   0   0   0   0]
+    [  3  22  16  95   0   0   0   0   0   0]
+    [  8  21   3  28  55   0   0   0   0   0]
+    [ 33  15  30  37   8  52   0   0   0   0]
+    [ 35  21  41  31  23  10  21   0   0   0]
+    [  9  20  34  23  18  13   9  63   0   0]
+    [ 11  14  38  16  26  23   3  11   9   0]
+    [ 15  21  35  37  12   6   2  10   1  17]
+Got:
+    [117   0   0   0   0   0   0   0   0   0]
+    [-11  55   0   0   0   0   0   0   0   0]
+    [ 47 -21 104   0   0   0   0   0   0   0]
+    [ -3 -22  16  95   0   0   0   0   0   0]
+    [ -8  21  -3  28  55   0   0   0   0   0]
+    [ 33  15 -30 -37   8  52   0   0   0   0]
+    [-35  21 -41  31 -23 -10  21   0   0   0]
+    [ -9  20 -34 -23 -18 -13  -9  63   0   0]
+    [-11  14  38 -16  26 -23   3  11   9   0]
+    [ 15 -21 -35 -37  12  -6   2  10  -1  17]
+**********************************************************************
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-07 08:27:36
+
+Hmmm, gen_ajtai() seems to be `#random` now, but low and behold, sooner or later we are hitting a divide by zero in libfplll:
+
+```
+mabshoff`@`sage:/scratch/mabshoff/sage-3.4.2.alpha0$ ./sage -gdb
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-ipython
+GNU gdb 6.8-debian
+Copyright (C) 2008 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu"...
+[Thread debugging using libthread_db enabled]
+Python 2.5.2 (r252:60911, Apr 21 2009, 22:04:46) 
+[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+[New Thread 0x7f15e094b6e0 (LWP 19068)]
+sage: 
+sage: from sage.libs.fplll.fplll import gen_ajtai
+sage: A = gen_ajtai(10, 0.7); A
+| Sage Version 3.4.2.alpha0, Release Date: 2009-04-24                |
+| Type notebook() for the GUI, and license() for information.        |
+[117   0   0   0   0   0   0   0   0   0]
+[ 11  55   0   0   0   0   0   0   0   0]
+[ 47  21 104   0   0   0   0   0   0   0]
+[  3 -22 -16  95   0   0   0   0   0   0]
+[  8 -21  -3 -28  55   0   0   0   0   0]
+[ 33 -15 -30 -37  -8  52   0   0   0   0]
+[ 35  21 -41 -31 -23 -10  21   0   0   0]
+[  9 -20  34 -23 -18  13  -9  63   0   0]
+[ 11 -14  38 -16  26 -23   3  11   9   0]
+[ 15 -21  35 -37 -12  -6   2 -10  -1  17]
+sage: A = gen_ajtai(10, 0.7); A
+
+[ 68   0   0   0   0   0   0   0   0   0]
+[ 19   8   0   0   0   0   0   0   0   0]
+[  0   1  93   0   0   0   0   0   0   0]
+[  3   0  18 128   0   0   0   0   0   0]
+[-11  -1 -19  39  48   0   0   0   0   0]
+[-31  -3 -17  47 -16   3   0   0   0   0]
+[-12   0 -19 -48 -22   0   7   0   0   0]
+[  0   1  24   3  21   0  -2  11   0   0]
+[-29   2 -16 -19   0   0   0   4   6   0]
+[ -8   0 -24  63  10   0   0  -3   0  27]
+sage: A = gen_ajtai(10, 0.7); A
+
+[ 89   0   0   0   0   0   0   0   0   0]
+[ 39   2   0   0   0   0   0   0   0   0]
+[ -2   0  97   0   0   0   0   0   0   0]
+[-20   0  32   4   0   0   0   0   0   0]
+[ 22   0   8   0  11   0   0   0   0   0]
+[ 17   0  14   0   0  60   0   0   0   0]
+[  2   0  38   0  -1   5  52   0   0   0]
+[ 31   0  -9  -1   3  22  23  58   0   0]
+[ 20   0  11   0   3   3 -20  17  15   0]
+[-22   0  40   0   2  22 -18 -15   3   1]
+sage: A = gen_ajtai(10, 0.7); A
+
+[117   0   0   0   0   0   0   0   0   0]
+[ -5  73   0   0   0   0   0   0   0   0]
+[-16 -34  82   0   0   0   0   0   0   0]
+[ 12 -34  27 122   0   0   0   0   0   0]
+[ -8  14   7  35  10   0   0   0   0   0]
+[-31 -16  25 -58  -4  40   0   0   0   0]
+[ -3   2  26 -49   4  19  45   0   0   0]
+[-28 -10  32 -36   0  -4   2  47   0   0]
+[  8  19 -24 -56   3  17 -10  17  32   0]
+[-24  28  14  45  -2  11 -13   8   4   1]
+sage: A = gen_ajtai(10, 0.7); A
+
+[169   0   0   0   0   0   0   0   0   0]
+[-34  44   0   0   0   0   0   0   0   0]
+[ 60   1  56   0   0   0   0   0   0   0]
+[ 83   8 -14  31   0   0   0   0   0   0]
+[-26   2  23  -3  52   0   0   0   0   0]
+[ 43  10 -21  13   1  62   0   0   0   0]
+[ 24   7  24  -5 -10  -2  39   0   0   0]
+[ 16  -1  27  13 -15  -7   4  19   0   0]
+[  0   8  27  12   8 -23 -11  -8  30   0]
+[-75  -9   0  -1 -20 -29  11  -4  11  32]
+sage: A = gen_ajtai(10, 0.7); A
+
+[158   0   0   0   0   0   0   0   0   0]
+[ 36 125   0   0   0   0   0   0   0   0]
+[ 38 -47  90   0   0   0   0   0   0   0]
+[-14 -59  32  35   0   0   0   0   0   0]
+[ 23  34  -8   1  44   0   0   0   0   0]
+[ 48  17 -32  16  18  36   0   0   0   0]
+[ -1  25 -35  -2   5  -6  54   0   0   0]
+[ 73  24 -32   3  -4 -12   2  33   0   0]
+[ 74  25   4 -12  11   0  -5   2  12   0]
+[ -4  36   4  -8   3  -4 -10   4  -3  16]
+sage: A = gen_ajtai(10, 0.7); A
+
+[191   0   0   0   0   0   0   0   0   0]
+[-25  68   0   0   0   0   0   0   0   0]
+[ 29  19  76   0   0   0   0   0   0   0]
+[-69 -22   6  54   0   0   0   0   0   0]
+[-62 -22 -17   3  61   0   0   0   0   0]
+[-76 -31   3  -1  23  52   0   0   0   0]
+[ 43 -17  11   7 -15  15  59   0   0   0]
+[ 69  19   1 -23  17   8  24  38   0   0]
+[ 39  32   0  24  -3  12  25 -18  21   0]
+[  3  28  -7  12  25  24  -5  -2  -2  20]
+sage: A = gen_ajtai(10, 0.7); A
+
+[145   0   0   0   0   0   0   0   0   0]
+[ 11  64   0   0   0   0   0   0   0   0]
+[ 67  12  25   0   0   0   0   0   0   0]
+[-25  17   2  29   0   0   0   0   0   0]
+[ 42 -24  -6   1  33   0   0   0   0   0]
+[ -3  10   0  -7   5  18   0   0   0   0]
+[-57 -25   0   0   9  -8   2   0   0   0]
+[-45 -16   0 -10   2   6   0  43   0   0]
+[ 19 -20   2   0  -8   3   0   7  12   0]
+[ 50 -19   7  11  -2  -3   0  15   4  15]
+sage: A = gen_ajtai(10, 0.7); A
+
+[130   0   0   0   0   0   0   0   0   0]
+[-42  57   0   0   0   0   0   0   0   0]
+[-35 -20 101   0   0   0   0   0   0   0]
+[-42   2  24  36   0   0   0   0   0   0]
+[ 27 -18 -23   1  58   0   0   0   0   0]
+[-11 -11  43 -13  27  23   0   0   0   0]
+[ 32  17 -42 -12  19   3   9   0   0   0]
+[ 64  19 -23   8 -27   0   0  27   0   0]
+[ 34 -22   2 -13  12  -8   3   5  31   0]
+[ 52  11 -47  15  10 -10  -3  -4  -7   7]
+sage: A = gen_ajtai(10, 0.7); A
+
+[ 11   0   0   0   0   0   0   0   0   0]
+[  3  83   0   0   0   0   0   0   0   0]
+[ -1 -12  42   0   0   0   0   0   0   0]
+[  2   4 -13  32   0   0   0   0   0   0]
+[  3 -14  15   3  60   0   0   0   0   0]
+[  4 -24   5   0 -10  64   0   0   0   0]
+[  4   2 -10   7  -5 -30  57   0   0   0]
+[  1  34  -3 -10 -18 -17 -14  60   0   0]
+[  0 -18  19  -5  -6 -24  -2 -27  16   0]
+[  2  21   0   3  -2 -28 -13   6  -5   5]
+sage: A = gen_ajtai(10, 0.7); A
+
+Program received signal SIGFPE, Arithmetic exception.
+[Switching to Thread 0x7f15e094b6e0 (LWP 19068)]
+0x00007f15dad8aa6e in __gmp_exception () from /scratch/mabshoff/sage-3.4.2.alpha0/local/lib/libgmp.so.3
+Current language:  auto; currently asm
+(gdb) bt
+#0  0x00007f15dad8aa6e in __gmp_exception () from /scratch/mabshoff/sage-3.4.2.alpha0/local/lib/libgmp.so.3
+#1  0x00007f15dad8aa8c in __gmp_divide_by_zero () from /scratch/mabshoff/sage-3.4.2.alpha0/local/lib/libgmp.so.3
+#2  0x00007f15dada41aa in __gmpz_urandomm () from /scratch/mabshoff/sage-3.4.2.alpha0/local/lib/libgmp.so.3
+#3  0x00007f15b6599d80 in ZZ_mat<__mpz_struct [1]>::gen_ajtai (this=0x205fff0, alpha=0.69999998807907104)
+    at /scratch/mabshoff/sage-3.4.2.alpha0/local//include/fplll/nr.cpp:748
+#4  0x00007f15b658403f in __pyx_pf_4sage_4libs_5fplll_5fplll_gen_ajtai (__pyx_self=<value optimized out>, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>)
+    at sage/libs/fplll/fplll.cpp:4766
+#5  0x0000000000488f4b in PyEval_EvalFrameEx (f=0x33152a0, throwflag=<value optimized out>) at Python/ceval.c:3573
+#6  0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15e07ec210, globals=<value optimized out>, locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, 
+    defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#7  0x0000000000489505 in PyEval_EvalFrameEx (f=0x801290, throwflag=<value optimized out>) at Python/ceval.c:494
+#8  0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15dbf61648, globals=<value optimized out>, locals=<value optimized out>, args=0x8ddb20, argcount=2, kws=0x8ddb30, 
+    kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#9  0x0000000000487975 in PyEval_EvalFrameEx (f=0x8dd980, throwflag=<value optimized out>) at Python/ceval.c:3669
+#10 0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15dbf61558, globals=<value optimized out>, locals=<value optimized out>, args=0x7fd968, argcount=3, kws=0x7fd980, 
+    kwcount=0, defs=0x7f15dbd10068, defcount=2, closure=0x0) at Python/ceval.c:2836
+#11 0x0000000000487975 in PyEval_EvalFrameEx (f=0x7fd7d0, throwflag=<value optimized out>) at Python/ceval.c:3669
+#12 0x0000000000488507 in PyEval_EvalFrameEx (f=0xa0cfa0, throwflag=<value optimized out>) at Python/ceval.c:3659
+#13 0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15dbf61120, globals=<value optimized out>, locals=<value optimized out>, args=0x32b18c8, argcount=2, kws=0x32b18d8, 
+    kwcount=0, defs=0x7f15dbd08be8, defcount=1, closure=0x0) at Python/ceval.c:2836
+#14 0x0000000000487975 in PyEval_EvalFrameEx (f=0x32b1740, throwflag=<value optimized out>) at Python/ceval.c:3669
+#15 0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15dbf5bdc8, globals=<value optimized out>, locals=<value optimized out>, args=0x8df330, argcount=2, kws=0x8df340, 
+    kwcount=0, defs=0x7f15dbd08ba8, defcount=1, closure=0x0) at Python/ceval.c:2836
+#16 0x0000000000487975 in PyEval_EvalFrameEx (f=0x8df1a0, throwflag=<value optimized out>) at Python/ceval.c:3669
+#17 0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15e0830be8, globals=<value optimized out>, locals=<value optimized out>, args=0x7e9650, argcount=1, kws=0x7e9640, 
+    kwcount=2, defs=0x7f15dc885b60, defcount=2, closure=0x0) at Python/ceval.c:2836
+#18 0x0000000000487975 in PyEval_EvalFrameEx (f=0x7e94c0, throwflag=<value optimized out>) at Python/ceval.c:3669
+#19 0x0000000000489d06 in PyEval_EvalCodeEx (co=0x7f15e08f9288, globals=<value optimized out>, locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, 
+    defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2836
+#20 0x0000000000489e22 in PyEval_EvalCode (co=0x2, globals=0x7f15b67bce20, locals=0x0) at Python/ceval.c:494
+#21 0x00000000004ab51e in PyRun_FileExFlags (fp=0x774590, filename=0x7fffe8963c3b "/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-ipython", start=<value optimized out>, 
+    globals=0x77d400, locals=0x77d400, closeit=0, flags=0x7fffe89618b0) at Python/pythonrun.c:1273
+#22 0x00000000004ab7b9 in PyRun_SimpleFileExFlags (fp=0x774590, filename=0x7fffe8963c3b "/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-ipython", closeit=0, 
+    flags=0x7fffe89618b0) at Python/pythonrun.c:879
+#23 0x000000000041465f in Py_Main (argc=<value optimized out>, argv=<value optimized out>) at Modules/main.c:134
+#24 0x00007f15dfb5e1c4 in __libc_start_main () from /lib/libc.so.6
+#25 0x0000000000413b19 in _start ()
+(gdb) 
+```
+
+
+
+---
+
+Comment by mabshoff created at 2009-05-07 08:43:14
+
+Ok, three more data points:
+
+ * This also happens in Sage 3.2, i.e. with GMP 4.2.1
+ * This also happens with libfplll 2.x
+ * The smaller the dimension, the more likely we do see a segfault, i.e. d=5 is more or less a segfault in the first two or three rounds
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+Workaround patch - jointly done with Bill Hart
+
+
+---
+
+Comment by mabshoff created at 2009-05-11 07:43:51
+
+Damien fixed the bug and the latest spkg is at
+
+  http://perso.ens-lyon.fr/damien.stehle/downloads/libfplll-3.0.12.tar.gz
+
+Rebasing the spkg should be trivial.
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mabshoff created at 2009-05-12 16:25:51
+
+The spkg is at
+
+  http://sage.math.washington.edu/home/mabshoff/release-cycles-4.0/alpha0/libfplll-3.0.12.spkg
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-12 17:18:56
+
+Merged spkg and patch in Sage 4.0.alpha0.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2009-05-12 17:18:56
+
+Resolution: fixed

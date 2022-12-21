@@ -1,0 +1,123 @@
+# Issue 4739: [with patch, not ready for review] Add support for additive abelian groups
+
+Issue created by migration from Trac.
+
+Original creator: cremona
+
+Original creation time: 2008-12-07 22:39:42
+
+Assignee: tbd
+
+CC:  robertwb
+
+Keywords: abelian group
+
+See also #1849 and #3999.
+
+The patch adds code to the AbelianGroups_class so that additive groups can be created, and are output with additive notation.
+
+Further doctests are required to show examples of both additive and multiplicative type in every case.  Subgroup creation (which interfaces with GAP) does not yet work.
+
+As an example (more to come), torsion subgroups of elliptic curves over number fields are now additive.
+
+robertwb asked to have a look at this even though it is not yet finished, so here it is!
+
+NB I still think that the whole abelian group code needs rewriting (as was started in #1849)!
+
+
+---
+
+Attachment
+
+Applies to 3.2.1 after #3810 and #4061 patches.
+
+
+---
+
+Comment by mhansen created at 2008-12-08 01:09:53
+
+Hi John,
+
+I haven't look at the code too seriously, but what would be your thoughts on having two subclasses (additive and multiplicative) of a common class for the abelian group elements so that one doesn't need to always do a check for the parent's op_symbol?
+
+--Mike
+
+
+---
+
+Comment by cremona created at 2008-12-08 09:23:00
+
+Replying to [comment:1 mhansen]:
+> Hi John,
+> 
+> I haven't look at the code too seriously, but what would be your thoughts on having two subclasses (additive and multiplicative) of a common class for the abelian group elements so that one doesn't need to always do a check for the parent's op_symbol?
+> 
+> --Mike
+That would be a very good idea indeed.  The way I see it, there is a base abstract class (in which elements are represented as integer vectors, operation is addition with a modulus for each coordinate corresponding to a generator of finite order);  and then there are two possible interfaces to that base class via user classes which are either additive or multiplicative.
+
+We are surely in a position to provide this structure right now, using the exiting implementations for the base class.  Then the "major rewrite" which we keep on mentioning need only apply to the base class.
+
+I'll continue to think about this;  it does not sound any harder, and is probably easier, than what I have been doing so far.
+
+
+---
+
+Comment by robertwb created at 2008-12-11 10:50:44
+
+I agree with mhansen, always checking parent's op_symbol is probably slow, but I think this can be avoided. 
+
+Note that we already have two classes, AdditiveGroupElement and MultiplicativeGroupElement. I think the code here is trying to unify them. both under MultiplicativeGroupElement. Also, note that no typechecking (or coercion) is done for the __add__ and __sub__ commands, so if the left and right operand are not the correct type (or, if both are abelian group elements, but in different groups) then either an error or nonsense will be returned. 
+
+For multiplication, do we really want `a * (1+5+O(5^2))` and `a * "50"` to work for a group element a?
+
+
+---
+
+Comment by davidloeffler created at 2010-07-29 13:13:34
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by davidloeffler created at 2010-07-29 13:13:34
+
+Can I propose we resolve this as "fixed" now that #6449 has gone in?
+
+
+---
+
+Comment by cremona created at 2010-07-30 02:11:49
+
+Replying to [comment:5 davidloeffler]:
+> Can I propose we resolve this as "fixed" now that #6449 has gone in? 
+
+That sounds reasonable to me.  There's no chance that this ancient patch would apply now anyway.
+
+
+---
+
+Comment by davidloeffler created at 2010-07-30 07:34:46
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by davidloeffler created at 2010-07-30 07:34:46
+
+OK, I'm setting it to "positive review" to bring it to the attention of the release manager who can close it.
+
+
+---
+
+Comment by mpatel created at 2010-08-07 06:03:39
+
+Resolution: duplicate
+
+
+---
+
+Comment by mpatel created at 2010-08-07 06:03:39
+
+If no one objects, I'll close this ticket as a "duplicate."

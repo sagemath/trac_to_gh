@@ -1,0 +1,356 @@
+# Issue 9040: fatal relocation error installing R on OpenSolaris
+
+Issue created by migration from Trac.
+
+Original creator: drkirkby
+
+Original creation time: 2010-05-25 00:52:46
+
+Assignee: drkirkby
+
+CC:  jsp jhpalmieri kcrisman dimpase
+
+## Build environment
+ * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
+ * OpenSolaris 2009.06 snv_111b X86
+ * Sage 4.4.2
+ * gcc 4.4.4
+
+## How gcc 4.4.4 was configured
+Since the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. 
+
+
+```
+drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+Using built-in specs.
+Target: i386-pc-solaris2.11
+Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
+Thread model: posix
+gcc version 4.4.4 (GCC) 
+```
+
+
+gcc 4.3.4 was failing to build iconv. 
+
+## How the Sage build was attempted
+ * 64-bit build. SAGE64 was set to "yes"
+ * #9008 update zlib to latest upstream release to allow a 64-bit library to be built. 
+ * #9009 update mercurial spkg to build 64-bit.
+ * #7982 update sage_fortran so it can build 64-bit binaries.
+ * Run 'make -k' so make did not stop on errors, so errors can be listed. 
+
+## The problem
+
+```
+make[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'
+make[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'
+make[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'
+make[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+making g_alab_her.d from g_alab_her.c
+making g_cntrlify.d from g_cntrlify.c
+making g_fontdb.d from g_fontdb.c
+making g_her_glyph.d from g_her_glyph.c
+make[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[6]: `Makedeps' is up to date.
+make[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+gcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_alab_her.c -o g_alab_her.o
+gcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_cntrlify.c -o g_cntrlify.o
+gcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_fontdb.c -o g_fontdb.o
+gcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_her_glyph.c -o g_her_glyph.o
+gcc -std=gnu99 -G -L/export/home/drkirkby/sage-4.4.2/local/lib/ -m64  -o vfonts.so g_alab_her.o g_cntrlify.o g_fontdb.o g_her_glyph.o -L../../../lib -lR -lm
+make[7]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'
+make[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules'
+make[4]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'
+mkdir ../../library
+make[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'
+building system startup profile
+mkdir ../../../library/base
+mkdir ../../../library/base/R
+make[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'
+make[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'
+building package 'base'
+make[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'
+mkdir ../../../library/base/demo
+mkdir ../../../library/base/po
+make[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'
+ld.so.1: R: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/lib/libR.so: symbol _init: value 0x228000984acd does not fit
+/bin/sh: line 1: 3520: Killed
+make[5]: *** [all] Killed
+make[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'
+make[4]: *** [R] Error 1
+make[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'
+make[3]: *** [R] Error 1
+make[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src'
+make[2]: *** [R] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src'
+Error building R.
+
+real    2m34.249s
+user    2m6.818s
+sys     0m23.514s
+sage: An error occurred while installing r-2.10.1.p1
+```
+
+
+I will try to build R outside of Sage next. 
+
+Other OpenSolaris issues are shown at #9026
+
+
+---
+
+Comment by drkirkby created at 2010-06-01 08:06:47
+
+This might be difficult to solve. 
+
+1) The R manual 
+
+http://cran.r-project.org/doc/manuals/R-admin.html#Solaris
+
+makes it clear that R has never been successfully built with gcc on OpenSolaris, though it can be built with Sun Studio. I'd prefer not to need to have both compilers installed, but it may be the only option, as there are too many GNUisms to get Sage to build all with Sun Studio. 
+
+2) If the particular error message occurs with Sun Studio, 
+
+http://developers.sun.com/solaris/articles/about_amd64_abi.html
+
+suggests using the Sun Studio option '-Kpic' to build Position Independent Code (PIC) code. 
+
+Since the R package appears to use '-fpic' with gcc, which generates PIC code, generating PIC code does not appear to be working with gcc. (However, normally one uses -fPIC, which is slightly different.) 
+
+So I'm not sure how to solve this. Maybe making Sun Studio (which is free) a prequisite is the only sensible option on OpenSolaris on x64 hardware. 
+
+Dave
+
+
+---
+
+Comment by jhpalmieri created at 2010-08-02 05:21:01
+
+This also seems like an issue on Solaris on x64 (not just OpenSolaris).  At least, I can't build R on fulvia, and I get a similar error message.
+
+
+---
+
+Comment by drkirkby created at 2010-08-02 09:43:02
+
+Replying to [comment:4 jhpalmieri]:
+> This also seems like an issue on Solaris on x64 (not just OpenSolaris).  At least, I can't build R on fulvia, and I get a similar error message.
+
+You do not surprise me there. Page 49 of the [R Installation and Administration Guide](http://cran.r-project.org/doc/manuals/R-admin.pdf) says in the section on Solaris:
+
+_Tests with gcc4 on x86 and amd64 have been less successful: x86 builds have failed on tests using complex arithmetic, whereas on amd64 the builds have failed to complete in several different ways, most recently with relocation errors for libRblas.so_ I'm not sure if R is built with the -fPIC option, but if not, that is likely to be the cause of relocation errors. I finally convinced the Pari developers that one should use -fPIC on shared libraries. 
+
+Since R runs as a stand-alone program, building with the recommended Sun compilers should not cause any linking problems. 
+
+It means one needs to have two sets of compilers installed, which is a bit annoying, but there may be no way around it. I guess if we had a patch that worked with gcc, we could submit that to the R developers. I thought I'd worry about the R issue when the rest of Sage was building on this hardware, since R is not a critical component to getting something working. 
+
+An older version of the Sun compilers is installed on 't2' in the directory `/opt/SUNWspro`. The C compiler is `/opt/SUNWspro/bin/cc` and the C++ compiler is `/opt/SUNWspro/bin/CC`. That might be sufficient. It is not the latest SunStudio, but I doubt one needs to have the latest version. If it is needed, SunStudio is a free download, though there's a lack of disk space on t2, so I am not keen to install it now. 
+
+BTW, there's several errors in the R guide about Solaris, which I have raised, but I've had no positive response about. First I sent to the r-help, but was told they should go to r-devel or the bug database. Then after sending them to r-devel it was ignored. Then a reminder got ignored too. I guess I should submit them to the bug database. 
+
+Dave
+
+
+---
+
+Comment by drkirkby created at 2011-03-04 23:43:00
+
+I know more about this problem than was on the ticket. The shared libraries generated by R have non-PIC code in them. This is easy to prove, as detailed here
+
+http://blogs.sun.com/rie/entry/my_relocations_don_t_fit
+
+basically running
+
+
+```
+$ elfdump -d library | grep TEXTREL
+```
+
+
+should produce no output, but it does in the case of the three R libraries 
+
+
+```
+drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libR.so | fgrep TEXTREL 
+      [25]  TEXTREL           0                   
+      [34]  FLAGS             0x4                 [ TEXTREL ]
+drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRblas.so | fgrep TEXTREL 
+      [19]  TEXTREL           0                   
+      [28]  FLAGS             0x4                 [ TEXTREL ]
+drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRlapack.so | fgrep TEXTREL 
+      [18]  TEXTREL           0                   
+      [27]  FLAGS             0x4                 [ TEXTREL ]
+drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ 
+```
+
+
+That blog page also describes how to track down the bad code, but its far from obvious to me what to do. I am totally lost. 
+
+The problem is also seen on 32-bit code on both SPARC and x86, but it only causing linking issues on 64-bit code. So essentially one could debug this problem on t2.math with either a 32-bit or 64-bit build. But I can't follow the logic needed to do this debugging. 
+
+
+Dave
+
+
+---
+
+Comment by fbissey created at 2011-03-05 19:56:30
+
+Could you make available the complete build log? We could at least try to see where things go wrong when we compile these libraries.
+
+
+---
+
+Comment by drkirkby created at 2011-03-05 22:11:13
+
+Replying to [comment:9 fbissey]:
+> Could you make available the complete build log? We could at least try to see where things go wrong when we compile these libraries. 
+
+Sure, though I don't think it will help much. See attached file r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2 The file that is probably causing the problem is `eval.c`. 
+
+The software system is slightly different to that in the description - both gcc and Sage have been updated, though the hardware is the same. 
+
+ * Sun Ultra 27 
+ * 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
+ * 12 GB RAM
+ * OpenSolaris 2009.06 snv_134 X86
+ * Sage 4.6.2.rc1 (which is exactly the same as Sage 4.6.2 I gather)
+ * gcc 4.5.0
+
+If I compile with:
+
+
+```
+LD_OPTIONS=-Dreloc,detail
+```
+
+
+as suggested in that Sun blog, then the output will be several hundred MB. (If you want to see it, then it would be easier if I created you an account on this machine) or you tried on t2.math (I assume you have an account, if not I can create you one). But t2.math is desperately slow. 
+
+I'm told on the R developers list that defining `NO_THREADED_CODE` will stop the use of the gcc extensions. Hopefully that will allow the library to build properly. I'm not sure of what negative impacts it will have.
+
+
+---
+
+Comment by drkirkby created at 2011-03-05 22:12:45
+
+Failed build of R in sage-4.6.2.rc1 when compiling with gcc.
+
+
+---
+
+Attachment
+
+Oh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this
+
+```
+relocation error: R_AMD64_PC32
+```
+
+I think you should totally try the -mcmodel option in C{XX}FLAGS:
+
+```
+`-mcmodel=small'
+     Generate code for the small code model: the program and its
+     symbols must be linked in the lower 2 GB of the address space.
+     Pointers are 64 bits.  Programs can be statically or dynamically
+     linked.  This is the default code model.
+
+`-mcmodel=kernel'
+     Generate code for the kernel code model.  The kernel runs in the
+     negative 2 GB of the address space.  This model has to be used for
+     Linux kernel code.
+
+`-mcmodel=medium'
+     Generate code for the medium model: The program is linked in the
+     lower 2 GB of the address space.  Small symbols are also placed
+     there.  Symbols with sizes larger than `-mlarge-data-threshold'
+     are put into large data or bss sections and can be located above
+     2GB.  Programs can be statically or dynamically linked.
+
+`-mcmodel=large'
+     Generate code for the large model: This model makes no assumptions
+     about addresses and sizes of sections.
+```
+
+medium would probably work, if it doesn't try large.
+
+
+---
+
+Comment by drkirkby created at 2011-03-06 20:21:08
+
+Replying to [comment:11 fbissey]:
+> Oh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this
+> {{{
+> relocation error: R_AMD64_PC32
+> }}}
+> I think you should totally try the -mcmodel option in C{XX}FLAGS:
+> {{{
+> `-mcmodel=small'
+>      Generate code for the small code model: the program and its
+>      symbols must be linked in the lower 2 GB of the address space.
+>      Pointers are 64 bits.  Programs can be statically or dynamically
+>      linked.  This is the default code model.
+> 
+> `-mcmodel=kernel'
+>      Generate code for the kernel code model.  The kernel runs in the
+>      negative 2 GB of the address space.  This model has to be used for
+>      Linux kernel code.
+> 
+> `-mcmodel=medium'
+>      Generate code for the medium model: The program is linked in the
+>      lower 2 GB of the address space.  Small symbols are also placed
+>      there.  Symbols with sizes larger than `-mlarge-data-threshold'
+>      are put into large data or bss sections and can be located above
+>      2GB.  Programs can be statically or dynamically linked.
+> 
+> `-mcmodel=large'
+>      Generate code for the large model: This model makes no assumptions
+>      about addresses and sizes of sections.
+> }}}
+> medium would probably work, if it doesn't try large.
+
+This does not help. Medium causes no change in behavior, whereas 'large;' causes an early exit with a message about longs were expected to be 4 bytes, not 8. (But since I'm building 64-bit, longs are 8 bytes). Whereas normally without either of those options, 5 shared libraries get built in R, this reduces to two if `-mcmodel=large`. 
+
+I think the key to this is 
+
+http://blogs.sun.com/rie/entry/my_relocations_don_t_fit
+
+I posted a log with the suggested debugging option (`LD_OPTIONS=-Dreloc,detail`) to 
+
+http://boxen.math.washington.edu/home/kirkby/r-2.10.1.p4-with-debug-info.log.bz2
+
+I think you will see, its not easy to debug.
+
+
+---
+
+Comment by fbissey created at 2011-03-06 22:47:14
+
+Jumped the gun a little bit. It seemed worth a try.
+
+
+---
+
+Comment by mkoeppe created at 2020-07-08 16:51:35
+
+Outdated, should be closed
+
+
+---
+
+Comment by mkoeppe created at 2020-07-08 16:51:35
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by chapoton created at 2020-07-15 06:42:25
+
+Resolution: invalid
