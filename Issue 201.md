@@ -1,0 +1,354 @@
+# Issue 201: mwrank crashing
+
+Issue created by migration from Trac.
+
+Original creator: dmharvey
+
+Original creation time: 2007-01-19 21:27:32
+
+Assignee: was
+
+I'm not sure if this is a bug in SAGE or mwrank or if I'm just getting unlucky....
+
+
+```
+sage: E = EllipticCurve([3, -15675])
+
+sage: E.rank()
+---------------------------------------------------------------------------
+<type 'exceptions.RuntimeError'>          Traceback (most recent call last)
+
+/home/dmharvey/<ipython console> in <module>()
+
+/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm)
+    839             elif algorithm == 'mwrank_shell':
+    840                 misc.verbose("using mwrank shell")
+--> 841                 X = self.mwrank()
+    842                 if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:
+    843                     raise RuntimeError, '%s\nRank not provably correct (maybe try rank with only_use_mwrank=False).'%X
+
+/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in mwrank(self, options)
+    142             from sage.interfaces.all import Mwrank
+    143             mwrank = Mwrank(options=options)
+--> 144         return mwrank(self.a_invariants())
+    145 
+    146     def conductor(self, algorithm="pari"):
+
+/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/mwrank.py in __call__(self, cmd)
+     68 
+     69     def __call__(self, cmd):
+---> 70         return self.eval(cmd)
+     71 
+     72     def console(self):
+
+/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip)
+    463         code = code.strip()
+    464         try:
+--> 465             return '\n'.join([self._eval_line(L) for L in code.split('\n') if L != ''])
+    466         except KeyboardInterrupt:
+    467             self._keyboard_interrupt()
+
+/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _eval_line(self, line, allow_use_file, wait_for_prompt)
+    426                         return ''
+    427                     raise RuntimeError, "%s\n%s crashed executing %s"%(msg,
+--> 428                                                    self, line)
+    429                 out = E.before
+    430             else:
+
+<type 'exceptions.RuntimeError'>: End Of File (EOF) in read_nonblocking(). Exception style platform.
+<pexpect.spawn instance at 0x2aaabad74d40>
+version: 2.0 ($Revision: 1.151 $)
+command: /home/was/sage/local/bin/mwrank
+args: ['/home/was/sage/local/bin/mwrank']
+patterns:
+    Enter curve: 
+buffer (last 100 chars): 
+before (last 100 chars): [0, 0, 0, 3, -15675]
+
+after: <class 'pexpect.EOF'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: 1
+pid: 20884
+child_fd: 3
+timeout: None
+delimiter: <class 'pexpect.EOF'>
+logfile: None
+maxread: 10000
+searchwindowsize: None
+delaybeforesend: 0
+Mwrank crashed executing [0, 0, 0, 3, -15675]
+```
+
+
+
+
+---
+
+Comment by ncalexan created at 2007-02-19 07:39:22
+
+As of 2.1.5, it appears to be an error in mwrank, or at least sage's build of mwrank:
+
+
+
+```
+leeto:~/Devel/sage-alpha8/local/bin nalexand$ ./mwrankProgram mwrank: uses 2-descent (via 2-isogeny if possible) to
+determine the rank of an elliptic curve E over Q, and list a
+set of points which generate E(Q) modulo 2E(Q).
+and finally saturate to obtain generating points on the curve.
+For more details see the file mwrank.doc.
+For details of algorithms see the author's book.
+
+Please acknowledge use of this program in published work, 
+and send problems to John.Cremona`@`nottingham.ac.uk.
+
+Version compiled on Dec  8 2006 at 12:52:17 by GCC 4.0.1 (Apple Computer, Inc. build 5247)
+using base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)
+Using NTL multiprecision floating point with 15 decimal places.
+Enter curve: [0,0,0,3, -15675]
+
+Curve [0,0,0,3,-15675] :        Basic pair: I=-9, J=423225
+disc=-179119403541
+2-adic index bound = 2
+2-adic index = 2
+Two (I,J) pairs
+Looking for quartics with I = -9, J = 423225
+Looking for Type 3 quartics:
+Trying positive a from 1 up to 14 (square a first...)
+(1,1,-72,275,-364)      --nontrivial...(x:y:z) = (1 : 1 : 0)
+Point = [386:2489:8]
+        height = 5.56883271776712
+Rank of B=im(eps) increases to 1
+Trying positive a from 1 up to 14 (...then non-square a)
+Trying negative a from -1 down to -21
+Finished looking for Type 3 quartics.
+Looking for quartics with I = -144, J = 27086400
+Looking for Type 3 quartics:
+Trying positive a from 1 up to 57 (square a first...)
+(9,-4,-600,2784,-3644)  --nontrivial...(x:y:z) = (1 : 3 : 0)
+Point = [2703:26837:27]
+        height = 6.49337125992467
+Doubling global 2-adic index to 2
+global 2-adic index is equal to local index
+so we abort the search for large quartics
+Rank of B=im(eps) increases to 2
+Exiting search for large quartics after finding enough globally soluble ones.
+Mordell rank contribution from B=im(eps) = 2
+Selmer  rank contribution from B=im(eps) = 2
+Sha     rank contribution from B=im(eps) = 0
+Mordell rank contribution from A=ker(eps) = 0
+Selmer  rank contribution from A=ker(eps) = 0
+Sha     rank contribution from A=ker(eps) = 0
+Rank = 2
+
+Regulator (before saturation) = 16.9955132982626
+Searching for points (bound = 10)...done
+Regulator (after searching) = 16.9955132982626
+Saturating (bound = 100)...RR: division by zero
+Abort trap
+```
+
+
+
+---
+
+Comment by was created at 2007-08-17 14:34:32
+
+
+```
+On 8/17/07, John Cremona <john.cremona`@`gmail.com> wrote:
+> It's a simple precision problem -- even running mwrank with precision
+> 20 ("-p20") sorts it.  This happens in the code to find the real roots
+> of a real cubic, and it's the classical problem where subtracting two
+> close reals gives a bad answer (in this case it gave 0 in a situation
+> where theory said that the number cannot be zero).
+>
+> Testing this using sage I found that the command
+> mwrank_set_precision() does not work:
+>
+> sage: mwrank_set_precision(30)
+> ---------------------------------------------------------------------------
+> <type 'exceptions.ImportError'>           Traceback (most recent call last)
+>
+> /home/jec/gp/<ipython console> in <module>()
+>
+> /home/jec/sage-2.7/local/lib/python2.5/site-packages/sage/libs/mwrank/interface.py
+> in set_precision(n)
+>      27         n -- long
+>      28     """
+> ---> 29     from sage.libs.mwrank.mwrank import _set_precision #
+> import here to save time
+>      30     _set_precision(n)
+>      31
+>
+> <type 'exceptions.ImportError'>: cannot import name _set_precision
+>
+> -- can you fix that?  [Also, while preparing this email:  version() returns
+> sage: version()
+
+Yes, I'll add this to the bug list.
+
+ http://www.sagemath.org:9002/sage_trac/ticket/434
+
+We're organizing big "bug squashing days" now (this first is tomorrow).
+
+>  'SAGE Version 2.7.3, Release Date: 2007-08-02'
+>
+> although this is 2.8 (according to the banner at the top), though it's
+> in a directory called sage-2.7 since that was where I last did a build
+> from scratch;  since then I have been upgrade()-ing.
+
+Do "sage -br" (and possibly hg_sage.pull(); hg_sage.merge() from in SAGE).
+That the above says 2.7.3 means that your the SAGE Python library is still
+at version 2.7.3.  Some sort of interactive confirmation might be needed to
+merge the new version of SAGE with your changes.
+
+> Finally, the attached file realroots.cc includes a patch which
+> improves the stability of the offending function (so that mwrank -p15
+> now works OK on that curve).  And options.h for the email address.
+>
+> Thanks for the bug report!
+
+Excellent, thanks!
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mabshoff created at 2007-08-18 21:33:38
+
+Hello,
+
+valgrind did reveal some issues:
+
+
+```
+==5927== Mismatched free() / delete / delete []
+==5927==    at 0x4A05130: operator delete(void*) (vg_replace_malloc.c:244)
+==5927==    by 0x4CCA293: vec_l::init(long) (vec.cc:62)
+==5927==    by 0x4CD40B2: echmodp(mat_l const&, vec_l&, vec_l&, long&, long&, long) (mat.cc:1366)
+==5927==    by 0x4D74CA4: saturator::nextq() (saturate.cc:155)
+==5927==    by 0x4D753AA: saturator::test_saturation(int, int) (saturate.cc:90)
+==5927==    by 0x4D75483: saturator::do_saturation(int, int) (saturate.cc:236)
+==5927==    by 0x4D7614C: saturator::do_saturation_upto(int, int) (saturate.cc:268)
+==5927==    by 0x4D3190E: mw::process(Point const&, int) (mwprocs.cc:382)
+==5927==    by 0x4D37640: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&, int) (mwprocs.cc:275)
+==5927==    by 0x4D37888: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&) (mwprocs.cc:258)
+==5927==    by 0x4D43254: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:994)
+==5927==    by 0x4D43890: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)
+==5927==  Address 0x713F1B8 is 0 bytes after a block of size 0 alloc'd
+==5927==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)
+==5927==    by 0x4CCA5D7: vec_l::vec_l(long) (vec.cc:36)
+==5927==    by 0x4D74C1C: saturator::nextq() (saturate.cc:153)
+==5927==    by 0x4D753AA: saturator::test_saturation(int, int) (saturate.cc:90)
+==5927==    by 0x4D75483: saturator::do_saturation(int, int) (saturate.cc:236)
+==5927==    by 0x4D7614C: saturator::do_saturation_upto(int, int) (saturate.cc:268)
+==5927==    by 0x4D3190E: mw::process(Point const&, int) (mwprocs.cc:382)
+==5927==    by 0x4D37640: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&, int) (mwprocs.cc:275)
+==5927==    by 0x4D37888: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&) (mwprocs.cc:258)
+==5927==    by 0x4D43254: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:994)
+==5927==    by 0x4D43890: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)
+==5927==    by 0x4D43E68: qsieve::sift(long) (sieve_search.cc:829)
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-08-18 22:10:48
+
+Okay, with the two files from above and a patch a things are working better.
+
+For the patch see http://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/mwrank-fix-delete-operators-in-vec.cc.patch
+
+Valgrind still complains:
+
+```
+Rank = 2
+Searching for points (bound = 8)...==7030== Conditional jump or move depends on uninitialised value(s)
+==7030==    at 0x4D48750: qsieve::sift0(long, long, long, int) (sieve_search.cc:903)
+==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)
+==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)
+==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)
+==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)
+==7030==    by 0x401D7E: main (mwrank.cc:91)
+==7030==
+==7030== Conditional jump or move depends on uninitialised value(s)
+==7030==    at 0x4D47D95: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:942)
+==7030==    by 0x4D4877C: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)
+==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)
+==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)
+==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)
+==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)
+==7030==    by 0x401D7E: main (mwrank.cc:91)
+==7030==
+==7030== Conditional jump or move depends on uninitialised value(s)
+==7030==    at 0x4D47D9F: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:951)
+==7030==    by 0x4D4877C: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)
+==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)
+==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)
+==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)
+==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)
+==7030==    by 0x401D7E: main (mwrank.cc:91)
+done:
+  found points of rank 2
+```
+
+
+and 
+
+
+```
+==7311== Conditional jump or move depends on uninitialised value(s)
+==7311==    at 0x4CF4F5F: Curvedata::minimalize() (curvedata.cc:133)
+==7311==    by 0x4CF92F4: Curvedata::Curvedata(Curvedata const&, int) (curvedata.cc:81)
+==7311==    by 0x4CFE99F: CurveRed::CurveRed(Curvedata const&) (curvered.cc:121)
+==7311==    by 0x4D4C7C8: annihilators(Curvedata const&, long) (htconst.cc:1676)
+==7311==    by 0x4D60180: CurveHeightConst::CurveHeightConst(Curvedata const&) (htconst.cc:1445)
+==7311==    by 0x4D77343: index_bound(Curvedata*, std::vector<Point, std::allocator<Point> >&, int, int) (saturate.cc:509)
+==7311==    by 0x4D79ABF: saturator::saturate(std::vector<long, std::allocator<long> >&, NTL::ZZ&, long, int, int, int) (saturate.cc:359)
+==7311==    by 0x4D320DA: mw::saturate(NTL::ZZ&, std::vector<long, std::allocator<long> >&, long, int) (mwprocs.cc:645)
+==7311==    by 0x4E03AE4: two_descent::saturate(long) (descent.cc:137)
+==7311==    by 0x401D7E: main (mwrank.cc:91)
+==7311==
+==7311== Conditional jump or move depends on uninitialised value(s)
+==7311==    at 0x4CF4F5F: Curvedata::minimalize() (curvedata.cc:133)
+==7311==    by 0x4CF92F4: Curvedata::Curvedata(Curvedata const&, int) (curvedata.cc:81)
+==7311==    by 0x4CFE99F: CurveRed::CurveRed(Curvedata const&) (curvered.cc:121)
+==7311==    by 0x4D76CD2: tamagawa_primes(Curvedata const&) (saturate.cc:532)
+==7311==    by 0x4D79C88: saturator::saturate(std::vector<long, std::allocator<long> >&, NTL::ZZ&, long, int, int, int) (saturate.cc:390)
+==7311==    by 0x4D320DA: mw::saturate(NTL::ZZ&, std::vector<long, std::allocator<long> >&, long, int) (mwprocs.cc:645)
+==7311==    by 0x4E03AE4: two_descent::saturate(long) (descent.cc:137)
+==7311==    by 0x401D7E: main (mwrank.cc:91)
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2007-08-18 22:29:18
+
+Resolution: fixed
+
+
+---
+
+Comment by was created at 2007-08-18 22:29:18
+
+fixed! for sage-2.8.2.

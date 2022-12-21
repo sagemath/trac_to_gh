@@ -1,0 +1,100 @@
+# Issue 2998: sage ignores some environment variables
+
+Issue created by migration from Trac.
+
+Original creator: dfdeshom
+
+Original creation time: 2008-04-22 16:28:43
+
+Assignee: mabshoff
+
+Reported by Gonzalo Tornaria:
+
+```
+Ideally, it would be nice to (e.g)
+
+export CC=gcc-4.3
+export CXX=g++-4.3
+export F77=gfortran-4.3
+
+then build sage, and have it *consistently* use the compilers as set
+in the environment variables. This doesn't quite work, because at some
+points the compilation just ignores the env variables. Below there is
+a list of the obstructions I found for this to work.
+
+
+A) sage-spkg itself, for logging, calls "gcc -v", instead of "${CC-gcc} -v".
+
+Easy fix:
+---------------------------------------------------------------
+--- a/sage-spkg Mon Apr 21 01:43:53 2008 -0700
++++ b/sage-spkg Tue Apr 22 12:37:48 2008 -0300
+`@``@` -241,8 +241,8 `@``@`
+
+ echo "****************************************************"
+ echo "GCC Version"
+-echo "gcc -v"
+-gcc -v
++echo "${CC-gcc} -v"
++${CC-gcc} -v
+ if [ $? -ne 0 ]; then
+   echo "Unable to determine gcc version."
+ fi
+---------------------------------------------------------------
+
+B) sage-env, tests if CC is gcc, which means "CC=gcc-4.3" might not
+work exactly the same as if gcc is a symlink to gcc-4.3, for instance:
+
+if [ "$SAGE64" = "yes" -a CC = "gcc" ]; then
+  CFLAGS="$CFLAGS -m64"
+fi
+
+C) packages which seem to not honor CC environment variable (they use "gcc"):
+
+flint-1.06.p2
+atlas-3.8.1.p1
+f2c-20070816.p0
+symmetrica-2.0.p2
+polybori-0.3.1.p1
+rubiks-20070912.p5
+zn_poly-0.8.p0
+sage-3.0.rc1
+gap-4.4.10.p7 // guava3.4
+tachyon-0.98beta.p5
+palp-1.1.p1
+
+(gap itself uses CC, but compilation of guava, which is part of gap
+spkg, does not).
+
+D) packages which seem not to honor CXX environment variable (they use "g++")
+
+polybori-0.3.1.p1
+rubiks-20070912.p5
+sage-3.0.rc1
+gfan-0.3.p3
+flintqs-20070817.p3
+
+
+E) fortran
+
+Just for the record, a lot of configure scripts seem to check for
+fortran, even if they don't use it. It appears the relevant
+environment variables are F77 and FFLAGS. Anyway, the variable
+SAGE_FORTRAN seems to be honored fine for the packages that actually
+need fortran.
+```
+
+
+
+---
+
+Comment by dfdeshom created at 2008-04-22 16:52:44
+
+I'm marking this as duplicate, since I've broken it down to #2999, #3000, #3001, #3002
+
+
+---
+
+Comment by dfdeshom created at 2008-04-22 16:52:44
+
+Resolution: duplicate

@@ -1,0 +1,71 @@
+# Issue 1579: memleak in GSL's ComplexDoubleVector
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-12-21 08:32:45
+
+Assignee: mabshoff
+
+Doctesting numerical.py shows the following leak:
+
+```
+==18034== 6,528 (1,840 direct, 4,688 indirect) bytes in 46 blocks are definitely lost in loss record 7,184 of 7,898
+==18034==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)
+==18034==    by 0xA244297: gsl_vector_complex_alloc (init_source.c:32)
+==18034==    by 0xA244358: gsl_vector_complex_calloc (init_source.c:64)
+==18034==    by 0x16921F0E: __pyx_pf_4sage_7modules_21complex_double_vector_31ComplexDoubleVectorSpaceElement___init__ (comp
+lex_double_vector.c:2529)
+==18034==    by 0x458E40: type_call (typeobject.c:436)
+==18034==    by 0x415542: PyObject_Call (abstract.c:1860)
+==18034==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)
+==18034==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)
+==18034==    by 0x4CE057: function_call (funcobject.c:517)
+==18034==    by 0x415542: PyObject_Call (abstract.c:1860)
+==18034==    by 0x41BC62: instancemethod_call (classobject.c:2497)
+==18034==    by 0x415542: PyObject_Call (abstract.c:1860)
+
+==18034== LEAK SUMMARY:
+==18034==    definitely lost: 1,936 bytes in 50 blocks.
+==18034==    indirectly lost: 4,928 bytes in 106 blocks.
+==18034==      possibly lost: 324,343 bytes in 921 blocks.
+==18034==    still reachable: 30,248,680 bytes in 211,765 blocks.
+==18034==         suppressed: 0 bytes in 0 blocks.
+```
+
+With the patch I will attach shortly I get:
+
+```
+==18694== LEAK SUMMARY:
+==18694==    definitely lost: 96 bytes in 4 blocks.
+==18694==    indirectly lost: 240 bytes in 14 blocks.
+==18694==      possibly lost: 324,343 bytes in 921 blocks.
+==18694==    still reachable: 30,248,248 bytes in 211,748 blocks.
+==18694==         suppressed: 0 bytes in 0 blocks.
+```
+
+Sage with the patch passes testall and valgrinding the doctest doesn't show any problems.
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by rlm created at 2007-12-21 22:19:54
+
+merged in 2.9.1 alpha3
+
+
+---
+
+Comment by rlm created at 2007-12-21 22:19:54
+
+Resolution: fixed

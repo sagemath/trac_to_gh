@@ -1,0 +1,351 @@
+# Issue 1231: seg fault when computing with modular symbols over a finite field
+
+Issue created by migration from Trac.
+
+Original creator: AlexGhitza
+
+Original creation time: 2007-11-21 03:45:15
+
+Assignee: was
+
+Here is the troublesome code:
+
+
+```
+ModularSymbols(1,8,0,GF(3)).simple_factors()
+```
+
+
+which results in
+
+
+```
+------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occured in SAGE.
+This probably occured because a *compiled* component
+of SAGE has a bug in it (typically accessing invalid memory)
+or is not properly wrapped with _sig_on, _sig_off.
+You might want to run SAGE under gdb with 'sage -gdb' to debug this.
+SAGE will now terminate (sorry).
+------------------------------------------------------------
+```
+
+
+8 is the smallest weight for which this happens over GF(3).  The same issue occurs with all of the following (again, smallest weight):
+
+```
+ModularSymbols(1,12,0,GF(5)).simple_factors()
+ModularSymbols(1,12,0,GF(7)).simple_factors()
+ModularSymbols(1,12,0,GF(11)).simple_factors()
+ModularSymbols(1,12,0,GF(13)).simple_factors()
+```
+
+
+
+
+---
+
+Comment by mabshoff created at 2007-11-21 04:55:39
+
+At least on sage.math the following is not a problem:
+
+```
+mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.rc1$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 2.8.13.rc1, Release Date: 2007-11-20                  |
+| Type notebook() for the GUI, and license() for information.        |
+sage: ModularSymbols(1,8,0,GF(3)).simple_factors()
+[Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 8 with sign 0 over Finite Field of size 3]
+```
+
+But that obviously doesn't mean that there still might be an issue.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-11-21 04:57:07
+
+But, 5 seconds later I get:
+
+```
+sage: ModularSymbols(1,12,0,GF(5)).simple_factors()
+
+
+------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occured in SAGE.
+This probably occured because a *compiled* component
+of SAGE has a bug in it (typically accessing invalid memory)
+or is not properly wrapped with _sig_on, _sig_off.
+You might want to run SAGE under gdb with 'sage -gdb' to debug this.
+SAGE will now terminate (sorry).
+------------------------------------------------------------
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-11-21 05:18:09
+
+And according to gddc the crash occurs in line 1589 of integer_mod.c:
+
+```
+static int_fast64_t __pyx_f_4sage_5rings_11integer_mod_gcd_int64(int_fast64_t,int_fast64_t); /*proto*/
+```
+
+while computing the new modulus in line 860 of integer_mod.pyx:
+
+```
+        cdef int_fast64_t new_modulus
+        if not isinstance(self, IntegerMod_gmp) and not isinstance(other, IntegerMod_gmp):
+
+            if other.__modulus.int64 == 1: return self
+            new_modulus = self.__modulus.int64 * other.__modulus.int64
+            if new_modulus < INTEGER_MOD_INT32_LIMIT:
+                return self.__crt(other)
+```
+
+Backtrace:
+
+```
+#0  __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b5f423b2530, __pyx_v_value=11)
+    at sage/rings/integer_mod.c:1569
+#1  0x00002b5f37f8ac21 in __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__new_c (__pyx_v_self=0x2b5f423d0910,
+    __pyx_v_value=11) at sage/rings/integer_mod.c:7950
+#2  0x00002b5f37f55369 in __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__sub_c_impl (__pyx_v_self=0x2b5f423b2530,
+    __pyx_v_right=0x2b5f423d0960) at sage/rings/integer_mod.c:8553
+#3  0x00002b5f34517834 in __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (__pyx_v_left=0x2b5f423d0910,
+    __pyx_v_right=0x2b5f423d0960) at sage/structure/element.c:11343
+#4  0x00000000004157ed in binary_op1 (v=0x2b5f423d0910, w=0xb, op_slot=8) at Objects/abstract.c:398
+#5  0x000000000041701e in PyNumber_Subtract (v=0x2b5f423b2530, w=0xb) at Objects/abstract.c:450
+#6  0x00002b5f3c341151 in __pyx_f_4sage_6matrix_7matrix0_6Matrix__sub_c_impl (__pyx_v_self=0x2b5f423d3950,
+    __pyx_v_right=0x2b5f423d3f80) at sage/matrix/matrix0.c:8445
+#7  0x00002b5f34517834 in __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (__pyx_v_left=0x2b5f423d3950,
+    __pyx_v_right=0x2b5f423d3f80) at sage/structure/element.c:11343
+#8  0x00000000004157ed in binary_op1 (v=0x2b5f423d0910, w=0xb, op_slot=8) at Objects/abstract.c:398
+#9  0x000000000041701e in PyNumber_Subtract (v=0x2b5f423b2530, w=0xb) at Objects/abstract.c:450
+#10 0x00002b5f322f217e in op_sub (s=<value optimized out>, a=<value optimized out>)
+    at /tmp/Work-mabshoff/sage-2.8.12/spkg/build/python-2.5.1.p8/src/Modules/operator.c:72
+#11 0x0000000000415523 in PyObject_Call (func=0x2b5f423b2530, arg=0xb, kw=0x2b5f3809a280) at Objects/abstract.c:1860
+#12 0x000000000047c851 in PyEval_CallObjectWithKeywords (func=0x2b5f3104b908, arg=0x2b5f423ba758, kw=0x0)
+    at Python/ceval.c:3433
+#13 0x00002b5f3477ee39 in __pyx_f_4sage_9structure_6coerce_24CoercionModel_cache_maps_bin_op_c (
+    __pyx_v_self=0x2b5f341a25a8, __pyx_v_x=0x2b5f423d3950, __pyx_v_y=0x6575e8, __pyx_v_op=0x2b5f3104b908)
+    at sage/structure/coerce.c:3599
+#14 0x00002b5f345179a1 in __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (__pyx_v_left=0x2b5f423d3950,
+    __pyx_v_right=0x6575e8) at sage/structure/element.c:3841
+#15 0x00000000004157ed in binary_op1 (v=0x2b5f423d0910, w=0xb, op_slot=8) at Objects/abstract.c:398
+#16 0x000000000041701e in PyNumber_Subtract (v=0x2b5f423b2530, w=0xb) at Objects/abstract.c:450
+#17 0x000000000047f749 in PyEval_EvalFrameEx (f=0x17cdc80, throwflag=<value optimized out>) at Python/ceval.c:1167
+#18 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f3f75e558, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x17da438, argcount=3, kws=0x17da450, kwcount=0, defs=0x2b5f3fa2cd28, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#19 0x000000000048365d in PyEval_EvalFrameEx (f=0x17da2a0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#20 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f3fa28af8, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x1, argcount=2, kws=0x17cd878, kwcount=1, defs=0x2b5f3fa2c8e8, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#21 0x000000000048365d in PyEval_EvalFrameEx (f=0x17cd6a0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#22 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f3fa28990, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x17cdc18, argcount=3, kws=0x17cdc30, kwcount=0, defs=0x2b5f3fa2c8a8, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#23 0x000000000048365d in PyEval_EvalFrameEx (f=0x17cda80, throwflag=<value optimized out>) at Python/ceval.c:3660
+#24 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f3fa28af8, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x17cd628, argcount=3, kws=0x17cd640, kwcount=0, defs=0x2b5f3fa2c8e8, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#25 0x000000000048365d in PyEval_EvalFrameEx (f=0x17cd4a0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#26 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f3fa288a0, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x1, argcount=1, kws=0x179b3e8, kwcount=0, defs=0x2b5f3fa2c868, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#27 0x000000000048365d in PyEval_EvalFrameEx (f=0x179b1b0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#28 0x000000000048403b in PyEval_EvalFrameEx (f=0x1798040, throwflag=<value optimized out>) at Python/ceval.c:3650
+#29 0x000000000048403b in PyEval_EvalFrameEx (f=0x1733250, throwflag=<value optimized out>) at Python/ceval.c:3650
+#30 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f423b3288, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)
+    at Python/ceval.c:2831
+#31 0x0000000000483cc5 in PyEval_EvalFrameEx (f=0x1737330, throwflag=<value optimized out>) at Python/ceval.c:494
+#32 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f33b9beb8, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x172bb50, argcount=2, kws=0x172bb60, kwcount=0, defs=0x0, defcount=0, closure=0x0)
+    at Python/ceval.c:2831
+#33 0x000000000048365d in PyEval_EvalFrameEx (f=0x172b9b0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#34 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f33b9bdc8, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x1, argcount=3, kws=0x172fb50, kwcount=0, defs=0x2b5f33e1dfe0, defcount=2,
+    closure=0x0) at Python/ceval.c:2831
+#35 0x000000000048365d in PyEval_EvalFrameEx (f=0x172f9a0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#36 0x000000000048403b in PyEval_EvalFrameEx (f=0x172a3f0, throwflag=<value optimized out>) at Python/ceval.c:3650
+#37 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f33b9b918, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x1729b48, argcount=2, kws=0x1729b58, kwcount=0, defs=0x2b5f33f38128, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#38 0x000000000048365d in PyEval_EvalFrameEx (f=0x17299c0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#39 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f33b9b7b0, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x7d2d50, argcount=2, kws=0x7d2d60, kwcount=0, defs=0x2b5f33f380e8, defcount=1,
+    closure=0x0) at Python/ceval.c:2831
+#40 0x000000000048365d in PyEval_EvalFrameEx (f=0x7d2bc0, throwflag=<value optimized out>) at Python/ceval.c:3660
+#41 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f33a504e0, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x2, argcount=1, kws=0x6d3b00, kwcount=2, defs=0x2b5f33a5ead0, defcount=2,
+    closure=0x0) at Python/ceval.c:2831
+#42 0x000000000048365d in PyEval_EvalFrameEx (f=0x6d3970, throwflag=<value optimized out>) at Python/ceval.c:3660
+#43 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b5f303b1918, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)
+    at Python/ceval.c:2831
+#44 0x00000000004851d2 in PyEval_EvalCode (co=0x2b5f423b2530, globals=0xb, locals=0x2b5f3809a280) at Python/ceval.c:494
+#45 0x00000000004a648e in PyRun_FileExFlags (fp=0x6b7ea0,
+    filename=0x7fff7a773ccc "/tmp/Work-mabshoff/sage-2.8.12/local/bin/sage-gdb-pythonstartup",
+    start=<value optimized out>, globals=0x672350, locals=0x672350, closeit=0, flags=0x7fff7a7712e0)
+    at Python/pythonrun.c:1271
+#46 0x00000000004a6720 in PyRun_SimpleFileExFlags (fp=0x6b7ea0,
+    filename=0x7fff7a773ccc "/tmp/Work-mabshoff/sage-2.8.12/local/bin/sage-gdb-pythonstartup", closeit=0,
+    flags=0x7fff7a7712e0) at Python/pythonrun.c:877
+#47 0x000000000041231a in Py_Main (argc=<value optimized out>, argv=<value optimized out>) at Modules/main.c:134
+#48 0x00002b5f309074ca in __libc_start_main () from /lib/libc.so.6
+#49 0x000000000041163a in _start () at ../sysdeps/x86_64/elf/start.S:113
+```
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-11-21 05:20:10
+
+And valgrind also complains about:
+
+```
+==14816== Use of uninitialised value of size 8
+==14816==    at 0x445206: PyObject_Free (obmalloc.c:920)
+==14816==    by 0x4C49FB: freechildren (node.c:132)
+==14816==    by 0x4C4988: freechildren (node.c:130)
+==14816==    by 0x4C4BB1: PyNode_Free (node.c:130)
+==14816==    by 0x4A70CB: PyRun_StringFlags (pythonrun.c:1364)
+==14816==    by 0x47BBA1: builtin_eval (bltinmodule.c:599)
+==14816==    by 0x415522: PyObject_Call (abstract.c:1860)
+==14816==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)
+==14816==    by 0xF7482F6: __pyx_pf_4sage_5rings_10polynomial_25polynomial_modn_dense_ntl_22Polynomial_dense_mod_n_int_list(
+_object*, _object*) (polynomial_modn_dense_ntl.cpp:1832)
+==14816==    by 0x415522: PyObject_Call (abstract.c:1860)
+==14816==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)
+==14816==    by 0xF749630: __pyx_pf_4sage_5rings_10polynomial_25polynomial_modn_dense_ntl_22Polynomial_dense_mod_n_list(_obj
+ect*, _object*) (polynomial_modn_dense_ntl.cpp:3319)
+==14816==
+==14816== Invalid read of size 8
+==14816==    at 0xD2ACA4C: __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (integer_mod.c:1568)
+==14816==    by 0xD2E5C20: __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__new_c (integer_mod.c:7950)
+==14816==    by 0xD2B0368: __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__sub_c_impl (integer_mod.c:8553)
+==14816==    by 0x9787833: __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (element.c:11343)
+==14816==    by 0x4157EC: binary_op1 (abstract.c:398)
+==14816==    by 0x41701D: PyNumber_Subtract (abstract.c:450)
+==14816==    by 0x119E0150: __pyx_f_4sage_6matrix_7matrix0_6Matrix__sub_c_impl (matrix0.c:8445)
+==14816==    by 0x9787833: __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (element.c:11343)
+==14816==    by 0x4157EC: binary_op1 (abstract.c:398)
+==14816==    by 0x41701D: PyNumber_Subtract (abstract.c:450)
+==14816==    by 0x6D3517D: op_sub (operator.c:72)
+==14816==    by 0x415522: PyObject_Call (abstract.c:1860)
+```
+
+And right before it crashes:
+
+```
+==14816== Invalid read of size 8
+==14816==    at 0xD2ACA50: __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (integer_mod.c:1569)
+==14816==    by 0xD2E5C20: __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__new_c (integer_mod.c:7950)
+==14816==    by 0xD2B0368: __pyx_f_4sage_5rings_11integer_mod_14IntegerMod_int__sub_c_impl (integer_mod.c:8553)
+==14816==    by 0x9787833: __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (element.c:11343)
+==14816==    by 0x4157EC: binary_op1 (abstract.c:398)
+==14816==    by 0x41701D: PyNumber_Subtract (abstract.c:450)
+==14816==    by 0x119E0150: __pyx_f_4sage_6matrix_7matrix0_6Matrix__sub_c_impl (matrix0.c:8445)
+==14816==    by 0x9787833: __pyx_pf_4sage_9structure_7element_13ModuleElement___sub__ (element.c:11343)
+==14816==    by 0x4157EC: binary_op1 (abstract.c:398)
+==14816==    by 0x41701D: PyNumber_Subtract (abstract.c:450)
+==14816==    by 0x6D3517D: op_sub (operator.c:72)
+==14816==    by 0x415522: PyObject_Call (abstract.c:1860)
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by craigcitro created at 2007-12-02 10:46:09
+
+Fixed this. It was a coercion problem: we tried to subtract an int from a matrix over GF(5), which caused the crash. Added a doctest to catch at least this in the future.
+
+
+---
+
+Comment by craigcitro created at 2007-12-02 10:46:09
+
+Changing assignee from was to craigcitro.
+
+
+---
+
+Comment by craigcitro created at 2007-12-02 10:46:09
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by cwitty created at 2007-12-02 18:01:48
+
+The patch does fix the crash (although I have no idea if it gives the right answer).
+
+I have two issues.  First, the bundle includes the patches for #1129, which I still have reservations about (see the comments on that ticket).  Second, there must still be a Sage bug causing the crash; the code that was changed was non-tricky code in a .py file.  It would be great if somebody (maybe Craig) could figure out a way to reproduce the crash even after this patch goes in, and open up a new ticket for it.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by craigcitro created at 2007-12-02 19:13:03
+
+Added a patch file that includes just this fix, as opposed to the bundle I posted, which also includes most of my fix for 1129.
+
+
+---
+
+Comment by craigcitro created at 2007-12-02 19:24:09
+
+Also, the bug that was being exposed by this is now being reported as #1374.
+
+
+---
+
+Comment by cwitty created at 2007-12-02 19:31:40
+
+Looks good.  Thanks for creating #1374, Craig!  (Apply only 1231.patch)
+
+
+---
+
+Comment by mabshoff created at 2007-12-02 20:14:32
+
+Merged 1231.patch only in 2.8.15.rc0.
+
+
+---
+
+Comment by mabshoff created at 2007-12-02 20:14:32
+
+Resolution: fixed

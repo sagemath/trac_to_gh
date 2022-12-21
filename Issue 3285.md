@@ -1,0 +1,415 @@
+# Issue 3285: segfault in binary_code.pyx on 32-bit linux
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-05-23 17:20:39
+
+Assignee: rlm
+
+
+```
+was`@`ubuntu:~/build/sage-3.0.2.rc0$ ./sage -t --gdb devel/sage/sage/coding/binary_code.pyx
+sage -t --gdb devel/sage/sage/coding/binary_code.pyx        ********************************************************************************
+Type r at the (gdb) prompt to run the doctests.
+Type bt if there is a crash to see a traceback.
+********************************************************************************
+GNU gdb 6.6-debian
+Copyright (C) 2006 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "i486-linux-gnu"...
+Using host libthread_db library "/lib/tls/i686/cmov/libthread_db.so.1".
+(gdb) r
+Starting program: /home/was/build/sage-3.0.2.rc0/local/bin/python /home/was/build/sage-3.0.2.rc0/tmp/.doctest_binary_code.py
+[Thread debugging using libthread_db enabled]
+[New Thread -1210054448 (LWP 28921)]
+
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread -1210054448 (LWP 28921)]
+0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6
+(gdb) bt
+#0  0xb7e6699f in ?? () from /lib/tls/i686/cmov/libc.so.6
+#1  0x00000000 in ?? ()
+(gdb) 
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-05-23 17:55:27
+
+Oops:
+
+```
+==23675== Memcheck, a memory error detector.
+==23675== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==23675== Using LibVEX rev 1804, a library for dynamic binary translation.
+==23675== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==23675== Using valgrind-3.3.0, a dynamic binary instrumentation framework.
+==23675== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==23675== For more details, rerun with: -v
+==23675== 
+==23675== My PID = 23675, parent PID = 23669.  Prog and args are:
+==23675==    /scratch/mabshoff/release-cycle/sage-3.0.2.rc1/local/bin/python
+==23675==    /scratch/mabshoff/release-cycle/sage-3.0.2.rc1/tmp/.doctest_binary_code.py
+==23675== 
+--23675-- DWARF2 CFI reader: unhandled CFI instruction 0:10
+--23675-- DWARF2 CFI reader: unhandled CFI instruction 0:10
+==23675== Conditional jump or move depends on uninitialised value(s)
+==23675==    at 0x1FFC4139: __pyx_f_4sage_6coding_11binary_code_20BinaryCodeClassifier_aut_gp_and_can_label (binary_code.c:22181)
+==23675==    by 0x1FFBAEA1: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier__aut_gp_and_can_label (binary_code.c:19523)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Conditional jump or move depends on uninitialised value(s)
+==23675==    at 0x1FFC4139: __pyx_f_4sage_6coding_11binary_code_20BinaryCodeClassifier_aut_gp_and_can_label (binary_code.c:22181)
+==23675==    by 0x1FFBAEA1: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier__aut_gp_and_can_label (binary_code.c:19523)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x1FFAEFEE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:24349)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Conditional jump or move depends on uninitialised value(s)
+==23675==    at 0x1FFC4139: __pyx_f_4sage_6coding_11binary_code_20BinaryCodeClassifier_aut_gp_and_can_label (binary_code.c:22181)
+==23675==    by 0x1FFBAEA1: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier__aut_gp_and_can_label (binary_code.c:19523)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x1FFB0F08: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:25146)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10D1: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==  Address 0x5417288 is 0 bytes after a block of size 24 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10E5: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==  Address 0x541728c is 4 bytes after a block of size 24 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Conditional jump or move depends on uninitialised value(s)
+==23675==    at 0x1FFC4139: __pyx_f_4sage_6coding_11binary_code_20BinaryCodeClassifier_aut_gp_and_can_label (binary_code.c:22181)
+==23675==    by 0x1FFBAEA1: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier__aut_gp_and_can_label (binary_code.c:19523)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x1FFB1D4E: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:25635)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Invalid write of size 4
+==23675==    at 0x1FFA45B1: __pyx_f_4sage_6coding_11binary_code_expand_to_ortho_basis (binary_code.c:5485)
+==23675==    by 0x1FFAEF8F: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:24336)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==  Address 0x1e07e584 is 0 bytes after a block of size 20 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFA44C8: __pyx_f_4sage_6coding_11binary_code_expand_to_ortho_basis (binary_code.c:5186)
+==23675==    by 0x1FFAEF8F: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:24336)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10D1: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==  Address 0xa4a07a0 is 0 bytes after a block of size 24 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10E5: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675==  Address 0xa4a07a4 is 4 bytes after a block of size 24 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==    by 0x459350: type_call (typeobject.c:436)
+==23675==    by 0x415832: PyObject_Call (abstract.c:1861)
+==23675==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)
+==23675==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10AC: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==  Address 0x1e28de00 is 0 bytes after a block of size 48 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA10BD: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==  Address 0x1e28de04 is 4 bytes after a block of size 48 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA109B: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==  Address 0x1ec434f4 is 0 bytes after a block of size 44 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675== 
+==23675== Invalid read of size 4
+==23675==    at 0x1FFA108A: __pyx_f_4sage_6coding_11binary_code_create_array_word_perm (binary_code.c:3483)
+==23675==    by 0x1FFB11DE: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4693)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675==  Address 0x1fe359f8 is 0 bytes after a block of size 40 alloc'd
+==23675==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)
+==23675==    by 0x1FFB1138: __pyx_pf_4sage_6coding_11binary_code_20BinaryCodeClassifier_generate_children (binary_code.c:4624)
+==23675==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x47EFBC: PyEval_EvalFrameEx (ceval.c:2169)
+==23675==    by 0x4CD076: gen_send_ex (genobject.c:82)
+==23675==    by 0x435C26: listextend (listobject.c:823)
+==23675==    by 0x435FA3: list_init (listobject.c:2391)
+==23675== 
+==23675== ERROR SUMMARY: 710 errors from 13 contexts (suppressed: 553 from 2)
+==23675== malloc/free: in use at exit: 35,949,399 bytes in 223,264 blocks.
+==23675== malloc/free: 2,719,887 allocs, 2,496,623 frees, 1,485,302,708 bytes allocated.
+==23675== For counts of detected errors, rerun with: -v
+==23675== searching for pointers to 223,264 not-freed blocks.
+==23675== checked 39,917,704 bytes.
+==23675== 
+==23675== LEAK SUMMARY:
+==23675==    definitely lost: 1,022,609 bytes in 4,926 blocks.
+==23675==      possibly lost: 326,192 bytes in 941 blocks.
+==23675==    still reachable: 34,600,598 bytes in 217,397 blocks.
+==23675==         suppressed: 0 bytes in 0 blocks.
+==23675== Rerun with --leak-check=full to see details of leaked memory.
+```
+
+
+
+---
+
+Comment by rlm created at 2008-05-23 23:32:10
+
+On 32-bit Ubuntu, I was able to reproduce the segfault, which does not happen after applying:
+
+http://sage.math.washington.edu/home/rlmill/trac-3285-mem_bc.patch
+
+
+---
+
+Comment by mabshoff created at 2008-05-24 00:31:14
+
+The patch fixes the issue, the coding directory now valgrinds clean and "testall long" passes. Positive review.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-05-24 00:31:28
+
+Merged in Sage 3.0.3.rc3
+
+
+---
+
+Comment by mabshoff created at 2008-05-24 00:31:28
+
+Resolution: fixed
+
+
+---
+
+Attachment

@@ -1,0 +1,225 @@
+# Issue 998: segmentation fault doctesting crypto/mq/sr.py
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2007-10-25 07:15:00
+
+Assignee: somebody
+
+On sage.math the following happens:
+
+```
+sage -t -long devel/sage-main/sage/crypto/mq/sr.py
+------------------------------------------------------------
+Unhandled SIGBUS: A bus error occured in SAGE.
+This probably occured because a *compiled* component
+of SAGE has a bug in it (typically accessing invalid memory)
+or is not properly wrapped with _sig_on, _sig_off.
+You might want to run SAGE under gdb with 'sage -gdb' to debug this.
+SAGE will now terminate (sorry).
+------------------------------------------------------------
+
+
+A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
+         [30.3 s]    
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-10-25 10:36:49
+
+I got a backtrace:
+
+```
+Starting program: /tmp/Work/sage-2.8.9.rc1/local/bin/python .doctest_sr.py
+[Thread debugging using libthread_db enabled]
+[New Thread -1208346944 (LWP 13134)]
+
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread -1208346944 (LWP 13134)]
+0x015c3a14 in omFreeToPageFault () from /tmp/Work/sage-2.8.9.rc1/local/lib/libsingular.so
+(gdb) bg
+Undefined command: "bg".  Try "help".
+(gdb) bt
+#0  0x015c3a14 in omFreeToPageFault () from /tmp/Work/sage-2.8.9.rc1/local/lib/libsingular.so
+#1  0x0149c9cf in rDelete () from /tmp/Work/sage-2.8.9.rc1/local/lib/libsingular.so
+#2  0x078fa658 in __pyx_tp_dealloc_28multi_polynomial_libsingular_MPolynomialRing_libsingular (o=0xb94379c)
+    at sage/rings/polynomial/multi_polynomial_libsingular.cpp:2277
+#3  0x080ef31f in collect (generation=1) at Modules/gcmodule.c:714
+#4  0x080ef7d9 in _PyObject_GC_Malloc (basicsize=28) at Modules/gcmodule.c:897
+#5  0x080985bd in PyType_GenericAlloc (type=0x793f820, nitems=0) at Objects/typeobject.c:454
+#6  0x006ce1ba in __pyx_tp_new_11sage_object_SageObject (t=0x793f820, a=0xb7f6102c, k=0x0)
+    at sage/structure/sage_object.c:5081
+#7  0x00973562 in __pyx_tp_new_7element_Element (t=0x793f820, a=0xb7f6102c, k=0x0) at sage/structure/element.c:16696
+#8  0x009736c2 in __pyx_tp_new_7element_ModuleElement (t=0x793f820, a=0xb7f6102c, k=0x0) at sage/structure/element.c:16876
+#9  0x009737b2 in __pyx_tp_new_7element_RingElement (t=0x793f820, a=0xb7f6102c, k=0x0) at sage/structure/element.c:17041
+#10 0x00973b72 in __pyx_tp_new_7element_CommutativeRingElement (t=0x793f820, a=0xb7f6102c, k=0x0)
+    at sage/structure/element.c:17656
+#11 0x07533a92 in __pyx_tp_new_16multi_polynomial_MPolynomial (t=0x793f820, a=0xb7f6102c, k=0x0)
+    at sage/rings/polynomial/multi_polynomial.c:3457
+#12 0x078f4c32 in __pyx_tp_new_28multi_polynomial_libsingular_MPolynomial_libsingular (t=0x793f820, a=0xb7f6102c, k=0x0)
+    at sage/rings/polynomial/multi_polynomial_libsingular.cpp:20543
+#13 0x04485e0c in __pyx_f_8singular_10Conversion_new_MP (__pyx_v_self=0xa0c2b84, __pyx_v_parent=0xb96ee84,
+    __pyx_v_juice=0x0) at sage/libs/singular/singular.cpp:2462
+#14 0x07912043 in __pyx_f_28multi_polynomial_libsingular_27MPolynomialRing_libsingular__coerce_c_impl (
+    __pyx_v_self=0xb96ee84, __pyx_v_element=0xb24b25c) at sage/rings/polynomial/multi_polynomial_libsingular.cpp:3022
+#15 0x0792890b in __pyx_f_py_28multi_polynomial_libsingular_27MPolynomialRing_libsingular___call__ (
+    __pyx_v_self=0xb96ee84, __pyx_args=0xba89cac, __pyx_kwds=0x0)
+    at sage/rings/polynomial/multi_polynomial_libsingular.cpp:3125
+#16 0x0805a277 in PyObject_Call (func=0x0, arg=0xba89cac, kw=0x0) at Objects/abstract.c:1860
+#17 0x080be7cc in PyEval_CallObjectWithKeywords (func=0xb96ee84, arg=0xba89cac, kw=0x0) at Python/ceval.c:3433
+#18 0x0805a490 in PyObject_CallObject (o=0xb96ee84, a=0xba89cac) at Objects/abstract.c:1851
+#19 0x01c21197 in __pyx_f_py_20matrix_generic_dense_20Matrix_generic_dense___init__ (__pyx_v_self=0xba0c144,
+    __pyx_args=0xbb0d5ec, __pyx_kwds=0xbb47cec) at sage/matrix/matrix_generic_dense.c:1178
+#20 0x0809c413 in type_call (type=0x1109280, args=0xbb0d5ec, kwds=0xbb47cec) at Objects/typeobject.c:436
+#21 0x0805a277 in PyObject_Call (func=0x0, arg=0xbb0d5ec, kw=0xbb47cec) at Objects/abstract.c:1860
+#22 0x080c16a9 in PyEval_EvalFrameEx (f=0xb983d14, throwflag=0) at Python/ceval.c:3775
+#23 0x080c65d5 in PyEval_EvalCodeEx (co=0xa371338, globals=0xa36c714, locals=0x0, args=0xba4a3b0, argcount=2,
+    kws=0xba4a3b8, kwcount=2, defs=0xa399cb8, defcount=3, closure=0x0) at Python/ceval.c:2831
+#24 0x080c4a89 in PyEval_EvalFrameEx (f=0xba4a24c, throwflag=0) at Python/ceval.c:3660
+#25 0x080c65d5 in PyEval_EvalCodeEx (co=0xa369bf0, globals=0xa36c714, locals=0x0, args=0xbb58218, argcount=2,
+    kws=0xb454860, kwcount=2, defs=0xa390628, defcount=3, closure=0x0) at Python/ceval.c:2831
+#26 0x0810d7d6 in function_call (func=0xa39d4c4, arg=0xbb5820c, kw=0xbb4724c) at Objects/funcobject.c:517
+#27 0x0805a277 in PyObject_Call (func=0x0, arg=0xbb5820c, kw=0xbb4724c) at Objects/abstract.c:1860
+#28 0x080603a7 in instancemethod_call (func=0xaea0e14, arg=0xbb5820c, kw=0xbb4724c) at Objects/classobject.c:2497
+#29 0x0805a277 in PyObject_Call (func=0x0, arg=0xbaa292c, kw=0xbb4724c) at Objects/abstract.c:1860
+#30 0x08099bc0 in slot_tp_call (self=0xbb570cc, args=0xbaa292c, kwds=0xbb4724c) at Objects/typeobject.c:4633
+#31 0x0805a277 in PyObject_Call (func=0x0, arg=0xbaa292c, kw=0xbb4724c) at Objects/abstract.c:1860
+#32 0x080be7cc in PyEval_CallObjectWithKeywords (func=0xbb570cc, arg=0xbaa292c, kw=0xbb4724c) at Python/ceval.c:3433
+#33 0x045d7553 in __pyx_f_py_7matrix0_6Matrix_change_ring (__pyx_v_self=0xbaf9bec, __pyx_v_ring=0xb96ee84)
+    at sage/matrix/matrix0.c:3009
+#34 0x0805a277 in PyObject_Call (func=0x0, arg=0xbaf128c, kw=0x0) at Objects/abstract.c:1860
+#35 0x080be7cc in PyEval_CallObjectWithKeywords (func=0xb53530c, arg=0xbaf128c, kw=0x0) at Python/ceval.c:3433
+#36 0x0805a490 in PyObject_CallObject (o=0xb53530c, a=0xbaf128c) at Objects/abstract.c:1851
+#37 0x02bafd0b in __pyx_f_6action_18MatrixMatrixAction__call_c_impl (__pyx_v_self=0xba26e9c, __pyx_v_g=0xbaf9bec,
+    __pyx_v_s=0xba8b17c) at sage/matrix/action.c:1165
+#38 0x009bdddf in __pyx_f_6action_6Action__call_c (__pyx_v_self=0xba26e9c, __pyx_v_a=0xbaf9bec, __pyx_v_b=0xba8b17c)
+    at sage/categories/action.c:1107
+#39 0x00a12489 in __pyx_f_6coerce_24CoercionModel_cache_maps_bin_op_c (__pyx_v_self=0x9d6d58c, __pyx_v_x=0xbaf9bec,
+    __pyx_v_y=0xba8b17c, __pyx_v_op=0xb7f5730c) at sage/structure/coerce.c:4537
+#40 0x00987707 in __pyx_f_py_7element_6Matrix___mul__ (__pyx_v_left=0xbaf9bec, __pyx_v_right=0xba8b17c)
+    at sage/structure/element.c:10183
+#41 0x0805a573 in binary_op1 (v=0xbaf9bec, w=0x0, op_slot=8) at Objects/abstract.c:398
+#42 0x0805d8f3 in PyNumber_Multiply (v=0xbaf9bec, w=0xba8b17c) at Objects/abstract.c:669
+#43 0x080c1e7e in PyEval_EvalFrameEx (f=0xb27890c, throwflag=0) at Python/ceval.c:1072
+#44 0x080c65d5 in PyEval_EvalCodeEx (co=0xaf864a0, globals=0xaf75b54, locals=0x0, args=0xba4c470, argcount=4,
+    kws=0xba4c480, kwcount=0, defs=0xaf88878, defcount=2, closure=0x0) at Python/ceval.c:2831
+#45 0x080c4a89 in PyEval_EvalFrameEx (f=0xba4c304, throwflag=0) at Python/ceval.c:3660
+#46 0x080c65d5 in PyEval_EvalCodeEx (co=0xaf865c0, globals=0xaf75b54, locals=0x0, args=0xb49a6c0, argcount=1,
+    kws=0xb49a6c4, kwcount=0, defs=0xaf88898, defcount=2, closure=0x0) at Python/ceval.c:2831
+#47 0x080c4a89 in PyEval_EvalFrameEx (f=0xb49a544, throwflag=0) at Python/ceval.c:3660
+#48 0x080c65d5 in PyEval_EvalCodeEx (co=0xaf8c188, globals=0xaf75b54, locals=0x0, args=0xb27f370, argcount=1,
+    kws=0xb27f374, kwcount=0, defs=0xaf889d8, defcount=1, closure=0x0) at Python/ceval.c:2831
+#49 0x080c4a89 in PyEval_EvalFrameEx (f=0xb27f234, throwflag=0) at Python/ceval.c:3660
+#50 0x080c65d5 in PyEval_EvalCodeEx (co=0xa602b18, globals=0xb24f46c, locals=0xb24f46c, args=0x0, argcount=0, kws=0x0,
+    kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#51 0x080c5852 in PyEval_EvalFrameEx (f=0xb523a5c, throwflag=0) at Python/ceval.c:494
+#52 0x080c65d5 in PyEval_EvalCodeEx (co=0xb1a69b0, globals=0xb1a568c, locals=0x0, args=0xb4c0e70, argcount=4,
+    kws=0xb4c0e80, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#53 0x080c4a89 in PyEval_EvalFrameEx (f=0xb4c0d1c, throwflag=0) at Python/ceval.c:3660
+#54 0x080c65d5 in PyEval_EvalCodeEx (co=0xb1a6b18, globals=0xb1a568c, locals=0x0, args=0xb1fb2f0, argcount=2,
+    kws=0xb1fb2f8, kwcount=0, defs=0xb227d58, defcount=3, closure=0x0) at Python/ceval.c:2831
+#55 0x080c4a89 in PyEval_EvalFrameEx (f=0xb1fb184, throwflag=0) at Python/ceval.c:3660
+#56 0x080c65d5 in PyEval_EvalCodeEx (co=0xb1ac218, globals=0xb1a568c, locals=0x0, args=0x99b9390, argcount=1,
+    kws=0x99b9394, kwcount=3, defs=0xb1a8738, defcount=9, closure=0x0) at Python/ceval.c:2831
+#57 0x080c4a89 in PyEval_EvalFrameEx (f=0x99b9254, throwflag=0) at Python/ceval.c:3660
+#58 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7f3fb60, globals=0xb7f79acc, locals=0xb7f79acc, args=0x0, argcount=0, kws=0x0,
+    kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#59 0x080c6647 in PyEval_EvalCode (co=0xb7f3fb60, globals=0xb7f79acc, locals=0xb7f79acc) at Python/ceval.c:494
+#60 0x080e52d8 in PyRun_FileExFlags (fp=0x99ab008, filename=0xbfd5329b ".doctest_sr.py", start=257, globals=0xb7f79acc,
+    locals=0xb7f79acc, closeit=1, flags=0xbfd514f8) at Python/pythonrun.c:1271
+#61 0x080e5567 in PyRun_SimpleFileExFlags (fp=0x99ab008, filename=0xbfd5329b ".doctest_sr.py", closeit=1, flags=0xbfd514f8)
+    at Python/pythonrun.c:877
+#62 0x08056eea in Py_Main (argc=1, argv=0xbfd515c4) at Modules/main.c:523
+#63 0x08056432 in main (argc=Cannot access memory at address 0x0
+) at ./Modules/python.c:23
+(gdb) quit
+```
+
+
+
+---
+
+Comment by malb created at 2007-10-25 16:40:57
+
+I cannot reproduce this bug
+ * on my notebook (Core2Duo, 64-bit Linux)
+ * on `sage.math` and my own built of `2.8.9.rc1`
+
+
+---
+
+Comment by mabshoff created at 2007-10-25 17:53:53
+
+Just FYI: backtrace is from 32 bit x86 FC7.
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-26 02:08:59
+
+Full log is at 
+
+http://sage.math.washington.edu/home/mabshoff/sage-memcheck.ticket-998
+
+Interestingly the following seems to trigger the crash:
+
+```
+==2626== Invalid read of size 4
+==2626==    at 0x70329FE: __pyx_f_py_28multi_polynomial_libsingular_27MPolynomialRing_libsingular___init__(_object*, _object
+*, _object*) (omalloc.h:2444)
+==2626==    by 0x809C412: type_call (typeobject.c:436)
+==2626==    by 0x805A276: PyObject_Call (abstract.c:1860)
+==2626==    by 0x80C16A8: PyEval_EvalFrameEx (ceval.c:3775)
+==2626==    by 0x80C57C4: PyEval_EvalFrameEx (ceval.c:3650)
+==2626==    by 0x80C65D4: PyEval_EvalCodeEx (ceval.c:2831)
+==2626==    by 0x810D700: function_call (funcobject.c:517)
+==2626==    by 0x805A276: PyObject_Call (abstract.c:1860)
+==2626==    by 0x80BE7CB: PyEval_CallObjectWithKeywords (ceval.c:3433)
+==2626==    by 0x805A48F: PyObject_CallObject (abstract.c:1851)
+==2626==    by 0x6C79541: __pyx_f_py_29multi_polynomial_ring_generic_23MPolynomialRing_generic_construction (multi_polynomia
+l_ring_generic.c:892)
+==2626==    by 0x80C51DF: PyEval_EvalFrameEx (ceval.c:3548)
+==2626==  Address 0x3031306B is not stack'd, malloc'd or (recently) free'd
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cwitty created at 2007-11-25 05:08:45
+
+I think the problem is that the "names" member of a ring is allocated with the wrong size.  This means that omalloc allocates it as a "large" allocation, but then tries to free it as a "small" allocation, and crashes.  (The problem would only occur for one particular number of variables.)
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mabshoff created at 2007-11-25 05:37:10
+
+The patch looks good to me, doctesting sr.py with -long repeatedly works.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2007-11-25 05:49:11
+
+Resolution: fixed

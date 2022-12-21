@@ -1,0 +1,107 @@
+# Issue 2589: Notebook improvements
+
+Issue created by migration from Trac.
+
+Original creator: dunfield
+
+Original creation time: 2008-03-18 23:01:01
+
+Assignee: mabshoff
+
+Some functional problems with the Sage notebook, circa version 2.10 are:
+
+A) If you don't have the browser window set quite wide, the buttons "Use", "Edit", "Text"  end up stacked on top of each other.  In contrast, Google Docs responds to window resizing much more gracefully. 
+
+B) There is no way to resize the text in the input boxes without also  resizing the interface buttons, which quickly makes them unreadable if you size down the text by much.  
+
+C) If you're entering things in the last cell on the page (as one is wont to do) and do a tab-query or a ?-query then the answer appears off screen and you have to manually scroll down to see it. 
+
+D) If you evaluate the last cell on the page, a new cell is created, but (almost) off screen and you have to scroll down to get to it.  
+
+A) and B) can combine to can make using the Notebook awkward on a laptop.  
+
+Some improvements which would make the notebook more useful and professional looking:
+
+1) Change the font on the links "Toggle", "Home", "Published", to the same sans-serif font used elsewhere in the interface.  Currently, it is the only serif font present.
+
+2) Make the "Use", "Edit", etc. buttons into "tabs" a la the current Google Docs.   This would provide a visual clue as to their functionality, in particular as to how this type of action differs from the "Save", "Save & Quit", etc. buttons.   
+
+3) Balance the amount of whitespace above and below the text inside the input boxes.   Currently, there is more space above the input text than 
+below it. 
+
+4) The buttons "Save", "Save & quit", buttons as well as the menus etc. are rather primitive- 
+looking compared to the current generation Google Docs. 
+
+5) The "Js Math" box in the lower left corner of the window can get in the way of other, more important text cells.  Suggest moving it, perhaps to the lower right, or removing it completely.   
+
+6) Perhaps the grey box which engulfs all the input cells should be removed, it's not quite clear what it's there for.  
+
+7) There is an awful lot of white space after a cell like "a = 1 + 1" which has no output.   This should be reduced so that more cells can be shown on screen at one time.   
+
+8) The indentation of evaluated vs. never evaluated cells is slightly different, withe the former indented about 5 pixels more.  
+
+9) There needs to be a visual distinction between cells which have been evaluated and those that have not, and also to indicate when a previously evaluated cell has been edited (cf Mathematica's behavior on this).   One simple thing might be to change the color of evaluated input cells to blue, or change the color of the input box.  
+
+10) It would be nice to have "Section headings" and "comment boxes" like Mathematics does.  
+
+Another problem with the Notebooks is:
+
+E) It is not hugely robust.   
+
+I was just testing C) and so typed  "Matrix\t" in the last input box and the thing hung (traceback below).  Trying Actions->Interupt didn't seem to fix it, so I had to Control-C out of in in the terminal window.  I can't seem to reproduce this through, so this is last thing is probably less than useful..
+
+        Best, 
+
+        Nathan 
+
+
+---
+
+Comment by dunfield created at 2008-03-18 23:01:54
+
+Changing assignee from mabshoff to boothby.
+
+
+---
+
+Comment by dunfield created at 2008-03-18 23:01:54
+
+Changing component from Cygwin to notebook.
+
+
+---
+
+Comment by mabshoff created at 2008-03-18 23:22:31
+
+Resolution: invalid
+
+
+---
+
+Comment by mabshoff created at 2008-03-18 23:22:31
+
+Hi Nathan, 
+
+this ticket is problematic for a couple reasons:
+
+ * the summary is vague and basically unachievable 
+ * issues like that need to be discussed on sage-devel first
+ * one issue per ticket, since it is unlikely to be resolved all at once
+ * there are a number of notebook enhancements open, so it would be good to check for dupes first. I didn't do that and the overlap would probably be tiny.
+
+After some discussion on sage-devel you should open specific tickets, hence I will close this as invalid now. I know that all of the above should be documented and it is to a large extend my fault that I haven't merged the documentation regarding those issues I have written.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by dunfield created at 2008-03-19 00:40:17
+
+Michael,
+
+Good points, I've started the discussion on Sage-Dev on this.  
+
+Nathan

@@ -1,0 +1,146 @@
+# Issue 976: fpLLL fast early reduction segfaults
+
+Issue created by migration from Trac.
+
+Original creator: malb
+
+Original creation time: 2007-10-23 19:36:20
+
+Assignee: was
+
+
+```
+sage: from sage.libs.fplll.fplll import FP_LLL
+sage: FE = random_matrix(ZZ,10,10)
+sage: FE # result random
+[  2  -1  -1  -1  -3   1  -1 -32  -1  -1]
+[  1   2  -1  -1   1   1  -1  -1   8   1]
+[  1  -2  -2  -2  -6  -6   2  -1   1  -1]
+[  3   3  -1   1   1   6   1   1  -1  -1]
+[ -1  -1   1  -1  -2   3   1  -2   1  25]
+[ -1   1   1 -10  -1  -1   1   1  -1   1]
+[  1   1  25  -1   1  -4   4   5  -2   3]
+[  3  -2   2  -6  -4   1  -1  -3  -1   1]
+[  1  -4   2   3   1   1   1   2   3  -1]
+[  6  -8   1  -1 -16   2 -25  -1  -2   2]
+sage: F = FP_LLL(FE)
+sage: F.fast_early_red()
+Traceback (most recent call last):
+...
+RuntimeError: BUG: fast early reduction segfaults
+```
+
+
+
+```
+0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3
+(gdb) bt
+#0  0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3
+#1  0x00002b139820d63c in fast_early_red<__mpz_struct [1], double>::BabaiCall (this=0x1f310f0, alpha=<value optimized out>, zeros=-1, kappamax=2, var_k=<value optimized out>, ztmp=`@`0x7fff3036c7d0,
+    newvec=`@`0x7fff3036c7ec, newvecmax=`@`0x7fff3036c7e8, n=10) at /usr/local/sage-2.8.1/local//include/fplll/nr.cpp:237
+#2  0x00002b139821c65d in fast<__mpz_struct [1], double>::LLL (this=0x1f310f0) at /usr/local/sage-2.8.1/local//include/fplll/fast.cpp:591
+#3  0x00002b139820b4ec in __pyx_f_py_5fplll_6FP_LLL_fast_early_red (__pyx_v_self=0x2b80d90, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/libs/fplll/fplll.cpp:1642
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-10-24 03:02:12
+
+Well, this code triggers and assetion in valgrind, but right before it spits out some interesting issues:
+
+```
+==21028== Invalid write of size 8
+==21028==    at 0x183EA302: fast_early_red<__mpz_struct[1], double>::BabaiCall(int*, int, int, int, Z_NR<__mpz_struct[1]>&,
+int&, int&, int) (util.h:257)
+==21028==    by 0x183EBECC: fast<__mpz_struct[1], double>::LLL() (fast.cpp:591)
+==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)
+==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==  Address 0x7f940b8 is 0 bytes after a block of size 80 alloc'd
+==21028==    at 0x4A1BFE4: operator new[](unsigned long) (vg_replace_malloc.c:271)
+==21028==    by 0x183EBAF9: fast<__mpz_struct[1], double>::LLL() (fast.cpp:497)
+==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)
+==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==
+==21028== Invalid read of size 8
+==21028==    at 0x60FC233: __gmpz_get_d_2exp (in /tmp/Work-mabshoff/sage-2.8.9.alpha0/local/lib/libgmp.so.3.4.1)
+==21028==    by 0x183EA301: fast_early_red<__mpz_struct[1], double>::BabaiCall(int*, int, int, int, Z_NR<__mpz_struct[1]>&,
+int&, int&, int) (nr.cpp:237)
+==21028==    by 0x183EBECC: fast<__mpz_struct[1], double>::LLL() (fast.cpp:591)
+==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)
+==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==21028==  Address 0x27d03488303d8 is not stack'd, malloc'd or (recently) free'd
+```
+
+
+I hope that somebody can take it from here.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-24 03:23:15
+
+Ok, it is my impression that in fast.cpp:442
+
+```
+  Z_NR<ZT> ztmp;
+```
+
+is not properly initialized if ZT is an mpz or somehow the index might be "off".
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-24 03:40:24
+
+Well, in nr.cpp we have a specialization for mpz_t for the constructor, so it might be an index issue. Otherwise I am out of ideas.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by malb created at 2007-10-24 18:38:20
+
+Resolution: fixed
+
+
+---
+
+Comment by malb created at 2007-10-24 18:38:20
+
+This is fixed upstream and the updated spkg is in 2.8.9.alpha1

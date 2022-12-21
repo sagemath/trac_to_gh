@@ -1,0 +1,334 @@
+# Issue 980: random_element() for multivariate polynomials
+
+Issue created by migration from Trac.
+
+Original creator: dfdeshom
+
+Original creation time: 2007-10-24 04:42:07
+
+Assignee: dfdeshom
+
+CC:  dfdeshom@gmail.com
+
+There are 2 quirks about random multivariate polynomials outlined below:
+
+1) Degrees are severely restricted:
+> The maximum degree in every variable
+> is (maximum total degree of resulting polynomial) / (number of
+> varialbes of the polynomial). 
+
+2) Too many zero elements. Polynomials generated are too sparse.
+> The second point is about the number of coefficients that are set to
+> 0. This might a point to argue about, but if I create a random
+> polynomial with a  (maximum number of terms to generate) then I expect
+> that the 0 occur
+
+
+---
+
+Comment by dfdeshom created at 2007-10-24 22:34:29
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by dfdeshom created at 2007-10-24 22:34:29
+
+I've atached a patch. The individual degree distribution is a little better:
+
+```
+sage: f=ZZ['q,w,e,r,t,y'].random_element(degree=5,terms=9) ;f
+ 3*q^5 - q^4*w + 2*q^3*w^2 + q^2*w^3 - q*w^3*e + q^2*w*r*t + 2*q*w*e*r*t + q^2*e*t^2 + 8*r^2*t^2*y
+sage: f=ZZ['q,w,e,r,t,y'].random_element(degree=4,terms=9) ;f
+ q^2*w*e + q*w^2*r + q^2*r^2 - 24*w^3*t - 4*q^2*e*t - 5*t^4 - 4*q^3 + 2*q^2*w
+```
+
+
+
+---
+
+Comment by malb created at 2007-10-24 23:21:40
+
+Your patch seems to prefer variables with lower indexes, i.e. the probability that x in x,y,z has the highest degree is quite high because you are making the search space smaller for each variable. Maybe you could permute the exponent tuple randomly afterwards to take care of that bias?
+
+
+---
+
+Comment by was created at 2007-10-25 00:22:31
+
+Changing component from algebraic geometry to basic arithmetic.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by dfdeshom created at 2007-10-25 03:32:06
+
+Replying to [comment:2 malb]:
+> Your patch seems to prefer variables with lower indexes, i.e. the probability that x in x,y,z has the highest degree is quite high because you are making the search space smaller for each variable. Maybe you could permute the exponent tuple randomly afterwards to take care of that bias?
+>  
+
+Thanks. This also takes care of too many nonzero terms being generated. I've updated the patch
+
+
+---
+
+Comment by malb created at 2007-11-07 13:26:42
+
+the attached file `random_element.py` implements my proposal for this method. It is supposed to guarantee uniformly randomly chosen monomials per default and also supports to choose the degree randomly before choosing a monomial of that given degree.
+
+NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAGE to test it. I will provide a proper patch if we agree on the strategy.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by malb created at 2007-11-07 13:27:39
+
+Whoops, it is called `random_monomial.py` instead of `random_element.py`
+
+
+---
+
+Comment by dfdeshom created at 2007-11-07 15:08:32
+
+Replying to [comment:7 malb]:
+> the attached file `random_element.py` implements my proposal for this method. It is supposed to guarantee uniformly randomly chosen monomials per default and also supports to choose the degree randomly before choosing a monomial of that given degree.
+
+The general strategy is OK with me. One minor implementation nitpick: I would use ZZ.random_element() instead of randint() because it is faster.
+
+
+---
+
+Comment by dfdeshom created at 2007-11-09 15:11:30
+
+Replying to [comment:7 malb]:
+> NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAGE to test it. I will provide a proper patch if we agree on the strategy.
+If you don't mind, I've attached a patch against 2.8.11 for this. The patch is named random-malb.txt
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2007-11-27 05:22:31
+
+Unfortunately, random-malb.txt no longer applies against sage-2.8.14.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by dfdeshom created at 2007-11-28 16:31:01
+
+I've added an hg bundle against 2.8.14
+
+
+---
+
+Comment by malb created at 2007-12-16 15:38:35
+
+Uploaded bundle which applies against 2.9.alpha7 and doctests pass.
+
+
+---
+
+Comment by rlm created at 2007-12-20 23:38:08
+
+Resolution: fixed
+
+
+---
+
+Comment by rlm created at 2007-12-20 23:38:08
+
+`random_element.hg` merged in 2.9.1 alpha2
+
+
+---
+
+Comment by rlm created at 2007-12-21 00:24:46
+
+unmerged.
+
+
+---
+
+Comment by rlm created at 2007-12-21 00:24:46
+
+Changing status from closed to reopened.
+
+
+---
+
+Comment by rlm created at 2007-12-21 00:24:46
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by rlm created at 2007-12-22 04:49:43
+
+Robert Bradshaw is currently reviewing this
+
+
+---
+
+Comment by robertwb created at 2008-01-02 17:56:25
+
+For the most part, this looks good, but it seems that your algorithm is flawed in some cases (e.g more than two variables?). For example: 
+
+
+```
+sage: [QQ['x,y,z'].random_element() for _ in range(10)]
+[-2/3, 1/6, 2, -2/11, 1, 11/2, 1/3, -5, 1/3, 3]
+sage: [ZZ['x,y,z,w'].random_element() for _ in range(10)]
+[-1, -10, -1, -8, 1, 4, -32, 1, 1, -1]
+```
+
+
+It also has a bias against repeating variables in a monomial. None of these are of degree 7...
+
+
+```
+sage: [ZZ['x,y,z,w'].random_element(7,1) for _ in range(10)]
+[-1*w, y*z, -2*x*z*w, -22*x*y*w, -1*z, -5*x*y*w, 7*y*w, x*w, -2*y*z, 2*y*w]
+```
+
+
+
+---
+
+Comment by robertwb created at 2008-01-02 18:13:04
+
+Trying to understand why the good-looking code produced such bad results, I figured out that I had forgotten to merge, so ignore the previous comments. 
+
+There are only two things I'd change:
+
+1. (Minor) There are multiple uses of ZZ.random_element(min,max), especially used to compute degrees in the monomials. I would highly recommend using Python's randint from http://docs.python.org/lib/module-random.html for speed. 
+
+2. (Blocker) Not having default arguments for random_element means it can't be used generically. For example: 
+
+
+```
+sage: random_matrix(QQ['x,y,z'], 2, 2)
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "<ipython console>", line 1, in <module>
+  File "/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/matrix/constructor.py", line 503, in random_matrix
+    A.randomize(density=density, *args, **kwds)
+  File "matrix2.pyx", line 2752, in sage.matrix.matrix2.Matrix.randomize
+<type 'exceptions.TypeError'>: function takes at least 2 arguments (0 given)
+```
+
+
+It should not be necessary to special-case the basering being a multipolynomial element before calling random_element on it. Some default should be specified, even if it's degree and terms = 1+abs(ZZ.random_element()). 
+
+Even worse
+
+
+```
+sage: R = QQ['x,y']
+sage: S = R['t,u']
+sage: S.random_element(d=2, t=3) # BOOM 
+```
+
+
+It is impossible to pass the required degree/number of terms arguments on to the basering of S.
+
+
+---
+
+Comment by malb created at 2008-01-06 15:29:37
+
+Replying to [comment:20 robertwb]:
+> 1. (Minor) There are multiple uses of ZZ.random_element(min,max), especially used
+> to compute degrees in the monomials. I would highly recommend using Python's 
+> randint from http://docs.python.org/lib/module-random.html for speed.
+
+I cannot confirm this:
+
+Sage Integers:
+
+
+```
+sage: l = 0
+sage: u = 5
+sage: %timeit randint(l,u)
+10000 loops, best of 3: 31.1 µs per loop
+sage: %timeit ZZ.random_element(l,u)
+100000 loops, best of 3: 2.63 µs per loop
+```
+
+
+Python Integers:
+
+
+```
+sage: l = int(0)
+sage: u = int(5)
+sage: %timeit randint(l,u)
+100000 loops, best of 3: 7.65 µs per loop
+sage: %timeit ZZ.random_element(l,u)
+100000 loops, best of 3: 7.25 µs per loop
+```
+
+
+What am I missing?
+
+
+---
+
+Comment by malb created at 2008-01-06 16:24:47
+
+new bundle against 2.9.2 which fixes the default parameter remark by robertwb
+
+
+---
+
+Comment by malb created at 2008-01-06 16:25:16
+
+Changing priority from minor to major.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2008-01-27 02:11:04
+
+Looks good to me!  doctests pass, Robert's issues with default arguments have been fixed.
+
+
+---
+
+Comment by mabshoff created at 2008-01-27 02:20:37
+
+Merged random_element.hg  in Sage 2.10.1.rc1
+
+
+---
+
+Comment by mabshoff created at 2008-01-27 02:20:37
+
+Resolution: fixed

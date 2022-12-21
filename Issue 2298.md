@@ -1,0 +1,129 @@
+# Issue 2298: [with patch, needs review] implement a way to compute a number field containing given algebraic numbers
+
+Issue created by migration from Trac.
+
+Original creator: cwitty
+
+Original creation time: 2008-02-25 03:07:21
+
+Assignee: cwitty
+
+CC:  jason ncalexan
+
+The attached patch implements a way to compute a number field containing given algebraic numbers:
+
+```
+sage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])
+
+(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,
+ [-a^3 + 3*a, -a^2 + 2],
+ Ring morphism:
+  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1
+  To:   Algebraic Real Field
+  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mhansen created at 2008-02-27 19:38:56
+
+I get the following doctest failure:
+
+```
+Expected:
+    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:
+      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4
+      To:   Algebraic Field
+      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] + [1.2247448713915889 .. 1.2247448713915892]*I)
+Got:
+    (Number Field in a with defining polynomial y^4 + 2*y^2 + 4, [1/2*a^3], Ring morphism:
+      From: Number Field in a with defining polynomial y^4 + 2*y^2 + 4
+      To:   Algebraic Field
+      Defn: a |--> [-0.70710678118654758 .. -0.70710678118654746] - [1.2247448713915889 .. 1.2247448713915892]*I)
+```
+
+
+
+---
+
+Comment by cwitty created at 2008-02-27 23:28:36
+
+Changing status from new to assigned.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2008-02-28 03:54:10
+
+Evidently one of the Pari functions I call gives different results on 32-bit vs. 64-bit, so I've added "# 32-bit" and "# 64-bit" on the relevant doctest (and tested the result on 32-bit x86 and 64-bit x86).
+
+
+---
+
+Comment by ncalexan created at 2008-03-01 23:27:28
+
+This patch is excellent.  Great doctests, valuable functionality -- I needed this in my research today :)  Apply, post haste!
+
+The only issue I raise is the name -- I'd really like number_field to appear, not just nf.  And the fact that it's toplevel means it will be easy to miss -- could there be another patch defining an alias, and making it so that QQbar(sqrt(2)).number_field_containing() calls this automagically?  I'm more likely to find this valuable functionality that way.
+
+
+---
+
+Comment by ncalexan created at 2008-03-02 00:57:10
+
+It would be nice if
+
+```
+nf_elements_from_algebraics([sqrt(2), sqrt(3 + sqrt(2))*I, sqrt(3 - sqrt(2))*I])
+```
+
+just worked, too -- coerced to QQbar for you.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by cwitty created at 2008-03-02 19:23:47
+
+I've created a new patch in response to Nick's comments above: nf-from-algebraic-response.patch (to be applied after nf-from-algebraic-v2.patch).  Note that nf-from-algebraic-v2.patch has already been positively reviewed by Nick; only the -response.patch needs to be reviewed.
+
+I mostly did what Nick asked, with two exceptions: 1) I don't like aliases; since there are no backward-compatibility issues, I just renamed the function to the more-descriptive name, instead of having an alias. 2) I named the method version "as_number_field_element", instead of "number_field_containing".
+
+I did test that doctests pass in qqbar.py on both 32-bit and 64-bit x86 linux after this patch.
+
+
+---
+
+Comment by ncalexan created at 2008-03-02 19:54:43
+
+Response patch is fantastic.  This is so useful for my research, please apply!
+
+
+---
+
+Comment by mabshoff created at 2008-03-02 20:47:24
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-03-02 20:47:24
+
+Merged nf-from-algebraic-v2.patch and nf-from-algebraic-response.patch  in Sage 2.10.3.rc1

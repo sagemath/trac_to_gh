@@ -1,0 +1,103 @@
+# Issue 1205: 2.8.13.alpha1: modular/modform/numerical.py with new numpy/scipy from #1198
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-11-19 00:13:59
+
+Assignee: failure
+
+
+```
+mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py
+sage -t  devel/sage-main/sage/modular/modform/numerical.py  **********************************************************************
+File "numerical.py", line 53:
+    sage: n.ap(2)
+Expected:
+    [3.0, 0.61803398875, -1.61803398875]
+Got:
+    [0.326481263444, -0.241771189268, 0.632965191003]
+**********************************************************************
+File "numerical.py", line 55:
+    sage: n.systems_of_eigenvalues(7)
+Expected:
+    [
+    [-1.61803398875, 2.2360679775, -3.2360679775],
+    [0.61803398875, -2.2360679775, 1.2360679775],
+    [3.0, 4.0, 6.0]
+    ]
+Got:
+    [
+    [-0.241771189268, -0.516457621465, -0.483542378535],
+    [0.326481263444, -1.65296252689, 0.652962526888],
+    [0.632965191003, -2.26593038201, 1.26593038201]
+    ]
+**********************************************************************
+File "numerical.py", line 67:
+    sage: n.eigenvalues([2,3,5])
+Expected:
+    [[3.0, 0.61803398875, -1.61803398875],
+     [4.0, -2.2360679775, 2.2360679775],
+     [6.0, 1.2360679775, -3.2360679775]]
+Got:
+    [[0.326481263444, -0.241771189268, 0.632965191003], [-1.65296252689, -0.516457621465, -2.26593038201], [0.652962526888, -0.483542378535, 1.26593038201]]
+**********************************************************************
+1 items had failures:
+   3 of   5 in __main__.example_1
+***Test Failed*** 3 failures.
+For whitespace errors, see the file .doctest_numerical.py
+         [1.9 s]
+exit code: 256
+
+----------------------------------------------------------------------
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by jkantor created at 2007-11-19 04:24:28
+
+Something happened and the issue is eigen_left is supposed to compute left eigen_vectors (v*m=\lambda*v), but is computing right eigen_vectors. There are some other issues so I'm going to add methods right_eigenvectors and left_eigenvectors
+to make this clearer. I have already done this and with the new methods the above tests pass. I am going to run test all to make sure my change didn't break something else, I will post a patch in a few hours.
+
+
+---
+
+Comment by jkantor created at 2007-11-19 04:26:15
+
+The other issues being that the meaning of eigen_left is not consistent between real and complex double matrices.
+
+
+---
+
+Comment by jkantor created at 2007-11-19 06:27:01
+
+I have a patch that fixes the eigenvector issue with real and complex double matrices. All doc tests (including the above) pass with this patch and the new numpy/scipy
+
+http://sage.math.washington.edu/home/jkantor/spkgs/double_matrices.hg
+
+The function eigen_left and eigen_right are replaced by left_eigenvectors and right_eigenvectors. Hopefully this makes it more clear that for example left_eigenvectors are eigenvectors so that v*m=\lambda*v 
+
+(I have to admit I'm still not terribly satisfied with the name)
+
+One line in graph.py as well as numerical.py needed to be changed to reflect this.
+
+
+---
+
+Comment by mabshoff created at 2007-11-19 08:54:13
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2007-11-19 08:54:13
+
+Merged in 2.8.13.alpha1.

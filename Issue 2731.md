@@ -1,0 +1,88 @@
+# Issue 2731: GeneratorMatCode doesn't seem to be available in Debian's GAP
+
+Issue created by migration from Trac.
+
+Original creator: tabbott
+
+Original creation time: 2008-03-30 02:15:12
+
+Assignee: tabbott
+
+When trying to run the Debian build of SAGE, I get the following doctest error.
+
+It doesn't seem that any of the Debian packages for GAP contain GeneratorMatCode.  So, we'll need to do something to make this available in Debian.
+
+**********************************************************************
+File "const.py", line 1841:
+    : C.decode(v2)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python2.5/doctest.py", line 1228, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_61[6]>", line 1, in <module>
+        C.decode(v2)###line 1841:
+    : C.decode(v2)
+      File "/usr/lib/python2.5/site-packages/sage/coding/linear_code.py", line 708, in decode
+        gap.eval("C:=GeneratorMatCode("+Gstr+",GF("+str(q)+"))")
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/gap.py", line 309, in eval
+        s = Expect.eval(self, x)
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/expect.py", line 707, in eval
+        return '\n'.join([self._eval_line(L, **kwds) for L in code.split('\n') if L != ''])
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/gap.py", line 477, in _eval_line
+        return self._eval_line_using_file(line)
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/gap.py", line 466, in _eval_line_using_file
+        return Expect._eval_line_using_file(self, line)
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/expect.py", line 594, in _eval_line_using_file
+        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)
+      File "/usr/lib/python2.5/site-packages/sage/interfaces/gap.py", line 510, in _eval_line
+        raise RuntimeError, message
+    RuntimeError: Gap produced error output
+    Variable: 'GeneratorMatCode' must have a value
+
+
+
+---
+
+Comment by tabbott created at 2008-03-30 03:37:16
+
+This also seems to be the cause of the HadamardMat doctest failures.
+
+sage -t  devel/sage-main/sage/combinat/combinat.py          **********************************************************************
+File "combinat.py", line 219:
+    sage: hadamard_matrix(4)
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib/python2.5/doctest.py", line 1228, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_1[0]>", line 1, in <module>
+        hadamard_matrix(Integer(4))###line 219:
+    sage: hadamard_matrix(4)
+      File "/usr/lib/python2.5/site-packages/sage/combinat/combinat.py", line 233, in hadamard_matrix
+        raise NotImplementedError, "Hadamard matrix of order %s does not exist or is not implemented yet."%n
+    NotImplementedError: Hadamard matrix of order 4 does not exist or is not implemented yet.
+**********************************************************************
+
+
+---
+
+Comment by mabshoff created at 2008-03-30 09:59:49
+
+This is not *Sage Specific*: Please file a bug report with Debian or alternatively package the Sage version of GAP. Alternatively create a deb which contains the GAP packages that Sage installs per default.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-03-30 09:59:49
+
+Resolution: wontfix
+
+
+---
+
+Comment by wdj created at 2008-03-30 11:34:20
+
+GUAVA is a GAP coding theory package which is included standard with SAGE. The reason why these two errors occurs, I'm guessing, is that it is either not installed into the workspace (using GAP's LoadPackage then SAGE's gap_reset_workspace) or that whoever created the Debian version of SAGE did not using SAGE's version of GAP.

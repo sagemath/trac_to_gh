@@ -1,0 +1,104 @@
+# Issue 931: Optimize permanent code for matrices over ZZ
+
+Issue created by migration from Trac.
+
+Original creator: jsp
+
+Original creation time: 2007-10-19 18:44:51
+
+Assignee: was
+
+I think SAGE is still the only mathematical
+software with an implementation of the permanent function for
+non-square matrices over an arbitrary field!
+
+But it is frickin' slow, as William could have said.
+Calculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's
+over the main diagonal.
+
+
+Over ZZ:
+> sage: time f(13,4)
+> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s
+> Wall time: 4.08
+>  1596800
+
+
+Over QQ
+> sage: time f(13,4)
+> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s
+> Wall time: 8.56
+>  1596800
+
+My all C-program with ints based on gmp:
+> [jaap`@`paix perm_gmp]$ time ./ds 13 4
+> 1596800
+> real    0m0.328s
+> user    0m0.326s
+> sys     0m0.003s
+> [jaap`@`paix perm_gmp]$ 
+
+In the reference manual it still says that the code is optimized
+only for matrices over QQ :-)!
+
+What we need is optimization for integer matrices (followed by more
+optimization for (0,1) matrices, eventually for (-1,0,1) matrices.
+That are the matrices that 'count' in applications.).
+
+A speed boost can be achieved replacing 'my' pure Python function
+_combinations, to be found in sage.structure.sequence, with a real fast
+implementation in C/Cython.
+
+Jaap
+
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jsp created at 2007-10-25 22:04:55
+
+I'm sorry for the double attachment!
+
+Timing
+
+
+```
+sage: time dance(7)
+h^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840
+CPU times: user 25.20 s, sys: 0.46 s, total: 25.65 s
+Wall time: 26.08
+```
+
+
+in sage-2.8.9:
+
+
+```
+sage: time dance(7)
+h^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840
+CPU times: user 42.64 s, sys: 1.12 s, total: 43.76 s
+Wall time: 43.96
+
+```
+
+
+This is not the last word on this issue.
+
+Jaap
+
+
+---
+
+Comment by cwitty created at 2007-10-27 02:43:18
+
+Resolution: fixed

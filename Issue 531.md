@@ -1,0 +1,54 @@
+# Issue 531: strcpy issue in multi_polynomial_libsingular (from matrix/strassen.pyx) (another one ;))
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-08-30 18:49:17
+
+Assignee: malb
+
+From Sage 2.8.3rc3:
+
+```
+==24738== Source and destination overlap in strcpy(0x7FEFEA7A0, 0x7FEFEA7A0)
+==24738==    at 0x4A06E47: strcpy (mc_replace_strmem.c:106)
+==24738==    by 0x1BFD8EAF: feCleanUpPath(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)
+==24738==    by 0x1BFD98CB: feInitResource(feResourceConfig_s*, int) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)
+==24738==    by 0x1BFDA021: feInitResources(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)
+==24738==    by 0x1BF4D768: siInit(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)
+==24738==    by 0x1BC4AA0A: initmulti_polynomial_libsingular (multi_polynomial_libsingular.cpp:1159)
+==24738==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)
+==24738==    by 0x49D63E: import_submodule (import.c:2394)
+==24738==    by 0x49DB11: load_next (import.c:2214)
+==24738==    by 0x49DD33: import_module_level (import.c:1995)
+==24738==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)
+==24738==    by 0x47D5D8: builtin___import__ (bltinmodule.c:47)
+```
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by malb created at 2007-08-30 19:25:36
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by malb created at 2007-08-30 19:25:36
+
+Actually, this is the same issue as reported in #443. The fixed feResource.cc was not copied correctly. This is fixed in the spkg found at
+
+http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-20070830.spkg
+
+
+---
+
+Comment by mabshoff created at 2007-09-05 21:02:04
+
+Resolution: fixed

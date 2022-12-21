@@ -1,0 +1,421 @@
+# Issue 1284: G.subgroup([...]) for G an abelian group has at least one lame property
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2007-11-26 21:04:14
+
+Assignee: somebody
+
+CC:  fwclarke
+
+
+```
+Francis Clarke to sage-support
+
+Subgroups of abelian groups:
+
+sage: G.<a, b> = AbelianGroup(2)
+sage: A = G.subgroup([a])
+sage: B = G.subgroup([b])
+sage: A == B
+True
+
+Surely not!
+
+On the other hand for vector spaces:
+
+sage: W.<u, v> = QQ^2
+sage: U = W.subspace([u])
+sage: V = W.subspace([v])
+sage: U == V
+False
+
+As expected.
+```
+
+
+I have verified this and I agree that this is stupid.
+The problem is that the __cmp__ method is just comparing
+the groups abstract structure:
+
+
+```
+        if not is_AbelianGroup(right):
+            return -1
+        return cmp(self.invariants(), right.invariants())
+```
+
+
+It should also take into account the embedding. 
+
+
+---
+
+Comment by rlm created at 2008-05-10 23:36:20
+
+Changing assignee from somebody to rlm.
+
+
+---
+
+Comment by rlm created at 2008-05-10 23:36:20
+
+This fixes the bugs at #2272 and #3127 as well.
+
+
+```
+rank4:sage-3.0.1 rlmill$ ./sage -t devel/sage/sage/groups/
+...
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 183.2 seconds
+```
+
+
+
+---
+
+Comment by rlm created at 2008-05-10 23:36:20
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by cremona created at 2008-05-11 17:49:00
+
+Negative review:  if I understand the code for `__contains__` in the first patch correctly, it looks very inefficient.  There must be vastly better ways of handling finite abelian groups than this: the code is the equivalent of testing whether m divides n by repeated subtraction instead of division with remainder.
+
+Of course I may be wrong, and perhaps having an inefficient implementation temporarily is better than the wrong answers reported in the orginal posting.  Does the patch solve that, by the way?  It would be good to have a doctest which proced it but I did not see one.
+
+
+---
+
+Comment by rlm created at 2008-05-11 17:52:12
+
+John,
+
+You're right about the efficiency part. I was just trying to take the code from not working to working. Will post another patch soon.
+
+
+---
+
+Comment by mabshoff created at 2008-05-11 20:22:44
+
+Hi John, Robert,
+
+I would even go so far and choose a working, but slow/sucky implementation over a future perfect one. Perfection is the enemy of the good. Since this issue has made it into trac three times I would like to have this ticket resolved in 3.0.2. So assuming this work let's merge it as is and open an enhancement ticket for a proper fast implementation. 
+
+Thoughts?
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by rlm created at 2008-05-11 20:23:56
+
++1
+
+
+---
+
+Comment by mabshoff created at 2008-05-11 20:27:34
+
+Since Francis reported this bug initially let's get him uptodate on this ticket. I didn't look at the ticket in detail, but we should certainly add a doctest that test this specific bug for obvious reasons :)
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by rlm created at 2008-05-11 20:35:00
+
+Sorry for the missing doctest, however:
+
+```
+sage: G.<a,b> = AbelianGroup(2)
+sage: A = G.subgroup([a])
+sage: B = G.subgroup([b])
+sage: A == B
+False
+```
+
+
+
+---
+
+Comment by fwclarke created at 2008-05-11 21:54:19
+
+Yes, the original problem is solved, but others remain. 
+ 
+With the two patches installed:
+
+```
+sage: G.<a, b> = AbelianGroup(2)
+sage: H.<c> = AbelianGroup(1)
+sage: H < G
+True
+```
+
+which is not what I would expect.  There is no reason to assume H is a subgroup of G.
+
+But anyway `__cmp__` and `__contains__` are inconsistent.  For
+
+```
+sage: c in H
+True
+sage: c in G
+False
+```
+
+
+Moreover
+
+```
+sage: A = G.subgroup([a])
+sage: A == H
+False
+sage: H == A
+True
+```
+
+
+
+---
+
+Comment by rlm created at 2008-05-11 23:42:13
+
+With this latest patch:
+
+```
+sage: G.<a, b> = AbelianGroup(2)
+sage: H.<c> = AbelianGroup(1)
+sage: H < G
+False
+sage: c in H
+True
+sage: c in G
+False
+sage: A = G.subgroup([a])
+sage: A == H
+False
+sage: H == A
+False
+```
+
+
+I know it's still missing some documentation, I just want to see if there is more work necessary.
+
+
+---
+
+Comment by fwclarke created at 2008-05-12 08:22:48
+
+I am beginning to think the problem is rather deeper.  There are many inconsistencies in the way that algebraic objects are implemented.  It should be possible for a user to learn the basic syntax for, say, rings, and then adopt most of the basics when working with vector spaces, or abelian groups, etc.
+
+Some examples of inconsistent behaviour follow.
+
+
+```
+sage: R.<r> = PolynomialRing(QQ)
+sage: S.<s> = PolynomialRing(QQ)
+sage: R == S
+False
+sage: R.ideal(r^2 - 1) < S
+True
+```
+
+
+
+```
+sage: U.<u1, u2> = QQ^2
+sage: V.<v1, v2> = QQ^2
+sage: U == V
+True
+sage: W = VectorSpace(QQ, 2)
+sage: U == W
+True
+sage: W.<w1, w2> = VectorSpace(QQ, 2)
+---------------------------------------------------------------------------
+<type 'exceptions.TypeError'>             Traceback (most recent call last)
+
+/Users/mafwc/<ipython console> in <module>()
+
+<type 'exceptions.TypeError'>: VectorSpace() got an unexpected keyword argument 'names'
+```
+
+
+In my experience of doing calculations (rather than looking at the code) number fields have the best implementation of the algebraic objects which I have encountered .  But even so there are things that could be improved.  For example:
+
+```
+sage: K.subfield((theta^4 + 26*theta)/84)
+
+(Number Field in theta0 with defining polynomial x^3 - 2,
+ Ring morphism:
+  From: Number Field in theta0 with defining polynomial x^3 - 2
+  To:   Number Field in theta with defining polynomial x^6 + 40*x^3 + 1372
+  Defn: theta0 |--> 1/84*theta^4 + 13/42*theta)
+```
+
+Here a subfield is generated by a single element.  There is no definition for a subfield generated by a list of elements; `K.subfield([(theta^4 + 26*theta)/84])` leads to a long, unhelpful error message.  In contrast, subgroups of abelian groups and subspaces of vector spaces *must* be generated by a list.  
+
+Surely `X.subobject([x,y,z])` should be standard, with `X.subobject(x)`equivalent to `X.subobject([x])`.  Ideals of rings work well in this respect:
+
+```
+sage: R.<r> = PolynomialRing(QQ)
+sage: R.ideal([r^2, r^3])
+Principal ideal (r^2) of Univariate Polynomial Ring in r over Rational Field
+sage: R.ideal(r^2 - 1)
+Principal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field
+sage: R.ideal([r^2 - 1])
+Principal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field
+sage: R.ideal([r^2 - 1, r - 1])
+Principal ideal (r - 1) of Univariate Polynomial Ring in r over Rational Field
+```
+
+But
+
+```
+sage: R.ideal([r^2, r - 1])
+Principal ideal (1) of Univariate Polynomial Ring in r over Rational Field
+sage: R == R.ideal([r^2, r - 1])
+False
+```
+
+and at the moment there doesn't seem to be any subring construction, while `is_subring` restricts itself to 'natural' inclusions.
+
+One thing that appears to be missing from most (all?) the algebraic objects is intersection of subobjects.
+
+Probably what is needed to to rethink, and eventually, rewrite all the standard algebraic categories in a consistent and standard way.
+
+
+---
+
+Comment by fwclarke created at 2008-05-12 08:22:48
+
+Changing component from basic arithmetic to algebra.
+
+
+---
+
+Comment by cremona created at 2008-05-12 09:02:38
+
+I agree strongly with Francis on this.  There are serious issues here which cannot be dealt with by treating the problem as a small bug that can be fixed with a small patch.
+
+
+---
+
+Comment by rlm created at 2008-05-12 13:54:46
+
+Actually, the issue I was treating with these patches was in fact a pretty deep bit of circular logic in the abelian group code. Perhaps we can close this ticket, open another for the division optimization, and move the discussion to sage-devel?
+
+
+---
+
+Comment by rlm created at 2008-05-12 19:17:01
+
+John,
+
+I've addressed your concerns regarding efficiency. I think that the rest of Francis' complaints are not specific to abelian groups, so I say that this ticket is finished. We should move the rest of his complaints to another ticket. My guess is that in many cases people are implementing `__cmp__` for equality/inequality testing only, which gives adverse results for < and <=. The problem is that `__cmp__` assumes that exactly one of <, ==, or > holds, which isn't true unless the ordering is linear-- in particular this isn't the case in general for subobjects.
+
+
+---
+
+Comment by cremona created at 2008-05-12 19:29:29
+
+OK.  But I haven't time right now to do any testing, so I haven't looked at patches 3 and 4 and haven't tested any of it so you'll need to find someone who has.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by rlm created at 2008-05-23 16:46:07
+
+See the thread:
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/9e13b5c63e485f8f
+
+
+---
+
+Comment by rlm created at 2008-05-25 19:20:16
+
+On the above thread, it is nearly unanimous that `G<=H` should mean "Is G a subgroup of H?". Therefore, I propose we merge the patch as-is, and create a ticket to provide `is_subgroup` functionality.
+
+
+---
+
+Comment by mabshoff created at 2008-05-25 19:24:28
+
+I agree with rlm. Could someone review trac1284-flattened.patch? Then we can take it from there with a new ticket.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cremona created at 2008-05-25 20:25:49
+
+Sorry about this, but:  we all agreed that H<=G should mean "H is a subgroup of G" and have nothing to do with order-comparison.  But you still have H<G meaning such an order-comparison!  As a user I would expect H<G to mean "H is a proper subgroup of G" so that (H<=G) == ((H<G) or (H==G)) and (H<G) == ((H<=G) and not (H==G)).
+
+So I would be happier if < and > were defined this way!
+
+
+---
+
+Comment by rlm created at 2008-05-25 20:38:23
+
+Replying to [comment:20 cremona]:
+> Sorry about this, but:  we all agreed that H<=G should mean "H is a subgroup of G" and have nothing to do with order-comparison.  But you still have H<G meaning such an order-comparison!  As a user I would expect H<G to mean "H is a proper subgroup of G" so that (H<=G) == ((H<G) or (H==G)) and (H<G) == ((H<=G) and not (H==G)).
+> 
+> So I would be happier if < and > were defined this way!
+
+Look more carefully: this is exactly what they *are* defined to do.
+
+
+---
+
+Comment by cremona created at 2008-05-25 21:25:15
+
+Apologies -- you are right of course.  It's a bit late in the evening where I live.
+I'll test applying the patch to 3.0.2 on Monday, but the code does appear to do what we agree it should.
+
+
+---
+
+Comment by cremona created at 2008-05-26 10:28:12
+
+The immediate problem with abelian groups has been solved, and all the group-related problems posted with this patch are dealt with by this patch, which I think can go ahead.
+
+The wider problems raised by Frances are not touched by this and should somehow be preserved in a new patch.  I also believe that the whole f.g. abelian groups implementation would benefit from a rewrite using ultra-efficient matrix operations (HNF and SNF) to do everything;  but that would be a serious undertaking, and talk is cheap...
+
+
+---
+
+Comment by mabshoff created at 2008-05-26 16:42:38
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-05-26 16:42:38
+
+Merged in Sage 3.0.3.alpha0. Somebody please open up a follow up ticket with the issues Frances described. 
+
+Cheers,
+
+Michael

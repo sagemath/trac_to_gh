@@ -1,0 +1,130 @@
+# Issue 3061: use readlink and realpatch so that symlinking sage works
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2008-04-30 01:35:11
+
+Assignee: mabshoff
+
+Max Murphy suggests:
+
+```
+Dear All,
+
+I just tried making a symlink to sage and it broke because it defaults
+to using $0 to work out where SAGE_DIR is.  I'd like to propose a
+small change that allows symlinks to be used:
+
+---------------------------
+THE FILE: is the shell script called sage in the root of the install
+tree and which starts:
+
+#!/bin/sh
+
+# Set SAGE_ROOT to the location of the sage install.
+SAGE_ROOT="....."
+
+CUR="`pwd`"   # save the current directory, so can change back after
+startup
+
+if [ "$SAGE_ROOT" = "....." ];  then
+    SAGE_ROOT=`echo "$0" | sed -e 's/....$//g'`
+-----------------------------
+BEFORE:  The line I'd like to change is:
+
+    SAGE_ROOT=`echo "$0" | sed -e 's/....$//g'`
+
+----------------------------
+AFTER:
+
+    SAGE_ROOT=`readlink -f "$0"` 2>/dev/null || \
+    SAGE_ROOT=`realpath    "$0"` 2>/dev/null || \
+    SAGE_ROOT="$0"
+
+    SAGE_ROOT="${SAGE_ROOT%/*}/"
+
+--------------------------
+DISCUSSION:
+readlink -f  and  realpath do the same thing - they get a clean path
+free of relative components and symlinks.
+
+The reason for trying both is that some systems have only the one or
+the other.  Trying raw $0 is there as a last resort just in case.
+Don't want to break any existing installs!
+
+The final line does -almost- the same as the sed.  The sed removes
+four characters (sage), the new code removes the file part of the
+path.  Debatable but it's a bit quicker than spawning a sed process
+and allows for name changes.  You never know.. it might become
+fennel.  All right, this part of the argument is pretty weak!
+
+But the upside is that I can now make symlinks to sage and everything
+works dandy, which it didn't before.
+
+Have fun!
+
+And sorry about not using [code] tags .. I couldn't find the button!
+(wimp)
+
+Regards, Max  (new to this forum) 
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-04-30 05:43:54
+
+Changing status from new to assigned.
+
+
+---
+
+Attachment
+
+Tested on OSX & Linux. It works:
+
+```
+mabshoff`@`sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo
+mabshoff`@`sage:~$ ls -al foo
+lrwxrwxrwx 1 mabshoff 1090 54 2008-04-29 22:37 foo -> /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage
+mabshoff`@`sage:~$ ./foo
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26                |
+| Type notebook() for the GUI, and license() for information.        |
+sage:
+Exiting SAGE (CPU time 0m0.01s, Wall time 0m1.41s).
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by gfurnish created at 2008-04-30 06:03:06
+
+works for me
+
+
+---
+
+Comment by mabshoff created at 2008-04-30 06:11:15
+
+Merged in Sage 3.0.1.alpha1
+
+
+---
+
+Comment by mabshoff created at 2008-04-30 06:11:15
+
+Resolution: fixed

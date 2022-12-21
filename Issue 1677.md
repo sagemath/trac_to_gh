@@ -1,0 +1,102 @@
+# Issue 1677: trivial-to-fix mistake in the rubiks spkg
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-01-04 02:57:10
+
+Assignee: mabshoff
+
+There is a pre-built OS X binary of cube in the rubiks spkg
+
+```
+globals.c    makefile     prntsol.c   setcube.c  sizekoc1.c  trans
+was`@`newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ ls -lh
+total 196K
+-rwxr-xr-x 1 was was  38K 2007-09-12 03:28 cube
+-rw-r--r-- 1 was was  13K 2007-09-12 03:28 cube.c
+-rw-r--r-- 1 was was  14K 2007-09-12 03:28 Description
+-rw-r--r-- 1 was was  254 2007-09-12 03:28 globals.c
+-rw-r--r-- 1 was was  249 2007-09-12 03:28 globals.h
+-rw-r--r-- 1 was was 1.1K 2007-09-12 03:28 license.txt
+-rw-r--r-- 1 was was  148 2007-09-12 03:28 longtype.h
+-rw-r--r-- 1 was was 2.6K 2007-09-12 03:28 makefile
+-rw-r--r-- 1 was was 2.4K 2007-09-12 03:28 permcube.c
+-rw-r--r-- 1 was was 6.2K 2007-09-12 03:28 phase1.c
+-rw-r--r-- 1 was was 4.1K 2007-09-12 03:28 phase2.c
+-rw-r--r-- 1 was was  338 2007-09-12 03:28 prntsol.c
+-rw-r--r-- 1 was was  306 2007-09-12 03:28 rancube.c
+-rw-r--r-- 1 was was 2.8K 2007-09-12 03:28 README
+-rw-r--r-- 1 was was 7.7K 2007-09-12 03:28 RESULTS
+-rw-r--r-- 1 was was 4.2K 2007-09-12 03:28 setcube.c
+-rw-r--r-- 1 was was 3.3K 2007-09-12 03:28 size222.c
+-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 size333c.c
+-rw-r--r-- 1 was was 8.9K 2007-09-12 03:28 sizedom.c
+-rw-r--r-- 1 was was 4.6K 2007-09-12 03:28 sizekoc1.c
+-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 sizekoc2.c
+-rw-r--r-- 1 was was 3.0K 2007-09-12 03:28 sizesquare.c
+-rw-r--r-- 1 was was 5.7K 2007-09-12 03:28 TABLE
+drwxr-xr-x 2 was was 4.0K 2007-09-12 03:28 trans
+was`@`newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ file cube
+cube: Mach-O executable i386
+```
+
+
+
+---
+
+Comment by robertwb created at 2008-01-04 08:41:15
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by robertwb created at 2008-01-04 08:41:15
+
+Updated spkg at http://sage.math.washington.edu/home/robertwb/spkgs/
+
+
+---
+
+Comment by robertwb created at 2008-01-04 08:41:15
+
+Changing assignee from mabshoff to robertwb.
+
+
+---
+
+Comment by mabshoff created at 2008-01-04 08:42:28
+
+I put an updated spkg at 
+
+ http://sage.math.washington.edu/home/mabshoff/rubiks-20070912.p0.spkg
+
+It fixes various issues:
+
+ * clean up SPKG.txt
+ * remove *DS*Store and various prebuild binaries from tree
+ * remove global hg repo (that included src!)
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-01-04 10:53:06
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-01-04 10:53:06
+
+I merged my spkg, so I am closing this now. So if Robert's spkg has some other improvements we can reopen this.
+
+Cheers,
+
+Michael

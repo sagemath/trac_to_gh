@@ -1,0 +1,151 @@
+# Issue 1993: dsage -- bugs bugs bugs
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-01-31 04:31:00
+
+Assignee: yi
+
+I demoed and taught many people to use Dsage today.  There are *numerous* problems that make it not robust enough for serious work, except perhaps when people use only a restricted subset of functionality.  Here's a list of thoughts.
+
+   1. It is absolutely essential that as soon as possible we setup a real doctesting framework for dsage.  The unit tests are clearly totally insufficient to test real-world dsage usage.  Also, the lack of doctests makes it way way harder to understand and get going with Sage.  I mean it is really really hard compared to just pasting in examples that works.  This completely defeats the whole purpose of DSage.
+
+   2. The web browser dsage monitor should popup when one does dsage.server(), and the URL of the web page and the port / server name of the dsage server should be displayed periodically.  As it is now they get quickly and easily lost.  It might even be good to regularly log the command one would type in Sage to start a new worker process on a remote machine, or connect to the server. 
+
+   3. Change it so the dsage object is callable (and calls DSage(...)). 
+
+   4. When doing, e.g., d=DSage();  v = [d('...') for ...] today, many different people with difference examples in almost every possible case had something go wrong or something inexplicable happen.  Problems inlcude:
+        * Jobs fail because the result cpu_time.sobj (?) gets deleted before it gets read, and the dsage code that reads cputime.sobj does not fail gracefully. 
+        * When jobs do fail for reasons like above, there is no crystal clear way to rerun them.
+        * The function associated to d that gives the number of worker processes (both working and idle) seems to be completely broken.  Many people tried to use it in numerous contexts today, and never ever saw any output that was actually right. 
+
+
+   5. Do d = DistributedFactor(...).  
+        * The result is an object d that does not start running.  This is confusion and pointless.
+        * Do d.[tab].   There's lots of irrelevant and confusing functions, many of which seems to have nothing to do with factoring.  Maybe DistributedFactor derives from something -- if this is making it too confusing to use, then do not use derivation, or make another wrapper object. 
+        * When I tested DistributedFactor, I did not get the impression that it killed all the spawned jobs once a factorization was found.  In any case, it didn't print out a clear message about doing this.  It needs to. 
+
+   6. if d = DSage()... then d.[tab] yields several properties whose names are unclear, such that e.g., d.jobs? yields no useful information.  In fact the entire d object is *incredibly hard* to understand and use compared to most objects in Sage.  This must be rewritten so that there are no properties, so that everything one sees when doing d.[tab] is a normal Python function to so that d.name? gives good docs, and there must be a minimal number of functions all of which make sense.   
+
+   7. The web interface to DSage is very pretty, but is frustrating to use.  The main things that makes it really frustrating include:
+        * It sorts everything backwards by default.  The top 10 should be recent computations, not the first ones that were ever sent to the dsage server.  Even if you click to sort by a different field or order, clicking refresh resets the ordering.
+        * It is very confusing because it doesn't update itself (you have to press refresh).  
+        * There must be a column for the name of the machine that the job is running on (or statement that the job is currently in the queue). 
+        * The web interface should display the command one types to start new worker processors and to connect to the dsage server. 
+   
+   8. The dsage architecture has several components: "client", "server", "monitor/broker/worker".   The latter is confusingly / inconsistently named. 
+
+   9. SERIOUS -- simply starting dsage and trying to do
+
+```
+sage: d = DSage()
+sage: d.eval('...', {'foo':2/3})
+```
+
+crashes in current dsage.   Evidently one side of the communication uses a compressed sobj, and the other doesn't.  This is the sort of thing doctests would have easily caught, but that unit tests clearly haven't. 
+
+  10. Delete .sage/dsage, then do "sage -server".  Instead of configuring dsage, it just tries to run and fails in dumb ways. 
+
+  11. I try to start dsage on my laptop right now and get this:
+
+```
+sage: dsage.start_all()
+Spawned dsage_server.py -d /Users/was/.sage/dsage/db/dsage.db -p 8081 -l 0 -f /Users/was/.sage/dsage/server.log -c /Users/was/.sage/dsage/pubcert.pem -k /Users/was/.sage/dsage/cacert.pem --jobfailures 3 --statsfile=/Users/was/.sage/dsage/dsage.xml --ssl --noblock (pid = 20940)
+
+Spawned dsage_worker.py -s localhost -p 8081 -u was -w 2 --poll 1.0 -l 0 -f /Users/was/.sage/dsage/worker.log --privkey=/Users/was/.sage/dsage/dsage_key --pubkey=/Users/was/.sage/dsage/dsage_key.pub --priority=20  --ssl --noblock (pid = 20943)
+
+---------------------------------------------------------------------------
+<class 'sage.dsage.errors.exceptions.NotConnectedException'>Traceback (most recent call last)
+...
+/Users/was/s/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py in check_connected(self)
+    352         
+    353         if self.remoteobj == None:
+--> 354             raise NotConnectedException
+    355         if self.remoteobj.broker.disconnected:
+    356             raise NotConnectedException
+
+<class 'sage.dsage.errors.exceptions.NotConnectedException'>: Not connected to a remote server.
+```
+
+Why?  It's a useless error message.  After dsage.setup(), same problem.  But I delete  .sage/dsage and try again and things work.  
+
+ 
+   12. I noticed several cases where somebody did a DSage calculation and the string displayed result of the answer was something like:
+
+ __BEGIN__
+ 4194319 * 134217757,
+ 8388617 * 268435459,
+
+   13. This message
+
+```
+[DSage] Lost connection to localhost
+```
+
+would be better if it were
+
+```
+[DSage] Closed connection to localhost
+```
+
+since "Lost" sounds bad / broken / unclean. 
+
+--------------
+
+For people doing real very serious calculations, where even a single one of the jobs maybe takes quite a long time to run, and is quite important and valuable for something else, we really need to greatly increase the robustness of dsage.
+
+*FEATURE WISE* (except a little for the web view of dsage), dsage already does more than enough.  But usability and robustness wise it needs to be improved. 
+
+Many of the problems above are not the sort of thing you can easily replicate on a nice clean OS X laptop.  But in real world usage on a heterogenous network with say an NFS shared filesystem
+
+
+---
+
+Comment by yi created at 2008-02-03 23:50:00
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by yi created at 2008-02-03 23:50:00
+
+Accepting this laundry list :-)
+
+
+---
+
+Comment by mabshoff created at 2008-03-31 19:20:11
+
+Yi: Didn't we split the laundry list in individual tickets? Since we now have a rule against laundry lists I would suggest that you open new tickets for individual issues that are still open and not covered by other tickets [if there are any] and then I will close this ticket as invalid.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by yi created at 2008-04-01 22:40:20
+
+Yes, I did split this ticket into individual items. Please close this ticket as invalid.
+
+
+---
+
+Comment by mabshoff created at 2008-04-01 22:49:50
+
+Resolution: invalid
+
+
+---
+
+Comment by mabshoff created at 2008-04-01 22:49:50
+
+As Yi commands I shall do :) - invalid since this it the kitchen sink.
+
+Cheers,
+
+Michael

@@ -1,0 +1,6754 @@
+# Issue 715: Parents probably not reclaimed due to too much caching
+
+Issue created by migration from Trac.
+
+Original creator: robertwb
+
+Original creation time: 2007-09-20 19:11:58
+
+Assignee: somebody
+
+CC:  jpflori zimmerma vbraun robertwb nbruin malb mjo
+
+
+
+
+---
+
+Comment by mhansen created at 2008-11-14 08:59:41
+
+I think this is a bit too vague for a ticket.  Robert, could you be more specific or close this?
+
+
+---
+
+Comment by robertwb created at 2008-11-14 18:25:26
+
+The coercion model needs to use weakrefs so that parents aren't needlessly referenced when they're discarded. It is nontrivial to see where the weakrefs need to go, and how to do so without slowing the code down. 
+
+The ticket is still valid.
+
+
+---
+
+Comment by davidloeffler created at 2011-01-20 11:29:18
+
+Changing component from basic arithmetic to coercion.
+
+
+---
+
+Comment by jpflori created at 2011-07-04 08:38:12
+
+With the piece of code in the desrciption, there is only one reference to these objects in that ZZ._hash_actions dictionary because to build it we test if A1 == A2 and not A1 is A2 as  in coercion_model._action_maps, and because of the current implementation of ellitpic curves, see http://groups.google.com/group/sage-nt/browse_thread/thread/ec8d0ad14a819082 and [#11474](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11474), and decause the above code use only one j-invariant, only ones gets finally stored.
+
+However with random curves, I guess there would be all of them.
+
+About the weakref, the idea should more be to build something like WeakKeyDictionnary if it does not slow down coercion too much...
+
+
+---
+
+Comment by nbruin created at 2011-07-04 16:05:59
+
+The following example also exhibits a suspicious, steady growth in memory use. The only reason I can think of why that would happen is that references to the created finite field remain lying around somewhere, preventing deallocation:
+
+```
+sage: L=prime_range(10^8)
+sage: for p in L: k=GF(p)
+```
+
+If you change it to the creation of a polynomial ring the memory use rises much faster:
+
+```
+sage: L=prime_range(10^8)
+sage: for p in L: k=GF(p)['t']
+```
+
+Are "unique" parents simply *never* deallocated?
+
+
+---
+
+Comment by jpflori created at 2011-07-04 16:13:40
+
+Be aware that polynomial rings are also cached because of uniqueness of parents, explaining somehow your second memory consumption; see #5970 for example.
+
+For finite fields I did not check.
+
+
+---
+
+Comment by jpflori created at 2011-10-24 13:19:39
+
+See #11521 for some concrete instances of this problem and some advice to investigate it.
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 10:11:11
+
+In my code for the computation Ext algebras of basic algebras, I use letterplace algebras (see #7797), and they involve the creation of many polynomial rings. Only one of them is used at a time, so, the others could be garbage collected. But they aren't, and I suspect this is because of using strong references in the coercion cache.
+
+See the following example (using #7797)
+
+```
+sage: F.<a,b,c> = FreeAlgebra(GF(4,'z'), implementation='letterplace')
+sage: import gc
+sage: len(gc.get_objects())
+170947
+sage: a*b*c*b*c*a*b*c
+a*b*c*b*c*a*b*c
+sage: len(gc.get_objects())
+171556
+sage: del F,a,b,c
+sage: gc.collect()
+81
+sage: len(gc.get_objects())
+171448
+sage: cm = sage.structure.element.get_coercion_model()
+sage: cm.reset_cache()
+sage: gc.collect()
+273
+sage: len(gc.get_objects())
+171108
+```
+
+That is certainly not a proof of my claim, but it indicates that it might be worth while to investigate.
+
+In order to facilitate work, I am providing some other tickets that may be related to this:
+
+ * #11521 (that might be solved, but needs review)
+ * #10262
+ * #8905
+ * #5970 (this might already be fixed)
+
+I guess that one should use a similar cache model to what I did in #11521: The key for the cache should not just be `(domain,codomain)`, because we want that garbage collection of the cache item is already allowed if just one of domain or codomain is collectable.
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 10:41:10
+
+I try to wrap my mind around weak references. I found that when creating a weak reference, one can also provide a method that is called when the weak reference becomes invalid. I propose to use such method to erase the deleted object from the cache, regardless whether it appears as domain or codomain.
+
+Here is a proof of concept:
+
+```
+sage: ref = weakref.ref
+sage: D = {}
+sage: def remove(x):
+....:     for a,b,c in D.keys():
+....:         if a is x or b is x or c is x:
+....:             D.__delitem__((a,b,c))
+....:             
+sage: class A:
+....:     def __init__(self,x):
+....:         self.x = x
+....:     def __repr__(self):
+....:         return str(self.x)
+....:     def __del__(self):
+....:         print "deleting",self.x
+....:         
+sage: a = A(5)
+sage: b = A(6)
+sage: r = ref(a,remove)
+sage: s = ref(b,remove)
+sage: D[r,r,s] = 1
+sage: D[s,r,s] = 2
+sage: D[s,s,s] = 3
+sage: D[s,s,1] = 4
+sage: D[r,s,1] = 5
+sage: D.values()
+[5, 3, 1, 4, 2]
+sage: del a
+deleting 5
+sage: D.values()
+[4, 3]
+sage: del b
+deleting 6
+sage: D.values()
+[]
+```
+
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 14:09:23
+
+It turns out that using weak references in the coercion cache will not be enough. Apparently there are other direct references that have to be dealt with.
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 17:10:06
+
+I wonder whether the problem has already been solved. I just tested the example from the ticket description, and get (at least with #11900, #11521 and #11115):
+
+```
+sage: K = GF(1<<55,'t')
+sage: a = K.random_element()
+sage: m0 = get_memory_usage()
+sage: for i in range(1000):
+....:     E = EllipticCurve(j=a); P = E.random_point(); PP = 2*P
+....:     
+sage: get_memory_usage() - m0
+15.22265625
+```
+
+
+I think that this is not particularly scary. I'll repeat the test with vanilla sage-4.8.alpha3, but this will take a while to rebuild.
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 19:39:46
+
+No, even in vanilla sage-4.8.alpha3 I don't find a scary memory leak in this example.
+
+Do we have a better example? One could, of course, argue that one should use weak references for caching even if we do not find an apparent memory leak. I am preparing a patch for it now.
+
+
+---
+
+Comment by SimonKing created at 2011-12-21 22:45:52
+
+Here is an experimental patch.
+
+A new test shows that the weak caching actually works.
+
+Note that the patch also introduces a weak cache for polynomial rings, which might be better to put into #5970. Well, we can sort things out later...
+
+
+---
+
+Comment by SimonKing created at 2011-12-22 18:29:24
+
+It needs work, though. Some tests in sage/structure fail, partially because of pickling, partially because some tests do not follow the new specification of `TripleDict` (namely that the first two parts of each key triple and the associated value must be weak referenceable.
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 06:53:36
+
+Now I wonder: Should I try to use weak references _and_ make it accept stuff that does not allow for weak references?
+
+In the intended applications, weak references are possible. But in some tests and in the pickle jar, the "wrong" type of keys (namely strings and ints) are used.
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 09:28:35
+
+The only place where the weak references are created is in the `set(...)` method of `TripleDict`. I suggest to simply catch the error that may occur when creating a weak reference, and then use a different way of storing the key. I am now running tests, and I hope that this ticket will be "needs review" in a few hours.
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 09:53:49
+
+Changing keywords from "" to "weak cache coercion".
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 09:53:49
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 09:53:49
+
+With the attached patch, all tests pass for me, and the new features are doctested. Needs review!
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 10:04:26
+
+It turns out that this patch only cleanly applies after #11900. So, I introduce #11900 as a dependency. My statement on "doctests passing" was with #11900 anyway.
+
+
+---
+
+Comment by zimmerma created at 2011-12-23 10:18:18
+
+I was able to apply this patch to vanilla 4.7.2. Should I continue reviewing it like this?
+
+Paul
+
+
+---
+
+Comment by zimmerma created at 2011-12-23 11:12:33
+
+on top of vanilla 4.7.2 several doctests fail:
+
+```
+
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/calculus/interpolators.pyx # 0 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/databases/database.py # 15 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/finance/time_series.pyx # 0 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph_list.py # 4 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph_database.py # 28 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph.py # 6 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/generic_graph.py # 4 doctests failed
+
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/matrix/matrix2.pyx # 3 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/hecke/hecke_operator.py # 1 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/hecke/ambient_module.py # 2 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/subspace.py # 6 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/boundary.py # 3 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/space.py # 3 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/modsym.py # 1 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/ambient.py # 11 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/abvar/abvar.py # 0 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/schemes/elliptic_curves/heegner.py # 9 doctests failed
+        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/sandpiles/sandpile.py # Time out
+```
+
+Paul
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 16:21:55
+
+I'll try again on top of vanilla sage-4.8.alpha3. You are right, the patch does apply (almost) cleanly even without #11900. That surprises me, because at some point there was an inconsistency.
+
+Hopefully I can see later today whether I get the same errors as you.
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 17:28:36
+
+It turns out that #11900 is indeed not needed.
+
+I can not reproduce any of the errors you mention.
+
+Moreover, the file "sage/devel/sage/databases/database.py", for which you reported an error, does not exist in vanilla sage (not in 4.7.2 and not in 4.8.alpha3).
+
+Did you test other patches before returning to vanilla 4.7.2? Namely, when a patch changes a module from python to cython, and one wants to remove the patch, then it is often needed to also remove any reference to the cython module in `build/sage/...` and in `build/*/sage/...`. For example, when I had #11115 applied and want to remove it again, then I would do `rm build/sage/misc/cachefunc.*` and `rm build/*/sage/misc/cachefunc.*`.
+
+
+---
+
+Comment by zimmerma created at 2011-12-23 18:09:08
+
+yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a
+different clone.
+
+Paul
+
+
+---
+
+Comment by SimonKing created at 2011-12-23 18:15:15
+
+Replying to [comment:27 zimmerma]:
+> yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a
+> different clone.
+
+But where does the databases/database.py file come from?
+
+And could you post one or two examples for the errors you are getting (i.e. not just which files are problematic, but what commands exactly fail)?
+
+
+---
+
+Comment by SimonKing created at 2011-12-24 18:16:31
+
+FWIW: I started with sage-4.8.alpha3, have #9138, #11900 and #715 applied, and all doctests pass. I don't know why the patchbot isn't even trying (although it says "retry: True"), but from my point of view, everything is alright.
+
+
+---
+
+Comment by SimonKing created at 2011-12-26 16:18:16
+
+I have simplified the routine that removes cache items when a weak reference became invalid. The tests all pass for me.
+
+Apply trac715_weak_coercion_cache.patch
+
+
+---
+
+Comment by SimonKing created at 2011-12-28 23:18:27
+
+One question: Currently, my patch uses weak references only for the first two parts of the key. Should it also use weak references to the value, when possible?
+
+By "when possible", I mean that not all values allow weak references - if it is possible then a weak reference is used, otherwise a strong reference is used. This might contribute to fixing the memory leak in #11521, but it might have a speed penalty.
+
+Concerning #11521: The point is that an action (which currently does not allow weak references, but that might change) has a strong reference to the objects that are used for storing it in the cache. Hence, an action is not collectable with the current patch.
+
+Thoughts?
+
+
+---
+
+Comment by SimonKing created at 2011-12-29 22:26:20
+
+Use weak references in the coercion cache
+
+
+---
+
+Attachment
+
+I have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 09:24:05
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 09:24:05
+
+I think I need to modify one detail:
+
+For efficiency and since domain/codomain of a map must be identic with (and not just equal to) the given keys, my patch compares them by "is" rather than "==". But I think one should still compare the third item of a key via "==" and not "is". I need to do some tests first...
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 13:59:50
+
+It really is not an easy question whether or not we should have "is" or "==".
+
+On the one hand, we have the lines
+
+```
+!python
+            if y_mor is not None:
+                all.append("Coercion on right operand via")
+                all.append(y_mor)
+                if res is not None and res is not y_mor.codomain():
+                    raise RuntimeError, ("BUG in coercion model: codomains not equal!", x_mor, y_mor)
+```
+
+in sage/structure/coerce.pyx seem to imply that comparison via "is" is the right thing to do.
+
+But in the same file, the coercion model copes with the fact that some parents are not unique:
+
+```
+!python
+        # Make sure the domains are correct
+        if R_map.domain() is not R:
+            if fix:
+                connecting = R_map.domain().coerce_map_from(R)
+                if connecting is not None:
+                    R_map = R_map * connecting
+            if R_map.domain() is not R:
+                raise RuntimeError, ("BUG in coercion model, left domain must be original parent", R, R_map)
+        if S_map is not None and S_map.domain() is not S:
+            if fix:
+                connecting = S_map.domain().coerce_map_from(S)
+                if connecting is not None:
+                    S_map = S_map * connecting
+            if S_map.domain() is not S:
+                raise RuntimeError, ("BUG in coercion model, right domain must be original parent", S, S_map)
+```
+
+That would suggest that comparison by "==" (the old behaviour or `TripleDict`) is fine.
+
+Perhaps we should actually have to variants of `TripleDict`, one using "is" and one using "==".
+
+Note another detail of sage/structure/coerce.pyx: We have
+
+```
+    cpdef verify_action(self, action, R, S, op, bint fix=True):
+```
+
+but
+
+```
+    cpdef verify_coercion_maps(self, R, S, homs, bint fix=False):
+```
+
+Note the different default value for "fix". If "fix" is True then the coercion model tries to cope with non-unique parents by prepending a conversion between the two equal copies of a parent.
+
+Since the default is to fix non-unique parents for actions, but not for coercion maps, I suggest that a "=="-`TripleDict` should be used for actions and an "is"-`TripleDict` for coercions.
+
+
+---
+
+Comment by jpflori created at 2011-12-30 14:07:01
+
+I guess a choice has to be made and that it should at lest be as consistent as possible.
+What you propose makes sense to me, is not too far from the current model and gives a little more conssitency.
+Moreover, when both TripleDicts will have been implemented, changing our mind later will be trivial.
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 14:49:32
+
+There is another detail. Even in the old version of `TripleDict`, we have
+
+```
+    It is implemented as a list of lists (hereafter called buckets). The bucket 
+    is chosen according to a very simple hash based on the object pointer.
+    and each bucket is of the form [k1, k2, k3, value, k1, k2, k3, value, ...]
+    on which a linear search is performed. 
+```
+
+So, the choice of a bucket is based on the object pointer - but then it is not consequent to compare by "==".
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 14:55:16
+
+To be precise: The _old_ behaviour was not consequent. The bucket depended on `id(k1),id(k2),id(k3)`, but the comparison was by "==" rather than by "is".
+
+Experimentally, I will provide two versions of `TripleDict`, one using "hash"for determining the bucket and doing comparison by "==", the other using "id" for determining the bucket and doing comparison by "is".
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 23:30:08
+
+As announced, I have attached an experimental patch. It provides two variants of `TripleDict`, namely using "==" or "is" for comparison, respectively. Both are used, namely for caching coerce maps or actions, respectively.
+
+It could be that a last-minute change was interfering, but I am confident that all but the following three tests pass:
+
+```
+        sage -t  devel/sage-main/doc/en/bordeaux_2008/nf_introduction.rst # 1 doctests failed
+        sage -t  devel/sage-main/sage/modular/modsym/space.py # Killed/crashed
+        sage -t  devel/sage-main/sage/structure/coerce_dict.pyx # 3 doctests failed
+```
+
+
+The memory leak exposed in the ticket description is fixed (more or less):
+
+```
+sage: K = GF(1<<55,'t')
+sage: a = K.random_element()
+sage: for i in range(500):
+....:     E = EllipticCurve(j=a)
+....:     P = E.random_point()
+....:     Q = 2*P
+....:     
+sage: import gc
+sage: gc.collect()
+862
+sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field
+sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]
+sage: len(LE)
+2
+```
+
+
+I am not sure whether this makes #11521 redundant.
+
+For now, it is "needs work, because of the doctests. But you can already play with the patch.
+
+
+---
+
+Comment by SimonKing created at 2011-12-30 23:32:31
+
+Sorry, only TWO doctests should fail: The tests of sage/structure/coerce_dict.pyx are, of course, fixed.
+
+
+---
+
+Comment by SimonKing created at 2011-12-31 13:07:47
+
+The segfault in `sage -t  devel/sage-main/sage/modular/modsym/space.py` seems difficult to debug.
+
+Inspecting a core dump with gdb did not help at all:
+
+```
+(gdb) bt
+#0  0x00007f61d12ca097 in kill () from /lib64/libc.so.6
+#1  0x00007f61d0044a40 in sigdie () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libcsage.so
+#2  0x00007f61d0044646 in sage_signal_handler () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libcsage.so
+#3  <signal handler called>
+#4  0x00007f61cf080520 in mpn_submul_1 () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8
+#5  0x00007f61cf0b4f0f in __gmpn_sb_bdiv_q () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8
+#6  0x00007f61cf0b6428 in __gmpn_divexact () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8
+#7  0x00007f61ccbf4d64 in ?? ()
+...
+#191 0x55c0ade81d9aeecf in ?? ()
+#192 0xffffe4b8b6920b7b in ?? ()
+#193 0x000000000ac854cf in ?? ()
+#194 0x0000000000000000 in ?? ()
+```
+
+
+How could one proceed? What other debugging techniques can you recommend?
+
+
+---
+
+Comment by vbraun created at 2011-12-31 13:21:37
+
+Looks like you did not tell gdb about the executable you were running. You should run 
+
+```
+gdb --core=<corefile> $SAGE_LOCAL/bin/python
+```
+
+
+
+---
+
+Comment by SimonKing created at 2011-12-31 14:11:30
+
+Replying to [comment:42 vbraun]:
+> Looks like you did not tell gdb about the executable you were running.
+
+No, I did tell it. I did
+
+```
+gdb --core=715doublecore ~/SAGE/sage-4.8.alpha3/local/bin/python
+```
+
+
+Should I do it inside a Sage shell?
+
+
+---
+
+Comment by SimonKing created at 2011-12-31 14:15:59
+
+No, doing the same inside a sage shell did not help either.
+
+
+---
+
+Comment by SimonKing created at 2011-12-31 14:59:43
+
+I am now printing some debugging information into a file, which hopefully means that I am coming closer to the source of the problem. The segfault arises in line 2165 of sage/modular/modsym/space.py
+
+
+---
+
+Comment by SimonKing created at 2011-12-31 15:18:40
+
+Sorry, it was the wrong line number.
+
+
+---
+
+Comment by SimonKing created at 2012-01-01 19:18:25
+
+Meanwhile I am rather desperate: I have not the faintest idea how the segfault occurs.
+
+Therefore I used some debugging function that I registered using `sys.settrace(...)`, so that all Python commands in the critical example are written into a file.
+
+I posted logs for the [unpatched](http://sage.math.washington.edu/home/SimonKing/SAGE/tickets/715/fulltrace) and the [patched](http://sage.math.washington.edu/home/SimonKing/SAGE/tickets/715/fulltracePatched) version.
+
+There is one obvious difference of the two logs: The hash is called more often in the patched version. Calling the hash is rather inefficient for matrix spaces: Each time when the hash of a matrix space is called, the matrix space's string representation is created, which is slow. I suggest to cache the hash value (like what I did for polynomial rings in #9944), but this should be on a different ticket.
+
+Apart from that, I can't spot an obvious difference. Do you have any clue?
+
+
+---
+
+Comment by SimonKing created at 2012-01-02 07:58:05
+
+It turns out that using `TripleDictById` for the _action_maps cache makes the segfault disappear.
+
+If one uses `TripleDict` for _coercion_maps then
+
+```
+sage -t  devel/sage-main/sage/modular/modsym/space.py
+```
+
+takes 30 seconds, but if one also uses `TripleDictById` then it only takes 23 seconds.
+
+My conclusion:
+
+ * The old version of `TripleDict` was buggy: It uses `id(...)` for the hash table, but `==` for comparison. I think that had to be fixed.
+ * The new version of `TripleDict` uses `hash(...)` for the hash table and `==` for comparison. That should be fine, but (1) it leads to a segfault and (2) it leads to a slowdown. After all, calling `hash(...)` is a lot slower than determining the address.
+ * The new `TripleDictById` uses `id(...)` for the hash table and `... is ...` for comparison. Problem: It would probably not fix the memory leak.
+
+However, the fact that using `TripleDictById` fixes the segfault makes me wonder: Perhaps the segfault occurs when calling `hash(...)` on a parent? Namely, in some cases, and action will already be constructed during initialisation of a parent. But if the hash is determined based on cdef data that aren't initialised, a segfault can easily occur.
+
+I'll investigate that further. In any case, we need to keep an eye on the potential slow-down.
+
+
+---
+
+Comment by SimonKing created at 2012-01-02 11:48:25
+
+The segfault does not occur while computing a hash. It occurs in line 468 of sage/matrix/matrix_rational_dense.pyx, namely
+
+```
+                mpq_mul(y, w._entries[j], self._matrix[j][i])
+```
+
+I also tested, just before that line, that `w[j]` and `self.get_unsafe(j,i)` (which accesses `w._entries[j]` and `self._matrix[j],[i]`) works.
+
+At this point, I am at my wits' end. To me, it looks like a change in the way of comparing dictionary keys modifies internals of mpir (IIRC, this is where mpq_mul is defined). gdb can not decipher the core file, and I don't know how valgrind can be used.
+
+What else?
+
+
+---
+
+Comment by vbraun created at 2012-01-02 17:03:38
+
+Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.
+
+
+---
+
+Comment by SimonKing created at 2012-01-02 18:39:54
+
+Replying to [comment:50 vbraun]:
+> Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.
+
+What???
+
+According to `hg qapplied`, I have
+
+```
+trac_12057_fix_doctests.patch
+9138_flat.patch
+trac_11319_prime_field_coercion.patch
+trac_11319_number_field_example.patch
+trac11900_category_speedup_combined.patch
+11115_flat.patch
+trac_11115_docfix.patch
+trac715_two_tripledicts.patch
+```
+
+
+Remark: I work on `openSUSE`, hence, I had to apply #12131 and thus also its dependency #12057. I doubt that the absence of #11115 is responsible for Sage not starting. And all other patches are dependencies.
+
+What error occurs when you start Sage with my patch? If we are lucky, it gives some clue why the segfault in the one doctest occurs.
+
+Best regards,
+
+Simon
+
+
+---
+
+Comment by SimonKing created at 2012-01-02 18:40:38
+
+PS: I started on top of sage-4.8.alpha3.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 06:25:17
+
+Meanwhile I built sage-5.0.prealpha0 and applied #11780 and [attachment:trac715_two_tripledicts.patch]. Sage starts fine.
+
+So, Volker, what had you have applied when Sage didn't start?
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 09:33:46
+
+I think I made a progress: I found that the vector space that is part of the crash is _not unique_! So, the `VectorMatrixAction` is defined for a vector space that is equal to but not identical with the vector space it is acting on!
+
+The natural solution is to try and find out why the vector space is not unique. Vector spaces should be created using the `VectorSpace` constructor, that relies on a `UniqueFactory`. But apparently some very old code is constructing a vector space directly - it wouldn't be the first time that this is causing trouble.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 09:43:10
+
+PS: Note that vector spaces with different inner product are considered equal.
+
+```
+sage: V = QQ^5
+sage: M = random_matrix(QQ,5,5)
+sage: M.set_immutable()
+sage: W = VectorSpace(QQ,5,inner_product_matrix=M)
+sage: V
+Vector space of dimension 5 over Rational Field
+sage: W
+Ambient quadratic space of dimension 5 over Rational Field
+Inner product matrix:
+[   0  1/2    1   -1   -1]
+[   0    0    0    1 -1/2]
+[  -2    0    0    0    0]
+[   1    0    2    0    0]
+[   0   -2    0    1    0]
+sage: V==W
+True
+sage: type(V)==type(W)
+False
+```
+
+
+But this is not the problem here: The two equal vector spaces involved in the crash have default inner product.
+
+The non-uniqueness makes me think of another potential solution: The coercion model has a method "verify_action". This is _only_ called when a new action is found, but not when an action is taken from the cache.
+
+So, in addition to fixing the non-unique vector space in the modular symbols code, one could _always_ verify the action. Probably this would be too slow, though.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 09:59:31
+
+Aha! We have a sparse versus a dense vector space! Here is our problem!
+
+
+---
+
+Comment by vbraun created at 2012-01-03 10:08:35
+
+I did manage to install it and reproduce the crash. The core dump shows that the stack is completely corrupted before we called into gmp code.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 10:13:09
+
+Hi Volker,
+
+good that you managed to install it. Meanwhile I think I can debug it without the core dump - I think mistaking a sparse with a dense vector space is a pretty convincing reason for a segfault.
+
+
+However, I hate that old code!!
+
+I tried `verify_action`, but then hundreds of tests fail in sage/modular/modsym/space.py. So, apparently it is very common to have non-unique parents in such a way that the action can _not_ be fixed!
+
+For example, I see errors like
+
+```
+    TypeError: Coercion of [Infinity] - [0] (of type <class 'sage.modular.modsym.boundary.BoundarySpaceElement'>) into Space of Boundary Modular Symbols for Congruence Subgroup Gamma0(43) of weight 2 and over Rational Field not (yet) defined.
+```
+
+
+Anyway, `verify_action` is no solution.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 10:18:06
+
+Hi all,
+
+Just wanted to say I had no problem installing the new patch on top of sage.4.8.alpha5 with tickets #9138 #11900 #1115 #715 and #11521 in that order and Sage launches.
+I'll start a make ptestlong now.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 10:32:09
+
+Hi Jean-Pierre,
+
+don't start ptestlong - I am about to update the new patch such that the segfault does not occur and the time for executing the test is fine and the memleak is gone!
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 10:33:19
+
+Use weak references to the keys of `TripleDict`. Compare by "==" or by "is", depending on the application. Use weak references for storing actions.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 10:34:29
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+See the updated patch:
+
+Apply trac715_two_tripledicts.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 10:42:40
+
+Here some remarks on the new patch:
+
+I use `TripleDictById` for storing actions, since otherwise we have trouble with non-unique parents and get segfaults.
+
+In addition, I do not directly store the action but only a weak reference to it, since otherwise I couldn't fix the memory leak.
+
+Sometimes, the stored action is in fact `None`, for which we can't use a weak references. Instead, I use a constant function. For technical reasons it returns False and not None (namely, this is to avoid confusion with a weak reference that has become invalid).
+
+*__Features__*
+
+ * The segfault in `sage -t sage/modular/modsym/space.py` is gone.
+ * The time for executing that test remains fine, namely 20.7 seconds (unpatched sage-5.0.prealpha0) versus 21.4 seconds (with patch).
+ * The example from the ticket description does not leak anymore!
+
+Thus, needs, review.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 10:48:46
+
+Ok, I'll give the new patch a go and report after make ptestlong and checking for the memleaks.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 11:06:49
+
+Replying to [comment:63 jpflori]:
+> Ok, I'll give the new patch a go and report after make ptestlong
+
+So do I.
+
+I guess at least one thing is needed: Provide a doc test that demonstrates the fix of the memory leak. This should be similar to the example for the patch that I have posted at #11521. Note that #11521 is in fact a duplicate: The examples from the two ticket descriptions are almost identical.
+
+
+---
+
+Comment by vbraun created at 2012-01-03 11:22:52
+
+Actions have strong references to domain and codomain, so its no surprise that they keep their coercion cache entry alive. But I don't understand how storing a weak reference to the action can work; Nothing else keeps the action alive unless it happens to be used while the garbage collector is running. So actions are essentially not cached any more. It seem that either actions should only store weak references to domain/codomain or we implement some ring buffer that keeps the last N coerce maps unconditionally alive. 
+
+In fact, the action's reference to domain and codomain seem to be for convenience only. After all you know domain and codomain when you constuct the action and when you pick it from the cache, so there shouldn't be much incentive to look it up. Perhaps it would be easy to make them weak refs, did you look into that?
+
+
+---
+
+Comment by jpflori created at 2012-01-03 11:26:31
+
+I agree with Volker and would like to test putting weak refs to domain and codomain in Functor as I suggested in #11521 and letting an option to use strong ref by default so that a user building an action but not storing its domain elsewhere won't see it disappear magically.
+
+Unfortunately I do not have much time to do anything more than testing till the end of the week.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 11:42:41
+
+I wouldn't use weak references for anything but caching. In particular, having a weak reference from a functor to its domain or codomain seems a no-go to me.
+
+In one point I agree: There should be a mechanism to keep an action alive as long as domain and codomain exist. But perhaps this is already the case? Isn't there an action cache as an attribute of any parent? And isn't the action stored there (and not only in the cache of the coercion model) when an action is discovered?
+
+So, before thinking of a weak reference from the functor to domain and codomain, I would first test whether the problem you describe actually occurs.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 13:16:53
+
+Just two mental notes:
+
+One test in sage/structure/coerce.pyx fails, because it explicitly uses the action cache (ignoring the fact that it now contains weak references and not actions).
+
+And: The long tests of these two files
+
+```
+devel/sage/sage/graphs/graph_generators.py
+devel/sage/sage/graphs/generic_graph.py
+```
+
+take 10 minutes each. Is my patch to blame, or has it been like that before?
+
+
+---
+
+Comment by jpflori created at 2012-01-03 14:16:44
+
+With sage4.8.alpha5 plus #9138 #11900 #1115 #715 and #11521 applied some tests fail, namely in the files:
+- sage.rings.padic.padic_base_generic_element.pyx (1 test failed) but did NOT when rerun and did again the next time,
+- sage.rings.number_field.number_field.py (1) and did NOT again,
+- sage.structure.coerce.pyx (5) and did again,
+- sage.algebras.quatalg.quaternion_algebra.py (1) and did again once and then did NOT again,
+- lots of them in sage.homology.* (20+25+50+93+1) and did again.
+The random behavior of some of the above tests fails with:
+- IndexError: list index out of range (padic)
+- Attribute Error: QuaternionAlgebra_abstract_with_category object has no attribute _a (quatalg)
+and at some point in the stack TripleDicts of the coercion model are present.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 14:16:44
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 14:18:08
+
+Oops, this should be more readable:
+
+With sage4.8.alpha5 plus [#9138](http://trac.sagemath.org/sage_trac/ticket/9138) [#11900](http://trac.sagemath.org/sage_trac/ticket/11900) [#1115](http://trac.sagemath.org/sage_trac/ticket/1115) [#715](http://trac.sagemath.org/sage_trac/ticket/715) and [#11521](http://trac.sagemath.org/sage_trac/ticket/11521) applied some tests fail, namely in the files:
+
+- sage.rings.padic.padic_base_generic_element.pyx (1 test failed) but did NOT when rerun and did again the next time,
+
+- sage.rings.number_field.number_field.py (1) and did NOT again,
+
+- sage.structure.coerce.pyx (5) and did again,
+
+- sage.algebras.quatalg.quaternion_algebra.py (1) and did again once and then did NOT again,
+
+- lots of them in sage.homology.* (20+25+50+93+1) and did again.
+
+The random behavior of some of the above tests fails with:
+
+- [IndexError?](http://trac.sagemath.org/sage_trac/wiki/IndexError): list index out of range (padic)
+
+- Attribute Error: [QuaternionAlgebra?](http://trac.sagemath.org/sage_trac/wiki/QuaternionAlgebra)_abstract_with_category object has no attribute _a (quatalg) and at some point in the stack [TripleDicts?](http://trac.sagemath.org/sage_trac/wiki/TripleDicts) of the coercion model are present.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 14:21:47
+
+For info, the number_field test also fails with an "IndexError: list out of range".
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 14:52:54
+
+The flaky behaviour probably means that sometimes something gets garbage collected when it shouldn't.
+
+But why do you have the patch from #11521 applied?
+
+Note that with sage-5.0.prealpha0 + #11780 + the new patch from here, I get two tests with errors, namely
+
+```
+        sage -t  --long -force_lib devel/sage/sage/structure/coerce_dict.pyx # 1 doctests failed
+        sage -t  --long -force_lib devel/sage/sage/structure/coerce.pyx # 5 doctests failed
+```
+
+However, the tests took rather long in total: 12100 seconds with the new patch versus 4569 seconds unpatched.
+
+I think the regression is not acceptable.
+
+Well, perhaps you are right and we should experiment with weak references on domain and codomain.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 15:01:12
+
+Good point about #11521, I'd say because that what I was firstly interested in.
+
+Without it applied, the flaky behavior seem to disappear.
+
+I'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.
+
+Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:07:15
+
+Replying to [comment:73 jpflori]:
+> Good point about #11521, I'd say because that what I was firstly interested in.
+> 
+> Without it applied, the flaky behavior seem to disappear.
+
+Good!
+ 
+> I'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.
+
+OK, but I guess the timings I provided should be enough to show that the patch can not remain as it is now.
+
+> Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.
+
+Yep. Two potential solutions:
+
+ 1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).
+ 2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain.
+
+I'm trying the latter now.
+
+
+---
+
+Comment by jpflori created at 2012-01-03 15:21:41
+
+Replying to [comment:74 SimonKing]:
+
+> Replying to [comment:73 jpflori]:
+> > Good point about #11521, I'd say because that what I was firstly interested in. Without it applied, the flaky behavior seem to disappear.
+> Good!
+> > I'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.
+> OK, but I guess the timings I provided should be enough to show that the patch can not remain as it is now.
+> > Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.
+
+> Yep. Two potential solutions: 1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive). 2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain. I'm trying the latter now.
+
+Just to summarize, here is the current problem, please correct me if some of the following is wrong: we want to let a codomain (resp. domain) get garbage collected when its only weak reffed outside of the coercion model.
+
+Before the current patch the situation is as follows for actions:
+
+- when an action is resolved, it is cached in a triple dict in the coercion model with the domain and codomains as keys
+
+- the action is also cached in the dictionnaries in the domain and the codomain much in the same way
+
+- there is also a similar cache for homsets
+
+The current patch let weakrefs be used for the keys to the above dictionaries and a weak ref to the corresponding value (which is the action).
+
+The problem is that as the action is only weak reffed everywhere now, it gets garbage collected all the time (to be confirmed).
+
+If it is not, then the codomain (resp. domain) will in turn not get garbage collected, because it will be strongly reffed in the action strongly reffed in the domain (resp. codomain) (to be confirmed).
+
+The problem for the homset patch is slightly different and is being discussed in #11521.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:25:08
+
+Replying to [comment:74 SimonKing]:
+>  1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).
+
+That's why:
+
+```
+sage: search_src("register_action")
+structure/parent.pyx:1698:            self.register_action(action)
+structure/parent.pyx:1791:    cpdef register_action(self, action):
+structure/parent.pyx:1841:            sage: R.register_action(act)
+structure/parent.pxd:29:    cpdef register_action(self, action)
+```
+
+
+So, simply register action isn't used at all - which makes me think why some actions _are_ stored in the parent.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:29:14
+
+I see. register_action is not to be used after any coercion was established.
+
+
+---
+
+Comment by vbraun created at 2012-01-03 15:35:54
+
+Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution. Perhaps the testsuite stuff can be used to verify that all parents do that?
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:46:29
+
+Replying to [comment:78 vbraun]:
+> Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution.
+
+But perhaps a difficult one. The condition that `register_action` must not be used after defining any coercion is probably there for a reason.
+
+> Perhaps the testsuite stuff can be used to verify that all parents do that? 
+
+How could it? By hooking into the coercion model, look up any action there and verify that all are registered?
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:50:17
+
+Experimental patch using weak references on domain and codomain of functors
+
+
+---
+
+Attachment
+
+I have posted an [attachment:test_orphan_functor experimental patch], that has to be applied on top of [attachment:trac715_two_tripledicts.patch].
+
+With the experimental patch, the coercion model stores strong references to the actions (hence, it restores the original behaviour), but functors will only store weak references to their domains and codomains.
+
+Unfortunately, this does _not_ fix the memory leak. But perhaps you want to play with it...
+
+Ah! And I just see that "sage.categories.functor" was the wrong location to do the change.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 15:58:39
+
+Or I should say: `Action.__domain` is _not_ what the action acts on, but it is a groupoid, and is not used. So, forget the experimental patch.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 16:18:11
+
+An action of G on S stores direct references to G and to S.
+
+The action is a functor, and as a functor, it additionally stores a reference to `Groupoid(G)`, which stores another reference to G, and to the category of S.
+
+In some cases, the category of S will store references to the base ring of S (for example, if S is an algebra), which might have a pointer back to S (for example if the action of `S.base_ring()` on S was registered during initialisation). In this case, we are lost, since categories are unique parents and thus strongly cached (unless we apply #12215, which poses some problems).
+
+For the same reason, creating the groupoid of G will result in an eternal reference on G (`Groupoid(G)` is strongly cached and it points to G). So, the best that we can hope for is that we can free S at some point, but we will never be able to free G.
+
+It starts to be complicated. Time to call it a day...
+
+Perhaps the idea to register actions in the parents (in addition to a weak cache in the coercion model) is better?
+
+
+---
+
+Comment by jpflori created at 2012-01-03 16:25:12
+
+Replying to [comment:82 SimonKing]:
+
+> An action of G on S stores direct references to G and to S. The action is a functor, and as a functor, it additionally stores a reference to `Groupoid(G)`, which stores another reference to G, and to the category of S. In some cases, the category of S will store references to the base ring of S (for example, if S is an algebra), which might have a pointer back to S (for example if the action of `S.base_ring()` on S was registered during initialisation). In this case, we are lost, since categories are unique parents and thus strongly cached (unless we apply #12215, which poses some problems). For the same reason, creating the groupoid of G will result in an eternal reference on G (`Groupoid(G)` is strongly cached and it points to G). So, the best that we can hope for is that we can free S at some point, but we will never be able to free G. It starts to be complicated. Time to call it a day... Perhaps the idea to register actions in the parents (in addition to a weak cache in the coercion model) is better?
+
+But if you store the actions in both parents (with strong references), you will never be able to free any of the two domain and codomain.
+
+In the ticket example for example you would get a strong reference to the action in the ZZ cache (which will hopefully never get deleted) (in fact that is what is happening with the current Sage version anyway, isn't that strange according to what you posted, because I guess is already initialized once the for loop is executed?) so the elliptic curves (in the ticket example you only get one stored in that cache because comarison was made with "==", if you let the j invariant change within the for loop you would get a growing number of curves in that cache) will stay strongly refed forever as well...
+
+
+---
+
+Comment by jpflori created at 2012-01-03 16:56:12
+
+My timings
+
+- with everything up to [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521): about 3650 sec (errors as above)
+
+
+- with everything up to [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715): about 3350 sec (only errors in coerce.pyx)
+
+
+- with everything up to [#11115](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11115): about 3350 sec as well (no errors)
+
+So, unless I did something wrong, I do not get any significant slow down...
+
+
+---
+
+Comment by jpflori created at 2012-01-03 18:35:39
+
+I got about 3350 sec on top of vanilla sage-4.8.alpha5.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 19:47:15
+
+Hi Jean-Pierre,
+
+Replying to [comment:83 jpflori]:
+> But if you store the actions in both parents (with strong references), you will never be able to free any of the two domain and codomain.
+
+This is not necessarily the case. You would merely get circular references, and they would not obstruct garbage collection, unless one item in the cycle has a `__del__` method.
+
+One problem, however, is that many actions start with `ZZ`. And if `ZZ` is contained in the cycle, then it can not be collected, since `ZZ` will live forever -- but you know that.
+
+> In the ticket example for example you would get a strong reference to the action in the ZZ cache (which will hopefully never get deleted) (in fact that is what is happening with the current Sage version anyway, isn't that strange according to what you posted, because I guess is already initialized once the for loop is executed?)
+
+Yes. And is it really sure that the actions are stored in `ZZ`?
+
+Anyway. They are stored by `==`, and thus only one copy remains alive.
+
+> so the elliptic curves (in the ticket example you only get one stored in that cache because comarison was made with "==", if you let the j invariant change within the for loop you would get a growing number of curves in that cache) will stay strongly refed forever as well...
+
+Yes. And that is a problem that, again, might be solved using weak references.
+
+Namely:
+
+Consider an action A of G on S. Typically, G is immortal (like `ZZ`), but we are willing to let A and S die if we do not have any "external" strong reference to S. In particular, the existence of A should not be enough to keep S alive.
+
+I think this can be accomplished as follows:
+
+ * For quick access and for backwards compatibility, we want that actions remain stored in the coercion model. We use weak references to the keys (G,S), but a strong reference to the action (this is what the previous version of [attachment:trac715_two_tripledicts.patch] did).
+ * In addition to that, A should only have a weak reference to S; I think it doesn't matter whether the reference from A to G is strong or weak.
+
+Let us analyse what happens with G, S and A:
+
+ 1. G will remain alive forever, even without an external reference. Namely, the coercion cache has a strong reference to A; as a functor, A points to `Groupoid(G)`; `Groupoid(G)` is strongly cached (unless we use weak caching for `UniqueRepresentation`) and must have a reference to G. If we decide to use weak caching for `UniqueRepresentation`, then we would only have a strong reference from G to A and a weak or strong reference from A to G. That would be fine for garbage collection. Anyway, I think keeping G alive will not hurt.
+ 2. Assume that there is no external reference to S. There is a weak reference to S from the cache in the coercion model, namely as key of the cache. Moreover, there is another _weak_ reference from A to S. Hence, S could be garbage collected. 
+ 3. Assume that there is no external reference to A. If S is garbage collected (see the previous point), then it will remove itself from the coercion cache, and thus the strong reference to A would vanish - it could be collected. But if S is alive, then A will remain alive as well.
+
+However, this is how the experimental patch should work - and it does _not_ fix the leak. Perhaps this is, again, due to caching the homsets? So, we would need the patch from #12215 as well. Difficult topic.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 19:49:09
+
+Sorry, I meant "we would need the patch from #11521 as well".
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 22:42:28
+
+I have attached another patch, which implements the ideas sketched above. I think it corresponds to what you suggested ("use a weak reference from the action to the domain").
+
+One detail: We have to distinguish between the underlying set, the domain and the codomain of an action. In fact, the new patch only uses a weak reference to the underlying set, and introduces a cdef function (hence, hopefully with little overhead) returning it.
+
+I consider sage-5.0.prealpha0 plus trac11780_unique_auxiliar_polyring.patch (probably not needed) plus [attachment:trac715_two_tripledicts.patch] plus [attachment:trac715_weak_action.patch].
+
+At least `sage -t sage/modular/modsym/space.py` passes, but I need to run the whole test suite. 
+
+The example from the ticket description does not leak. However, if the j-invariant varies, it seems that for each elliptic curve one copy is preserved:
+
+```
+sage: K = GF(1<<55,'t')
+sage: for i in range(500):
+....:     a = K.random_element()
+....:     E = EllipticCurve(j=a)
+....:     P = E.random_point()
+....:     Q = 2*P
+....:     
+sage: import gc
+sage: gc.collect()
+2124
+sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field
+sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]
+sage: len(LE)
+500
+```
+
+
+In any case, the original leak is fixed with the two patches. The question is whether the second patch suffices to keep actions alive, whether it avoids a regression, and whether all tests pass.
+
+If everything is alright, we may still try to find out where the remaining strong reference to an elliptic curve comes from.
+
+
+---
+
+Comment by SimonKing created at 2012-01-03 22:48:33
+
+PS: The additional application of #11521 does not suffice to avoid the remaining strong reference to an elliptic curve.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 06:09:03
+
+Changing status from needs_work to needs_info.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 06:09:03
+
+With the two patches applied, I get some doctest errors that seem trivial to fix, and it takes 10905 seconds in total. Now, I am not sure: Originally, I had much less time with unpatched Sage. 
+
+But perhaps my computer was in a different state at that time? Jean-Pierre, if I understood correctly, you did not find any significant slowdown, right?
+
+The first (i.e., the "official") patch is enough to fix the leak for the original example. According to Jean-Pierre, the timings are fine, it does not matter whether we have no patch, the official patch only, or the first experimental patch. And according to my own test, it does not matter whether we have the first or the second experimental patch.
+
+So, the further proceeding depends on the following questions:
+
+ * The experimental patches provide two different approaches to fix a potential problem, namely actions being deallocated when they are still needed. However, is this potential problem a _real_ problem? Only then would it make sense to consider the experimental patches!
+
+ * Do we also want to fix the leak in the more difficult example, namely when the j-invariant varies? In this case, we need to find out why the actions are registered in ZZ. It is not clear yet whether one really needs one of the experimental patches to get rid of it.
+
+What is your answer to the questions?
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 09:20:28
+
+There are two occasions for writing stuff into `Parent._action_hash`: During initialisation, via register_action, and in addition the action is stored in the parent when a new action is found while calling get_action.
+
+Perhaps we should distinguish the two cases: The actions that are stored during initialisation should probably be "immortal". But the actions that is stored on the fly should only be weakly cached.
+
+I think this can be solved by changing `Parent._action_hash` into a dictionary that uses weak references to both the keys and the values. There is one difference between register_action and get_action: register_action additionally stores the actions in a list, but get_action doesn't. Hence, indeed the actions registered during initialisation will survive, but the stuff stored by get_action could become collectable.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 10:10:59
+
+Yesss!! It suffices (in addition to what I did before) to use a `TripleDictById` (which uses weak references to the keys, but strong references to the value) for `Parent._action_hash`!!!
+
+The leak is no completely gone:
+
+```
+sage: K = GF(1<<55,'t')
+sage: for i in range(50):
+....:     a = K.random_element()
+....:     E = EllipticCurve(j=a)
+....:     P = E.random_point()
+....:     Q = 2*P
+....:     
+sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field
+sage: import gc, objgraph
+sage: gc.collect()
+882
+sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]
+sage: len(LE)
+1
+```
+
+
+I need to add a test (or better: modify the test introduced by the first patch), demonstrating that the "big" leak is fixed, and I need to add tests for the new code I wrote, and of course I need to run ptestlong.
+
+Nevertheless, I think you can start reviewing. And please store the doc test times, so that we can detect any regression.
+
+Apply trac715_two_tripledicts.patch trac715_weak_action.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 10:10:59
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by jpflori created at 2012-01-04 10:12:46
+
+Good!
+
+I've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 10:20:21
+
+Replying to [comment:93 jpflori]:
+> I've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.
+
+Good! I am sure that there will be errors (for example, the current test against the leak expects `len(LE)==2`), but the timings will certainly be interesting. And of course, it would be interesting whether an action can die prematurely.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 12:23:44
+
+I am sure that there is a regression compared with vanilla sage-5.0.prealpha0. For example, when I originally ran sage -ptestlong, sage/schemes/hyperellyptic_cuve/hyperellyptic_padic_field.py took 57 seconds, but with the patches it takes 160 seconds.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 13:54:19
+
+Meanwhile I took some timings on a different machine. Based on the experience that the schemes code tends to slow down a lot when one does fancy stuff (see #11900 and #11935), I use "sage/schemes" as a test bed. 
+
+I find (based on sage-4.8.alpha3):
+
+With patch
+
+```
+king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
+trac_12149.3.patch
+9138_flat.patch
+trac11900_category_speedup_combined.patch
+11115_flat.patch
+trac_11115_docfix.patch
+trac715_two_tripledicts.patch
+trac715_weak_action.patch
+king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
+...
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 625.1 seconds
+```
+
+Here are the five worst:
+
+```
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py"
+	 [58.1 s]
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/heegner.py"
+	 [51.1 s]
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py"
+	 [35.2 s]
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py"
+	 [26.9 s]
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py"
+	 [25.7 s]
+```
+
+
+Now, the same without the two patches from here:
+
+```
+king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
+trac_12149.3.patch
+9138_flat.patch
+trac11900_category_speedup_combined.patch
+11115_flat.patch
+trac_11115_docfix.patch
+king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
+...
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 597.0 seconds
+```
+
+And the five worst, comparing with the times from above, are:
+
+```
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py"
+	 [55.4 s] (was: [58.1 s])
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/heegner.py"
+	 [47.2 s] (was: [51.1 s])
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py"
+	 [34.1 s] (was: [35.2 s])
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py"
+	 [26.1 s] (was: [26.9 s])
+sage -t  "devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py"
+	 [24.9 s] (was: [25.7 s])
+```
+
+
+Hence, we have a slow-down of, overall, `(625.1 - 597)/625.1 = 4.5%`, the slow-down seems to be systematic (you hardly find an example that became faster), and in some cases we have a slow-down of 10%.
+
+I expected it to be worse (after all, coercion affects everything). But still, the question is: Can the slow-down be avoided?
+
+
+---
+
+Comment by jpflori created at 2012-01-04 14:05:37
+
+So here are my global timings for ptestlong on sage.5.0.prealpha0:
+
+
+ * 3092.9 seconds with no errors on vanilla
+ * 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.
+
+That's kind of strange. Maybe the slowdown is absorbed by the fact that the test are running in parallel ?
+
+I'll just test sage.schemes with a single core and report.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 14:19:29
+
+Replying to [comment:97 jpflori]:
+>  * 3092.9 seconds with no errors on vanilla
+>  * 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.
+
+Cool!
+
+Note that the tests in sage/schemes only take 597.5 seconds when I apply #11943 and #11935 on top. Hence, if there really is a slow-down then it can be countered.
+
+One detail about trac: If you want to link to a ticket, you can just provide the number after the "hash symbol", hence, `#715` and not `[#715](http://.../715)`.
+
+> That's kind of strange. Maybe the slowdown is absorbed by the fact that the test are running in parallel ?
+
+I don't know the typical standard deviation of the timings.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 14:24:22
+
+Interestingly, I get slightly different errors:
+
+```
+        sage -t  --long -force_lib devel/sage/sage/structure/coerce_dict.pyx # 1 doctests failed
+        sage -t  --long -force_lib devel/sage/sage/structure/parent.pyx # 1 doctests failed
+        sage -t  --long -force_lib devel/sage/sage/matrix/action.pyx # 5 doctests failed
+```
+
+
+Anyway, this should be easy to fix...
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 14:25:18
+
+... and it took me 12187.2 seconds.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 15:07:31
+
+The second patch is updated, more examples are added (in particular, it is demonstrated that the memory leak is fixed even when the j-invariant varies), and the errors that I had with the previous version are gone.
+
+Hence, it can now be reviewed. Please try to find regressions!
+
+Apply trac715_two_tripledicts.patch trac715_weak_action.patch
+
+
+---
+
+Comment by jpflori created at 2012-01-04 15:24:26
+
+Testing sage.schemes with only one core gave me:
+
+ * 1526.0 sec on vanilla
+
+
+ * 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+
+
+
+This is more than acceptable according to me (if it does reflect anything... it might only be random stuff).
+
+Running five tests of sage.schemes.elliptic_curves.padic_lseries gave me:
+
+ * 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla
+
+
+ * 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+
+
+
+Still surprising that I don't find any slow-down as you did, but I might also be good news :)
+
+My next step is to check for the memory leaks (same j invariant, different j invariants, finite field example of Paul in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) ? or do that last one need a patch for the [HomSet](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AHomSet) cache ? if this is the case it won't prevent this ticket to be closed, but should be treated in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521), otherwise [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) can be closed as duplicate) and that action do not get continuously deleted.
+
+Afterward, I'll properly review your code and examples (that I've already seen many times obviously :)).
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 16:06:29
+
+Replying to [comment:102 jpflori]:
+> Testing sage.schemes with only one core gave me:
+> 
+>  * 1526.0 sec on vanilla
+> 
+> 
+>  * 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+
+That's very good news indeed!
+ 
+> Running five tests of sage.schemes.elliptic_curves.padic_lseries gave me:
+> 
+>  * 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla
+> 
+> 
+>  * 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+
+That looks like quite some randomness.
+
+> My next step is to check for the memory leaks (same j invariant, different j invariants, finite field example of Paul in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) ? or do that last one need a patch for the [HomSet](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AHomSet) cache ?
+
+Yes, the finite field example is not solved:
+
+```
+sage: for p in prime_range(10^5):
+....:     K = GF(p)
+....:     a = K(0)
+....:     
+sage: import gc
+sage: gc.collect()
+0
+```
+
+
+So, I am going to modify the ticket description of #11521, indicating that the original elliptic curve example has been tackled here, but that there remains an orthogonal problem.
+
+> Afterward, I'll properly review your code and examples (that I've already seen many times obviously :)).
+
+Not so many times: Some examples are only in the very latest version of the second patch.
+
+
+---
+
+Comment by jpflori created at 2012-01-04 16:55:43
+
+Please be careful with the non slow-down I reported above.
+
+Something must have gone wrong with my installation, sorry for that, as I realized that the leak was not fixed.
+
+I'll investigate all of this more carefully ASAP.
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 20:03:40
+
+There is one thing, related with regressions, that I didn't do: The `TripleDict` is cimported in sage/structure/coerce.pyx, and thus I could use the cdefed methods "set" and "get". But instead, I'm using the usual Python `__getitem__` and `__setitem__`. So, I could avoid some overhead. Will test it a bit later.
+
+
+---
+
+Attachment
+
+Use weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 20:20:10
+
+I have updated the second patch, so, please replace it with the new version. I am sorry that this came to late for "ptestlong", but perhaps the timings with the old patch version indicate what it might make sense to look at with the new version.
+
+Apply trac715_two_tripledicts.patch trac715_weak_action.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-04 21:26:38
+
+By the way, here is an example that shows that a `TripleDictById` finds its items _faster_ then a usual dict, even though it has the additional advantage of weak keys. If one uses Cython, one can still save some more, which is what I did in the preceding change of the second patch.
+
+I create a list of pairs of rings:
+
+```
+sage: for p in prime_range(10^3):
+....:     K = GF(p)
+....:     P = K['x','y']
+....:     L.append((K,P))
+....: 
+sage: len(L)
+168
+```
+
+
+I create a `TripleDictById` and a usual dictionary, and fill it by the same data:
+
+```
+sage: from sage.structure.coerce_dict import TripleDictById
+sage: D = TripleDictById(113)
+sage: for i,(K,P) in enumerate(L):
+....:     D[K,P,True] = i
+....:     
+sage: E = {}
+sage: for i,(K,P) in enumerate(L):
+....:     E[K,P,True] = i
+....:     
+sage: len(D)
+168
+sage: len(E)
+168
+```
+
+
+I create cython functions that know about the types. In the first, I use the Python way of accessing data from `TripleDictById`, in the second, I use the special cdefed `get()` method, and the third is for usual dictionaries.
+
+```
+sage: cython("""
+....: from sage.structure.coerce_dict cimport TripleDictById
+....: def testD(TripleDictById D, list L):
+....:     for K,P in L:
+....:         n = D[K,P,True]
+....: def testDget(TripleDictById D, list L):
+....:     for K,P in L:
+....:         n = D.get(K,P,True)
+....: def testE(dict D, list L):
+....:     for K,P in L:
+....:         n = D[K,P,True]
+....: """)
+```
+
+
+Even though Cython is supposed to be quite good at optimising dictionary access (mind that `testE(...)` knows that it will receive a dictionary!), I was surprised by how much faster the `TripleDictById` is:
+
+```
+sage: %timeit testD(D,L)
+625 loops, best of 3: 67.8 µs per loop
+sage: %timeit testDget(D,L)
+625 loops, best of 3: 52.1 µs per loop
+sage: %timeit testE(E,L)
+125 loops, best of 3: 3.26 ms per loop
+```
+
+
+Fourty to sixty times faster! So, I think it was a good idea to use `TripleDictById` not only in the coercion model, but also as an attribute of Parent.
+
+
+---
+
+Comment by SimonKing created at 2012-01-05 17:02:43
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2012-01-05 17:02:43
+
+We have a big regression.
+
+I considered the doctests of sage/modules/free_module.py and took each timing twice, in order to be on the safe side.
+
+Vanilla 5.0.prealpha0
+
+```
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [11.9 s]
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [10.3 s]
+```
+
+
+With the first patch from here:
+
+```
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [24.1 s]
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [25.7 s]
+```
+
+
+With both patches from here:
+
+```
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [26.0 s]
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [25.8 s]
+```
+
+
+I think such a huge regression can't be accepted. Thus, it is "needs work".
+
+
+---
+
+Comment by jpflori created at 2012-01-05 17:14:15
+
+Changing status from needs_work to needs_info.
+
+
+---
+
+Comment by jpflori created at 2012-01-05 17:14:15
+
+Your timings are kind of strange in comparison with what I get.
+
+I was going to post what follows which I double checked:
+
+I can finally confirm I do not get any serious speed regression with the last couple of patches.
+
+ptestlong gives something between 3100 and 3250 seconds with 5.0.prealpha0 vanilla or 715 applied.
+
+Testing only sage.schemes with one core gives me between 1550 and 1600 with both in the same way.
+
+And this time I confirm the test with random j-invariants is fixed by 715 and is not without (I'm getting paranoid now) as well as with a fixed j-invariant.
+
+I'll review the code and example next. 
+
+So when I saw your post, I ran "sage -t devel/sage/sage-main/modules/free_modules.py" with both my installations (vanilla and vanilla+715) and got several times about 13 sec for both ! maybe a mean little lower for vanilla (at max .5 sec less).
+
+I should mention I also get a quite big variance, not sure why, because my system is not heavily loaded, maybe cos the disk is on NFS.
+
+E.g. I got between 12.3 and 20.0 (just once) for vanilla and between 12.7and 19. (at the same time, so maybe the network was loaded at that time ??)
+
+For info I got a quite recent multicore Xeon running an outdated version of Ubuntu 64 bits.
+
+
+---
+
+Comment by jpflori created at 2012-01-05 17:15:49
+
+Groumpf, trac didnot like my blank lines.
+
+So the original part I was about to post is inbetween "I can finally confirm..." and "example next."
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 07:04:01
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 07:04:01
+
+It is always possible that there is a regression on some hardware, but not on all.
+
+I made an excessive log, i.e., I logged all Python commands. It turns out that there are only little differences with or without patch. Hence, I am sure that the regression does not come from an excessive garbage collection (otherwise, I would have seen that some objects are created repeatedly). So, I guess the regression comes from the C-level.
+
+There is one thing that could make my code too slow: I use weak references in my version of `TripleDict` and `TripleDictById`; however, when getting dictionary items, I am calling the weak reference, in order to get the object that it is pointing to, and compare then. That is slow.
+
+I was thinking: Perhaps I could manage to use `id(X)` as key of `TripleDictById`, rather than a weak reference to `X`. The weak reference to `X` could be stored elsewhere.
+
+Anyway, here is a data point:
+Unpatched (there is only `TripleDict`, no `TripleDictById`):
+
+```
+sage: from sage.structure.coerce_dict import TripleDict
+sage: D = TripleDict(113)
+sage: L = []
+sage: for p in prime_range(10^3):
+....:     K = GF(p)
+....:     P = K['x','y']
+....:     L.append((K,P))
+....:     
+sage: for i,(K,P) in enumerate(L):
+....:     D[K,P,True] = i
+....:     
+sage: cython("""
+....: def testD(D, list L):
+....:     for K,P in L:
+....:         n = D[K,P,True]
+....: """)
+sage: %timeit testD(D,L)
+625 loops, best of 3: 30.6 µs per loop
+```
+
+
+Patched (comparing `TripleDict` and `TripleDictById`):
+
+```
+sage: from sage.structure.coerce_dict import TripleDict, TripleDictById
+sage: D = TripleDict(113)
+sage: E = TripleDictById(113)
+sage: L = []
+sage: for p in prime_range(10^3):
+....:     K = GF(p)
+....:     P = K['x','y']
+....:     L.append((K,P))
+....:     
+sage: for i,(K,P) in enumerate(L):
+....:     D[K,P,True] = i
+....:     E[K,P,True] = i
+....:                                                                                                                        
+sage: cython("""                                                                                                             
+....: def testD(D, list L):
+....:     for K,P in L:
+....:         n = D[K,P,True]
+....: """)
+sage: %timeit testD(D,L)
+25 loops, best of 3: 21 ms per loop
+sage: %timeit testD(E,L)
+625 loops, best of 3: 61.9 µs per loop
+```
+
+
+In the applications, I am mainly using `TripleDictById`. Nevertheless, it is only half as fast as the old `TripleDict`. So, this is what I have to work at!
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 07:04:13
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by vbraun created at 2012-01-06 15:20:45
+
+This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 16:50:04
+
+Replying to [comment:113 vbraun]:
+> This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....
+
+How should the eraser know which entry is to be removed? I wouldn't like to re-implement the weakref module...
+
+At least on my machine, I have a regression. In order to avoid it, I am now experimenting with some ideas to speed-up the access to dictionary items: With my current patch, I do something like
+
+```
+    if k1 is bucket[i]()
+```
+
+where `buchet[i]` is a weak reference. But calling the reference takes a lot of time.
+
+For example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 18:20:49
+
+Replying to [comment:114 SimonKing]:
+> For example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.
+
+... but `k1 is bucket[i]()` is a lot faster than `id(k1)==bucket[i].key`. Too bad.
+
+
+---
+
+Comment by vbraun created at 2012-01-06 18:37:09
+
+Replying to [comment:114 SimonKing]:
+> How should the eraser know which entry is to be removed? I wouldn't like to re-implement the weakref module...
+
+As you said in the preceeding comment, you'd have to store a weak reference elsewhere. The only advantage is that comparing could be done on the actual reference.
+
+
+---
+
+Comment by SimonKing created at 2012-01-06 22:27:04
+
+Perhaps as follows: We currently have one ensemble of buckets. Instead, we could have two ensembles, say, `self.keys` and `self.refs`. Each bucket in both ensembles is a list of length `3*n`. Let `X,Y,Z` be  key, let h be the hash of that triple and V the value associated with `X,Y,Z`.
+
+Then, one could store `X,Y,Z` as `self.keys[h][i:i+3]`, with artificially decrementing the reference count for X and Y (but not for Z, which usually is True, False, None, operator.mul and so on), as suggested by Volker. And `self.refs[h][i:i+3]` would be formed by a weak reference to X, a weak reference to Y, and V. The two weak references have a callback function, that tries to find a reference `self.refs[h][j]` when it became invalid, and would delete the corresponding triple both in `self.refs[h]` and in `self.keys[h]`.
+
+Two weak references with callback function pointing to the same object are distinct (they are only the same if they don't have a callback function). Hence, each reference occurs in the `TripleDict` exactly once. Hence, it makes sense to store the hash value of the _triple_ `X,Y,Z` as additional data both in the reference to X and to Y - which is possible with `weakref.KeyedRef`. In that way, deleting an entry when a reference became invalid would be much faster as with my current patch, since it is not needed to search in _all_ buckets.
+
+I will try it tomorrow.
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 12:13:22
+
+Here is a preliminary combined patch, implementing the ideas sketched in the previous post -- except that I forgot to explicitly decref stuff... Trying that now. I hope it doesn't segfault.
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 12:27:25
+
+Hm. When adding a "Py_DECREF", some doctest segfaults, and also the memory leak is _not_ completely fixed: In the test where one creates 50 elliptic curves with random j-invariant, 12 of them survive garbage collection. That's better than 50, but worse than 1.
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 12:36:03
+
+First of all, in my current patch, I forgot the case `k1 is k2`: In that case, I would decrement the reference count twice for the same object. However, even when I avoid it, I get a double free.
+
+I wonder: Could the double free result from the fact that I do `del self.key_buckets[h][i:i+3]` when the reference count for `self.key_buckets[h][i]` is already zero? Or would that be no problem?
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 12:51:23
+
+I made some progress by using `Py_CLEAR` instead of `Py_DECREF`. Now, it is "only" signal 11, not a double-free.
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 18:09:03
+
+Sorry, it seems that I have no idea whatsoever of reference counting. I made experiments with `Py_DECREF` resp. `Py_CLEAR` applied to list elements, but in all cases I get a segfault when the next garbage collection occurs.
+
+
+---
+
+Comment by SimonKing created at 2012-01-07 20:06:04
+
+I have updated the patch. Instead of storing the original key and using `Py_DECREF`, I store its address instead (for `TripleDictId`) resp. use another weak reference.
+
+With the new patch, `sage -t "devel/sage-main/sage/modules/free_module.py"` works and is about as fast as in vanilla sage.
+
+Moreover, the memleak is fixed.
+
+However, the patch isn't fully tested or documented yet. And still `TripleDictById` is only half as fast as the old `TripleDict` (but recall: The old is buggy and uses strong references). So, it isn't ready for review, but of course I'd appreciate preliminary comments.
+
+Apply trac715_tripledict_combined.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-08 17:21:37
+
+OMG!!
+
+I totally misinterpreted how the keys were compared in the original version of `TripleDict`. When I saw the line `if PyList_GET_ITEM(bucket, i) == <PyObject*>k1` in the old code, I thought that this means to compare the objects by equality.
+
+But now I learnt that this is comparison by identity. Arrgh! The behaviour that I provide with `TripleDictById` was there all along!
+
+Conclusion: I should erase my version of `TripleDict` (which really compares by equality, not identity), rename my `TripleDictById` into `TripleDict`, and then finally try to get things up to speed.
+
+
+---
+
+Comment by SimonKing created at 2012-01-08 23:56:58
+
+Introduce weak references to coercion dicts, and refactor the hashtables.
+
+
+---
+
+Attachment
+
+I have posted a new patch version.
+
+Recall that we want a dictionary whose keys are triples; we want to compare all three key items by identity, and we want that there is only a weak reference to the first two key items (the third my have a strong reference).
+
+The `TripleDictById` is now based on the following idea:
+
+ * There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.
+ * There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.
+ * When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.
+ * Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).
+ * There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.
+
+__Status of the patch__
+
+ * The "raw" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.
+ * The memleak is fixed.
+ * The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.
+
+The patch still contains both `TripleDict` (which compares weak keys by equality) and `TripleDictById` (which compares keys by identity, similar to what `TripleDict` does in unpatched Sage, but using weak references).
+
+What do you think: Should comparison by equality be provided in the patch?
+
+Contra:
+
+ We don't use it in the rest of Sage, so, why should we add it?
+
+Pro:
+
+ A "triple dict by comparison" is slower than a usual (strong) dictionary, but on the other hand `weakref.WeakKeyDictionary` does not work if the keys are tuples - hence, "triple dict by comparison" adds a new feature.
+
+
+---
+
+Comment by SimonKing created at 2012-01-09 00:23:01
+
+Changing status from needs_work to needs_info.
+
+
+---
+
+Comment by SimonKing created at 2012-01-09 16:43:06
+
+To answer my own question: I believe that comparison by equality does not make sense (yet), since it isn't used in the coercion model.
+
+Therefore, I have produced a new patch. Idea: The `TripleDict` stores the addresses of the keys. In addition, there is a dictionary of weak references with callback function. The _only_ purpose of these references is that their callback functions are erasing invalid dictionary items.
+
+__"Raw" speed__
+
+Patched:
+
+```
+sage: from sage.structure.coerce_dict import TripleDict
+sage: D = TripleDict(113)
+sage: L = []
+sage: for p in prime_range(10^3):
+....:     K = GF(p)
+....:     P = K['x','y']
+....:     L.append((K,P))
+....:
+sage: for i,(K,P) in enumerate(L):
+....:     D[K,P,True] = i
+....:
+sage: cython("""
+....: from sage.structure.coerce_dict cimport TripleDict
+....: def testTriple(TripleDict D, list L):
+....:     for K,P in L:
+....:         n = D[K,P,True]
+....: def testTripleGet(TripleDict D, list L):
+....:     for K,P in L:
+....:         n = D.get(K,P,True)
+....: def testTripleSet(list L):
+....:     cdef TripleDict D = TripleDict(113)
+....:     for i,(K,P) in enumerate(L):
+....:         D.set(K,P,True, i)
+....: """)
+sage: %timeit testTriple(D,L)
+625 loops, best of 3: 42.4 µs per loop
+sage: %timeit testTripleGet(D,L)
+625 loops, best of 3: 28.3 µs per loop
+sage: %timeit testTripleSet(L)
+125 loops, best of 3: 2.66 ms per loop
+```
+
+
+Unpatched:
+
+```
+sage: %timeit testTriple(D,L)
+625 loops, best of 3: 31.2 µs per loop
+sage: %timeit testTripleGet(D,L)
+625 loops, best of 3: 17.5 µs per loop
+sage: %timeit testTripleSet(L)
+625 loops, best of 3: 79.2 µs per loop
+```
+
+
+__Doctest speed__
+
+Patched
+
+```
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [11.4 s]
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [11.7 s]
+```
+
+
+Unpatched
+
+```
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [11.7 s]
+sage -t  "devel/sage-main/sage/modules/free_module.py"
+         [11.5 s]
+```
+
+
+__Conclusion__
+
+Using weak references, things become a bit slower, but it is a lot better than with the previous patches. According to the timing of the doc tests, the regression doesn't matter in applications.
+
+I guess there is no free lunch, and thus the regression is small enough, given that the memory leak is fixed (which is checked in a new test).
+
+I have not run the full test suite yet, but I think it can be reviewed.
+
+Apply trac715_one_triple_dict.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-09 16:43:06
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Attachment
+
+Drop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys
+
+
+---
+
+Comment by SimonKing created at 2012-01-09 20:14:35
+
+`make ptest` reported only one error, and the error was in fact a misprint. Hence, I have updated my patch, and with it, all tests should pass.
+
+
+---
+
+Comment by jpflori created at 2012-01-12 10:37:42
+
+Here are finally some first timings for 'make ptest' (this time I first checked the memory leak is actually fixed...)
+
+ * sage-5.0.prealpha1 vanilla: 937.4 sec
+ * sage-5.0.prealpha1 + 715: 948.8 sec
+
+No errors for both. I'll report on make ptestlong tomorrow, try to check that actions do not get continuously deleted and finally review the code.
+
+
+---
+
+Comment by jpflori created at 2012-01-13 08:18:50
+
+Running "make ptestlong" gave me:
+
+ * sage-5.0.prealpha1 vanilla: 1397.9 sec
+ * sage-5.0.prealpha1 + 715: 1415.0 sec
+
+with no errors for both (I remarked that testing sandpile.py was horribly long with my previous install of sage-5.0.prealpha0, something like 1350 sec for it alone; in between I've updated my ubuntu and recompiled everything for prealpha1, so that might explain why my new timings are so faster).
+
+Hence no regression!
+
+
+---
+
+Comment by SimonKing created at 2012-01-13 09:00:52
+
+Replying to [comment:129 jpflori]:
+> Running "make ptestlong" gave me:
+> 
+>  * sage-5.0.prealpha1 vanilla: 1397.9 sec
+>  * sage-5.0.prealpha1 + 715: 1415.0 sec
+
+I'm glad that this time (in contrast to what I did in #9138 and was fixing in #11900) it seems that I am not creating a terrible slow-down!
+
+
+---
+
+Comment by SimonKing created at 2012-01-15 09:39:04
+
+I found another memory leak:
+
+```
+sage: K = GF(1<<55,'t')
+sage: for i in range(50):
+....:     a = K.random_element()
+....:     E = EllipticCurve(j=a)
+....:     b = K.has_coerce_map_from(E)
+....:     
+sage: import gc
+sage: gc.collect()
+0
+```
+
+
+Namely, `K.coerce_map_from(E)` stores the resulting map (or None) in a strong dictionary.
+
+Several questions: Would it suffice to change the dictionary into a `WeakKeyDictionary`? If it would: Would it cause a regression? I guess the answer to the second question is "yes", since getting an item out of a weak key dictionary is quite slow and requesting a coerce map is a very frequent operation.
+
+So, I suppose one could introduce another type of dictionary, analogous to `TripleDict`, which would not test for equality but for identity. 
+
+But should this be here or on a new ticket? I think the patch from here is big enough, hence, do it on a different ticket, but you can try to convince me to do it here.
+
+Since the patchbot tried to use the wrong patches:
+
+Apply trac715_one_tripledict.patch
+
+
+---
+
+Comment by SimonKing created at 2012-01-15 11:37:48
+
+I don't know why the patchbot keeps trying to apply _all_ patches.
+
+Anyway. First experiments show that a `MonoDict` (which would be my name for a dictionary that uses weak keys, compares the keys by identity and expect a singly item as a key) is a lot faster than a usual dictionary, if the keys are frequently used parents such as finite fields. "A lot" means: More than 20 times faster.
+
+I will simply try whether things still work when I replace dictionaries by `MonoDict` in the coercion model. If they do, I'll post here. If there are difficult problems, I'll move it to a different ticket.
+
+
+---
+
+Comment by jpflori created at 2012-01-15 14:52:37
+
+I'd say we'd better put your MonoDict fix in another ticket, even if it no difficult problems arise, to keep the patch readable enough and the problems clearly separated.
+
+And close this one asap... sorry I should be the one finally reviewing your code (I already checked for speed regression and actual fix of the leak as mentioned above), but I do not have much time these days.
+
+I'd say I'll do that on thursday (at worst i hope), as there is some Sage meeting in Paris that day.
+
+
+---
+
+Comment by SimonKing created at 2012-01-15 17:04:46
+
+See #12313 for the other memleak.
+
+
+---
+
+Comment by SimonKing created at 2012-01-17 07:21:54
+
+You raised the question whether actions (and perhaps maps as well) are garbage collected too often. I inserted some lines of code into the init method of `sage.categories.map.Map` and `sage.categories.action.Action` that counts how often the init method is called (namely by appending one character to some file on my disk). Then, I ran the doctests in `sage.schemes`. Result:
+
+__With #11780 only__
+
+ * 76102 maps
+ * 41381 actions
+ * 647.3 seconds
+
+__With #11780 and #715__
+
+ * 76192 maps
+ * 46157 actions
+ * 658 seconds
+
+So, actions are created about 10% more often than without the patch, while the speed regression is not so dramatic.
+
+Two explanations:
+
+ 1. These 10% of actions would have been needed, and it is _bad_ that they were garbage collected.
+
+ 2. One file contains many tests, and often these tests are quite similar. In particular, many actions will occur in many different tests. Without the patch, the actions created by the first test are strongly cached and are thus still available for the second, third, ... test. But with the patch, the actions created by the first test will be garbage collected when the first test is done. Hence, it is _good_ that they were garbage collected.
+
+In order to find out whether 1. or 2. is the correct explanation, I'll determine the number of maps and actions created in "single" computations, namely in the benchmarks discussed at #11900.
+
+
+---
+
+Comment by SimonKing created at 2012-01-17 08:34:08
+
+Here is some more data. In all cases, I give the number of maps and actions created, first with #11780 only and then with #11780+#715.
+
+First test: Start Sage!
+
+ -> 191 maps, 44 actions versus 191 maps, 44 actions. Fine!
+
+Second test:
+
+```
+E = J0(46).endomorphism_ring()
+g = E.gens()
+```
+
+ -> 597 maps, 320 actions versus 611 maps, 481 actions. That's about 50% more actions and is thus not good.
+
+Third test:
+
+```
+L = EllipticCurve('960d1').prove_BSD()
+```
+
+ -> 3550 maps, 97 actions versus 3550 maps, 97 actions. Fine!
+
+Fourth test:
+
+```
+E = EllipticCurve('389a')
+for p in prime_range(10000):
+        if p != 389:
+                G = E.change_ring(GF(p)).abelian_group()
+```
+
+ -> 14969 maps, 9884 actions versus 14969 maps, 9885 actions. Fine!
+
+Question to the reviewer: How bad do you think is the "missing action" in the second example? Would it be worth while to fix it in the method `E.gens`?
+
+Would you even think I should try to modify `TripleDict` so that a list of _strong_ references is preserved, but the list can only have a maximal length (thus popping the first references on the list when new references are appended)? In that way, one could extend the life time of the cache, but at the same time one would avoid an infinite memory growth.
+
+It is a shame that Python only has strong and weak references, but no soft references!
+
+
+---
+
+Comment by SimonKing created at 2012-01-18 12:02:16
+
+At [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8b2fba49fe1ee69e), Robert Bradshaw suggested the following benchmark, measuring the impact of the new `TripleDict` on multiplication of integers with `RDF` (which does involve actions and thus does involve lookup in `TripleDict`):
+
+```
+sage: def test(n):
+....:     a = Integer(10)
+....:     b = QQ(20)
+....:     s = RDF(30)
+....:     for x in xrange(10**n):
+....:         s += a*b*x
+....:
+```
+
+
+With Sage-5.0.prealpha0+#11780:
+
+```
+sage: %time test(6)
+CPU times: user 7.25 s, sys: 0.04 s, total: 7.29 s
+Wall time: 7.31 s
+```
+
+and with the patch from here added
+
+```
+sage: %time test(6)
+CPU times: user 7.29 s, sys: 0.01 s, total: 7.31 s
+Wall time: 7.31 s
+```
+
+
+So, yet another supporting data point!
+
+
+---
+
+Comment by SimonKing created at 2012-01-18 14:19:00
+
+Question: How urgent do you see implementing a ring buffer for `TripleDict`? Namely, right now, I'd prefer to work on #12313. Since #12313 changes sage/structure/coerce_dict.pxd, it would probably be easier for me to coordinate work by postponing the ring buffer to a different ticket (or perhaps introduce it at #12313?).
+
+What do you think?
+
+
+---
+
+Comment by jpflori created at 2012-01-18 14:25:43
+
+Replying to [comment:138 SimonKing]:
+
+> Question: How urgent do you see implementing a ring buffer for `TripleDict`? Namely, right now, I'd prefer to work on #12313. Since #12313 changes sage/structure/coerce_dict.pxd, it would probably be easier for me to coordinate work by postponing the ring buffer to a different ticket (or perhaps introduce it at #12313?). What do you think?
+
+I think we'd better close this one asap, especially now that it seems that no speed regression occur, and provide a speed-up in a subsequent ticket (as you did for #9138 and #11900 or two other ones..).
+
+Of course one could argue that we get no speed regression because we go faster when accessing the dicts, but delete actions more often, so the situation for object creations is not exactly as before, but I do not think anybody or any functions relied the lifetime of these objects (or should...).
+
+If you do agree, I'll review the ticket tomorrow as I already planned to do and mentioned a few comments above.
+
+
+---
+
+Comment by SimonKing created at 2012-01-18 14:34:30
+
+Replying to [comment:139 jpflori]:
+
+> If you do agree, I'll review the ticket tomorrow
+
+Thank you! Yes, I'd prefer it that way. Having the ring buffer means modifying coerce_dict.pxd, which essentially means recompiling almost the whole Sage library, and that takes almost an hour on my laptop. So, it is better for me to not switch back and forth between #715 and #12313.
+
+
+---
+
+Comment by jpflori created at 2012-01-24 13:10:20
+
+Changing status from needs_review to needs_info.
+
+
+---
+
+Comment by jpflori created at 2012-01-24 13:10:20
+
+Ive finally read your code and have to say bravo!
+
+However I've got one request, or rather one question.
+
+With the current implementation, Actions always use a weak ref for the underlying set so that it can and will be garbage collected if it is not strong refed elsewhere.
+
+You illustrate and mention that in some examples in action.pyx.
+
+You also modify an example involving Action and MatrixSpace to make sure that no gc occurs.
+
+I do not think this is the right solution, I mean that the user should be able to use Action has before (and anyway it does not feel right to me that you can create something that can magically disappear).
+
+You could also argue that nobody actually uses Actions directly (I do not for example :) ), those who do will have to be careful.
+
+I see two solutions:
+
+ * Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)
+ * Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the "normal" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)
+
+What does everybody thinks ?
+
+
+---
+
+Comment by jpflori created at 2012-01-24 13:48:33
+
+Note to myself: could use type(E) rather than importing the AbelianGroupSoLong... type as Simon did in #12313 
+
+(type(E) is not Abelian... but the memory leak can be testing with it as well)
+
+This is should make the example more understandable.
+
+Same remark apply for ticket about homset.
+
+
+---
+
+Comment by SimonKing created at 2012-01-24 15:31:23
+
+Replying to [comment:142 jpflori]:
+> With the current implementation, Actions always use a weak ref for the underlying set so that it can and will be garbage collected if it is not strong refed elsewhere.
+> 
+> You illustrate and mention that in some examples in action.pyx.
+> 
+> You also modify an example involving Action and MatrixSpace to make sure that no gc occurs.
+
+Or rather: That it does not occur too late.
+ 
+> I do not think this is the right solution, I mean that the user should be able to use Action has before (and anyway it does not feel right to me that you can create something that can magically disappear).
+
+I believe that it is fine. Namely, what use would an action have if you do not have any other strong reference to the underlying set S?
+
+That's to say: You forgot S and _all_ of its elements. But what use would an action on S if you not even know to provide a single element of S?
+
+> You could also argue that nobody actually uses Actions directly (I do not for example :) ), those who do will have to be careful.
+
+I think so.
+
+>  * Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)
+
+OK, that would need more than the short remarks in my added examples.
+
+>  * Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the "normal" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)
+
+One could store the underlying set S either by
+
+```
+    self.S = weakref.ref(S)
+```
+
+resulting in a weak reference, or by
+
+```
+    self.S = ConstantFunction(S)
+```
+
+resulting in a strong reference.
+
+The advantage is that `underlying_set()` could remain as it is. In particular, we don't need to make the syntax (`return self.S` versus `return self.S()`)  depend on any any parameter used during initialisation. Note that calling a `ConstantFunction` takes almost no time.
+
+However, it might even be faster to do
+
+```
+    if self.use_weak_references:
+        return self.S()
+    else:
+        return self.S
+```
+
+where `self.use_weak_references` is a `cdef bint` parameter assigned during initialisation.
+
+I can't test it right now.
+
+
+---
+
+Comment by jpflori created at 2012-02-08 14:39:45
+
+I'll have some time to work on this today or friday.
+
+Any progress on your side ?
+
+For example, implementing my preferred solution with the "use_wek_references"? :)
+
+
+---
+
+Comment by SimonKing created at 2012-02-08 16:53:22
+
+Replying to [comment:145 jpflori]:
+> I'll have some time to work on this today or friday.
+> 
+> Any progress on your side ?
+> 
+> For example, implementing my preferred solution with the "use_wek_references"? :)
+
+No. Currently, I focus on computing Ext algebras of finite dimensional path algebra quotients (that's what I get my money for), and to fix my old group cohomology spkg (which wouldn't work with the most recent version of Sage for at least three independent reasons).
+
+
+---
+
+Comment by jpflori created at 2012-02-10 15:00:49
+
+Changing keywords from "weak cache coercion" to "weak cache coercion Cernay2012".
+
+
+---
+
+Comment by jpflori created at 2012-02-10 15:00:49
+
+I've posted a first draft of a patch to make use of weakrefs optional (did not add doc, nor changed the test added or modified by Simon yet).
+
+I've surely forgotten some places where action are defined etc.
+
+After doing that, I've begun thinking that Simon is right and that Actions are too much related to the coecion system for this approch to be valid.
+
+Maybe using weakrefs all the time, even though objects can become unusable is good enough.
+
+
+---
+
+Attachment
+
+Make use of weakrefs optional: off by default, on for coercion
+
+
+---
+
+Comment by jpflori created at 2012-02-10 17:15:39
+
+Some further thoughts:
+
+- Currently my piece of code do not take into account classes overriding get_action
+
+- for this approach to be consistent I guess that get and discover action should return by default strong refed actions, so we should also add optional arguments to all the get and discover actions...
+
+
+---
+
+Comment by jpflori created at 2012-02-10 17:28:15
+
+This last idea won't be really consistent anyway because the get_action function caches its result anyway in _action_hash...
+
+So i'm now quite convinced that one should use weak refs all the time and that providing documentation about that is sufficient.
+
+
+---
+
+Comment by jpflori created at 2012-03-07 13:11:29
+
+I'm finally trying to add some doc to this ticket and realized that in the matrix.action file you state the usual laius about underlying sets eventually getting garbage collected.
+
+However, this is not the case in your examples, for the good reason that matrix spaces are cached.
+
+I'll try to provide an example where matrices act on something not cached, and we won a new ticket where your constructions should be used to cache objects :)
+
+
+---
+
+Comment by jpflori created at 2012-03-09 12:17:23
+
+Reviewer patch; added doc
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jpflori created at 2012-03-09 12:19:46
+
+Changing status from needs_info to needs_review.
+
+
+---
+
+Comment by jpflori created at 2012-03-09 12:22:46
+
+I've added warning blocks at the top of files modified by Simon (and fixed minor typos without introducing new ones I hope). The generated doc looks ok.
+
+All tests pass on my computer and the numerical evidence we've gathered so far points that there is no speed regression.
+
+If Simon or someone else could have a look at my "reviewer patch", this can be put to positive review.
+
+Personally, I'm happy with Simon patches.
+
+
+---
+
+Comment by SimonKing created at 2012-03-09 12:39:11
+
+Hi Jean-Pierre,
+
+your reviewer patch looks fine to me! Thank you for fixing the typos and explaining things a bit clearer!
+
+So, I change it into "positive review", naming you as a reviewer.
+
+
+---
+
+Comment by SimonKing created at 2012-03-09 12:39:11
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by jpflori created at 2012-03-09 12:41:49
+
+Great!
+
+And sorry for the delay. I'll try to tackle the related tickets this afternoon.
+
+
+---
+
+Comment by jdemeyer created at 2012-03-10 09:12:10
+
+This seems to conflict with #11599.  With #11599 applied, I get doctest errors:
+
+```
+sage -t  -force_lib devel/sage/sage/structure/coerce_dict.pyx
+**********************************************************************
+File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx", line 210:
+    sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field
+Exception raised:
+    Traceback (most recent call last):
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_3[33]>", line 1, in <module>
+        from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field###line 210:
+    sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field
+    ImportError: cannot import name SchemeHomsetModule_abelian_variety_coordinates_field
+**********************************************************************
+File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx", line 211:
+    sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]
+Exception raised:
+    Traceback (most recent call last):
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_3[34]>", line 1, in <module>
+        LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]###line 211:
+    sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]
+    NameError: name 'SchemeHomsetModule_abelian_variety_coordinates_field' is not defined
+**********************************************************************
+File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx", line 212:
+    sage: len(LE)    # indirect doctest
+Exception raised:
+    Traceback (most recent call last):
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_3[35]>", line 1, in <module>
+        len(LE)    # indirect doctest###line 212:
+    sage: len(LE)    # indirect doctest
+    NameError: name 'LE' is not defined
+**********************************************************************
+```
+
+
+
+---
+
+Comment by jdemeyer created at 2012-03-10 09:12:10
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:25:15
+
+SchemeHomsetModule_abelian_variety_coordinates_field was indeed renamed to SchemeHomset_points_abelian_variety_field in #11599.
+
+We have two solutions:
+
+ * do the same renaming in the doctests here
+ * use the EllipticCurve class which provides basically the same test (that's the one I originally pointed out) and which I find more explicit.
+
+I'll provide a patch for this second solution.
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:33:23
+
+Except that the changes introduced in #11599 seem to break the work done here by reintroducing some caching...
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:34:20
+
+More precisely both my proposed solution fix the import error (with EllipticCurve_finite_field for the second one) but then LE is still of length 50, whence no garbage collection occured.
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:39:38
+
+Applying #11521 solves the problem back, so I guess that this ticket and #11521 should be merged at once as they both depend on each other.
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:44:22
+
+Here comes a patch.
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:45:04
+
+Rebase on top of #11599, now circularly depends on #11521
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jpflori created at 2012-03-20 17:46:24
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by davidloeffler created at 2012-03-26 13:23:16
+
+A data point that might be helpful: all doctests pass on 5.0.beta10 on 64-bit Linux with qseries
+
+```
+trac715_one_triple_dict.patch
+trac_715-reviewer.patch
+trac_715-rebase_11599.patch
+trac11521_triple_homset.patch
+trac_11521-reviewer.patch
+```
+
+
+What is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?
+
+
+---
+
+Comment by SimonKing created at 2012-03-26 13:32:07
+
+Replying to [comment:162 davidloeffler]:
+> What is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?
+
+From my perspective, it is. But I think I am not entitled to set it to positive review, since Jean-Pierre did not explicitly state that he gives his OK.
+
+
+---
+
+Comment by jpflori created at 2012-03-26 13:34:44
+
+Oh, that's my bad, I just wanted to be sure that Simon was ok with my rebase... (and did not want to set it back to positive review because I did the rebase myself)
+
+Sorry about that !
+
+
+---
+
+Comment by jpflori created at 2012-03-26 13:35:54
+
+And I'm putting the ticket back to positive review because the three of us seem happy with it.
+
+
+---
+
+Comment by jpflori created at 2012-03-26 13:35:54
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by jdemeyer created at 2012-04-01 19:20:58
+
+Bad news...
+
+Applying [attachment:trac715_one_triple_dict.patch] causes Segmentation Faults on startup on 32-bit systems.
+
+$ ./sage --python -v -c 'import sage.all'
+
+```
+[...]
+import sage.libs.singular.function_factory # precompiled from /home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/libs/singular/function_factory.pyc
+import sage.rings.polynomial.multi_polynomial_libsingular # dynamically loaded from /home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(print_backtrace+0x4c)[0xf9f7c74]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(sigdie+0x34)[0xf9f7ce0]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(sage_signal_handler+0x20c)[0xf9f77d4]
+[0x100364]
+[0x10bb81d0]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/coerce.so(+0xb994)[0xe6ab994]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/coerce.so(+0x16654)[0xe6b6654]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/element.so(__pyx_f_4sage_9structure_7element_7Element__richcmp+0x42c)[0xe735e80]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/rings/real_mpfr.so(+0xcf70)[0xd6bcf70]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x90794)[0xfeb0794]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_RichCompare+0x84)[0xfeb2d8c]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x2b60)[0xff1cd10]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x78a4)[0xff21a54]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x964)[0xff2240c]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x73138)[0xfe93138]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_Call+0x74)[0xfe63900]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x52dac)[0xfe72dac]
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_Call+0x74)[0xfe63900]
+[...]
+------------------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occurred in Sage.
+This probably occurred because a *compiled* component of Sage has a bug
+in it and is not properly wrapped with sig_on(), sig_off(). You might
+want to run Sage under gdb with 'sage -gdb' to debug this.
+Sage will now terminate.
+------------------------------------------------------------------------
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/spkg/bin/sage: line 464: 16347 Segmentation fault      python "$`@`"
+
+
+---
+
+Comment by jdemeyer created at 2012-04-01 19:21:30
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by jpflori created at 2012-04-02 07:31:18
+
+Too bad...
+I don't have access to 32 bits cpus but I'll try to setup a VirtualBox installation.
+I'll also ask William for an account on skynet.
+
+
+---
+
+Comment by jpflori created at 2012-04-11 12:39:31
+
+No response from William yet, but I've finally managed to setup a Sage installation on a 32 bits installation of Ubuntu 12.04 beta 2 within a virtual machine and could reproduce the crash.
+Let's now investigate it.
+
+
+---
+
+Comment by jpflori created at 2012-04-11 12:48:22
+
+The segfault gets raised in a call to TripleDict.get
+
+
+---
+
+Comment by jpflori created at 2012-04-11 13:09:40
+
+More precisely in the line:
+
+
+```
+cdef list bucket = <object>PyList_GET_ITEM(all_buckets, h % PyList_GET_SIZE(all_buckets))
+```
+
+
+
+---
+
+Comment by jpflori created at 2012-04-11 13:17:43
+
+Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.
+
+
+---
+
+Comment by jpflori created at 2012-04-11 13:50:19
+
+The problem seems to be that the C "%" operator returns a result of the same sign as its input.
+
+That is : 14%15 -> 14, but -1%15 -> -1
+
+
+---
+
+Comment by jpflori created at 2012-04-11 14:38:20
+
+C modulo operator
+
+
+---
+
+Comment by jpflori created at 2012-04-11 14:38:59
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by jpflori created at 2012-04-11 17:02:43
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by jpflori created at 2012-04-11 17:02:43
+
+Even though the current patches should be OK, I'll provide a slightly different patch after my monologue at #12313 to be more consistent.
+
+
+---
+
+Comment by SimonKing created at 2012-04-11 19:18:29
+
+Replying to [comment:173 jpflori]:
+> Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.
+
+Thank you for tracking that down! I tested that the Cython modulo operator works like the Python one, but apparently my mistake was that I tested the Cython modulo only on Sage integers, but not on C types.
+
+I wonder whether there is a better way to get rid of the problem. for example: The number h is determined by converting the memory address of an object into `Py_ssize_t` - which is signed. Isn't there an unsigned `Py_size_t` (size_t, not ssize_t) as well? Perhaps one should try to use the unsigned type instead? In that way one would avoid the problem of a negative modulus, but would still avoid the slow-down resulting from the test "`if h<0`".
+
+I would like to test whether that works (next week, though).
+
+
+---
+
+Comment by jpflori created at 2012-04-11 19:42:23
+
+Good idea about the unsigned type.
+
+Don't worry about doing it next week, I should be able to test that tomorrow.
+
+
+---
+
+Comment by jpflori created at 2012-04-12 08:09:59
+
+For info,
+Py_ssize_t was defined by that PEP:
+http://www.python.org/dev/peps/pep-0353/
+and adopted in Python 2.5
+
+There is no Py_size_t, but I guess that using plain C size_t is ok (the point of Py_ssize_t is to be a signed stuff of the same size as size_t).
+
+
+---
+
+Attachment
+
+Version without fuzz
+
+
+---
+
+Attachment
+
+
+---
+
+Attachment
+
+Use size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM
+
+
+---
+
+Comment by jpflori created at 2012-04-12 13:51:55
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+The current patches seem ok both on my 64 bits system and on the virtual 32 bits system running within it.
+At least Sage does start and computes correctly 1+1.
+I'm currently running "make ptest" on both system.
+On the latter, this will take an awfully long time.
+
+I've also taken the liberty to modify the "reviewer" patch to fix formatting issues (and rebase patches of #12313 on top of that).
+
+
+---
+
+Comment by jpflori created at 2012-04-12 14:00:17
+
+As I reported in #12313 :
+With the new patches of #715 + #11521 + #12313, Sage starts both on 32 and 64 bits and make test pass on 64 bits (32 bits not finished yet).
+
+
+---
+
+Comment by SimonKing created at 2012-04-13 06:02:57
+
+Is Jean-Pierre just reviewer, or author as well?
+
+Anyway, I am now testing whether the stuff from here plus #11521 plus #12313 works for me as well, with size_t. And perhaps I'll also do some timings tomorrow. If Jean-Pierre is author as well, we could cross-review.
+
+And I think I'll also create a combined patch, for each of the three tickets.
+
+
+---
+
+Comment by jpflori created at 2012-04-13 06:47:55
+
+I don't mind being one of the authors as I spent some time on the ticket as well, although you clearly produced most of the code.
+And as you point out, it will make you more "legitimate" to set the ticket back to positive review after my last changes.
+
+The tset finished in my 32 bits virtual machine and I got 4 failures.
+Not sure they are related to the tickets here.
+It could just be time outs and issues related to Gap.
+I'm rerunning make test, or rather a working euivalent command, with proper logging to check that.
+
+Of course if someone has access to a real 32 bits system, that would be easier to test.
+
+
+---
+
+Comment by jpflori created at 2012-04-13 09:14:38
+
+Rerunning the tests within the virtual machine raised (less) errors in the same files.
+
+Namely:
+
+ 1. A segfault in sage/parallel/decorate.py instead of killing something because of a too long computation
+ 1. An error in sage/misc/sagedoc.py caused by a failing search_src_or_doc (?!?)
+ 1. An error in sage/misc/misc.py about an alarm not going off
+ 1. 0 error in sage/structure/parent.pyx who got killed
+
+
+---
+
+Comment by jpflori created at 2012-04-13 09:44:28
+
+I could reproduce the previous errors in parent.pyx and they stem from a MeomryError and fail to evaluate the cython(...) code defining classes because of some IOError, so I'm not sure it's related to the tickets here.It might be because of the environment its run within.
+
+
+---
+
+Comment by SimonKing created at 2012-04-13 14:16:34
+
+For the record: With the current patches from #715 + #11521 + #12313, all tests pass. But I can not test on 32 bit, I'm afraid.
+
+But MemoryError looks strange to me. I hope it is unrelated with these patches. Anyway, I'm certainly going to use them for my own work.
+
+I still think it would be good to have a combined patch. Anyway, I give a positive review to Jean-Pierre's contribution.
+
+
+---
+
+Comment by SimonKing created at 2012-04-14 12:01:23
+
+I have just attached a combined patch, created by simply folding all patches that were previously to be applied.
+
+With _only_ that patch, I obtain a single doctest error:
+
+```
+sage -t -force_lib "devel/sage/sage/structure/coerce_dict.pyx"
+**********************************************************************
+File "/mnt/local/king/SAGE/stable/sage-5.0.beta13/devel/sage/sage/structure/coerce_dict.pyx", line 210:
+    sage: len(LE)    # indirect doctest
+Expected:
+    1
+Got:
+    50
+```
+
+However, this is to be merged together with #11521, and with both tickets together the error vanishes (at least on 64 bit). So, from my point of view, it is a positive review, but we should wait for Jean-Pierre's results on 32 bit.
+
+For the patchbot:
+
+Apply trac_715_combined.patch
+
+
+---
+
+Comment by jpflori created at 2012-04-17 11:33:44
+
+The tests we've run on 32 bits seem conclusive, so I'm putting this back to positive review.
+The errors I got care due to memory shortage within my virtual machine and were not reproduce on real systems.
+
+
+---
+
+Comment by jpflori created at 2012-04-17 11:33:44
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by cremona created at 2012-04-17 19:07:37
+
+I'm just confirming that applying this patch & that at #11521 to 5.0-beta13 on a 32-bit linux machine, all tests pass.
+
+
+---
+
+Comment by jdemeyer created at 2012-05-06 12:12:31
+
+Resolution: fixed
+
+
+---
+
+Comment by jdemeyer created at 2012-07-05 08:40:06
+
+Changing status from closed to new.
+
+
+---
+
+Comment by jdemeyer created at 2012-07-05 08:40:06
+
+Unmerging this due to unmerging the dependency #11521.
+
+
+---
+
+Comment by jdemeyer created at 2012-07-05 08:40:06
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by jdemeyer created at 2012-07-13 11:51:52
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2012-07-13 11:52:03
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by SimonKing created at 2012-08-15 15:18:17
+
+Nils has stated on sage-devel that he was not (immediately) able to apply the patch to sage-5.3.beta2. Indeed there was fuzz 2. So, I rebased the patch, it should now apply fine.
+
+
+---
+
+Comment by SimonKing created at 2012-08-15 15:18:44
+
+I forgot:
+
+Apply trac_715_combined.patch
+
+
+---
+
+Comment by nbruin created at 2012-08-15 23:51:23
+
+When reviewing #12313 I observed a possible problem for slight leaking (see [comment 125](http://trac.sagemath.org/sage_trac/ticket/12313#comment:125)):
+
+When all `KeyRef` objects under a certain key in `_refcache` get deleted, I think you're left with a `{<key> : []}` entry in `_refcache`. So I think in `TripleDictEraser.__call__` you need an extra line:
+
+```
+        cdef list L = _refcache[k1,k2,k3]
+        del L[L.index(r)]
+        if len(L)==0:
+            del _refcache[k1,k2,k3]
+```
+
+or whatever is the best way to remove such things.
+
+Similar on #12313 in `MonoDictEraser.__call__` of course.
+
+By all means, if you have a good argument why this is not necessary, revert to Positive Review (and I'd be interested in seeing the argument).
+
+*unweakreffable keys*
+
+Note that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.
+
+You'd have to ensure that whenever an entry gets deleted from the `MonoDict` or the `TripleDict`, that any references in `strongrefcache` to relevant key components get removed too. Especially for `TripleDict`, this needs to happen in `TripleDictEraser` too, because if any weakreffable key component gets GCd, the whole entry gets removed, so strong refs to other key components should be released.
+
+Of course, it would be better to insist that for `TripleDict`s, there should be
+at least one weakreffable key component and that for `MonoDict`s only
+weakreffable keys are allowed. You might investigate where the offending keys
+arise. One place is sage.rings.Ring.ideal (line 495):
+
+
+```
+        gens = args
+        ...
+            first = gens[0]
+        ...
+            elif self.has_coerce_map_from(first):
+                gens = first.gens() # we have a ring as argument
+```
+
+so if you do `4*ZZ` then this gets called with `self=ZZ` and `first=4`. This is
+how bare integers end up being used as keys into `MonoDict`.  Since this gets
+stored in `ZZ._coerce_from_hash` it's as bad as a permanent reference (we cannot
+put a weakref on 4)
+
+----------------------------------------------------
+*[EDIT] OBSERVATION:*
+really it looks like this is trying to detect the rare case of
+
+```
+R.ideal(S)
+```
+
+where `S` is a ring/ideal coercible into `R` and we're computing `S*R`, the
+extension of `S` to an ideal of `R`. Isn't it a little expensive to abuse to
+coercion framework for this, expecting it to fail? Can't we use the category
+framework for this and do something like
+
+```
+            elif first in Magmas and self.has_coerce_map_from(first):
+                gens = first.gens() # we have a ring as argument
+```
+
+or whatever is an appropriate test to see if first is even a parent that has a
+chance of having a coerce map to self?
+
+YEP it is. In vanilla 5.0 (so that's even WITH caching)
+
+
+```
+sage: R=Rings()
+sage: timeit('ZZ.has_coerce_map_from(3)')
+625 loops, best of 3: 15.9 µs per loop
+sage: timeit('3 in R')
+625 loops, best of 3: 6.55 µs per loop
+```
+
+
+so we should definitely test the category of the element. Question is: which
+category? Ideals are not in `Rings()` (which are unitary rings), but they are in
+CommutativeAdditiveMonoids(). Creation of ideals still works if this works,
+though:
+
+```
+sage: ZZ.has_coerce_map_from(3*ZZ)
+False
+```
+
+so I'm not so sure if that branch ever essentially gets used.
+
+This is a separate issue, continued on #13374.
+
+-------------------------------------------------------------------
+The storing happens in sage.structure.parent (line 1990):
+
+```
+        if (mor is not None) or _may_cache_none(self, S, "coerce"):
+            self._coerce_from_hash[S] = mor
+```
+
+perhaps we should also disallow caching None if S is not weakreffable. Since
+valid parents should always be weakreffable, we could perhaps just return None
+for `has_coerce_map_from` for non-weakreffable `S`.
+
+
+---
+
+Comment by nbruin created at 2012-08-15 23:51:23
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 07:48:52
+
+Replying to [comment:198 nbruin]:
+> When reviewing #12313 I observed a possible problem for slight leaking
+> ...
+> By all means, if you have a good argument why this is not necessary, revert to Positive Review (and I'd be interested in seeing the argument).
+
+Yes, it is a potential leak. The argument would be:
+
+ * _If_ all items indexed by a certain key triple are gone, we are left with three size_t and with one pointer to an empty list, that will not be collected; that's just a few bytes.
+ * It is (I believe) quite likely that the same key triple will be used again. Hence, the few bytes will actually be used again.
+ * As long as it is not noticeable in a practical computation, I am not sure if it is a good idea to slow deallocation down with a test "if len(L)==0".
+
+OK, that is not more than a heuristical argument. The patch would allow a (I believe) very small leak, for the sake of a (probably) very small speed-up.
+
+> *unweakreffable keys*
+> 
+> Note that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.
+
+Hm. It is quite a long time ago that I wrote the code, so I need some time to reconstruct what I thought.
+
+The data of a `TripleDict` are stored in buckets. The buckets just provide memory locations of the keys. This is in order to make access to the data very fast: Otherwise, one would have to do special cases for keys that are weak-refable and those that are not. By consequence, the weak references (with callback function) to the keys need to be stored somewhere else: in _refcache. In that way, items whose keys got garbage collected can be removed from cache.
+
+But why did I put _strong_ references in _refcache as well? Let (k1,k2,k3) be a key, and assume that k1 is not weak-refable. Assume further that no external reference to k1 is left, but there are external strong references to k2 and k3. If I would not store a strong reference to k1 in _refcache, then k1 would be garbage collected. Since we do not have a weak reference with callback for k1 and since k2 and k3 can not be collected, the item for (k1,k2,k3) remains in the `TripleDict`. Hence, when iterating over the items (and there is existing code that does iterate over the items!), we would meet a reference to k1 _after_ it was garbage collected. That means a segfault occurs.
+
+In other words: If k2 and k3 are not collectable and k1 can not be weak-refed, then we must ensure that k1 stays alive. The solution is to keep a strong reference to k1 in _refcache.
+
+But now I wonder: Wouldn't it be better to have _refcache not as a global dictionary, but have a separate _refcache for each `TripleDict`, so that it gets collected if the `TripleDict` gets collected? Is that your suggestion?
+
+I think this would be worth trying.
+
+> You'd have to ensure that whenever an entry gets deleted from the `MonoDict` or the `TripleDict`, that any references in `strongrefcache` to relevant key components get removed too. Especially for `TripleDict`, this needs to happen in `TripleDictEraser` too, because if any weakreffable key component gets GCd, the whole entry gets removed, so strong refs to other key components should be released.
+
+As I have pointed out, it is important that weak or strong references are stored in _refcache. But perhaps the items in _refcache should be triples of weak or strong references? If I am not mistaken, if (k1,k2,k3) is a key, then it is uniquely determined by (id(k1),id(k2),id(k3)). We store weak references (if possible) that provide (id(k1),id(k2),id(k3)). Hence, the callback function of the weak reference can simply delete this entry.
+
+__Conclusion__
+
+ * I will try if the `"if len(L)==0"` test leads to a slow-down
+ * I will try to replace the global _refcache by a dictionary that is local to each `TripleDict`.
+ * I will store the references provided by _refcache in a different form, so that they can more easily be deleted.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 10:14:54
+
+Too bad. I tried to add the following to the old patch:
+
+```diff
+diff --git a/sage/structure/coerce_dict.pxd b/sage/structure/coerce_dict.pxd
+--- a/sage/structure/coerce_dict.pxd
++++ b/sage/structure/coerce_dict.pxd
+`@``@` -1,6 +1,7 `@``@`
+ cdef class TripleDict:
+     cdef Py_ssize_t _size
+     cdef buckets
++    cdef dict _refcache
+     cdef double threshold
+     cdef TripleDictEraser eraser
+     cdef get(self, object k1, object k2, object k3)
+diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
+--- a/sage/structure/coerce_dict.pyx
++++ b/sage/structure/coerce_dict.pyx
+`@``@` -18,8 +18,6 `@``@`
+ # removing dead references from the cache
+ ############################################
+ 
+-cdef dict _refcache = {}
+-
+ cdef class TripleDictEraser:
+     """
+     Erases items from a :class:`TripleDict` when a weak reference becomes
+`@``@` -108,8 +106,10 `@``@`
+                 del bucket[i:i+4]
+                 self.D._size -= 1
+                 break
+-        cdef list L = _refcache[k1,k2,k3]
+-        del L[L.index(r)]
++        try:
++            self.D._refcache.__delitem__((k1,k2,k3))
++        except KeyError:
++            pass
+ 
+ cdef class TripleDict:
+     """
+`@``@` -432,22 +432,24 `@``@`
+         PyList_Append(bucket, h3)
+         PyList_Append(bucket, value)
+         try:
+-            PyList_Append(_refcache.setdefault((h1 , h2, h3), []),
+-                KeyedRef(k1,self.eraser,(h1, h2, h3)))
++            ref1 = KeyedRef(k1,self.eraser,(h1, h2, h3)))
+         except TypeError:
+-            PyList_Append(_refcache.setdefault((h1, h2, h3), []), k1)
++            ref1 = k1
+         if k2 is not k1:
+             try:
+-                PyList_Append(_refcache.setdefault((h1 , h2, h3), []),
+-                    KeyedRef(k2,self.eraser,(h1, h2, h3)))
++                ref2 = KeyedRef(k2,self.eraser,(h1, h2, h3)))
+             except TypeError:
+-                PyList_Append(_refcache.setdefault((h1, h2, h3), []), k2)
+-        if k3 is not k1 and k3 is not k2:
++                ref2 = k2
++        else:
++            ref2 = None
++        if k3 is not k2 or k3 is not k1:
+             try:
+-                PyList_Append(_refcache.setdefault((h1 , h2, h3), []),
+-                    KeyedRef(k3,self.eraser,(h1, h2, h3)))
++                ref3 = KeyedRef(k3,self.eraser,(h1, h2, h3)))
+             except TypeError:
+-                PyList_Append(_refcache.setdefault((h1, h2, h3), []),k3)
++                ref3 = k3
++        else:
++            ref3 = None
++        self._refcache[h1,h2,h3] = (ref1,ref2,ref3)
+         self._size += 1
+ 
+     def __delitem__(self, k):
+```
+
+
+However, with the resulting code, the memory leak discussed here reappears!
+
+So far, I can only speculate why that has happened. It could be that moving _refcache into the `TripleDict` created a reference cycle (namely, `TripleDict` will occur as attribute to parents, and the parents occur as references in _refcache). If a `__del__` method is involved, the items in the reference cycle can't be collected.
+
+If this holds true, then one has to have the necessary references in an _external_ dictionary. But perhaps one can still ensure that the data associated with one `TripleDict` will be removed, as soon as the `TripleDict` gets garbage collected.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 10:34:36
+
+Hm. I tried the alternative idea sketched in the previous post, but the leak is still there. Very strange.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 10:57:49
+
+Aaaah! Now I see! The doc test I am struggling with is also failing, if only the old patch is applied. Apparently I forgot that #11521 needs to be applied as well.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 11:15:56
+
+Yessss! #11521 was missing.
+
+OK. I am now testing the new patch, and will hopefully be able to post it soon.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 14:07:02
+
+I have attached a new patch, that changes the way how references are being kept track of.
+
+First of all, as I have explained in my long post today, it is important for speed that the buckets of `TripleDict` only keep track of the memory locations of the keys. Hence, references (weak or strong, depending on the type of keys) need to be stored somewhere else.
+
+Previously, there was a global dictionary, that was shared by all `TripleDicts`. That probably was a bad idea, for the reasons you pointed out. Now, the references are stored in a dictionary that is an attribute of each `TripleDict`.
+
+That has several advantages: In a single `TripleDict`, each key triple only occurs once. Hence, we don't need to store the references in a list addressed by a triple of memory locations, that are popped off the list when being garbage collected.
+
+Instead, each triple of memory locations points to exactly one triple of references. The triple of references is popped off the dictionary as soon as any weak-refed member of the key triple was garbage collected. Note that the `if len(L)==0:` bit is not needed.
+
+Another advantage: If the `TripleDict` is deallocated, then the strong references associated with the `TripleDict` will vanish as well, which wouldn't have been the case with the old code.
+
+Currently, there is only one bad situation I can think of: Let P be an object that can not be weak-refed, has a `TripleDict` T as an attribute, is used as a key in T, and has a `__del__` method. Then the reference cycle P->T->T._refcache->P will keep P alive. However, if any of the four assumptions does not hold, then P can be garbage collected. I think we can take that risk.
+Is there any question of yours that I forgot to address?
+
+I didn't do timings, but I've successfully run the doc tests.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch #11521
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 14:07:02
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 14:26:25
+
+The patch bot seems to have a problem. It already times out when testing whether the dependencies are applied!
+
+
+---
+
+Comment by nbruin created at 2012-08-16 17:35:00
+
+Excellent! Thank you for the great work. This is incredibly important for so
+many parts of sage.
+
+> Previously, there was a global dictionary, that was shared by all
+> `TripleDicts`. That probably was a bad idea, for the reasons you pointed out.
+> Now, the references are stored in a dictionary that is an attribute of each
+> `TripleDict`.
+
+Excellent! I agree with your assessment. I think this addresses all my concerns.
+I think this is a useful data structure in general, so can we formalize its
+behaviour in the documentation? (rewrite as you see fit)
+
+
+```
+TripleDict is a structure like WeakKeyDictionary, optimized for lookup speed.
+Keys consist of a triple (k1,k2,k3) and are looked up by identity rather than
+equality. The keys are stored by weakrefs if possible. If any one of the
+components k1,k2,k3 gets garbage collected, then the entry is removed from the
+TripleDict. Key components that do not allow for weakrefs are stored via a
+normal refcounted reference. That means that any entry stored using a triple
+(k1,k2,k3) with none of the k1,k2,k3 weakreffable behaves as an entry in a
+normal dictionary, so its existence in TripleDict prevents it from being garbage
+collected.
+```
+
+
+> Another advantage: If the `TripleDict` is deallocated, then the strong
+> references associated with the `TripleDict` will vanish as well, which wouldn't
+> have been the case with the old code.
+
+AND if an entry gets deleted/garbage collected due to a weakreffed key component
+disappearing, we also deref any strongly reffed key components! So I think we
+never behave worse than a normal dict in terms of keeping objects alive.
+
+> Currently, there is only one bad situation I can think of: Let P be an object
+> that can not be weak-refed, has a `TripleDict` T as an attribute, is used as a
+> key in T, and has a `__del__` method. Then the reference cycle
+> P->T->T._refcache->P will keep P alive.
+
+I think we're safe for that. There are very few `__del__` definitions in the
+sage library and they're all associated with interface-type objects. And those
+are plain python classes anyway, so they are weakreffable.
+
+
+---
+
+Attachment
+
+Document the specifications of `TripleDict`
+
+
+---
+
+Comment by SimonKing created at 2012-08-16 18:31:15
+
+I added sage.structure.coerce_dict to the reference manual. I took a slight modification of the text you suggested to document the purpose of that module. Note that the text also refers to #11521, but this should be fine, as #715 and #11521 are mutually dependent, hence, will be merged together.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
+
+
+---
+
+Comment by nbruin created at 2012-08-16 22:06:25
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by nbruin created at 2012-08-16 22:06:25
+
+I'm happy. Positive review. I think the bot gets confused and tries to apply the patches in the wrong order.
+
+
+---
+
+Comment by SimonKing created at 2012-08-20 10:16:24
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2012-08-20 10:16:24
+
+On #12313, I found that the `TripleDict.__delitem__` method needs to be fixed, because it does currently not update the `_refcache` dictionary. So, I'd say I fix this here, which means that it needs work and needs another review.
+
+
+---
+
+Comment by SimonKing created at 2012-08-20 10:33:02
+
+Fixed. Keep in mind that the patchbot wouldn't be able to understand that #11521 needs to be merged as well.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
+
+
+---
+
+Comment by SimonKing created at 2012-08-20 10:33:02
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by SimonKing created at 2012-08-20 11:05:48
+
+I had to change one detail: If a non-existing item is deleted, then with the old patch version the resulting key error would not name the key but the memory address of the key. Fixed.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
+
+
+---
+
+Comment by SimonKing created at 2012-08-21 08:19:23
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2012-08-21 08:54:12
+
+Keep track of references in a local dictionary
+
+
+---
+
+Comment by SimonKing created at 2012-08-21 08:55:31
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+OK, the second patch is updated again. Changes: The `get()` method now tests whether the stored weak references to the keys are still active, before returning a value.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 07:55:18
+
+I have added a patch that changes a couple of problems discussed at #12313. In particular
+
+ * Remove `TripleDictIter` and replace it by using the new "yield" statement in Cython.
+ * Test whether the references are valid, before setting an item.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch  trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 07:56:46
+
+... and in addition, set 0.7 as default threshold.
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 10:34:24
+
+make ptest did only result in few errors, no segfault! So, it needs work for now, but it is close to success.
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 10:34:24
+
+Changing status from needs_review to needs_work.
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 10:48:19
+
+Fix some issues: Test validity of references when setting items; use the new "yield" statement in Cython for iteration.
+
+
+---
+
+Comment by SimonKing created at 2012-08-23 10:49:05
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Attachment
+
+Now it should work! Needs review - this time for real...
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by nbruin created at 2012-08-24 23:08:31
+
+*safer.patch*: `sage/structure/coerce_dict.pyx`
+
+```
+      # This is to cope with a potential racing condition - if garbage 
+      # collection and weakref callback happens right between the 
+      # "if (isinstance(r1,..." and the "del", then the previously 
+      # existing entry might already be gone. 
+```
+
+No, there is no such racing condition. You are holding references 
+`k1,k2,k3`. You have just looked up the weakreference `r1,r2,r3` to these keys
+and checked that the weakrefs are still alive (and hence that it's not the case
+that one of the `ki` is just a new element that happens to have the same id as a
+now-deceased previous key element in the dict).
+Since you are holding references, they cannot die in between, so I don't think
+the
+
+```
+    del self._refcache[<size_t><void *>k1,<size_t><void *>k2,<size_t><void *>k3]
+```
+
+needs to be quarded. 
+
+It won't hurt, though, and this code will be optimized anyway, so no effect on
+the review.
+
+Concerning `next_odd_prime`: I'm pretty sure we're keeping a list of primes
+somewhere in sage. We might want to look in there rather than have this snippet
+here. Again, not hurtful to do it this way.
+
+*trac_715_specification.patch*: One line fuzz in application. Do we care?
+
+
+---
+
+Comment by nbruin created at 2012-08-24 23:08:31
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by SimonKing created at 2012-09-03 09:25:05
+
+There are sporadic segfaults found by some (not all) patchbots on #11370 and #12876 that seem to be related with the weak caching bits.
+
+Here, the cdef attribute `sage.categories.action.Action.S` (that's for keeping the underlying set of the action) is turned into a weak reference to the underlying set. Today, I found that there might be an interference with old code in sage/rings/morphism.pyx, namely:
+
+```
+cdef class RingHomomorphism(RingMap):
+    def __init__(self, R, S):
+        """
+        Create a lifting ring map.
+
+        EXAMPLES::
+
+            sage: f = Zmod(8).lift()          # indirect doctest
+            sage: f(3)
+            3
+            sage: type(f(3))
+            <type 'sage.rings.integer.Integer'>
+            sage: type(f)
+            <type 'sage.rings.morphism.RingMap_lift'>
+        """
+        from sage.categories.sets_cat import Sets
+        H = R.Hom(S, Sets())
+        RingMap.__init__(self, H)
+        self.S = S  # for efficiency
+        try:
+            S._coerce_(R(0).lift())
+        except TypeError:
+            raise TypeError, "No natural lift map"
+
+    cdef _update_slots(self, _slots):
+        self.S = _slots['S']
+        Morphism._update_slots(self, _slots)
+
+    cdef _extra_slots(self, _slots):
+        _slots['S'] = self.S
+        return Morphism._extra_slots(self, _slots)
+
+```
+
+Hence, `RingHomomorphism` uses the S attribute as well, but differently. And aren't there actions that are ring homomorphisms?
+
+I think it is worth trying to rename the `S` attribute of Action. I put it to "needs work", because I doubt that flaky segfaults are acceptable.
+
+
+---
+
+Comment by SimonKing created at 2012-09-03 09:25:05
+
+Changing status from positive_review to needs_work.
+
+
+---
+
+Attachment
+
+Introduce weak references to coercion dicts, and refactor the hashtables.
+
+
+---
+
+Comment by SimonKing created at 2012-09-03 09:31:52
+
+The main patch is updated, renaming S into US (for Underlying Set - I certainly don't want to blame the US if it doesn't work). Let us see whether stuff at #13370 and #12876 will work now...
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-09-03 09:32:02
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 12:09:48
+
+Applying #715 and #11521 gives on OS X 10.6 x86_64:
+
+```
+bsd:sage-5.4.beta0 jdemeyer$ ./sage -t  devel/sage/sage/misc/cachefunc.pyx
+sage -t  "devel/sage/sage/misc/cachefunc.pyx"
+The doctested process was killed by signal 11
+         [14.3 s]
+
+----------------------------------------------------------------------
+The following tests failed:
+
+
+        sage -t  "devel/sage/sage/misc/cachefunc.pyx" # Killed/crashed
+Total time for all tests: 14.3 seconds
+```
+
+
+This is the only system where this happens.  When running the test with `--verbose`, the test actually passes.
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 12:17:38
+
+Replying to [comment:224 jdemeyer]:
+> Applying #715 and #11521 gives on OS X 10.6 x86_64:
+> {{{
+> bsd:sage-5.4.beta0 jdemeyer$ ./sage -t  devel/sage/sage/misc/cachefunc.pyx
+> sage -t  "devel/sage/sage/misc/cachefunc.pyx"
+> The doctested process was killed by signal 11
+>          [14.3 s]
+> 
+> ----------------------------------------------------------------------
+> The following tests failed:
+> 
+> 
+>         sage -t  "devel/sage/sage/misc/cachefunc.pyx" # Killed/crashed
+> Total time for all tests: 14.3 seconds
+> }}}
+> 
+> This is the only system where this happens.
+
+But that means: We finally have a system where it happens _with #715+#11521 only_! So far, we only had Volker's patchbot, which produced segfaults when other patches were applied on top of #11521.
+
+Hence, hope increases.
+
+>  When running the test with `--verbose`, the test actually passes.
+
+Did it really fully pass and you came back to your shell prompt, or did the tests pass and there was a segfault when Sage shuts down?
+
+Can you produce a backtrace, say, by using gdb? Or can you give me access to the machine, so that I can do some experiments?
+
+Best regards,
+Simon
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 12:28:57
+
+Replying to [comment:225 SimonKing]:
+> Did it really fully pass and you came back to your shell prompt, or did the tests pass and there was a segfault when Sage shuts down?
+It really worked:
+
+```
+715 tests in 72 items.
+715 passed and 0 failed.
+Test passed.
+         [13.6 s]
+
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 13.6 seconds
+```
+
+ 
+> Can you produce a backtrace, say, by using gdb?
+Under gdb, there is no crash.  There is a doctest failure though:
+
+```
+**********************************************************************
+File "/Users/jdemeyer/sage-5.4.beta0/devel/sage/sage/misc/cachefunc.pyx", line 799, in __main__.example_17
+Failed example:
+    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 704:_sage_    >>> oddprime_factors.precompute(range(1,1
+00), 4)
+Expected nothing
+Got:
+    [Errno 4] Interrupted system call
+    Killing any remaining workers...
+**********************************************************************
+File "/Users/jdemeyer/sage-5.4.beta0/devel/sage/sage/misc/cachefunc.pyx", line 800, in __main__.example_17
+Failed example:
+    oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]
+Exception raised:
+    Traceback (most recent call last):
+      File "/Users/jdemeyer/sage-5.4.beta0/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/Users/jdemeyer/sage-5.4.beta0/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/Users/jdemeyer/sage-5.4.beta0/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_17[4]>", line 1, in <module>
+        oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]
+    KeyError: ((25,), ())
+```
+
+
+> Or can you give me access to the machine, so that I can do some experiments?
+This is William's `bsd.math` machine, ask him.
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 12:37:41
+
+Replying to [comment:226 jdemeyer]:
+> Under gdb, there is no crash.  There is a doctest failure though:
+
+Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?
+
+> This is William's `bsd.math` machine, ask him.
+
+Too bad. I already tested 5.3.rc1 on bsd.math, and it worked fine. No segfault. Perhaps I should retry with 5.4.beta0, then?
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 12:44:50
+
+Replying to [comment:227 SimonKing]:
+> Perhaps I should retry with 5.4.beta0, then?
+Yes, you could.  sage-5.4.beta0 is more or less stable now (the main uncertainty being #13121 and related tickets).
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 12:46:30
+
+Replying to [comment:227 SimonKing]:
+> Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?
+I honestly don't know how gdb works and certainly not how it works within doctesting (`sage -t --gdb`).  Note that this is on OS X and `gdb` might work slightly different compared to Linux.
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 12:47:46
+
+I should also clarify that the doctest crash is completely reproducible: it really happens every time.
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 12:54:55
+
+Replying to [comment:228 jdemeyer]:
+> Replying to [comment:227 SimonKing]:
+> > Perhaps I should retry with 5.4.beta0, then?
+> Yes, you could.
+
+Building it now...
+
+
+---
+
+Comment by vbraun created at 2012-09-05 13:12:27
+
+Replying to [comment:227 SimonKing]:
+> Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?
+
+Yes, but:
+  * gdb installs a bag full of signal handlers (so you can press Ctrl-C and get to the gdb prompt, e.g.)
+  * gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 13:16:01
+
+Replying to [comment:232 vbraun]:
+>   * gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).
+
+OK, that is likely to be a problem here.
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 15:36:03
+
+Hooray! Finally I get
+
+```
+bash-3.2$ ../../sage -t sage/misc/cachefunc.pyx 
+sage -t  "devel/sage-main/sage/misc/cachefunc.pyx"          
+The doctested process was killed by signal 11
+         [44.1 s]
+ 
+----------------------------------------------------------------------
+The following tests failed:
+
+
+        sage -t  "devel/sage-main/sage/misc/cachefunc.pyx" # Killed/crashed
+Total time for all tests: 44.1 seconds
+```
+
+Why is it so much faster for you, Jeroen?
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 15:41:31
+
+What I don't understand: With gdb, one gets an error, reportedly in line 800. But line 800 is
+
+```
+        sage: J.groebner_basis.clear_cache()
+```
+
+Nothing like
+
+```
+Failed example:
+    oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]
+Exception raised:
+```
+
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 15:51:56
+
+I tried to install some valgrind spkg on bsd.math, but it failed.
+
+
+---
+
+Comment by jpflori created at 2012-09-05 15:54:47
+
+Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).
+IIRC, that's what Sage tries to do, so it fails...
+So you should use a system wide valgrind or force the use of the system wide compiler to build the spkg.
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 16:09:46
+
+Replying to [comment:237 jpflori]:
+> Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).
+> IIRC, that's what Sage tries to do, so it fails...
+> So you should use a system wide valgrind or force the use of the system wide compiler to build the spkg.
+
+Thank you!
+
+Next attempt: ulimit -c unlimited.
+
+However, even though there still was a signal 11, no core dump was written. So, question to the experts: How can I make bsd.math write a core dump of the failing test?
+
+
+---
+
+Comment by jdemeyer created at 2012-09-05 17:56:09
+
+Replying to [comment:234 SimonKing]:
+> Hooray!
+Hooray because you get a Segmentation Fault, there are a lot of tickets that should make you happy then :-)
+
+> Why is it so much faster for you, Jeroen?
+Caching (the disk kind) perhaps?
+
+
+---
+
+Comment by SimonKing created at 2012-09-05 19:00:32
+
+Gosh, it is so frustrating to hunt that Heisenbug!!
+
+ * Test the file - there is a segfault, but it doesn't give any clue of what is happening.
+ * Test the file with gdb - the segfault is gone, but a "normal" error occurs, that is rather odd because it is reported in the wrong line of the file.
+ * Try ulimit -c unlimited - there is a segfault, but no core dump is written.
+ * Try verbose tests - all tests pass.
+ * What I just did: Start each test with a few lines that write something into a log file. Hence, it isn't exactly verbose, but should give some idea in what test the segfault occurs. But alas - all tests pass.
+ * Valgrind doesn't seem to be available on bsd.math,
+
+Anything else I could try? So far, I only see the option to try to understand why using gdb results in an error in a very innocent-looking test that should actually use a strong cache.
+
+
+---
+
+Comment by nbruin created at 2012-09-05 20:07:08
+
+Replying to [comment:240 SimonKing]:
+>  * Test the file - there is a segfault, but it doesn't give any clue of what is happening.
+I'm pretty sure that's because sage-doctest redirects the output somewhere. I'm
+sure the SIGSEGV causes the usual traceback upon sage crashing. So I'd start
+breaking into the sage-doctest script and change little things there, hoping to
+not upset the subtle conditions required to trigger the fault. Indeed
+
+*local/bin/sage-doctest*:801
+
+```python
+            if verbose or gdb or memcheck or massif or cachegrind:
+                import subprocess
+                proc = subprocess.Popen(cmd, shell=True)
+                while time.time()-tm <= TIMEOUT and proc.poll() == None:
+                    time.sleep(0.1)
+                if time.time()-tm >=TIMEOUT:
+                    os.kill(proc.pid, 9)
+                    print "*** *** Error: TIMED OUT! PROCESS KILLED! *** ***"
+                e = proc.poll()
+            else:
+                outf = tempfile.NamedTemporaryFile()
+                import subprocess
+                proc = subprocess.Popen(cmd, shell=True, \
+                        stdout=outf.file.fileno(), stderr = outf.file.fileno())
+                while time.time()-tm <= TIMEOUT and proc.poll() == None:
+                    time.sleep(0.1)
+                if time.time()-tm >=TIMEOUT:
+                    os.kill(proc.pid, 9)
+                    print "*** *** Error: TIMED OUT! PROCESS KILLED! *** ***"
+                outf.file.seek(0)
+                out = outf.read()
+                e = proc.poll()
+```
+
+The verbose parameter does get written into the file that `cmd` executes, so it
+has effect there as well. You could also just extract that temporary file and
+hack on that.
+
+Of course, this all only might help you to figure out where the SEGV occurs,
+which may or may not be related to the real culprit.
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 08:46:40
+
+Concerning the oddity that there is an error (but no segfault) with gdb: It says
+
+```
+File "/scratch/sking/sage-5.4.beta0/devel/sage-main/sage/misc/cachefunc.pyx", line 799, in __main__.example_17
+Failed example:
+    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 704:_sage_    >>> oddprime_factors.precompute(range(1,100), 4)
+Expected nothing
+Got:  
+    [Errno 4] Interrupted system call
+    Killing any remaining workers...
+```
+
+Why does "interrupted system call" mean? The failing function appears to be the cached version of
+
+```
+            def oddprime_factors(n):
+                l = [p for p,e in factor(n) if p != 2]
+                return len(l)
+```
+
+What system call is involved here?
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 08:59:31
+
+PS: When I comment out the "oddprime_factors" test, running `sage -t -gdb` does not report any error - and it also makes the segfault in `sage -t` go away!
+
+Hence, it seems that the problem really is due to the seemingly harmless test of the "precompute" method.
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 09:09:01
+
+If the test is
+
+```
+            sage: `@`cached_function
+            ... def oddprime_factors(n):
+            ...     l = [p for p,e in factor(n) if p != 2]
+            ...     return len(l)
+            sage: oddprime_factors.precompute(range(1,99), 4)
+            sage: oddprime_factors.cache[(25,),()]
+            1
+```
+
+then `sage -t` passes. A precomputation in `range(1,90)` or `range(1,50)` or `range(2,100)` works as well. But if the precomputation runs in `range(1,100)` or `range(2,101)` or `range(1,110)`, then there is signal 11.
+
+Hence, it really seems that we located the culprit - although I have no idea whatsoever as to what is happening here. It seems that there is no error, if we precompute at most 98 values, but if we have 99 or more precomputed values then there is signal 11.
+
+Any idea what to try next?
+
+
+---
+
+Comment by jdemeyer created at 2012-09-06 09:22:27
+
+Replying to [comment:242 SimonKing]:
+> Why does "interrupted system call" mean?
+It means, quite literally, that a system call got interrupted by a signal.  If a system call (for example some file I/O operation) gets interrupted by a signal, then that system call might fail with "interrupted system call", even if the signal was properly handled by the application.  Note the use of "might", there is a long discussion in the `signal(7)` man page explaining to which calls this applies.
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 09:24:51
+
+By inserting a print statement into `weakref.KeyedRef.__init__` and running the test in the command line, I found that the test does _not_ involve keyed weak references.
+
+Since the second argument to the `precompute` method gives the number of used parallel processes, I thought for a moment that parallelity could be the problem, but changing the test into
+
+```
+            sage: oddprime_factors.precompute(range(1,110), 1)
+```
+
+did _not_ make signal 11 vanish.
+
+
+---
+
+Comment by vbraun created at 2012-09-06 09:25:25
+
+Replying to [comment:242 SimonKing]:
+> Got:  
+>     [Errno 4] Interrupted system call
+>     Killing any remaining workers...
+
+This sounds more like a bug in the doctest framework. I imagine the worker process segfaults, and the doctesting process is in a blocking system call when the `SIGCHLD` arrives. The doctesting framework should check the `EINTR` result and retry but doesn't.
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 09:31:00
+
+Replying to [comment:247 vbraun]:
+> Replying to [comment:242 SimonKing]:
+> > Got:  
+> >     [Errno 4] Interrupted system call
+> >     Killing any remaining workers...
+> 
+> This sounds more like a bug in the doctest framework. I imagine the worker process segfaults, and the doctesting process is in a blocking system call when the `SIGCHLD` arrives. The doctesting framework should check the `EINTR` result and retry but doesn't. 
+
+... which sounds like [this known problem](http://bugs.python.org/issue12268) or [its duplicate](http://bugs.python.org/issue9867).
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 11:47:50
+
+Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:
+
+```
+sage -t  -force_lib devel/sage-12876/sage/rings/polynomial/infinite_polynomial_ring.py
+The doctested process was killed by signal 11
+```
+
+Signal 11, same signal as here.
+
+I wonder: Does the patchbot uses some `UniqueRepresentation` to represent a tester? That might be a problem if it is only weakly cached.
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 14:00:43
+
+Replying to [comment:249 SimonKing]:
+> Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:
+
+In an error of an earlier version of #13370 on [Volker's patchbot](http://patchbot.sagemath.org/log/13370/Fedora/17/x86_64/3.5.2-3.fc17.x86_64/volker-desktop.stp.dias.ie/2012-08-27%2023:35:38%20+0100), too:
+
+```
+sage -t  -force_lib devel/sage-13370/sage/rings/polynomial/polynomial_real_mpfr_dense.pyx
+The doctested process was killed by signal 11
+```
+
+
+The big question is: How can we deal with that problem?
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 15:46:44
+
+It seems to me that it is _not_ a side effect. Namely, I put
+
+```
+class Foo:
+    def bar(self):
+        """
+        Cache values for a number of inputs.  Do the computation
+        in parallel, and only bother to compute values that we
+        haven't already cached.
+
+        EXAMPLES::
+
+            sage: `@`cached_function
+            ... def oddprime_factors(n):
+            ...     l = [p for p,e in factor(n) if p != 2]
+            ...     return len(l)
+            sage: oddprime_factors.precompute(range(1,100), 4)
+            sage: oddprime_factors.cache[(25,),()]
+            1
+        """
+        pass
+```
+
+into a file and run `sage -t` on it. All tests pass -- *__BUT__* running `sage -t -gdb`, I get the same error as in cachefunc.pyx, where the test above is just one among many other tests:
+
+```
+Failed example:
+    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 14:_sage_    >>> oddprime_factors.precompute(range(1,100), 4)
+Expected nothing
+Got:
+    [Errno 4] Interrupted system call
+    Killing any remaining workers...
+**********************************************************************
+File "/scratch/sking/sage-5.4.beta0/devel/sage-main/sage/misc/blubb.py", line ?, in __main__.example_0
+Failed example:
+    oddprime_factors.cache[(Integer(25),),()]###line 15:_sage_    >>> oddprime_factors.cache[(25,),()]
+Exception raised:
+    Traceback (most recent call last):
+      File "/scratch/sking/sage-5.4.beta0/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/scratch/sking/sage-5.4.beta0/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/scratch/sking/sage-5.4.beta0/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_0[4]>", line 1, in <module>
+        oddprime_factors.cache[(Integer(25),),()]###line 15:_sage_    >>> oddprime_factors.cache[(25,),()]
+    KeyError: ((25,), ())
+```
+
+The "Killing any remaining workers" comes from a parallel computation, isn't it? The `precompute()` method is parallel. Let us see whether it also fails in an interactive session under gdb!
+
+
+---
+
+Comment by SimonKing created at 2012-09-06 15:51:38
+
+Yes, it even works (i.e. reproduces the error) interactively, provided one runs "sage -gdb"!
+
+```
+sage: `@`cached_function
+....: def oddprime_factors(n):
+....:     l = [p for p,e in factor(n) if p != 2]
+....:     return len(l)
+....: 
+sage: oddprime_factors.precompute(range(1,100), 4)
+[Errno 4] Interrupted system call
+Killing any remaining workers...
+sage: oddprime_factors.precompute(range(1,100), 6)
+[Errno 4] Interrupted system call
+Killing any remaining workers...
+sage: oddprime_factors.precompute(range(1,100))
+[Errno 4] Interrupted system call
+Killing any remaining workers...
+sage: len(oddprime_factors.cache)
+0
+```
+
+Interestingly, using `range(1,99)` (which made the problem vanish in the doctest) does not work interactively.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 13:24:08
+
+I tried inserting print statements into sage.parallel.use_fork.p_iter_fork._subprocess.
+
+The print statements _are_ executed when successfully running the example in an interactive session.
+
+They are _not_ executed when running it interactively under gdb. Hence, _subprocess (which contains the invalidation of pexpect interfaces) is not involved in the interactive error under gdb.
+
+They _are_ executed when running the doctests. The test then fails (because of the unexpected print statements), but there is no signal 11.
+
+What could that mean? Perhaps we actually have two independent problems in the same example: One appears in a gdb'ed interactive session and can be fixed with #13437. The other appears with `sage -t` and remains a mystery.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 13:37:23
+
+Perhaps I stand corrected. I inserted print statement in a different location, one of them directly before calling _subprocess. This statement is printed, then interrupted system call strikes.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 13:47:30
+
+I forgot that _subprocess redirects stdout. Sorry for the noise.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 14:00:50
+
+I think now I located the problem exposed by a gdb'ed interactive session. When not redirecting stdout, a print statement before the last line of the "finally:" clause of _subprocess is executed. But a print statement inserted right after the call to `self._subprocess(f, dir, v[0])` in `p_iter_fork.__call__` is not executed.
+
+There is only one line of code between the executed and the not-executed print statements: The last line of `_subprocess`' "finally:" clause, namely
+
+```
+            os._exit(0)
+```
+
+
+Question to the experts: What could possible go wrong in `os._exit(0)`?
+
+
+---
+
+Comment by nbruin created at 2012-09-07 15:50:02
+
+Replying to [comment:256 SimonKing]:
+> There is only one line of code between the executed and the not-executed print statements: The last line of `_subprocess`' "finally:" clause, namely
+> {{{
+>             os._exit(0)
+> }}}
+> Question to the experts: What could possible go wrong in `os._exit(0)`?
+
+Oh dear. That sounds like `_subprocess` is not returning at all! Let's see what the documentation says:
+
+```
+os._exit(n)
+    Exit the process with status n, without calling cleanup handlers,
+    flushing stdio buffers, etc.
+```
+
+Could it be we found a bug in the OSX kernel? A system call that doesn't return?
+
+More seriously, it seems rather reassuring that the statement that comes after you tell the process to quit, doesn't get executed. It seems to me you've just ruled out it's not the child that SEGV-ing -- it's the parent.
+
+In fact, we could have known that. In the doctest of `sage.parallel.decorate.Fork` there is an explicit test that shows a child can segfault with no detrimental effect (If you instrument `sage-doctest` to not hide stderr, it's scary to see the backtrace come by, but the doctest passes without problem). The fact that the doctest framework can get its hand on the "11" exit code shows it's the parent that generates it. Why do you think this happens due to parallel at all? Under gdb, the test does not segfault, so you're looking at different behaviour. I don't think parallel is implicated in this at all.
+
+Really, _strip away the doctesting layer_! If you read `sage-doctest`, you'll see it produces a straight python file that it then executes straight using python, with IO all redirected. Get that file and run it directly, without redirecting IO. Setting `verbose` doesn't just change the IO redirection in `sage-doctest`. It also gets written into that file and hence can influence behaviour there. So with `sage -t` and `sage -t --verbose` you're really running different code. You want the code that `sage -t` generates with the IO redirection that `sage -t -verbose` does. At that point you might as well just get `sage -t` out of the way completely.
+
+If you want to help people in the future, patch `sage -t` to have a flag `--keep`, to not throw away any of the temporary files it produces, so that you can pick through the remainders.
+
+--------
+
+Using `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 16:22:57
+
+Temporary file created by sage -t on a test that fails with gdb
+
+
+---
+
+Attachment
+
+I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
+
+The original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 16:26:49
+
+Since the attachments changed, a message for the patchbots:
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 16:44:29
+
+Replying to [comment:257 nbruin]:
+> Using `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.
+
+Changing `os._exit` into `os.exit` won't work. The example `oddprime_factors.precompute(range(1,99))` seems to hang with that change.
+
+
+---
+
+Comment by nbruin created at 2012-09-07 16:50:08
+
+Replying to [comment:258 SimonKing]:
+> I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
+> 
+> The original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.
+
+But doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.
+
+
+---
+
+Comment by vbraun created at 2012-09-07 17:13:17
+
+The forked children inherit the parent `atexit` handlers, this is why we get out with `os._exit`. Calling the regular `os.exit` might delete the parent's temp files etc.
+
+
+---
+
+Comment by nbruin created at 2012-09-07 17:32:46
+
+Replying to [comment:261 nbruin]:
+> Replying to [comment:258 SimonKing]:
+> > I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
+
+That's not the entire file, so even if you run this through python and not get a SEGV, that doesn't show anything. Since the GDB problem and SEGV are likely independent, you may well have cut out the doctest that generates the SEGV (or changed the memory conditions under which it runs).
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 18:00:49
+
+Replying to [comment:261 nbruin]:
+> But doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.
+
+
+```
+bash-3.2$ ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py 
+```
+
+
+So, running it in pure python works, of course.
+
+According to the sage-doctest script, I thought that the command to run the test under gdb is as follows:
+
+```
+bash-3.2$ gdb --args ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py 
+GNU gdb 6.3.50-20050815 (Apple version gdb-1515) (Sat Jan 15 08:33:48 UTC 2011)
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin"..."/scratch/sking/sage-5.4.beta0/sage": not in executable format: File format not recognized
+
+(gdb) r
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+```
+
+So, it didn't work.
+
+What is the command to run the test in python under gdb?
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 18:02:36
+
+Replying to [comment:263 nbruin]:
+> Replying to [comment:261 nbruin]:
+> > Replying to [comment:258 SimonKing]:
+> > > I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
+> 
+> That's not the entire file
+
+Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 18:12:36
+
+Replying to [comment:264 SimonKing]:
+> {{{
+> bash-3.2$ gdb --args ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py 
+> ...
+> }}}
+Should have been
+
+```
+bash-3.2$ gdb --args ../../local/bin/python -t ~/SAGE/work/signal11/my_test_86673.py 
+```
+
+
+However, running the test won't work:
+
+```
+(gdb) r
+Starting program: /scratch/sking/sage-5.4.beta0/local/bin/python -t /Users/SimonKing/SAGE/work/signal11/my_test_86673.py
+Reading symbols for shared libraries .++++..... done
+Traceback (most recent call last):
+  File "/Users/SimonKing/SAGE/work/signal11/my_test_86673.py", line 6, in <module>
+    from sage.all_cmdline import *; 
+  File "/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/all_cmdline.py", line 14, in <module>
+    from sage.all import *
+  File "/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/all.py", line 47, in <module>
+    raise RuntimeError("To use the Sage libraries, set the environment variable SAGE_ROOT to the Sage build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib")
+RuntimeError: To use the Sage libraries, set the environment variable SAGE_ROOT to the Sage build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib
+
+Program exited with code 01.
+(gdb) 
+```
+
+
+So, it needs to be executed inside a Sage shell - but then the test fails in the exactly same way as with sage -t, which shouldn't be a surprise.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 18:16:04
+
+PS: Setting SAGE_ROOT and LD_LIBRARY_PATH as indicated by the error message did not help.
+
+
+---
+
+Comment by nbruin created at 2012-09-07 21:41:50
+
+Replying to [comment:265 SimonKing]:
+
+> Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.
+
+I did the same but got a bigger file (I'm not attaching it because with the hardcoded paths it's useless, so you have to extract it yourself anyway)
+
+```
+duke sage/5.3rc1$ wc failing_test_under_gdb.py 
+  96  283 3714 failing_test_under_gdb.py
+duke sage/5.3rc1$ wc cachefunc_3730.py 
+ 2592 10019 99307 cachefunc_3730.py
+```
+
+so I suspect that you edited it. However, if your shorter file is still capable of segfaulting, that's fine, of course.
+
+As you remark, it should be run in a sage shell:
+
+```
+duke sage/5.3rc1$ ./sage -sh
+
+Starting subshell with Sage environment variables set.  Don't forget
+to exit when you are done.  Beware:
+ * Do not do anything with other copies of Sage on your system.
+ * Do not use this for installing Sage packages using "sage -i" or for
+   running "make" at Sage's root directory.  These should be done
+   outside the Sage shell.
+
+Bypassing shell configuration files...
+
+Note: SAGE_ROOT=/usr/local/sage/5.3rc1
+> time python cachefunc_3730.py 
+5.553u 2.243s 0:10.39 74.9%	0+0k 1128+17624io 1pf+0w
+```
+
+If you do this on the machine where you get the SEGV (i.e., bsd) in the doctest,
+you should really get a SEGV from this as well. If you don't, we should probably
+start taking cosmic radiation into account as well.
+
+For running under gdb:
+
+```
+> gdb --args python -t cachefunc_3730.py
+[...runs fine...]
+```
+
+we already know that that prevents the SEGV from happening.
+
+The key is that now you have a single file, `cachefunc_3730.py` for me, but
+you'd have a different name, which you can tweak bit by bit. As we've seen,
+running `sage -t --verbose` also prevents the SEGV, so setting
+
+```
+if __name__ ==  '__main__':
+    verbose = True
+```
+
+will likely make the SEGV go away. However, you have finer control now. By
+tweaking the file bit by bit you can probably zoom in on what goes wrong. Plus,
+seeing the traceback from an unredirected stderr might already give you a hint
+of what's going wrong.
+
+My bet is that all doctests pass and that something goes wrong in `quit_sage`, where the flurry of deletions is likely double-free something or reference an invalid pointer.
+
+
+---
+
+Comment by SimonKing created at 2012-09-07 22:10:51
+
+Replying to [comment:268 nbruin]:
+> Replying to [comment:265 SimonKing]:
+> 
+> > Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.
+> 
+> I did the same but got a bigger file (I'm not attaching it because with the hardcoded paths it's useless, so you have to extract it yourself anyway)
+> {{{
+> duke sage/5.3rc1$ wc failing_test_under_gdb.py 
+>   96  283 3714 failing_test_under_gdb.py
+> duke sage/5.3rc1$ wc cachefunc_3730.py 
+>  2592 10019 99307 cachefunc_3730.py
+> }}}
+> so I suspect that you edited it. However, if your shorter file is still capable of segfaulting, that's fine, of course.
+
+As I said: It is the file from comment:251, it is _not_ cachefunc.pyx, but just a single test from cachefunc.pyx that suffices to trigger the error (which also demonstrates that it is not a side effect of other tests).
+
+> If you do this on the machine where you get the SEGV (i.e., bsd) in the doctest,
+
+Do I get SEGV? Is that a synonym of signal 11? 
+
+> For running under gdb:
+> {{{
+> > gdb --args python -t cachefunc_3730.py
+> [...runs fine...]
+> }}}
+> we already know that that prevents the SEGV from happening.
+ 
+Is it preventing it from happening? I thought we have found that some signal problem is still present for sub-processes created with p_iter_fork.
+
+
+---
+
+Comment by nbruin created at 2012-09-07 22:41:21
+
+Replying to [comment:269 SimonKing]:
+
+> Do I get SEGV? Is that a synonym of signal 11? 
+
+Ah, yes. SIGSEGV (a segmentation fault) gets communicated via a signal 11.
+
+> Is it preventing it from happening? I thought we have found that some signal problem is still present for sub-processes created with p_iter_fork.
+
+Right. But signal handlers and segfaults are only related to the extent that a segmentation fault gets communicated via a signal. So being killed because of a "signal 11" doesn't particularly indicate any problem with stray signals or signal handlers. It's probably just a plain memory fault. At this point I think there is little ground to assume the SIGABRT issues observed are related to the segmentation fault. In particular because #13437 fixes one and not the other.
+Even if there is a connection, it doesn't seem that exploring a hypothetical one is going to help much in tracing the problem. If
+
+```
+$ sage -sh
+...
+> python -t failing_test_under_gdb.py
+```
+
+is giving you a segfault, perhaps you can get that to dump core? (if I send
+`kill -11 [python process]` I get a core dumped if I unset the limit). Alternatively, perhaps
+
+```
+> sage failing_test_under_gdb.py
+```
+
+is close enough that it still segfaults. Sage installs a more useful SIGSEGV handler that at least gives you a traceback on stderr. Apparently involving gdb changes things too much to still observe the error, so from that point it's just tweaking the file and/or sage to see where the error is originating.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:15:27
+
+Replying to [comment:270 nbruin]:
+> Replying to [comment:269 SimonKing]:
+> If
+> {{{
+> $ sage -sh
+> ...
+> > python -t failing_test_under_gdb.py
+> }}}
+> is giving you a segfault,
+
+It isn't. As I stated above, with the short test file written down in comment:251 I can reproduce the failure occurring with `sage -t -gdb`, but it passes with `sage -t`. And so does its pure python version.
+
+In other words, I'll now try to get the python version of the full test of cachefunc.pyx.
+
+> perhaps you can get that to dump core? (if I send
+> `kill -11 [python process]` I get a core dumped if I unset the limit). 
+
+Could you elaborate more? By `[python process]` you mean the pid of the test, right? How can I find out the pid in the few seconds that the test takes before failing?
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:19:46
+
+Replying to [comment:271 SimonKing]:
+> In other words, I'll now try to get the python version of the full test of cachefunc.pyx.
+
+I tried to modify the function delete_tmpfiles() in sage-doctest such that the temporary files are preserved, but apparently the function is not executed. That may indicate that in fact the test framework fails, not the test.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:24:58
+
+Temporary file created by sage -t that gives signal 11
+
+
+---
+
+Attachment
+
+With [attachment:cachefunc_94107.py], I get:
+
+```
+(sage-sh) SimonKing`@`bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
+
+------------------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occurred in Sage.
+This probably occurred because a *compiled* component of Sage has a bug
+in it and is not properly wrapped with sig_on(), sig_off(). You might
+want to run Sage under gdb with 'sage -gdb' to debug this.
+Sage will now terminate.
+------------------------------------------------------------------------
+Segmentation fault
+```
+
+
+So, that looks much more expressive than what sage -t reports!
+
+However, setting ulimit -c unlimited did not result in a dumped core:
+
+```
+(sage-sh) SimonKing`@`bsd:sage$ ulimit -c unlimited
+(sage-sh) SimonKing`@`bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
+...
+Segmentation fault
+(sage-sh) SimonKing`@`bsd:sage$ ls /cores/
+(sage-sh) SimonKing`@`bsd:sage$ 
+```
+
+
+So, can you explain how I could get a core dump?
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:39:21
+
+Playing around with [attachment:cachefunc_94107.py]:
+
+`sage cachefunc_94107.py` also results in that segfault.
+
+Starting sage and then attaching cachefunc_94107.py to the interactive session, I get:
+
+```
+sage: attach ~/SAGE/work/signal11/cachefunc_94107.py
+---------------------------------------------------------------------------
+SystemExit                                Traceback (most recent call last)
+
+/scratch/sking/sage-5.4.beta0/devel/sage-main/<ipython console> in <module>()
+
+/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)
+   1646 
+   1647     if fpath.endswith('.py'):
+-> 1648         execfile(fpath, globals)
+   1649     elif fpath.endswith('.sage'):
+   1650         if (attach and attach_debug_mode) or ((not attach) and load_debug_mode):
+
+/Users/SimonKing/SAGE/work/signal11/cachefunc_94107.py in <module>()
+   2588         sys.exit(255)
+   2589     quit_sage(verbose=False)
+   2590     if runner.failures > 254:
+   2591         sys.exit(254)
+-> 2592     sys.exit(runner.failures)
+
+SystemExit: 0
+Type %exit or %quit to exit IPython (%Exit or %Quit do so unconditionally).
+sage: 
+```
+
+So, up to here, it more or less looks normal. But when I press Ctrl-D to leave the interactive session, I get:
+
+```
+Exiting Sage (CPU time 0m0.70s, Wall time 0m30.10s).
+/scratch/sking/sage-5.4.beta0/spkg/bin/sage: line 336: 97357 Segmentation fault      sage-ipython "$`@`" -i
+```
+
+The "Exiting Sage ..." is printed at the beginning of sage.all.quit_sage. Hence, it now seems that (again) leaving Sage is the problem.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:49:12
+
+Nils, I have absolutely no idea how you made messages show up in my screen session on bsd.math, and I also have no idea how to answer.
+
+What I did now: I edited the test file, so that it ends with
+
+```python
+    except BaseException, msg:
+        print "an exception has occured"
+        print msg
+        #quit_sage(verbose=False)
+        import traceback
+        traceback.print_exc(file=sys.stdout)
+        #sys.exit(255)
+    print "we would now quit, but we don't"
+    #quit_sage(verbose=False)
+    #if runner.failures > 254:
+    #    sys.exit(254)
+    #sys.exit(runner.failures)
+```
+
+Then, attaching the file and quitting sage works fine, and an exception does not occur. No idea what that means, though.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 06:55:58
+
+Sorry for the noise. The segmentation fault already occurs when doing `quit_sage()` in an interactive session, and then quits sage (which implies executing `quit_sage()` again).
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 07:12:43
+
+A question, perhaps slightly off-topic (or not?): Do we want to change quit_sage such that using it twice does not result in a segfault but only in a "harmless" error (or better: In no error at all)?
+
+I know, one is not supposed to call quit_sage() explicitly (even though it appears in the global name space of interactive sessions), but perhaps it could be made safer.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 07:21:47
+
+Ah! If one does quit_sage() in an interactive session and then quits sage, the segfault occurs in _unsafe_deallocate_pari_stack. That problem is fixed in another patch of mine, namely [at #12215](http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac12215_segfault_fixes.patch).
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 07:33:35
+
+If one replaces _unsafe_deallocate_pari_stack by `__dealloc__` (as suggested by #12215), the segfault created by manually using quit_sage() has moved to `sage.rings.integer.clear_mpz_globals()`. I guess that function has to do some checks before calling free.
+
+Anyway. With the change to pari, one still has the signal 11 problem in sage -t sage/misc/cachefunc.pyx, as before.
+
+
+---
+
+Comment by nbruin created at 2012-09-08 07:46:53
+
+I don't think that `quit_sage()` is the cause. Here's why. When I run `python cachfunc*.py` I observe that the segfault is happening during the actual doctests. In fact, it can happen in `example_27`.
+I've changed the doctests there to fail, so that non-verbose output tells me what happens:
+
+```
+...
+def example_27():       r""">>> set_random_seed(0L)
+
+>>> change_warning_output(sys.stdout)
+
+
+        Call the cached method without using the cache.
+
+        EXAMPLE::
+
+            >>> 1
+            DO WE SEE THIS?
+            >>> P = QQ['a, b, c, d']; (a, b, c, d,) = P._first_ngens(4)###line 1038:_sage_    >>> P.<a,b,c,d> = QQ[]
+            WE DO NOT SEE THIS
+...
+```
+
+When I run that, the (added) doctest fails visibly on `DO WE SEE THIS?` but the next line does not fail visibly anymore. That's not to say that that line has the bug in it. It just happens to get trapped in whatever memory corruption has happened before. So at least we know that whatever causes the corruption, it's executed before that point.
+
+The actual trigger point may not bear real information. For instance, if I edit some doctests in e.g. example_17 to fail, I do get the printed failures but no segfault at all. That is consistent with `--verbose` making the segfault not happen in a way.
+
+In any case, it seems that in an interactive session the segfault trigger gets postponed even further and only happens in `quit_sage()`. But that doesn't mean that `quit_sage()` is to blame.
+
+
+---
+
+Comment by nbruin created at 2012-09-08 08:19:27
+
+Continuing on the bisection tour: While the argument above was sound (the memory corruption must happen before the segfault), the following is a heuristic: We observed that letting a doctest print/fail early in the file prevents the segfault from happening. This could be because such a print changes the memory layout (triggers a GC or something like that) and hence the corruption that is still to come, happens in a different place and doesn't lead to a segfault. This idea seems surprisingly robust in practice: If you add failing doctests below a certain point, you have the segfault in the place pointed out above. If you add failing doctests before a certain point, no segfault happens. The hypothesis is now that the crossover point is where the corruption happens. It's in example_21:
+
+```
+...
+        This class is a pickle. However, sometimes, pickles
+        need to be pickled another time.
+
+        TEST::
+
+            >>> PF = WeylGroup(['A',Integer(3)]).pieri_factors()###line 846:_sage_    >>> PF = WeylGroup(['A',3]).pieri_factors()
+            >>> a = PF.an_element()###line 847:_sage_    >>> a = PF.an_element()
+            >>> 1
+            NOT THIS
+            >>> a.bruhat_lower_covers()###line 848:_sage_    >>> a.bruhat_lower_covers()
+...
+```
+
+With this in place, a segfault still happens. If I move the failing doctest before `PF.an_element`, we don't get a segfault. So perhaps that routine is to blame? Missing refcount increase perhaps?
+
+Once again, this is only heuristic! I have no proof. It's just that around this location, segfaulting seems to react to changes.
+
+
+---
+
+Comment by nbruin created at 2012-09-08 08:47:00
+
+
+```
+sage: PF = WeylGroup(['A',3]).pieri_factors()
+sage: %time a = PF.an_element()
+```
+
+I think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.
+
+Further desperate facts that may or may not be relevant:
+ - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
+
+ - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
+
+```
+set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])
+```
+
+Quite some entries involving "root systems" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?
+
+
+---
+
+Comment by jdemeyer created at 2012-09-08 09:10:52
+
+If you guys ever solve this problem, you really deserve some kind of medal for Debugging Excellence.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 11:10:16
+
+Replying to [comment:282 nbruin]:
+Implicated in all of this, by the way:
+> {{{
+> class WeylGroup_gens(ClearCacheOnPickle, UniqueRepresentation, MatrixGroup_gens)
+> }}}
+> Oh this is so cool.
+
+Indeed! Until not so long ago (i.e., before #11115), `ClearCacheOnPickle` was totally broken. And it is originally done for strongly cached methods. But with the patches from here, `UniqueRepresentation` has a weak cache of its `__classcall__`. That might be worth analysing - I am not sure at all whether this can possibly be a problem, because `__classcall__` is a cached_function, while `ClearCacheOnPickle` is supposed to only clear cached_method.
+
+> All our favourites in one place:
+> {{{
+> class MatrixGroup_gens(MatrixGroup_gap)
+> }}}
+> We're wrapping an interface too!
+
+:)
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 15:08:46
+
+Replying to [comment:282 nbruin]:
+> Oh sigh ... this could be such a red herring. On bsd.math, there is a huge difference between sage versions in how this piece of code behaves:
+> On `sage 5.4.beta0` (with patches):
+> {{{
+> sage: PF = WeylGroup(['A',3]).pieri_factors()
+> sage: %time a = PF.an_element()
+> CPU times: user 0.06 s, sys: 0.05 s, total: 0.11 s
+> Wall time: 43.57 s
+> }}}
+
+That's strange, but I can not confirm that timing. On bsd.math with patched 5.4.beta0:
+
+```
+sage: PF = WeylGroup(['A',3]).pieri_factors()
+sage: %time a = PF.an_element()
+CPU times: user 0.06 s, sys: 0.05 s, total: 0.11 s
+Wall time: 0.75 s
+```
+
+> We're wrapping an interface too! (that sort of explains the anomalous timing. Apparently the particular 5.4b0 build on bsd has a very bad gap?
+
+Works for me.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 16:47:48
+
+Replying to [comment:282 nbruin]:
+> The method eventually called, PF._an_element_, is a very interesting piece of work.
+
+For the record: It is the generic _an_element_, defined in sage.structure.parent.Parent.
+
+
+---
+
+Comment by nbruin created at 2012-09-08 17:21:53
+
+Replying to [comment:285 SimonKing]:
+> That's strange, but I can not confirm that timing. On bsd.math with patched 5.4.beta0:
+I cannot anymore either (I've copied your 5.4b0 on bsd). When I try it now, I get timings similar to yours. When I tried I did so repeatedly, with both sage versions.
+
+However, the triggering of the segfault still seems to be as reported: Let a doctest fail before `PF._an_element`: no segfault. Otherwise: segfault.
+
+
+---
+
+Comment by nbruin created at 2012-09-08 19:36:24
+
+OK, in principle it is possible to handle segfaults with code like:
+
+```
+import signal
+import os, sys
+import traceback
+def handler(a,frm):
+    tb=traceback.extract_stack(frm)
+    traceback.print_tb(tb,sys.stderr)
+    sys.stderr.flush()
+    os._exit(255)
+signal.signal(signal.SIGSEGV,handler)
+```
+
+Of course, with a serious corruption, it's doubtful that code can run successfully. Indeed, if we equip the doctesting script with it, we don't get useful information. It makes the script loop forever.
+
+I cannot debug on bsd because OSX wants admin credentials. However, I think it is possible to attach gdb to running processes, in which case it might be possible to poke around in the corpse a bit.
+
+See
+
+```
+bsd.math.washington.edu:/scratch/nbruin/sage-5.4.beta0/segv_handle_infinite_loop.py
+```
+
+
+I've also tried to put `gc.collect()` in the doctest. If you put it early enough in the file (either before or a bit after the `an_element` call), it prevents the segfault. If you put it right before the test where the segfault happens, the collection itself does not lead to a segfault, but a segfault still happens. This is all consistent with a corruption that happens at one point and triggers a fault somewhere else. Is there a way to put a command in the doctest that would drop us into a (python) debugger or a REPL? then we could pick through the memory and see if there's anything unsavoury.
+
+
+---
+
+Comment by SimonKing created at 2012-09-08 20:15:38
+
+I really wonder about the use of `ClearCacheOnPickle` here. Quite simply: `ClearCacheOnPickle` can not work together with a method whose pickling relies on a `__reduce__` method. It will only work for objects that are pickled via `__getstate__`.
+
+In particular, since `loads(dumps(W))` _is_ `W`, there is nothing emptied. And even when storing it on disc, the cache is not emptied:
+
+```
+sage: W = WeylGroup(['A',3])
+sage: W.cartan_type      
+Cached version of <function cartan_type at 0x10aad5398>
+sage: W.cartan_type.cache
+['A', 3]
+sage: save(W,'tmp')
+```
+
+Start new session
+
+```
+sage: W = load('tmp.sobj')
+sage: W.cartan_type.cache
+['A', 3]
+```
+
+
+Hence, it makes absolutely no sense to me that `sage.combinat.root_system.weyl_group.WeylGroup_gens` inherits from `ClearCacheOnPickle` and `UniqueRepresentation` at the same time - both bases are orthogonal. I think `ClearCacheOnPickle` should be removed here.
+
+However, as I just tested: Dropping `ClearCacheOnPickle` will not fix the signal 11.
+
+
+---
+
+Comment by nbruin created at 2012-09-09 07:05:59
+
+Oops, wrong button. I meant to reply to [comment:282] but instead I edited the text. You can still read the original under "previous". Here is the reply:
+
+```
+sage: PF = WeylGroup(['A',3]).pieri_factors()
+sage: %time a = PF.an_element()
+```
+
+I think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.
+
+Further desperate facts that may or may not be relevant:
+ - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
+
+ - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
+
+```
+set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])
+```
+
+Quite some entries involving "root systems" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?
+
+
+---
+
+Comment by jpflori created at 2012-09-09 09:15:11
+
+You mean running the complete cachefunc.pyx doctests?
+Or some stripped file?
+I could give it a try.
+
+IIRC I tried running valgrind on Simon example alone involving the cached oddprime thingy, but with the problematic range, the Valgrind output was just horrible, above 280MB...
+I then only used 1,4 as range without parrallelness (the last parameter in Simon example), but did not really find anything obvious.
+
+I'll retry to valgrind this today or tomorrow.
+
+
+---
+
+Comment by SimonKing created at 2012-09-09 10:43:20
+
+Replying to [comment:290 nbruin]:
+> Further desperate facts that may or may not be relevant:
+>  - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears.
+
+Do you really say: _Any_? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item.
+
+Hence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the "non-classical" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.
+
+
+---
+
+Comment by SimonKing created at 2012-09-09 16:18:16
+
+Replying to [comment:290 nbruin]:
+>  - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
+> ...
+> Quite some entries involving "root systems" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption.
+
+I tried to view it from the opposite direction: When feeding a value into a `TripleDict`, I stored the string representation of the value in a dictionary, indexed by the memory address of the value. And when `TripleDictEraser` was removing an item of a `TripleDict`, I wrote the string representation of the current value being deleted and its original string representation into a file.
+
+Result: When running the tests of cachefunc.pyx, it happens 122 times that `TripleDictEraser` is called. It is called on precisely two kinds of values:
+
+ 1. The value could be an action. If this is the case, then the underlying set of the action is already garbage collected, at the time when the action is removed from the `TripleDict`.
+ 2. The value could be a weak reference to a set of homomorphisms. If this is the case, then the weak reference is already dead, at the time when it is removed from the `TripleDict`.
+
+Here is the change that I applied:
+
+```diff
+diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
+--- a/sage/structure/coerce_dict.pyx
++++ b/sage/structure/coerce_dict.pyx
+`@``@` -33,7 +33,7 `@``@`
+ include "../ext/python_list.pxi"
+ 
+ from weakref import KeyedRef
+-
++tmp_dict = {}
+ ############################################
+ # The following code is responsible for
+ # removing dead references from the cache
+`@``@` -120,14 +120,21 `@``@`
+         cdef size_t h = (k1 + 13*k2 ^ 503*k3)
+         cdef list bucket = <object>PyList_GET_ITEM(self.D.buckets, h % PyList_GET_SIZE(self.D.buckets))
+         cdef int i
++        f = file('/Users/SimonKing/SAGE/work/tmp','a')
+         for i from 0 <= i < PyList_GET_SIZE(bucket) by 4:
+             if <size_t><object>PyList_GET_ITEM(bucket, i)==k1 and \
+                <size_t><object>PyList_GET_ITEM(bucket, i+1)==k2 and \
+                <size_t><object>PyList_GET_ITEM(bucket, i+2)==k3:
++                try:
++                    f.write('%s: '%repr(bucket[i+3]))
++                except BaseException,msg:
++                    f.write('%s: '%repr(msg))
++                f.write( '%s\n'%tmp_dict[id(bucket[i+3])])
+                 del bucket[i:i+4]
+                 self.D._size -= 1
+                 break
+         try:
++            f.close()
+             self.D._refcache.__delitem__((k1,k2,k3))
+         except KeyError:
+             pass
+`@``@` -451,6 +458,10 `@``@`
+         self.set(k1, k2, k3, value)
+ 
+     cdef set(self, object k1, object k2, object k3, value):
++        if getattr(value,'__module__',None)=='weakref':
++            tmp_dict[id(value)] = repr(value())
++        else:
++            tmp_dict[id(value)] = repr(value)
+         if self.threshold and self._size > len(self.buckets) * self.threshold:
+             self.resize()
+         cdef size_t h1 = <size_t><void *>k1
+```
+
+
+Unfortunately, with that change, the signal 11 is gone. After all, it is a Heisenbug...
+
+The question is: What do we learn from these data?
+
+If the underlying set of an action has already been deleted when deleting the action, then of course it would be a problem is some `__dealloc__` method would try to do something with the underlying set.
+
+
+---
+
+Comment by nbruin created at 2012-09-09 16:41:46
+
+Replying to [comment:292 SimonKing]:
+> Do you really say: _Any_? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item. 
+> Hence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the "non-classical" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.
+
+Not quite. Good suggestion! I tried to only the strongrefs that are either a Category or not, and in either case I prevented the segfault. There's a large overlap between the other keys between different entries, and if a deletion is to blame somewhere, ANY reference to that object would prevent the segfault. I concentrated on the classical use, because that involves few 3rd keys. I found the following possible non-category third keys (not looking at those that are present after sage initialization already):
+
+```
+set([False, True, <built-in function div>, <built-in function mul>,
+ None, <built-in function eq>, <built-in function add>,
+ <built-in function iadd>])
+```
+
+I tried only storing entries with one third key, for each of the above. Only `<built-in function mul>` prevents segfaulting. This doesn't say with absolute certainty that it's one of those key triples whose deletion causes the problem. It could also be that a subtle change in memory layout prevents the segfault. Anyway, the key triples in question are (only the ones added after sage init):
+
+```
+(Rational Field, <type 'int'>, <built-in function mul>)
+(Univariate Polynomial Ring in x over Rational Field, Integer Ring, <built-in function mul>)
+(Rational Field, Rational Field, <built-in function mul>)
+(Rational Field, Complex Lazy Field, <built-in function mul>)
+(Number Field in I with defining polynomial x^2 + 1, <type 'int'>, <built-in function mul>)
+(Integer Ring, Symbolic Ring, <built-in function mul>)
+(<type 'int'>, Symbolic Ring, <built-in function mul>)
+(Integer Ring, Rational Field, <built-in function mul>)
+(Symbolic Ring, <type 'int'>, <built-in function mul>)
+(<type 'float'>, Symbolic Ring, <built-in function mul>)
+(Real Field with 53 bits of precision, Rational Field, <built-in function mul>)
+(<type 'list'>, Integer Ring, <built-in function mul>)
+(Rational Field, Real Interval Field with 64 bits of precision, <built-in function mul>)
+(Real Interval Field with 64 bits of precision, <type 'int'>, <built-in function mul>)
+(Number Field in I with defining polynomial x^2 + 1, Rational Field, <built-in function mul>)
+(Rational Field, Complex Interval Field with 64 bits of precision, <built-in function mul>)
+(Multivariate Polynomial Ring in a, b, c, d over Rational Field, Rational Field, <built-in function mul>)
+(Multivariate Polynomial Ring in x, y, z over Rational Field, Rational Field, <built-in function mul>)
+(<type 'int'>, Rational Field, <built-in function mul>)
+(Ambient space of the Root system of type ['A', 3], Rational Field, <built-in function mul>)
+(Rational Field, Ambient space of the Root system of type ['A', 3], <built-in function mul>)
+(Rational Field, Root space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)
+(<type 'int'>, Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, <built-in function mul>)
+(Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Integer Ring, <built-in function mul>)
+(Integer Ring, Coroot lattice of the Root system of type ['A', 3, 1], <built-in function mul>)
+(Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)
+(Integer Ring, Weight space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)
+(Rational Field, Integer Ring, <built-in function mul>)
+(Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Vector space of dimension 4 over Rational Field, <built-in function mul>)
+(Vector space of dimension 4 over Rational Field, Rational Field, <built-in function mul>)
+(Integer Ring, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <built-in function mul>)
+(Integer Ring, Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <built-in function mul>)
+(<type 'long'>, Integer Ring, <built-in function mul>)
+```
+
+By the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. 
+
+Again, it's only _likely_ that one of these objects is involved, since not strong reffing them allows a segfault to happen. Unlikely, but not impossible, is that the mere presence of one of these objects in memory changes the location of an otherwise unrelated memory corruption. I think it's unlikely because the other tests show you can change quite a bit about what you store or not and still get a segfault.
+
+
+---
+
+Comment by nbruin created at 2012-09-09 16:51:20
+
+Replying to [comment:294 nbruin]:
+> By the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. 
+And indeed, changing the cache in `polynomial_ring_constructor.py` to be a `dict` instead of a `WeakValueDictionary` prevents the segfault.
+
+Digging a little deeper (putting `sys.stderr.write("point 2\n")` in the source), the segfault happens in `sage.rings.polynomial.polynomial_ring_constructor._multi_variate`
+
+```
+                R = MPolynomialRing_libsingular(base_ring, n, names, order)
+```
+
+In my experience, this bug is relatively robust against things done in python (apart from, strangely, letting doctests fail before a certain point). Simon's code above asks for `repr`. I imagine doing that on a libsingular object calls into libsingular (which has its own `omalloc` handled heap, right?)
+
+When I was analyzing references, I stored them wholesale in a list. Only later did I ask for string representatives. Hence, I probably avoided extra calls into libsingular.
+
+
+Digging a littler deeper still, the segfault seems to occur in `MPolynomialRing_libsingular.__init__` in the line:
+
+```
+        self._ring = singular_ring_new(base_ring, n, self._names, order)
+```
+
+which goes into `sage/libs/singular/ring. pyx`. Instrumenting the code there a bit:
+
+```
+    sys.stderr.write("before _names allocation\n")
+    _names = <char**>omAlloc0(sizeof(char*)*(len(names)))
+    sys.stderr.write("after _names allocation\n")
+
+    for i from 0 <= i < n:
+        _name = names[i]
+        sys.stderr.write("calling omStrDup for i=%s with name=%s\n"%(i,names[i])
+        _names[i] = omStrDup(_name)
+        sys.stderr.write("after omStrDup\n")
+```
+
+gives me (note that the strings to be duplicated are fine for printing!):
+
+```
+...
+after _names allocation
+calling omStrDup for i=0 with name=a
+after omStrDup
+calling omStrDup for i=1 with name=b
+
+<UNHANDLED SIGSEGV>
+```
+
+I think this strongly implicates a corruption of the omAlloc heap. Other people who know much more about singular hopefully can take over.
+
+All my files (including instrumented code) are on `bsd:/scratch/nbruin/sage-5.4.beta0`. It might be hard to work with directly, but a `hg diff` might give some useful info regarding which files are involved.
+
+One thing that helps a little bit is to guard the `omStrDup` loop with `sig_on()` and `sig_off`. The the segmentation fault gets reported as a `RuntimeError`. There are of course all kinds of doctests that fail (in particular any of the other polynomial constructions in subsequent tests fail)
+
+
+---
+
+Comment by SimonKing created at 2012-09-09 22:50:17
+
+Cc to Martin, since I suppose he knows about Singular's `omAlloc` and can comment on the problems described in comment:295.
+
+Nils: Kudos for digging to such depth!
+
+Since there is a new Singular spkg at #13237 which got merged into sage-5.4.beta0, we may check whether the segfault also occurs with the old version of Singular.
+
+
+---
+
+Comment by malb created at 2012-09-10 09:33:04
+
+Nothing immediately comes to mind, but you could try and ask [singular-devel] perhaps?
+
+
+---
+
+Comment by nbruin created at 2012-09-10 19:28:23
+
+OK, I've taken out the `omStrDup` call in `sage/libs/singular/ring.pyx` and just manually copy the strings over:
+
+```
+    for i from 0 <= i < n:
+        _name = names[i]
+        sys.stderr.write("calling omStrDup for i=%s with name=%s\n"%(i,names[i]))
+        j = 0
+        while <bint> _name[j]:
+            j+=1
+        j+=1     #increment to include the 0
+        sys.stderr.write("string length (including 0) seems to be %s\n"%j)
+        copiedname =  <char*>omAlloc(sizeof(char)*(j+perturb))
+        sys.stderr.write("Done reserving memory buffer; got address %x\n"%(<long>copiedname))
+        for 0 <= offset < j:
+            sys.stderr.write("copying character nr %s\n"%offset)
+            copiedname[offset] = _name[offset]
+        _names[i] = copiedname
+        sys.stderr.write("after omStrDup\n")
+```
+
+If I set this code with `perturb=7`, I don't get a segfault. With smaller values I do, and the segfault happens in the `omAlloc` line. Given that `j==2` for most of this code, I guess that memory blocks are at least 8 bytes (this is OSX 64bits).
+
+If `omAlloc` fails, I guess some of the internal omAlloc data structures is failing (I think the idea is that memory is managed in equal-sized blocks with just a free list on a system mAlloc-ed page). If I were to implement that, I'd store the pointers of the free block linked list in the actual blocks (hence minimum 8 byte blocks), so if anyone omAllocs an 8-byte block and then writes past it, they could ruin the linked list and likely cause a subsequent omAlloc to segfault (because the omAlloc would actually have to access the location pointed to to check if the there is a next node in the free list). Even more likely: some code decides to "zero out" a block after it's already been `omFree'd`. That could also be a double deallocation.
+
+There must be people with vast omAlloc debugging experience who have wonderful tricks to track down this kind of error. A tiny bit of instrumentation should do the trick (frequent verification of free lists, checking that a block is not already in the free list when asked to deallocate -- these are things one could easily do without changing memory layout.
+
+In the mean time, we can "fix" the segfault on bsd by allocating a little extra space for variable names. At least 9 bytes seems to do the trick. By now it's pretty clear that the real error is probably a refcounting error in sage libsingular rings, which didn't become apparent until these things actually do get deallocated.
+
+If we insist that libsingular rings behave as specified, then part of their specification is likely that they should not be deallocated. Since Volker has already put in manual refcounting, we can simply get the result by
+
+*sage/libs/singular/ring.pyx*:
+
+```diff
+     wrapped_ring = wrap_ring(_ring)
+     if wrapped_ring in ring_refcount_dict:
+         raise ValueError('newly created ring already in dictionary??')
+-    ring_refcount_dict[wrapped_ring] = 1
++    ring_refcount_dict[wrapped_ring] = 2
+     return _ring
+```
+
+Then one can make another ticket "make libsingular rings deallocatable". Given that these rings get tied into the coercion framework anyway, I think you'd be hard-pressed to find a memory regression wrt. pre-#715 sage (perhaps one would have to increase a refcount on an object one level higher, since the `ring_wrapper_Py` objects don't actually live with the _ring. They're only to do an equality test. So with this fix, I think rings would leak in the sense that the `UniqueRepresentation` type that wraps them would die without the ring dying.)
+
+I think exposing the rest of sage to mortal parents is too important to delay on a hard-to-track-down memory issue for deallocation in libsingular.
+
+
+---
+
+Comment by nbruin created at 2012-09-11 01:04:11
+
+Fix segfault on bsd
+
+
+---
+
+Attachment
+
+Nils, I find this very interesting! Note that some libsingular refcounting problem was enough to fix a segfault created by #13370, but in that case the refcounting concerned non-commutative rings - see #13145.
+
+I lost track: Did we already test whether #13145 fixes the segfault here as well?
+
+
+---
+
+Comment by SimonKing created at 2012-09-11 06:01:16
+
+I'd say: Let's try this again, with #13145 as a new dependency!
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-09-11 06:07:52
+
+Nope, doesn't help.
+
+```
+bash-3.2$ ../../sage -t sage/misc/cachefunc.pyx
+sage -t  "devel/sage-main/sage/misc/cachefunc.pyx"          
+The doctested process was killed by signal 11
+         [12.7 s]
+ 
+----------------------------------------------------------------------
+The following tests failed:
+
+
+        sage -t  "devel/sage-main/sage/misc/cachefunc.pyx" # Killed/crashed
+Total time for all tests: 12.7 seconds
+bash-3.2$ hg qa
+trac_715_combined.patch
+trac_715_local_refcache.patch
+trac_715_safer.patch
+trac_715_specification.patch
+trac_11521_homset_weakcache_combined.patch
+trac_11521_callback.patch
+13145.patch
+```
+
+and still, under gdb:
+
+```
+sage: `@`cached_function
+....: def oddprime_factors(n):
+....:     l = [p for p,e in factor(n) if p != 2]
+....:     return len(l)
+....: 
+sage: oddprime_factors.precompute(range(1,100))
+[Errno 4] Interrupted system call
+Killing any remaining workers...
+```
+
+
+
+---
+
+Comment by nbruin created at 2012-09-11 07:02:39
+
+Replying to [comment:301 SimonKing]:
+> {{{
+> sage: `@`cached_function
+> ....: def oddprime_factors(n):
+> ....:     l = [p for p,e in factor(n) if p != 2]
+> ....:     return len(l)
+> ....: 
+> sage: oddprime_factors.precompute(range(1,100))
+> [Errno 4] Interrupted system call
+> Killing any remaining workers...
+> }}}
+I firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that. Furthermore, we have already seen that we can solve this one by setting and handling SIGALRM more cleanly.
+
+
+---
+
+Comment by SimonKing created at 2012-09-11 08:12:11
+
+Replying to [comment:302 nbruin]:
+> I firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that.
+
+Sure.
+
+So, what shall we do? Do we all agree that the plan is as follows:
+
+ * The SIGALRM problem (under gdb) is solved on a different ticket already, namely #13437. So, make it a dependency.
+ * The refcounting problem that is likely to be behind the signal 11 problem (without gdb) can be temporarily worked around by using a strong cache to libsingular polynomial rings. I only wonder whether the doctests demonstrating the weak cache will still work. But it would be a chance to finally get over with #715 and #11521 and #12215 and #13370 and #12313 and #12876 and so on.
+ * A proper fix of the refcounting problem should be done on a new ticket. Nils, since you already made a deep analysis of the problem, could you create that new ticket?
+
+Here is another message to the patchbot, since I forgot to include the new patch:
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch trac_715_osx64-dealloc.patch
+
+And then #11521
+
+
+---
+
+Comment by SimonKing created at 2012-09-11 15:56:06
+
+When running sage-5.2.rc0 with patches on `OpenSuse` under gdb, I get the following:
+
+```
+sage: `@`cached_function
+....: def oddprime_factors(n):
+....:     l = [p for p,e in factor(n) if p != 2]
+....:     return len(l)
+....: 
+sage: oddprime_factors.precompute(range(1,100))
+Detaching after fork from child process 20030.
+Detaching after fork from child process 20031.
+...
+Detaching after fork from child process 20127.
+Detaching after fork from child process 20128.
+sage: 
+```
+
+
+If I understand correctly, that message comes from gdb and informs that gdb can only follow one of the two processes after forking. So, that is to be expected, right?
+
+Anyway, it is another data point, telling that the two problems we are seeing here are specific to OS X on Intel.
+
+
+---
+
+Comment by SimonKing created at 2012-09-11 15:59:16
+
+Replying to [comment:304 SimonKing]:
+> If I understand correctly, that message comes from gdb and informs that gdb can only follow one of the two processes after forking. So, that is to be expected, right?
+
+Or perhaps not:
+
+```
+simon`@`linux-sqwp:~/SAGE/prerelease/sage-5.2.rc0/devel/sage> gdb
+GNU gdb (GDB) SUSE (7.3-41.1.2)
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-suse-linux".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) show print inferior-events
+Printing of inferior events is off.
+```
+
+Anyway, I guess it doesn't help with the two problems we are facing here.
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 10:21:04
+
+The new ticket for the libsingular problem is #13450.
+
+I suggest that we use a temporary work-around, as proposed by Nils, so that we can use #715 and #11521. The work-around should be converted into a proper fix in #13450.
+
+
+---
+
+Comment by jdemeyer created at 2012-09-12 15:07:20
+
+I guess the list of patches in the description needs to be updated?
+
+
+---
+
+Comment by jdemeyer created at 2012-09-12 15:15:33
+
+*Please update the ticket description if you add patches.*
+
+Thanks.
+
+
+---
+
+Comment by nbruin created at 2012-09-12 15:22:17
+
+Replying to [comment:306 SimonKing]:
+> The new ticket for the libsingular problem is #13450.
+I think that one can be considered a duplicate of #13447
+
+Something along the lines of attachment:trac_715_osx64-dealloc.patch should work best, because then at least the permanently stored copy is available for `UniqueRepresentation` purposes (for which polynomial rings have their own weakvaluedictionary).
+
+Solving the SIGALRM issue is optional since it only occurs on one machine with gdb and I don't think we specify that sage is supposed to work perfectly under gdb on all supported platforms. A first go at the problem is at #13437 (does its job).
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 15:40:53
+
+Replying to [comment:307 jdemeyer]:
+> I guess the list of patches in the description needs to be updated?
+
+Not necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do. Mainly I wanted to let the patchbot test whether other tests break with a permanent cache (e.g., tests that were introduced in #715 or #11521). But the patchbots seems to be down, so, it doesn't make sense anyway.
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 15:44:30
+
+Replying to [comment:309 nbruin]:
+> Replying to [comment:306 SimonKing]:
+> > The new ticket for the libsingular problem is #13450.
+> I think that one can be considered a duplicate of #13447
+
+Probably. Why didn't you put me as cc? Then, I wouldn't have opened #13450.
+
+> Something along the lines of attachment:trac_715_osx64-dealloc.patch should work best,
+
+But only as a temporary workaround. In my applications, it is absolutely essential that polynomial rings can be deallocated, or the memory consumption would explode.
+
+> Solving the SIGALRM issue is optional since it only occurs on one machine with gdb and I don't think we specify that sage is supposed to work perfectly under gdb on all supported platforms. A first go at the problem is at #13437 (does its job).
+
+Agreed.
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 15:49:51
+
+Replying to [comment:310 SimonKing]:
+> Not necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do.
+
+PS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.
+
+
+---
+
+Comment by nbruin created at 2012-09-12 16:31:59
+
+Replying to [comment:312 SimonKing]:
+> PS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.
+
+Excellent! that makes you the perfect person to either find convincing evidence that #13447 is not necessary due to some silly configuration issue on `bsd.math` or push through a proper fix! :-). A side-trip to Kaiserslautern sounds like the best way to make progress.
+
+
+---
+
+Comment by jdemeyer created at 2012-09-12 18:59:38
+
+With the current patches of #715 + #11521 + #12215 + #12313, I get:
+
+```
+sage -t  -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx
+**********************************************************************
+File "/release/merger/sage-5.4.beta2/devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx", line 423:
+    sage: len(ring_refcount_dict) == n
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+```
+
+
+```
+sage -t  -force_lib devel/sage/sage/libs/singular/ring.pyx
+**********************************************************************
+File "/release/merger/sage-5.4.beta2/devel/sage-main/sage/libs/singular/ring.pyx", line 490:
+    sage: ring_ptr in ring_refcount_dict
+Expected:
+    False
+Got:
+    True
+**********************************************************************
+```
+
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 19:12:30
+
+Replying to [comment:314 jdemeyer]:
+> With the current patches of #715 + #11521 + #12215 + #12313, I get:
+
+And I guess the failing tests were introduced in one of the four tickets...
+
+
+---
+
+Comment by jdemeyer created at 2012-09-12 19:20:18
+
+I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).
+
+
+---
+
+Comment by SimonKing created at 2012-09-12 20:03:05
+
+Replying to [comment:316 jdemeyer]:
+> I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).
+
+In fact, the two tests were introduced in #11339.
+
+The tests work, because they explicitly avoid calling the polynomial ring constructor (which has a strong cache in vanilla Sage) and calls the class explicitly. Nils' patch, introduces a strong cache not in the polynomial ring constructor, but directly in the class' `__init__` method. That's why the tests break.
+
+
+---
+
+Comment by SimonKing created at 2012-09-13 11:20:41
+
+Sigh.
+
+Nils, you found that `python -t` [attachment:cachefunc_94107.py] segfaults in example_27, right? But if one deletes all tests that come _after_ example_27, the segfault vanishes.
+
+In other words, whether there is a segfault or not depends on the presence of tests that will never be executed because of the segfault.
+
+
+---
+
+Comment by SimonKing created at 2012-09-13 11:32:07
+
+There is a segfault when deleting example_1. However, if one additionally deletes any of the tests that comes after example_61, then the segfault vanishes.
+
+It seems we will not get a reasonable minimal example. Let's see if Hans Schönemann has an idea.
+
+
+---
+
+Comment by nbruin created at 2012-09-13 22:35:18
+
+Replying to [comment:318 SimonKing]:
+
+> In other words, whether there is a segfault or not depends on the presence of tests that will never be executed because of the segfault.
+
+That's assuming that the doctesting framework tests all examples *in order*. I'm not 100% positive that that's the case. When I equipped a bunch of tests with lines of the form
+
+```
+    >>> 1
+    EXAMPLE 6
+```
+
+etcetera, the segfault vanished (of course!) but I didn't see all test appear in numerical order. I guess I was just blocking that because of the severe cognitive dissonance this was causing, but your remark now makes it unavoidable to acknowledge.
+
+Indeed, reading the generated `.py` file:
+
+```
+...
+    m = sys.modules[__name__]
+...
+        runner = sagedoctest.testmod_returning_runner(m,
+...
+```
+
+so the doctestrunner gets a hold of which doctests to run by getting passed the _module_ `__main__`. At that point, it can basically only look up the runnable methods in the dictionary, so ordering is not guaranteed. It likely just extracts the doctests by the usual docstring introspecion tools.
+
+Perhaps if we equip every test with a line
+
+```
+    >>> sys.stderr.write('testing test 6\n')
+```
+
+we may might be able to see the actual order in which the examples are tested without preventing the doctest from happening. Perhaps when we establish that, we can strip out the (for us) silly doctesting layer and just have a plain python input file? Or take a guess and hope that `__main__.__dict__` is listing the tests in the order they are tested.
+
+
+---
+
+Comment by SimonKing created at 2012-09-14 10:22:26
+
+Replying to [comment:320 nbruin]:
+> Perhaps if we equip every test with a line
+> {{{
+>     >>> sys.stderr.write('testing test 6\n')
+> }}}
+> we may might be able to see the actual order in which the examples are tested without preventing the doctest from happening.
+
+<Deep sigh>
+
+I tried, and printing to sys.stderr makes the segfault disappear. However, it shows that the doctests _are_ executed in alphabetical order: ..., example_49, example_5, example_50, example_51, ..., example_67, example_7, example_8, example_9.
+
+Assuming that the same order is used when _not_ printing to stderr, we still find that the absence of a later doc test will prevent the segfault. Namely, you located the segfault in example_27, but it won't occur when deleting example_62, which comes alphabetically after example_27.
+
+
+---
+
+Comment by SimonKing created at 2012-09-15 17:56:55
+
+With Nils' work at #13447, it seems that we have a proper solution of the problem and do not need a permanent cache for polynomial rings.
+
+Hence, I am adding #13447 as a dependency.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch
+
+And then #11521
+
+
+---
+
+Comment by nbruin created at 2012-09-23 08:42:34
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by nbruin created at 2012-09-23 08:42:34
+
+Removing dependency #13447 again, because it looks like that ticket is not close to resolution. In the mean time, leaving polynomial rings immortal is not a regression compared to previous behaviour. Note that while the issue was only diagnosed on OSX, deallocation of polynomial rings indeed leads to potential write-after-free, so the osx64-dealloc patch should be applied universally.
+
+That means we're back at comment:317 and positive review. We should really get this merged. At least the libsingular interface is not worse than it was before. Proper coordination of libsingular and python memory management shouldn't hold up reclaiming of other rings.
+
+Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch trac_715_osx64-dealloc.patch
+
+
+---
+
+Comment by jdemeyer created at 2012-09-23 16:15:30
+
+SInce these tickets have caused some trouble in the past, I prefer to merge them only in a .beta0 (to maximize the testing), hence the milestone bump.
+
+
+---
+
+Attachment
+
+I combined all the patches in one patch.
+
+
+---
+
+Comment by jdemeyer created at 2012-10-17 20:59:27
+
+Resolution: fixed
+
+
+---
+
+Comment by jdemeyer created at 2012-11-03 17:35:41
+
+Sorry to bring bad news, but a trial sage-5.5.beta1 caused a Segmentation Fault in `sage/schemes/elliptic_curves/ell_number_field.py` on OS X 10.4 PPC.  Removing #715 and #11521 made the problem go away.  This really feels like a déjà vu, but I'm afraid I need to remove the patch from sage-5.5.beta0.
+
+
+---
+
+Comment by jdemeyer created at 2012-11-03 17:35:41
+
+Changing status from closed to new.
+
+
+---
+
+Comment by jdemeyer created at 2012-11-03 17:35:41
+
+Resolution changed from fixed to 
+
+
+---
+
+Comment by jdemeyer created at 2012-11-04 08:37:09
+
+Resolution: fixed
+
+
+---
+
+Comment by jdemeyer created at 2012-11-05 07:51:30
+
+sage-5.5.beta0 + #11593 gives
+
+```
+sage -t --long "devel/sage/sage/schemes/elliptic_curves/ell_number_field.py"
+The doctested process was killed by signal 11
+         [166.4 s]
+```
+
+on OS X 10.4 PPC (not on other systems as far as I know).
+
+
+---
+
+Comment by jdemeyer created at 2012-11-12 21:43:16
+
+Sigh. While testing a preliminary sage-5.5.beta2, I got again
+
+```
+sage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
+Segmentation fault (core dumped)
+```
+
+on a _different_ system as before (Linux i686) and with _different_ patches.
+
+
+---
+
+Comment by SimonKing created at 2012-11-12 22:20:56
+
+Replying to [comment:331 jdemeyer]:
+> Sigh. While testing a preliminary sage-5.5.beta2, I got again
+> {{{
+> sage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
+> Segmentation fault (core dumped)
+> }}}
+> on a _different_ system as before (Linux i686) and with _different_ patches.
+
+What does the core dump say? libsingular again, or something else?
+
+I am sorry, but recently (and at least until end of this week) I will not be able to do Sage development.
+
+
+---
+
+Comment by mjo created at 2012-11-19 03:39:49
+
+FWIW, this is happening here consistently with 5.5.rc0. Not sure if this will be useful, I compiled with my default CFLAGS:
+
+
+```
+(gdb) bt
+#0  convi (x=0x555559c55318, l=0x7ffffffec7d0) at ../src/kernel/gmp/mp.c:1288
+#1  0x00007ffff4bec01a in itostr_sign (x=<optimized out>, sx=1, 
+    len=0x7ffffffec858) at ../src/language/es.c:507
+#2  0x00007ffff4bf10b6 in str_absint (x=0x555559c55318, S=0x7ffffffecac0)
+    at ../src/language/es.c:1788
+#3  bruti_intern (g=0x555559c55318, T=<optimized out>, S=0x7ffffffecac0, 
+    addsign=1) at ../src/language/es.c:2568
+#4  0x00007ffff4bf197e in bruti_intern (g=0x555559c55348, T=0x7ffff4f4bc80, 
+    S=0x7ffffffecac0, addsign=<optimized out>) at ../src/language/es.c:2741
+#5  0x00007ffff4bf0ec4 in GENtostr_fun (out=0x7ffff4bf3d10 <bruti>, 
+    T=0x7ffff4f4bc80, x=0x555559c55348) at ../src/language/es.c:1655
+#6  GENtostr (x=0x555559c55348) at ../src/language/es.c:1661
+#7  0x00007fffeaea9d14 in gcmp_sage (y=0x55555ca84ef8, x=0x555559c55348)
+    at sage/libs/pari/misc.h:60
+#8  __pyx_f_4sage_4libs_4pari_3gen_3gen__cmp_c_impl (
+    __pyx_v_left=<optimized out>, __pyx_v_right=<optimized out>)
+    at sage/libs/pari/gen.c:9747
+#9  0x00007fffee0d7697 in __pyx_f_4sage_9structure_7element_7Element__richcmp_c_impl (__pyx_v_left=0x55555a963c58, __pyx_v_right=<optimized out>, 
+    __pyx_v_op=2) at sage/structure/element.c:8719
+#10 0x00007fffee0f48e4 in __pyx_f_4sage_9structure_7element_7Element__richcmp
+    (__pyx_v_left=0x55555a963c58, __pyx_v_right=0x55555c6f9db8, __pyx_v_op=2)
+    at sage/structure/element.c:8418
+#11 0x00007fffeaea0d1b in __pyx_pf_4sage_4libs_4pari_3gen_3gen_88__richcmp__ (
+    __pyx_v_op=<optimized out>, __pyx_v_right=<optimized out>, 
+    __pyx_v_left=<optimized out>) at sage/libs/pari/gen.c:9709
+#12 __pyx_pw_4sage_4libs_4pari_3gen_3gen_89__richcmp__ (
+    __pyx_v_left=<optimized out>, __pyx_v_right=<optimized out>, 
+    __pyx_v_op=<optimized out>) at sage/libs/pari/gen.c:9679
+#13 0x00007ffff7a705fa in try_rich_compare (v=0x55555a963c58, 
+    w=0x55555c6f9db8, op=2) at Objects/object.c:617
+#14 0x00007ffff7a7318b in try_rich_compare_bool (op=2, w=0x55555c6f9db8, 
+    v=0x55555a963c58) at Objects/object.c:645
+...
+```
+
+
+
+---
+
+Comment by jpflori created at 2012-11-19 14:22:39
+
+Ok, I can reproduce a segfault on a x86_64 system when running ell_number_field.py tests under gdb.
+The end of the backtrace is similar to what mjo posted.
+The beginning involves twisted, so it feels like the segfault happens when Sage quits, somewhere in quit_sage.
+This might be http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac12215_segfault_fixes.patch as the backtrace suggests, and removing the offending PARI deallocation suggests as well.
+
+I'll retry with the patch linked above and the other fix from #12313 for polybori.
+
+
+---
+
+Comment by jpflori created at 2012-11-19 14:32:58
+
+ell_number_field.py seems fine with the two above fixes, so I guess the easiest solution is to open tickets to include these patches alone (and not all the hard work originally targetted in #12215 and #12313), make the tickets here (#715 and #11521) and there (#12215 and #12313) depend on these "new" tickets, and relaunch the patchbots with the new set of patches.
+
+Maybe with Nils findings as well, like what is discussed at https://groups.google.com/d/topic/sage-devel/hgQLrqnCeyA/discussion
+if a patch is devised, and #13719, or keep these two for later...
+
+
+---
+
+Comment by mjo created at 2012-11-19 16:03:11
+
+The fix at #12313 is what does it for me:
+
+
+```
+$ sage -hg qapp
+trac_12313_quit_sage.patch
+$ sage -t -long ./sage/schemes/elliptic_curves/ell_number_field.py
+sage -t -long "devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py"
+	 [43.8 s]
+ 
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 43.8 seconds
+```
+
+
+
+---
+
+Comment by jpflori created at 2012-11-21 13:49:22
+
+Got a segfault in interrupt.pyx during "make ptestlong" on 5.5.rc0 plus the fixes mentioned above plus some pynac related patches.
+
+I got
+{{
+Fatal Python error: GC object already tracked
+}}
+followed by an highly uninterresting backtrace involving Python magic (from libpython itself and the Sage process and doctesting environment I guess), interrupt.so, a final call to PyTuple_New in libpython and boom (through libpthread and libcsage), but in particular nothing related to pynac, so the additional patches concerning pynac can be ruled out.
+
+
+---
+
+Comment by jpflori created at 2012-11-21 13:50:27
+
+I've not managed to reproduce it by testing interrupt.pyx alone.
+
+
+---
+
+Comment by jpflori created at 2012-11-21 15:33:48
+
+In fact I could after some other tens of iterations.
+By the way it also happened that the test timed out.
+Not sure this is related though, or present without the patches, or whatever.
+
+
+---
+
+Comment by SimonKing created at 2012-11-22 10:17:16
+
+Replying to [comment:336 mjo]:
+> The fix at #12313 is what does it for me:
+
+The next step for me is to move the pari-fix from #12313 to a separate ticket.
+
+
+---
+
+Comment by SimonKing created at 2012-11-22 10:26:22
+
+Spoke too soon. I thought you are talking about the fix that made pari be properly deallocated. But that's in a patch from #12215.
+
+So, correcting myself: The next step is to fix pari deallocation as in #12215 on a separate ticket, and then I think my priority will be #13447, which is then likely to involve the patch from #12313.
+
+
+---
+
+Comment by SimonKing created at 2012-11-22 10:38:30
+
+For the record: I created #13741, needing review (but perhaps needing a doctest).
+
+
+---
+
+Comment by jpflori created at 2012-11-22 17:33:57
+
+I've put the pbori fix from #12313 at #13746.
+I've put it as a dependency here, and #13741 because I feel this was the original problem mjo evoked although applying the other fix was sufficient to slightly modify the order ot the universe and make the problem disappear.
+
+
+---
+
+Comment by jpflori created at 2012-11-22 17:34:38
+
+As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...
+
+
+---
+
+Comment by jdemeyer created at 2012-11-23 13:28:42
+
+Replying to [comment:344 jpflori]:
+> As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...
+
+Changing dependencies is fine for me. Just don't change the patch(es).
+
+
+---
+
+Comment by jpflori created at 2012-11-29 23:06:49
+
+Did someone still have random failures?
+Or are we finally approaching the end here?
+
+
+---
+
+Comment by jpflori created at 2012-12-24 21:21:01
+
+Building Python without pymalloc, I hopefully got valgrind outputs which might point to the hopefully last problem we have to face:
+
+Not sure we got these so clearly before, but using --without-pymalloc and Valgrind (hint: finish and review #13060) I get lots of
+
+```
+==28631== Invalid read of size 8
+==28631==    at 0x10429E50: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8990)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4EBA106: insertdict (dictobject.c:530)
+==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)
+==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)
+==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)
+==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)
+==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)
+==28631==    by 0x4F24388: PyEval_EvalFrameEx (ceval.c:4718)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4E8C46F: instancemethod_call (classobject.c:2578)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F21828: PyEval_EvalFrameEx (ceval.c:4239)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F2422C: PyEval_EvalFrameEx (ceval.c:4117)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==  Address 0xbd30390 is 48 bytes inside a block of size 256 free'd
+==28631==    at 0x4C28B16: free (vg_replace_malloc.c:446)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4F5F112: collect (gcmodule.c:770)
+==28631==    by 0x4F5FB06: _PyObject_GC_Malloc (gcmodule.c:996)
+==28631==    by 0x4F5FB3C: _PyObject_GC_New (gcmodule.c:1467)
+==28631==    by 0x4E98B97: PyWrapper_New (descrobject.c:1068)
+==28631==    by 0x4EC2258: _PyObject_GenericGetAttrWithDict (object.c:1434)
+==28631==    by 0x10A6CD28: __pyx_pw_4sage_9structure_11coerce_dict_16TripleDictEraser_3__call__ (coerce_dict.c:1225)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4E7EB2D: PyObject_CallFunctionObjArgs (abstract.c:2760)
+==28631==    by 0x4EEA350: PyObject_ClearWeakRefs (weakrefobject.c:881)
+==28631==    by 0x10429E4F: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8989)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4EBA106: insertdict (dictobject.c:530)
+==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)
+==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)
+==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)
+==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)
+==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)
+```
+
+and
+
+```
+==28631== Invalid read of size 8
+==28631==    at 0x4F5FC1E: PyObject_GC_Del (gcmodule.c:210)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4EBA106: insertdict (dictobject.c:530)
+==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)
+==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)
+==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)
+==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)
+==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)
+==28631==    by 0x4F24388: PyEval_EvalFrameEx (ceval.c:4718)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4E8C46F: instancemethod_call (classobject.c:2578)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F21828: PyEval_EvalFrameEx (ceval.c:4239)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F2422C: PyEval_EvalFrameEx (ceval.c:4117)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==  Address 0xbd30360 is 0 bytes inside a block of size 256 free'd
+==28631==    at 0x4C28B16: free (vg_replace_malloc.c:446)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4F5F112: collect (gcmodule.c:770)
+==28631==    by 0x4F5FB06: _PyObject_GC_Malloc (gcmodule.c:996)
+==28631==    by 0x4F5FB3C: _PyObject_GC_New (gcmodule.c:1467)
+==28631==    by 0x4E98B97: PyWrapper_New (descrobject.c:1068)
+==28631==    by 0x4EC2258: _PyObject_GenericGetAttrWithDict (object.c:1434)
+==28631==    by 0x10A6CD28: __pyx_pw_4sage_9structure_11coerce_dict_16TripleDictEraser_3__call__ (coerce_dict.c:1225)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4E7EB2D: PyObject_CallFunctionObjArgs (abstract.c:2760)
+==28631==    by 0x4EEA350: PyObject_ClearWeakRefs (weakrefobject.c:881)
+==28631==    by 0x10429E4F: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8989)
+==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)
+==28631==    by 0x4EBA106: insertdict (dictobject.c:530)
+==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)
+==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)
+==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)
+==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4EA8F65: function_call (funcobject.c:526)
+==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)
+==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)
+==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)
+==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)
+==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)
+```
+
+
+
+---
+
+Comment by SimonKing created at 2012-12-25 19:23:15
+
+Sorry, I am not experienced enough with valgrind. I don't even know what we learn from the valgrind output. Does it tell in what function/method the invalid read occur? Does it tell what is the reason for the read being invalid? I mean: Does the read concern data that have previously been freed, or what happens?
+
+
+---
+
+Comment by vbraun created at 2012-12-25 20:55:05
+
+The first line is the error, like "Invalid read of size 8" = the code wants to read 8 bytes from a location that it is not on the stack or hasn't been malloc'ed. Then follows the stack backtrace, first the function that caused the error then the calling function etc (just like gdb).
+
+Valgrind will keep info about the most recent free's to give you a better diagnostic (this has been freed previously and you are this far into the freed space) but it won't track all frees that have ever happened (which would be prohibitive ram usage). There are some options to control this, for example
+
+```
+    --freelist-vol=<number>          volume of freed blocks queue      [20000000]
+    --freelist-big-blocks=<number>   releases first blocks with size >= [1000000]
+```
+
+see also `valgrind --help`
+
+
+---
+
+Comment by jdemeyer created at 2012-12-26 13:16:18
+
+With a trial of sage-5.6.beta2, I get the following doctest error on the Skynet machine `mark` (Solaris SPARC 32-bit):
+
+```
+sage -t  --long -force_lib devel/sage/sage/calculus/wester.py
+**********************************************************************
+File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/devel/sage-main/sage/calculus/wester.py", line 456:
+    sage: d = m.determinant()
+Exception raised:
+    Traceback (most recent call last):
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/ncadoctest.py", line 1231, in run_one_test
+        self.run_one_example(test, example, filename, compileflags)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/sagedoctest.py", line 38, in run_one_example
+        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/ncadoctest.py", line 1172, in run_one_example
+        compileflags, 1) in test.globs
+      File "<doctest __main__.example_0[153]>", line 1, in <module>
+        d = m.determinant()###line 456:
+    sage: d = m.determinant()
+      File "matrix2.pyx", line 1167, in sage.matrix.matrix2.Matrix.determinant (sage/matrix/matrix2.c:8553)
+      File "matrix_symbolic_dense.pyx", line 436, in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.charpoly (sage/matrix/matrix_symbolic_dense.c:3556)
+      File "expression.pyx", line 4911, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:23554)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py", line 1056, in polynomial
+        res = converter()
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py", line 214, in __call__
+        return self.arithmetic(ex, operator)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py", line 1010, in arithmetic
+        ops = [self(a) for a in ex.operands()]
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py", line 214, in __call__
+        return self.arithmetic(ex, operator)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py", line 1011, in arithmetic
+        return reduce(operator, ops)
+      File "element.pyx", line 1682, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:14096)
+      File "polynomial_element.pyx", line 1156, in sage.rings.polynomial.polynomial_element.Polynomial._mul_ (sage/rings/polynomial/polynomial_element.c:11992)
+      File "polynomial_element.pyx", line 6165, in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__richcmp__ (sage/rings/polynomial/polynomial_element.c:42959)
+      File "element.pyx", line 843, in sage.structure.element.Element._richcmp (sage/structure/element.c:7870)
+      File "coerce.pyx", line 854, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:7932)
+      File "coerce.pyx", line 1009, in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9483)
+      File "coerce.pyx", line 1150, in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11033)
+      File "parent.pyx", line 1974, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:13804)
+      File "parent.pyx", line 2068, in sage.structure.parent.Parent.discover_coerce_map_from (sage/structure/parent.c:14231)
+      File "parent_old.pyx", line 507, in sage.structure.parent_old.Parent._coerce_map_from_ (sage/structure/parent_old.c:6428)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/rings/polynomial/polynomial_ring.py", line 554, in _coerce_map_from_
+        return self.coerce_map_from(base_ring) * connecting
+      File "map.pyx", line 649, in sage.categories.map.Map.__mul__ (sage/categories/map.c:4578)
+      File "map.pyx", line 689, in sage.categories.map.Map._composition (sage/categories/map.c:4696)
+      File "/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/categories/homset.py", line 261, in Hom
+        _cache[key] = KeyedRef(H, _cache.eraser, (id(X),id(Y),id(category)))
+      File "coerce_dict.pyx", line 451, in sage.structure.coerce_dict.TripleDict.__setitem__ (sage/structure/coerce_dict.c:2933)
+      File "coerce_dict.pyx", line 471, in sage.structure.coerce_dict.TripleDict.set (sage/structure/coerce_dict.c:3199)
+    KeyError: (26976432, 83278464, 7649040)
+**********************************************************************
+```
+
+
+The error is reproducible, except that the numbers in the `KeyError` change.
+
+
+---
+
+Comment by jpflori created at 2012-12-26 13:23:16
+
+Thanks for the report, there is definitely something wrong with our Python refcounting and use of weakrefs.
+I'm currently investigating this using a debug build of Python.
+With it, some ref counts get negative very quickly and Sage aborts because of the assert which are now tested.
+In fact, while importing Sage, Python just has the time to:
+* create the empty set in sage/structure/parent.pyx
+* create the Mathematica interface in sage/interfaces/mathematica.pyx
+* assert fails and abort.
+
+Any idea if Sage ever worked correctly with such a build?
+I'm rebuilding a Sage 5.2 with such a build just to see.
+
+
+---
+
+Comment by jpflori created at 2012-12-26 14:04:34
+
+Bad (?) news, Sage 5.2 fails the same way.
+I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.
+
+
+---
+
+Comment by SimonKing created at 2012-12-26 14:53:45
+
+Replying to [comment:352 jpflori]:
+> Bad (?) news, Sage 5.2 fails the same way.
+> I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.
+
+It means that the debug build of Python can not (yet) be used to debug the problems introduced by this patch.
+
+I suggest that we move fixing these unrelated problems to a new ticket.
+
+However, the valgrind output suggests that there _is_ something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
+
+But is that just a guess, or has it been confirmed?
+
+
+---
+
+Comment by jpflori created at 2012-12-26 15:03:06
+
+Replying to [comment:353 SimonKing]:
+> Replying to [comment:352 jpflori]:
+> > Bad (?) news, Sage 5.2 fails the same way.
+> > I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.
+> 
+> It means that the debug build of Python can not (yet) be used to debug the problems introduced by this patch.
+If there are indeed additional problems caused by the patches here.
+> 
+> I suggest that we move fixing these unrelated problems to a new ticket.
+Agreed.
+> 
+> However, the valgrind output suggests that there _is_ something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
+Kind of, there is something wrong happening and it involves TripleDict indeed, but maybe its only a consequence of a previous problem, potentially the assert that fails when Sage starts.
+Let's say that TripleDict tries to delete some of its elements but those were already deleted because of a superfluous previous decref.
+And when Python tries to delete them again (because a final valid strong reference has been deleted), it can randomly segfault (and did not until the inclusion of these patches!).
+
+With the debug build, instead of randomly segfaulting, these spurious decref make the assert clauses abort the program.
+
+A realistic hypothesis is that the decref problems were already present but went unnoticed.
+It's only the patcehs here which make a deeper use of weakrefs that revealed these previous problems.
+And hopefully there are no other problems introduced here (frankly after staring for hours at the new TripleDict code is does not look that bad, so we can hope it is really correct).
+
+> But is that just a guess, or has it been confirmed?
+That was just a guess, kind of: what could be the more fish here? ok, it is when both domain and codomain are equal.
+
+
+---
+
+Comment by vbraun created at 2012-12-26 15:04:23
+
+The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. 
+
+Do we have a ticket and/or updated spkgs for python/singular somewhere that enable all this debugging if I compile with `SAGE_DEBUG=yes`? We should push this out into a beta first, then people can actually look at their own code and see if it does something wrong.
+
+
+---
+
+Comment by SimonKing created at 2012-12-26 15:12:08
+
+I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+
+The fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?
+
+
+---
+
+Comment by jpflori created at 2012-12-26 15:14:28
+
+Replying to [comment:355 vbraun]:
+> The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. 
+Not sure what you exactly mean.
+What I meant is that Sage was already decrefing objects too much before the patches here, so maybe we did not add anything wrong here, except that random segfaults which could already have happened before now actually do.
+> 
+> Do we have a ticket and/or updated spkgs for python/singular somewhere that enable all this debugging if I compile with `SAGE_DEBUG=yes`? We should push this out into a beta first, then people can actually look at their own code and see if it does something wrong.
+I got one for Python on my computer...
+
+I've opened #13864 (the spkg is not there yet, it will be when I attach the diff).
+
+
+---
+
+Comment by jpflori created at 2012-12-26 15:22:43
+
+Replying to [comment:356 SimonKing]:
+> I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+> 
+Was it #13447?
+> The fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?
+
+
+---
+
+Comment by SimonKing created at 2012-12-26 17:18:45
+
+Replying to [comment:358 jpflori]:
+> Replying to [comment:356 SimonKing]:
+> > I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+> > 
+> Was it #13447?
+
+Nope. It did involve groupoids, I think.
+
+
+---
+
+Comment by vbraun created at 2012-12-26 18:05:22
+
+I noticed that the `SAGE_DEBUG` documentation doesn't quite match what we are doing with it. So I proposed to change it at #13865.
+
+
+---
+
+Comment by jpflori created at 2012-12-27 09:22:00
+
+Hopefully the updated Cython 0.17.3 at #13832 might fix the last bugs we encounter.
+It indeed involves a fix concerning deallocation of weakreferable cdefed classes, see
+https://groups.google.com/d/topic/cython-users/4es75DeacRA/discussion for the release annoucement and
+https://groups.google.com/d/topic/cython-users/K5EFvq22UNI/discussion for a previous bug report.
+So the end of the story is that the intensive of weakrefs made here just revealed bugs already present in Sage but which by some chance never produced segfaults.
+
+See some comments as well on testing Sage with a pydebug enable Python at #13864 and the long thread at
+https://groups.google.com/d/topic/sage-devel/Wt7uxbDkh_A/discussion
+
+
+---
+
+Comment by jdemeyer created at 2012-12-27 23:14:55
+
+Please note #13870.
+
+
+---
+
+Comment by jdemeyer created at 2013-01-07 12:36:10
+
+More bad news: #715 + #11521 cause a significant slowdown for the command
+
+```
+sage: time p = polar_plot(lambda t: (100/(100+(t-pi/2)^8))*(2-sin(7*t)-cos(30*t)/2), -pi/4, 3*pi/2, color="red",plot_points=1000)
+```
+
+from 22 to 33 seconds. See [https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI)
+
+
+---
+
+Comment by SimonKing created at 2013-01-07 12:52:21
+
+Without #715 and friends,
+
+```
+sage: %prun p = polar_plot(lambda t: (100/(100+(t-pi/2)^8))*(2-sin(7*t)-cos(30*t)/2), -pi/4, 3*pi/2, color="red",plot_points=1000) 
+```
+
+yields
+
+```
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    88368   12.267    0.000   20.873    0.000 arith.py:1439(gcd)
+     9263    9.309    0.001   32.102    0.003 <string>:1(<lambda>)
+79788/39894    2.004    0.000    2.865    0.000 lazy_attribute.py:506(__get__)
+    39894    1.599    0.000    4.681    0.000 homset.py:296(__init__)
+    97631    1.145    0.000    1.737    0.000 arith.py:1611(lcm)
+    19950    0.961    0.000    6.910    0.000 homset.py:40(Hom)
+   185999    0.879    0.000    0.880    0.000 {method 'canonical_coercion' of 'sage.structure.coerce.CoercionModel_cache_maps' objects}
+ 8263/999    0.824    0.000   29.602    0.030 plot.py:2307(adaptive_refinement)
+    39895    0.373    0.000    1.783    0.000 {hasattr}
+   159576    0.328    0.000    0.328    0.000 {getattr}
+    14601    0.309    0.000    0.510    0.000 quotient_fields.py:55(gcd)
+    39890    0.304    0.000    5.033    0.000 homset.py:573(__init__)
+   116811    0.259    0.000    0.259    0.000 weakref.py:55(__getitem__)
+```
+
+
+With #715, it becomes
+
+```
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    89840   43.019    0.000   68.180    0.001 arith.py:1489(gcd)
+     9415   24.524    0.003   97.043    0.010 <string>:1(<lambda>)
+82004/41002    5.752    0.000    7.564    0.000 lazy_attribute.py:506(__get__)
+    41002    4.583    0.000   12.597    0.000 homset.py:353(__init__)
+    20504    4.108    0.000   19.894    0.001 homset.py:80(Hom)
+   189095    2.924    0.000    2.925    0.000 {method 'canonical_coercion' of 'sage.structure.coerce.CoercionModel_cache_maps' objects}
+    99255    2.392    0.000    3.942    0.000 arith.py:1661(lcm)
+ 8415/999    1.517    0.000   88.121    0.088 plot.py:2316(adaptive_refinement)
+   205132    1.118    0.000    1.699    0.000 weakref.py:223(__new__)
+   164064    1.088    0.000    1.088    0.000 weakref.py:228(__init__)
+    41003    0.979    0.000    5.099    0.000 {hasattr}
+   205132    0.581    0.000    0.581    0.000 {built-in method __new__ of type object at 0x7f9b33e874a0}
+   164008    0.578    0.000    0.578    0.000 {getattr}
+    40998    0.546    0.000   13.200    0.000 homset.py:630(__init__)
+   119635    0.545    0.000    0.545    0.000 weakref.py:55(__getitem__)
+    14954    0.532    0.000    0.813    0.000 quotient_fields.py:55(gcd)
+    20499    0.424    0.000    8.366    0.000 rings.py:635(__new__)
+   133072    0.394    0.000    0.394    0.000 rational_field.py:217(__hash__)
+   114209    0.370    0.000    0.370    0.000 {method 'lcm' of 'sage.structure.element.PrincipalIdealDomainElement' objects}
+    40998    0.332    0.000   13.532    0.000 homset.py:30(__init__)
+    20499    0.330    0.000    0.330    0.000 dynamic_class.py:122(dynamic_class)
+    20499    0.304    0.000    7.942    0.000 homset.py:23(RingHomset)
+   119748    0.297    0.000    0.297    0.000 {method 'gcd' of 'sage.rings.integer.Integer' objects}
+   189095    0.262    0.000    0.262    0.000 {sage.structure.element.get_coercion_model}
+    61551    0.213    0.000    0.213    0.000 {isinstance}
+    41002    0.204    0.000    5.303    0.000 sets_cat.py:255(_element_constructor_)
+        1    0.201    0.201   98.842   98.842 plot.py:2401(generate_plot_points)
+```
+
+
+So, it seems to me that the slow-down is in the creation of homsets.
+
+First question: Why are so many homsets needed in this example?
+
+Second question: What can we do to make the creation of a homset more efficient?
+
+
+---
+
+Comment by SimonKing created at 2013-01-07 12:55:27
+
+Replying to [comment:364 SimonKing]:
+> First question: Why are so many homsets needed in this example?
+
+By this, I mean "Why so many even with strong cache?"
+
+Note that #715 only involves a mild increase in the number of homsets created. But the time for creation increases dramatically.
+
+
+---
+
+Comment by cremona created at 2013-01-07 13:07:01
+
+To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets?  And why also are any gcds being computed?  Is it that for each of the values t which are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?
+
+
+---
+
+Comment by SimonKing created at 2013-01-07 13:12:53
+
+Replying to [comment:366 cremona]:
+> To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets? 
+
+And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a _strong_ cache?
+
+> And why also are any gcds being computed?  Is it that for each of the values twhich are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?
+
+I don't know. But in any case, there is a regression in the time for creating a homset. I have opened #13922 for this problem.
+
+
+---
+
+Comment by SimonKing created at 2013-01-07 13:22:51
+
+Replying to [comment:367 SimonKing]:
+> And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a _strong_ cache?
+
+PS: The category for this homset is always the same, namely the category of euclidean domains. It should definitely not happen that this homset is created more than once, even with a weak cache.

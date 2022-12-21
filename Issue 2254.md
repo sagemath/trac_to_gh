@@ -1,0 +1,178 @@
+# Issue 2254: Upgrade linbox and givaro spkg to upstream
+
+Issue created by migration from Trac.
+
+Original creator: cpernet
+
+Original creation time: 2008-02-22 03:35:34
+
+Assignee: was
+
+LinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.
+Release candidates can be found at 
+
+[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)
+
+and
+
+[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)
+
+Update sage packages with these new releases.
+
+
+---
+
+Comment by cpernet created at 2008-02-22 03:35:56
+
+Changing component from algebraic geometry to linear algebra.
+
+
+---
+
+Comment by cpernet created at 2008-02-22 03:54:06
+
+So far, I have created the 2 spkgs
+
+[http://sage.math.washington.edu/home/pernet/linbox-1.1.5.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5.spkg)
+
+and
+
+[http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg](http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg)
+
+The Givaro one seems to work correctly and doc test passes on my box.
+When I apply the linbox spkg, it makes sage crash very badly on exiting due to a segfault.
+
+
+
+```
+
+[pernet`@`john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage -gdb
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-gdb-pythonstartup
+GNU gdb 6.6-debian
+Copyright (C) 2006 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "i486-linux-gnu"...
+Using host libthread_db library "/lib/tls/i686/cmov/libthread_db.so.1".
+[Thread debugging using libthread_db enabled]
+[New Thread -1210005312 (LWP 23097)]
+Python 2.5.1 (r251:54863, Feb 21 2008, 15:06:07) 
+[GCC 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |
+| Type notebook() for the GUI, and license() for information.        |
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: exit
+Exiting SAGE (CPU time 0m0.05s, Wall time 0m2.16s).
+| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |
+| Type notebook() for the GUI, and license() for information.        |
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread -1210005312 (LWP 23097)]
+0xb7e750a3 in ?? () from /lib/tls/i686/cmov/libc.so.6
+(gdb) where
+#0  0xb7e750a3 in ?? () from /lib/tls/i686/cmov/libc.so.6
+#1  0xbfee81a8 in ?? ()
+#2  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6
+#3  0xb7e76b6e in ?? () from /lib/tls/i686/cmov/libc.so.6
+#4  0xb7f54150 in ?? () from /lib/tls/i686/cmov/libc.so.6
+#5  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6
+#6  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6
+#7  0xb7c70d81 in operator delete () from /usr/lib/libstdc++.so.6
+#8  0xb7c70ddd in operator delete[] () from /usr/lib/libstdc++.so.6
+#9  0xb5f79f33 in ~primeclass (this=0xb605d2ac) at arith.cc:96
+#10 0xb5f79f60 in __tcf_1 () at arith.cc:31
+#11 0xb7e3a594 in exit () from /lib/tls/i686/cmov/libc.so.6
+#12 0x080e80f2 in handle_system_exit () at Python/pythonrun.c:1618
+#13 0x080e82e5 in PyErr_PrintEx (set_sys_last_vars=1)
+    at Python/pythonrun.c:1062
+#14 0x080e8b03 in PyRun_SimpleFileExFlags (fp=0x0, 
+    filename=0xbfee9b21 "/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sag
+e-gdb-pythonstartup", closeit=0, flags=0xbfee8478) at Python/pythonrun.c:976
+#15 0x08059526 in Py_Main (argc=0, argv=0xbfee8544) at Modules/main.c:134
+#16 0x080587b2 in main (argc=0, argv=0x1bd1) at ./Modules/python.c:23
+(gdb) 
+```
+
+
+After several attempts with -valgrind and -gdb, I can not identify the link of these crashes the linbox spkg.
+Can someone have a look?
+
+
+---
+
+Comment by mabshoff created at 2008-02-22 04:16:33
+
+We have a double free problem (#1337) that gets triggered more or less randomly by applying patches, i.e. if you apply certain patches all the sudden the free makes Sage segfault at exit every time. What is the exact output from an empty Sage session not under gdb? Could you post the output of that?
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cpernet created at 2008-02-22 18:50:08
+
+Changing assignee from was to mabshoff.
+
+
+---
+
+Comment by cpernet created at 2008-02-22 18:50:08
+
+Changing component from linear algebra to packages.
+
+
+---
+
+Comment by cpernet created at 2008-02-22 18:50:08
+
+The output of a standard session (without gdb) is
+
+
+```
+[pernet`@`john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |
+| Type notebook() for the GUI, and license() for information.        |
+sage: exit
+Exiting SAGE (CPU time 0m0.01s, Wall time 0m1.39s).
+/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-sage: line 212: 27121 Erreur de segmentation  (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+
+```
+
+
+Let me know if there is a work around, to do in the spkg.
+
+
+---
+
+Comment by cpernet created at 2008-03-01 22:32:23
+
+The double free problem is no longer showing up.
+I have put updated version of linbox and givaro:
+[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc1.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc1.spkg)
+and
+[http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg](http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg)
+
+They are ready to be tested for integration.
+
+
+---
+
+Comment by mabshoff created at 2008-03-03 04:42:39
+
+Merged both spkgs in Sage 2.10.3.rc1
+
+
+---
+
+Comment by mabshoff created at 2008-03-03 04:42:39
+
+Resolution: fixed

@@ -1,0 +1,334 @@
+# Issue 1766: [with patch] enhancing latex embedding with plots
+
+Issue created by migration from Trac.
+
+Original creator: schilly
+
+Original creation time: 2008-01-13 22:58:57
+
+Assignee: tba
+
+This is patch for the latex_embed inside the ${SAGE_BASE}/examples directory.
+
+Now embedding plots works and makes it more usable!
+
+
+Read included README.txt for more information and open the included PDF example.pdf to see the result.
+
+
+---
+
+Comment by schilly created at 2008-01-14 00:51:02
+
+[here a zip file of the folder](http://homepage.univie.ac.at/harald.schilly/sage/latex_embed.zip)
+
+
+---
+
+Attachment
+
+ignore the .hg, it is outdated and i cannot upload the current one because of it's size
+
+
+
+* use the link above to the zip file! *
+
+
+---
+
+Comment by schilly created at 2008-01-16 22:08:44
+
+Changing type from defect to enhancement.
+
+
+---
+
+Comment by wjp created at 2008-01-16 22:23:55
+
+It might be nice to change the filenames used for plotting to .pdf instead of .png.
+This should automagically turn the included plots into vector graphics instead of bitmaps. It works for the example.tex in the .zip, but I'm not familiar enough with the plotting code to know if it has any drawbacks.
+
+
+---
+
+Comment by was created at 2008-01-17 02:06:46
+
+Plotting pdf's by default may have drawbacks -- at least last time I checked the pdf rendering for matplotlib was less mature than the png renderer.   This could be an issue in some cases.  However, of course getting vector graphics is a huge plus.
+
+
+---
+
+Comment by schilly created at 2008-01-17 11:00:45
+
+Replying to [comment:4 wjp]:
+> This should automagically turn the included plots into vector graphics instead of bitmaps. 
+
+ahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d graphs, ...) then it should be done that way. i'll try this. perhaps i'm able to make the extension customizable, then the user can select it and pdf is default. or if there are useful errors, it fallbacks from pdf to png.
+
+
+---
+
+Comment by schilly created at 2008-01-17 23:28:39
+
+I've updated the code to default to .pdf files now. Plots are fine and output-quality much better now!
+
+
+It's also possible to pass more arguments to the show command. Therefore it is possible to switch back to .png if there are problems.
+
+
+But plotting 3d-Graphs doesn't work (and has never) because the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.
+
+
+---
+
+Comment by schilly created at 2008-01-25 12:50:24
+
+Replying to [comment:7 schilly]:
+> ...the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.
+
+This is now #1925
+
+
+---
+
+Attachment
+
+patch to current version of sagetex.{sty,py}
+
+
+---
+
+Comment by ddrake created at 2008-02-25 06:00:53
+
+patch to current version of sagetex.{sty,py}
+
+
+---
+
+Attachment
+
+Please ignore the bundles! I'm still new to Mercurial.
+
+The patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.
+
+
+---
+
+Comment by ddrake created at 2008-03-03 11:22:09
+
+I've made huge improvements to the sagetex stuff. The .sty file has been rewritten and now works much better; all the previous problems have been fixed. The source code for both the .sty and .py files are bundled into a Docstrip .dtx file, which allows much better documentation.
+
+Please try this out! I'd like to get it in soon.
+
+
+---
+
+Comment by ddrake created at 2008-03-03 11:22:09
+
+Changing keywords from "" to "latex, sagetex, latex_embed".
+
+
+---
+
+Comment by dfdeshom created at 2008-03-04 03:29:12
+
+I can't apply this cleanly...
+
+```
+dfdeshom`@`sage:~/custom/sage/examples$ ../sage -hg import 1766.patch
+applying 1766.patch
+not in dirstate: latex_embed/auto/example.el!
+not in dirstate: latex_embed/auto/sagetex.el!
+```
+
+
+Should I have the above-mentioned files? in latex_embed/?
+
+
+---
+
+Comment by ddrake created at 2008-03-04 03:39:32
+
+Replying to [comment:12 dfdeshom]:
+> I can't apply this cleanly...
+...
+> Should I have the above-mentioned files? in latex_embed/?
+
+Those aren't related to the sagetex stuff; they are something that emacs makes. I deleted them since they're not directly related to sagetex (and because I'm a vim person :).
+
+At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.
+
+
+---
+
+Comment by dfdeshom created at 2008-03-04 03:50:39
+
+Replying to [comment:13 ddrake]:
+> 
+> At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.
+
+Yes, could you please redo it?
+
+
+---
+
+Comment by jason created at 2008-03-04 04:56:24
+
+This patch applies cleanly to 2.10.2 for me.
+
+Overall, I think this is great stuff!  I give this a positive review pending addressing a few concerns:
+
+ * when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?
+
+ * The patch says that E2.sobj changed.  Can we delete the file?
+
+ * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?
+
+ * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have "and others" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.
+
+That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!
+
+
+---
+
+Comment by ddrake created at 2008-03-04 06:25:10
+
+Replying to [comment:15 jason]:
+>
+>  * when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?
+
+
+This can be done, but then the only way to tell that you need to run Sage is the package warning issued at the end of running latex, which I tried to make reasonably obvious but can be missed. As it is, the missing file error looks like
+
+
+```
+! LaTeX Error: File `sage-plots-for-example.tex/plot-0' not found.
+```
+
+
+which, along with the package warning at the end of the run, is reasonably informative, and it behaves like `\includegraphics` commands.
+
+If you really want latex to run without stopping, you can always use `latex -interaction=nonstopmode`. 
+
+The current behavior seems more natural to me, but I can change it if that's the consensus. I can also have the behavior be toggle-able via a package option.
+
+ 
+>  * The patch says that E2.sobj changed.  Can we delete the file?
+
+
+Yes. It's just cruft that `example.tex` produces. It gets regenerated when you run Sage on the example.sage script.
+
+
+>  * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?
+
+
+Ah, so you couldn't be bothered to read the text, and took the easy way out? :)
+
+I changed the readme to make that a bit more obvious. Perhaps I'm just too accustomed to `.dtx` and `.ins` files -- ideally we will eventually distribute this with some processing already done, so that the prospective user can read the documentation and see the example file without doing any processing.
+
+>  * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have "and others" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.
+
+I already had some credits at the end of the documentation, but I added a line in the readme pointing to them.
+
+> That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!
+
+Sweet! I'm glad to hear that other people think this is as cool as I do.
+
+
+---
+
+Comment by ddrake created at 2008-03-04 06:45:08
+
+The current version of the patch only modifies files and adds them; this will avoid problems with missing cruft files. It addresses all of jason's concerns except for the first bullet point; I'm not sure what to do with that yet. 
+
+I do think we need to get those files out of the repo; we are version controlling `.aux` and `.log` files from LaTeX, as well as a `.pyc` file! Is it okay for me to upload bundles, or should I stick to patches? On #sage-devel it seemed like patches are preferred.
+
+
+---
+
+Comment by schilly created at 2008-03-04 23:01:50
+
+I've updated [the all-in-one zip file](http://homepage.univie.ac.at/harald.schilly/sage/latex_embed.zip). 
+
+In my opinion the README should be more detailed and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!
+
+The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.
+
+thx again to dan.
+
+
+---
+
+Comment by ddrake created at 2008-03-05 09:21:00
+
+The current version of the patch addresses [Jason's first bullet point](http://trac.sagemath.org/sage_trac/ticket/1766#comment:15): missing graphics files no longer cause an error, but they do make LaTeX issue a warning.
+
+
+---
+
+Comment by ddrake created at 2008-03-05 09:23:13
+
+Replying to [comment:18 schilly]:
+> and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!
+
+Hrm, that's odd. I don't have that behavior. But the current version deals with graphics better, so perhaps that will work for you.
+
+> The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.
+
+I agree. No extra cruft beyond the source files, except for PDFs of the documentation and the example file.
+
+
+---
+
+Comment by ddrake created at 2008-03-07 05:24:14
+
+The current version of the patch fixes a misplaced brace, and adds the imagemagick option.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by schilly created at 2008-03-13 12:03:54
+
+last words on this: [sage-devel info about SageTeX`@`CTAN](http://groups.google.com/group/sage-devel/browse_frm/thread/82f8c4a3d1bb076d).
+
+Therefore the entire latex_embed directory should be replaced by [these files](http://tug.ctan.org/tex-archive/macros/latex/contrib/sagetex/).
+
+
+---
+
+Comment by mhansen created at 2008-03-31 14:36:27
+
+Changing assignee from tba to mhansen.
+
+
+---
+
+Comment by mhansen created at 2008-03-31 14:36:27
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by mhansen created at 2008-04-14 10:09:10
+
+I've made http://sage.math.washington.edu/home/mhansen/1766.hg which replaces the current contents of examples/latex_embed with the CTAN files.
+
+
+---
+
+Comment by mabshoff created at 2008-04-15 06:35:23
+
+Merged in Sage 3.0.alpha5
+
+
+---
+
+Comment by mabshoff created at 2008-04-15 06:35:23
+
+Resolution: fixed

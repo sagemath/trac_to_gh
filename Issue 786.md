@@ -1,0 +1,29 @@
+# Issue 786: standard smith normal form
+
+Issue created by migration from Trac.
+
+Original creator: syazdani
+
+Original creation time: 2007-10-02 13:38:17
+
+Assignee: syazdani
+
+Keywords: smith_form
+
+The smith_form function for integer dense matrices are printed backward from the usual notation. This is because pari prints them backward.
+
+The enclosed patch fixes this problem, by permuting the entries appropriately.
+
+
+---
+
+Attachment
+
+The previous attachement was filled with all sorts of other changes. This should only be one function added to integer_dense function.
+
+
+---
+
+Comment by was created at 2007-10-04 18:57:02
+
+Resolution: fixed

@@ -1,0 +1,46 @@
+# Issue 1372: 2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-12-02 16:34:43
+
+Assignee: mabshoff
+
+Jaap reports on Linux FC7, 32 bit:
+
+```
+File "dokchitser.py", line 384:
+     sage: L.taylor_series(1,3)
+Expected:
+     6.2239725530250970363983975962696997888173850098274602272589e-73 + (-3.5271062035449946049211903242820246129524508593200000161038e-73)*z + 
+0.75931650028842677023019260789472201907809751649492435158581*z^2 + O(z^3)
+Got:
+     6.2239725530250970363983975962696997888173850098274602272589e-73 + (-3.5271062035449946049211903242820246129524508593201400619235e-73)*z + 
+0.75931650028842677023019260789472201907809751649492435158581*z^2 + O(z^3)
+**********************************************************************
+1 items had failures:
+    1 of   8 in __main__.example_7
+***Test Failed*** 1 failures.
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mabshoff created at 2007-12-02 22:10:27
+
+Merged in 2.8.15.rc0.
+
+
+---
+
+Comment by mabshoff created at 2007-12-02 22:10:27
+
+Resolution: fixed

@@ -1,0 +1,61 @@
+# Issue 2433: [patches coming soon] Refactor graph code; prepare for backend migration; miscellaneous small things from Waterloo
+
+Issue created by migration from Trac.
+
+Original creator: rlm
+
+Original creation time: 2008-03-09 04:50:04
+
+Assignee: rlm
+
+CC:  jason
+
+There are quite a few patches for this ticket, so I'll put them all on the ticket for easier review, but I'll also include a flattened patch, for easy merging.
+
+1. I have moved all functions that are specific to `Graph` or `DiGraph` to that class, and I have moved duplicate code into `GenericGraph`.
+
+2. In preparation for switching out the default backend for the much faster CGraphs, I have reduced the dependence on NetworkX as much as possible for the moment. For most of the rest of the functions, I have switched `G._nxg` to use `G.networkx_graph()` so that for functions where we still need to use NX, the switch won't be difficult, and we won't lose any functionality.
+
+3. In refactoring the code, and reducing duplicate code, I have combined the two plot3d options into one function, and made jmol the default, finally.
+
+4. Since I have been doing this during my visit with Godsil and Royle at Waterloo, there have been several very easy suggestions they have made which have gotten incorporated into this work as well. For example, providing much clearer aliases `num_verts` and `num_edges` for the somewhat cryptic `order` and `size` functions.
+
+5. I have fixed several documentation typos, and added several new doctests. The coverage score for `graph.py` has increased 87% -> 91%.
+
+6. The patches here are based on sage-2.10.3.rc2.
+
+
+---
+
+Comment by rlm created at 2008-03-09 05:50:04
+
+I can't actually post the patches as attachments to the trac ticket, so here are the links instead:
+
+The patches one by one, to make reviewing them easier:
+
+http://sage.math.washington.edu/home/rlmill/2433-individual_patches.tar
+
+The patches rolled into one big one, to make merging easier:
+
+http://sage.math.washington.edu/home/rlmill/2433-flat.patch
+
+
+---
+
+Comment by mhansen created at 2008-03-10 00:54:32
+
+I've gone through all of the individual patches, and they definitely look good to me.  The big patch  applied cleanly to 2.10.3.rc2 for me and all tests pass.
+
+
+---
+
+Comment by mabshoff created at 2008-03-10 03:19:44
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-03-10 03:19:44
+
+Merged in Sage 2.10.3.rc4

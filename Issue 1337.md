@@ -1,0 +1,434 @@
+# Issue 1337: tp_new leads to munmap_chunk(): invalid pointer segfault
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-11-29 09:47:19
+
+Assignee: mabshoff
+
+When compiling python `--without-pymalloc` valgrind detects the following problem:
+
+```
+==465== Invalid free() / delete / delete[]
+==465==    at 0x4A1B74A: free (vg_replace_malloc.c:320)
+==465==    by 0x43FE9A: dict_dealloc (dictobject.c:847)
+==465==    by 0x43FE9A: dict_dealloc (dictobject.c:847)
+==465==    by 0x499E5B: _PyImport_Fini (import.c:229)
+==465==    by 0x4A5D66: Py_Finalize (pythonrun.c:419)
+==465==    by 0x4A58AA: handle_system_exit (pythonrun.c:1616)
+==465==    by 0x4A5AA8: PyErr_PrintEx (pythonrun.c:1062)
+==465==    by 0x4A62B6: PyRun_SimpleFileExFlags (pythonrun.c:976)
+==465==    by 0x4120FF: Py_Main (main.c:523)
+==465==    by 0x4FD94C9: (below main) (in /lib/libc-2.3.6.so)
+==465==  Address 0x530de28 is 32 bytes inside a block of size 80
+alloc'd
+==465==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)
+==465==    by 0x4B0079: _PyObject_GC_Malloc (gcmodule.c:1321)
+==465==    by 0x454C29: PyType_GenericAlloc (typeobject.c:454)
+==465==    by 0x97622E0:
+__pyx_tp_new_4sage_9structure_7element_Element (element.c:22299)
+==465==    by 0xAC9C9DA: __pyx_tp_new_4sage_5rings_7integer_Integer
+(integer.c:19673)
+==465==    by 0x458D92: type_call (typeobject.c:422)
+==465==    by 0x415542: PyObject_Call (abstract.c:1860)
+==465==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)
+==465==    by 0xAC978B3: initinteger (integer.c:20610)
+==465==    by 0x49E17D: _PyImport_LoadDynamicModule (importdl.c:53)
+==465==    by 0x49C08D: import_submodule (import.c:2394)
+==465==    by 0x49C550: load_next (import.c:2214)
+```
+
+For the Linux PPC port this leads to the following crash on exit:
+
+```
+[mabshoff`@`localhost sage-2.8.14]$ ./sage -gdb
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+/tmp/Work/sage-2.8.14/local/bin/sage-gdb-pythonstartup
+GNU gdb Red Hat Linux (6.6-15.fc7rh)
+Copyright (C) 2006 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "ppc-redhat-linux-gnu"...
+Using host libthread_db library "/lib/libthread_db.so.1".
+[Thread debugging using libthread_db enabled]
+[New Thread 805394272 (LWP 28969)]
+Python 2.5.1 (r251:54863, Nov 28 2007, 20:22:20)
+[GCC 4.1.2 20070502 (Red Hat 4.1.2-12)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+[Detaching after fork from child process 28973. (Try `set detach-on-fork off'.)]
+| SAGE Version 2.8.14, Release Date: 2007-11-24                      |
+| Type notebook() for the GUI, and license() for information.        |
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage:
+Exiting SAGE (CPU time 0m0.11s, Wall time 0m2.50s).
+*** glibc detected *** /tmp/Work/sage-2.8.14/local/bin/python: munmap_chunk(): invalid pointer: 0x1063a200 ***
+======= Backtrace: =========
+/lib/libc.so.6(cfree+0x254)[0xfea3534]
+/tmp/Work/sage-2.8.14/local/bin/python(PyObject_Free+0x10)[0x10053080]
+/tmp/Work/sage-2.8.14/local/lib/python2.5/site-packages/sage/rings/integer.so[0xe961a88]
+/tmp/Work/sage-2.8.14/local/bin/python[0x1004b79c]
+/tmp/Work/sage-2.8.14/local/bin/python[0x1004b79c]
+/tmp/Work/sage-2.8.14/local/bin/python(_PyImport_Fini+0x90)[0x100bafa0]
+/tmp/Work/sage-2.8.14/local/bin/python(Py_Finalize+0x108)[0x100c9338]
+/tmp/Work/sage-2.8.14/local/bin/python[0x100c8d54]
+/tmp/Work/sage-2.8.14/local/bin/python(PyErr_PrintEx+0x204)[0x100c8fd4]
+/tmp/Work/sage-2.8.14/local/bin/python(PyRun_SimpleFileExFlags+0x104)[0x100c9954]
+/tmp/Work/sage-2.8.14/local/bin/python(Py_Main+0xc3c)[0x1000fb5c]
+/tmp/Work/sage-2.8.14/local/bin/python(main+0x10)[0x1000ede0]
+/lib/libc.so.6[0xfe3de0c]
+/lib/libc.so.6[0xfe3e060]
+======= Memory map: ========
+00040000-00043000 r-xp 00000000 fd:00 2183945    /lib/libkeyutils-1.2.so
+00043000-00052000 ---p 00003000 fd:00 2183945    /lib/libkeyutils-1.2.so
+00052000-00053000 rw-p 00002000 fd:00 2183945    /lib/libkeyutils-1.2.so
+00100000-00103000 r-xp 00100000 00:00 0          [vdso]
+002e0000-002e2000 r-xp 00000000 fd:00 2184053    /lib/libutil-2.6.so
+002e2000-002ff000 ---p 00002000 fd:00 2184053    /lib/libutil-2.6.so
+002ff000-00300000 r--p 0000f000 fd:00 2184053    /lib/libutil-2.6.so
+00300000-00301000 rw-p 00010000 fd:00 2184053    /lib/libutil-2.6.so
+00310000-00324000 r-xp 00000000 fd:00 2184058    /lib/libgcc_s-4.1.2-20070503.so.1
+00324000-00333000 ---p 00014000 fd:00 2184058    /lib/libgcc_s-4.1.2-20070503.so.1
+00333000-00335000 rw-p 00013000 fd:00 2184058    /lib/libgcc_s-4.1.2-20070503.so.1
+00340000-003e0000 r-xp 00000000 fd:00 1771804    /usr/lib/libkrb5.so.3.3
+003e0000-003e3000 rw-p 000a0000 fd:00 1771804    /usr/lib/libkrb5.so.3.3
+003f0000-003f9000 r-xp 00000000 fd:00 1773833    /usr/lib/libkrb5support.so.0.1
+003f9000-00408000 ---p 00009000 fd:00 1773833    /usr/lib/libkrb5support.so.0.1
+00408000-00409000 rw-p 00008000 fd:00 1773833    /usr/lib/libkrb5support.so.0.1
+004a0000-005ed000 r-xp 00000000 fd:00 2186223    /lib/libcrypto.so.0.9.8b
+005ed000-005f0000 ---p 0014d000 fd:00 2186223    /lib/libcrypto.so.0.9.8b
+005f0000-00603000 rw-p 00150000 fd:00 2186223    /lib/libcrypto.so.0.9.8b
+00603000-00606000 rw-p 00603000 00:00 0
+006c0000-007d1000 r-xp 00000000 fd:00 1770129    /usr/lib/libstdc++.so.6.0.8
+007d1000-007ec000 ---p 00111000 fd:00 1770129    /usr/lib/libstdc++.so.6.0.8
+007ec000-007f0000 r--p 0011c000 fd:00 1770129    /usr/lib/libstdc++.so.6.0.8
+007f0000-007f2000 rw-p 00120000 fd:00 1770129    /usr/lib/libstdc++.so.6.0.8
+007f2000-007f7000 rw-p 007f2000 00:00 0
+00880000-0089b000 r-xp 00000000 fd:00 2184057    /lib/libtinfo.so.5.6
+0089b000-008aa000 ---p 0001b000 fd:00 2184057    /lib/libtinfo.so.5.6
+008aa000-008ad000 rw-p 0001a000 fd:00 2184057    /lib/libtinfo.so.5.6
+008ad000-008ae000 rw-p 008ad000 00:00 0
+01000000-0104a000 r-xp 00000000 fd:00 228151     /lib/libssl.so.0.9.8b
+0104a000-01059000 ---p 0004a000 fd:00 228151     /lib/libssl.so.0.9.8b
+01059000-0105e000 rw-p 00049000 fd:00 228151     /lib/libssl.so.0.9.8b
+01930000-01961000 r-xp 00000000 fd:00 1776164    /usr/lib/libgssapi_krb5.so.2.2
+01961000-01970000 ---p 00031000 fd:00 1776164    /usr/lib/libgssapi_krb5.so.2.2
+01970000-01972000 rw-p 00030000 fd:00 1776164    /usr/lib/libgssapi_krb5.so.2.2
+01980000-01986000 r-xp 00000000 fd:00 164464     /lib/libcrypt-2.6.so
+01986000-0199f000 ---p 00006000 fd:00 164464     /lib/libcrypt-2.6.so
+0199f000-019a0000 r--p 0000f000 fd:00 164464     /lib/libcrypt-2.6.so
+019a0000-019a1000 rw-p 00010000 fd:00 164464     /lib/libcrypt-2.6.so
+019a1000-019c8000 rw-p 019a1000 00:00 0
+0bbee000-0bbf9000 r-xp 00000000 fd:00 2054868    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/ext/interactive_constructors_c.so
+0bbf9000-0bc08000 ---p 0000b000 fd:00 2054868    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/ext/interactive_constructors_c.so
+0bc08000-0bc0b000 rw-p 0000a000 fd:00 2054868    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/ext/interactive_constructors_c.so
+0bc1b000-0bc33000 r-xp 00000000 fd:00 2054887    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/probability_distribution.so
+0bc33000-0bc42000 ---p 00018000 fd:00 2054887    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/probability_distribution.so
+0bc42000-0bc45000 rw-p 00017000 fd:00 2054887    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/probability_distribution.so
+0bc55000-0bc6a000 r-xp 00000000 fd:00 2054888    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/ode.so
+0bc6a000-0bc79000 ---p 00015000 fd:00 2054888    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/ode.so
+0bc79000-0bc7d000 rw-p 00014000 fd:00 2054888    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/ode.so
+0bc8d000-0bc92000 r-xp 00000000 fd:00 2054890    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/gsl_array.so
+0bc92000-0bca1000 ---p 00005000 fd:00 2054890    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/gsl_array.so
+0bca1000-0bca2000 rw-p 00004000 fd:00 2054890    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/gsl_array.so
+0bcb2000-0bcba000 r-xp 00000000 fd:00 2054879    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/dwt.so
+0bcba000-0bcc9000 ---p 00008000 fd:00 2054879    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/dwt.so
+0bcc9000-0bccb000 rw-p 00007000 fd:00 2054879    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/dwt.so
+0bcdb000-0bce9000 r-xp 00000000 fd:00 2054876    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/fft.so
+0bce9000-0bcf8000 ---p 0000e000 fd:00 2054876    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/fft.so
+0bcf8000-0bcfa000 rw-p 0000d000 fd:00 2054876    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/gsl/fft.so
+0bd0a000-0bd14000 r-xp 00000000 fd:00 2056191    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/combinat/expnums.so
+0bd14000-0bd23000 ---p 0000a000 fd:00 2056191    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/combinat/expnums.so
+0bd23000-0bd24000 rw-p 00009000 fd:00 2056191    /tmp/Work/sage-2.8.14/devel/sage-main/build/sage/combinat/expnums.so
+0bd34000-0bd37000 r-xp 00000000 fd:00 1665673    /tmp/Work/sage-2.8.14/local/lib/python2.5/site-packages/twisted/protocols/_c_urlarg.so
+0bd37000-0bd46000 ---p 00003000 fd:00 1665673    /tmp/Work/sage-2.8.14/local/lib/python2.5/site-packages/twisted/protocols/_c_urlarg.so
+0bd46000-0bd47000 rw-p 00002000 fd:00 1665673    /tmp/Work/sage-2.8.14/local/lib/python2.5/site-packages/twisted/protocols/_c_urlarg.so
+0bd57000-0bd5b000 r-xp 00000000 fd:00 1632710    /tmp/Work/sage-2.8.14/local/lib/python2.5/lib-dynload/_heapq.so
+0bd5b000-0bd6a000 ---p 00004000 fd:00 1632710    /tmp/Work/sage-2.8.14/local/lib/python2.5/lib-dynload/_heapq.so
+0bd6a000-0bd6c000 rw-p 00003000 fd:00 1632710    /tmp/Work/sage-2.8.14/local/lib/python2.5/lib-dynload/_heapq.so
+0bd7c000-0bd81000 r-xp 00000000 fd:00 1632726    /tmp/Work/sage-2.8.
+Program received signal SIGABRT, Aborted.
+[Switching to Thread 805394272 (LWP 28969)]
+0x0fe55f10 in raise () from /lib/libc.so.6
+(gdb) bt
+#0  0x0fe55f10 in raise () from /lib/libc.so.6
+#1  0x0fe57c94 in abort () from /lib/libc.so.6
+#2  0x0fe957a4 in __libc_message () from /lib/libc.so.6
+#3  0x0fea3534 in free () from /lib/libc.so.6
+#4  0x10053080 in PyObject_Free (p=0x0) at Objects/obmalloc.c:1203
+#5  0x0e961a88 in __pyx_f_4sage_5rings_7integer_fast_tp_dealloc (__pyx_v_o=0x1063a200) at sage/rings/integer.c:18900
+#6  0x1004b79c in dict_dealloc (mp=0x10696cd0) at Objects/dictobject.c:847
+#7  0x1004b79c in dict_dealloc (mp=0x10166948) at Objects/dictobject.c:847
+#8  0x100bafa0 in _PyImport_Fini () at Python/import.c:229
+#9  0x100c9338 in Py_Finalize () at Python/pythonrun.c:419
+#10 0x100c8d54 in handle_system_exit () at Python/pythonrun.c:1616
+#11 0x100c8fd4 in PyErr_PrintEx (set_sys_last_vars=1) at Python/pythonrun.c:1062
+#12 0x100c9954 in PyRun_SimpleFileExFlags (fp=0x0,
+    filename=0x7f89ec47 "/tmp/Work/sage-2.8.14/local/bin/sage-gdb-pythonstartup", closeit=0, flags=0x7f89dbb8)
+    at Python/pythonrun.c:976
+#13 0x1000fb5c in Py_Main (argc=<value optimized out>, argv=0x7f89df04) at Modules/main.c:134
+#14 0x1000ede0 in main (argc=0, argv=0x7129) at ./Modules/python.c:23
+(gdb) quit
+```
+
+| SAGE Version 2.8.14, Release Date: 2007-11-24                      |
+| Type notebook() for the GUI, and license() for information.        |
+See also http://groups.google.com/group/sage-devel/t/e254485d2e367b20
+
+This bug did not show in 2.8.7 on the same PPC hardware under Linux.
+
+
+---
+
+Comment by mabshoff created at 2007-11-30 09:09:28
+
+Applying Robert's patch no-collect-interger.patch from 
+
+http://sage.math.washington.edu/home/mabshoff/no-collect-integer.patch
+
+prevents the issue from occurring by incrementing the refcount if the dummy int. That way it is never reaped by the garbage collector.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-11-30 09:37:18
+
+Replying to [comment:1 mabshoff]:
+> Applying Robert's patch no-collect-interger.patch from 
+> 
+> http://sage.math.washington.edu/home/mabshoff/no-collect-integer.patch
+> 
+> prevents the issue from occurring by incrementing the refcount if the dummy int. That way it is never reaped by the garbage collector.
+> 
+> Cheers,
+> 
+> Michael
+
+Oops, I messed up somehow and the patch doesn't fix the problem. 
+
+Investigating what went wrong ...
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by robertwb created at 2008-01-18 02:42:21
+
+The new version of Cython handle tp_new in a more efficient manner, try applying the above patch. 
+
+(In any case this should be applied to SAGE even if it doesn't fix the issue.)
+
+
+---
+
+Comment by mabshoff created at 2008-01-18 06:41:48
+
+Applying the patch and rebuilding all of Sage with the latest Cython (see #1801) does *not* solve the issue.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-01-22 03:37:04
+
+I merged 1337.diff into Sage 2.10.1.alpha1. Last time I checked it didn't fix the original problem, so stay tuned.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2008-01-22 05:14:14
+
+When I apply the patch I get double frees on sage.math:
+
+```
+mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 2.10.1.alpha0, Release Date: 2008-01-19               |
+| Type notebook() for the GUI, and license() for information.        |
+sage:
+Exiting SAGE (CPU time 0m0.00s, Wall time 0m1.76s).
+*** glibc detected *** double free or corruption (out): 0x0000000000e37400 ***
+/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1/local/bin/sage-sage: line 210: 31963 Aborted                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+```
+
+So I am reverting this for now.
+
+I also had to apply the no-collect-integer.patch to make the double frees go away again. This is very, very odd to say the least.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by robertwb created at 2008-01-22 07:01:55
+
+The presence, or absence, of this patch should not impact an error like this--are you sure it is due to this patch (and not some non-deterministic thing)?
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 08:01:58
+
+I am attaching a patch that should fix the issue, as the elements of the structure used by the integers were in the wrong order, but I don't have a easy way to reproduce this, so testing would be appreciated.
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 08:01:58
+
+Changing assignee from mabshoff to gfurnish.
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 08:01:58
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 08:11:49
+
+Fixed another tiny error.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 08:40:38
+
+The ZZ constructor breaks in the case of x=NULL because it was relying on broken code, patch coming up as soon as it make checks.
+
+
+---
+
+Attachment
+
+Fixed doctest issues
+
+
+---
+
+Comment by gfurnish created at 2008-02-27 10:14:18
+
+The last patch correctly solves all issues, and needs testing.  (Ignore the first one).
+
+
+---
+
+Comment by robertwb created at 2008-02-29 09:05:00
+
+It looks good to me, though I haven't ever been able to reproduce the error so someone else needs to test it. 
+
+1337.diff should be applied (though it doesn't fix the bug, but it simplifies things)
+
+integers.pyx.patch should NOT be applied (or returned integers might not have value 0)
+
+integer.pyx.patch should be applied.
+
+
+---
+
+Comment by mabshoff created at 2008-02-29 22:01:47
+
+Replying to [comment:12 robertwb]:
+> It looks good to me, though I haven't ever been able to reproduce the error so someone else needs to test it. 
+> 
+> 1337.diff should be applied (though it doesn't fix the bug, but it simplifies things)
+> 
+> integers.pyx.patch should NOT be applied (or returned integers might not have value 0)
+> 
+> integer.pyx.patch should be applied. 
+
+Can somebody please open one or two new tickets (depending if the patches do something differen), so I can merge them. Last time I tried this bug here wasn't fixed, so this way we can cleanly closed two issues.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by gfurnish created at 2008-03-01 20:29:22
+
+Move integer.pyx.patch and structure fix to 2363.
+
+
+---
+
+Comment by mabshoff created at 2008-03-01 22:46:37
+
+Robert: Can you open another ticket for the 1337.diff patch, so that it can be reviewed. Or do you think it resolves this issue?
+
+Since Gary moved integer.pyx.patch to #2363 and you gave it a positive review I transferred the positive review there, merged it and then closed the ticket.
+
+Cheers,
+
+Michael
+
+
+---
+
+Attachment
+
+double free fix (needs test all)
+
+
+---
+
+Attachment
+
+This patch introduces a workaround - but that causes leaks if the integer pool is exhausted
+
+
+---
+
+Comment by gfurnish created at 2008-03-09 05:30:36
+
+Rubber stamp positive review
+
+
+---
+
+Comment by mabshoff created at 2008-03-09 05:33:42
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-03-09 05:33:42
+
+Merged trac_1337-workaround.patch in Sage 2.10.3.rc3. The fix is a workaround, that trades a segfault for a small leak. This will be dealt with at #2435.

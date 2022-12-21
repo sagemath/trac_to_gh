@@ -1,0 +1,490 @@
+# Issue 833: new coercion model segfault (??)
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2007-10-06 03:10:24
+
+Assignee: somebody
+
+
+```
+sage: singular('2')*3
+
+
+------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occured in SAGE.
+This probably occured because a *compiled* component
+of SAGE has a bug in it (typically accessing invalid memory)
+or is not properly wrapped with _sig_on, _sig_off.
+You might want to run SAGE under gdb with 'sage -gdb' to debug this.
+SAGE will now terminate (sorry).
+------------------------------------------------------------
+
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-10-06 03:32:51
+
+I got a backtrace from sage.math:
+
+```
+(gdb) bt
+#0  0x0000000000425343 in BaseException_dealloc (self=0x2b4d4914c950) at Objects/exceptions.c:84
+#1  0x000000000043e5cb in insertdict (mp=0x65a0b0, key=0x2b4d394d53e8, hash=7943982932492106152,
+    value=0x2b4d46ae0638) at Objects/dictobject.c:412
+#2  0x000000000043ff8c in PyDict_SetItem (op=0x65a0b0, key=0x2b4d394d53e8, value=0x2b4d46ae0638)
+    at Objects/dictobject.c:637
+#3  0x000000000044008b in PyDict_SetItemString (v=0x65a0b0, key=<value optimized out>, item=0x2b4d46ae0638)
+    at Objects/dictobject.c:2178
+#4  0x0000000000483242 in PyEval_EvalFrameEx (f=0xf7e630, throwflag=<value optimized out>)
+    at Python/ceval.c:2952
+#5  0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3be908a0, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x2b4d4913aae8, argcount=1, kws=0x0, kwcount=0, defs=0x0,
+    defcount=0, closure=0x0) at Python/ceval.c:2831
+#6  0x00000000004ce528 in function_call (func=0x2b4d3c1e0488, arg=0x2b4d4913aad0, kw=0x0)
+    at Objects/funcobject.c:517
+#7  0x0000000000415523 in PyObject_Call (func=0x2b4d4914c950, arg=0x2b4d394d53e8, kw=0x0)
+    at Objects/abstract.c:1860
+#8  0x000000000041bc43 in instancemethod_call (func=<value optimized out>, arg=0x2b4d4913aad0, kw=0x0)
+    at Objects/classobject.c:2497
+#9  0x0000000000415523 in PyObject_Call (func=0x2b4d4914c950, arg=0x2b4d394d53e8, kw=0x0)
+    at Objects/abstract.c:1860
+#10 0x000000000047c851 in PyEval_CallObjectWithKeywords (func=0x2b4d497a3e10, arg=0x2b4d387ba050, kw=0x0)
+    at Python/ceval.c:3433
+#11 0x000000000045e706 in slot_tp_del (self=0x2b4d497ba4b0) at Objects/typeobject.c:4928
+#12 0x000000000045542c in subtype_dealloc (self=0x2b4d497ba4b0) at Objects/typeobject.c:664
+#13 0x00000000004cd268 in frame_dealloc (f=0xf2f9a0) at Objects/frameobject.c:416
+#14 0x00000000004ac94b in tb_dealloc (tb=0x2b4d4914cc20) at Python/traceback.c:34
+#15 0x00000000004ac957 in tb_dealloc (tb=0x2b4d46da0758) at Python/traceback.c:33
+#16 0x00000000004ac957 in tb_dealloc (tb=0x2b4d4914c950) at Python/traceback.c:33
+#17 0x00002b4d3c30770f in __Pyx_GetExcValue () at sage/structure/parent.c:6601
+#18 0x00002b4d3c315bd1 in __pyx_f_6parent_6Parent_get_action_c_impl (__pyx_v_self=0x2b4d3ebf11f0,
+    __pyx_v_S=0x2b4d3ebf2150, __pyx_v_op=0x2b4d394b76c8, __pyx_v_self_on_left=0)
+    at sage/structure/parent.c:2710
+#19 0x00002b4d3c30d398 in __pyx_f_6parent_6Parent_get_action_c (__pyx_v_self=0x2b4d3ebf11f0,
+    __pyx_v_S=0x2b4d3ebf2150, __pyx_v_op=0x2b4d394b76c8, __pyx_v_self_on_left=0)
+    at sage/structure/parent.c:1637
+#20 0x00002b4d3c6902e9 in __pyx_f_6coerce_24CoercionModel_cache_maps_discover_action_c (
+    __pyx_v_self=0x2b4d3c1d5bd8, __pyx_v_R=0x2b4d3ebf2150, __pyx_v_S=0x2b4d3ebf11f0,
+    __pyx_v_op=0x2b4d394b76c8) at sage/structure/coerce.c:5022
+#21 0x00002b4d3c68c95a in __pyx_f_6coerce_24CoercionModel_cache_maps_get_action_c (
+    __pyx_v_self=0x2b4d3c1d5bd8, __pyx_v_R=0x2b4d3ebf2150, __pyx_v_S=0x2b4d3ebf11f0,
+    __pyx_v_op=0x2b4d394b76c8) at sage/structure/coerce.c:4541
+#22 0x00002b4d3c6a0d14 in __pyx_f_6coerce_24CoercionModel_cache_maps_bin_op_c (__pyx_v_self=0x2b4d3c1d5bd8,
+    __pyx_v_x=0x2b4d497ba3c0, __pyx_v_y=0x2b4d4914e5d0, __pyx_v_op=0x2b4d394b76c8)
+    at sage/structure/coerce.c:3208
+#23 0x00002b4d3c4343e8 in __pyx_f_7element_11RingElement___mul__ (__pyx_v_self=0x2b4d497ba3c0,
+    __pyx_v_right=0x2b4d4914e5d0) at sage/structure/element.c:8006
+#24 0x0000000000415523 in PyObject_Call (func=0x2b4d4914c950, arg=0x2b4d394d53e8, kw=0x0)
+    at Objects/abstract.c:1860
+#25 0x000000000045ed65 in call_maybe (o=0x2b4d497ba3c0, name=<value optimized out>,
+    nameobj=<value optimized out>, format=0x4e642a "(O)") at Objects/typeobject.c:967
+#26 0x0000000000460703 in slot_nb_multiply (self=0x2b4d497ba3c0, other=0x2b4d4914e5d0)
+    at Objects/typeobject.c:4312
+#27 0x00000000004157ed in binary_op1 (v=0x2b4d46d83284, w=0x2b4d394d53e8, op_slot=16)
+    at Objects/abstract.c:398
+#28 0x0000000000418f28 in PyNumber_Multiply (v=0x2b4d4914c950, w=0x2b4d394d53e8) at Objects/abstract.c:669
+#29 0x000000000047f98d in PyEval_EvalFrameEx (f=0x16ccdb0, throwflag=<value optimized out>)
+    at Python/ceval.c:1072
+#30 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d4914a0a8, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0,
+    closure=0x0) at Python/ceval.c:2831
+#31 0x0000000000483cc5 in PyEval_EvalFrameEx (f=0x16d0d80, throwflag=<value optimized out>)
+    at Python/ceval.c:494
+#32 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3bbeea80, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x16c57f0, argcount=2, kws=0x16c5800, kwcount=0, defs=0x0,
+    defcount=0, closure=0x0) at Python/ceval.c:2831
+#33 0x000000000048365d in PyEval_EvalFrameEx (f=0x16c5650, throwflag=<value optimized out>)
+    at Python/ceval.c:3660
+#34 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3bbee990, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x1, argcount=3, kws=0x16c9750, kwcount=0, defs=0x2b4d3bd5d848,
+    defcount=2, closure=0x0) at Python/ceval.c:2831
+#35 0x000000000048365d in PyEval_EvalFrameEx (f=0x16c95a0, throwflag=<value optimized out>)
+    at Python/ceval.c:3660
+#36 0x000000000048403b in PyEval_EvalFrameEx (f=0x16c3ff0, throwflag=<value optimized out>)
+    at Python/ceval.c:3650
+#37 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3bbee4e0, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x16c3748, argcount=2, kws=0x16c3758, kwcount=0,
+    defs=0x2b4d3bd60b68, defcount=1, closure=0x0) at Python/ceval.c:2831
+#38 0x000000000048365d in PyEval_EvalFrameEx (f=0x16c35c0, throwflag=<value optimized out>)
+    at Python/ceval.c:3660
+#39 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3bbee378, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x7cee10, argcount=2, kws=0x7cee20, kwcount=0, defs=0x2b4d3bd60b28,
+    defcount=1, closure=0x0) at Python/ceval.c:2831
+#40 0x000000000048365d in PyEval_EvalFrameEx (f=0x7cec80, throwflag=<value optimized out>)
+    at Python/ceval.c:3660
+#41 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3b982e40, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x2, argcount=1, kws=0x6cf790, kwcount=2, defs=0x2b4d3b99c338,
+    defcount=2, closure=0x0) at Python/ceval.c:2831
+#42 0x000000000048365d in PyEval_EvalFrameEx (f=0x6cf600, throwflag=<value optimized out>)
+    at Python/ceval.c:3660
+#43 0x0000000000484f3b in PyEval_EvalCodeEx (co=0x2b4d3881b918, globals=<value optimized out>,
+    locals=<value optimized out>, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0,
+    closure=0x0) at Python/ceval.c:2831
+#44 0x00000000004851d2 in PyEval_EvalCode (co=0x2b4d4914c950, globals=0x2b4d394d53e8, locals=0x0)
+    at Python/ceval.c:494
+#45 0x00000000004a648e in PyRun_FileExFlags (fp=0x6b8030,
+    filename=0x7fff72308d43 "/tmp/Work-mabshoff/sage-2.8.5.1/local/bin/sage-gdb-pythonstartup",
+    start=<value optimized out>, globals=0x672300, locals=0x672300, closeit=0, flags=0x7fff72306400)
+    at Python/pythonrun.c:1271
+#46 0x00000000004a6720 in PyRun_SimpleFileExFlags (fp=0x6b8030,
+    filename=0x7fff72308d43 "/tmp/Work-mabshoff/sage-2.8.5.1/local/bin/sage-gdb-pythonstartup", closeit=0,
+    flags=0x7fff72306400) at Python/pythonrun.c:877
+#47 0x000000000041231a in Py_Main (argc=<value optimized out>, argv=<value optimized out>)
+    at Modules/main.c:134
+#48 0x00002b4d38d724ca in __libc_start_main () from /lib/libc.so.6
+#49 0x000000000041163a in _start () at ../sysdeps/x86_64/elf/start.S:113
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2007-10-06 06:08:38
+
+Changing assignee from somebody to robertwb.
+
+
+---
+
+Comment by was created at 2007-10-13 07:15:40
+
+This is stumping us for now! :-(
+
+
+---
+
+Comment by cwitty created at 2007-10-13 23:48:44
+
+Here's another backtrace:
+
+```
+#0  PyObject_Malloc (nbytes=34) at Objects/obmalloc.c:747
+#1  0x08093527 in PyString_FromString (str=0xb7042f24 "action.pyx")
+    at Objects/stringobject.c:130
+#2  0xb703a5c4 in __Pyx_AddTraceback (
+    funcname=0xb7042b9f "action.Action._call_c")
+    at sage/categories/action.c:4319
+#3  0xb704110d in __pyx_f_6action_6Action__call_c (__pyx_v_self=0x8b6ddac, 
+    __pyx_v_a=0x8adf054, __pyx_v_b=0x8a6b740) at sage/categories/action.c:1120
+#4  0xb7062b4c in __pyx_f_py_6coerce_17RightModuleAction___init__ (
+    __pyx_v_self=0x8b6ddac, __pyx_args=0x9655dec, __pyx_kwds=0x0)
+    at sage/structure/coerce.c:11026
+#5  0x0809ecb4 in type_call (type=0xb7071700, args=0x9655dec, kwds=0x0)
+    at Objects/typeobject.c:436
+#6  0x0805c877 in PyObject_Call (func=0x8ae8000, arg=0x9655dec, kw=0x0)
+    at Objects/abstract.c:1860
+#7  0x080c0d2c in PyEval_CallObjectWithKeywords (func=0xb7071700, 
+    arg=0x9655dec, kw=0x0) at Python/ceval.c:3433
+#8  0x0805cd20 in PyObject_CallObject (o=0xb7071700, a=0x9655dec)
+    at Objects/abstract.c:1851
+#9  0xb70d99b6 in __pyx_f_6parent_6Parent_get_action_c_impl (
+    __pyx_v_self=0xb700a36c, __pyx_v_S=0xb6ff4b24, __pyx_v_op=0xb7de426c, 
+    __pyx_v_self_on_left=1) at sage/structure/parent.c:2503
+#10 0xb70d4b9e in __pyx_f_py_6parent_6Parent_get_action_impl (
+    __pyx_v_self=0xb700a36c, __pyx_args=0x8b93e64, __pyx_kwds=0x0)
+    at sage/structure/parent.c:1790
+#11 0x0805c877 in PyObject_Call (func=0x8ae8000, arg=0x8b93e64, kw=0x0)
+    at Objects/abstract.c:1860
+#12 0x080c0d2c in PyEval_CallObjectWithKeywords (func=0x9655fcc, 
+    arg=0x8b93e64, kw=0x0) at Python/ceval.c:3433
+#13 0x0805cd20 in PyObject_CallObject (o=0x9655fcc, a=0x8b93e64)
+    at Objects/abstract.c:1851
+#14 0xb70d1cbf in __pyx_f_6parent_6Parent_get_action_c (
+    __pyx_v_self=0xb700a36c, __pyx_v_S=0xb6ff4b24, __pyx_v_op=0xb7de426c, 
+    __pyx_v_self_on_left=1) at sage/structure/parent.c:1641
+#15 0xb70563c5 in __pyx_f_6coerce_24CoercionModel_cache_maps_discover_action_c
+    (__pyx_v_self=0xb712c50c, __pyx_v_R=0xb700a36c, __pyx_v_S=0xb6ff4b24, 
+    __pyx_v_op=0xb7de426c) at sage/structure/coerce.c:6409
+#16 0xb7056805 in __pyx_f_6coerce_24CoercionModel_cache_maps_discover_action_c
+    (__pyx_v_self=0xb712c50c, __pyx_v_R=0xb700a36c, __pyx_v_S=0x8141b40, 
+    __pyx_v_op=0xb7de426c) at sage/structure/coerce.c:6933
+#17 0xb704d8d7 in __pyx_f_6coerce_24CoercionModel_cache_maps_get_action_c (
+    __pyx_v_self=0xb712c50c, __pyx_v_R=0xb700a36c, __pyx_v_S=0x8141b40, 
+    __pyx_v_op=0xb7de426c) at sage/structure/coerce.c:6261
+#18 0xb7065fab in __pyx_f_6coerce_24CoercionModel_cache_maps_bin_op_c (
+    __pyx_v_self=0xb712c50c, __pyx_v_x=0x965a20c, __pyx_v_y=0x816b088, 
+    __pyx_v_op=0xb7de426c) at sage/structure/coerce.c:4515
+#19 0xb70b1785 in __pyx_f_py_7element_11RingElement___mul__ (
+    __pyx_v_self=0x965a20c, __pyx_v_right=0x816b088)
+    at sage/structure/element.c:7603
+#20 0x0805c877 in PyObject_Call (func=0x8ae8000, arg=0xb71b2a8c, kw=0x0)
+    at Objects/abstract.c:1860
+#21 0x080a3fbe in call_maybe (o=0x965a20c, name=0x81221f9 "__mul__", 
+    nameobj=0x81621d8, format=0x812731a "(O)") at Objects/typeobject.c:967
+#22 0x080a58d7 in slot_nb_multiply (self=0x965a20c, other=0x816b088)
+    at Objects/typeobject.c:4312
+#23 0x0805ce03 in binary_op1 (v=0x965a20c, w=0xff000000, op_slot=8)
+    at Objects/abstract.c:398
+#24 0x0805e823 in PyNumber_Multiply (v=0x965a20c, w=0x816b088)
+    at Objects/abstract.c:669
+#25 0x080c3694 in PyEval_EvalFrameEx (f=0x81746d4, throwflag=0)
+    at Python/ceval.c:1072
+#26 0x080c9298 in PyEval_EvalCodeEx (co=0xb7e32f98, globals=0xb7e0eacc, 
+    locals=0xb7e0eacc, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, 
+    defcount=0, closure=0x0) at Python/ceval.c:2831
+#27 0x080c93e7 in PyEval_EvalCode (co=0xb7e32f98, globals=0xb7e0eacc, 
+    locals=0xb7e0eacc) at Python/ceval.c:494
+#28 0x080e7fd8 in PyRun_FileExFlags (fp=0x8167008, 
+    filename=0xbfdc536a "/home/cwitty/my-sage/bust.py", start=257, 
+    globals=0xb7e0eacc, locals=0xb7e0eacc, closeit=1, flags=0xbfdc4678)
+    at Python/pythonrun.c:1271
+#29 0x080e8279 in PyRun_SimpleFileExFlags (fp=0x8167008, 
+    filename=0xbfdc536a "/home/cwitty/my-sage/bust.py", closeit=1, 
+    flags=0xbfdc4678) at Python/pythonrun.c:877
+#30 0x08059265 in Py_Main (argc=1, argv=0xbfdc4744) at Modules/main.c:523
+#31 0x08058722 in main (argc=101, argv=0x2) at ./Modules/python.c:23
+```
+
+
+This is from `Starting program: /home/cwitty/pre-sage/local/bin/python /home/cwitty/my-sage/bust.py`, where bust.py is:
+
+```
+from sage.all import *
+
+singular('2') * 3
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-10-14 00:14:57
+
+Something else that is off:
+
+```
+[mabshoff`@`localhost sage-2.8.7-alpha0]$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 2.8.7-alpha0, Release Date: 2007-10-13                |
+| Type notebook() for the GUI, and license() for information.        |
+LeftModuleAction
+sage: a=Singular('2')
+sage: b=Integer(2)
+sage: type(a)
+<class 'sage.interfaces.singular.Singular'>
+sage: type(b)
+<type 'sage.rings.integer.Integer'>
+sage: a*b
+---------------------------------------------------------------------------
+<type 'exceptions.TypeError'>             Traceback (most recent call last)
+
+/tmp/Work2/sage-2.8.7-alpha0/<ipython console> in <module>()
+
+/tmp/Work2/sage-2.8.7-alpha0/element.pyx in element.RingElement.__mul__()
+
+/tmp/Work2/sage-2.8.7-alpha0/coerce.pyx in coerce.CoercionModel_cache_maps.bin_op_c()
+
+/tmp/Work2/sage-2.8.7-alpha0/coerce.pxi in coerce.parent_c()
+
+/tmp/Work2/sage-2.8.7-alpha0/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, *args)
+    870
+    871     def __call__(self, *args):
+--> 872         return self._parent.function_call(self._name, list(args))
+    873
+    874
+
+/tmp/Work2/sage-2.8.7-alpha0/local/lib/python2.5/site-packages/sage/interfaces/expect.py in function_call(self, function, args)
+    832             if not isinstance(args[i], ExpectElement):
+    833                 args[i] = self.new(args[i])
+--> 834         return self.new("%s(%s)"%(function, ",".join([s.name() for s in args])))
+    835
+    836     def call(self, function_name, *args):
+
+/tmp/Work2/sage-2.8.7-alpha0/local/lib/python2.5/site-packages/sage/interfaces/expect.py in new(self, code)
+    734
+    735     def new(self, code):
+--> 736         return self(code)
+    737
+    738     ###################################################################
+
+/tmp/Work2/sage-2.8.7-alpha0/local/lib/python2.5/site-packages/sage/interfaces/singular.py in __call__(self, x, type)
+    429             x = str(x)[1:-1]
+    430
+--> 431         return SingularElement(self, type, x, False)
+    432
+    433
+
+/tmp/Work2/sage-2.8.7-alpha0/local/lib/python2.5/site-packages/sage/interfaces/singular.py in __init__(self, parent, type, value, is_name)
+    750             except (RuntimeError, TypeError, KeyboardInterrupt), x:
+    751                 self._session_number = -1
+--> 752                 raise TypeError, x
+    753         else:
+    754             self._name = value
+
+<type 'exceptions.TypeError'>: error evaluating "def sage0=parent();":
+an integer is required
+```
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-14 00:19:44
+
+Sorry for the above noise, please disregard it.
+
+But:
+
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: a=singular('2')
+[Detaching after fork from child process 27136.]
+[Detaching after fork from child process 27137.]
+sage: b=Integer(2)
+sage: type(a)
+<class 'sage.interfaces.singular.SingularElement'>
+sage: type(b)
+<type 'sage.rings.integer.Integer'>
+sage: a*b
+LeftModuleAction
+| SAGE Version 2.8.7-alpha0, Release Date: 2007-10-13                |
+| Type notebook() for the GUI, and license() for information.        |
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread -1208269120 (LWP 27124)]
+PyObject_Malloc (nbytes=34) at Objects/obmalloc.c:747
+747     Objects/obmalloc.c: No such file or directory.
+        in Objects/obmalloc.c
+(gdb) bt
+#0  PyObject_Malloc (nbytes=34) at Objects/obmalloc.c:747
+#1  0x080911eb in PyString_FromString (str=0x96c887 "parent.pyx") at Objects/stringobject.c:130
+#2  0x0095b8c4 in __Pyx_AddTraceback (funcname=0x96c611 "parent.get_action_c_impl") at sage/structure/parent.c:7082
+#3  0x0096aa24 in __pyx_f_6parent_6Parent_get_action_c_impl (__pyx_v_self=0x8a074ec, __pyx_v_S=0x89dc714,
+    __pyx_v_op=0xb7f6378c, __pyx_v_self_on_left=1) at sage/structure/parent.c:2557
+#4  0x00961c9c in __pyx_f_py_6parent_6Parent_get_action_impl (__pyx_v_self=0x8a074ec, __pyx_args=0x9353e8c, __pyx_kwds=0x0)
+    at sage/structure/parent.c:1790
+#5  0x0805a277 in PyObject_Call (func=0x9360000, arg=0x9353e8c, kw=0x0) at Objects/abstract.c:1860
+#6  0x080be7cc in PyEval_CallObjectWithKeywords (func=0x9e5d9ec, arg=0x9353e8c, kw=0x0) at Python/ceval.c:3433
+#7  0x0805a490 in PyObject_CallObject (o=0x9e5d9ec, a=0x9353e8c) at Objects/abstract.c:1851
+#8  0x0095f90f in __pyx_f_6parent_6Parent_get_action_c (__pyx_v_self=0x8a074ec, __pyx_v_S=0x89dc714,
+    __pyx_v_op=0xb7f6378c, __pyx_v_self_on_left=1) at sage/structure/parent.c:1641
+#9  0x00a015b5 in __pyx_f_6coerce_24CoercionModel_cache_maps_discover_action_c (__pyx_v_self=0x89a26ac,
+    __pyx_v_R=0x8a074ec, __pyx_v_S=0x89dc714, __pyx_v_op=0xb7f6378c) at sage/structure/coerce.c:6409
+#10 0x009f95d7 in __pyx_f_6coerce_24CoercionModel_cache_maps_get_action_c (__pyx_v_self=0x89a26ac, __pyx_v_R=0x8a074ec,
+    __pyx_v_S=0x89dc714, __pyx_v_op=0xb7f6378c) at sage/structure/coerce.c:6261
+#11 0x00a1248f in __pyx_f_6coerce_24CoercionModel_cache_maps_bin_op_c (__pyx_v_self=0x89a26ac, __pyx_v_x=0x9df4144,
+    __pyx_v_y=0x9defe80, __pyx_v_op=0xb7f6378c) at sage/structure/coerce.c:4515
+#12 0x0099b585 in __pyx_f_py_7element_11RingElement___mul__ (__pyx_v_self=0x9df4144, __pyx_v_right=0x9defe80)
+    at sage/structure/element.c:7603
+#13 0x0805a277 in PyObject_Call (func=0x9360000, arg=0x9e5d44c, kw=0x0) at Objects/abstract.c:1860
+#14 0x080a1b50 in call_maybe (o=0x9df4144, name=0x811f71f "__mul__", nameobj=0x815f7b8, format=0x81247fa "(O)")
+    at Objects/typeobject.c:967
+#15 0x080a338a in slot_nb_multiply (self=0x9df4144, other=0x9defe80) at Objects/typeobject.c:4312
+#16 0x0805a573 in binary_op1 (v=0x9df4144, w=0xffff0000, op_slot=8) at Objects/abstract.c:398
+#17 0x0805d8f3 in PyNumber_Multiply (v=0x9df4144, w=0x9defe80) at Objects/abstract.c:669
+#18 0x080c1e7e in PyEval_EvalFrameEx (f=0x9eca184, throwflag=0) at Python/ceval.c:1072
+#19 0x080c65d5 in PyEval_EvalCodeEx (co=0x9df1920, globals=0x9de6cec, locals=0x9de6cec, args=0x0, argcount=0, kws=0x0,
+    kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#20 0x080c5852 in PyEval_EvalFrameEx (f=0x9e9af7c, throwflag=0) at Python/ceval.c:494
+#21 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7b77a40, globals=0xb7b6d824, locals=0x0, args=0x9e54e10, argcount=2,
+    kws=0x9e54e18, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#22 0x080c4a89 in PyEval_EvalFrameEx (f=0x9e54cc4, throwflag=0) at Python/ceval.c:3660
+#23 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7b779b0, globals=0xb7b6d824, locals=0x0, args=0x9e58e74, argcount=3,
+    kws=0x9e58e80, kwcount=0, defs=0x893c2d8, defcount=2, closure=0x0) at Python/ceval.c:2831
+#24 0x080c4a89 in PyEval_EvalFrameEx (f=0x9e58d2c, throwflag=0) at Python/ceval.c:3660
+---Type <return> to continue, or q <return> to quit---
+#25 0x080c57c5 in PyEval_EvalFrameEx (f=0x9e9b324, throwflag=0) at Python/ceval.c:3650
+#26 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7b77728, globals=0xb7b6d824, locals=0x0, args=0x9e547cc, argcount=2,
+    kws=0x9e547d4, kwcount=0, defs=0x893c638, defcount=1, closure=0x0) at Python/ceval.c:2831
+#27 0x080c4a89 in PyEval_EvalFrameEx (f=0x9e5468c, throwflag=0) at Python/ceval.c:3660
+#28 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7b77650, globals=0xb7b6d824, locals=0x0, args=0x88980f8, argcount=2,
+    kws=0x8898100, kwcount=0, defs=0x893c618, defcount=1, closure=0x0) at Python/ceval.c:2831
+#29 0x080c4a89 in PyEval_EvalFrameEx (f=0x8897fb4, throwflag=0) at Python/ceval.c:3660
+#30 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7bc5380, globals=0xb7bc2604, locals=0x0, args=0x87f5dfc, argcount=1,
+    kws=0x87f5e00, kwcount=2, defs=0xb7b52bb8, defcount=2, closure=0x0) at Python/ceval.c:2831
+#31 0x080c4a89 in PyEval_EvalFrameEx (f=0x87f5cc4, throwflag=0) at Python/ceval.c:3660
+#32 0x080c65d5 in PyEval_EvalCodeEx (co=0xb7f3a608, globals=0xb7f8cacc, locals=0xb7f8cacc, args=0x0, argcount=0, kws=0x0,
+    kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:2831
+#33 0x080c6647 in PyEval_EvalCode (co=0xb7f3a608, globals=0xb7f8cacc, locals=0xb7f8cacc) at Python/ceval.c:494
+#34 0x080e52c8 in PyRun_FileExFlags (fp=0x879a068,
+    filename=0xbfe45c97 "/tmp/Work2/sage-2.8.7-alpha0/local/bin/sage-gdb-pythonstartup", start=257, globals=0xb7f8cacc,
+    locals=0xb7f8cacc, closeit=0, flags=0xbfe44d58) at Python/pythonrun.c:1271
+#35 0x080e5557 in PyRun_SimpleFileExFlags (fp=0x879a068,
+    filename=0xbfe45c97 "/tmp/Work2/sage-2.8.7-alpha0/local/bin/sage-gdb-pythonstartup", closeit=0, flags=0xbfe44d58)
+    at Python/pythonrun.c:877
+#36 0x080571a6 in Py_Main (argc=0, argv=0xbfe44e24) at Modules/main.c:134
+#37 0x08056432 in main (argc=101, argv=0x2) at ./Modules/python.c:23
+(gdb)
+(gdb) quit
+The program is running.  Exit anyway? (y or n) y
+[mabshoff`@`localhost sage-2.8.7-alpha0]$                                                               
+```
+
+
+
+---
+
+Comment by cwitty created at 2007-10-14 06:55:19
+
+I think this spkg may fix the problem:
+  http://sage.math.washington.edu/home/cwitty/cython-0.9.6.7-p1.spkg
+
+Cython copies a buggy chunk of C code into target files; the bug would be triggered if the last reference to some object was through a Python traceback object, and running the  object's `__del__` method threw and caught an exception, and the next exception after the one that created the traceback object that holds the last reference to the object is caught by a Cython method.  So not very often, but it looks like the new coercion code does it.
+
+
+---
+
+Attachment
+
+This is the patch I applied to the Cython spkg (to the inner hg repository).  I'm only posting this for completeness; you want to download the spkg instead.
+
+
+---
+
+Comment by cwitty created at 2007-10-14 07:13:11
+
+Let me try to explain the bug circumstances again; this time I'll use more than one sentence.
+
+Suppose you have an object A, such that A's `__del__` method (or something it calls) raises and catches an exception.  Also suppose that the last reference to A is somehow held by a traceback object.  Now, when the traceback object gets destroyed, A's `__del__` method will get called; the exception handling in this method will involve looking at the current exception in the Python thread state.
+
+If the last reference to this traceback is in the Python thread state, and a new exception is raised and caught by Cython code, then the buggy Cython code will destroy the old traceback in an unsafe way, so that when the `__del__` method looks at the current exception it will see garbage (probably triggering a double-free).
+
+
+---
+
+Comment by mabshoff created at 2007-10-14 11:06:33
+
+The new Cython.spkg fixes the issue for me.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-14 11:50:18
+
+And on sage.math the new cython also fixes the issue.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by was created at 2007-10-14 17:26:57
+
+Yeah!  Great work guys.
+
+
+---
+
+Comment by was created at 2007-10-14 17:26:57
+
+Resolution: fixed

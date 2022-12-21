@@ -1,0 +1,137 @@
+# Issue 1024: small memleak in matrix_rational_sparse_mpq_vector_set_entry
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-10-28 20:03:16
+
+Assignee: mabshoff
+
+Running
+
+```
+get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()
+```
+
+leads to the following leaks:
+
+```
+==15486== 40 bytes in 5 blocks are definitely lost in loss record 225 of 2,524
+==15486==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)
+==15486==    by 0x610B9C1: __gmpq_init (in /tmp/Work-mabshoff/sage-2.8.10.alpha1/local/lib/libgmp.so.3.4.1)
+==15486==    by 0x1372095A: __pyx_f_4sage_6matrix_22matrix_rational_sparse_allocate_mpq_vector (matrix_rational_sparse.c:490
+6)
+==15486==    by 0x13721A10: __pyx_f_4sage_6matrix_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:59
+13)
+==15486==    by 0x137254BB: __pyx_f_4sage_6matrix_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_ratio
+nal_sparse.c:7613)
+==15486==    by 0x1178C506: __pyx_f_4sage_6matrix_7matrix0_6Matrix___setitem__ (matrix0.c:1994)
+==15486==    by 0x117AFA8C: __pyx_mp_ass_subscript_4sage_6matrix_7matrix0_Matrix (matrix0.c:10011)
+==15486==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)
+==15486==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==15486==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==15486==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==15486==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==15486==
+==15486==
+==15486== 40 bytes in 5 blocks are definitely lost in loss record 226 of 2,524
+==15486==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)
+==15486==    by 0x610B9A6: __gmpq_init (in /tmp/Work-mabshoff/sage-2.8.10.alpha1/local/lib/libgmp.so.3.4.1)
+==15486==    by 0x1372095A: __pyx_f_4sage_6matrix_22matrix_rational_sparse_allocate_mpq_vector (matrix_rational_sparse.c:490
+6)
+==15486==    by 0x13721A10: __pyx_f_4sage_6matrix_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:59
+13)
+==15486==    by 0x137254BB: __pyx_f_4sage_6matrix_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_ratio
+nal_sparse.c:7613)
+==15486==    by 0x1178C506: __pyx_f_4sage_6matrix_7matrix0_6Matrix___setitem__ (matrix0.c:1994)
+==15486==    by 0x117AFA8C: __pyx_mp_ass_subscript_4sage_6matrix_7matrix0_Matrix (matrix0.c:10011)
+==15486==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)
+==15486==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==15486==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==15486==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==15486==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+```
+
+Omega tells us:
+
+```
+==840== Loss Record 536: Leaked 40 (0x28) bytes in 5 blocks
+==840==    at 0x4A1ADDA: free (vg_replace_malloc.c:320)
+==840==    by 0x1331E974: __pyx_f_4sage_6matrix_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:5839)
+==840==    by 0x133224BB: __pyx_f_4sage_6matrix_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_rational_sparse.c:7613)
+==840==    by 0x11389506: __pyx_f_4sage_6matrix_7matrix0_6Matrix___setitem__ (matrix0.c:1994)
+==840==    by 0x113ACA8C: __pyx_mp_ass_subscript_4sage_6matrix_7matrix0_Matrix (matrix0.c:10011)
+==840==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)
+==840==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==840==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==840==  Blocks allocated
+==840==    at 0x4A1B1C5: malloc (vg_replace_malloc.c:207)
+==840==    by 0x61089C1: __gmpq_init (in /tmp/Work-mabshoff/sage-2.8.10.alpha1/local/lib/libgmp.so.3.4.1)
+==840==    by 0x1331D95A: __pyx_f_4sage_6matrix_22matrix_rational_sparse_allocate_mpq_vector (matrix_rational_sparse.c:4906)
+==840==    by 0x1331EA10: __pyx_f_4sage_6matrix_22matrix_rational_sparse_mpq_vector_set_entry (matrix_rational_sparse.c:5913)
+==840==    by 0x133224BB: __pyx_f_4sage_6matrix_22matrix_rational_sparse_22Matrix_rational_sparse_set_unsafe (matrix_rational_sparse.c:7613)
+==840==    by 0x11389506: __pyx_f_4sage_6matrix_7matrix0_6Matrix___setitem__ (matrix0.c:1994)
+==840==    by 0x113ACA8C: __pyx_mp_ass_subscript_4sage_6matrix_7matrix0_Matrix (matrix0.c:10011)
+==840==    by 0x47F046: PyEval_EvalFrameEx (ceval.c:1497)
+==840==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)
+==840==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+==840==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)
+```
+
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-10-28 20:06:06
+
+Changing status from new to assigned.
+
+
+---
+
+Attachment
+
+Before the patch:
+
+```
+==15486== LEAK SUMMARY:
+==15486==    definitely lost: 3,945 bytes in 127 blocks.
+==15486==    indirectly lost: 27,744 bytes in 132 blocks.
+==15486==      possibly lost: 467,222 bytes in 875 blocks.
+==15486==    still reachable: 58,288,646 bytes in 841,344 blocks.
+==15486==         suppressed: 0 bytes in 0 blocks.
+```
+
+After the patch:
+
+```
+==15692== LEAK SUMMARY:
+==15692==    definitely lost: 3,865 bytes in 117 blocks.
+==15692==    indirectly lost: 129,896 bytes in 133 blocks.
+==15692==      possibly lost: 364,606 bytes in 873 blocks.
+==15692==    still reachable: 58,288,534 bytes in 841,340 blocks.
+==15692==         suppressed: 0 bytes in 0 blocks.
+```
+
+Notice that "indirectly lost" goes up, but that is due to some memory that was "possibly lost" being accounted for now is indirectly lost. That memory is lost inside LinBox.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by cwitty created at 2007-10-28 20:13:32
+
+Resolution: fixed

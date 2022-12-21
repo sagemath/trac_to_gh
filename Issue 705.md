@@ -1,0 +1,133 @@
+# Issue 705: Make vtk an easy-to-install optional sage package
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2007-09-20 13:49:53
+
+Assignee: jkantor
+
+From Josh:
+
+
+```
+I have a vtk meta package in my spkgs directory.
+It automatically attempts to detect the tcl/tk libs
+and rebuild python if the tk bindings were not compiled on linux and
+rebuilds python as a framework on OSX, it then builds VTK.
+```
+
+
+http://sage.math.washington.edu/home/jkantor/spkgs/
+
+
+---
+
+Comment by cwitty created at 2007-10-26 04:56:47
+
+I tried your meta spkg on my laptop (Debian testing), and it failed even after I installed tcl8.4-dev and tk8.4-dev packages, with this error:
+
+```
+test_tcl.c:2:24: error: tcl8.3/tcl.h: No such file or directory
+test_tcl.c:3:23: error: tcl8.3/tk.h: No such file or directory
+In file included from test_tcl.c:8:
+/usr/include/tcl8.4/tk.h:21:17: error: tcl.h: No such file or directory
+```
+
+
+As you can see, tcl8.4/tk.h includes tcl.h without specifying a path, so it doesn't find /usr/include/tcl8.4/tcl.h.  Programs using tcl and tk need to be compiled with `-I/usr/include/tcl8.4`.
+
+
+---
+
+Comment by was created at 2007-11-01 03:35:26
+
+
+```
+Josh,
+ 
+Michael Abshoff and I spent some time looking over the vtk packaging
+stuff you're doing.  I think you should put all the spkg's together
+in one big directory:
+ 
+     vtk_meta-1/
+        cmake-2.4.7.spkg
+        MayaVi-1.5.spkg
+        python-2.5.1-framework.spkg
+        PyVTK-0.4.74.spkg
+        vtk-5.0.3.p1.spkg
+ 
+The version number on the directory is very important.
+ 
+Then put the spkg-install from your current vtk_meta in there.
+You have to change your spkg-install slightly, so it works
+with spkg's that are "local", i.e., it will be vasty simpler.
+ 
+Then you can just do
+ 
+    sage -pkg_nc vtk_meta-1    # nc for "no compression"
+ 
+to make a file vtk_meta-1.spkg that anyone can easily build
+anywhere by doing
+ 
+    sage -i vtk_meta-1.spkg
+ 
+OK?
+ 
+If you don't do this, then there are a bunch of separate
+optional packages, and though you might not know this a
+*LOT* of people who install Sage immediately do "sage -optional"
+and proceed, in pretty much random order, to install one
+optional package after the other and play with it.  Having
+a bunch that don't make sense by themselves, e.g., python-2.5.1-framework.spkg,
+in optional would reak havoc and confuse a large number of people.
+ 
+I'm sorry I suggested the more complicated setup that you
+actually implemented.  I hope you can see how the above suggestion
+will be much simpler for people to use.
+ 
+```
+
+
+
+---
+
+Comment by was created at 2007-11-03 14:28:51
+
+UPDATE -- now it is made easier and simple, finally:
+
+
+```
+The package vtk_meta-1.spkg in my spkg's
+directory should be ready now.
+
+It requires tcl/tk dev libs to build on Linux
+as well as open gl.
+
+It takes between 15-40+ minutes to compile
+depending on cpu and whether or not python
+needs to be rebuilt.
+
+Nothing extra required on OSX.
+I'm curious if it works on leopard?
+
+Also there is a pretty skeletal but functional
+patch in my spkgs, vtk_plot.hg that adds
+three functions that allow plotting 2d surfaces and 3d isosurfaces.
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-01-09 02:12:39
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-01-09 02:12:39
+
+William put this into the experimental package directory a while ago. So close this now.

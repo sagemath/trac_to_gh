@@ -1,0 +1,417 @@
+# Issue 1074: Singular segfault with monitor("testfile.txt","io");
+
+Issue created by migration from Trac.
+
+Original creator: mabshoff
+
+Original creation time: 2007-11-03 06:18:57
+
+Assignee: malb
+
+
+```
+mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.9/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high --trace-children=ye
+s ./singular
+==24485== Memcheck, a memory error detector.
+==24485== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==24485== Using LibVEX rev 1791, a library for dynamic binary translation.
+==24485== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==24485== Using valgrind-3.3.0.SVN, a dynamic binary instrumentation framework.
+==24485== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==24485== For more details, rerun with: -v
+==24485==
+==24486== Memcheck, a memory error detector.
+==24486== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==24486== Using LibVEX rev 1791, a library for dynamic binary translation.
+==24486== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==24486== Using valgrind-3.3.0.SVN, a dynamic binary instrumentation framework.
+==24486== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==24486== For more details, rerun with: -v
+==24486==
+                     SINGULAR                             /  Development
+ A Computer Algebra System for Polynomial Computations   /   version 3-0-3
+                                                       0<
+     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \   May 2007
+FB Mathematik der Universitaet, D-67653 Kaiserslautern    \
+> monitor("testfile.txt","io");
+> proc reducePoleOrder (poly pPoly, ideal Jacob, ideal xVariables) {
+. list divL = division(pPoly, Jacob);
+. print("division complete");
+. matrix divM = divL[1];
+. ideal divI = ideal(divM);
+. matrix redM = diff(xVariables, divI);
+. print("reduction complete");
+. poly redPoly = trace(redM);
+. print("trace complete");
+. return(redPoly);
+.
+. }
+> ring R = (0,t), (a,b,c), dp;
+> poly Q = 1/3*(a^3+b^3+c^3)-t*a*b*c;
+> ideal QIdeal = Q;
+> ideal abcVars = a,b,c;
+> ideal Jac = diff(abcVars, QIdeal);
+> ideal JacG = groebner(Jac);
+> short = 0;
+> poly testPoly = reducePoleOrder(a^2*b^2*c^2, Jac, abcVars);
+division complete==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5797169: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==    by 0x45A3B0: jjKLAMMER_PL(sleftv*, sleftv*) (iparith.cc:6345)
+==24486==    by 0x45B65C: iiExprArithM(sleftv*, sleftv*, int) (iparith.cc:7936)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x57950DC: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==    by 0x45A3B0: jjKLAMMER_PL(sleftv*, sleftv*) (iparith.cc:6345)
+==24486==    by 0x45B65C: iiExprArithM(sleftv*, sleftv*, int) (iparith.cc:7936)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5796C18: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==    by 0x45A3B0: jjKLAMMER_PL(sleftv*, sleftv*) (iparith.cc:6345)
+==24486==    by 0x45B65C: iiExprArithM(sleftv*, sleftv*, int) (iparith.cc:7936)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5795B56: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==    by 0x45A3B0: jjKLAMMER_PL(sleftv*, sleftv*) (iparith.cc:6345)
+==24486==    by 0x45B65C: iiExprArithM(sleftv*, sleftv*, int) (iparith.cc:7936)
+==24486==
+==24486== Use of uninitialised value of size 8
+==24486==    at 0x4A1CA13: strlen (mc_replace_strmem.c:242)
+==24486==    by 0x579755F: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==    by 0x45A3B0: jjKLAMMER_PL(sleftv*, sleftv*) (iparith.cc:6345)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1D3D3: mempcpy (mc_replace_strmem.c:77)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1D470: mempcpy (mc_replace_strmem.c:80)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1D3E9: mempcpy (mc_replace_strmem.c:676)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1D436: mempcpy (mc_replace_strmem.c:676)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1D490: mempcpy (mc_replace_strmem.c:676)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Use of uninitialised value of size 8
+==24486==    at 0x4A1D4A0: mempcpy (mc_replace_strmem.c:676)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+==24486==
+==24486== Use of uninitialised value of size 8
+==24486==    at 0x4A1D4AD: mempcpy (mc_replace_strmem.c:676)
+==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
+==24486==    by 0x495CBD: jjPRINT(sleftv*, sleftv*) (ipprint.cc:251)
+==24486==    by 0x459731: iiExprArith1(sleftv*, sleftv*, int) (iparith.cc:7589)
+==24486==    by 0x478538: yyparse() (grammar.y:683)
+==24486==    by 0x4932D7: iiPStart(idrec*, sleftv*) (iplib.cc:339)
+==24486==    by 0x493675: iiMake_proc(idrec*, sip_package*, sleftv*) (iplib.cc:478)
+==24486==    by 0x454139: jjPROC(sleftv*, sleftv*, sleftv*) (iparith.cc:1616)
+==24486==    by 0x45A15A: iiExprArith2(sleftv*, sleftv*, int, sleftv*, int) (iparith.cc:7390)
+
+reduction complete
+trace complete
+> testPoly;
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5795B56: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5795C35: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x57CBC75: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4A1C9D7: strnlen (mc_replace_strmem.c:226)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Use of uninitialised value of size 8
+==24486==    at 0x4A1C9D9: strnlen (mc_replace_strmem.c:226)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Invalid read of size 1
+==24486==    at 0x4A1C9D9: strnlen (mc_replace_strmem.c:226)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==  Address 0x3f is not stack'd, malloc'd or (recently) free'd
+==24486==
+==24486== Use of uninitialised value of size 8
+==24486==    at 0x5792EF0: _itoa_word (in /lib/libc-2.3.6.so)
+==24486==    by 0x57961AF: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x57933E5: buffered_vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579408E: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579D327: fprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4CE50F: sigsegv_handler(int, sigcontext) (cntrlc.cc:174)
+==24486==    by 0x578210F: (within /lib/libc-2.3.6.so)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x5792EFA: _itoa_word (in /lib/libc-2.3.6.so)
+==24486==    by 0x57961AF: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x57933E5: buffered_vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579408E: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579D327: fprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4CE50F: sigsegv_handler(int, sigcontext) (cntrlc.cc:174)
+==24486==    by 0x578210F: (within /lib/libc-2.3.6.so)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x57966B0: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x57933E5: buffered_vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579408E: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579D327: fprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4CE50F: sigsegv_handler(int, sigcontext) (cntrlc.cc:174)
+==24486==    by 0x578210F: (within /lib/libc-2.3.6.so)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x579536B: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x57933E5: buffered_vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579408E: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x579D327: fprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4CE50F: sigsegv_handler(int, sigcontext) (cntrlc.cc:174)
+==24486==    by 0x578210F: (within /lib/libc-2.3.6.so)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+Singular : signal 11 (v: 3032/2007110220):
+==24486==
+==24486== Conditional jump or move depends on uninitialised value(s)
+==24486==    at 0x4CE513: sigsegv_handler(int, sigcontext) (cntrlc.cc:175)
+==24486==    by 0x578210F: (within /lib/libc-2.3.6.so)
+==24486==    by 0x57CBCF5: mbsnrtowcs (in /lib/libc-2.3.6.so)
+==24486==    by 0x5795C55: vfprintf (in /lib/libc-2.3.6.so)
+==24486==    by 0x4D835C: Print (febase.cc:1134)
+==24486==    by 0x4B45B7: sleftv::Print(sleftv*, int) (subexpr.cc:137)
+==24486==    by 0x47B4E9: yyparse() (grammar.y:1508)
+==24486==    by 0x44F981: main (tesths.cc:250)
+Segment fault/Bus error occurred at 3f because of 4 (r:1194070263)
+please inform the authors
+trying to restart...
+```
+
+
+
+---
+
+Comment by was created at 2007-11-03 15:11:34
+
+This is a bug in Singular's parser:
+
+```
+mabshoff: It is Singular's fault.
+[08:10am] was_: Is it just something to report to Singular?
+[08:10am] mabshoff: fault, problem with the parser somehow.
+[08:10am] was_: What's the best way to do that?
+[08:10am] mabshoff: I CCed Hannes on my reply in sage-support.
+[08:11am] mabshoff: If no reaction comes malb should ping him.
+
+```
+
+
+
+---
+
+Comment by mabshoff created at 2007-11-25 18:12:30
+
+Ok, the issues has been fixed by Hannes from the Singular team. The patch will be in 3-0-4, so once we update this ticket should also be closed once we verify that the bug is really gone.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by malb created at 2007-12-03 11:44:00
+
+Changing status from new to assigned.
+
+
+---
+
+Comment by malb created at 2007-12-03 11:44:00
+
+See #1271
+
+
+---
+
+Comment by mabshoff created at 2007-12-03 14:51:53
+
+With the new spkg from #1271 this issue has been fixed.
+
+Cheers,
+
+Michael
+
+
+---
+
+Comment by mabshoff created at 2007-12-03 14:52:27
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2007-12-03 14:52:27
+
+Resolved in 2.8.15.rc1.

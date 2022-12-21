@@ -1,0 +1,417 @@
+# Issue 797: timeit doesn't recognize [1..10] syntax
+
+Issue created by migration from Trac.
+
+Original creator: jason
+
+Original creation time: 2007-10-03 00:26:36
+
+Assignee: was
+
+
+```
+sage: %time [1..10]
+------------------------------------------------------------
+   File "<timed exec>", line 1
+     [1..10]
+          ^
+<type 'exceptions.SyntaxError'>: invalid syntax
+
+sage: %timeit [1..10]
+------------------------------------------------------------
+   File "<magic-timeit>", line 6
+     [1..10]
+          ^
+<type 'exceptions.SyntaxError'>: invalid syntax
+
+sage: %timeit xrange(11)
+1000000 loops, best of 3: 392 ns per loop
+```
+
+
+
+---
+
+Comment by jason created at 2009-01-14 08:08:15
+
+The workaround now is to use the timeit command, which does send things to the preparser.
+
+
+```
+sage: timeit('[1..10]')
+625 loops, best of 3: 220 µs per loop
+```
+
+
+
+---
+
+Comment by jason created at 2009-01-14 08:09:49
+
+Resolution: wontfix
+
+
+---
+
+Comment by was created at 2009-01-14 16:49:01
+
+Just because there is a workaround doesn't mean this should be closed.  I reported this problem to Fernando Perez of Ipython and he "admitted" that it is a bug, and was working on fixing it at that last sage days.  I'm re-opening this.
+
+By the way, it's generally very bad for anybody but me or Michael Abshoff to close tickets on trac!
+
+
+---
+
+Comment by was created at 2009-01-14 16:49:01
+
+Resolution changed from wontfix to 
+
+
+---
+
+Comment by was created at 2009-01-14 16:49:01
+
+Changing status from closed to reopened.
+
+
+---
+
+Comment by jason created at 2009-01-14 17:29:00
+
+I only closed it after mabshoff gave his okay on IRC.  I guess I should have posted the IRC log.
+
+
+---
+
+Comment by SimonKing created at 2009-01-21 19:23:34
+
+Replying to [ticket:797 jason]:
+
+Here is some account of what happens in Sage 3.2.3:
+
+
+```
+sage: %time [1..10]
+CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
+Wall time: 0.00 s
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+
+So, the first problem is not a problem anymore.
+
+```
+sage: %timeit [1..10]
+------------------------------------------------------------
+   File "<magic-timeit>", line 6
+     [1..10]
+          ^
+SyntaxError: invalid syntax
+```
+
+
+So, that is the only remaining issue. I am now looking at `sage/misc/sage_timeit.py`.
+
+
+---
+
+Comment by mhansen created at 2009-01-21 20:19:47
+
+We can overwrite the default magic commands in IPython:
+
+
+```
+sage: _ip.expose_magic("timeit", lambda self, s: timeit(s))
+sage: %timeit [1..10]
+625 loops, best of 3: 58.4 µs per loop
+```
+
+
+
+---
+
+Comment by SimonKing created at 2009-01-21 20:48:54
+
+I somehow got the impression that it is an issue with preparsing, for the following reason:
+
+```
+sage: timeit('[1..10]',preparse=False)
+------------------------------------------------------------
+   File "<magic-timeit>", line 6
+     [1..10]
+          ^
+SyntaxError: invalid syntax
+```
+
+
+This is the same error as in 
+
+```
+sage: %timeit [1..10]
+```
+
+
+In the code, by default preparsing should be done; namely, in `sage_timer.py` it says
+
+```
+def sage_timeit(stmt, globals, preparse=None, number = 0, repeat = 3, precision = 3):
+...
+    if preparse is None:
+        preparse = interpreter.do_preparse
+```
+
+
+Now, we also have
+
+```
+sage: from sage.misc import interpreter
+sage: interpreter.do_preparse
+True
+```
+
+
+So, it *should* be with preparsing.
+
+For testing, I inserted a line in the code that prints the value of `preparse`.
+
+The curious thing is that this line is executed when doing `timeit('[1..10]')` or `timeit.eval('[1..10]')`, but it is _not_ executed when doing `%timeit [1..10]`.
+
+I was just told that `%timeit ...` should do the same as `timeit.eval('...')`, but apparently it doesn't. So, perhaps it is a problem with the `%`?
+
+Can you tell me where the behaviour of `%` is defined?
+
+
+---
+
+Comment by mhansen created at 2009-01-21 20:52:58
+
+Are you doing this in the notebook or the command-line?  They're two totally separate things.
+
+Can you hop on IRC?
+
+
+---
+
+Comment by mhansen created at 2009-01-21 21:09:01
+
+When you run %timeit from the command-line, it runs code in IPython and does not touch any code in the Sage library.  The issue is that the IPython magic command "%timeit" doesn't do the preparsing.  Fernando was working on an upstream fix for this.  An easy downstream fix for this would be to do as I suggested above and overwrite the IPython version of timeit with our own with the expose_magic function.
+
+
+```
+sage: _ip.expose_magic("timeit", lambda self, s: timeit(s))
+sage: %timeit [1..10]
+625 loops, best of 3: 58.4 µs per loop
+```
+
+
+The right place to put this would probably be in local/bin/ipy_profile_sage.py.
+
+
+---
+
+Comment by SimonKing created at 2009-01-21 21:15:17
+
+Replying to [comment:11 mhansen]:
+> When you run %timeit from the command-line, it runs code in IPython and does not touch any code in the Sage library.  The issue is that the IPython magic command "%timeit" doesn't do the preparsing.  Fernando was working on an upstream fix for this.  An easy downstream fix for this would be to do as I suggested above and overwrite the IPython version of timeit with our own with the expose_magic function.
+> 
+> {{{
+> sage: _ip.expose_magic("timeit", lambda self, s: timeit(s))
+> sage: %timeit [1..10]
+> 625 loops, best of 3: 58.4 µs per loop
+> }}}
+> 
+> The right place to put this would probably be in local/bin/ipy_profile_sage.py.
+
+Thank you!
+
+While you replied, I tried to post the following:
+
+Replying to [comment:10 mhansen]:
+> Are you doing this in the notebook or the command-line?  They're two totally separate things.
+
+It is command-line, and I don't know what happens on the notebook. Can you test it?
+
+If it is in `preparser_ipython`, then the following might be the source of trouble:
+
+```
+def preparse_ipython(line, reset=True):
+    global num_lines
+    global q_lines
+
+    L = line.lstrip()
+    if L.startswith('%'):
+        # This should be installed as an Ipython magic command,
+        # but I don't know how yet...
+        L = L[1:].strip()
+        import sage.interfaces.all
+        if L.lower() in sage.interfaces.all.interfaces:
+            switch_interface(L.lower())
+            return "''"
+        else:
+            # only preparse non-magic lines
+            return line
+```
+
+
+Hence, if the line starts with `%` and if the word after `%` is not the name of an interface than simply the line is returned unchanged. 
+
+But what happens afterwards? In the end of the day, `%timeit` gets an interpretation and does call some `timeit` command!
+
+> Can you hop on IRC?
+
+I try (I never used IRC before). So, if it works, see you soon.
+
+Cheers
+ Simon
+
+
+---
+
+Attachment
+
+Change preparse_ipython so that %timeit results in calling timeit.eval
+
+
+---
+
+Comment by SimonKing created at 2009-01-21 22:11:19
+
+In `preparse_ipython`, lines starting with `%` have not been changed unless they refer to some interface. I added support for `%timeit`.
+
+Idea: Call `timeit.eval`
+
+With the patch, the following examples now work:
+
+```
+sage: %timeit [1..10]
+625 loops, best of 3: 127 Âµs per loop
+sage: %timeit 'a'=="a"
+625 loops, best of 3: 285 ns per loop
+```
+
+and the other ways of calling the timer still work:
+
+```
+sage: %time [1..10]
+CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
+sage: timeit('[1..10]')
+625 loops, best of 3: 127 Âµs per loop
+```
+
+
+
+---
+
+Comment by SimonKing created at 2009-01-21 22:11:19
+
+Changing keywords from "" to "timeit ipython".
+
+
+---
+
+Comment by SimonKing created at 2009-01-22 19:17:18
+
+Replying to [comment:13 SimonKing]:
+> In `preparse_ipython`, lines starting with `%` have not been changed unless they refer to some interface. I added support for `%timeit`.
+> 
+> Idea: Call `timeit.eval`
+
+Probably I should elaborate more on how it works.
+
+In the old version of `preparse_ipython`, it was tested whether an input line starts with '%'. If this was the case, then the word after '%' was checked. If that word referred to an interface,  the interface was used. If the word after '%' was differently, the line was returned without a change.
+
+For the new version, I suggest to test whether the word after '%' is 'timeit'. If it is, `preparse_ipython` returns `timeit.eval(..rest of the input line..)`.
+
+
+---
+
+Comment by SimonKing created at 2009-01-22 19:38:17
+
+To emphasize another detail: My suggestion only relates with `%timeit` on the command line, not on the notebook.
+
+
+---
+
+Comment by jason created at 2009-01-28 17:36:42
+
+This patch works for me, but I think mhansen ought to comment on this approach versus the approach he advocated above using `_ip.expose_magic("timeit", lambda self, s: timeit(s))`
+
+
+---
+
+Comment by jason created at 2009-01-28 17:38:17
+
+The _ip.expose_magic approach also seems to work just as well.  I would prefer using the ipython mechanism for doing this, rather than complicating the preparser.
+
+In fact, I'd suggest using ipython to do all of the %mode functionality as well, if it's a possibility.
+
+
+---
+
+Comment by jason created at 2009-03-24 21:43:09
+
+Simon,
+
+what do you think about the idea of using ipython to do this, like mhansen suggests above?  I think it's cleaner, it keeps the ipython stuff together (i.e., the "%" commands with ipython), and avoids making the preparser more complicated.
+
+
+---
+
+Comment by SimonKing created at 2009-03-25 08:02:11
+
+Hi Jason,
+
+Replying to [comment:18 jason]:
+> what do you think about the idea of using ipython to do this, like mhansen suggests above?  I think it's cleaner, it keeps the ipython stuff together (i.e., the "%" commands with ipython), and avoids making the preparser more complicated.
+
+Sure, it makes sense. The problem is that i have no idea about ipython, so, I guess i would not be able to do it in that way. Perhaps i should look at local/bin/ipy_profile_sage.py, but i wouldn't be upset if someone else were faster... :)
+
+Cheers,
+          Simon
+
+
+---
+
+Comment by jason created at 2009-04-22 02:04:14
+
+Changing this to "needs work" in light of mhansen's solution above.
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by mhansen created at 2010-01-17 07:32:31
+
+Changing status from needs_work to needs_review.
+
+
+---
+
+Comment by mhansen created at 2010-01-17 07:32:31
+
+I've put a patch up which implements the expose_magic idea.
+
+
+---
+
+Comment by jason created at 2010-01-17 08:40:50
+
+Looks great!  Positive review to Mike's patch.  Only apply Mike's patch (to the local/bin repository!)
+
+
+---
+
+Comment by jason created at 2010-01-17 08:40:50
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by rlm created at 2010-01-18 22:39:07
+
+Resolution: fixed

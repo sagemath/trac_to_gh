@@ -1,0 +1,356 @@
+# Issue 1745: bug in point enumeration mod p.
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2008-01-10 10:38:56
+
+Assignee: was
+
+
+```
+
+
+
+On Jan 10, 2008 12:21 AM, benjamin antieau <> wrote:
+> 
+> Below is a transcript from a SAGE session. I was playing around
+> checking to make sure that a modification of the rational_points code
+> gave the right answers when I noticed that there were repeats in the
+> lists returned by rational_points(). Below I iterate through the list
+> of rational points and count how many times each appears. For P^3
+> there is a point that is returned eight times.
+> 
+> Is this the behavior people want? I would rather assume that the
+> output has no repetition, so as to aid point-counting.
+
+This is definitely not the behavior that we want.  This is a bug, which I've now reported to trac:
+
+
+
+> 
+> I would be happy to fix this.
+> 
+> Ben
+> 
+> =====
+> 
+> sage: X=ProjectiveSpace(QQ,1)
+> sage: x=X.rational_points(bound=1)
+> sage: for i in x:
+> ...       (i,x.count(i))
+> ((0 : 1), 2)
+> ((-1 : 1), 1)
+> ((0 : 1), 2)
+> ((1 : 1), 1)
+> ((1 : 0), 1)
+> 
+> sage: X=ProjectiveSpace(QQ,1)
+> sage: x=X.rational_points(bound=3)
+> sage: for i in x:
+> ...       (i,x.count(i))
+> ((0 : 1), 2)
+> ((-3 : 1), 1)
+> ((-3/2 : 1), 1)
+> ((-2 : 1), 1)
+> ((-2/3 : 1), 1)
+> ((-1 : 1), 1)
+> ((-1/2 : 1), 1)
+> ((-1/3 : 1), 1)
+> ((0 : 1), 2)
+> ((1 : 1), 1)
+> ((1/2 : 1), 1)
+> ((1/3 : 1), 1)
+> ((2 : 1), 1)
+> ((2/3 : 1), 1)
+> ((3 : 1), 1)
+> ((3/2 : 1), 1)
+> ((1 : 0), 1)
+> 
+> sage: Y=ProjectiveSpace(QQ,2)
+> sage: y=Y.rational_points(1)
+> sage: for i in y:
+> ...       (i,y.count(i))
+> ((0 : 0 : 1), 4)
+> ((-1 : 0 : 1), 1)
+> ((0 : 0 : 1), 4)
+> ((1 : 0 : 1), 2)
+> ((0 : -1 : 1), 2)
+> ((0 : -1 : 1), 2)
+> ((1 : -1 : 1), 1)
+> ((0 : 0 : 1), 4)
+> ((0 : 0 : 1), 4)
+> ((1 : 0 : 1), 2)
+> ((0 : 1 : 1), 2)
+> ((0 : 1 : 1), 2)
+> ((1 : 1 : 1), 1)
+> ((0 : 1 : 0), 2)
+> ((-1 : 1 : 0), 1)
+> ((0 : 1 : 0), 2)
+> ((1 : 1 : 0), 1)
+> ((1 : 0 : 0), 1)
+> 
+> sage: Z=ProjectiveSpace(QQ,3)
+> sage: z=Z.rational_points(1)
+> sage: for i in z:
+> ...       (i,z.count(i))
+> ((0 : 0 : 0 : 1), 8)
+> ((-1 : 0 : 0 : 1), 1)
+> ((0 : 0 : 0 : 1), 8)
+> ((1 : 0 : 0 : 1), 4)
+> ((0 : -1 : 0 : 1), 2)
+> ((0 : -1 : 0 : 1), 2)
+> ((1 : -1 : 0 : 1), 1)
+> ((0 : 0 : 0 : 1), 8)
+> ((0 : 0 : 0 : 1), 8)
+> ((1 : 0 : 0 : 1), 4)
+> ((0 : 1 : 0 : 1), 4)
+> ((0 : 1 : 0 : 1), 4)
+> ((1 : 1 : 0 : 1), 2)
+> ((0 : 0 : -1 : 1), 4)
+> ((0 : 0 : -1 : 1), 4)
+> ((1 : 0 : -1 : 1), 2)
+> ((0 : 0 : -1 : 1), 4)
+> ((0 : 0 : -1 : 1), 4)
+> ((1 : 0 : -1 : 1), 2)
+> ((0 : 1 : -1 : 1), 2)
+> ((0 : 1 : -1 : 1), 2)
+> ((1 : 1 : -1 : 1), 1)
+> ((0 : 0 : 0 : 1), 8)
+> ((0 : 0 : 0 : 1), 8)
+> ((1 : 0 : 0 : 1), 4)
+> ((0 : 0 : 0 : 1), 8)
+> ((0 : 0 : 0 : 1), 8)
+> ((1 : 0 : 0 : 1), 4)
+> ((0 : 1 : 0 : 1), 4)
+> ((0 : 1 : 0 : 1), 4)
+> ((1 : 1 : 0 : 1), 2)
+> ((0 : 0 : 1 : 1), 4)
+> ((0 : 0 : 1 : 1), 4)
+> ((1 : 0 : 1 : 1), 2)
+> ((0 : 0 : 1 : 1), 4)
+> ((0 : 0 : 1 : 1), 4)
+> ((1 : 0 : 1 : 1), 2)
+> ((0 : 1 : 1 : 1), 2)
+> ((0 : 1 : 1 : 1), 2)
+> ((1 : 1 : 1 : 1), 1)
+> ((0 : 0 : 1 : 0), 4)
+> ((-1 : 0 : 1 : 0), 1)
+> ((0 : 0 : 1 : 0), 4)
+> ((1 : 0 : 1 : 0), 2)
+> ((0 : -1 : 1 : 0), 2)
+> ((0 : -1 : 1 : 0), 2)
+> ((1 : -1 : 1 : 0), 1)
+> ((0 : 0 : 1 : 0), 4)
+> ((0 : 0 : 1 : 0), 4)
+> ((1 : 0 : 1 : 0), 2)
+> ((0 : 1 : 1 : 0), 2)
+> ((0 : 1 : 1 : 0), 2)
+> ((1 : 1 : 1 : 0), 1)
+> ((0 : 1 : 0 : 0), 2)
+> ((-1 : 1 : 0 : 0), 1)
+> ((0 : 1 : 0 : 0), 2)
+> ((1 : 1 : 0 : 0), 1)
+> ((1 : 0 : 0 : 0), 1)
+> 
+> --~--~---------~--~----~------------~-------~--~----~
+> To post to this group, send email to sage-devel`@`googlegroups.com
+> To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+> For more options, visit this group at http://groups.google.com/group/sage-devel
+> URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
+> -~----------~----~----~----~------~----~------~--~---
+> 
+> 
+
+
+
+-- 
+William Stein
+Associate Professor of Mathematics
+University of Washington
+http://wstein.org
+
+```
+
+
+
+---
+
+Comment by was created at 2008-01-13 01:07:55
+
+
+```
+"D. Benjamin Antieau" 	
+to me
+	 More options	  4:48 pm (15 minutes ago)
+William Stein,
+
+Here is a patch for the bug in enumeration of QQ-points of P^n.
+
+The new version is a bit slower because of using the Tuples method. Also, it finds more points: for P^3, B=10, the new version finds 88 448 points, while the old version finds 62 758 points. Here is some prun output.
+
+I haven't looked at the points over finite fields. I will try to do that before the next release.
+
+Ben Antieau
+
+new P^3,B=10
+
+         8883966 function calls (8314198 primitive calls) in 48.120 CPU seconds
+
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+
+    88448   10.631    0.000   32.424    0.000 morphism.py:398(__init__)
+   665300    4.540    0.000    5.704    0.000 rational_field.py:120(__call__)
+
+  2397640    4.211    0.000    4.211    0.000 {isinstance}
+    88448    2.965    0.000    7.307    0.000 sequence.py:189(__init__)
+
+384090/97230    2.593    0.000    6.130    0.000 arith.py:1007(gcd)
+   311508    2.569    0.000    4.808    0.000 sequence.py:247(__setitem__)
+
+176896/88448    1.782    0.000   35.749    0.000 scheme.py:79(__call__)
+291720/97260    1.620    0.000    4.207    0.000 tuple.py:71(iterator)
+
+    97230    1.570    0.000    5.481    0.000 arith.py:1119(__GCD_list)
+        1    1.436    1.436   47.847   47.847 rational_points_new.py:4(rational_points_new)
+
+   189630    1.310    0.000    2.051    0.000 copy.py:65(copy)
+    88448    1.041    0.000    1.243    0.000 morphism.py:33(is_SchemeMorphism)
+
+    88448    0.992    0.000    1.488    0.000 morphism.py:40(__init__)
+   352862    0.992    0.000    0.992    0.000 {range}
+
+   733945    0.953    0.000    0.953    0.000 {len}
+    88448    0.721    0.000    1.484    0.000 homset.py:232(value_ring)
+
+    88448    0.718    0.000   33.142    0.000 projective_space.py:317(_point_class)
+    88448    0.684    0.000    0.887    0.000 projective_space.py:157(ngens)
+
+   311508    0.598    0.000    0.598    0.000 sequence.py:425(_require_mutable)
+   265346    0.582    0.000    0.582    0.000 homset.py:336(codomain)
+
+   176897    0.561    0.000    0.827    0.000 scheme.py:33(is_Scheme)
+   176899    0.525    0.000    0.800    0.000 commutative_ring.py:22(is_CommutativeRing)
+
+   189630    0.468    0.000    0.468    0.000 copy.py:112(_copy_with_constructor)
+    88448    0.428    0.000    0.620    0.000 scheme.py:135(point_homset)
+
+    88448    0.410    0.000   33.552    0.000 scheme.py:153(point)
+   176898    0.398    0.000    0.398    0.000 scheme.py:178(base_ring)
+
+   176897    0.375    0.000    0.375    0.000 homset.py:333(domain)
+   278078    0.350    0.000    0.350    0.000 {method 'append' of 'list' objects}
+
+    88448    0.339    0.000    1.827    0.000 morphism.py:92(__init__)
+    88448    0.277    0.000    0.398    0.000 spec.py:15(is_Spec)
+
+   189630    0.274    0.000    0.274    0.000 {method 'get' of 'dict' objects}
+        1    0.273    0.273   48.120
+   48.120 <string>:1(<module>)
+     4833    0.268    0.000    0.268    0.000 {map}
+    88449    0.202    0.000    0.202
+    0.000 ambient_space.py:116(dimension)
+    88450    0.177    0.000    0.177    0.000 spec.py:115(coordinate_ring)
+    88448    0.127
+    0.000    0.127    0.000 projective_space.py:160(_check_satisfies_equations)
+    88448    0.118    0.000    0.118    0.000 ambient_space.py:85(ambient_space)
+
+     4833    0.027    0.000    0.295    0.000 tuple.py:52(__init__)
+     4860    0.011    0.000    0.011    0.000 combinat.py:684(__iter__)
+
+old P^3,B=10
+
+         4447454 function calls (4384696 primitive calls) in 29.904 CPU seconds
+
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+
+    62758   10.449    0.000   25.838    0.000 morphism.py:398(__init__)
+   458637    3.179    0.000    3.958    0.000 rational_field.py:120(__call__)
+
+  1211733    2.030    0.000    2.030    0.000 {isinstance}
+    62758    1.934    0.000    5.040    0.000 sequence.py:189(__init__)
+
+   207605    1.839    0.000    3.325    0.000 sequence.py:247(__setitem__)
+125516/62758    1.275    0.000   28.121    0.000 scheme.py
+:79(__call__)
+        1    1.113    1.113   29.721   29.721 projective_space.py:394(rational_points)
+    62758    0.795    0.000    
+1.259    0.000 morphism.py:40(__init__)
+    62758    0.768    0.000    0.900    0.000 morphism.py:33(is_SchemeMorphism)
+    62758    
+0.536    0.000    1.090    0.000 homset.py:232(value_ring)
+   188274    0.527    0.000    0.527    0.000 homset.py:336(codomain)
+    62758    
+0.488    0.000    0.648    0.000 projective_space.py:157(ngens)
+   313790    0.441    0.000    0.441    0.000 {len}
+    62758    0.410
+    0.000   26.248    0.000 projective_space.py:317(_point_class)
+   112266    0.405    0.000    0.405    0.000 {method 'gcd' of 'sage.rings.integer.Integer' objects}
+
+   125516    0.401    0.000    0.587    0.000 scheme.py:33(is_Scheme)
+   207605    0.397    0.000    0.397    0.000 sequence.py:425(_require_mutable)
+
+   125516    0.384    0.000    0.591    0.000 commutative_ring.py:22(is_CommutativeRing)
+    62758    0.302    0.000    0.436    0.000
+ scheme.py:135(point_homset)
+    62758    0.292    0.000   26.540    0.000 scheme.py:153(point)
+   125516    0.281    0.000    0.281
+    0.000 scheme.py:178(base_ring)
+   125516    0.266    0.000    0.266    0.000 homset.py:333(domain)
+    62758    0.252    0.000    
+1.512    0.000 morphism.py:92(__init__)
+   115316    0.225    0.000    0.225    0.000 {range}
+    62758    0.203    0.000    0.307    
+0.000 spec.py:15(is_Spec)
+        1    0.183    0.183   29.904   29.904 <string>:1(<module>)
+    62759    0.160    0.000
+    0.160    0.000 ambient_space.py:116(dimension)
+    62758    0.113    0.000    0.113    0.000 spec.py:115(coordinate_ring)
+    62758    
+0.091    0.000    0.091    0.000 projective_space.py:160(_check_satisfies_equations)
+    62758    0.084    0.000    0.084    0.000 ambient_space.py:85(ambient_space)
+
+    62758    0.081    0.000    0.081    0.000 {method 'append' of 'list' objects}
+```
+
+
+
+---
+
+Attachment
+
+
+---
+
+Comment by was created at 2008-01-16 18:36:04
+
+Positive review by David Kohel
+
+```
+Hi William,
+
+The small points enumeration code indeed fixes the enumeration bug.
+
+```
+
+
+
+---
+
+Comment by mabshoff created at 2008-01-16 19:03:14
+
+Resolution: fixed
+
+
+---
+
+Comment by mabshoff created at 2008-01-16 19:03:14
+
+Merged in Sage 2.10.alpha4
