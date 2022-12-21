@@ -1,0 +1,81 @@
+# Issue 73: "sage -gdb" broken on OS X.
+
+Issue created by migration from Trac.
+
+Original creator: was
+
+Original creation time: 2006-09-21 01:23:24
+
+Assignee: somebody
+
+sage -gdb works fine in Linux, but it's broken in OS X.  See below.
+
+
+```
+
+sha:~ was$ sage -gdb
+--------------------------------------------------------
+--------------------------------------------------------
+| SAGE Version 1.3.7.4, Build Date: 2006-09-20-1802    |
+| Distributed under the GNU General Public License V2. |
+/Volumes/HOME/s/local/bin/sage-gdb-pythonstartup
+GNU gdb 6.3.50-20050815 (Apple version gdb-563) (Wed Jul 19 05:10:58 GMT 2006)
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "i386-apple-darwin"...Reading symbols for shared libraries .... done
+
+Reading symbols for shared libraries . done
+Python 2.4.3 (#1, Aug 25 2006, 23:39:31) 
+[GCC 4.0.1 (Apple Computer, Inc. build 5341)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+Reading symbols for shared libraries .... done
+Traceback (most recent call last):
+  File "/Volumes/HOME/s/local/bin/sage-gdb-pythonstartup", line 1, in ?
+    from sage.all import *
+  File "/Volumes/HOME/s/local/lib/python2.4/site-packages/sage/all.py", line 39, in ?
+    raise RuntimeError, "To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib"
+RuntimeError: To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib
+>>> 
+```
+
+
+
+---
+
+Comment by was created at 2006-09-30 18:28:32
+
+Resolution: fixed
+
+
+---
+
+Comment by was created at 2006-09-30 18:28:32
+
+Fixed (for sage-1.4)
+
+```
+sha:~/d/sage was$ hg diff
+diff -r 97f9271f8637 sage/all.py
+--- a/sage/all.py       Fri Sep 22 19:44:53 2006 -0700
++++ b/sage/all.py       Sat Sep 30 11:17:39 2006 -0700
+`@``@` -32,9 +32,13 `@``@` if sys.version_info[:2] < (2, 4):
+     sys.exit(1)
+ 
+ try:
+-    _l = '%s/local/lib'%os.environ['SAGE_ROOT']    
+-    if not _l in os.environ['LD_LIBRARY_PATH']:
+-        raise KeyError
++    _l = '%s/local/lib'%os.environ['SAGE_ROOT']
++    if os.environ.has_key('LD_LIBRARY_PATH'):
++        if not _l in os.environ['LD_LIBRARY_PATH']:
++            raise KeyError
++        elif not _l in os.environ['DYLD_LIBRARY_PATH']:
++            raise KeyError
++    del _l
+ except KeyError:
+      raise RuntimeError, "To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib"
+```
+
