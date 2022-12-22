@@ -165,11 +165,13 @@ Comment by jhpalmieri created at 2009-04-17 15:13:55
 >It looks pretty clear to me, except perhaps where it explains the format of the options string. 
 
 Do you mean this part?
-{{{ 
+
+``` 
         -  ``options`` - string; passed when starting mwrank.
            The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o
            s d]
-}}}
+```
+
 
 
 ---

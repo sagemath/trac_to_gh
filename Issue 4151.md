@@ -74,10 +74,12 @@ OK, I changed setup.py and ran sage -ba and everything worked. I'm puzzled by wh
 All doctests pass fine, but there are a couple of funny things:
 
 - The definition states that rho(0) is 1 by definition, but your implementation gives
-{{{ 
+
+``` 
 sage: dickman_rho(0)
 0.000000000000000
-}}}
+```
+
 
 I encountered this while trying to replicate the plot on the Wikipedia page, which fails nastily because log(rho(0)) is undefined.
 

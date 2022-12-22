@@ -12,7 +12,8 @@ CC:  jsp vengoroso@gmail.com
 
 #1497 added a few lines of code 
 
-{{{#!/usr/bin/env
+
+```/usr/bin/env
 import ctypes
 print str(8*ctypes.sizeof(ctypes.c_long))
 ```

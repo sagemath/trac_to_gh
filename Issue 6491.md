@@ -316,9 +316,11 @@ sage: n=H.knownDeg
 
 
 The last line means that n tells in what degree we drove our computation before realising that it was complete. So, you could now use CRIME:
-{{{ 
+
+``` 
 C := CohomologyRing(G,n);
-}}}
+```
+
 and get the ring structure. 
 
 Then you can compare with our result. Of course, in general the relations will look different. But: The number of generators sorted by degree and the number of relations sorted by degree should be the same with CRIME and our package. And, if you are able to compute the Poincaré series with CRIME, again the result should be the same.

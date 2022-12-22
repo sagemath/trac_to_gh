@@ -120,7 +120,8 @@ Biopython License
 
 
 spkg-check (keeping biopython as directory name)
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 
 if [ "$SAGE_LOCAL" = "" ]; then
    echo "SAGE_LOCAL undefined ... exiting";

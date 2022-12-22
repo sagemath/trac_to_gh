@@ -107,7 +107,8 @@ Comment by mariah created at 2011-05-19 19:16:32
 
 Code to identify packages with dist directory
 
-{{{#!/usr/bin/python
+
+```/usr/bin/python
 
 # search spkgs for dist directory 
 #

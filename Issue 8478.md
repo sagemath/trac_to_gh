@@ -41,7 +41,8 @@ Comment by edgimar created at 2011-08-08 22:01:50
 Here's a version which should work correctly (at least with sage 5.8):
 
 
-{{{#!/usr/bin/env sage
+
+```/usr/bin/env sage
 
 import sys
 from sage.all import *

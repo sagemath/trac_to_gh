@@ -10,7 +10,9 @@ Assignee: craigcitro
 
 The ModularForms command has some slightly counter-intuitive behaviour on some types of input:
 
-{{{sage: ModularForms(gp(1),12)
+
+```
+sage: ModularForms(gp(1),12)
 ---------------------------------------------------------------------------
 TypeError     
 
@@ -22,7 +24,8 @@ CODE:
 GP/PARI ERROR:
   ***   expected character: ',' instead of: sage[4]=level(sage[3]);
                                                               ^-----
-}}}
+```
+
 
 I realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.
 

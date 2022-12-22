@@ -21,7 +21,8 @@ Ok, I just reviewed the FLINT spkg. Everything looks good, with the caveat that 
 
 On a related note, why do we have a perl script for checking the gcc version? If nothing else, here's a short shell script that does the same thing:
 
-{{{#!/bin/sh
+
+```/bin/sh
 
 GCC_VERSION=`gcc -dumpversion`
 

@@ -12,7 +12,9 @@ CC:  mvngu
 
 Using Sage 3.4.alpha0:
 
-{{{sage: RDF(e^(1j))
+
+```
+sage: RDF(e^(1j))
 ERROR: An unexpected error occurred while tokenizing input
 The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (1419, 0))
@@ -31,7 +33,8 @@ The error message is: ('EOF in multi-line statement', (1419, 0))
 
 (then a TypeError is thrown since I don't have an RDF value)
 
-}}}
+```
+
 
 Now, of course, the above gives a TypeError, but there still shouldn't be the scary preparser error.
 

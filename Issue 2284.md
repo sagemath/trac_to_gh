@@ -24,11 +24,13 @@ sage: f._latex_()
 Comment by moretti created at 2008-02-24 00:07:00
 
 Also note that _latex_() does not TeX the variable names on the left:
-{{{ 	
+
+``` 	
 sage: f(omega) = omega
 sage: f._latex_()
 'omega \\ {\\mapsto}\\ {2 \\omega}'
-}}}
+```
+
 
 'omega' should be '\\omega'.
 

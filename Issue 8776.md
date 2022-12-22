@@ -167,9 +167,11 @@ Yes, the patch should be applied.  However, you may still have to build Sage aga
 
  * Quit Sage.
  * Instead of calling Sage however you usually do (e.g., 
-{{{ 
+
+``` 
 /path/to/sage
-}}}
+```
+
    do 
 
 ```

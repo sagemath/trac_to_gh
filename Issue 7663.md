@@ -8,7 +8,8 @@ Original creation time: 2009-12-11 15:13:24
 
 Assignee: was
 
-{{{ 
+
+``` 
 This is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the
 last characters of output after evaluating a cell are supressed. I've
 tried all of string.printable: the only characters supressed are "S",
@@ -28,7 +29,8 @@ ASAVFDBAAGGG___EEESS.
 
  Regards
 Pablo
-}}}
+```
+
 
 
 ---

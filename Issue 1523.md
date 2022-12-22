@@ -39,7 +39,9 @@ Then you just have to move that script to /usr/bin/ so it is in you PATH.
 
 Comment by was created at 2007-12-17 16:50:13
 
-{{{Justin (cc: sage-devel),
+
+```
+Justin (cc: sage-devel),
 
 There are now a lot of people using Sage on OSX who don't know
 (much) about the command line, but who are maple/mathematica
@@ -58,7 +60,8 @@ Thoughts?
 
 It seems like OSX mojo is relevant to this problem.
 
-}}}
+```
+
 
 
 ---

@@ -123,9 +123,12 @@ Comment by awebb created at 2009-10-10 11:47:56
 
 I get the same checksum as you do. 
 
-{{{$ md5sum data/graphs/graph_world.sobj
+
+```
+$ md5sum data/graphs/graph_world.sobj
 438bc195a9486caebeb47442ff8b8d8c  data/graphs/graph_world.sobj
-}}}
+```
+
 I was unable to apply the patch to sage-4.1.2.rc0. I guess a rebase is needed. Once I had the patch applied there were some warnings when I tried to do sage -docbuild. I made some changes to fix that. Specifically, I changed the reference so that it was similar to other ones on the same page. I hope that it is still fine. Otherwise, if you are happy with my small changes than I would give it a positive review.
 
 Adam

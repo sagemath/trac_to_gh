@@ -259,7 +259,8 @@ to something like 100000, then it will pause a random amount of time (in the ran
 
 is just a shell script, which calls something to pause for a random time before actually compiling the C file. 
 
-{{{#!/bin/sh 
+
+```/bin/sh 
 /usr/local/bin/randomsleep
 /usr/local/gcc-4.5.0/bin/gcc "$`@`"
 drkirkby`@`hawk:~$ 
@@ -342,7 +343,8 @@ $ make && ./new.sh
 
 where `new.sh` is:
 
-{{{#!/bin/bash
+
+```/bin/bash
 
 set -o pipefail
 

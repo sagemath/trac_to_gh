@@ -75,9 +75,11 @@ sage: for k in range(1,10000):
 This is on a 32-bit build of Sage running Mac OS X 10.5 (i.e., my core 2 duo MBP laptop). 
 
  * What does this do?  Just curious.  Maybe you could document it.
-{{{ 
+
+``` 
 NTL_CLIENT; 
-}}}
+```
+
 
  * Wow, this patch has a really large amount of interesting C++ code, all well documented.  This must have been quite a lot of work -- it's of course the best in the world and multithreaded.  Amazing.
 

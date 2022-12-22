@@ -8,7 +8,8 @@ Original creation time: 2007-02-08 03:39:35
 
 Assignee: was
 
-{{{ 
+
+``` 
 sage: R, u = PolynomialRing(GF(p), 'u').objgen()
  
 sage: S, v = PolynomialRing(R, 'v').objgen()

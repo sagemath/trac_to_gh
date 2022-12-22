@@ -41,9 +41,11 @@ This is a very naive solution, but hopefully it is sufficient.  Since I was the 
 Comment by was created at 2010-02-07 06:13:52
 
 Your patch has the line:
-{{{  
+
+```  
 if [ "$SAGE_APP_DMG" = "no" ]; then 
-}}}
+```
+
 
 This seems to thus bizarrely assume that  SAGE_APP_DMG is either "yes" or "no". But it is an environment variable, so can be anything, and defaults to being "".   Did you test the above with SAGE_APP_DMG not set?
 
@@ -122,7 +124,8 @@ Comment by GeorgSWeber created at 2010-02-14 13:43:02
 After the patch "trac_7765-dmg.patch" from seven weeks ago, the functionality is as (I think) it should be, i.e. unless an environment variable "SAGE_APP_DMG" both exists and has a value of "no", the dmg will be built. Good.
 
 As for the documentation/printout statements, one might think of something along the following lines to be more verbose:
-{{{ 
+
+``` 
     if [ "$SAGE_APP_DMG" = "no" ]; then
         echo 'If you wish to create a disk image please set'
         echo 'SAGE_APP_DMG=yes'
@@ -135,7 +138,8 @@ As for the documentation/printout statements, one might think of something along
         DYLD_LIBRARY_PATH=$SAGE_ORIG_DYLD_LIBRARY_PATH; export DYLD_LIBRARY_PATH
         hdiutil create -srcfolder "$TARGET" -format UDBZ "$TARGET".dmg
     fi
-}}}
+```
+
 Could you update the patch, or should I do it (I didn't because otherwise I couldn't be the reviewer, could I)?
 
 

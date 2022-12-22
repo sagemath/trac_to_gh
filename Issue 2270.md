@@ -127,7 +127,8 @@ pointing out all the problems in it for the record.]]
 
 9. OK, so I deleted everything that makes me nervous above and
 came up with:
-{{{#!/bin/sh
+
+```/bin/sh
 ###########################################
 ## GLIB
 ###########################################

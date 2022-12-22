@@ -22,7 +22,9 @@ Michael
 Comment by mabshoff created at 2007-09-17 00:21:28
 
 Here is the output from /proc/cpuinfo and /proc/meminfo:
-{{{cat /proc/cpuinfo
+
+```
+cat /proc/cpuinfo
 
 processor	: 0
 cpu		: 7447A, altivec supported
@@ -69,7 +71,8 @@ Committed_AS:   196360 kB
 VmallocTotal:   448936 kB
 VmallocUsed:     29308 kB
 VmallocChunk:   418724 kB
-}}}
+```
+
 
 Cheers,
 

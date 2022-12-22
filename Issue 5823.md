@@ -66,7 +66,8 @@ local/bin/maxima-noreadline: line 3: maxima: command not found
 ```
 
 Maybe the `maxima-noreadline` script should be changed by
-{{{#!/bin/sh
+
+```/bin/sh
 SAGE_CLISP_DISABLE_READLINE_HACK="yes"; export SAGE_CLISP_DISABLE_READLINE_HACK
 "$SAGE_ROOT/maxima" "$`@`"
 ```
@@ -82,7 +83,8 @@ Other than that, the changes look good to me. I'll run the test suite a couple o
 Comment by tornaria created at 2009-04-19 14:21:03
 
 Actually, shouldn't the scripts be something like:
-{{{#!/bin/sh
+
+```/bin/sh
 SAGE_CLISP_DISABLE_READLINE_HACK="yes"; export SAGE_CLISP_DISABLE_READLINE_HACK
 exec "$SAGE_ROOT/maxima" "$`@`"
 ```

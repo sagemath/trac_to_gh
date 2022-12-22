@@ -294,7 +294,8 @@ Comment by was created at 2008-11-13 01:31:31
 > Cheers, gsw 
 
 Since sage_scripts is basically the first thing installed during the sage build from source process, I'm worried that won't work.  In fact, it definitely won't on some systems, because the first line of sage-location is:
-{{{#!/usr/bin/env sage.bin
+
+```/usr/bin/env sage.bin
 ```
 
 

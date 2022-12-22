@@ -103,7 +103,8 @@ Replying to [comment:3 mraum]:
 What makes you think a symbolic link is a hack? It is very standard practice on Unix systems to create symbolic links for this very purpose. There are loads of them created in Sage. (Some people call them soft links). 
 
 Many shell scripts start 
-{{{#!/bin/sh
+
+```/bin/sh
 ```
 
 

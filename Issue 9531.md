@@ -10,7 +10,8 @@ Assignee: drkirkby
 
 The `spkg-check` file for [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) consists of:
 
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 
 cd src
 

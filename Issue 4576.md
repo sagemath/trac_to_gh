@@ -140,7 +140,8 @@ export SAGE_CHECK="yes"
 
 before installing. 
 Here's spkg-check, probably:
-{{{#!/bin/sh
+
+```/bin/sh
 cd biopython/Tests/
 python run_tests.py
 ```

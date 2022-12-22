@@ -227,7 +227,9 @@ Comment by jvoight created at 2008-11-09 00:26:52
 
 Argh!  Tried the patch on sage.math on 3.2.alpha3, still can't reproduce the error!  
 
-{{{jvoight`@`sage:~/sage-3.2.alpha3$ ./sage -t ./devel/sage/sage/rings/number_field/totallyreal_rel.py
+
+```
+jvoight`@`sage:~/sage-3.2.alpha3$ ./sage -t ./devel/sage/sage/rings/number_field/totallyreal_rel.py
 sage -t  devel/sage/sage/rings/number_field/totallyreal_rel.py
          [4.5 s]
 

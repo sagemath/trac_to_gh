@@ -109,7 +109,8 @@ DELETE_TMP is one
 
 Here's the code which generates this. 
 
-{{{#!/bin/sh
+
+```/bin/sh
 TMPVAR="${DELETE_TMP_FILES-1}"
 echo "TMPVAR=$TMPVAR"
 

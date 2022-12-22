@@ -9,7 +9,8 @@ Original creation time: 2009-01-18 05:10:24
 Assignee: cwitty
 
 The script currently is:
-{{{#!/bin/sh
+
+```/bin/sh
 sage -hg $*
 ```
 

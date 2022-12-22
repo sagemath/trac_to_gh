@@ -281,11 +281,13 @@ Questions:
 1. abergeron's last statement makes it sound like he *wants* the cmap_help function back in, yet both patches were applied.
 
 2. was' review implied that abergeron should let the ellipses below
-{{{       
+
+```       
                 <BLANKLINE> 
 	        The valid colormap names are: 
 	        ... 
-}}}
+```
+
 be replaced by the actual output of cmap_help.
 
 3. was' review also implies that for every function (e.g. matrix_plot) where cmap is an option, that function's docstring should have as a doctest a full call of cmap_help with its output, and that the review also said it was okay if that didn't happen for this patch to go in.  That sounds like someone should have opened another ticket for this behavior.

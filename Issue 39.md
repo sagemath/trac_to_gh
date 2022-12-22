@@ -8,12 +8,15 @@ Original creation time: 2006-09-12 23:31:09
 
 Assignee: somebody
 
-{{{      sage: R.<x,y> = PolynomialRing(ZZ, 2)
+
+```
+      sage: R.<x,y> = PolynomialRing(ZZ, 2)
         sage: S = R/(x^2 + y^2); S
         sage: S.<a,b> = R/(x^2 + y^2)
         sage: a^2 + b^2 == 0
     << -- *should* be true or give an error -- will require macaulay2... >>
-}}}
+```
+
 
 
 ---

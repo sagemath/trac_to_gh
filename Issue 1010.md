@@ -183,7 +183,8 @@ Some more comments (some repetitions):
  * render talks about xfig but outputs a png
  * it might be a good ideal to compute the Gröbner basis using Singular by default rather than leaving that to GFan. I bet it is much faster than GFan, but that could be another ticket.
  * btw. the docstring of Ideal.groebner_fan is pretty useless:
-{{{  
+
+```  
   "symmetry -- default: None; if not None, describes symmetries of the ideal"
 }}} 
   how is the symmetry described?

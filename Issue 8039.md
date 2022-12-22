@@ -98,9 +98,11 @@ I'd make a couple of other points tests in general, I've gleaned from studying t
 
 Hence the following is the safest test sort of test, and does not contain any unnecessary quotes. Quoting xNO will not hurt, but it is unnecessary as you know xNO will have no spaces, but you don't know that about FOOBAR.
 
-{{{ 
+
+``` 
              if [ "x$FOOBAR" = xNO ]; then
-}}}
+```
+
 
 I leave you to convert it to what is needed here. Otherwise I become an author and can't review it!
 
@@ -109,9 +111,11 @@ I would also
  * Stick a note in the spkg-install saying why the change is made. i.e. the original flag is not valid. -64 is needed to build 64-bit, or something like that. 
  * I would echo a quick statement like I did before when changing flags, like I did before. 
 
-{{{ 
+
+``` 
 '-shared' will be changed to '-G'
-}}}
+```
+
 
  * You are using a temporary variable of 'makefile' while editing 'Make.inc' I think that is unwise, and I know I was guilty of it above, but 'makefile' has some significance, and you could overwrite such a file if it existed. 
 

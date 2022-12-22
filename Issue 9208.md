@@ -44,9 +44,11 @@ REQUIRED DEPENDENCIES
 ## The solution
 The solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is 
 
-{{{ 
+
+``` 
 $SAGE_LOCAL/lib/pkgconfig
-}}}
+```
+
 
 rather than the default system directory. 
 

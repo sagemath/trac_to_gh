@@ -276,14 +276,17 @@ OK since I am redirected here.
 Yes the lcalc spkg cleaning should happen in another ticket.
 But does the lcalc wrapper in sage really need mpfr if lcalc
 doesn't? From the new module_list.py:
-{{{    Extension('sage.libs.lcalc.lcalc_Lfunction',
+
+```
+    Extension('sage.libs.lcalc.lcalc_Lfunction',
               sources = ['sage/libs/lcalc/lcalc_Lfunction.pyx'],
               libraries = ['m', 'ntl', 'mpfr', 'gmp', 'gmpxx',
                            'Lfunction', 'stdc++'],
               include_dirs = [SAGE_ROOT + "/local/include/lcalc/"],
               extra_compile_args=["-O3", "-ffast-math"],
               language = 'c++'),
-}}}
+```
+
 As a matter of fact I don't think it depends on gmp and gmpxx either.
 Those are added when you use mpfr.
 Actually at the moment Lfunction.so is never ever linked against mpfr, gmp,

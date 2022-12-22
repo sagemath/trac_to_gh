@@ -531,7 +531,8 @@ If there are a lot of Makefiles, then patching would be tedious and require more
 
 I've not checked this on the Singular sources, but this sed script, which I called 'nopg' could be used to replace ' -pg ' with nothing
 
-{{{#!/bin/sh 
+
+```/bin/sh 
 sed 's/ -pg //g' $1 > /tmp/Makefile-without-pg-option.$$
 mv /tmp/Makefile-without-pg-option.$$  $1
 ```

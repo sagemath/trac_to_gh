@@ -97,7 +97,9 @@ Comment by kcrisman created at 2009-12-28 17:07:52
 The behavior with the version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6) continues to be the case on boxen.math after the upgrade at #6532.  On the plus side, it no longer refers to someone else's installation.
 
 Here is another interesting error which might help us - is it possible that a number of R packages require non-universal libraries?
-{{{* installing *source* package ‘rgl’ ...
+
+```
+* installing *source* package ‘rgl’ ...
 checking for gcc... gcc -std=gnu99
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -124,7 +126,8 @@ checking GL/glu.h presence... no
 checking for GL/glu.h... no
 configure: error: missing required header GL/gl.h
 ERROR: configuration failed for package ‘rgl’
-}}}
+```
+
 This was on boxen.math; on my own Mac I did not have any problems with this package (a package installed by the package 'depth', which I needed for some other computations).  This tells me that
 
 

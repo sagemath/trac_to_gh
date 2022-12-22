@@ -13,46 +13,64 @@ Currently, the section in the tutorial on solving equations refers only to analy
 For equations with a single variable, this can be done using find_root().  It will save new users time to find "find_root()" mentioned with "solve()" in the section on solving equations.
 
 Examples:
-{{{id=1|
+
+```
+id=1|
 var('theta')
 ///
 
 <html><span class="math">\theta</span></html>
-}}}
+```
 
-{{{id=2|
+
+
+```
+id=2|
 solve(theta^2 + 1==4)
 ///
 
 <html><span class="math">\left[\theta  =  -\sqrt{ 3 }, 
  \theta  =  \sqrt{ 3 }\right]</span></html>
-}}}
+```
 
-{{{id=3|
+
+
+```
+id=3|
 solve(cos(theta)==sin(theta))
 ///
 
 <html><span class="math">\left[\sin \left( \theta \right)  =  \cos \left( \theta \right)\right]</span></html>
-}}}
+```
 
-{{{id=4|
+
+
+```
+id=4|
 find_root(cos(theta)==sin(theta),0,pi/2)
 ///
 
 <html><span class="math">0.785398163397</span></html>
-}}}
+```
 
-{{{id=5|
+
+
+```
+id=5|
 pi.n()/4
 ///
 
 <html><span class="math">0.785398163397448</span></html>
-}}}
+```
 
-{{{id=6|
+
+
+```
+id=6|
 
 ///
-}}}
+```
+
 
 
 ---

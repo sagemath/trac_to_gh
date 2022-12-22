@@ -95,11 +95,13 @@ Is William's problem reproducible by others? I just took:
  * The updated deps at #9464 which makes 'deps' look a bit cleaner.
 Set typed the following.  
 
-{{{ 
+
+``` 
 $ export MAKE="make -j6"
 $ export SAGE_PARALLEL_SPKG_BUILD=yes
 $ make
-}}}
+```
+
 
 R builds OK for me on bsd.math. Then Sage completes the build. 
 

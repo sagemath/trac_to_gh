@@ -8,7 +8,9 @@ Original creation time: 2006-10-21 03:37:21
 
 Assignee: was
 
-{{{>
+
+```
+>
 > Yep...  My $HOME/.sage belonged to "root".  I have no idea why that
 > happened either...  Maybe I used a "sudo" when I shouldn't...  (But I
 > really think I just used to "make".)  In any case, a "sudo chown -R"
@@ -20,7 +22,8 @@ had if the user doing the build is root but the $HOME for root
 is not /root.
 
 William
-}}}
+```
+
 
 
 ---

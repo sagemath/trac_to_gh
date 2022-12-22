@@ -83,7 +83,9 @@ Comment by edrex created at 2008-04-02 22:41:36
 I'm also able to add an exception with FF3B5. The procedure for adding an exception to FF3 is non-obvious so perhaps it should be in the documentation (Wiki FAQs?). Changing to a documentation issue.
 
 Q: When I try to access the notebook using Firefox 3 I receive an error message:
-{{{localhost:8000 uses an invalid security certificate.
+
+```
+localhost:8000 uses an invalid security certificate.
 
 The certificate is not trusted because the issuer certificate is unknown.
 The certificate is not valid for any server names.

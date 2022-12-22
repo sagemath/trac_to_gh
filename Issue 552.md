@@ -13,7 +13,8 @@ tree has moved gets it wrong.  This is frickin' annoying.  I would like a way to
 that is much more intelligent. 
 
 The relevant code is SAGE_ROOT/local/bin/sage-location:
-{{{#!/usr/bin/env sage.bin
+
+```/usr/bin/env sage.bin
 
 import os
 

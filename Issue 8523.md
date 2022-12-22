@@ -960,7 +960,8 @@ That's right.
 > And one problem with this method is that (if I understand correctly) one has to provide the exact version of the package whose existence is being tested. 
 
 I think that's right, too.  I don't know much about writing shell scripts, but this seems to work:
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 
 INSTALLED="$SAGE_PACKAGES/installed/"
 PKG_NAME=`echo "$1" | sed -e "s/\.spkg$//"`

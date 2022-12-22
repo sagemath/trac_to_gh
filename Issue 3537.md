@@ -320,7 +320,8 @@ has a function
 
 This function makes use of a non-POSIX command `which`, so there's no reason for `which` to exist. Then `whichexe()` function sets variables for things like SH, RM, SED, whilst checking if the commands (including `sh`) exist. If not the script exits. An abbreviated version is below. 
 
-{{{#!/bin/sh
+
+```/bin/sh
 whichexe() {
     if [ -f /bin/$1 ]; then
         echo /bin/$1

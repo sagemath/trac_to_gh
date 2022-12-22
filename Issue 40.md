@@ -8,7 +8,9 @@ Original creation time: 2006-09-12 23:31:32
 
 Assignee: somebody
 
-{{{To: "Kyle Schalm" <kschalm`@`math.utexas.edu>, sage-devel`@`lists.sourceforge.net
+
+```
+To: "Kyle Schalm" <kschalm`@`math.utexas.edu>, sage-devel`@`lists.sourceforge.net
 Subject: Re: [SAGEdev] long string parsing bug in 1.3.2.2
 
 The SAGE pre-parser currently works on single lines only -- it doesn't
@@ -23,7 +25,8 @@ load with
 sage: load "/Users/kyle/Documents/math/scripts/mm.sage"
 """
 ---------------------
-}}}
+```
+
 
 
 ---

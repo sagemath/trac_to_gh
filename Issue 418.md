@@ -265,7 +265,9 @@ It seems that interfaces had changes, so the spkg doesn't fit with the sage libr
 It seems that your installation picked up the headers from the old install. Maybe its enough to delete `SAGE_INC+"/cryptominisat/`?
 
 I fixed a few trivial things below, but there's more to be done:
-{{{ #!diff
+
+```
+ #!diff
 diff -r ef5eaff5d6cd module_list.py
 --- a/module_list.py    Fri Jun 29 17:04:34 2012 +0100
 +++ b/module_list.py    Sun Jul 01 23:40:53 2012 +0200
@@ -296,7 +298,8 @@ diff -r ef5eaff5d6cd sage/sat/solvers/cryptominisat/solverconf_helper.h
 
  enum sc_type {
    t_int      = 1<<0,
-}}}
+```
+
 
 
 ---

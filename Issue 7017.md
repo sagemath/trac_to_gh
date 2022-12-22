@@ -41,16 +41,19 @@ OverflowError: long int too large to convert to int
 
 Those two lines gave me a segfault on sage.math: 
 
-{{{[mvngu`@`sage ~]$ sage 
+
+```
+[mvngu`@`sage ~]$ sage 
 ---------------------------------------------------------------------- 
 ---------------------------------------------------------------------- 
 sage: from sage.rings.fast_arith import prime_range 
-sage: print prime_range(10<sup>16,10</sup>16+100) 
+sage: print prime_range(10^16,10^16+100) 
 /usr/local/sage/local/bin/sage-sage: line 199:  9892 Segmentation 
 fault      sage-ipython "$`@`" -i 
 | Sage Version 4.1.1, Release Date: 2009-08-14                       | 
 | Type notebook() for the GUI, and license() for information.        | 
-}}}
+```
+
 
 Minh Van Nguyen
 

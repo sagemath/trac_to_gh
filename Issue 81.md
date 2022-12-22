@@ -84,7 +84,8 @@ Fixed with the following script being called from the sage_setup
 function in local/bin/sage-sage.
 
 
-{{{#!/usr/bin/env sage.bin
+
+```/usr/bin/env sage.bin
 
 import os
 

@@ -12,7 +12,9 @@ CC:  sage-combinat
 
 In the documentation for the function "Set" (Reference Manual 11.8) it would be helpful to explicitly point out that Set allows objects of different types, so 
 
-{{{sage: Set([Sequence(my_seq),3,QQ])
+
+```
+sage: Set([Sequence(my_seq),3,QQ])
 {Rational Field, 3, [2, 3]}}}}
 
 is perfectly OK.

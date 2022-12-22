@@ -8,7 +8,9 @@ Original creation time: 2007-10-21 12:41:39
 
 Assignee: somebody
 
-{{{ some f-p values are printed like integers, which may confuse the user
+
+```
+ some f-p values are printed like integers, which may confuse the user
  (especially if one copies them with the mouse):
  sage: 2.0^46
  70368744177664.0
@@ -26,7 +28,8 @@ Assignee: somebody
 
 My 2 cents,
 Paul Z.
-}}}
+```
+
 
 
 ---

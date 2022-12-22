@@ -10,7 +10,9 @@ Assignee: tba
 
 CC:  jhpalmieri
 
-{{{>> If nobody finds any serious problems with it, something close to it
+
+```
+>> If nobody finds any serious problems with it, something close to it
 >> will get released (though I'm not in a hurry).
 >
 > Here's a nonserious problem: running "sage -docbuild developer html --
@@ -46,7 +48,8 @@ Is the build OK, but there is an error?  I.e., can this be safely fixed in the n
 > same thing happens.  Omit "--jsmath" and it works just fine.  Building
 > PDF documentation seems to work fine, too, although I haven't finished
 > building the reference manual yet.)
-}}}
+```
+
 
 
 ---

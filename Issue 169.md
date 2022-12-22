@@ -8,7 +8,9 @@ Original creation time: 2006-11-15 15:44:35
 
 Assignee: was
 
-{{{From "Luislang" 
+
+```
+From "Luislang" 
 
 Following session says it all.
  
@@ -24,7 +26,8 @@ Traceback (most recent call last):
   File "<console>", line 1, in ?
   File "gen.pyx", line 417, in gen.gen.__setitem__
 IndexError: index (slice(0, 1, None)) must be between 0 and 1
-}}}
+```
+
 
 
 ---

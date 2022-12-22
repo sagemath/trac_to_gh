@@ -168,7 +168,8 @@ oops, sorry, wrong formatting in my previous comment (look OK in preview...). Fi
  
  I don't understand your remark.
  My patch appears to be in accordance with the current design.
-{{{ 
+
+``` 
  sage: f = ZZ['x'](4*x)
  sage: f.squarefree_decomposition()
  (4) * x

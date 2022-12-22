@@ -3688,12 +3688,13 @@ But I did not type
 
 but instead 
 
-{{{hg qpush -a}}
+
+```
+hg qpush -a}}
 
 Looking for help on that:
 
-
-```
+{{{
 drkirkby`@`hawk:~$ hg qpush -h
 hg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]
 
@@ -3711,8 +3712,7 @@ options:
  -n --name   merge queue name
 
 use "hg -v help qpush" to show global options
-```
-
+}}}
 
 I interpret that is meaning all of them would be applied. 
 
@@ -5214,7 +5214,8 @@ So there are two solutions:
 ```
 
 by
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 ```
 
 

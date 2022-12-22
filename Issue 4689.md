@@ -22,7 +22,8 @@ sage: Eplot.save?
 
 then I get
 
-{{{ 
+
+``` 
 EXAMPLES:
                 sage: c = circle((1,1),1,rgbcolor=(1,0,0))
                 sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)
@@ -33,7 +34,8 @@ EXAMPLES:
                 sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)
 
                 sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))
-}}}
+```
+
 
 which never mentions "save" at all. Presumably there should be an extra line, something like
 

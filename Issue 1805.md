@@ -180,7 +180,9 @@ Positive review pending fix.
 
 Comment by gfurnish created at 2008-03-02 06:36:38
 
-{{{sage -t  devel/sage-patch1805/build/sage/structure/factorization.py
+
+```
+sage -t  devel/sage-patch1805/build/sage/structure/factorization.py
 **********************************************************************
 File "factorization.py", line 602:
     sage: F = factor(-2*x^2 - 1); F
@@ -189,7 +191,8 @@ Expected:
 Got:
     (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)
 **********************************************************************
-}}}
+```
+
 
 
 ---

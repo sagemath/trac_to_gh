@@ -132,14 +132,19 @@ Comment by was created at 2008-02-28 17:33:26
 SOLUTION: If you change the list into a list of Python ints (which is surely what numpy is vastly more comfortable with) taht completely gets rid of the memory leak.  I'm guessing numpy is just doing some sort of black magic to convert the list to some internal format, and it makes assumptions that aren't satisfied by Sage integers.  The right solution is to give numpy standard Python input, so it can do whatever black magic it wants under valid assumptions.  The code below illustrates how to do this.
 
 
-{{{id=115|
+
+```
+id=115|
 import numpy
 def foo(f):
     tmp = [int(a) for a in f.list()]
     rts = numpy.roots(tmp)
-}}}
+```
 
-{{{id=114|
+
+
+```
+id=114|
 x = polygen(ZZ)
 f = x^10 - 1
 print get_memory_usage()
@@ -148,7 +153,8 @@ print get_memory_usage()
 ///
 172M+
 172M+
-}}}
+```
+
 
 
 ---

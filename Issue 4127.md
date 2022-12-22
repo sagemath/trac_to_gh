@@ -13,7 +13,8 @@ CC:  dphilp jason
 The build process isn't very robust, and occasionally links to unintended libraries from e.g. /sw and /opt.  These scripts are good for detecting when and where that happens.  (OS X only)
 
 First, construct a whitelist on a OS X-and-Sage vanilla installation.  (Run the script from SAGE_ROOT after sourcing sage-env.)
-{{{#!/usr/bin/env python
+
+```/usr/bin/env python
 
 # Run this script on a vanilla sage build on a clean OS X to figure out 
 # what external libraries vanilla sage links to.  This forms a reference
@@ -63,7 +64,8 @@ WHITELIST_FILE.writelines(whitelist)
 Second, copy the whitelist to the non-vanilla configuration.
 
 Third, run this script from non-vanilla SAGE_ROOT:
-{{{#!/usr/bin/env python
+
+```/usr/bin/env python
 
 # Identify any external (non-sage) libraries that are linked by
 # sage binaries, that are not on the 'known good' whitelist.

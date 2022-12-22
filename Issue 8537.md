@@ -226,7 +226,8 @@ $ export MAKE
 
 
 The best fix is to change the first line of spkg-install to 
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 ```
 
 Almost all spkgs use that anyways.

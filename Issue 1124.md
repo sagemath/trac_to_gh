@@ -11,7 +11,8 @@ Assignee: was
 Keywords: zero_subspace
 
 Here is a bug in modular symbols code:
-{{{ 
+
+``` 
 sage: M=ModularSymbols(11,2,1)
 sage: M.complement()
 ---------------------------------------------------------------------------
@@ -27,7 +28,8 @@ sage: M.complement()
     100     def decomposition_matrix(self):
 
 <type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'
-}}}
+```
+
 
 The problem is that zero_subspace is not implemented. Although zero_submodule is.
 One possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.

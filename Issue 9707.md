@@ -41,3 +41,47 @@ A quick search effectively returns a significant number of recent publications.
 Comment by @rajat1433 created at 2019-03-13 14:25:00
 
 Changing assignee from jason, ncohen, rlm to @rajat1433.
+
+
+---
+
+Comment by git created at 2019-03-13 15:06:16
+
+Branch pushed to git repo; I updated commit sha1. New commits:
+
+
+---
+
+Comment by @rajat1433 created at 2019-03-13 15:07:27
+
+Changing status from new to needs_review.
+
+
+---
+
+Comment by @rajat1433 created at 2019-03-13 15:07:57
+
+Do i need to include this ticket number somewhere in the code?
+
+
+---
+
+Comment by dcoudert created at 2019-03-13 17:13:24
+
+Changing status from needs_review to positive_review.
+
+
+---
+
+Comment by dcoudert created at 2019-03-13 17:13:24
+
+We usually add ticket number when we fix a bug. So it's not needed here.
+
+LGTM.
+
+
+---
+
+Comment by vbraun created at 2019-03-14 18:14:03
+
+Resolution: fixed

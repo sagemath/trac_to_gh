@@ -66,12 +66,14 @@ I copied the body of the `__cmp__` function from `sage/interfaces/expect.py`, an
 
 You're right. This was also a problem with `expect.py`. attachment:sage-maple_interface_fixes.2.patch  changes the offending lines with
 
-{{{ 
+
+``` 
 if hash(str(self)) < hash(str(other):
     return -1
 else:
     return 1
-}}}
+```
+
 
 Hopefully making `__cmp__` behave more like an order relation.
 

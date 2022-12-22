@@ -10,7 +10,9 @@ Assignee: tba
 
 In part 37.8 of the Reference Manual (the Elliptic curves over finite fields section) there are some formatting issues. For instance, in the section on the frobenius_polynomial, we have the sentence:
 
-{{{The Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. 
+
+```
+The Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. 
 In most cases this is irreducible and defines an imaginary quadratic order; 
 for some supersingular curves, Frobenius is an integer a and the polynomial is 1703#326 .}}}
 

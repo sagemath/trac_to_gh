@@ -35,7 +35,9 @@ Changing type from defect to enhancement.
 
 Attachment
 
-{{{{
+
+```
+{
 Cremona:
 >  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which
 >  would throw a run-time error if there were no solutions and give one
@@ -45,7 +47,8 @@ Cremona:
 Something like that is next on my list.  Maybe instead of P.divide(m),
 which is what I planned, for consistency 
 I should do P.division_points(m), which can return a possibly empty list.    
-}}}
+```
+
 
 
 ---

@@ -14,7 +14,8 @@ The Sage build process pulls in non-standard libraries if they are easily found.
 
 The fix is simple: move /sw and /opt/local during the build process.  However, this is not at all obvious the first time.  This script runs a simple test to check whether fink or ports are likely to interfere, and gives a useful error message.
 
-{{{#!/bin/bash
+
+```/bin/bash
 
 # Try to find ports automatically.
 PORTS_PATH=`which port`

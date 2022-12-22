@@ -584,7 +584,8 @@ Definitely short term I don't think it is realistic to make the entire startup e
 
 Specifically I would have the root level sage script be (more or less)
 
-{{{#!/usr/bin/env sh
+
+```/usr/bin/env sh
 
 "$0-sh" -c "sage $*"
 ```

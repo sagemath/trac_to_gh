@@ -417,7 +417,9 @@ Comment by mhampton created at 2009-12-10 12:51:14
 OK, this now passes all tests with 100% coverage.  Current issues I plan on addressing:
 
 1) Add old functions that are missing:
-{{{facial_adjacencies
+
+```
+facial_adjacencies
 facial_incidences
 graph
 linearities

@@ -41,7 +41,8 @@ Comment by was created at 2006-10-15 17:11:24
 This is now fixed.  I fixed it by creating the script below and calling
 it from the sage_setup() section of sage-sage:
 
-{{{#!/usr/bin/env sage.bin
+
+```/usr/bin/env sage.bin
 
 import os
 

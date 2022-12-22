@@ -206,7 +206,8 @@ Jaap
 
 
 
-{{{#!/bin/sh
+
+```/bin/sh
 
 sage -i wxPython-2.8.7.1
 sage -i vtk-5.0.4.p0

@@ -45,7 +45,8 @@ Looks good to me at this point in my graph isomorphism education.
 
 Comment by rlm created at 2008-02-18 23:27:45
 
-{{{ 
+
+``` 
 [2:40pm] jason-: what's next?
 [2:41pm] rlm: ok, next is #2085, and you've already done the first two!
 [2:41pm] jason-: yay!
@@ -96,7 +97,8 @@ Comment by rlm created at 2008-02-18 23:27:45
 [2:59pm] rlm: yep
 [3:00pm] jason-: okay, I say it goes in for the same reasons as above.
 [3:00pm] rlm: cool, so that's the bundle
-}}}
+```
+
 
 
 ---

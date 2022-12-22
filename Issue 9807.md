@@ -2898,11 +2898,13 @@ Replying to [comment:171 fbissey]:
 > could be it.
 
 Oops, it looks like it's already quoted in the spkg-install file.  I changed the first line from
-{{{#!/bin/sh
+
+```/bin/sh
 ```
 
 to
-{{{#!/usr/bin/env bash 
+
+```/usr/bin/env bash 
 ```
 
 I don't know if this was a good idea, but it did get past that error, only to run into the same import error as when trying to install matplotlib.
@@ -4050,7 +4052,8 @@ Replying to [comment:224 drkirkby]:
 
 
 On my Mac, it actually looks like this:
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 $SAGE_LOCAL/bin/gfortran-64  -m64 "$`@`"
 ```
 
@@ -4115,7 +4118,8 @@ It does not appear to have anything that's obviously using a Fortran 90 target, 
 
 Have you reported that bug upstream to the Numpy developers? If so, do you have the link handy? Do you have a link to the Gentoo bug? You could try exporting F77, F90 and F95 in addition to FC and see if that fixes it. It would be worth opening a bug report in Sage if this is affecting Sage too, which I expect it will. I could try creating a file 'icc' on my Sun and seeing if Numpy uses that, though since the Intel compiler does not run on Solaris, there's less chance of that being an issue. Perhaps someone with Linux can create a file `icc` that simply exits with 1. 
 
-{{{#!/bin/sh
+
+```/bin/sh
 exit 1
 ```
 

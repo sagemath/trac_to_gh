@@ -44,7 +44,8 @@ Comment by jsp created at 2010-01-07 13:29:15
 Not so strange if you have:
 
 
-{{{#!/bin/sh
+
+```/bin/sh
 
 /usr/bin/gfortran -fPIC $`@`
 

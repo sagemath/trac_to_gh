@@ -322,7 +322,8 @@ That does work with SAGE64=yes.
 
 drkirkby`@`hawk:~/2/sage-4.5.alpha0$ cat local/bin/sage_fortran
 
-{{{#!/bin/sh 
+
+```/bin/sh 
 
 /usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $`@`
 ```

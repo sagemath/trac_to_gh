@@ -94,7 +94,9 @@ Welcome to openSUSE 11.1 - Kernel \r (\l).
 
 Comment by wjp created at 2010-04-26 22:43:55
 
-{{{spkg-install} was passing include paths in CFLAGS instead of in CPPFLAGS, which caused some preprocessor magic to fail that libpng was doing to create a symbol version script.
+
+```
+spkg-install} was passing include paths in CFLAGS instead of in CPPFLAGS, which caused some preprocessor magic to fail that libpng was doing to create a symbol version script.
 
 New spkg at:
 

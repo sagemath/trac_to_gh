@@ -196,7 +196,8 @@ Comment by mabshoff created at 2007-12-01 23:37:34
 
 One more data point: The coercion.pyx doctest fails with the exact
 same backtrace (modulo the top of the call chain) when doing:
-{{{ 
+
+``` 
 Trying:
     f.parent()###line 207:_sage_    >>> f.parent()
 Expecting:
@@ -226,7 +227,8 @@ exit code: 256
 The following tests failed:
 
         sage -t -verbose devel/sage-main/sage/structure/coerce.pyx 
-}}}
+```
+
 
 
 ---

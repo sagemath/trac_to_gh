@@ -13,7 +13,8 @@ Keywords: jsmath
 Gary wrote: 
  
 When using the SAGE notebook with typeset on, the command 
-{{{ 
+
+``` 
   gp(2+2) 
 }}} 
 gives the error `'Unknown environment "verbatim"'`. 

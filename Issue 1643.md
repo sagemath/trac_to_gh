@@ -9,7 +9,8 @@ Original creation time: 2007-12-30 18:56:17
 Assignee: mabshoff
 
 We shouldn't copy the binary named in `SAGE_FORTRAN` to `sage_fortran.bin` since it seems to break gfortran. Some times it seems to assume the position of libgfortran.so to be relative to the invoking executable and then breaks things will break. Just make the script `sage_fortran` call
-{{{#!/bin/bash
+
+```/bin/bash
 value of SAGE_FORTRAN $*
 ```
 

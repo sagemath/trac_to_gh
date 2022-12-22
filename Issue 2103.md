@@ -60,12 +60,14 @@ I've also added a reduce_cusp method, which is essentially a wrapper around Crai
 outside the specific context of modular symbol boundary maps.
 
 In the course of fixing this, I've also made some other changes: I found that existing code gives
-{{{ 
+
+``` 
 sage: Gamma1(11) == GammaH(11, [])
 False
 sage: Gamma0(11) == GammaH(11, [2])
 False
-}}}
+```
+
 despite the fact that in both cases the two groups are the same.
 
 Hence I've adjusted things so that Gamma0 and Gamma1 inherit from GammaH, and use the GammaH __cmp__ methods. Things are now much more consistent, but there was a slight side-effect of breaking a doctest in abvar/abvar.py as the sort order of congruence subgroups has changed -- there is no way to avoid this, because at the moment we have the following: 

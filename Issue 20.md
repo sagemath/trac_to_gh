@@ -8,7 +8,9 @@ Original creation time: 2006-09-12 23:20:48
 
 Assignee: somebody
 
-{{{From David Harvey:
+
+```
+From David Harvey:
 Further to our discussion of a few days ago, I found something quite confusing, not sure what the correct behaviour should be.
  
 sage: poly_ring1.<gen1> = PolynomialRing(QQ)
@@ -34,7 +36,8 @@ sage: huge_power_ring(gen2)
 Is this a bug?
 
 Response: from william: "Yes"
-}}}
+```
+
 
 
 ---

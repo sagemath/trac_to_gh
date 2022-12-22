@@ -38,10 +38,12 @@ Looks good.
 
 I wonder if this could be an issue though, but I doubt it.
 
-{{{ 
+
+``` 
 - \setshortversion{2.11} 
 + \setshortversion{3.0.alpha0} 
-}}}
+```
+
 
 
 ---

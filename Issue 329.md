@@ -291,9 +291,11 @@ file.tar < tar xf -
 ```
 
 can be faster than 
-{{{ 
+
+``` 
 cat file.tar | tar xf
-}}}
+```
+
 as you don't need to invoke cat at all. Do a Google on "useless use of cat". 
 
 Since you mention speed as a possible issue, any attempt that could be made to avoid copying files, or cat'ing files unnecessarily should help speed things up a lot. Other points are more minor

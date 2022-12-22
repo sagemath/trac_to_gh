@@ -11,7 +11,8 @@ Assignee: cwitty
 Keywords: hg, libpng
 
 When trying hg_sage.commit() on OS X 10.5.5. I get the following error
-{{{ 
+
+``` 
 sage: hg_sage.commit()
 cd "/Users/tjlahey/sage/devel/sage" && hg diff  | less
 cd "/Users/tjlahey/sage/devel/sage" && hg commit  
@@ -22,7 +23,8 @@ dyld: Symbol not found: __cg_png_create_info_struct
 transaction abort!
 rollback completed
 abort: edit failed: mate killed by signal 5
-}}}
+```
+
 So, for some reason, there is a conflict with the system frameworks. Unfortunately, this can't be commented out like Macports or Fink.
 
 
@@ -44,9 +46,11 @@ Michael
 Comment by tjlahey created at 2008-12-02 19:36:38
 
 This is just a regular build of Sage on OS X 10.5.5 (using make) after moving /opt out of the way. EDITOR is set to:
-{{{ 
+
+``` 
 EDITOR=mate -w
-}}}
+```
+
 which calls TextMate, but it is crashing before then. If I use a Macports build of mercurial, I can run hg commit just fine (which is what I did after this crashed).
 
 I'll keep your statements about tickets in mind for the future. Sorry.

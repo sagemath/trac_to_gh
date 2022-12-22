@@ -87,8 +87,11 @@ Changing status from needs_review to needs_work.
 
 Comment by mhansen created at 2009-12-02 19:23:21
 
-{{{        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed
-}}}
+
+```
+        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed
+```
+
 
 
 ---

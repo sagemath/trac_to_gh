@@ -160,7 +160,8 @@ Changing assignee from tbd to mhansen.
 Comment by jhpalmieri created at 2009-06-05 21:57:31
 
 Here's another possible fix for the latex_table issue:
-{{{ 
+
+``` 
         try:
             f = latex_table[type(x)]
             return LatexExpr(f(x))
@@ -168,7 +169,8 @@ Here's another possible fix for the latex_table issue:
             if x is None:
                 return LatexExpr("\\mbox{\\mathrm{None}}")
             return LatexExpr(str_function(str(x)))
-}}}
+```
+
 Since `type(True)` returns `bool`, this looks up the right thing.  Is this approach better or worse than the one in your patch?  
 
 The try/except approach helps to avoid accidental lookups in the table, but were those being used intentionally for anything?  For example, does `isinstance(blah, int)` return True for other classes that we care about for typesetting?  I tend to think that we should be more explicit rather than implicit (so add more entries `new-type: str` if we want more types to behave the way ints do), so I would favor the dictionary lookup approach.  I could be convinced otherwise, though.

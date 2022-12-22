@@ -107,7 +107,8 @@ Comment by jason created at 2010-06-14 19:09:54
 
 If you replace the existing jmol directory with the above zip, then you delete the "jmol" file inside that directory, which is necessary for the spkg to work.  The jmol file is:
 
-{{{#!/bin/sh
+
+```/bin/sh
 #JMOL_HOME=`dirname "$0"`
 JMOL_HOME="`"$SAGE_LOCAL"/bin/sage-pypkg-location sagenb`""/sagenb/data/jmol"
 
@@ -1183,7 +1184,8 @@ Comment by gutow created at 2011-03-09 21:09:51
 
 Replying to [comment:83 kcrisman]:
 I think what you've found is the stuff for the notebook, which does seem to be working.  I've found the following in the base.pyx file inside the plot3d directory, but am not sure what is going on.
-{{{        
+
+```        
 if 'filename' in kwds:
             filename = kwds['filename']
             del kwds['filename']
@@ -1216,7 +1218,8 @@ if 'filename' in kwds:
             f.write('set defaultdirectory "%s"\n' % archive_name)
             f.write('script SCRIPT\n')
             f.close()
-}}}
+```
+
 
 Somehow the building of "archive_name" is getting messed up.  I'm suspicious of 
  filename = sage.misc.misc.tmp_filename()

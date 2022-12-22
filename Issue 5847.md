@@ -713,7 +713,9 @@ Replying to [comment:30 leif]:
 >    * _Allow use of x86_64 asm code under MinGW_
 > 
 I remember adding 6.3 to the sage-on-gentoo tree for GMP-5
-{{{# ChangeLog for sci-mathematics/ecm
+
+```
+# ChangeLog for sci-mathematics/ecm
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
@@ -737,7 +739,8 @@ I remember adding 6.3 to the sage-on-gentoo tree for GMP-5
 
   07 Jul 2010; François Bissey <f.r.bissey`@`massey.ac.nz> +ecm-6.3.ebuild:
   Version bump. Hopefully helpfull with gmp-5.
-}}}
+```
+
 I'll have to check my inbox for the details. I imported it on the 7th of July
 because it said it was compatible with GMP-5 and one of our user was using that.
 The user then reported that he still couldn't get ECM to build and I introduced the

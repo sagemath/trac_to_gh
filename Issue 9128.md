@@ -899,7 +899,8 @@ really using the PDF doc out there ?)
 
 - is it really a hard limitation ? Couldn't this be fixed by a shell variable ?
 I had the following script in my `~/bin` when I was using `XY-pic`:
-{{{#!/bin/sh
+
+```/bin/sh
 #####################################
 # Boosted TeX to compile withc XY-pic
 export extra_mem_bot=8000000; tex $*

@@ -131,7 +131,8 @@ My solution was to slightly modify pjeremy's patch so that it creates a library 
 
 Then I put a script in $SAGE_ROOT/local/bin called "cc" which is a wrapper around the cc I really want to use:
 
-{{{#!/usr/local/bin/bash
+
+```/usr/local/bin/bash
 
 # Intersperse a "-lm_complex" before "-lm".
 

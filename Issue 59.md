@@ -35,7 +35,8 @@ This was from David Kohel.  Here's a better formated version:
 
 William, my student noticed some slow performance with elliptic curves 
 group law.  I think there was a huge overhead in duplication:
-{{{ 
+
+``` 
 sage: E = EllipticCurve([GF(101)(1),3])
 sage: P = E([-1,1,1])
 sage: timeit 2*P

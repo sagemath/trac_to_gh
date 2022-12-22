@@ -69,7 +69,9 @@ Changing assignee from somebody to was.
 Comment by was created at 2007-01-05 06:01:11
 
 Another example from Ifti
-{{{> [2] There seems to be some strange function declaration mangling which
+
+```
+> [2] There seems to be some strange function declaration mangling which
 > seems to be going on in the manual.
 >
 > For example the function Lseries_dokchitser in the manual
@@ -86,7 +88,8 @@ Another example from Ifti
 > 			max_imaginary_part=0,
 > 			max_asymp_coeffs=40,
 > 			algorithm='gp'):
-}}}
+```
+
 
 
 ---

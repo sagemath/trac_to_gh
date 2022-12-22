@@ -47,7 +47,8 @@ Note, this is just a tar file, not a compressed tar file, as compressing the con
 Comment by jhpalmieri created at 2010-06-29 15:58:12
 
 The change makes sense to me, but I'm not sure I can referee it properly: I don't have any problem with fortran on my Mac OS X box.  This is OS X 10.6 on a 64-bit machine.  No matter how I set SAGE64, the file sage_fortran always says
-{{{#!/bin/bash
+
+```/bin/bash
 gfortran -m64 "$`@`"
 ```
 
@@ -239,7 +240,8 @@ sage_fortran  -o testslamch slamch.o lsame.o slamchtst.o
 
 However, when I looked at William's $SAGE_LOCAL/bin/sage_fortran, it had only:
 
-{{{#!/bin/sh
+
+```/bin/sh
 ```
 
 
@@ -297,7 +299,8 @@ I accept R could have called sage_fortran in a different way, which resulted in 
 
 But can you explain how ATLAS, Numpy and Linbox built, when I clearly see the sage_fortran script had in it
 
-{{{#!/bin/sh
+
+```/bin/sh
 ```
 
 
@@ -328,7 +331,8 @@ Replying to [comment:21 drkirkby]:
 
 I realise I was mistaken here. Justin is almost certainly right when he says the lack of a new line in the file can fool the eye into believing that the contents of the file are just
 
-{{{#!/bin/sh
+
+```/bin/sh
 }}}  
 
 when in fact there is more to it. This is how it looks on my screen - it is easy to see that this could be confusing. 

@@ -8,7 +8,9 @@ Original creation time: 2006-12-16 01:31:05
 
 Assignee: was
 
-{{{On Fri, 15 Dec 2006 17:03:48 -0800, Luis Finotti <luis.finotti`@`gmail.com> wrote:
+
+```
+On Fri, 15 Dec 2006 17:03:48 -0800, Luis Finotti <luis.finotti`@`gmail.com> wrote:
 
 >
 > On 12/15/06, Kate Minola <kate01123`@`gmail.com> wrote:
@@ -42,7 +44,8 @@ does the above message only appear for a few seconds, then SAGE starts
 up?
 
 William
-}}}
+```
+
 
 
 ---

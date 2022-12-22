@@ -17,9 +17,11 @@ You will find a full description of the problem in the docstrings, or there :
 * http://en.wikipedia.org/wiki/Feedback_arc_set
 
 The functions use Linear Programming, which needs one of the two optional packages GLPK 
-{{{ 
+
+``` 
 sage: install_package('cbc')
-}}}
+```
+
 or CBC 
 
 ```

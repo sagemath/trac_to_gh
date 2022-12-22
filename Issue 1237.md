@@ -18,23 +18,31 @@ For the particular curve you're considering mwrank (via sage's rank command)
 can compute the rank -- which is what you want -- in 0.5 seconds, so maybe
 you can use .rank() instead?
 
-{{{id=24|
+
+```
+id=24|
 e = EllipticCurve([0, 33076156654533652066609946884, 0,
 347897536144342179642120321790729023127716119338758604800,
 114112815436927429551902303280680424778815462104985764887003237028585178\
 1352816640000])
-}}}
+```
 
-{{{id=27|
+
+
+```
+id=27|
 time e.rank()
 ///
 1
 CPU time: 0.00 s,  Wall time: 0.46 s
-}}}
+```
+
 
 That said, the fact that  e.torsion_order() fails is certainly a bug:
 
-{{{id=29|
+
+```
+id=29|
 e.torsion_order()
 ///
 Traceback (most recent call last):
@@ -45,7 +53,8 @@ Traceback (most recent call last):
   File "/Users/was/s/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/rational_torsion.py", line 56, in __init__
     self.__E.__pari_double_prec()
 AttributeError: 'EllipticCurve_rational_field' object has no attribute '_EllipticCurveTorsionSubgroup__pari_double_prec'
-}}}
+```
+
 
 
 

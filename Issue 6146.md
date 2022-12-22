@@ -111,7 +111,8 @@ Duplicate of which ticket?
 
 For convenience, here's a copy of the path-detection code in the tarball above. The tarball also contains a number of tests for different cases of symlinks in-the-path or in-the-script.
 
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 
 realpath_bash()
 {

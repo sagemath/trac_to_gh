@@ -12,7 +12,9 @@ There doesn't seem to be a way to find eigenforms within spaces of modular forms
 
 Also, the sturm_bound and hecke_bound methods seem not to work:
 
-{{{S37=CuspForms(37,2)
+
+```
+S37=CuspForms(37,2)
 S37.sturm_bound()}}}
 
 {{{Exception (click to the left for traceback):

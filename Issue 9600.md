@@ -482,8 +482,11 @@ Replying to [comment:14 pjeremy]:
 Thank you for trying Peter. 
 
 Since the failure reports
-{{{ gcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest/local/lib/liblapack.so: undefined reference to `_gfortran_concat_string'age-4.5/local/lib/liblapack.so: undefined reference to `csqrt'
-}}}
+
+```
+ gcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest/local/lib/liblapack.so: undefined reference to `_gfortran_concat_string'age-4.5/local/lib/liblapack.so: undefined reference to `csqrt'
+```
+
 
 I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works
 

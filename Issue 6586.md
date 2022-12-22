@@ -457,7 +457,8 @@ Comment by mpatel created at 2009-09-04 07:40:11
 For Sage 4.1.2.alpha0's HTML reference manual, at least, the new spkg seems to work just as Georg indicated.  I'll try to do more testing soon.
 
 By the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 
 if [ -z "$SAGE_LOCAL" ]; then
    echo "SAGE_LOCAL undefined ... exiting";

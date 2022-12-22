@@ -634,10 +634,12 @@ Some answers.
 
 3.  The code snippet 
 >
-{{{ 
+
+``` 
 sage: g = graphs.CompleteBipartiteGraph(1,3)
 sage: g.latex_options(tkz_style = 'Art')  
-}}}
+```
+
 
 should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built "Art" style, rather than the default "Normal" style.
 
@@ -673,10 +675,12 @@ Replying to [comment:19 rbeezer]:
 3.  
 > The code snippet 
 > >
-{{{ 
+
+``` 
 sage: g = graphs.CompleteBipartiteGraph(1,3)
 sage: g.latex_options(tkz_style = 'Art')  
-}}}
+```
+
 > 
 > should have no immediate ovious effect or output.  But `latex(g)` should differ if run before and after these commands - afterwards it should have the tkz-graph commands to use the pre-built "Art" style, rather than the default "Normal" style.
 

@@ -173,7 +173,8 @@ If the shared libraries can be deleted, then that would solve the problem. But o
 
 BTW, I found a better test for the linker - see below. I will try to get a script added to the $SAGE_LOCAL/bin to test the linker that gcc uses. 
 
-{{{#!/bin/sh 
+
+```/bin/sh 
 # Assume the -v option when passed directly to the linker 
 # will output "GNU" or "Binutils" if using the GNU linker. 
 # Even if some other linker accepts -v (which is quite a common option

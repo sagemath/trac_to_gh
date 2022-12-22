@@ -81,7 +81,8 @@ for POSIX options to 'find'
 
 pushd and popd are not supported in the /bin/sh on Solaris, though the usual 
 
-{{{#!/usr/bin/env bash
+
+```/usr/bin/env bash
 ```
 
 

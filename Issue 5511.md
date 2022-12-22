@@ -15,14 +15,19 @@ The following worksheet implements arbitrary mesh functions for 3d graphics obje
 Arbitrary Mesh Functions
 system:sage
 
-{{{id=15|
+
+```
+id=15|
 from sage.ext.fast_eval import fast_float
 ///
-}}}
+```
+
 
 <p>Simple bisection root finder for a function of 3 variables.</p>
 
-{{{id=16|
+
+```
+id=16|
 %hide
 %auto
 %cython
@@ -77,14 +82,20 @@ cpdef find_root(f, double target, point_1, point_2, double epsilon=1e-4):
         else:
             return (new_0,new_1,new_2)
 ///
-}}}
+```
 
-{{{id=24|
+
+
+```
+id=24|
 
 ///
-}}}
+```
 
-{{{id=41|
+
+
+```
+id=41|
 def calculate_crossing(f,target,v0,v1,vertices, cache_dict):
     """
     Calculate, for an edge (v0,v1), where f is "close" to target.  Use cache_dict to cache the values.
@@ -99,13 +110,16 @@ def calculate_crossing(f,target,v0,v1,vertices, cache_dict):
         cache_dict[(v0,v1)]=pt
         return pt
 ///
-}}}
+```
 
-{{{id=34|
+
+
+```
+id=34|
 %time
 var('x,y,z')
-p=parametric_plot((x,y,9-x<sup>2-y</sup>2), (x,-3,3), (y,-3,3), mesh=True)
-f=x<sup>2-sin(x*y</sup>2)+cos(z)
+p=parametric_plot((x,y,9-x^2-y^2), (x,-3,3), (y,-3,3), mesh=True)
+f=x^2-sin(x*y^2)+cos(z)
 ff=fast_float(f, 'x', 'y','z')
 p.triangulate()
 vertices=p.vertex_list()
@@ -124,27 +138,40 @@ for target in [0,2,..,20]:
 ///
 
 CPU time: 0.91 s,  Wall time: 1.26 s
-}}}
+```
 
-{{{id=39|
+
+
+```
+id=39|
 p+sum(mesh)
 ///
-}}}
+```
 
-{{{id=42|
+
+
+```
+id=42|
 (p+sum(mesh)).show(viewer='tachyon')
 ///
-}}}
+```
 
-{{{id=44|
 
-///
-}}}
 
-{{{id=45|
+```
+id=44|
 
 ///
-}}}
+```
+
+
+
+```
+id=45|
+
+///
+```
+
 
 
 ---

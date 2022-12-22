@@ -113,13 +113,16 @@ notebook(interface='', server_pool=['sage1`@`localhost'],
 
 Does the server_pool bit actually work? It certainly does not for me. I find the only way to Sage to use another account is to put something like in a python file, and get python to load it at startup. Otherwise, ussing server_pool in the way documented fails. 
 
-{{{server_pool=['sage1`@`localhost']
+
+```
+server_pool=['sage1`@`localhost']
 
 n.notebook('sage_notebook', port=8000, accounts=True, address='',
          server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',
     open_viewer=False, timeout=20*60, secure=False, port_tries=0)
 
-}}}
+```
+
 
 
 
@@ -181,7 +184,8 @@ $ sage -notebook
 
 fails, but I believe the problem I had last night (see below) goes away if I don't use a server pool. 
 
-{{{             
+
+```             
 Traceback (click to the left of this block for traceback)
 ...
 NameError: name '_interact_' is not defined
@@ -191,7 +195,8 @@ Traceback (most recent call last):
   File "_sage_input_3.py", line 8, in <module>
     _interact_.SAGE_CELL_ID=1
 NameError: name '_interact_' is not defined 
-}}}
+```
+
 
 Perhaps I need to spend more time double-checking this, but my belief was the options were not propagating properly. 
 

@@ -17,8 +17,11 @@ Hence it seemed wise to open a ticket specific for this.
 The problem is that the link-editor thinks the ecl shared library contains text relocations, which is why there was an error like 
 
 
-{{{ld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit
-}}}
+
+```
+ld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit
+```
+
 
 There's a command given on this Sun blog
 

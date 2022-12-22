@@ -9,12 +9,15 @@ Original creation time: 2006-12-28 05:10:25
 Assignee: somebody
 
 From Susan Addington:
-{{{I just downloaded SAGE and am trying it out on MacOS 10.4.
+
+```
+I just downloaded SAGE and am trying it out on MacOS 10.4.
 So far the only weirdness I have found is the behavior of the round
 function:
 round(sqrt(2),2) gives 1.4099999999999999.
 While this is correct, it looks strange.
-}}}
+```
+
 
 Here is some further I/O that illustrates more what is going on:
 

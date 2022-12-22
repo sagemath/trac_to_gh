@@ -84,8 +84,10 @@ Attachment
 Comment by spancratz created at 2010-01-17 21:45:52
 
 To see that this issue is now resolved (for rationals and number fields), consider
-{{{sage: _.<x> = ZZ[]
-sage: K.<a> = NumberField(x<sup>5-3*x</sup>4+2424*x^3+2*x-232)
+
+```
+sage: _.<x> = ZZ[]
+sage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)
 sage: R.<b> = K.ring_of_integers()
 sage: S.<y> = R[]
 sage: F = Frac(S)
@@ -95,7 +97,8 @@ sage: F(1/a).numerator()
 a^4 - 3*a^3 + 2424*a^2 + 2
 sage: F(1/a).denominator()
 232
-}}}
+```
+
 
 But the last three lines highlight a bug in the printing routines.
 

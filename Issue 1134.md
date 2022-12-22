@@ -37,93 +37,132 @@ See the timings and examples in the worksheet below.
 coerce speed question from john voight
 system:sage
 
-{{{id=0|
+
+```
+id=0|
 def stupid_function(n):
      Z_F = NumberField(x^2-x-1, 't').maximal_order()
      for i in range(n):
          Z_F([5,1])
-}}}
+```
 
-{{{id=1|
+
+
+```
+id=1|
 time stupid_function(10^4)
 ///
 CPU time: 7.88 s,  Wall time: 9.31 s
-}}}
+```
 
-{{{id=10|
+
+
+```
+id=10|
 def stupid_function(n):
      Z_F = NumberField(x^2-x-1, 't').maximal_order()
      a,b = Z_F.gens()
      for i in range(n):
          w = a + 5*b
-}}}
+```
 
-{{{id=11|
+
+
+```
+id=11|
 time stupid_function(10^4)
 ///
 CPU time: 0.05 s,  Wall time: 0.05 s
-}}}
+```
 
-{{{id=2|
+
+
+```
+id=2|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      for i in range(n):
          K([5,1])
-}}}
+```
 
-{{{id=3|
+
+
+```
+id=3|
 time stupid_function(10^4)
 ///
 CPU time: 4.81 s,  Wall time: 4.88 s
-}}}
+```
 
-{{{id=4|
+
+
+```
+id=4|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      v = [5,1]
      for i in range(n):
          K(v)
-}}}
+```
 
-{{{id=5|
+
+
+```
+id=5|
 time stupid_function(10^4)
 ///
 CPU time: 4.78 s,  Wall time: 4.81 s
-}}}
+```
 
-{{{id=6|
+
+
+```
+id=6|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      one = K(1); t = K.gen(); five = K(5)
      for i in range(n):
          w = five*t + one
-}}}
+```
 
-{{{id=7|
+
+
+```
+id=7|
 time stupid_function(10^4)
 ///
 CPU time: 0.04 s,  Wall time: 0.04 s
-}}}
+```
 
-{{{id=8|
+
+
+```
+id=8|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      t = K.gen()
      for i in range(n):
          w = 5*t + 1
-}}}
+```
 
-{{{id=9|
+
+
+```
+id=9|
 time stupid_function(10^4)
 ///
 CPU time: 0.38 s,  Wall time: 0.38 s
-}}}
+```
 
 
 
-{{{id=12|
 
-}}}
+
+```
+id=12|
+
+```
+
 
 
 ---

@@ -15,7 +15,8 @@ Here are several LaTeX issues:
 Solution: catch `TypeError`s when calling `T._latex_()` in this sort of situation.
 
  - In the notebook, try 
-{{{ 
+
+``` 
 %latex 
 $\sage{type(35)}$ 
 }}} 

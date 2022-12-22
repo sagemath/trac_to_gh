@@ -223,9 +223,12 @@ to
 
 
 9. Weird """ in moving_average:
-{{{ 	318	                                                                                    """ 
+
+```
+ 	318	                                                                                    """ 
  	319	    x = []    
-}}}
+```
+
 
 10. Change
 

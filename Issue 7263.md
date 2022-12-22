@@ -97,7 +97,8 @@ Comment by jason created at 2009-10-22 02:10:50
 
 The jmol application in 4.1.2.alpha2 was:
 
-{{{#!/bin/sh
+
+```/bin/sh
 JMOL_HOME=`dirname "$0"`
 
 

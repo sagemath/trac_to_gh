@@ -8,7 +8,9 @@ Original creation time: 2006-12-04 13:52:37
 
 Assignee: somebody
 
-{{{On Mon, 04 Dec 2006 05:37:02 -0800, Luislang <dpl`@`sun.ac.za> wrote:
+
+```
+On Mon, 04 Dec 2006 05:37:02 -0800, Luislang <dpl`@`sun.ac.za> wrote:
 
 >
 >
@@ -48,7 +50,8 @@ sage: a+1
 a + 1
 sage: parent(a+1)
 GP/PARI interpreter
-}}}
+```
+
 
 
 ---

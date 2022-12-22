@@ -23,10 +23,12 @@ I like your ideas. I have a few quick comments for you now.
 
 Comments on the docstring for `CombinatorialFreeModule`:
 
-{{{                                                                             
+
+```                                                                             
     - ``basis_keys`` - list, tuple, family, set, etc. defining the 
       basis of this module
-}}}
+```
+
 basis_keys provides the indexing set for the basis, not the basis itself.
  
 

@@ -312,7 +312,8 @@ As far as I can see, I have the latest patches. These are the sizes of the patch
 
 The 'sage-location' script starts
 
-{{{#!/usr/bin/env python
+
+```/usr/bin/env python
 
 import os, sys
 

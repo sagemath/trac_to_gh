@@ -135,7 +135,8 @@ Comment by davidloeffler created at 2008-11-16 07:19:05
 
 Thanks for clarifying things there. Your new docstrings assert that cyclotomic fields all have their usual embeddings so coercion between them should work, but I'm slightly concerned by the following non-associativity of addition: 
 
-{{{ 
+
+``` 
 sage: K5.<zeta5> = CyclotomicField(5)
 sage: K7.<zeta7> = CyclotomicField(7)
 sage: K35.<zeta35> = CyclotomicField(35)
@@ -143,7 +144,8 @@ sage: (-zeta35 + zeta7) + (zeta5 + zeta35)
 zeta35^7 + zeta35^5
 sage: -zeta35 + (zeta7 + zeta5) + zeta35
 TypeError: unsupported operand parent(s) for '+': 'Cyclotomic Field of order 5 and degree 4' and 'Cyclotomic Field of order 7 and degree 6'
-}}}
+```
+
 
 This problem is not in any way new, and existed before your patches; but shouldn't your patches fix it?
 

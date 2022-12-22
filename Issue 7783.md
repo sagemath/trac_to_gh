@@ -35,7 +35,8 @@ Jmol.jar not found
 | Sage Version 4.3, Release Date: 2009-12-24                         |
 | Type notebook() for the GUI, and license() for information.        |
 This is yet more fallout from changing the sagenb to use setuptools instead of distutils. The problem is that the jmol script says this:
-{{{#!/bin/sh
+
+```/bin/sh
 JMOL_HOME="$SAGE_LOCAL/lib/python/site-packages/sagenb/data/jmol"
 ...
 ```

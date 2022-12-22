@@ -89,7 +89,8 @@ My concerns are about when the default base homomorphism is used.  It is certain
   _Pick an embedding of the base field of self into the codomain of this homset.  This is done in an essentially arbitrary way._
 
 Since the value is cached, see line 526 of `sage/rings/number_field/morphism.py` (after your patch is applied), using the default argument `base_hom=None` should always give the same restriction to the base_field.  However, continuing the above example,
-{{{ 
+
+``` 
 sage: [K.hom([h(a0)])(a1) for h in H]
 [-1/2*b1^3 + b1^2 - b1 + 1/2,
  1/2*b1^3 - b1^2 + b1 + 1/2,
@@ -99,7 +100,8 @@ sage: [K.hom([h(a0)])(a1) for h in H]
  1/2*b1^3 - b1^2 + b1 + 1/2,
  1/2*b1^3 - b1^2 + b1 + 1/2,
  -1/2*b1^3 + b1^2 - b1 + 1/2]
-}}}
+```
+
 
 This happens because 
 `sage.rings.number_field.morphism.RelativeNumberFieldHomset._from_im` doesn't do what it claims.  With again the same definitions:

@@ -16,7 +16,9 @@ The error seems to be in the calculation of the chromatic polynomial, as there i
 
 
 Code to reproduce:
-{{{G = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\
+
+```
+G = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\
             5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\
             11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\
             15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\
@@ -24,7 +26,8 @@ Code to reproduce:
 print G.is_bipartite()
 print G.chromatic_number()
 print G.chromatic_polynomial().factor()
-}}}
+```
+
 Output from code above:
 
 ```

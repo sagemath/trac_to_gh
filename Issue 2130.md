@@ -20,10 +20,12 @@ factt = ans.factor(); factt
 ```
 
 
-{{{ 
+
+``` 
 sage: list(factt)
 [(x0*x3 - 1, 1), (t1^2*x0 - x1, 1), (t1^2*x0*x2 - 1, 1)]
-}}}
+```
+
 
 Can this be corrected, or is there a different command I can use?
 

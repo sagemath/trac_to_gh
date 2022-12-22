@@ -62,12 +62,14 @@ Comment by was created at 2008-05-11 07:12:21
 
 The attached patch fixes the issues:
 
-{{{ 
+
+``` 
    1. I followed Yi's suggestion which worked like a charm.
    2. As a bonus I also fixed the "have to hit control-c twice to stop the notebook server" crap. Now
       it stops just fine with one single control-c.
    3. I changed twistd.pd to twistd.pid  -- it's a typo since it's supposed to be a pin id.
-}}}
+```
+
 
 
 ---

@@ -37,7 +37,8 @@ commit -m "This is my great new code."
 ```
 
 where foo.bash is
-{{{#!/bin/bash
+
+```/bin/bash
 echo "$`@`"
 ```
 

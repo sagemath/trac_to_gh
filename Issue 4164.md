@@ -169,7 +169,9 @@ To try (or merge) only apply trac_4164_tfi.patch
 Comment by mhampton created at 2008-09-25 23:05:28
 
 This passed all tests, and seems to work well for 3D polytopes, which was the original request.  It does fail for some 4D polytopes, for example for one with vertices:
-{{{[[99, 19, 38, 0],
+
+```
+[[99, 19, 38, 0],
  [-85, -86, -72, 0],
  [11, 31, 97, 0],
  [61, 99, 28, 0],
@@ -206,7 +208,8 @@ This passed all tests, and seems to work well for 3D polytopes, which was the or
  [83, 48, -100, 0],
  [75, -75, 100, 0],
  [0, 0, 0, 1]]
-}}}
+```
+
 I am happy to work on that if you (Arnaud) want; I didn't figure out why it fails on that example.
 
 

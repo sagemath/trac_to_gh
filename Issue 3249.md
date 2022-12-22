@@ -10,11 +10,13 @@ Assignee: was
 
 I was doing the following, when testing the jordan_form method...
 
-{{{ 
+
+``` 
 sage: A=Matrix(ComplexField(200),[[1,-2],[2,-1]])
 sage: jordan=A.jordan_form(transformation=True,subdivide=False)
 sage: P=jordan[1]
-}}}
+```
+
 
 (P is now the transformation matrix, jordan[1] is the jordan canonical
 form)

@@ -8,7 +8,9 @@ Original creation time: 2006-10-14 04:52:01
 
 Assignee: was
 
-{{{Firefox is by far the best support browser for SAGE.
+
+```
+Firefox is by far the best support browser for SAGE.
 I personally use opera a *lot* though; in fact, I'm writing
 this email in opera.   I think there is some weird mangling
 of percents by opera that is causing trouble.  We'll add
@@ -39,7 +41,8 @@ On 10/13/06, Tang Hai Tuan Minh <phohongtuyet`@`gmail.com> wrote:
 > The current version of sage I am using is 1.4 on Fedora Core 5. I am not
 > really keen on using Opera but since Konqueror is not completely
 > supported :-), it doesn't really matter which browser I am using anyway.
-}}}
+```
+
 
 
 ---

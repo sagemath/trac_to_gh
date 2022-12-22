@@ -18,7 +18,9 @@ If one has a power series over QQ one can coerce it to have coefficients in FF_p
 
 However, one cannot subtract a series with coefficients in FF_p from a series with coefficients in QQ; the coercion doesn't work:
 
-{{{Exception (click to the left for traceback):
+
+```
+Exception (click to the left for traceback):
 ...
 TypeError: unsupported operand parent(s) for '-': 'Power Series Ring in q over Rational Field' and 'Power Series Ring in q over Ring of integers modulo 11'Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
