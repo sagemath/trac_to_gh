@@ -1,35 +1,82 @@
 # Issue 469: Integrate the PolyBoRi framework
 
-Issue created by migration from https://trac.sagemath.org/ticket/469
-
-Original creator: malb
-
-Original creation time: 2007-08-20 22:01:34
-
+archive/issues_000469.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  malb\n\nPolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gr\u00f6bner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/469\n\n",
+    "created_at": "2007-08-20T22:01:34Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Integrate the PolyBoRi framework",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/469",
+    "user": "malb"
+}
+```
 Assignee: was
 
 CC:  malb
 
 PolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gröbner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/469
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-08-20 22:01:47
+archive/issue_comments_002332.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2007-08-20T22:01:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2332",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2007-10-21 22:53:41
+archive/issue_comments_002333.json:
+```json
+{
+    "body": "Changing assignee from malb to burcin.",
+    "created_at": "2007-10-21T22:53:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2333",
+    "user": "malb"
+}
+```
 
 Changing assignee from malb to burcin.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-04 14:21:14
+archive/issue_comments_002334.json:
+```json
+{
+    "body": "Alexander Dreyer did comment on the build time of PolyBoRi:\n\n```\nThe essential part of PolyBoRi (using the built-ininterface) can be\nbuilt in about 3 minutes on a Intel(R) Xeon(R) CPU5148  @ 2.33GHz\n(using one cpu only). I'll try to find the corresponding scons\ncommands for the spkg and the Sage-wrapper and give to to Burcin.\n\nBest regards,\n  Alexander\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-04T14:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2334",
+    "user": "mabshoff"
+}
+```
 
 Alexander Dreyer did comment on the build time of PolyBoRi:
 
@@ -49,9 +96,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-04 14:54:04
+archive/issue_comments_002335.json:
+```json
+{
+    "body": "\n```\nThere is a new PolyBoRi package available at:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori-0.1-r3.spkg\n\nChanges are:\n        - Alexander's changes to speed up the build process\n        - Update to the latest CVS version\n        - pass on MAKEOPTS to scons to allow parallel builds\n\nBuilding the package takes 4 mins 20 seconds on a single Intel(R)\nPentium (R) D CPU 3.40GHz. Parallel make options (-jn) speed up the\nbuild as expected.\n\nBurcin \n```\n",
+    "created_at": "2007-12-04T14:54:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2335",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -73,9 +131,20 @@ Burcin
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 14:18:28
+archive/issue_comments_002336.json:
+```json
+{
+    "body": "Okay, I have stuck \n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori-0.1-r3.spkg\n\ninto 2.9.alpha2. Burcin, please send me a patch/bundle against some 2.9 release for the code that does the actual integrations with Sage.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-09T14:18:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2336",
+    "user": "mabshoff"
+}
+```
 
 Okay, I have stuck 
 
@@ -88,9 +157,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by burcin created at 2007-12-10 17:31:04
+archive/issue_comments_002337.json:
+```json
+{
+    "body": "New bundle against 2.9.alpha4:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori_wrapper-2.9.alpha4-20071204.hg\n\nNew package:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori-0.1-r5.spkg\n\nChanges to the package:\n\nr4 -> r5\n\n* Make symlinks relative\n\nr3 -> r4\n\n* Remove popd, pushd from spkg-install",
+    "created_at": "2007-12-10T17:31:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2337",
+    "user": "burcin"
+}
+```
 
 New bundle against 2.9.alpha4:
 
@@ -111,16 +191,38 @@ r3 -> r4
 * Remove popd, pushd from spkg-install
 
 
+
 ---
 
-Comment by burcin created at 2007-12-10 17:31:04
+archive/issue_comments_002338.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-10T17:31:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2338",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-10 22:34:23
+archive/issue_comments_002339.json:
+```json
+{
+    "body": "Ok, I updated the spkg as well applied the bundle. I also disabled doctests until you can send in the missing bits.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-10T22:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2339",
+    "user": "mabshoff"
+}
+```
 
 Ok, I updated the spkg as well applied the bundle. I also disabled doctests until you can send in the missing bits.
 
@@ -129,22 +231,57 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by burcin created at 2007-12-12 13:01:48
+archive/issue_comments_002340.json:
+```json
+{
+    "body": "fix doctests in pbori.pyx",
+    "created_at": "2007-12-12T13:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2340",
+    "user": "burcin"
+}
+```
 
 fix doctests in pbori.pyx
 
 
+
 ---
+
+archive/issue_comments_002341.json:
+```json
+{
+    "body": "Attachment\n\nMerged in 2.9.alpha6. - Finally. Doctests pass.",
+    "created_at": "2007-12-12T18:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2341",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged in 2.9.alpha6. - Finally. Doctests pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-12 18:37:38
+archive/issue_comments_002342.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-12T18:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/469",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/469#issuecomment-2342",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

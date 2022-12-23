@@ -1,55 +1,135 @@
 # Issue 588: Symmetrica spkg for SAGE
 
-Issue created by migration from https://trac.sagemath.org/ticket/588
-
-Original creator: mhansen
-
-Original creation time: 2007-09-04 19:44:52
-
+archive/issues_000588.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/588\n\n",
+    "created_at": "2007-09-04T19:44:52Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Symmetrica spkg for SAGE",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/588",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/588
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-09-04 19:49:56
+archive/issue_comments_003031.json:
+```json
+{
+    "body": "Initial spkg can be found here: http://www.mwhansen.org/symmetrica-0.1.spkg",
+    "created_at": "2007-09-04T19:49:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3031",
+    "user": "mhansen"
+}
+```
 
 Initial spkg can be found here: http://www.mwhansen.org/symmetrica-0.1.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-04 20:02:42
+archive/issue_comments_003032.json:
+```json
+{
+    "body": "Updated version: http://www.mwhansen.org/symmetrica-0.2.spkg",
+    "created_at": "2007-09-04T20:02:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3032",
+    "user": "mhansen"
+}
+```
 
 Updated version: http://www.mwhansen.org/symmetrica-0.2.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-04 21:35:55
+archive/issue_comments_003033.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-09-04T21:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3033",
+    "user": "mhansen"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-04 21:36:00
+archive/issue_comments_003034.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-09-04T21:36:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3034",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by was created at 2007-09-05 05:04:57
+archive/issue_comments_003035.json:
+```json
+{
+    "body": "I've made this an official optional spkg for now.  It will likely move to standard at some point.",
+    "created_at": "2007-09-05T05:04:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3035",
+    "user": "was"
+}
+```
 
 I've made this an official optional spkg for now.  It will likely move to standard at some point.
 
 
+
 ---
 
-Comment by was created at 2007-09-05 05:04:57
+archive/issue_comments_003036.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-05T05:04:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/588#issuecomment-3036",
+    "user": "was"
+}
+```
 
 Resolution: fixed

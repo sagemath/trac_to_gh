@@ -1,11 +1,21 @@
 # Issue 499: n() is undefined for rational numbers
 
-Issue created by migration from https://trac.sagemath.org/ticket/499
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-28 17:45:59
-
+archive/issues_000499.json:
+```json
+{
+    "body": "Assignee: somebody\n\nReported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb\n\n\n```\nx = 1/2\nx.n()\n\nException (click to the left for traceback):\n...\nAttributeError: 'sage.rings.rational.Rational' object has no attribute 'n' \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/499\n\n",
+    "created_at": "2007-08-28T17:45:59Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "n() is undefined for rational numbers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/499",
+    "user": "mabshoff"
+}
+```
 Assignee: somebody
 
 Reported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb
@@ -25,10 +35,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/499
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-31 21:06:13
+archive/issue_comments_002496.json:
+```json
+{
+    "body": "This is done, but it's capital N:\n\n```\nsage: x = 1/2\nsage: x.N()\n0.500000000000000\n```\n",
+    "created_at": "2007-08-31T21:06:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/499#issuecomment-2496",
+    "user": "was"
+}
+```
 
 This is done, but it's capital N:
 
@@ -40,8 +65,19 @@ sage: x.N()
 
 
 
+
 ---
 
-Comment by was created at 2007-08-31 21:06:13
+archive/issue_comments_002497.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-31T21:06:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/499#issuecomment-2497",
+    "user": "was"
+}
+```
 
 Resolution: fixed

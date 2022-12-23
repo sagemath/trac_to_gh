@@ -1,11 +1,21 @@
 # Issue 575: make building SAGE on cygwin stop fast and clean
 
-Issue created by migration from https://trac.sagemath.org/ticket/575
-
-Original creator: was
-
-Original creation time: 2007-09-03 13:53:44
-
+archive/issues_000575.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nBuilding SAGE with Cygwin is absolutely definitely not supported,\nand will not work.  The only way to run SAGE on Windows, is via\nVMware (or Virtual PC or some other virtualization). \n\nI'll make a ticket for making it so that the SAGE build scrip very very\nclearly indicates that it won't work on Cygwin right at the beginning,\nto avoid such confusion in the future. \n\nNOTE: SAGE used to support Cygwin several months ago (around March\n2007), so you may have seen some old documentation about this.\n```\n\n\nThis will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/575\n\n",
+    "created_at": "2007-09-03T13:53:44Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "make building SAGE on cygwin stop fast and clean",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/575",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -27,39 +37,98 @@ This will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwi
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/575
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-21 19:06:55
+archive/issue_comments_002985.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2007-10-21T19:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/575",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2985",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-21 19:06:55
+archive/issue_comments_002986.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-21T19:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/575",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2986",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-11-03 22:55:31
+archive/issue_comments_002987.json:
+```json
+{
+    "body": "I fixed this by changing prereq-0.3-install, and actually did a bunch of other\nminor cleanup to the base directory, including creating an .hg repo there.",
+    "created_at": "2007-11-03T22:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/575",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2987",
+    "user": "was"
+}
+```
 
 I fixed this by changing prereq-0.3-install, and actually did a bunch of other
 minor cleanup to the base directory, including creating an .hg repo there.
 
 
+
 ---
 
-Comment by was created at 2007-11-03 22:55:31
+archive/issue_comments_002988.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-03T22:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/575",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2988",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-11-03 22:56:03
+archive/issue_comments_002989.json:
+```json
+{
+    "body": "Here is the interesting part of the script:\n\n\n```\n\nif [ \"$SAGE_PORT\" = \"\" ]; then\n   if [ `uname | sed -e 's/WIN.\\+/WIN/'` = \"CYGWIN\" ]; then\n      echo \"Building or using SAGE with Cygwin is absolutely definitely\"\n      echo \"not supported, and will definitely not work.  The only way\"\n      echo \"to run SAGE on Windows, is via VMware (or Virtual PC or \"\n      echo \"some other virtualization system such as andLinux).\"\n      echo \"NOTE: SAGE used to support Cygwin several months ago (around March\"\n      echo \"2007), so you may have seen some old documentation about this.\"\n   fi\nfi\n\n```\n",
+    "created_at": "2007-11-03T22:56:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/575",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2989",
+    "user": "was"
+}
+```
 
 Here is the interesting part of the script:
 

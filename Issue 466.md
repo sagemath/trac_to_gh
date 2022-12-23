@@ -1,11 +1,21 @@
 # Issue 466: -b is actually not an option for hg_sage.merge()
 
-Issue created by migration from https://trac.sagemath.org/ticket/466
-
-Original creator: pdehaye
-
-Original creation time: 2007-08-20 09:20:13
-
+archive/issues_000466.json:
+```json
+{
+    "body": "Assignee: was\n\nsage: hg_sage.merge?                        \nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method HG.merge of Hg repository 'SAGE Library Source Code' in directory /Library/sage/devel/sage>\nNamespace:      Interactive\nFile:           /Library/sage/local/lib/python2.5/site-packages/sage/misc/hg.py\nDefinition:     hg_sage.merge(self, options='')\nDocstring:\n    \n            Merge working directory with another revision\n            \n            Merge the contents of the current working directory and the\n            requested revision. Files that changed between either parent are\n            marked as changed for the next commit and a commit must be\n            performed before any further updates are allowed.\n    \n            INPUT:\n                options -- default: ''\n                    'tip' -- tip\n                     -b --branch  merge with head of a specific branch\n                     -f --force   force a merge with outstanding changes\n            \n\ncontradicted by\n\n\nsage: hg_sage.merge(options=\"--branch main\")\ncd \"/Library/sage/devel/sage\" && hg merge --branch main\nhg merge: option --branch not recognized\nhg merge [-f] [[-r] REV]\n\nmerge working directory with another revision\n\n    Merge the contents of the current working directory and the\n    requested revision. Files that changed between either parent are\n    marked as changed for the next commit and a commit must be\n    performed before any further updates are allowed.\n\n    If no revision is specified, the working directory's parent is a\n    head revision, and the repository contains exactly one other head,\n    the other head is merged with by default.  Otherwise, an explicit\n    revision to merge with must be provided.\n\noptions:\n\n -f --force  force a merge with outstanding changes\n -r --rev    revision to merge\n\nuse \"hg -v help merge\" to show global options\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/466\n\n",
+    "created_at": "2007-08-20T09:20:13Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "-b is actually not an option for hg_sage.merge()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/466",
+    "user": "pdehaye"
+}
+```
 Assignee: was
 
 sage: hg_sage.merge?                        
@@ -61,10 +71,25 @@ use "hg -v help merge" to show global options
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/466
+
+
+
+
 
 ---
 
-Comment by pdehaye created at 2007-08-22 13:43:02
+archive/issue_comments_002313.json:
+```json
+{
+    "body": "That would be\n\n```\nsage: hg_sage.merge?\nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method HG.merge of Hg repository 'SAGE Library Source Code' in directory /Library/sage/devel/sage>\nNamespace:      Interactive\nFile:           /Library/sage/local/lib/python2.5/site-packages/sage/misc/hg.py\nDefinition:     hg_sage.merge(self, options='')\nDocstring:\n    \n            Merge working directory with another revision\n            \n            Merge the contents of the current working directory and the\n            requested revision. Files that changed between either parent are\n            marked as changed for the next commit and a commit must be\n            performed before any further updates are allowed.\n    \n            INPUT:\n                options -- default: ''\n                    'tip' -- tip\n                     -b --branch  merge with head of a specific branch\n                     -f --force   force a merge with outstanding changes\n            \n\nsage: hg_sage.merge(options=\"--branch main\")\ncd \"/Library/sage/devel/sage\" && hg merge --branch main\nhg merge: option --branch not recognized\nhg merge [-f] [[-r] REV]\n\nmerge working directory with another revision\n\n    Merge the contents of the current working directory and the\n    requested revision. Files that changed between either parent are\n    marked as changed for the next commit and a commit must be\n    performed before any further updates are allowed.\n\n    If no revision is specified, the working directory's parent is a\n    head revision, and the repository contains exactly one other head,\n    the other head is merged with by default.  Otherwise, an explicit\n    revision to merge with must be provided.\n\noptions:\n\n -f --force  force a merge with outstanding changes\n -r --rev    revision to merge\n\nuse \"hg -v help merge\" to show global options\n```\n",
+    "created_at": "2007-08-22T13:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2313",
+    "user": "pdehaye"
+}
+```
 
 That would be
 
@@ -119,41 +144,109 @@ use "hg -v help merge" to show global options
 
 
 
+
 ---
+
+archive/issue_comments_002314.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-08-22T19:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2314",
+    "user": "pdehaye"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by pdehaye created at 2007-08-22 19:30:08
+archive/issue_comments_002315.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-08-22T19:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2315",
+    "user": "pdehaye"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by pdehaye created at 2007-08-22 19:30:08
+archive/issue_comments_002316.json:
+```json
+{
+    "body": "the file attached should fix the bug",
+    "created_at": "2007-08-22T19:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2316",
+    "user": "pdehaye"
+}
+```
 
 the file attached should fix the bug
 
 
+
 ---
 
-Comment by pdehaye created at 2007-08-22 19:30:08
+archive/issue_comments_002317.json:
+```json
+{
+    "body": "Changing assignee from was to pdehaye.",
+    "created_at": "2007-08-22T19:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2317",
+    "user": "pdehaye"
+}
+```
 
 Changing assignee from was to pdehaye.
 
 
+
 ---
 
-Comment by was created at 2007-08-29 02:52:03
+archive/issue_comments_002318.json:
+```json
+{
+    "body": "Applied for sage-2.8.3",
+    "created_at": "2007-08-29T02:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2318",
+    "user": "was"
+}
+```
 
 Applied for sage-2.8.3
 
 
+
 ---
 
-Comment by was created at 2007-08-29 02:54:35
+archive/issue_comments_002319.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-29T02:54:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/466",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2319",
+    "user": "was"
+}
+```
 
 Resolution: fixed

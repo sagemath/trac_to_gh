@@ -1,25 +1,61 @@
 # Issue 475: check for SAGE_DEBUG flag on build to include symbols
 
-Issue created by migration from https://trac.sagemath.org/ticket/475
-
-Original creator: burcin
-
-Original creation time: 2007-08-21 14:10:23
-
+archive/issues_000475.json:
+```json
+{
+    "body": "Assignee: was\n\nPackages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS=\"-g\", no optimizations,  --without-pymalloc in Python (for valgrind)\n\nIssue created by migration from https://trac.sagemath.org/ticket/475\n\n",
+    "created_at": "2007-08-21T14:10:23Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "check for SAGE_DEBUG flag on build to include symbols",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/475",
+    "user": "burcin"
+}
+```
 Assignee: was
 
 Packages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS="-g", no optimizations,  --without-pymalloc in Python (for valgrind)
 
+Issue created by migration from https://trac.sagemath.org/ticket/475
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-20 14:20:34
+archive/issue_comments_002373.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"package audit\".",
+    "created_at": "2007-11-20T14:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/475#issuecomment-2373",
+    "user": "mabshoff"
+}
+```
 
 Changing keywords from "" to "package audit".
 
 
+
 ---
 
-Comment by robertwb created at 2009-07-28 12:58:05
+archive/issue_comments_002374.json:
+```json
+{
+    "body": "-g in CFLAGS is, IMHO, a different level than turning off all optimization and Python memory management (the latter actually have a significant speed impact, the former none).",
+    "created_at": "2009-07-28T12:58:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/475#issuecomment-2374",
+    "user": "robertwb"
+}
+```
 
 -g in CFLAGS is, IMHO, a different level than turning off all optimization and Python memory management (the latter actually have a significant speed impact, the former none).

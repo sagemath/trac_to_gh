@@ -1,11 +1,21 @@
 # Issue 491: gcc 4.3: fix givaro build due to ::memcpy failure
 
-Issue created by migration from https://trac.sagemath.org/ticket/491
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-25 23:16:18
-
+archive/issues_000491.json:
+```json
+{
+    "body": "Assignee: was\n\nThe givaro spkg released with Sage 2.8.2 doesn't compile with gcc 4.3:\n\n```\nMaking all in memory\nmake[4]: Entering directory `/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2/spkg/build/givaro-3.2.6.p1/src/src/kernel/memory'\n/bin/sh ../../../libtool --mode=compile g++ -DHAVE_CONFIG_H -I. -I. -I../../.. -I../../.. -I../../../src/kernel/system   -g -O2 -Wall -c givaromm.C\n g++ -DHAVE_CONFIG_H -I. -I. -I../../.. -I../../.. -I../../../src/kernel/system -g -O2 -Wall -c givaromm.C  -fPIC -DPIC -o .libs/givaromm.o\ngivaromm.C: In static member function 'static void* GivMMFreeList::reallocate(void*, size_t, size_t)':\ngivaromm.C:191: error: '::memcpy' has not been declared\ngivaromm.C: In static member function 'static void GivMMFreeList::memcpy(void*, const void*, size_t)':\ngivaromm.C:205: error: '::memcpy' has not been declared\ngivaromm.C: In static member function 'static void* GivMMRefCount::reallocate(void*, size_t, size_t)':\ngivaromm.C:246: error: '::memcpy' has not been declared\ngivaromm.C:247: error: '::memcpy' has not been declared\ngivaromm.C:245: warning: suggest explicit braces to avoid ambiguous 'else'\nmake[4]: *** [givaromm.lo] Error 1\nmake[4]: Leaving directory `/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2/spkg/build/givaro-3.2.6.p1/src/src/kernel/memory'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2/spkg/build/givaro-3.2.6.p1/src/src/kernel'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2/spkg/build/givaro-3.2.6.p1/src/src'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2/spkg/build/givaro-3.2.6.p1/src'\nmake: *** [all-recursive-am] Error 2\n```\n\nIncluding string.h in givaromm.C fixes the problem. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/491\n\n",
+    "created_at": "2007-08-25T23:16:18Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "gcc 4.3: fix givaro build due to ::memcpy failure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/491",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 The givaro spkg released with Sage 2.8.2 doesn't compile with gcc 4.3:
@@ -40,24 +50,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/491
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-25 23:17:06
+archive/issue_comments_002455.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2007-08-25T23:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2455",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-25 23:17:12
+archive/issue_comments_002456.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-08-25T23:17:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2456",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-26 12:50:52
+archive/issue_comments_002457.json:
+```json
+{
+    "body": "Another suggestion has been made by Patrick Pelissier:\n\n```\nFor checking of givaro inside the configure, as a work-around,\nI suggest including cstdio explicitly before gmp.h.\n```\n\nThis supposedly will not require workarounds for the gmp.h\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-26T12:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2457",
+    "user": "mabshoff"
+}
+```
 
 Another suggestion has been made by Patrick Pelissier:
 
@@ -73,9 +120,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 21:02:29
+archive/issue_comments_002458.json:
+```json
+{
+    "body": "Fix in the new spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/givaro-3.2.6.p4.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-06T21:02:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2458",
+    "user": "mabshoff"
+}
+```
 
 Fix in the new spkg at
 
@@ -86,15 +144,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 21:02:46
+archive/issue_comments_002459.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-06T21:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2459",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 21:02:46
+archive/issue_comments_002460.json:
+```json
+{
+    "body": "Merged in 2.9.alpha1.",
+    "created_at": "2007-12-06T21:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/491#issuecomment-2460",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha1.

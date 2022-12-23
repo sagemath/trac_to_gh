@@ -1,11 +1,21 @@
 # Issue 458: plot.py: NameError: name 'p1' is not defined
 
-Issue created by migration from https://trac.sagemath.org/ticket/458
-
-Original creator: mhansen
-
-Original creation time: 2007-08-19 14:25:13
-
+archive/issues_000458.json:
+```json
+{
+    "body": "Assignee: was\n\n\nAnd this is the last one:\n\n**********************************************************************\nFile \"plot.py\", line 2836:\n   sage: g = graphics_array([p1, p2]); g\nException raised:\n   Traceback (most recent call last):\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/\ndoctest.py\", line 1212, in __run\n       compileflags, 1) in test.globs\n     File \"<doctest __main__.example_60[11]>\", line 1, in <module>\n       g = graphics_array([p1, p2]); g###line 2836:\n   sage: g = graphics_array([p1, p2]); g\n   NameError: name 'p1' is not defined\n**********************************************************************\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/458\n\n",
+    "created_at": "2007-08-19T14:25:13Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "plot.py: NameError: name 'p1' is not defined",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/458",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 
@@ -31,18 +41,44 @@ Michael
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/458
+
+
+
+
 
 ---
 
-Comment by rlm created at 2007-08-19 16:44:40
+archive/issue_comments_002286.json:
+```json
+{
+    "body": "Fix is here:\n\nhttp://sage.math.washington.edu/home/rlmill/plot.patch",
+    "created_at": "2007-08-19T16:44:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/458#issuecomment-2286",
+    "user": "rlm"
+}
+```
 
 Fix is here:
 
 http://sage.math.washington.edu/home/rlmill/plot.patch
 
 
+
 ---
 
-Comment by rlm created at 2007-08-19 16:44:40
+archive/issue_comments_002287.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-19T16:44:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/458#issuecomment-2287",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

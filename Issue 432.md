@@ -1,33 +1,80 @@
 # Issue 432: finish implementing deleting the trash (emptying it) in the sage notebook.
 
-Issue created by migration from https://trac.sagemath.org/ticket/432
-
-Original creator: was
-
-Original creation time: 2007-08-16 09:43:33
-
+archive/issues_000432.json:
+```json
+{
+    "body": "Assignee: was\n\nI just never got around to implementing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/432\n\n",
+    "created_at": "2007-08-16T09:43:33Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "finish implementing deleting the trash (emptying it) in the sage notebook.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/432",
+    "user": "was"
+}
+```
 Assignee: was
 
 I just never got around to implementing it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/432
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-16 09:43:41
+archive/issue_comments_002165.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to notebook.",
+    "created_at": "2007-08-16T09:43:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2165",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to notebook.
 
 
+
 ---
 
-Comment by was created at 2007-08-16 09:43:41
+archive/issue_comments_002166.json:
+```json
+{
+    "body": "Changing assignee from was to boothby.",
+    "created_at": "2007-08-16T09:43:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2166",
+    "user": "was"
+}
+```
 
 Changing assignee from was to boothby.
 
 
+
 ---
 
-Comment by was created at 2007-12-13 18:46:56
+archive/issue_comments_002167.json:
+```json
+{
+    "body": "Just a remark from a user:\n\n```\n\n> But, when I archived all trash content, it hangs... Closed Firefox,\n> VMware Player, reboot - everything was to-o-o-oo slow and buggy,\n> almost any loading of saved file caused an error.\n> \n> I ended up deleting all sage files and unpacking them again from\n> distribution ZIP. Now everything is fast again.\n```\n",
+    "created_at": "2007-12-13T18:46:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2167",
+    "user": "was"
+}
+```
 
 Just a remark from a user:
 
@@ -43,37 +90,94 @@ Just a remark from a user:
 
 
 
+
 ---
+
+archive/issue_comments_002168.json:
+```json
+{
+    "body": "Attachment\n\nI finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).",
+    "created_at": "2008-03-13T15:56:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2168",
+    "user": "was"
+}
+```
 
 Attachment
 
 I finally implemented this.  And it's with 100% doctest coverage of new functions, which is a new thing for the notebook (to have any docs at all).
 
 
+
 ---
 
-Comment by boothby created at 2008-03-16 18:11:31
+archive/issue_comments_002169.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2008-03-16T18:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2169",
+    "user": "boothby"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-17 04:01:40
+archive/issue_comments_002170.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.final",
+    "created_at": "2008-03-17T04:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2170",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.final
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-17 04:01:40
+archive/issue_comments_002171.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-17T04:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2171",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by bill.p created at 2008-03-18 11:46:42
+archive/issue_comments_002172.json:
+```json
+{
+    "body": "Tried the patch on 2.10.3 and still had some problems with it - worked sometimes but not others.\nInstalled 2.10.4.final which includes the patch and it now works fine. Could this be some\ninteraction with other patches?\nAnyway - seems fine under 2.10.4 now.",
+    "created_at": "2008-03-18T11:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/432#issuecomment-2172",
+    "user": "bill.p"
+}
+```
 
 Tried the patch on 2.10.3 and still had some problems with it - worked sometimes but not others.
 Installed 2.10.4.final which includes the patch and it now works fine. Could this be some

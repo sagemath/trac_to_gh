@@ -1,19 +1,29 @@
 # Issue 471: requested features for trac
 
-Issue created by migration from https://trac.sagemath.org/ticket/471
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-20 23:12:43
-
+archive/issues_000471.json:
+```json
+{
+    "body": "Assignee: was\n\nHello,\n\nTrac Mercurial plugin -  see http://trac.edgewall.org/wiki/TracMercurial\nAdd to Ticket Properties - Component: \n- Misc\n- Documentation\n\nIt would also be nice if trac could send an email to sage-devel if a ticket were added, but that might cause too much traffic. As an alternative we might install an RSS plugin.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/471\n\n",
+    "created_at": "2007-08-20T23:12:43Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "requested features for trac",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/471",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 Hello,
 
 Trac Mercurial plugin -  see http://trac.edgewall.org/wiki/TracMercurial
 Add to Ticket Properties - Component: 
- - Misc
- - Documentation
+- Misc
+- Documentation
 
 It would also be nice if trac could send an email to sage-devel if a ticket were added, but that might cause too much traffic. As an alternative we might install an RSS plugin.
 
@@ -21,17 +31,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/471
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-20 23:13:12
+archive/issue_comments_002352.json:
+```json
+{
+    "body": "Changing type from defect to task.",
+    "created_at": "2007-08-20T23:13:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2352",
+    "user": "mabshoff"
+}
+```
 
 Changing type from defect to task.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-21 01:20:41
+archive/issue_comments_002353.json:
+```json
+{
+    "body": "One correction: Martin Albrecht did inform me that there already is a RSS feed. Still, Firefox 2.0 doesn't pick it up (at least for me).\n\nAnd another problem: Attached Postscipt files are displayed as raw test. Is this a config or a general Trac issue.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-21T01:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2353",
+    "user": "mabshoff"
+}
+```
 
 One correction: Martin Albrecht did inform me that there already is a RSS feed. Still, Firefox 2.0 doesn't pick it up (at least for me).
 
@@ -42,9 +78,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-21 01:21:57
+archive/issue_comments_002354.json:
+```json
+{
+    "body": "Arrg, 1 second after I hit enter I saw the RSS link on the bottom of the page. Time to make tickets editable. Better luck next time.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-21T01:21:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2354",
+    "user": "mabshoff"
+}
+```
 
 Arrg, 1 second after I hit enter I saw the RSS link on the bottom of the page. Time to make tickets editable. Better luck next time.
 
@@ -53,23 +100,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by pdehaye created at 2007-08-21 23:46:11
+archive/issue_comments_002355.json:
+```json
+{
+    "body": "and component \"wiki\"?",
+    "created_at": "2007-08-21T23:46:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2355",
+    "user": "pdehaye"
+}
+```
 
 and component "wiki"?
 
 
+
 ---
 
-Comment by jason created at 2008-09-21 02:34:19
+archive/issue_comments_002356.json:
+```json
+{
+    "body": "Is this ticket still valid?",
+    "created_at": "2008-09-21T02:34:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2356",
+    "user": "jason"
+}
+```
 
 Is this ticket still valid?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-21 05:22:21
+archive/issue_comments_002357.json:
+```json
+{
+    "body": "Nope, most of this is fixed and since it is vague as is I am closing this as fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-21T05:22:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2357",
+    "user": "mabshoff"
+}
+```
 
 Nope, most of this is fixed and since it is vague as is I am closing this as fixed.
 
@@ -78,8 +158,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-21 05:22:21
+archive/issue_comments_002358.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-21T05:22:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/471#issuecomment-2358",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

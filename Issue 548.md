@@ -1,32 +1,79 @@
 # Issue 548: hg_scripts should merge repository on upgrade/install instead of overwriting
 
-Issue created by migration from https://trac.sagemath.org/ticket/548
-
-Original creator: was
-
-Original creation time: 2007-08-31 23:11:25
-
+archive/issues_000548.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/548\n\n",
+    "created_at": "2007-08-31T23:11:25Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "hg_scripts should merge repository on upgrade/install instead of overwriting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/548",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/548
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-05 03:15:57
+archive/issue_comments_002823.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2007-10-05T03:15:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/548#issuecomment-2823",
+    "user": "was"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by was created at 2007-11-03 21:27:16
+archive/issue_comments_002824.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-03T21:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/548#issuecomment-2824",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-11-03 21:27:16
+archive/issue_comments_002825.json:
+```json
+{
+    "body": "OK, I pushed out a patch that fixes this.",
+    "created_at": "2007-11-03T21:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/548#issuecomment-2825",
+    "user": "was"
+}
+```
 
 OK, I pushed out a patch that fixes this.

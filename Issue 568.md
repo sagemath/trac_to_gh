@@ -1,11 +1,21 @@
 # Issue 568: sage -t --long coding/code_constructions.py times out after several *hours*
 
-Issue created by migration from https://trac.sagemath.org/ticket/568
-
-Original creator: was
-
-Original creation time: 2007-09-02 17:34:58
-
+archive/issues_000568.json:
+```json
+{
+    "body": "Assignee: wdjoyner\n\nThere is a doctest (or doctests) in \n\n```\n    sage -t --long coding/code_constructions.py \n```\n\nthat take many *hours*.  Run the above with --verbose and fix the doctests so they run in a reasonable\namount of time.  An example that never finishes is broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/568\n\n",
+    "created_at": "2007-09-02T17:34:58Z",
+    "labels": [
+        "coding theory",
+        "major",
+        "bug"
+    ],
+    "title": "sage -t --long coding/code_constructions.py times out after several *hours*",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/568",
+    "user": "was"
+}
+```
 Assignee: wdjoyner
 
 There is a doctest (or doctests) in 
@@ -17,10 +27,25 @@ There is a doctest (or doctests) in
 that take many *hours*.  Run the above with --verbose and fix the doctests so they run in a reasonable
 amount of time.  An example that never finishes is broken.
 
+Issue created by migration from https://trac.sagemath.org/ticket/568
+
+
+
+
 
 ---
 
-Comment by wdj created at 2007-09-06 00:01:30
+archive/issue_comments_002944.json:
+```json
+{
+    "body": "The following example is in the docstring for ToricCode:\n\n```\nsage: C = ToricCode([[0,0],[1,1],[1,2],[1,3],[1,4],[2,1],[2,2],[2,3],[3,1],[3,2],[4,1]],GF(8,\"a\"))\nsage: C\nLinear code of length 49, dimension 11 over Finite Field in a of size 2^3\nsage: C.minimum_distance()  ## long time -- very time consuming\n28\n```\n\nI assumed that the tester would ignore commands with a \"## long time -- very time consuming\" comment. If not, this could definitely bog this test down. \nI'll keep investigating this though.",
+    "created_at": "2007-09-06T00:01:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2944",
+    "user": "wdj"
+}
+```
 
 The following example is in the docstring for ToricCode:
 
@@ -36,9 +61,20 @@ I assumed that the tester would ignore commands with a "## long time -- very tim
 I'll keep investigating this though.
 
 
+
 ---
 
-Comment by wdj created at 2007-09-06 00:06:12
+archive/issue_comments_002945.json:
+```json
+{
+    "body": "That was it. It replaced \n\n```\nsage: C.minimum_distance()  ## long time -- very time consuming\n```\n\nby\n\n```\nsage.:. C.minimum_distance()  ## long time -- very time consuming\n```\n\nand then the following was the result of sage -t:\n\n```\nwdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage/sage/coding/code_constructions.py\"\nsage -t --long devel/sage-main/sage/coding/code_constructions.py\n         [11.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 11.6 seconds\n```\n\nIt appears that the sage -t test is behaving differently since at one time this\n\"long time\" comment would be passed over by sage -t. Is this new \nbehavior intentional? If yes, I'll submit a patch. If not, then the file can \nstay as is.",
+    "created_at": "2007-09-06T00:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2945",
+    "user": "wdj"
+}
+```
 
 That was it. It replaced 
 
@@ -70,9 +106,20 @@ behavior intentional? If yes, I'll submit a patch. If not, then the file can
 stay as is.
 
 
+
 ---
 
-Comment by wdj created at 2007-09-06 01:23:57
+archive/issue_comments_002946.json:
+```json
+{
+    "body": "I fixed the docstring to that sage -t --long doesn't time out.\n\n```\n\n wdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-coding/sage/coding/code_constructions.py\"\nsage -t --long devel/sage-coding/sage/coding/code_constructions.py\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\n```\n",
+    "created_at": "2007-09-06T01:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2946",
+    "user": "wdj"
+}
+```
 
 I fixed the docstring to that sage -t --long doesn't time out.
 
@@ -89,14 +136,38 @@ Total time for all tests: 12.4 seconds
 
 
 
+
 ---
 
-Comment by was created at 2007-09-06 17:21:03
+archive/issue_comments_002947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-06T17:21:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2947",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_002948.json:
+```json
+{
+    "body": "Attachment\n\nThis works.",
+    "created_at": "2007-09-06T17:21:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2948",
+    "user": "was"
+}
+```
 
 Attachment
 

@@ -1,11 +1,21 @@
 # Issue 562: memleak in Matrix_integer_dense__zero_out_matrix exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from https://trac.sagemath.org/ticket/562
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-02 00:19:15
-
+archive/issues_000562.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\ncauses (among other things) the following:\n\n```\n==5107== 133,912 bytes in 16,739 blocks are definitely lost in loss record 2,832 of 2,944\n==5107==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==5107==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x203F822F: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__zero_out_matrix (matrix_integer_dense.c:46\n35)\n==5107==    by 0x20426114: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense___init__ (matrix_integer_dense.c:3755)\n==5107==    by 0x45A321: type_call (typeobject.c:436)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==5107==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==5107==    by 0x4845B3: PyEval_EvalFrameEx (ceval.c:3660)\n==5107==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==5107==    by 0x4CFED0: function_call (funcobject.c:517)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n```\n\nCheers,\n\nTagged for 2.8.4\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/562\n\n",
+    "created_at": "2007-09-02T00:19:15Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "memleak in Matrix_integer_dense__zero_out_matrix exposed by ModularSymbols(n,sign=1).decomposition()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/562",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Hello folks,
@@ -39,17 +49,43 @@ Tagged for 2.8.4
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/562
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-02 00:30:09
+archive/issue_comments_002911.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-02T00:30:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/562#issuecomment-2911",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 12:49:00
+archive/issue_comments_002912.json:
+```json
+{
+    "body": "Mmmh, it looks like a matrix over ZZ isn't properly deallocated in Sage's python code. I looked at all the path and the deallocation seems to work correctly. William did mention something about this in IRC a couple days ago.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-03T12:49:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/562#issuecomment-2912",
+    "user": "mabshoff"
+}
+```
 
 Mmmh, it looks like a matrix over ZZ isn't properly deallocated in Sage's python code. I looked at all the path and the deallocation seems to work correctly. William did mention something about this in IRC a couple days ago.
 
@@ -58,9 +94,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 12:57:38
+archive/issue_comments_002913.json:
+```json
+{
+    "body": "I have to correct myself. Doing a \n\n```\nsage: for I in range(1000):\n....:     a = Matrix(ZZ,2,[1,2,3,4])\n....:     del a\n```\n\nvs. \n\n```\nsage: for I in range(1000):\n....:     a = Matrix(ZZ,2,[1,2,3,4])\n```\n\nleads to identical numbers when valgrinding. My guess is that the leak must be somewhere in the Cython code when initializing a matrix filled with zeros without deallocating it.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-03T12:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/562#issuecomment-2913",
+    "user": "mabshoff"
+}
+```
 
 I have to correct myself. Doing a 
 
@@ -84,16 +131,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-07 17:07:39
+archive/issue_comments_002914.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-09-07T17:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/562#issuecomment-2914",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-07 17:07:39
+archive/issue_comments_002915.json:
+```json
+{
+    "body": "Am am an idiot, because I just opened a duplicate of the same problem at #619. Since the descrition is better over there I am closing this one as duplicate.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-07T17:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/562#issuecomment-2915",
+    "user": "mabshoff"
+}
+```
 
 Am am an idiot, because I just opened a duplicate of the same problem at #619. Since the descrition is better over there I am closing this one as duplicate.
 

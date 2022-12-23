@@ -1,11 +1,21 @@
 # Issue 635: p-adic height gives incorrect precision
 
-Issue created by migration from https://trac.sagemath.org/ticket/635
-
-Original creator: dmharvey
-
-Original creation time: 2007-09-10 19:28:56
-
+archive/issues_000635.json:
+```json
+{
+    "body": "Assignee: was\n\nIf I ask for precision 10, I get precision 9:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\nsage: h = E.padic_height(5, 10)\nsage: h(P)\n4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)\n```\n\n\nIt didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the \"correct\" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/635\n\n",
+    "created_at": "2007-09-10T19:28:56Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "p-adic height gives incorrect precision",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/635",
+    "user": "dmharvey"
+}
+```
 Assignee: was
 
 If I ask for precision 10, I get precision 9:
@@ -22,46 +32,118 @@ sage: h(P)
 It didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the "correct" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/635
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2007-09-11 14:37:41
+archive/issue_comments_003273.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-11T14:37:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3273",
+    "user": "dmharvey"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-09-11 14:37:41
+archive/issue_comments_003274.json:
+```json
+{
+    "body": "Changing assignee from was to dmharvey.",
+    "created_at": "2007-09-11T14:37:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3274",
+    "user": "dmharvey"
+}
+```
 
 Changing assignee from was to dmharvey.
 
 
+
 ---
+
+archive/issue_comments_003275.json:
+```json
+{
+    "body": "Attachment\n\nAttached patch fixes the precision problem, but seems to introduce some weird segfault-like issues when running long doctests. I have no idea why this is happening because I'm only touching high-level python code. My guess is that those issues are independent of this one.",
+    "created_at": "2007-09-20T20:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3275",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 Attached patch fixes the precision problem, but seems to introduce some weird segfault-like issues when running long doctests. I have no idea why this is happening because I'm only touching high-level python code. My guess is that those issues are independent of this one.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-09-26 00:24:22
+archive/issue_comments_003276.json:
+```json
+{
+    "body": "I've tried the same patch against 2.8.5. Pretty much the same thing happens: the ordinary doctests (on `ell_rational_field.py`) are all fine, but long doctests produce *intermittent* segfaults... on some invocations everything is fine, and sometimes it segfaults. I have tried debugging with gdb, but either (a) the problem doesn't occur, or (b) I get an empty stack trace.\n\nI'm marking this as [with patch], because I think this patch is okay, and it's just exposing some other low-level bug somewhere else. If someone can track down the crasher that would be great.",
+    "created_at": "2007-09-26T00:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3276",
+    "user": "dmharvey"
+}
+```
 
 I've tried the same patch against 2.8.5. Pretty much the same thing happens: the ordinary doctests (on `ell_rational_field.py`) are all fine, but long doctests produce *intermittent* segfaults... on some invocations everything is fine, and sometimes it segfaults. I have tried debugging with gdb, but either (a) the problem doesn't occur, or (b) I get an empty stack trace.
 
 I'm marking this as [with patch], because I think this patch is okay, and it's just exposing some other low-level bug somewhere else. If someone can track down the crasher that would be great.
 
 
+
 ---
 
-Comment by was created at 2007-10-04 15:02:11
+archive/issue_comments_003277.json:
+```json
+{
+    "body": "Changed to 2.8.7, since it will hopefully be in David Roe's patch already.",
+    "created_at": "2007-10-04T15:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3277",
+    "user": "was"
+}
+```
 
 Changed to 2.8.7, since it will hopefully be in David Roe's patch already.
 
 
+
 ---
 
-Comment by was created at 2007-10-13 07:19:07
+archive/issue_comments_003278.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T07:19:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/635",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/635#issuecomment-3278",
+    "user": "was"
+}
+```
 
 Resolution: fixed

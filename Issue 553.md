@@ -1,11 +1,21 @@
 # Issue 553: calling of symbolic expressions is sometimes ridiculous
 
-Issue created by migration from https://trac.sagemath.org/ticket/553
-
-Original creator: was
-
-Original creation time: 2007-09-01 17:22:55
-
+archive/issues_000553.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
+    "created_at": "2007-09-01T17:22:55Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "calling of symbolic expressions is sometimes ridiculous",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/553",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -24,8 +34,25 @@ be changed (I've filed a bug report).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/553
+
+
+
+
 
 ---
+
+archive/issue_comments_002851.json:
+```json
+{
+    "body": "Attachment\n\nI attached a patch which throws an error when trying to substitute into a constant expression.\nIt can be overridden by passing a substitute=True parameter to __call__. \n\nAll doc tests pass with it.",
+    "created_at": "2007-09-06T22:49:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2851",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -35,37 +62,92 @@ It can be overridden by passing a substitute=True parameter to __call__.
 All doc tests pass with it.
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-06 22:49:40
+archive/issue_comments_002852.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-09-06T22:49:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2852",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by was created at 2007-09-07 04:14:20
+archive/issue_comments_002853.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-07T04:14:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2853",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-09-07 07:21:31
+archive/issue_comments_002854.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-09-07T07:21:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2854",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by was created at 2007-09-07 07:21:31
+archive/issue_comments_002855.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-09-07T07:21:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2855",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2007-09-07 07:21:31
+archive/issue_comments_002856.json:
+```json
+{
+    "body": "This patch doesn't fix the problem at all.   If you apply it the above example\ndoesn't raise an error.  In fact, it's a patch against named substitutions, which\nshould *always* be allowed.  So this was totally wrong.\n\nI'm worried actually that the expense of determining whether or not an expression\nis too costly.  The only reasonable fix is to completely ban calling \"non-callable\"\nsymbolic expressions without an explicit substitution.  doing this is a lot more\nwork though.",
+    "created_at": "2007-09-07T07:21:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2856",
+    "user": "was"
+}
+```
 
 This patch doesn't fix the problem at all.   If you apply it the above example
 doesn't raise an error.  In fact, it's a patch against named substitutions, which
@@ -77,16 +159,38 @@ symbolic expressions without an explicit substitution.  doing this is a lot more
 work though.
 
 
+
 ---
 
-Comment by was created at 2007-09-07 07:21:47
+archive/issue_comments_002857.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-09-07T07:21:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2857",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-05 21:22:56
+archive/issue_comments_002858.json:
+```json
+{
+    "body": "I think the best way to go about doing this is to add a number_of_arguments() to SymbolicExpressions:\n\n\n```\nsage: sin.number_of_arguments()\n1\nsage: (sin+1).number_of_arguments()\n1\nsage: (sin+x).number_of_arguments()\n1\nsage: (sin+x+y).number_of_arguments()\n2\nsage: (2^(8/9)-2^(1/9)).number_of_arguments()\n0\n```\n",
+    "created_at": "2007-12-05T21:22:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2858",
+    "user": "mhansen"
+}
+```
 
 I think the best way to go about doing this is to add a number_of_arguments() to SymbolicExpressions:
 
@@ -106,39 +210,109 @@ sage: (2^(8/9)-2^(1/9)).number_of_arguments()
 
 
 
+
 ---
+
+archive/issue_comments_002859.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-06T10:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2859",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 10:55:39
+archive/issue_comments_002860.json:
+```json
+{
+    "body": "I've put up a new patch.",
+    "created_at": "2007-12-06T10:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2860",
+    "user": "mhansen"
+}
+```
 
 I've put up a new patch.
 
 
+
 ---
 
-Comment by was created at 2007-12-15 11:12:33
+archive/issue_comments_002861.json:
+```json
+{
+    "body": "apply this patch and the one right above it.",
+    "created_at": "2007-12-15T11:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2861",
+    "user": "was"
+}
+```
 
 apply this patch and the one right above it.
 
 
+
 ---
+
+archive/issue_comments_002862.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-15T11:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2862",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:26:45
+archive/issue_comments_002863.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T11:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2863",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:26:45
+archive/issue_comments_002864.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T11:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2864",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.

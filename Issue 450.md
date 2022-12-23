@@ -1,11 +1,21 @@
 # Issue 450: clisp build fixes for Solaris
 
-Issue created by migration from https://trac.sagemath.org/ticket/450
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-19 07:54:42
-
+archive/issues_000450.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere is a bug in clisp's spkg-install that causes compilation\nfailures on Solaris:\n\nThe initial configure run has \"--without-dynamic-ffi\", the makemake\njob doesn't, this leads to the following definitions in clisp.h:\n\n  #define uint64_to_I(val)  uint64_to_I(val)\n  #define sint64_to_I(val)  sint64_to_I(val)\n\nAs you can imagine that doesn't go over too well at link-time. This\nshould also fix the compilation failure of clisp on Nexenta OS that\nDidier reported. With the added flag to makemake clisp builds, but\ncrashes in \"make check\". Even with the fix clisp doesn't compile with\ngcc 4.2.1 on Solaris, at the moment we use gcc 3.4.6.\n\nWe also have to make sure that we don't have \"-g\" in the build flags. \nThis is due to  due to an interaction between gcc's gas and the Sun\n ld when using dwarf2 debugging symbols are used.\n\nA detailed explainaition can be found at\nhttp://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/450\n\n",
+    "created_at": "2007-08-19T07:54:42Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "clisp build fixes for Solaris",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/450",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 There is a bug in clisp's spkg-install that causes compilation
@@ -30,10 +40,25 @@ This is due to  due to an interaction between gcc's gas and the Sun
 A detailed explainaition can be found at
 http://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html
 
+Issue created by migration from https://trac.sagemath.org/ticket/450
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-19 18:37:18
+archive/issue_comments_002244.json:
+```json
+{
+    "body": "Okay,\n\nthere is an updated spkg-install at \n\nhttp://sage.math.washington.edu/home/mabshoff/spkg-install-clisp_--without-dynamic-ffi-fix\n\nCaution: The CFLAGS are still \"-O0\", which makes it compile on Itanium, because if I remember correctly \"-O2\" caused crashes there. So the best solution might be to set the CFLAGS conditionally.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-19T18:37:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/450",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/450#issuecomment-2244",
+    "user": "mabshoff"
+}
+```
 
 Okay,
 
@@ -48,16 +73,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-22 19:38:06
+archive/issue_comments_002245.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-08-22T19:38:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/450",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/450#issuecomment-2245",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-17 07:39:39
+archive/issue_comments_002246.json:
+```json
+{
+    "body": "Sam Steingold, the current clisp maintainer, has gotten an account to neron, i.e. our Sun Sparc test platform. Hopefully this will fix all issues we are seeing with clisp :)\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-17T07:39:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/450",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/450#issuecomment-2246",
+    "user": "mabshoff"
+}
+```
 
 Sam Steingold, the current clisp maintainer, has gotten an account to neron, i.e. our Sun Sparc test platform. Hopefully this will fix all issues we are seeing with clisp :)
 
@@ -66,16 +113,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:07:24
+archive/issue_comments_002247.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-22T21:07:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/450",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/450#issuecomment-2247",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:07:24
+archive/issue_comments_002248.json:
+```json
+{
+    "body": "Clisp 2.44.1 now builds fine with clisp 2.44.1 on Solaris with gcc 3.4.6. Since the fix is upstream we can close this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T21:07:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/450",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/450#issuecomment-2248",
+    "user": "mabshoff"
+}
+```
 
 Clisp 2.44.1 now builds fine with clisp 2.44.1 on Solaris with gcc 3.4.6. Since the fix is upstream we can close this.
 

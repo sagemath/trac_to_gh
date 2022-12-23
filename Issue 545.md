@@ -1,23 +1,48 @@
 # Issue 545: polish the new symbolic logic code.
 
+archive/issues_000545.json:
+```json
+{
+    "body": "Assignee: chrisgorecki\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/545\n\n",
+    "created_at": "2007-08-31T21:07:33Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "polish the new symbolic logic code.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/545",
+    "user": "was"
+}
+```
+Assignee: chrisgorecki
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/545
 
-Original creator: was
-
-Original creation time: 2007-08-31 21:07:33
-
-Assignee: chrisgorecki
 
 
 
 
 ---
 
-Comment by was created at 2007-08-31 21:32:42
+archive/issue_comments_002758.json:
+```json
+{
+    "body": "To do:\n\n1. log.statement(...) could return a \"LogicalStatement\" object, which has a nice print  method -- __repr__(self) --, and a _latex_ method.  \n\n```\n   class LogicalStatement:\n      def __init__(self, ...)\n          ...\n```\n\nThen this might work:\n\n```\n    sage: s = log.statement(\"a&b|!(c|a)\")\n    sage: s\n    a&b|!(c|a)\n    sage: s & s\n    a&b|!(c|a)&a&b|!(c|a)\n    sage: s.truthtable()\n    ...\n    sage: show(s.truthtable())    # calls _latex\n    nice typeset version\n```\n\n\n2. Here:\n\n```\n  sage: s = log.statement(\"a&&b\")\n  Malformed Statement\n```\n\n    instead of printing, do \n\n```\n       raise ValueError, \"malformed statement\"\n```\n\n\n\n3. Don't use \"eval\" for a name, since that's a builtin Python.  \n\n4. Shift this over to line up with the r:\n\n```\ndef eval(toks):\n    r\"\"\"\n        This function is for internal use by the class SymbollicLogic.\n        It returns 'True' if the exression contained in toks would\n```\n\n\n5. Every function should have example doctests.  And to test do this:\n\n```\n$ cd SAGE_ROOT/devel/sage/sage/logic\n$ sage -t logic.py    \n```\n\n\n6.  varaibles --> variables\n\n7. Delete the vars stuff from the inputs in the docs here and clarify how they are used elsewhere:\n\n```\n\n        INPUT:\n            self -- the calling object\n            s -- a string containing the logic expression to be manipulated\n            global vars -- a dictionary with the variable names and\n                          their current boolean value\n            global vars_order -- a list of the variable names in\n                                the order they were found\n```\n\n   Also, at the top of the file document that vars and vars_order are used\nto simplify passing information around between various eval* functions.\nOr better just make all the eval functions be methods of the LogicalStatement class, if that makes sense. \n\n8. Possibly clarify what valid variable names are -- in the error message.",
+    "created_at": "2007-08-31T21:32:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2758",
+    "user": "was"
+}
+```
 
 To do:
 
- 1. log.statement(...) could return a "LogicalStatement" object, which has a nice print  method -- __repr__(self) --, and a _latex_ method.  
+1. log.statement(...) could return a "LogicalStatement" object, which has a nice print  method -- __repr__(self) --, and a _latex_ method.  
 
 ```
    class LogicalStatement:
@@ -40,7 +65,7 @@ Then this might work:
 ```
 
 
- 2. Here:
+2. Here:
 
 ```
   sage: s = log.statement("a&&b")
@@ -97,16 +122,38 @@ Or better just make all the eval functions be methods of the LogicalStatement cl
 8. Possibly clarify what valid variable names are -- in the error message.
 
 
+
 ---
 
-Comment by was created at 2007-08-31 21:38:17
+archive/issue_comments_002759.json:
+```json
+{
+    "body": "9. Write something in the docstring at the very top just summarizes the very basic of proposition calculus / symbolic logic / boolean algebra, with examples.",
+    "created_at": "2007-08-31T21:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2759",
+    "user": "was"
+}
+```
 
 9. Write something in the docstring at the very top just summarizes the very basic of proposition calculus / symbolic logic / boolean algebra, with examples.
 
 
+
 ---
 
-Comment by was created at 2007-09-11 22:56:52
+archive/issue_comments_002760.json:
+```json
+{
+    "body": "I've uploaded a new tarball that addresses all the todo's above.  This should be integrated into the SAGE \ncodebase and tried out by some people very soon.  \n\nNote that probably sage/logic/all.py and sage/all.py will need to be modified so that the doctests\nwill actually work.",
+    "created_at": "2007-09-11T22:56:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2760",
+    "user": "was"
+}
+```
 
 I've uploaded a new tarball that addresses all the todo's above.  This should be integrated into the SAGE 
 codebase and tried out by some people very soon.  
@@ -115,16 +162,38 @@ Note that probably sage/logic/all.py and sage/all.py will need to be modified so
 will actually work.
 
 
+
 ---
 
-Comment by was created at 2007-09-11 22:57:40
+archive/issue_comments_002761.json:
+```json
+{
+    "body": "By the way, this shouldn't definitely stay at milestone 2.9, since it shouldn't be too difficult.",
+    "created_at": "2007-09-11T22:57:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2761",
+    "user": "was"
+}
+```
 
 By the way, this shouldn't definitely stay at milestone 2.9, since it shouldn't be too difficult.
 
 
+
 ---
 
-Comment by pdenapo created at 2007-09-16 19:44:50
+archive/issue_comments_002762.json:
+```json
+{
+    "body": "Some comments/ideas on this:\n\n1) I'm not sure if SymbolicLogic is the proper name for this class. A more accurate name would be \nPropositionalCalculus (since there are other important theories in symbolic logic like PredicateCalculus, i.e. first order logic) that we could support in the future. \n\n2) An important feature to have would be computing the conjuntive normal form, and the output of this form in the DIMACS format used by SAT solvers, see\n\nhttp://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps\n\n(see also ticket #418 on wrapping minisat)",
+    "created_at": "2007-09-16T19:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2762",
+    "user": "pdenapo"
+}
+```
 
 Some comments/ideas on this:
 
@@ -138,18 +207,40 @@ http://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps
 (see also ticket #418 on wrapping minisat)
 
 
+
 ---
 
-Comment by pdenapo created at 2007-09-16 20:33:51
+archive/issue_comments_002763.json:
+```json
+{
+    "body": "Another comment: why using OPAREN and CPAREN as tokens?\nusing just '(' and ')' would be much more clear, and faster to process (since they are a\nsingle character)",
+    "created_at": "2007-09-16T20:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2763",
+    "user": "pdenapo"
+}
+```
 
 Another comment: why using OPAREN and CPAREN as tokens?
 using just '(' and ')' would be much more clear, and faster to process (since they are a
 single character)
 
 
+
 ---
 
-Comment by was created at 2008-01-23 04:29:46
+archive/issue_comments_002764.json:
+```json
+{
+    "body": "Comment from the author about the new version\n\n```\nHi William,\n\nSorry about the long delay with getting this code to you, I got a little sidetracked with school and all.  But, here it is.  At this point I believe I've fixed all the issues listed in ticket 545 as well as incorporating all of Pablo De Napoli's ideas and implementing cnf conversions and a DIMACS satformat output method.  I'm not sure if you want to post the code on the trac ticket, or in the repository, or elsewhere.  If you could let me know where it goes I can start soliciting advice on the devel group though.\n\nI have some ideas/questions for where the code should go next, but getting this release accepted first is probably at the top of the list.\n\n-Chris Gorecki\n```\n",
+    "created_at": "2008-01-23T04:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2764",
+    "user": "was"
+}
+```
 
 Comment from the author about the new version
 
@@ -165,9 +256,20 @@ I have some ideas/questions for where the code should go next, but getting this 
 
 
 
+
 ---
 
-Comment by was created at 2008-01-25 17:16:47
+archive/issue_comments_002765.json:
+```json
+{
+    "body": "From Pablo De Napoli:\n\n```\nChris: many thanks for sending the new version of your code.\nI think that it is a great work. Actually I see that you have\nimplemented many of\nmy previous suggestions like: using the the builting True/False\nfrom python instead of strings, using a tree to parse propositional\nformulas, avoid using the OPAN/CPAN tokens, etc.) and thank you for adding me\nas an author (eventhough\nI've not actually writen a single line of the code)\n\n I'll review it in more detail and tell you if I see something that can\nbe still improved.\n\nPablo\n```\n",
+    "created_at": "2008-01-25T17:16:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2765",
+    "user": "was"
+}
+```
 
 From Pablo De Napoli:
 
@@ -189,23 +291,58 @@ Pablo
 
 
 
+
 ---
+
+archive/issue_comments_002766.json:
+```json
+{
+    "body": "Attachment\n\nthis is from chris gorecki",
+    "created_at": "2008-04-09T19:44:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2766",
+    "user": "was"
+}
+```
 
 Attachment
 
 this is from chris gorecki
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-15 02:58:59
+archive/issue_comments_002767.json:
+```json
+{
+    "body": "I *think* I managed to turn the bundle into a patch against sage-3.0.alpha4.  I also tried to fiddle with the patch's header so that Chris Gorecki appears as its author.",
+    "created_at": "2008-04-15T02:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2767",
+    "user": "AlexGhitza"
+}
+```
 
 I *think* I managed to turn the bundle into a patch against sage-3.0.alpha4.  I also tried to fiddle with the patch's header so that Chris Gorecki appears as its author.
 
 
+
 ---
 
-Comment by robertwb created at 2008-05-14 17:45:45
+archive/issue_comments_002768.json:
+```json
+{
+    "body": "While browsing the code I noticed lots of stuff that seemed overly verbose (and inefficient), e.g. \n\n\n```\n        124     def eval_ifthen_op(lval, rval): \n \t125\t    r\"\"\" \n \t126\t    This function returns the logical 'ifthen' operator applied to lval and rval. \n \t127\t \n \t128\t    INPUT: \n \t129\t        lval -- boolean value to the left of the ifthen operator. \n \t130\t        rval -- boolean value appearing to the right of the ifthen operator. \n \t131\t                                     \n \t132\t    OUTPUT: \n \t133\t        Returns the logical 'ifthen' operator applied to lval and rval.   \n \t134\t \n \t135\t    EXAMPLES: \n \t136\t        sage: import booleval \n \t137\t        sage: booleval.eval_ifthen_op(True, False) \n \t138\t        False \n \t139\t        sage: booleval.eval_ifthen_op(False, False) \n \t140\t        True \n \t141\t    \"\"\" \n \t142\t    if(lval == False and rval == False): \n \t143\t        return True \n \t144\t    elif(lval == False and rval == True): \n \t145\t        return True \n \t146\t    elif(lval == True and rval == False): \n \t147\t        return False \n \t148\t    elif(lval == True and rval == True): \n \t149\t        return True \n```\n\n\nwhich could be summarized as \n\n```\nreturn not lval or rval\n```\n\n\nAlso, the operators are passed around (and compared) as strings everywhere (sometimes '&', sometimes 'and'). I think it would be better to use `operator.not_`, `operator.and_`, etc. and use `is` to compare, and then one can also write stuff like \n\n```\nreturn op(lval, rval)\n```\n\n\nrather than having big if-then-else statements. \n\nHaving a global `__vars` seems fragile as well. \n\nSorry it's taken so long to get this in, the boolean formula simplification stuff looks good, I just think some of it could be greatly improved.",
+    "created_at": "2008-05-14T17:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2768",
+    "user": "robertwb"
+}
+```
 
 While browsing the code I noticed lots of stuff that seemed overly verbose (and inefficient), e.g. 
 
@@ -261,54 +398,135 @@ Having a global `__vars` seems fragile as well.
 Sorry it's taken so long to get this in, the boolean formula simplification stuff looks good, I just think some of it could be greatly improved.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-15 21:23:15
+archive/issue_comments_002769.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_wstein\".",
+    "created_at": "2008-06-15T21:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2769",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "" to "editor_wstein".
 
 
+
 ---
+
+archive/issue_comments_002770.json:
+```json
+{
+    "body": "Attachment\n\nThis is the referee report",
+    "created_at": "2008-06-15T22:06:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2770",
+    "user": "was"
+}
+```
 
 Attachment
 
 This is the referee report
 
 
+
 ---
 
-Comment by was created at 2008-06-15 22:07:19
+archive/issue_comments_002771.json:
+```json
+{
+    "body": "REFEREE REPORT:\n See the attached file sekine.pdf.",
+    "created_at": "2008-06-15T22:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2771",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
  See the attached file sekine.pdf.
 
 
+
 ---
 
-Comment by was created at 2008-06-19 22:57:52
+archive/issue_comments_002772.json:
+```json
+{
+    "body": "Chris is too busy for the next two weeks to work on this, I think.",
+    "created_at": "2008-06-19T22:57:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2772",
+    "user": "was"
+}
+```
 
 Chris is too busy for the next two weeks to work on this, I think.
 
 
+
 ---
 
-Comment by goreckc created at 2008-09-11 02:51:44
+archive/issue_comments_002773.json:
+```json
+{
+    "body": "latest release",
+    "created_at": "2008-09-11T02:51:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2773",
+    "user": "goreckc"
+}
+```
 
 latest release
 
 
+
 ---
+
+archive/issue_comments_002774.json:
+```json
+{
+    "body": "Attachment\n\nThis release should address all the issues in sekine.pdf.",
+    "created_at": "2008-09-11T02:53:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2774",
+    "user": "goreckc"
+}
+```
 
 Attachment
 
 This release should address all the issues in sekine.pdf.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-28 02:25:18
+archive/issue_comments_002775.json:
+```json
+{
+    "body": "For the patch **logic.patch**, below are some possible fixes for improving its documentation. I was reviewing the plain text version of the diff, not the online version. This accounts for the number that precedes each line in the diffs below. In other words, such a number refers to the line number in the downloaded, plain text diff file, which should simplify the task of reviewing my suggestions.\n\n\n\n1.\n\n```\n36 -    Evaluates the tree using the boolean values contained in dictinary\n36 +    Evaluates the tree using the boolean values contained in dictionary\n```\n\n\n2.\n\n```\n40 -        tree -- a list of three elements corrospsponding to a branch of a\n40 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n\n3.\n\n```\n67 -        tree -- a list of three elements corrospsponding to a branch of a\n67 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n\n4.\n\n```\n201 -    underscores and aplphanumerics.  Parentheses may be used to\n201 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n\n5.\n\n```\n320 -            tree -- a list continaing the parse tree of the expression.\n320 +            tree -- a list containing the parse tree of the expression.\n```\n\n\n6.\n\n```\n322 -                  with each variable occuring only once.\n322 +                  with each variable occurring only once.\n```\n\n\n7.\n\n```\n486 -        Returns two statements atatched by the -> operator.\n486 +        Returns two statements attached by the -> operator.\n```\n\n\n8.\n\n```\n494 -            ithen'ed together.\n494 +            ifthen'ed together.\n```\n\n\n9.\n\n```\n563 -            start -- an interger representing the row of the truth\n563 +            start -- an integer representing the row of the truth\n```\n\n\n10.\n\n```\n564 -                     table from which to start intilized to 0 which\n564 +                     table from which to start initialized to 0, which\n```\n\n\n11.\n\n```\n568 -                   to be created.  It is intilized to the last row of the\n568 +                   to be created.  It is initialized to the last row of the\n```\n\n\n12.\n\n```\n601 -            When sent with no start or end paramaters this is an\n601 +            When sent with no start or end parameters, this is an\n```\n\n\n13.\n\n```\n680 -        It does this by applying a set of rules that are gaurenteed to convert the\n680 +        It does this by applying a set of rules that are guaranteed to convert the\n```\n\n\n14.\n\n```\n700 -            is typically prefered, but results can vary.\n700 +            is typically preferred, but results can vary.\n```\n\n\n15.\n\n```\n718 -            A string representing the satformat represetatin of this object.\n718 +            A string representing the satformat representation of this object.\n```\n\n\n16.\n\n```\n881 -            Returns a new statement that is the first statement attatched to\n881 +            Returns a new statement that is the first statement attached to\n```\n\n\n17.\n\n```\n950 -        if-thens, and xor opperations to operations only involving and/or operations.\n950 +        if-then, and xor operations to operations only involving and/or operations.\n```\n\n\n18.\n\n```\n954 -            tree -- a list of three elements corrospsponding to a branch of a\n954 +            tree -- a list of three elements corresponding to a branch of a\n```\n\n\n19.\n\n```\n1068 -        This function converts the string expression asscociated with an instance\n1068 +        This function converts the string expression associated with an instance\n```\n\n\n20.\n\n```\n1902 -        # FUTHER REDUCE COVER WITH EPI\n1902 +        # FURTHER REDUCE COVER WITH EPI\n```\n\n\n21.\n\n```\n1948 -    An unforunate side affect of the Quine-McCluskey system is that x !=\n1948 +    An unfortunate side effect of the Quine-McCluskey system is that x !=\n```\n\n\n22.\n\n```\n1977 -Module that creates and modifys parse trees of well formed\n1977 +Module that creates and modifies parse trees of well formed\n```\n\n\n23.\n\n```\n2003 -    This function produces a parse tree from a boolen formula s.\n2003 +    This function produces a parse tree from a boolean formula s.\n```\n\n\n24.\n\n```\n2042 -        Returns a list of tokens corrosponding to s.\n2042 +        Returns a list of tokens corresponding to s.\n```\n\n\n25.\n\n```\n2137 -             are occuring.\n2137 +             are occurring.\n```\n\n\n26.\n\n```\n2267 -It is not an error to use nonsenical numeric inputs.\n2267 +It is not an error to use nonsensical numeric inputs.\n```\n\n\n27.\n\n```\n2326 -                  with each variable occuring only once.\n2326 +                  with each variable occurring only once.\n```\n\n\n28.\n\n```\n2370 -        Strange paramaters can lead to the table header with no body.\n2370 +        Strange parameters can lead to the table header with no body.\n```\n\n\n29.\n\n```\n2415 -        Strange paramaters can lead to the table header with no body.\n2415 +        Strange parameters can lead to a table header with no body.\n```\n\n\n30.\n\n```\n2478 -    Formulas consist of the operators &, |, ~, ^, ->, <->, corrosponding\n2478 +    Formulas consist of the operators &, |, ~, ^, ->, <->, corresponding\n```\n\n\n31.\n\n```\n2481 -    underscores and aplphanumerics.  Parentheses may be used to\n2481 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n\n32.\n\n```\n362 -        Returns a latex representation of this statement.\n362 +        Returns a LaTeX representation of this statement.\n```\n\n\n33.\n\n```\n368 -            Returns the latex representation of this statement.\n368 +            Returns the LaTeX representation of this statement.\n```\n\n\n34.\n\n```\n384 +            other --the left hand side statement.\n384 +            other -- the left hand side statement.\n```\n\n\n35.\n\n```\n404 +            other --the left hand side statement.\n404 +            other -- the left hand side statement.\n```\n\n\n36.\n\n```\n425 -            other --the left hand side statement.\n425 +            other -- the left hand side statement.\n```\n\n\n37.\n\n```\n446 -            other --the left hand side statement.\n446 +            other -- the left hand side statement.\n```\n\n\n38.\n\n```\n467 -            other --the left hand side statement.\n467 +            other -- the left hand side statement.\n```\n\n\n39.\n\n```\n490 -            other --the left hand side statement.\n490 +            other -- the left hand side statement.\n```\n\n\n40.\n\n```\n511 -            other --the left hand side statement.\n511 +            other -- the left hand side statement.\n```\n\n\n41.\n\n```\n533 -            other --the left hand side statement.\n533 +            other -- the left hand side statement.\n```\n\n\n42.\n\n```\n537 -            right hand side and false otherwise.\n537 +            right hand side, and false otherwise.\n```\n\n\n43.\n\n```\n558 -        start inclusive and end exclusive so a truthtable(0, 2) will include\n558 +        start inclusive and end exclusive so truthtable(0, 2) will include\n```\n\n\n44.\n\n```\n572 -            Returns the truthtable (a 2-d array with the creating statement\n572 +            Returns the truthtable (a 2-D array with the creating statement\n```\n\n\n45. Please carefully read through the following snippet from the original diff file:\n\n```\n590 +        We can now create truthtable of rows 1 to 5\n591 +            sage: s.truthtable(1, 5)\n592 +            a      b      c      value\n593 +            False  False  True   False\n594 +            False  True   False  True\n595 +            False  True   True   False\n596 +            True   False  False  False\n```\n\nWhy \"rows 1 to 5\" when you're using the command `s.truthtable(1, 5)`? My understanding is that `s.truthtable(1, 5)` includes row 1 all the way up to but excluding row 5. In effect, that command actually creates 4 rows, excluding the standard header row. Perhaps you might want to consider this diff:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 4, inclusive.\n```\n\nor this one:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 5, exclusive.\n```\n\n\n\n46.\n\n```\n637 -        It does this by examining the truthtable of the formula.\n637 +        It does this by examining the truth table of the formula.\n```\n\n\n47.\n\n```\n653 -            This method creates the cnf parse tree by examining the logic\n653 +            This method creates the CNF parse tree by examining the logic\n```\n\n\n48.\n\n```\n699 -            Unless a formula is already in (or close to) being in cnf convert_cnf()\n699 +            Unless a formula is already in (or close to) being in CNF, convert_cnf()\n```\n\n\n49. No tabs, please. This issue is especially important since we're using Python and most folks who program in Python use only spaces --- NOT tabs --- for their indentation. For official reasons why tabs are not used, please refer to [PEP 666](http://www.python.org/dev/peps/pep-0666/). The [Sage Developer's Guide](http://www.sagemath.org/doc/prog/prog.html) provides various general guidelines to be adhered to when writing code (and documentation) to be included within Sage itself. In particular, you might want to consult [this section](http://www.sagemath.org/doc/prog/node6.html). If you feel that my comment is unfair to you, please don't flame me. Instead, provide me with reasons why it's unfair (to you). If your reasons turn out to be valid and they show that I'm being unfair, I'd stand corrected and offer you my apology.\n\n```\n711 -\t    See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n711 +        See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n```\n\n\n50.\n\n```\n730 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n730 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n\n51.\n\n```\n806 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n806 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n\n52.\n\n```\n838 -        '~', operators.\n838 +        '~' operators.\n```\n\n\n53.\n\n```\n1117 -            The next operator in the string\n1117 +            The next operator in the string.\n```\n\n\n54.\n\n```\n1276 -        Will create a composite functor which will add 1, multiply by\n1276 +        will create a composite functor which will add 1, multiply by\n```\n\n\n55.\n\n```\n1343 -    is defined so that that tc(ast) returns the count of ts.  The\n1343 +    is defined so that tc(ast) returns the count of ts.  The\n```\n\n\n56.\n\n```\n1575 -    The exclusive-or operator, will turn into:\n1575 +    The exclusive-or operator will turn into:\n```\n\n\n57.\n\n```\n1945 -    DNF formulae generated from prepositional logic ASTs as described\n1945 +    DNF formulae generated from propositional logic ASTs as described\n```\n\n\n58.\n\n```\n2216 -A logic table is essentially a 2-d array that is created by the statement class\n2216 +A logic table is essentially a 2-D array that is created by the statement class\n```\n\n\n59.\n\n```\n2221 -For instance, with the variables A, B, and C the truthtable looks like:\n2221 +For instance, with the variables A, B, and C the truth table looks like:\n```\n\n\n60.\n\n```\n2233 -This is equivalent to counting in binary, where a table would appear thusly;\n2233 +This is equivalent to counting in binary, where a table would appear thus:\n```\n\n\n61.\n\n```\n2279 -If one argument is provided truthtable defaults to the end.\n2279 +If one argument is provided, truthtable defaults to the end.\n```\n\n\n62.\n\n```\n2291 -If the second argument is negative truthtable defaults to the end.\n2291 +If the second argument is negative, truthtable defaults to the end.\n```\n\n\n63.\n\n```\n2324 -            t -- a 2-d array containing the table values\n2324 +            t -- a 2-D array containing the table values.\n```\n\n\n64.\n\n```\n2396 -            self -- the calling object: not used\n2396 +            self -- the calling object: not used.\n```\n\n\n65.\n\n```\n2454 -            self -- the calling object: not used\n2454 +            self -- the calling object: not used.\n```\n\n\n66.\n\n```\n2592 -    Formula returns an instance if BooleanFormula if possible, and throws\n2592 +    Formula returns an instance of BooleanFormula if possible, and throws\n```\n",
+    "created_at": "2008-10-28T02:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2775",
+    "user": "mvngu"
+}
+```
 
-For the patch *logic.patch*, below are some possible fixes for improving its documentation. I was reviewing the plain text version of the diff, not the online version. This accounts for the number that precedes each line in the diffs below. In other words, such a number refers to the line number in the downloaded, plain text diff file, which should simplify the task of reviewing my suggestions.
+For the patch **logic.patch**, below are some possible fixes for improving its documentation. I was reviewing the plain text version of the diff, not the online version. This accounts for the number that precedes each line in the diffs below. In other words, such a number refers to the line number in the downloaded, plain text diff file, which should simplify the task of reviewing my suggestions.
 
 
 
@@ -861,9 +1079,20 @@ or this one:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 02:29:34
+archive/issue_comments_002776.json:
+```json
+{
+    "body": "Minh,\n\nyou should really post patches on top of given patches to make it easier to apply your changes.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T02:29:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2776",
+    "user": "mabshoff"
+}
+```
 
 Minh,
 
@@ -874,18 +1103,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-28 02:41:22
+archive/issue_comments_002777.json:
+```json
+{
+    "body": "Replying to [comment:23 mabshoff]:\n> you should really post patches on top of given patches to make it easier to apply your changes.\nYou mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?",
+    "created_at": "2008-10-28T02:41:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2777",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:23 mabshoff]:
 > you should really post patches on top of given patches to make it easier to apply your changes.
 You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 02:43:49
+archive/issue_comments_002778.json:
+```json
+{
+    "body": "Replying to [comment:24 mvngu]:\n\n> You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n\nYes, exactly.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T02:43:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2778",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:24 mvngu]:
 
@@ -898,7 +1149,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_002779.json:
+```json
+{
+    "body": "Attachment\n\nChris,\n\ndo *not* attach tgz files to trac since it causes massive problems. Instead post plain hg patches.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T02:53:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2779",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -911,9 +1175,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-28 05:15:28
+archive/issue_comments_002780.json:
+```json
+{
+    "body": "Replying to [comment:25 mabshoff]:\n> Replying to [comment:24 mvngu]:\n> \n> > You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n> \n> Yes, exactly.\n\n\nI'm having trouble applying the patch **logic.hg**. For example, I've received this abort message:\n\n```\nsage: hg_sage.patch(\"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\")\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg import   \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\"\napplying /home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\nabort: no diffs found\n```\n\nOK, so perhaps it's because **logic.hg** is bzip2 compressed:\n\n```\n$ file logic.hg \nlogic.hg: Mercurial changeset bundle (bzip2 compressed)\n```\n\nBut why can't I do bunzip2:\n\n```\n$ bunzip2 logic.hg \nbunzip2: Can't guess original name for logic.hg -- using logic.hg.out\nbunzip2: logic.hg is not a bzip2 file.\n```\n\nAny other way(s) of getting the diff file(s) bundled in **logic.hg**?",
+    "created_at": "2008-10-28T05:15:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2780",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:25 mabshoff]:
 > Replying to [comment:24 mvngu]:
@@ -923,7 +1198,7 @@ Replying to [comment:25 mabshoff]:
 > Yes, exactly.
 
 
-I'm having trouble applying the patch *logic.hg*. For example, I've received this abort message:
+I'm having trouble applying the patch **logic.hg**. For example, I've received this abort message:
 
 ```
 sage: hg_sage.patch("/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg")
@@ -934,7 +1209,7 @@ applying /home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/log
 abort: no diffs found
 ```
 
-OK, so perhaps it's because *logic.hg* is bzip2 compressed:
+OK, so perhaps it's because **logic.hg** is bzip2 compressed:
 
 ```
 $ file logic.hg 
@@ -949,40 +1224,101 @@ bunzip2: Can't guess original name for logic.hg -- using logic.hg.out
 bunzip2: logic.hg is not a bzip2 file.
 ```
 
-Any other way(s) of getting the diff file(s) bundled in *logic.hg*?
+Any other way(s) of getting the diff file(s) bundled in **logic.hg**?
+
 
 
 ---
+
+archive/issue_comments_002781.json:
+```json
+{
+    "body": "Attachment\n\nHaving trouble with the patch, don't use logic.patch.",
+    "created_at": "2008-11-18T06:37:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2781",
+    "user": "goreckc"
+}
+```
 
 Attachment
 
 Having trouble with the patch, don't use logic.patch.
 
 
+
 ---
 
-Comment by goreckc created at 2008-11-24 02:33:00
+archive/issue_comments_002782.json:
+```json
+{
+    "body": "Fixed documentation.",
+    "created_at": "2008-11-24T02:33:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2782",
+    "user": "goreckc"
+}
+```
 
 Fixed documentation.
 
 
+
 ---
+
+archive/issue_comments_002783.json:
+```json
+{
+    "body": "Attachment\n\nAll of mvngu's changes have been incorporated into logic2.patch.",
+    "created_at": "2008-11-24T02:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2783",
+    "user": "goreckc"
+}
+```
 
 Attachment
 
 All of mvngu's changes have been incorporated into logic2.patch.
 
 
+
 ---
+
+archive/issue_comments_002784.json:
+```json
+{
+    "body": "Attachment\n\nImprove latex output for boolean formulas, fix a few spelling mistakes",
+    "created_at": "2008-11-25T17:30:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2784",
+    "user": "whuss"
+}
+```
 
 Attachment
 
 Improve latex output for boolean formulas, fix a few spelling mistakes
 
 
+
 ---
 
-Comment by was created at 2008-11-27 08:19:33
+archive/issue_comments_002785.json:
+```json
+{
+    "body": "Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/devel/sage/!?  This code should go in SAGE_ROOT/devel/sage/sage/logic and be properly imported.  I'm really confused about what happened here.\n\n\n```\nwas@sage:~/build/sage-3.2.rc1/devel/sage$ ls\nbooleval.py     build     c_lib    install         MANIFEST.in      PKG-INFO     README.txt    sage-push          spkg-delauto\nboolformula.py  build.py  clib.py  logicparser.py  module_list.py   propcalc.py  sage          setup.py           spkg-dist\nboolopt.py      bundle    export   logictable.py   module_list.pyc  pull         sagebuild.py  spkg-debian-maybe  spkg-install\n```\n\n\nNote the boolformula.py, etc., above.",
+    "created_at": "2008-11-27T08:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2785",
+    "user": "was"
+}
+```
 
 Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/devel/sage/!?  This code should go in SAGE_ROOT/devel/sage/sage/logic and be properly imported.  I'm really confused about what happened here.
 
@@ -998,9 +1334,20 @@ boolopt.py      bundle    export   logictable.py   module_list.pyc  pull        
 Note the boolformula.py, etc., above.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 08:29:08
+archive/issue_comments_002786.json:
+```json
+{
+    "body": "Once there are new patches someone please clean up the old deadwood.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T08:29:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2786",
+    "user": "mabshoff"
+}
+```
 
 Once there are new patches someone please clean up the old deadwood.
 
@@ -1009,14 +1356,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by goreckc created at 2008-12-01 00:54:02
+archive/issue_comments_002787.json:
+```json
+{
+    "body": "Changed directory.",
+    "created_at": "2008-12-01T00:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2787",
+    "user": "goreckc"
+}
+```
 
 Changed directory.
 
 
+
 ---
+
+archive/issue_comments_002788.json:
+```json
+{
+    "body": "Attachment\n\nI believe this patch should output to SAGE_ROOT/devel/sage/sage/logic.  I'm not sure if it is being imported properly.  \n\nIt doesn't have the trac_545_latex.patch applied against it either.  Should this be done?",
+    "created_at": "2008-12-01T00:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2788",
+    "user": "goreckc"
+}
+```
 
 Attachment
 
@@ -1025,21 +1396,56 @@ I believe this patch should output to SAGE_ROOT/devel/sage/sage/logic.  I'm not 
 It doesn't have the trac_545_latex.patch applied against it either.  Should this be done?
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-12-29 21:14:11
+archive/issue_comments_002789.json:
+```json
+{
+    "body": "Target time for the review: January 11th",
+    "created_at": "2008-12-29T21:14:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2789",
+    "user": "GeorgSWeber"
+}
+```
 
 Target time for the review: January 11th
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-20 22:55:20
+archive/issue_comments_002790.json:
+```json
+{
+    "body": "Apply only this patch and then \"trac_545_latex.patch\"",
+    "created_at": "2009-01-20T22:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2790",
+    "user": "GeorgSWeber"
+}
+```
 
 Apply only this patch and then "trac_545_latex.patch"
 
 
+
 ---
+
+archive/issue_comments_002791.json:
+```json
+{
+    "body": "Attachment\n\nPositive review, this should go into the 3.3 series.\n\n`@`Michael:\nFor this ticket, only two of the patches are to be applied (I tested against Sage3.3.alpha0 on my Mac) to the Sage Library (devel/sage-main):\n\n* \"logic4.patch\" (should apply cleanly, credit: Chris Gorecki)\n\n* \"trac_545_latex.patch\" (should apply, but with one hunk succeeding only with fuzz, credit: Wilfried Huss)\n\nNote 1: The \"logic4.patch\" is essentially the \"logic3.patch\", but such that the files do not go into \"devel/sage/logic/\", but into \"devel/sage/sage/logic\", where they belong. For the doctests to pass I also changed lines like \"sage: import propcalc\" into \"sage: import sage.logic.propcalc as propcalc\", and I removed linebreaks/backslashes in the \"Expected Output\" so that the true output now does match the expected output. Probably one should adjust the \"all.py\" in the \"sage/logic\" subdirectory in an appropriate way, but I wanted to do only minimal invasive changes to the original (\"logic3\") patch.\n\nNote 2: I have not tried any ReSTification. But I would rather have it in 3.4 without Sphinx documentation, than having to rewrite the patches for this ticket for 3.4.1 again, given the age of the ticket. Wil might have an opinion on that.\n\nNote 3: One of the six new files, the file \"boolopt.py\", says in it: \"Copyright 2006 (c) Michael Greenberg.  NewBSD license, listed below ...\". The terms listed are definitely compatible with GPLv2+, as far as I can tell, but IANAL. (The other five files are entirely written by Chris Gorecki, and are \"Distributed under the terms of the GNU General Public License (GPL)\".)\n\nNote 4: This \"other\" file boolopt.py misses doctests on its own, but the functionality provided is well tested implicitly by using it in other ones of these six files. This is OK from my side, but probably a \"\"\"nodoctests\"\"\" should be added --- or the code has to be refactored on a larger scale --- or this one file would have to be put in its own micro-spkg.\n\nNote 5: There definitely is further work to be done on the \"sage/logic/\" part of Sage, e.g. the old \"logic.py\" file most probably should be thrown out, \"all.py\" should be adjusted, and so on. But please, please, please open new tickets for that!",
+    "created_at": "2009-01-20T23:31:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2791",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
@@ -1063,16 +1469,38 @@ Note 4: This "other" file boolopt.py misses doctests on its own, but the functio
 Note 5: There definitely is further work to be done on the "sage/logic/" part of Sage, e.g. the old "logic.py" file most probably should be thrown out, "all.py" should be adjusted, and so on. But please, please, please open new tickets for that!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 01:41:38
+archive/issue_comments_002792.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T01:41:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2792",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 01:41:38
+archive/issue_comments_002793.json:
+```json
+{
+    "body": "Merged logic4.patch and trac_545_latex.patch in Sage 3.3.alpha1. Note that two long doctests are broken, but they ought to be fixed before the final Sage 3.3 release. Merging this code is more important than letting it go staler.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-23T01:41:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2793",
+    "user": "mabshoff"
+}
+```
 
 Merged logic4.patch and trac_545_latex.patch in Sage 3.3.alpha1. Note that two long doctests are broken, but they ought to be fixed before the final Sage 3.3 release. Merging this code is more important than letting it go staler.
 
@@ -1081,11 +1509,22 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 01:45:18
+archive/issue_comments_002794.json:
+```json
+{
+    "body": "Reopened: The coverage of this code **sucks**:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/\nbooleval.py: 100% (3 of 3)\nboolformula.py: 93% (30 of 32)\nboolopt.py: 0% (0 of 55)\nlogic.py: 16% (3 of 18)\nlogicparser.py: 100% (5 of 5)\nlogictable.py: 100% (4 of 4)\npropcalc.py: 100% (1 of 1)\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-23T01:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2794",
+    "user": "mabshoff"
+}
+```
 
-Reopened: The coverage of this code *sucks*:
+Reopened: The coverage of this code **sucks**:
 
 ```
 mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/
@@ -1104,23 +1543,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 01:45:18
+archive/issue_comments_002795.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-01-23T01:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2795",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 01:45:18
+archive/issue_comments_002796.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-01-23T01:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2796",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-23 20:27:15
+archive/issue_comments_002797.json:
+```json
+{
+    "body": "Thanks for catching the two \"long\" doctest failures I let slip by. They're indeed trivial to fix.\n\nConcerning the coverage: I'm at a loss here.\n\nPlease see my \"Note 4\" from above about the file \"boolopt.py\", which would have either to be refactored (i.e. rewritten) completely, or one would have to add lots of meaningless doctests, look at the following code snippet:\n\n```\n    def visit_prop(self, node, children):\n        self.props.add(children[0])\n\n    def visit_notprop(self, node, children):\n        self.props.add(children[0])\n\n    def transform_node(self, node, children):\n        return [[tuple([node] + children)]]\n\n    def transform_or(self, node, children):\n        return children[0] + children[1]\n\n\n```\n\n\nThoughts?\n\nCheers, gsw",
+    "created_at": "2009-01-23T20:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2797",
+    "user": "GeorgSWeber"
+}
+```
 
 Thanks for catching the two "long" doctest failures I let slip by. They're indeed trivial to fix.
 
@@ -1150,16 +1622,40 @@ Thoughts?
 Cheers, gsw
 
 
+
 ---
+
+archive/issue_comments_002798.json:
+```json
+{
+    "body": "Attachment\n\nApply first \"logic4\" then the \"latex\" one and after that this one patch",
+    "created_at": "2009-01-23T21:12:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2798",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 Apply first "logic4" then the "latex" one and after that this one patch
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-23 21:23:09
+archive/issue_comments_002799.json:
+```json
+{
+    "body": "Urgh.\n\nCurrently this ticket already has three different patches to be applied from three different guys.\n\nI've made my case, please another one step in and review this, thanks!\n\n(The long doctests now do pass --- but there is the coverage problem, which is essentially a hen-and-egg problem: the code does not go into Sage because of the coverage, but who would work on code not being in Sage to make the coverage higher?)",
+    "created_at": "2009-01-23T21:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2799",
+    "user": "GeorgSWeber"
+}
+```
 
 Urgh.
 
@@ -1170,9 +1666,20 @@ I've made my case, please another one step in and review this, thanks!
 (The long doctests now do pass --- but there is the coverage problem, which is essentially a hen-and-egg problem: the code does not go into Sage because of the coverage, but who would work on code not being in Sage to make the coverage higher?)
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-23 21:33:38
+archive/issue_comments_002800.json:
+```json
+{
+    "body": "In my experience, the motivation to increase coverage is the highest when trying to get something in. \n\nHow essential is boolopt.py to the rest of the package? Could it be pushed to a separate ticket (enhancement). \n\nboolformula.py could probably be brought up to 100% without too much effort.",
+    "created_at": "2009-01-23T21:33:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2800",
+    "user": "robertwb"
+}
+```
 
 In my experience, the motivation to increase coverage is the highest when trying to get something in. 
 
@@ -1181,9 +1688,20 @@ How essential is boolopt.py to the rest of the package? Could it be pushed to a 
 boolformula.py could probably be brought up to 100% without too much effort.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-24 13:31:14
+archive/issue_comments_002801.json:
+```json
+{
+    "body": "Ahh, excellent idea, this was just the input needed here. Robert, thank you very much!\n\nSo now what's to do (if nobody else does it, I'll do it):\n\n- move the file \"boolopt.py\" to its own (enhancement) ticket \"with patch, needs work\" (easy)\n\n- adjust the other five files of this patch so that they are stand-alone (rather easy, essentially only the \"simplify\" function in boolformula.py is concerned)\n\n- add the two missing doctests to boolformula.py (very easy)\n\nPlease note that the file \"logic.py\" which has missing doctests according to the coverage report above is not among the new files, but already a part of Sage!\n(So it couldn't possibly block this ticket to finally go in. But of course, it needs to be cleaned up itself.)",
+    "created_at": "2009-01-24T13:31:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2801",
+    "user": "GeorgSWeber"
+}
+```
 
 Ahh, excellent idea, this was just the input needed here. Robert, thank you very much!
 
@@ -1199,9 +1717,20 @@ Please note that the file "logic.py" which has missing doctests according to the
 (So it couldn't possibly block this ticket to finally go in. But of course, it needs to be cleaned up itself.)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 13:39:33
+archive/issue_comments_002802.json:
+```json
+{
+    "body": "Georg,\n\nthanks for working on this since this is an incredible messy ticket. The main point here is that added functionality must be doctested while it is nice to increase the coverage on existing code that is being worked on. So I agree with the approach here. In addition you should open an enhancement ticket to get coverage of logic.py to 100%, too.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T13:39:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2802",
+    "user": "mabshoff"
+}
+```
 
 Georg,
 
@@ -1212,96 +1741,225 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_002803.json:
+```json
+{
+    "body": "Attachment\n\nBring doctest coverage of boolformula.py up to 100%",
+    "created_at": "2009-02-25T10:09:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2803",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Bring doctest coverage of boolformula.py up to 100%
 
 
+
 ---
 
-Comment by mvngu created at 2009-02-25 10:16:50
+archive/issue_comments_002804.json:
+```json
+{
+    "body": "Replying to [comment:42 GeorgSWeber]:\n> - add the two missing doctests to boolformula.py (very easy)\nThis is done by `trac_545_boolformula-doctests.patch`.",
+    "created_at": "2009-02-25T10:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2804",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:42 GeorgSWeber]:
 > - add the two missing doctests to boolformula.py (very easy)
 This is done by `trac_545_boolformula-doctests.patch`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-02-25 10:23:53
+archive/issue_comments_002805.json:
+```json
+{
+    "body": "So what happens here is one should apply the following in the specified order as suggested by Georg:\n\n\n1. first apply `logic4.patch`\n2. then `trac_545_latex.patch`\n3. and finally `trac_545_long-doctests-fixed.patch`\n\nNow `trac_545_latex.patch` applied fine, but hunk #2 suceeded with fuzz, as reported by Georg. Apart from this fuzz, all the above three patches applied OK in the specified order against 3.4-alpha0. Doctests including `-long` passed. Having done so, one can then apply `trac_545_boolformula-doctests.patch` (based on 3.4-alpha0) which adds two missing doctests to `boolformula.py`.",
+    "created_at": "2009-02-25T10:23:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2805",
+    "user": "mvngu"
+}
+```
 
 So what happens here is one should apply the following in the specified order as suggested by Georg:
 
 
- 1. first apply `logic4.patch`
- 1. then `trac_545_latex.patch`
- 1. and finally `trac_545_long-doctests-fixed.patch`
+1. first apply `logic4.patch`
+2. then `trac_545_latex.patch`
+3. and finally `trac_545_long-doctests-fixed.patch`
 
 Now `trac_545_latex.patch` applied fine, but hunk #2 suceeded with fuzz, as reported by Georg. Apart from this fuzz, all the above three patches applied OK in the specified order against 3.4-alpha0. Doctests including `-long` passed. Having done so, one can then apply `trac_545_boolformula-doctests.patch` (based on 3.4-alpha0) which adds two missing doctests to `boolformula.py`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-27 13:03:13
+archive/issue_comments_002806.json:
+```json
+{
+    "body": "based on sage-3.4.2.alpha0",
+    "created_at": "2009-04-27T13:03:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2806",
+    "user": "mvngu"
+}
+```
 
 based on sage-3.4.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_002807.json:
+```json
+{
+    "body": "Attachment\n\nbased on sage-3.4.2.alpha0",
+    "created_at": "2009-04-27T13:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2807",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on sage-3.4.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_002808.json:
+```json
+{
+    "body": "Attachment\n\nbased on sage-3.4.2.alpha0",
+    "created_at": "2009-04-27T13:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2808",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on sage-3.4.2.alpha0
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-27 13:07:14
+archive/issue_comments_002809.json:
+```json
+{
+    "body": "Apply patches in the following order:\n1. `trac_545-logic5.patch` -- Basically the same as `logic4.patch`, but without including those diff lines for `boolopt.py`. The module `boolopt.py` is now moved to ticket #5910 as an enhancement.\n2. `trac_545-latex2.patch` -- Essentially the same as `trac_545_latex.patch`, but you won't see any fuzz when applying it.\n3. `trac_545_long-doctests-fixed.patch`\n4. `trac_545_boolformula-doctests.patch` -- This should bring doctest coverage of `boolformula.py` up to 100%.\n5. `trac_545-adjust-simplify.patch` -- This adjusts the method `simplify()` in `boolformula.py` and all doctests that uses `simplify()`. So this patch only touches `boolformula.py` and `propcalc.py`.\nIf I read this ticket correctly, I think only `trac_545_boolformula-doctests.patch` and `trac_545-adjust-simplify.patch` need to be reviewed.",
+    "created_at": "2009-04-27T13:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2809",
+    "user": "mvngu"
+}
+```
 
 Apply patches in the following order:
- 1. `trac_545-logic5.patch` -- Basically the same as `logic4.patch`, but without including those diff lines for `boolopt.py`. The module `boolopt.py` is now moved to ticket #5910 as an enhancement.
- 1. `trac_545-latex2.patch` -- Essentially the same as `trac_545_latex.patch`, but you won't see any fuzz when applying it.
- 1. `trac_545_long-doctests-fixed.patch`
- 1. `trac_545_boolformula-doctests.patch` -- This should bring doctest coverage of `boolformula.py` up to 100%.
- 1. `trac_545-adjust-simplify.patch` -- This adjusts the method `simplify()` in `boolformula.py` and all doctests that uses `simplify()`. So this patch only touches `boolformula.py` and `propcalc.py`.
+1. `trac_545-logic5.patch` -- Basically the same as `logic4.patch`, but without including those diff lines for `boolopt.py`. The module `boolopt.py` is now moved to ticket #5910 as an enhancement.
+2. `trac_545-latex2.patch` -- Essentially the same as `trac_545_latex.patch`, but you won't see any fuzz when applying it.
+3. `trac_545_long-doctests-fixed.patch`
+4. `trac_545_boolformula-doctests.patch` -- This should bring doctest coverage of `boolformula.py` up to 100%.
+5. `trac_545-adjust-simplify.patch` -- This adjusts the method `simplify()` in `boolformula.py` and all doctests that uses `simplify()`. So this patch only touches `boolformula.py` and `propcalc.py`.
 If I read this ticket correctly, I think only `trac_545_boolformula-doctests.patch` and `trac_545-adjust-simplify.patch` need to be reviewed.
 
 
+
 ---
 
-Comment by whuss created at 2009-04-27 16:33:41
+archive/issue_comments_002810.json:
+```json
+{
+    "body": "In the class BooleanFormula there is a spelling mistake in a function name,\n\"equivlant\" instead of equivalent. The same mistake is repeated a few times\nin the documentation.",
+    "created_at": "2009-04-27T16:33:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2810",
+    "user": "whuss"
+}
+```
 
 In the class BooleanFormula there is a spelling mistake in a function name,
 "equivlant" instead of equivalent. The same mistake is repeated a few times
 in the documentation.
 
 
+
 ---
 
-Comment by whuss created at 2009-04-27 16:35:28
+archive/issue_comments_002811.json:
+```json
+{
+    "body": "fix spelling mistakes",
+    "created_at": "2009-04-27T16:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2811",
+    "user": "whuss"
+}
+```
 
 fix spelling mistakes
 
 
+
 ---
+
+archive/issue_comments_002812.json:
+```json
+{
+    "body": "Attachment\n\napply after the other five patches instead of \"equivlant.patch\"",
+    "created_at": "2009-04-28T19:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2812",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 apply after the other five patches instead of "equivlant.patch"
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-04-28 19:35:56
+archive/issue_comments_002813.json:
+```json
+{
+    "body": "Minh, thanks for your good work!\nAfter applying the five patches Minh mentioned in the correct order to Sage-3.4.2.alpha0, the equivlant.patch didn't apply. So I rebased and made it such that Wilfried's name appears in it as originator.\n\nPositive review to the sequence of five patches Minh mentioned. And positive review to the changes of Wilfried (I really did nothing but rebase them). The main author here is Chris Gorecki, of course.\n\nAfter this ticket is finally closed (Requiescat In Pacem), the next steps would be to dismiss \"logic.py\" (I think it becomes mostly obsolete by this patch here), add the \"rest\" as a logic chapter to the Sphinx documentation (probably this needs some work, but hopefully some scripts will be available to help), and finally work on/solve #5910. \n\nCheers, gsw",
+    "created_at": "2009-04-28T19:35:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2813",
+    "user": "GeorgSWeber"
+}
+```
 
 Minh, thanks for your good work!
 After applying the five patches Minh mentioned in the correct order to Sage-3.4.2.alpha0, the equivlant.patch didn't apply. So I rebased and made it such that Wilfried's name appears in it as originator.
@@ -1313,18 +1971,29 @@ After this ticket is finally closed (Requiescat In Pacem), the next steps would 
 Cheers, gsw
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 03:20:38
+archive/issue_comments_002814.json:
+```json
+{
+    "body": "Merged \n\n* trac_545-logic5.patch\n* trac_545-latex2.patch\n* trac_545_long-doctests-fixed.patch\n* trac_545_boolformula-doctests.patch\n* trac_545-adjust-simplify.patch\n* trac_545-equivlant_rebased.patch\n\nin Sage 3.4.2.rc0. Note that there are some odd whitespace issues in those files, so if someone could take care of that at #5910 it would be splendid :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T03:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2814",
+    "user": "mabshoff"
+}
+```
 
 Merged 
 
- * trac_545-logic5.patch
- * trac_545-latex2.patch
- * trac_545_long-doctests-fixed.patch
- * trac_545_boolformula-doctests.patch
- * trac_545-adjust-simplify.patch
- * trac_545-equivlant_rebased.patch
+* trac_545-logic5.patch
+* trac_545-latex2.patch
+* trac_545_long-doctests-fixed.patch
+* trac_545_boolformula-doctests.patch
+* trac_545-adjust-simplify.patch
+* trac_545-equivlant_rebased.patch
 
 in Sage 3.4.2.rc0. Note that there are some odd whitespace issues in those files, so if someone could take care of that at #5910 it would be splendid :)
 
@@ -1333,8 +2002,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 03:20:38
+archive/issue_comments_002815.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T03:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2815",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

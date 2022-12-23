@@ -1,11 +1,21 @@
 # Issue 520: memory leak: some small issues with Givaro
 
-Issue created by migration from https://trac.sagemath.org/ticket/520
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-29 22:08:32
-
+archive/issues_000520.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe following issues popped up when running the libsingular doctest under valgring:\n\n```\n==11727== 12 bytes in 1 blocks are still reachable in loss record 485 of 2,401\n==11727==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==11727==    by 0x1B255400: GivMMFreeList::_allocate(unsigned long) (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libgivaro.so.\n0.0.0)\n==11727==    by 0x1B2530DA: GivMMFreeList::allocate(unsigned long) (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libgivaro.so.0\n.0.0)\n==11727==    by 0x1B25312E: GivaroMM<int>::allocate(unsigned long) (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libgivaro.so.0\n.0.0)\n==11727==    by 0x1B260725: Array0<char>::allocate(unsigned long) (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libgivaro.so.0.\n0.0)\n==11727==    by 0x1B260028: Indeter::Indeter(char const*) (in /tmp/Work2/sage-2.8.3.alpha2/local/lib/libgivaro.so.0.0.0)\n==11727==    by 0x1B02A08E: GFqDom<int>::GFqDom(unsigned, unsigned, std::vector<unsigned, std::allocator<unsigned> > const&)\n (givgfq.inl:1035)\n==11727==    by 0x1B01DBAB: __pyx_f_19finite_field_givaro_18FiniteField_givaro___init__(_object*, _object*, _object*) (finit\ne_field_givaro.cpp:1762)\n==11727==    by 0x45A321: type_call (typeobject.c:436)\n==11727==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n```\n\nand\n\n```\n==11727== 24 bytes in 3 blocks are definitely lost in loss record 542 of 2,401\n==11727==    at 0x4A06019: operator new(unsigned long) (vg_replace_malloc.c:167)\n==11727==    by 0x1B028C00: Poly1FactorDom<GFqDom<int>, Dense, GivRandom>::is_prim_root(givvector<int> const&, givvector<int\n> const&) const (givpoly1proot.inl:236)\n==11727==    by 0x1B02A3F7: GFqDom<int>::GFqDom(unsigned, unsigned, std::vector<unsigned, std::allocator<unsigned> > const&)\n (givpoly1proot.inl:300)\n==11727==    by 0x1B01DBAB: __pyx_f_19finite_field_givaro_18FiniteField_givaro___init__(_object*, _object*, _object*) (finit\ne_field_givaro.cpp:1762)\n==11727==    by 0x45A321: type_call (typeobject.c:436)\n==11727==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==11727==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==11727==    by 0x1AFFDB21: __pyx_f_19finite_field_givaro_unpickle_FiniteField_givaro(_object*, _object*, _object*) (finite_\nfield_givaro.cpp:6588)\n==11727==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==11727==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==11727==    by 0xAE9E21D: Instance_New (cPickle.c:3632)\n==11727==    by 0xAEA43F1: load_reduce (cPickle.c:4396)\n```\n\n\nThose two issue show up with varying size, there might be more, I didn't check in greatest detail but I will revisit this issue down the road.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/520\n\n",
+    "created_at": "2007-08-29T22:08:32Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "memory leak: some small issues with Givaro",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/520",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 The following issues popped up when running the libsingular doctest under valgring:
@@ -59,24 +69,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/520
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-30 10:41:42
+archive/issue_comments_002633.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to memleak.",
+    "created_at": "2007-08-30T10:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2633",
+    "user": "mabshoff"
+}
+```
 
 Changing component from basic arithmetic to memleak.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 05:05:05
+archive/issue_comments_002634.json:
+```json
+{
+    "body": "Changing assignee from malb to mabshoff.",
+    "created_at": "2008-03-15T05:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2634",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from malb to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 05:05:05
+archive/issue_comments_002635.json:
+```json
+{
+    "body": "When valgrinding devel/sage-main/sage/rings/finite_field_givaro.pyx with 100% coverage now shows no leak when using the givaro.spkg from #2525. Hence this ticket should be closed once that ticket is merged.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T05:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2635",
+    "user": "mabshoff"
+}
+```
 
 When valgrinding devel/sage-main/sage/rings/finite_field_givaro.pyx with 100% coverage now shows no leak when using the givaro.spkg from #2525. Hence this ticket should be closed once that ticket is merged.
 
@@ -85,16 +132,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 05:05:05
+archive/issue_comments_002636.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-15T05:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2636",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 06:45:43
+archive/issue_comments_002637.json:
+```json
+{
+    "body": "This has been fixed due to the new Givaro.spkg from #2524 (not #2525 as mentioned mistakenly in the previous comment.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T06:45:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2637",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed due to the new Givaro.spkg from #2524 (not #2525 as mentioned mistakenly in the previous comment.
 
@@ -103,15 +172,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 06:46:16
+archive/issue_comments_002638.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T06:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2638",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 06:46:16
+archive/issue_comments_002639.json:
+```json
+{
+    "body": "Closed in Sage 2.10.4.alpha0 due to merging the Giavro.spkg from #2524.",
+    "created_at": "2008-03-15T06:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/520#issuecomment-2639",
+    "user": "mabshoff"
+}
+```
 
 Closed in Sage 2.10.4.alpha0 due to merging the Giavro.spkg from #2524.

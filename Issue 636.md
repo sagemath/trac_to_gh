@@ -1,11 +1,21 @@
 # Issue 636: cvxopt doesn't fully work yet in SAGE under Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/636
-
-Original creator: was
-
-Original creation time: 2007-09-10 21:51:52
-
+archive/issues_000636.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nIf I build cvxopt on any *Linux* system, then it doesn't work, as follows:\n\n```\nsage: import cvxopt.base\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home2/sage/<ipython console> in <module>()\n\n<type 'exceptions.ImportError'>: /home2/sage/s/local/lib/python2.5/site-packages/cvxopt/base.so: undefined symbol: _g95_ioparm\n```\n\n\nWe need to:\n1. Figure out why this fails.\n\n2. Add doctests to SAGE core library to illustrate cvxopt and make sure it fully work, so the above sort of thing won't happen again.  Base these on the cvxopt tutorial, etc.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/636\n\n",
+    "created_at": "2007-09-10T21:51:52Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "cvxopt doesn't fully work yet in SAGE under Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/636",
+    "user": "was"
+}
+```
 Assignee: jkantor
 
 If I build cvxopt on any *Linux* system, then it doesn't work, as follows:
@@ -22,21 +32,47 @@ sage: import cvxopt.base
 
 
 We need to:
-  1. Figure out why this fails.
+1. Figure out why this fails.
 
-  2. Add doctests to SAGE core library to illustrate cvxopt and make sure it fully work, so the above sort of thing won't happen again.  Base these on the cvxopt tutorial, etc.  
+2. Add doctests to SAGE core library to illustrate cvxopt and make sure it fully work, so the above sort of thing won't happen again.  Base these on the cvxopt tutorial, etc.  
+
+Issue created by migration from https://trac.sagemath.org/ticket/636
+
+
+
 
 
 ---
 
-Comment by mabshoff created at 2007-09-11 05:25:08
+archive/issue_comments_003279.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to packages.",
+    "created_at": "2007-09-11T05:25:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/636#issuecomment-3279",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebraic geometry to packages.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-11 05:25:08
+archive/issue_comments_003280.json:
+```json
+{
+    "body": "Yep, in retroperspective I am surprised that nobody caught the issue earlier. I never got cvxopt to compile on Solaris (it complains about a missing complex.h), but there were no specific doctest failures that I could attribute to the missing cvxopt.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-11T05:25:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/636#issuecomment-3280",
+    "user": "mabshoff"
+}
+```
 
 Yep, in retroperspective I am surprised that nobody caught the issue earlier. I never got cvxopt to compile on Solaris (it complains about a missing complex.h), but there were no specific doctest failures that I could attribute to the missing cvxopt.
 
@@ -45,9 +81,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-19 18:41:27
+archive/issue_comments_003281.json:
+```json
+{
+    "body": "This ticket is related to #709 and #636. Once #709 goes in the other two tickets should be resolved.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-19T18:41:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/636#issuecomment-3281",
+    "user": "mabshoff"
+}
+```
 
 This ticket is related to #709 and #636. Once #709 goes in the other two tickets should be resolved.
 
@@ -56,8 +103,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-20 20:21:18
+archive/issue_comments_003282.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-20T20:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/636#issuecomment-3282",
+    "user": "was"
+}
+```
 
 Resolution: fixed

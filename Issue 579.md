@@ -1,11 +1,21 @@
 # Issue 579: pass additional *args and **kwds for GF to finite field implementations
 
-Issue created by migration from https://trac.sagemath.org/ticket/579
-
-Original creator: malb
-
-Original creation time: 2007-09-03 15:17:47
-
+archive/issues_000579.json:
+```json
+{
+    "body": "Assignee: somebody\n\nFor example, you may print finite field elements as integers via the Givaro implementation. But the constructor parameter to allow this is not passed to the actual implementation so far.\n\nAfter the attached patch is applied, this works:\n\n```\nsage: k.<a> = GF(2^8,repr='int')\nsage: a\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/579\n\n",
+    "created_at": "2007-09-03T15:17:47Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "pass additional *args and **kwds for GF to finite field implementations",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/579",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 For example, you may print finite field elements as integers via the Givaro implementation. But the constructor parameter to allow this is not passed to the actual implementation so far.
@@ -19,14 +29,42 @@ sage: a
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/579
+
+
+
+
 
 ---
+
+archive/issue_comments_002998.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-03T15:18:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/579#issuecomment-2998",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-09-05 05:00:50
+archive/issue_comments_002999.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-05T05:00:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/579#issuecomment-2999",
+    "user": "was"
+}
+```
 
 Resolution: fixed

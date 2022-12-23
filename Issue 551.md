@@ -1,11 +1,21 @@
 # Issue 551: consider changing python to UCS4
 
-Issue created by migration from https://trac.sagemath.org/ticket/551
-
-Original creator: was
-
-Original creation time: 2007-09-01 16:40:14
-
+archive/issues_000551.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nWilliam,\n\nI noticed that the Python that comes with SAGE-2.8.3\nstill has UCS2.\n\nAre you still considering changing to UCS4?\n\nJaap\n\n\n\nOn 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:\n> See also\n>\n> > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html\n>\n> for a discussion of Python and UCS2 vs. UCS4\n>\n> Ubuntu and Fedora distribute Python compiled with UCS4.\n> Maybe the Python version of SAGE should comply with the distribution,\n> so for example libboost_python can be used.\n\nI would definitely consider making this change, at least as long as nobody\nsees any major problems with it in the next few days.   One problem is\nthat doing \"sage -upgrade\" will require rebuilding every Python-related thing\ni SAGE, which will be a bit painful.\n\nAnyway, comments?\ngmane.comp.mathematics.sage.devel\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/551\n\n",
+    "created_at": "2007-09-01T16:40:14Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "consider changing python to UCS4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/551",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -43,10 +53,25 @@ gmane.comp.mathematics.sage.devel
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/551
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-23 18:59:24
+archive/issue_comments_002835.json:
+```json
+{
+    "body": "Making this change is very hard.  It means that Sage has to be almost completely recompiled from scratch -- at least, everything that involves Python extensions must be rebuilt.  It would thus be difficult for automatic upgrades. \n\nA test for which mode a Python is compiled with is the following:\n\n\n```\nif len(u'\\U00010800') == 1: \n   print \"UCS4\"\nelse:\n   print \"USC2\"\n```\n\n\nProbably the best solution in the long run is to test for a system-wide Python, and then figure out what its UCS number is, then make Sage's agree with it.  That would be far better than just always using 4 and leaving the distros that use 2 in the dust.",
+    "created_at": "2007-09-23T18:59:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2835",
+    "user": "was"
+}
+```
 
 Making this change is very hard.  It means that Sage has to be almost completely recompiled from scratch -- at least, everything that involves Python extensions must be rebuilt.  It would thus be difficult for automatic upgrades. 
 
@@ -64,9 +89,20 @@ else:
 Probably the best solution in the long run is to test for a system-wide Python, and then figure out what its UCS number is, then make Sage's agree with it.  That would be far better than just always using 4 and leaving the distros that use 2 in the dust.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 14:54:13
+archive/issue_comments_002836.json:
+```json
+{
+    "body": "Even though it requires a rebuild of most python modules the 2.10 release would be a good point in time to do it.\n\n#1663 certainly seems like a good reason to do so.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-03T14:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2836",
+    "user": "mabshoff"
+}
+```
 
 Even though it requires a rebuild of most python modules the 2.10 release would be a good point in time to do it.
 
@@ -77,23 +113,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 12:56:18
+archive/issue_comments_002837.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2008-01-11T12:56:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2837",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 12:56:18
+archive/issue_comments_002838.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-11T12:56:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2838",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 12:56:18
+archive/issue_comments_002839.json:
+```json
+{
+    "body": "As long as we compile our own copy of python we can force ucs4, especially as long as we ship our own binaries with out own python. Once we get into distributions we need to consider what William commented about above using the local distributions default. \n\nAn spkg which forces ucs4 is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha2/python-2.5.1.p11.spkg\n\nCaution: you need to rebuild all python extensions to test this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-11T12:56:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2839",
+    "user": "mabshoff"
+}
+```
 
 As long as we compile our own copy of python we can force ucs4, especially as long as we ship our own binaries with out own python. Once we get into distributions we need to consider what William commented about above using the local distributions default. 
 
@@ -108,9 +177,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 17:06:16
+archive/issue_comments_002840.json:
+```json
+{
+    "body": "When building python with ucs4 upon completion of the install all python site-packages are recompiled, i.e. numpy, scipy, sympy and so on. But upon startup of Sage the following thing happens:\n\n```\n<type 'exceptions.ImportError'>: /tmp/Work-mabshoff/release-cycle/sage-2.10.alpha2/local/lib/python2.5/site-packages/sage/misc/misc_c.so: undefined symbol: PyUnicodeUCS2_DecodeUTF8\n```\n\nRebuilding Sage lib fixes the issue, but then we need to rebuild:\n\n* zodb3-3.7.0.spkg\n* numpy-20080104-1.0.4.p1\n\nin order to make Sage start, but I expect that we need to rebuild a couple more spkgs to make the doctests actually pass.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-11T17:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2840",
+    "user": "mabshoff"
+}
+```
 
 When building python with ucs4 upon completion of the install all python site-packages are recompiled, i.e. numpy, scipy, sympy and so on. But upon startup of Sage the following thing happens:
 
@@ -120,8 +200,8 @@ When building python with ucs4 upon completion of the install all python site-pa
 
 Rebuilding Sage lib fixes the issue, but then we need to rebuild:
 
- * zodb3-3.7.0.spkg
- * numpy-20080104-1.0.4.p1
+* zodb3-3.7.0.spkg
+* numpy-20080104-1.0.4.p1
 
 in order to make Sage start, but I expect that we need to rebuild a couple more spkgs to make the doctests actually pass.
 
@@ -130,14 +210,25 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 17:55:23
+archive/issue_comments_002841.json:
+```json
+{
+    "body": "Other spkgs that need to be rebuild for `testall` to pass:\n\n* matplotlib-0.91.1.p1\n* r-2.6.1.p7\n\nSo, overall, it isn't too bad.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-11T17:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2841",
+    "user": "mabshoff"
+}
+```
 
 Other spkgs that need to be rebuild for `testall` to pass:
 
- * matplotlib-0.91.1.p1
- * r-2.6.1.p7
+* matplotlib-0.91.1.p1
+* r-2.6.1.p7
 
 So, overall, it isn't too bad.
 
@@ -146,9 +237,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-11 18:37:55
+archive/issue_comments_002842.json:
+```json
+{
+    "body": "Make sure to rebuild matplotlib *after* numpy since matplotlib does depend on numpy.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-11T18:37:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2842",
+    "user": "mabshoff"
+}
+```
 
 Make sure to rebuild matplotlib *after* numpy since matplotlib does depend on numpy.
 
@@ -157,16 +259,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-12 18:50:04
+archive/issue_comments_002843.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-12T18:50:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2843",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-12 18:50:04
+archive/issue_comments_002844.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha2.\n\nAfter feeback from various people the ucs4 switchover doesn't cause any problems as far as I can tell. So I am closing this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-12T18:50:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/551#issuecomment-2844",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha2.
 

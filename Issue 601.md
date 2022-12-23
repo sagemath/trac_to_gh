@@ -1,27 +1,63 @@
 # Issue 601: bug -- caused by fixing#549 -- now there is too much space around output.
 
+archive/issues_000601.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/601\n\n",
+    "created_at": "2007-09-06T19:03:23Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "bug -- caused by fixing#549 -- now there is too much space around output.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/601",
+    "user": "was"
+}
+```
+Assignee: boothby
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/601
 
-Original creator: was
-
-Original creation time: 2007-09-06 19:03:23
-
-Assignee: boothby
 
 
 
 
 ---
 
-Comment by boothby created at 2007-09-06 19:14:33
+archive/issue_comments_003103.json:
+```json
+{
+    "body": "fixed by patch:\n\n[http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg](http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg)",
+    "created_at": "2007-09-06T19:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3103",
+    "user": "boothby"
+}
+```
 
 fixed by patch:
 
 [http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg](http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg)
 
 
+
 ---
 
-Comment by was created at 2007-09-06 19:48:09
+archive/issue_comments_003104.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-06T19:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3104",
+    "user": "was"
+}
+```
 
 Resolution: fixed

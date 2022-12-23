@@ -1,11 +1,21 @@
 # Issue 564: memleak in matrix_integer_sparse_allocate_mpz_vector exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from https://trac.sagemath.org/ticket/564
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-02 00:21:14
-
+archive/issues_000564.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\ncauses (among other things) the following:\n\n```\n==5107== 90,320 bytes in 11,290 blocks are definitely lost in loss record 2,811 of 2,944\n==5107==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==5107==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x20A67143: __pyx_f_21matrix_integer_sparse_allocate_mpz_vector (matrix_integer_sparse.c:1202)\n==5107==    by 0x20A684BF: __pyx_f_21matrix_integer_sparse_add_mpz_vector_init (matrix_integer_sparse.c:1315)\n==5107==    by 0x20A6D054: __pyx_f_21matrix_integer_sparse_21Matrix_integer_sparse__add_c_impl (matrix_integer_sparse.c:6549\n)\n==5107==    by 0xDFE08FD: __pyx_f_7element_13ModuleElement__add_c (element.c:3986)\n==5107==    by 0xDFCF2E8: __pyx_f_7element_13ModuleElement___add__ (element.c:3888)\n==5107==    by 0x41596C: binary_op1 (abstract.c:398)\n==5107==    by 0x416ADB: PyNumber_InPlaceAdd (abstract.c:744)\n==5107==    by 0x27D10EBA: __pyx_f_4misc_matrix_rational_echelon_form_multimodular (misc.c:12816)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n\n```\n\nCheers,\n\nTagged for 2.8.4\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/564\n\n",
+    "created_at": "2007-09-02T00:21:14Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "memleak in matrix_integer_sparse_allocate_mpz_vector exposed by ModularSymbols(n,sign=1).decomposition()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/564",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Hello folks,
@@ -40,24 +50,63 @@ Tagged for 2.8.4
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/564
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-02 00:30:28
+archive/issue_comments_002920.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-02T00:30:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2920",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_002921.json:
+```json
+{
+    "body": "Attachment\n\nThis fixes the memleak in + or - for sparse matrix arithmetic.",
+    "created_at": "2007-09-03T15:19:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2921",
+    "user": "was"
+}
+```
 
 Attachment
 
 This fixes the memleak in + or - for sparse matrix arithmetic.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 15:37:46
+archive/issue_comments_002922.json:
+```json
+{
+    "body": "\n```\n[17:17] <mabshoff> I am running the above with range(10,30) to save some time.\n[17:22] <mabshoff> It works:\n[17:22] <mabshoff> Without the patch:\n[17:22] <mabshoff> ==8165== LEAK SUMMARY:\n[17:22] <mabshoff> ==8165==    definitely lost: 144,790 bytes in 12,251 blocks.\n[17:22] <mabshoff> ==8165==    indirectly lost: 22,800 bytes in 532 blocks.\n[17:22] <mabshoff> ==8165==      possibly lost: 392,214 bytes in 1,010 blocks.\n[17:22] <mabshoff> With the patch:\n[17:22] <mabshoff> ==8132== LEAK SUMMARY:\n[17:22] <mabshoff> ==8132==    definitely lost: 141,107 bytes in 11,827 blocks.\n[17:22] <mabshoff> ==8132==    indirectly lost: 22,155 bytes in 531 blocks.\n[17:22] <mabshoff> ==8132==      possibly lost: 392,982 bytes in 1,012 blocks.\n```\n\nThis ticket should be closed.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-03T15:37:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2922",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -82,16 +131,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 17:27:18
+archive/issue_comments_002923.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-03T17:27:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2923",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 17:27:18
+archive/issue_comments_002924.json:
+```json
+{
+    "body": "There is another smaller issue left in add_mpz_vector_init and once we find a proper testcase we will open another ticket for it.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-03T17:27:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2924",
+    "user": "mabshoff"
+}
+```
 
 There is another smaller issue left in add_mpz_vector_init and once we find a proper testcase we will open another ticket for it.
 
@@ -100,9 +171,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-03 20:06:49
+archive/issue_comments_002925.json:
+```json
+{
+    "body": "#533 seems related to this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-03T20:06:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/564#issuecomment-2925",
+    "user": "mabshoff"
+}
+```
 
 #533 seems related to this ticket.
 

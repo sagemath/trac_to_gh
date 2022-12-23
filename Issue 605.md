@@ -1,25 +1,61 @@
 # Issue 605: GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)
 
-Issue created by migration from https://trac.sagemath.org/ticket/605
-
-Original creator: was
-
-Original creation time: 2007-09-06 22:17:26
-
+archive/issues_000605.json:
+```json
+{
+    "body": "Assignee: was, dmharvey\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/605\n\n",
+    "created_at": "2007-09-06T22:17:26Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/605",
+    "user": "was"
+}
+```
 Assignee: was, dmharvey
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/605
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2007-09-07 01:24:41
+archive/issue_comments_003112.json:
+```json
+{
+    "body": "hopefully this is fixed by the `fastgcd.hg` patch on ticket #424",
+    "created_at": "2007-09-07T01:24:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/605",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3112",
+    "user": "dmharvey"
+}
+```
 
 hopefully this is fixed by the `fastgcd.hg` patch on ticket #424
 
 
+
 ---
 
-Comment by was created at 2007-09-07 07:22:40
+archive/issue_comments_003113.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-07T07:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/605",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3113",
+    "user": "was"
+}
+```
 
 Resolution: fixed

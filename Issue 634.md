@@ -1,11 +1,21 @@
 # Issue 634: Implement "sage -experimental" analog to "sage -optional"
 
-Issue created by migration from https://trac.sagemath.org/ticket/634
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-10 04:06:28
-
+archive/issues_000634.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nTitel says it all.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/634\n\n",
+    "created_at": "2007-09-10T04:06:28Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement \"sage -experimental\" analog to \"sage -optional\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/634",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Titel says it all.
@@ -14,31 +24,68 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/634
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-10 04:06:35
+archive/issue_comments_003263.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-10T04:06:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3263",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-09-10 22:29:04
+archive/issue_comments_003264.json:
+```json
+{
+    "body": "To do this:\n\n1. Rename local/bin/sage-list-optional to something like local/bin/sage-list-packages, and change it slightly (change the word \"optional\" to sys.argv[1])\n\n2. Make sage-list-optional just be the 2-line program\n         sage-list-packages optional\n\n3. Then sage -experimental and sage -standard are both very easy.  Also implement standard_packages() and experimental_packages() as saag functions, kind of like optional_packages() right now.",
+    "created_at": "2007-09-10T22:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3264",
+    "user": "was"
+}
+```
 
 To do this:
 
- 1. Rename local/bin/sage-list-optional to something like local/bin/sage-list-packages, and change it slightly (change the word "optional" to sys.argv[1])
+1. Rename local/bin/sage-list-optional to something like local/bin/sage-list-packages, and change it slightly (change the word "optional" to sys.argv[1])
 
- 2. Make sage-list-optional just be the 2-line program
-          sage-list-packages optional
+2. Make sage-list-optional just be the 2-line program
+         sage-list-packages optional
 
- 3. Then sage -experimental and sage -standard are both very easy.  Also implement standard_packages() and experimental_packages() as saag functions, kind of like optional_packages() right now.
+3. Then sage -experimental and sage -standard are both very easy.  Also implement standard_packages() and experimental_packages() as saag functions, kind of like optional_packages() right now.
+
 
 
 ---
 
-Comment by mabshoff created at 2007-09-13 03:45:17
+archive/issue_comments_003265.json:
+```json
+{
+    "body": "Well, I haven't done the above, but at\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/sage-2.8.4.1-add_-experimental_flag.patch\n\nyou can find the version that does code duplication for now.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-13T03:45:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3265",
+    "user": "mabshoff"
+}
+```
 
 Well, I haven't done the above, but at
 
@@ -51,16 +98,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-09-13 05:02:50
+archive/issue_comments_003266.json:
+```json
+{
+    "body": "I've merged the above in for sage-2.8.4.2.  For sage-2.9 you could remove the code duplication.",
+    "created_at": "2007-09-13T05:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3266",
+    "user": "was"
+}
+```
 
 I've merged the above in for sage-2.8.4.2.  For sage-2.9 you could remove the code duplication.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-15 12:30:58
+archive/issue_comments_003267.json:
+```json
+{
+    "body": "Okay, here is the code merge for the sage scripts:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add_-standard-option-to-sage-sage.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-factor-out-package-listing-code.patch\n\nNow 3) is left. I will do that probably later today.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-15T12:30:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3267",
+    "user": "mabshoff"
+}
+```
 
 Okay, here is the code merge for the sage scripts:
 
@@ -74,30 +143,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-09-15 20:24:34
+archive/issue_comments_003268.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-15T20:24:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3268",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-09-15 20:29:47
+archive/issue_comments_003269.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-09-15T20:29:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3269",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by was created at 2007-09-15 20:29:47
+archive/issue_comments_003270.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-09-15T20:29:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3270",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-15 22:31:17
+archive/issue_comments_003271.json:
+```json
+{
+    "body": "And the python bit of the bugfix:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-import-experimental-and-standard-in-all.py.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add-experimental-and-standard-to-package.py.patch\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-15T22:31:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3271",
+    "user": "mabshoff"
+}
+```
 
 And the python bit of the bugfix:
 
@@ -109,8 +222,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-09-15 22:44:59
+archive/issue_comments_003272.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-15T22:44:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3272",
+    "user": "was"
+}
+```
 
 Resolution: fixed

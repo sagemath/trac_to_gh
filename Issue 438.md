@@ -1,11 +1,21 @@
 # Issue 438: cython -v prints standard help text
 
-Issue created by migration from https://trac.sagemath.org/ticket/438
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-18 17:52:27
-
+archive/issues_000438.json:
+```json
+{
+    "body": "Assignee: was\n\nInstead of some version number I get\n\n[mabshoff`@`m940 sage-2.8.1]$ cython -v\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this\nmodule. Emulates the behavior of putting\n                                 \"from <module> import *\" at the top of the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/438\n\n",
+    "created_at": "2007-08-18T17:52:27Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "cython -v prints standard help text",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/438",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 Instead of some version number I get
@@ -25,13 +35,28 @@ Options:
   -p, --embed-positions          If specified, the positions in Cython files of each
                                  function definition is embedded in its docstring.
   -z, --pre-import <module>      If specified, assume undeclared names in this
-                                 module. Emulates the behavior of putting
+module. Emulates the behavior of putting
                                  "from <module> import *" at the top of the file.
+
+Issue created by migration from https://trac.sagemath.org/ticket/438
+
+
+
 
 
 ---
 
-Comment by mabshoff created at 2007-12-29 21:12:47
+archive/issue_comments_002192.json:
+```json
+{
+    "body": "I will report this to the Cython dev mailing list.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-29T21:12:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/438",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/438#issuecomment-2192",
+    "user": "mabshoff"
+}
+```
 
 I will report this to the Cython dev mailing list.
 
@@ -40,9 +65,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 01:32:33
+archive/issue_comments_002193.json:
+```json
+{
+    "body": "I never reported this to the cython-devel list, but somebody else did this week and it ought to be fixed soon then.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T01:32:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/438",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/438#issuecomment-2193",
+    "user": "mabshoff"
+}
+```
 
 I never reported this to the cython-devel list, but somebody else did this week and it ought to be fixed soon then.
 
@@ -51,15 +87,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 01:32:33
+archive/issue_comments_002194.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2008-02-16T01:32:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/438",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/438#issuecomment-2194",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-23 06:36:36
+archive/issue_comments_002195.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-23T06:36:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/438",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/438#issuecomment-2195",
+    "user": "robertwb"
+}
+```
 
 Resolution: fixed

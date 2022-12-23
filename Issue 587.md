@@ -1,11 +1,21 @@
 # Issue 587: bug in floating point complex number creation
 
-Issue created by migration from https://trac.sagemath.org/ticket/587
-
-Original creator: was
-
-Original creation time: 2007-09-04 15:16:50
-
+archive/issues_000587.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis was found by Markus Fraczek:\n\n```\nsage: 1e8\n100000000.000000\nsage: 1e8*I\nboom -- typeerror\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/587\n\n",
+    "created_at": "2007-09-04T15:16:50Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in floating point complex number creation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/587",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 This was found by Markus Fraczek:
@@ -18,17 +28,43 @@ boom -- typeerror
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/587
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-09-04 19:11:04
+archive/issue_comments_003025.json:
+```json
+{
+    "body": "Changing assignee from somebody to mhansen.",
+    "created_at": "2007-09-04T19:11:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3025",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from somebody to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-04 19:37:06
+archive/issue_comments_003026.json:
+```json
+{
+    "body": "There problem was that SAGE doesn't like strings such as \"1.0E+8*I\" in symbolic_expression_from_maxima_string() , and the fix to replace all such occurrences of scientific notation with expanded notation (or at least on that doesn't involved pluses.\n\n587.patch patches the calculus.py file.\n587-2.patches adds the problem as a doctest",
+    "created_at": "2007-09-04T19:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3026",
+    "user": "mhansen"
+}
+```
 
 There problem was that SAGE doesn't like strings such as "1.0E+8*I" in symbolic_expression_from_maxima_string() , and the fix to replace all such occurrences of scientific notation with expanded notation (or at least on that doesn't involved pluses.
 
@@ -36,29 +72,75 @@ There problem was that SAGE doesn't like strings such as "1.0E+8*I" in symbolic_
 587-2.patches adds the problem as a doctest
 
 
+
 ---
 
-Comment by mhansen created at 2007-09-04 19:37:22
+archive/issue_comments_003027.json:
+```json
+{
+    "body": "patch for calculus.py",
+    "created_at": "2007-09-04T19:37:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3027",
+    "user": "mhansen"
+}
+```
 
 patch for calculus.py
 
 
+
 ---
+
+archive/issue_comments_003028.json:
+```json
+{
+    "body": "Attachment\n\npatch for constants.py",
+    "created_at": "2007-09-04T19:37:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3028",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 patch for constants.py
 
 
+
 ---
 
-Comment by was created at 2007-09-04 21:51:29
+archive/issue_comments_003029.json:
+```json
+{
+    "body": "fixed by mike hansen.",
+    "created_at": "2007-09-04T21:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3029",
+    "user": "was"
+}
+```
 
 fixed by mike hansen.
 
 
+
 ---
 
-Comment by was created at 2007-09-04 21:51:29
+archive/issue_comments_003030.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-04T21:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/587",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/587#issuecomment-3030",
+    "user": "was"
+}
+```
 
 Resolution: fixed

@@ -1,18 +1,43 @@
 # Issue 515: memory leak in libSINGULAR conversion routine
 
-Issue created by migration from https://trac.sagemath.org/ticket/515
-
-Original creator: malb
-
-Original creation time: 2007-08-29 20:50:02
-
+archive/issues_000515.json:
+```json
+{
+    "body": "Assignee: somebody\n\nmabshoff discovered a memleak in the conversion route for rational numbers in the libsingular interface. The attached patch supposedly fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/515\n\n",
+    "created_at": "2007-08-29T20:50:02Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "memory leak in libSINGULAR conversion routine",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/515",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 mabshoff discovered a memleak in the conversion route for rational numbers in the libsingular interface. The attached patch supposedly fixes this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/515
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-29 21:26:04
+archive/issue_comments_002606.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-08-29T21:26:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/515#issuecomment-2606",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 507: Bad error message when running a script
 
-Issue created by migration from https://trac.sagemath.org/ticket/507
-
-Original creator: was
-
-Original creation time: 2007-08-29 08:16:40
-
+archive/issues_000507.json:
+```json
+{
+    "body": "Assignee: was\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\n\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
+    "created_at": "2007-08-29T08:16:40Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Bad error message when running a script",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/507",
+    "user": "was"
+}
+```
 Assignee: was
 
 1. Create a script test.sage with this 1 line
@@ -34,17 +44,45 @@ then everything works fine.
 Clearly there is a bug there, probably with quitting the pexpect interface to maxima. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/507
+
+
+
+
 
 ---
+
+archive/issue_comments_002540.json:
+```json
+{
+    "body": "Attachment\n\nI've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.",
+    "created_at": "2007-09-04T10:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/507#issuecomment-2540",
+    "user": "malb"
+}
+```
 
 Attachment
 
 I've attached a work-around for this bug (6116.patch). It is probably best to understand the behaviour first, but the attached patch works around it for now.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-17 08:23:39
+archive/issue_comments_002541.json:
+```json
+{
+    "body": "\n```\n[09:58] <mabshoff> But it would still be interesting to see what causes the problem.\n[09:59] <janwil> yes, it's a mystery to me right now ...\n[09:59] <mabshoff> Not only to you :)\n[09:59] <janwil> :)\n[10:01] <mhansen_> Yeah, that worked for me.\n[10:01] <mabshoff> malb's patch?\n[10:02] <mhansen_> Yep.\n[10:02] <mabshoff> Well, we should get it merged in 2.8.4.3 then. We can always revert it in case it causes \n[10:02] <mhansen_> I was also getting that error when I was running some of the tests with nose.   The tests would pass, but those would come up at the end.\n[10:03] <mabshoff> trouble on a range of platforms.\n[10:03] <mabshoff> Interesting.\n```\n",
+    "created_at": "2007-09-17T08:23:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/507#issuecomment-2541",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -63,8 +101,19 @@ Comment by mabshoff created at 2007-09-17 08:23:39
 
 
 
+
 ---
 
-Comment by was created at 2007-09-20 19:03:05
+archive/issue_comments_002542.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-20T19:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/507#issuecomment-2542",
+    "user": "was"
+}
+```
 
 Resolution: fixed

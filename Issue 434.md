@@ -1,11 +1,21 @@
 # Issue 434: bug in mwrank interface -- something doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/434
-
-Original creator: was
-
-Original creation time: 2007-08-17 14:31:18
-
+archive/issues_000434.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nTesting this using sage I found that the command\nmwrank_set_precision() does not work:\n\nsage: mwrank_set_precision(30)\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home/jec/gp/<ipython console> in <module>()\n\n/home/jec/sage-2.7/local/lib/python2.5/site-packages/sage/libs/mwrank/interface.py\nin set_precision(n)\n    27         n -- long\n    28     \"\"\"\n---> 29     from sage.libs.mwrank.mwrank import _set_precision #\nimport here to save time\n    30     _set_precision(n)\n    31\n\n<type 'exceptions.ImportError'>: cannot import name _set_precision\n\n-- can you fix that?  [Also, while preparing this email:  version() returns\nsage: version()\n 'SAGE Version 2.7.3, Release Date: 2007-08-02'\n\nalthough this is 2.8 (accor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/434\n\n",
+    "created_at": "2007-08-17T14:31:18Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in mwrank interface -- something doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/434",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -38,10 +48,25 @@ although this is 2.8 (accor
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/434
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-23 01:44:10
+archive/issue_comments_002178.json:
+```json
+{
+    "body": "Fix (I can't attach files right now)\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1187832852 25200\n# Node ID 34d1ed88836b44c399cbf2aecd4cbb9ce67ece60\n# Parent  7df7b573320b12540b9d8ba75e73354e3b993b48\nFix trac #434 -- but in mwrank interface.\n\ndiff -r 7df7b573320b -r 34d1ed88836b sage/libs/mwrank/interface.py\n--- a/sage/libs/mwrank/interface.py     Wed Aug 22 17:50:17 2007 -0700\n+++ b/sage/libs/mwrank/interface.py     Wed Aug 22 18:34:12 2007 -0700\n@@ -25,9 +25,14 @@ def set_precision(n):\n\n     INPUT:\n         n -- long\n+\n+    EXAMPLES:\n+        sage: mwrank_set_precision(20)\n     \"\"\"\n-    from sage.libs.mwrank.mwrank import _set_precision # import here to save time\n-    _set_precision(n)\n+    # don't want to load mwrank every time SAGE starts up, so we do\n+    # the import here.\n+    from sage.libs.mwrank.mwrank import set_precision\n+    set_precision(n)\n\n class mwrank_EllipticCurve(SageObject):\n     r\"\"\"\n```\n",
+    "created_at": "2007-08-23T01:44:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/434",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/434#issuecomment-2178",
+    "user": "was"
+}
+```
 
 Fix (I can't attach files right now)
 
@@ -78,8 +103,19 @@ diff -r 7df7b573320b -r 34d1ed88836b sage/libs/mwrank/interface.py
 
 
 
+
 ---
 
-Comment by was created at 2007-08-23 01:44:10
+archive/issue_comments_002179.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-23T01:44:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/434",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/434#issuecomment-2179",
+    "user": "was"
+}
+```
 
 Resolution: fixed

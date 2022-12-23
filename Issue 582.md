@@ -1,11 +1,21 @@
 # Issue 582: bug in cubegroup? (syntax in RubiksCube)
 
-Issue created by migration from https://trac.sagemath.org/ticket/582
-
-Original creator: wdj
-
-Original creation time: 2007-09-03 16:43:37
-
+archive/issues_000582.json:
+```json
+{
+    "body": "Assignee: wdj or Robert Bradshaw\n\nAgain, a confusing error message. If group elements are allowed \nas arguments, what syntax should be used? Square bracketed list\nof tuples? This element [(1,2)] is not in the Rubik's cube group, so \nshouldn't the error be something other than\n`'list' object has no attribute 'strip'` ?\n\n\n\n```\nsage: C = RubiksCube().move([(1,2)])\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, g)\n  1090     def move(self, g):\n  1091         if not g in self._group:\n-> 1092             g = self._group.move(g)[0]\n  1093         return RubiksCube(self._state * g, self._history +\n[g], self.colors)\n  1094\n\n/home/wdj/sagefiles/sage-2.8.3.rc3/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\nin move(self, mv)\n   730\n   731         \"\"\"\n--> 732         mv = mv.strip().replace(\" \",\"*\").replace(\"**\",\n\"*\").replace(\"'\", \"^(-1)\")\n   733         m = mv.split(\"*\")\n   734         M = [x.split(\"^\") for x in m]\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'strip'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/582\n\n",
+    "created_at": "2007-09-03T16:43:37Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "bug in cubegroup? (syntax in RubiksCube)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/582",
+    "user": "wdj"
+}
+```
 Assignee: wdj or Robert Bradshaw
 
 Again, a confusing error message. If group elements are allowed 
@@ -46,16 +56,42 @@ in move(self, mv)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/582
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2007-09-06 19:26:05
+archive/issue_comments_003010.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-06T19:26:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/582",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/582#issuecomment-3010",
+    "user": "robertwb"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2007-09-06 19:26:05
+archive/issue_comments_003011.json:
+```json
+{
+    "body": "See CubeGroup.parse() for all possible input formats, see #570",
+    "created_at": "2007-09-06T19:26:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/582",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/582#issuecomment-3011",
+    "user": "robertwb"
+}
+```
 
 See CubeGroup.parse() for all possible input formats, see #570

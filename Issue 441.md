@@ -1,26 +1,62 @@
 # Issue 441: add sage-valgrind command line option analog to sage-gdb
 
-Issue created by migration from https://trac.sagemath.org/ticket/441
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-18 18:50:23
-
+archive/issues_000441.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nIntegrate valgrind into sage so people can conveniently attempt to debug. This requires Sage's python to be build with the configure flag \"--without-pymalloc\" to prevent valgrind from reporting false positives because pymalloc mallocs large chunks of memory and returns fractions of the memory when the python interpreter requests memory.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/441\n\n",
+    "created_at": "2007-08-18T18:50:23Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add sage-valgrind command line option analog to sage-gdb",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/441",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Integrate valgrind into sage so people can conveniently attempt to debug. This requires Sage's python to be build with the configure flag "--without-pymalloc" to prevent valgrind from reporting false positives because pymalloc mallocs large chunks of memory and returns fractions of the memory when the python interpreter requests memory.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/441
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-18 19:49:37
+archive/issue_comments_002207.json:
+```json
+{
+    "body": "Basic support has been merged, but \"./sage -valgrind -testall\" ignores the -testall for now.",
+    "created_at": "2007-08-18T19:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/441",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/441#issuecomment-2207",
+    "user": "mabshoff"
+}
+```
 
 Basic support has been merged, but "./sage -valgrind -testall" ignores the -testall for now.
 
 
+
 ---
 
-Comment by was created at 2007-08-19 07:04:27
+archive/issue_comments_002208.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-19T07:04:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/441",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/441#issuecomment-2208",
+    "user": "was"
+}
+```
 
 Resolution: fixed

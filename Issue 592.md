@@ -1,18 +1,43 @@
 # Issue 592: fix the documentation coverage of rings/number_fields/number_field_ideal.py to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/592
-
-Original creator: was
-
-Original creation time: 2007-09-05 15:57:14
-
+archive/issues_000592.json:
+```json
+{
+    "body": "Assignee: was\n\nI am hard at work on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/592\n\n",
+    "created_at": "2007-09-05T15:57:14Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "fix the documentation coverage of rings/number_fields/number_field_ideal.py to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/592",
+    "user": "was"
+}
+```
 Assignee: was
 
 I am hard at work on this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/592
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-06 09:28:46
+archive/issue_comments_003055.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-06T09:28:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/592",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/592#issuecomment-3055",
+    "user": "was"
+}
+```
 
 Resolution: fixed

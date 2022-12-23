@@ -1,11 +1,21 @@
 # Issue 448: add spkg-check to all packages
 
-Issue created by migration from https://trac.sagemath.org/ticket/448
-
-Original creator: mabshoff
-
-Original creation time: 2007-08-19 05:34:57
-
+archive/issues_000448.json:
+```json
+{
+    "body": "Assignee: was\n\nspkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible \"make check\" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/448\n\n",
+    "created_at": "2007-08-19T05:34:57Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "add spkg-check to all packages",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/448",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 spkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible "make check" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/448
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-19 05:36:16
+archive/issue_comments_002236.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to packages.",
+    "created_at": "2007-08-19T05:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/448",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2236",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebraic geometry to packages.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-21 13:11:42
+archive/issue_comments_002237.json:
+```json
+{
+    "body": "This is a duplicate of #299. Because the description in #299 is better than mine I will close this ticket and assign #299 to the Sage-3.0 milestone.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-21T13:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/448",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2237",
+    "user": "mabshoff"
+}
+```
 
 This is a duplicate of #299. Because the description in #299 is better than mine I will close this ticket and assign #299 to the Sage-3.0 milestone.
 
@@ -33,8 +69,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-21 13:11:42
+archive/issue_comments_002238.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-08-21T13:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/448",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2238",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate

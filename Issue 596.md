@@ -1,11 +1,21 @@
 # Issue 596: sage wiki() doesn't close with ctl-C
 
-Issue created by migration from https://trac.sagemath.org/ticket/596
-
-Original creator: wdj
-
-Original creation time: 2007-09-05 22:18:22
-
+archive/issues_000596.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen I execute\n\n```\nsage: wiki()\n```\n\n\nI get ...\n\n```\n* Open your web browser to http://localhost:9000\n...\n```\n\nand it works fine.  Then how do I close it cleanly?\n\nI've tried ctrl-C in the sage window, which gives the following...\nIt closes that web window but then restarts the wiki.\n\n\n```\n2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 13:47 -0700 [-] (Port 9000 Closed)\n2007/09/05 13:47 -0700 [-] Stopping factory\n<MoinMoin.server.twistedmoin.MoinSite instance at 0x4060ebec>\n2007/09/05 13:47 -0700 [-] Main loop terminated.\n2007/09/05 13:47 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2007/09/05 13:47 -0700 [-] Log opened.\n```\n\netc.\n\nClosing the webpage first doesn't help and SAGE doesn't accept any\ncommands\nother than ctrl-C, including ctrl-D.\n\nApparently Ctl-C Ctl-C (twice in rapid succession) closes it.\n\nReported by rjleveque`@`gmail.com (Randy Leveque)\n\nIssue created by migration from https://trac.sagemath.org/ticket/596\n\n",
+    "created_at": "2007-09-05T22:18:22Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "sage wiki() doesn't close with ctl-C",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/596",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 When I execute
@@ -54,17 +64,43 @@ Apparently Ctl-C Ctl-C (twice in rapid succession) closes it.
 
 Reported by rjleveque`@`gmail.com (Randy Leveque)
 
+Issue created by migration from https://trac.sagemath.org/ticket/596
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-05 22:53:30
+archive/issue_comments_003074.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to website/wiki.",
+    "created_at": "2007-09-05T22:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3074",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to website/wiki.
 
 
+
 ---
 
-Comment by was created at 2007-09-05 22:53:30
+archive/issue_comments_003075.json:
+```json
+{
+    "body": "I can't replicate this:\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2007/09/05 15:49 -0700 [-] Log opened.\n2007/09/05 15:49 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2007/09/05 15:49 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2007/09/05 15:49 -0700 [-] Loading twistedconf.py...\n2007/09/05 15:49 -0700 [-] Loaded.\n2007/09/05 15:49 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2007/09/05 15:49 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] set uid/gid 1000/1000\n2007/09/05 15:49 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 15:49 -0700 [-] (Port 9000 Closed)\n2007/09/05 15:49 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] Main loop terminated.\n2007/09/05 15:49 -0700 [-] Server Shut Down.\nTrue\nsage:       \n```\n",
+    "created_at": "2007-09-05T22:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3075",
+    "user": "was"
+}
+```
 
 I can't replicate this:
 
@@ -94,9 +130,20 @@ sage:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-30 22:11:31
+archive/issue_comments_003076.json:
+```json
+{
+    "body": "This might have been fixed by the sig off/on fix.\n\nRetagged for 2.8.6 - if it isn't fixed yet it might get retagged again.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-30T22:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3076",
+    "user": "mabshoff"
+}
+```
 
 This might have been fixed by the sig off/on fix.
 
@@ -107,23 +154,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-12 06:03:59
+archive/issue_comments_003077.json:
+```json
+{
+    "body": "Can anybody replicate this?",
+    "created_at": "2007-10-12T06:03:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3077",
+    "user": "was"
+}
+```
 
 Can anybody replicate this?
 
 
+
 ---
 
-Comment by was created at 2007-10-13 07:36:16
+archive/issue_comments_003078.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2007-10-13T07:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3078",
+    "user": "was"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by was created at 2007-11-02 18:30:24
+archive/issue_comments_003079.json:
+```json
+{
+    "body": "I now see this on OS X 10.5 and it is easy to replicate, so I am re-opening this. \n\nThe problem somehow probably involves the codes that indicate a port is in use. \n\n -- William",
+    "created_at": "2007-11-02T18:30:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3079",
+    "user": "was"
+}
+```
 
 I now see this on OS X 10.5 and it is easy to replicate, so I am re-opening this. 
 
@@ -132,29 +212,73 @@ The problem somehow probably involves the codes that indicate a port is in use.
  -- William
 
 
+
 ---
 
-Comment by was created at 2007-11-02 18:30:24
+archive/issue_comments_003080.json:
+```json
+{
+    "body": "Resolution changed from wontfix to ",
+    "created_at": "2007-11-02T18:30:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3080",
+    "user": "was"
+}
+```
 
 Resolution changed from wontfix to 
 
 
+
 ---
 
-Comment by was created at 2007-11-02 18:30:24
+archive/issue_comments_003081.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-11-02T18:30:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3081",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by rlm created at 2008-02-10 03:16:36
+archive/issue_comments_003082.json:
+```json
+{
+    "body": "This is duplicated in #1871.",
+    "created_at": "2008-02-10T03:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3082",
+    "user": "rlm"
+}
+```
 
 This is duplicated in #1871.
 
 
+
 ---
 
-Comment by rlm created at 2008-02-10 03:16:36
+archive/issue_comments_003083.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-02-10T03:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3083",
+    "user": "rlm"
+}
+```
 
 Resolution: duplicate

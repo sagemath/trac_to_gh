@@ -1,11 +1,21 @@
 # Issue 460: AttributeError: 'Graphics' object has no attribute 'append'
 
-Issue created by migration from https://trac.sagemath.org/ticket/460
-
-Original creator: mhansen
-
-Original creation time: 2007-08-19 14:27:28
-
+archive/issues_000460.json:
+```json
+{
+    "body": "Assignee: was\n\nHello,\n\none of the graphics patches applied during Bug Day 1 causes the\nfollowing problem:\n\n**********************************************************************\nFile \"graph_isom.pyx\", line 802:\n   sage: SD.plot(pos=posn, vertex_size=400,\nvertex_colors={'#FFFFFF':range(1,19)},\nedge_labels=True).save('search_tree.png')\nException raised:\n   Traceback (most recent call last):\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/\ndoctest.py\", line 1212, in __run\n       compileflags, 1) in test.globs\n     File \"<doctest __main__.example_8[14]>\", line 1, in <module>\n       SD.plot(pos=posn, vertex_size=Integer(400),\nvertex_colors={'#FFFFFF':range(Integer(1),Integer(19))},\nedge_labels=True).save('search_tree.png')###line 802:\n   sage: SD.plot(pos=posn, vertex_size=400,\nvertex_colors={'#FFFFFF':range(1,19)},\nedge_labels=True).save('search_tree.png')\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/graphs/graph.py\", line 2330, in plot\n       G = networkx_plot(self._nxg, pos=pos,\nvertex_labels=vertex_labels, vertex_size=vertex_size,\nvertex_colors=vertex_colors, edge_colors=edge_colors,\ngraph_border=graph_border, scaling_term=scaling_term)\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/plot/plot.py\", line 2594, in networkx_plot\n       g.append(NGP)\n   AttributeError: 'Graphics' object has no attribute 'append'\n\nThis happens all over the code.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/460\n\n",
+    "created_at": "2007-08-19T14:27:28Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "AttributeError: 'Graphics' object has no attribute 'append'",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/460",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 Hello,
@@ -48,17 +58,43 @@ Cheers,
 Michael
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/460
+
+
+
+
 
 ---
 
-Comment by rlm created at 2007-08-19 16:45:06
+archive/issue_comments_002290.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-19T16:45:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/460#issuecomment-2290",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-08-19 16:45:06
+archive/issue_comments_002291.json:
+```json
+{
+    "body": "Fix is here:\n\nhttp://sage.math.washington.edu/home/rlmill/plot.patch",
+    "created_at": "2007-08-19T16:45:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/460#issuecomment-2291",
+    "user": "rlm"
+}
+```
 
 Fix is here:
 
